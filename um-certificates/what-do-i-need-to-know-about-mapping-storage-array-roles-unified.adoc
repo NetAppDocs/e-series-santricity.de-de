@@ -1,0 +1,33 @@
+---
+permalink: um-certificates/what-do-i-need-to-know-about-mapping-storage-array-roles-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, mapping, storage, array, roles 
+summary: Überprüfen Sie die Richtlinien, bevor Sie Gruppen zu Rollen zuordnen. 
+---
+= Was muss ich über die Zuordnung von Speicher-Array-Rollen wissen?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Überprüfen Sie die Richtlinien, bevor Sie Gruppen zu Rollen zuordnen.
+
+Die RBAC-Funktionen (rollenbasierte Zugriffssteuerung) umfassen folgende Rollen:
+
+* *Storage Admin* -- Vollständiger Lese-/Schreibzugriff auf Speicherobjekte auf den Arrays, aber kein Zugriff auf die Sicherheitskonfiguration.
+* *Security Admin* -- Zugriff auf die Sicherheitskonfiguration in Access Management und Certificate Management.
+* *Support Admin* -- Zugriff auf alle Hardware-Ressourcen auf Speicher-Arrays, Ausfalldaten und MEL-Ereignisse. Kein Zugriff auf Speicherobjekte oder die Sicherheitskonfiguration.
+* *Monitor* -- schreibgeschützter Zugriff auf alle Speicherobjekte, aber kein Zugriff auf die Sicherheitskonfiguration.
+
+
+[NOTE]
+====
+Die Überwachungsrolle ist für alle Benutzer, einschließlich des Administrators, erforderlich.
+
+====
+Wenn Sie einen LDAP-Server (Lightweight Directory Access Protocol) und Verzeichnisdienste verwenden, stellen Sie sicher, dass:
+
+* Ein Administrator hat im Verzeichnisdienst Benutzergruppen definiert.
+* Sie kennen die Gruppen-Domain-Namen für die LDAP-Benutzergruppen.
+

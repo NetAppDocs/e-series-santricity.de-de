@@ -1,0 +1,40 @@
+---
+permalink: sm-settings/edit-storage-array-name.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, storage array, name, 
+summary: Sie können den Namen des Speicher-Arrays ändern, der in der Titelleiste des SANtricity-Systems Managers angezeigt wird. 
+---
+= Name des Speicher-Arrays bearbeiten
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Namen des Speicher-Arrays ändern, der in der Titelleiste des SANtricity-Systems Managers angezeigt wird.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[System].
+. Suchen Sie unter *Allgemein* das Feld *Name:*.
++
+Wenn kein Name des Speicher-Arrays definiert wurde, wird in diesem Feld „Unbekannt“ angezeigt.
+
+. Klicken Sie auf das Symbol *Bearbeiten* (Bleistift) neben dem Namen des Speicherarrays.
++
+Das Feld kann bearbeitet werden.
+
+. Geben Sie einen neuen Namen ein.
++
+Ein Name kann Buchstaben, Ziffern und die Sonderzeichen Unterstrich (_), Strich (-) und Hash-Zeichen (#) enthalten. Ein Name darf keine Leerzeichen enthalten. Ein Name kann maximal 30 Zeichen lang sein. Der Name muss eindeutig sein.
+
+. Klicken Sie auf das Symbol *Speichern* (Häkchen).
++
+[NOTE]
+====
+Wenn Sie das bearbeitbare Feld schließen möchten, ohne Änderungen vorzunehmen, klicken Sie auf das Symbol *Abbrechen* (X).
+
+====
+
+
+Der neue Name wird in der Titelleiste des SANtricity System Managers angezeigt.

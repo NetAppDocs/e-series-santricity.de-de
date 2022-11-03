@@ -1,0 +1,57 @@
+---
+permalink: sm-settings/how-security-key-management-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, security, key, management, 
+summary: 'Bei der Implementierung der Laufwerkssicherheitsfunktion benötigen die sicheren Laufwerke (FIPS oder FDE) einen Sicherheitsschlüssel für den Datenzugriff. Ein Sicherheitsschlüssel ist eine Zeichenkette, die zwischen diesen Laufwerkstypen und den Controllern in einem Speicher-Array gemeinsam verwendet wird.' 
+---
+= Funktionsweise von Sicherheitsschlüsselmanagement
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bei der Implementierung der Laufwerkssicherheitsfunktion benötigen die sicheren Laufwerke (FIPS oder FDE) einen Sicherheitsschlüssel für den Datenzugriff. Ein Sicherheitsschlüssel ist eine Zeichenkette, die zwischen diesen Laufwerkstypen und den Controllern in einem Speicher-Array gemeinsam verwendet wird.
+
+Wenn die Stromversorgung der Laufwerke aus- und wieder eingeschaltet wird, wechseln die sicher-aktivierten Laufwerke in den Status Sicherheitsverriegelt, bis der Controller den Sicherheitsschlüssel anwendet. Wenn ein sicheres Laufwerk aus dem Speicher-Array entfernt wird, sind die Daten des Laufwerks gesperrt. Wenn das Laufwerk in einem anderen Speicher-Array neu installiert wird, sucht es nach dem Sicherheitsschlüssel, bevor es die Daten wieder zugänglich macht. Um die Daten zu entsperren, müssen Sie den ursprünglichen Sicherheitsschlüssel anwenden.
+
+Sie können Sicherheitsschlüssel mit einer der folgenden Methoden erstellen und verwalten:
+
+* Internes Verschlüsselungsmanagement auf dem persistenten Speicher des Controllers.
+* Externes Verschlüsselungskeymanagement auf einem externen Verschlüsselungsmanagement-Server.
+
+
+
+
+== Internes Verschlüsselungsmanagement
+
+Interne Schlüssel werden gepflegt und „`hidden`“ in einem nicht zugänglichen Ort im persistenten Speicher des Controllers gespeichert. Führen Sie folgende Schritte durch, um das interne Verschlüsselungsmanagement zu implementieren:
+
+. Installieren Sie sichere Laufwerke im Speicher-Array. Es können sich bei diesen Laufwerken um vollständige Festplattenverschlüsselung (Full Disk Encryption, FDE) oder FIPS-Laufwerke (Federal Information Processing Standard) handelt.
+. Stellen Sie sicher, dass die Laufwerksicherheit aktiviert ist. Wenden Sie sich bei Bedarf an Ihren Storage-Anbieter, um Anweisungen zur Aktivierung der Laufwerkssicherheitsfunktion zu erhalten.
+. Erstellen Sie einen internen Sicherheitsschlüssel, der das Definieren einer Kennung und einer Passphrase beinhaltet. Die Kennung ist eine Zeichenfolge, die dem Sicherheitsschlüssel zugeordnet ist und auf dem Controller und allen Laufwerken gespeichert ist, die mit dem Schlüssel verknüpft sind. Der Passphrase wird verwendet, um den Sicherheitsschlüssel für Sicherungszwecke zu verschlüsseln. Um einen internen Schlüssel zu erstellen, gehen Sie zu Menü:Einstellungen[System > Sicherheitsschlüsselverwaltung > Internen Schlüssel erstellen].
+
+
+Der Sicherheitsschlüssel wird auf dem Controller an einem verborgenen, nicht zugänglichen Ort gespeichert. Anschließend können sichere Volume-Gruppen und -Pools erstellt oder die Sicherheit für vorhandene Volume-Gruppen und -Pools aktiviert werden.
+
+
+
+== Externes Verschlüsselungskeymanagement
+
+Externe Schlüssel werden mithilfe eines Key Management Interoperability Protocol (KMIP) auf einem separaten Verschlüsselungsmanagement-Server aufbewahrt. Um externes Verschlüsselungsmanagement zu implementieren, führen Sie die folgenden Schritte aus:
+
+. Installieren Sie sichere Laufwerke im Speicher-Array. Es können sich bei diesen Laufwerken um vollständige Festplattenverschlüsselung (Full Disk Encryption, FDE) oder FIPS-Laufwerke (Federal Information Processing Standard) handelt.
+. Stellen Sie sicher, dass die Laufwerksicherheit aktiviert ist. Wenden Sie sich bei Bedarf an Ihren Storage-Anbieter, um Anweisungen zur Aktivierung der Laufwerkssicherheitsfunktion zu erhalten.
+. Abrufen einer signierten Client-Zertifikatdatei. Ein Client-Zertifikat validiert die Controller des Storage-Arrays, damit der Verschlüsselungsmanagement-Server ihren KMIP-Anforderungen vertrauen kann.
++
+.. Zunächst haben Sie eine Client Certificate Signing Request (CSR) abgeschlossen und heruntergeladen. Wechseln Sie zum Menü:Einstellungen[Zertifikate > Schlüsselverwaltung > CSR abschließen].
+.. Als Nächstes fordern Sie ein signiertes Clientzertifikat von einer Zertifizierungsstelle an, die vom Schlüsselverwaltungsserver vertrauenswürdig ist. (Sie können auch mithilfe der CSR-Datei ein Client-Zertifikat vom Schlüsselverwaltungsserver erstellen und herunterladen.)
+.. Sobald Sie über eine Clientzertifikatdatei verfügen, kopieren Sie diese Datei auf den Host, auf dem Sie auf System Manager zugreifen.
+
+
+. Rufen Sie eine Zertifikatdatei vom Verschlüsselungsmanagement-Server ab, und kopieren Sie diese Datei dann auf den Host, auf dem Sie auf System Manager zugreifen. Ein Zertifikat für den Schlüsselmanagementserver validiert den Schlüsselmanagementserver, damit das Storage-Array seiner IP-Adresse vertrauen kann. Sie können für den Schlüsselverwaltungsserver ein Root-, Intermediate- oder Serverzertifikat verwenden.
+. Erstellen eines externen Schlüssels, der die IP-Adresse des Verschlüsselungsmanagement-Servers und die Port-Nummer, die für die KMIP-Kommunikation verwendet wird, definiert. Während dieses Prozesses laden Sie auch Zertifikatdateien. Um einen externen Schlüssel zu erstellen, gehen Sie zu Menü:Einstellungen[System > Sicherheitsschlüsselverwaltung > External Key erstellen].
+
+
+Das System stellt mit den eingegebenen Anmeldedaten eine Verbindung zum Schlüsselverwaltungsserver her. Anschließend können sichere Volume-Gruppen und -Pools erstellt oder die Sicherheit für vorhandene Volume-Gruppen und -Pools aktiviert werden.

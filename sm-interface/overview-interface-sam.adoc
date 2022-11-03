@@ -1,0 +1,97 @@
+---
+permalink: sm-interface/overview-interface-sam.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, 
+summary: Sie navigieren in der Hauptschnittstelle, um auf System Manager Funktionen und Aufgaben zuzugreifen. 
+---
+= Überblick über die System Manager Schnittstelle
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager ist eine webbasierte Schnittstelle, über die Sie ein Storage Array in einer Ansicht managen können.
+
+
+
+== Homepage
+
+Die Startseite enthält eine Dashboard-Ansicht für die tägliche Verwaltung Ihres Speicherarrays. Wenn Sie sich bei System Manager anmelden, wird die Startseite der erste Bildschirm angezeigt.
+
+Die Dashboard-Ansicht enthält vier Übersichtsbereiche mit wichtigen Informationen zu Status und Zustand Ihres Storage-Arrays. Weitere Informationen finden Sie im Übersichtsbereich.
+
+[cols="25h,~"]
+|===
+| Werden | Beschreibung 
+
+
+ a| 
+Benachrichtigungen
+ a| 
+Im Bereich Benachrichtigungen werden Problembenachrichtigungen angezeigt, die den Status des Speicher-Arrays und seiner Komponenten anzeigen. In diesem Portlet werden automatisierte Warnungen angezeigt, die Sie bei der Behebung von Problemen unterstützen können, bevor diese sich auf andere Bereiche Ihrer Storage-Umgebung auswirken.
+
+
+
+ a| 
+Leistung
+ a| 
+Im Bereich Performance können Sie die Ressourcennutzung im Laufe der Zeit vergleichen und gegenüberstellen. Sie können die Performance-Kennzahlen eines Storage-Arrays für Reaktionszeit (IOPS), Übertragungsraten (MiB/s) und die Menge der genutzten Verarbeitungskapazität (CPU) anzeigen.
+
+
+
+ a| 
+Kapazität
+ a| 
+Im Bereich Kapazität wird eine Diagrammansicht der zugewiesenen Kapazität, der freien Speicherkapazität und der nicht zugewiesenen Speicherkapazität im Speicher-Array angezeigt.
+
+
+
+ a| 
+Storage-Hierarchie
+ a| 
+Der Bereich Speicherhierarchie bietet eine organisierte Ansicht der verschiedenen Hardwarekomponenten und Speicherobjekte, die von Ihrem Speicher-Array verwaltet werden. Klicken Sie auf den Dropdown-Pfeil, um eine bestimmte Aktion für die Hardwarekomponente oder das Storage-Objekt auszuführen.
+
+|===
+
+
+== Schnittstelleneinstellungen
+
+Sie können die Anzeigeeinstellungen und andere Einstellungen über die Hauptschnittstelle ändern.
+
+[cols="25h,~"]
+|===
+| Einstellung | Beschreibung 
+
+
+ a| 
+Anzeigeeinstellungen
+ a| 
+Ändern Sie Kapazitätswerte und den Zeitrahmen im Dropdown-Menü Einstellungen in der oberen rechten Ecke der Schnittstelle.
+
+
+
+ a| 
+Session-Timeouts
+ a| 
+Konfigurieren Sie Timeouts, so dass die inaktiven Sitzungen des Benutzers nach einer bestimmten Zeit getrennt werden.
+
+
+
+ a| 
+Hilfe
+ a| 
+Greifen Sie über das Dropdown-Menü oben rechts auf die Hilfedokumentation und andere Ressourcen zu.
+
+|===
+
+
+== Benutzeranmeldungen und Passwörter
+
+Der aktuelle Benutzer, der am System angemeldet ist, wird oben rechts auf der Schnittstelle angezeigt.
+
+Weitere Informationen zu Benutzern und Kennwörtern finden Sie unter:
+
+* link:administrator-password-protection.html["Legen Sie den Schutz des Admin-Passworts fest"]
+* link:../sm-settings/change-passwords.html["Passwörter ändern"]
+

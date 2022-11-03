@@ -1,0 +1,16 @@
+---
+permalink: sm-support/which-data-am-i-collecting-in-a-customer-support-bundle.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, data, collection, autosupport, ASUP 
+summary: Die AutoSupport-Funktion und die manuelle Support-Datenerfassung bieten Möglichkeiten zum Erfassen von Daten in einem Kunden-Support Bundle zur Remote-Fehlerbehebung und Problemanalyse durch den technischen Support. 
+---
+= Welche Daten sammle ich?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die AutoSupport-Funktion und die manuelle Support-Datenerfassung bieten Möglichkeiten zum Erfassen von Daten in einem Kunden-Support Bundle zur Remote-Fehlerbehebung und Problemanalyse durch den technischen Support.
+
+Das Customer Support Bundle sammelt alle Arten von Informationen zum Storage Array in einer einzigen komprimierten Datei. Die erfassten Informationen umfassen physische Konfiguration, logische Konfiguration, Versionsinformationen, Ereignisse, Log-Dateien, Und Performance-Daten. Die Informationen werden nur vom technischen Support verwendet, um Probleme mit dem Storage-Array zu lösen.

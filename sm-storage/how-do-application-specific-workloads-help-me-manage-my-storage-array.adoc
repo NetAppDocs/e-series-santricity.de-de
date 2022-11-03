@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/how-do-application-specific-workloads-help-me-manage-my-storage-array.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, application, workloads, 
+summary: Die Volume-Merkmale Ihres applikationsspezifischen Workloads diktieren, wie der Workload mit den Komponenten des Storage-Arrays interagiert und die Performance Ihrer Umgebung im Rahmen einer bestimmten Konfiguration bestimmt. 
+---
+= Wie können mir applikationsspezifische Workloads beim Management meines Storage Arrays helfen?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Volume-Merkmale Ihres applikationsspezifischen Workloads diktieren, wie der Workload mit den Komponenten des Storage-Arrays interagiert und die Performance Ihrer Umgebung im Rahmen einer bestimmten Konfiguration bestimmt.
+
+Eine Applikation ist Software wie SQL Server oder Exchange. Sie definieren einen oder mehrere Workloads, um jede Applikation zu unterstützen. Für einige Applikationen empfiehlt das System automatisch eine Volume-Konfiguration zur Optimierung des Storage. Merkmale wie I/O-Typ, Segmentgröße, Controller-Eigentümer und Lese- und Schreib-Cache sind in der Volume-Konfiguration enthalten.

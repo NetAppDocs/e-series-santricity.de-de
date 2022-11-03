@@ -1,0 +1,35 @@
+---
+permalink: um-manage/perform-pre-upgrade-health-check.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, perform, pre-upgrade, health, check 
+summary: Eine Zustandsprüfung wird im Rahmen des Upgrade-Prozesses ausgeführt, doch vor Beginn kann zusätzlich ein Systemcheck separat durchgeführt werden. Bei der Integritätsprüfung werden Komponenten des Storage-Arrays bewertet, um sicherzustellen, dass das Upgrade fortgesetzt werden kann. 
+---
+= Führen Sie eine Integritätsprüfung vor dem Upgrade durch
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Eine Zustandsprüfung wird im Rahmen des Upgrade-Prozesses ausgeführt, doch vor Beginn kann zusätzlich ein Systemcheck separat durchgeführt werden. Bei der Integritätsprüfung werden Komponenten des Storage-Arrays bewertet, um sicherzustellen, dass das Upgrade fortgesetzt werden kann.
+
+.Schritte
+. Wählen Sie in der Hauptansicht *Verwalten* und dann Menü:Upgrade Center[Health Check Pre-Upgrade].
++
+Das Dialogfeld Integritätsprüfung vor dem Upgrade wird geöffnet und zeigt alle erkannten Speichersysteme an.
+
+. Filtern oder sortieren Sie bei Bedarf die Speichersysteme in der Liste, sodass Sie alle Systeme, die sich derzeit nicht im optimalen Zustand befinden, anzeigen können.
+. Aktivieren Sie die Kontrollkästchen für die Speichersysteme, die Sie durch die Integritätsprüfung ausführen möchten.
+. Klicken Sie Auf *Start*.
++
+Der Fortschritt wird im Dialogfeld angezeigt, während die Integritätsprüfung durchgeführt wird.
+
+. Wenn die Integritätsprüfung abgeschlossen ist, können Sie rechts neben jeder Zeile auf die Ellipsen (...) klicken, um weitere Informationen anzuzeigen und andere Aufgaben auszuführen.
++
+[NOTE]
+====
+Wenn Arrays die Integritätsprüfung nicht bestanden haben, können Sie das jeweilige Array überspringen und das Upgrade für die anderen fortsetzen. Alternativ können Sie den gesamten Prozess beenden und die Arrays, die nicht bestanden haben, beheben.
+
+====
+

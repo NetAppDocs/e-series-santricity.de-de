@@ -1,0 +1,16 @@
+---
+permalink: sm-settings/what-is-cache-block-size.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cache, block, size, 
+summary: Der Controller des Speicherarrays organisiert seinen Cache in Blöcke, die Speicherblöcke sind, die 8, 16, 32 KiB groß sein können. Alle Volumes im Storage-System nutzen denselben Cache-Speicherplatz. Daher können die Volumes nur eine Cache-Blockgröße aufweisen. 
+---
+= Was ist die Cache-Blockgröße?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der Controller des Storage Arrays ordnet den Cache in „Blöcke“ ein. Dabei handelt es sich um Speicherblöcke, die 8, 16 und 32 KiB groß sein können. Alle Volumes im Storage-System nutzen denselben Cache-Speicherplatz. Daher können die Volumes nur eine Cache-Blockgröße aufweisen.
+
+Applikationen verwenden unterschiedliche Blockgrößen, die wiederum einen Einfluss auf die Storage-Performance haben können. Standardmäßig ist die Blockgröße in System Manager 32 KiB, Sie können den Wert jedoch auf 8, 16, 32 KiBs festlegen. Kleinere Größen sind eine gute Wahl für Dateisysteme oder Datenbankanwendungen. Eine größere Größe ist eine gute Wahl für Applikationen, die eine umfangreiche Datenübertragung, sequenziellen I/O oder eine hohe Bandbreite, wie z. B. Multimedia, erfordern.

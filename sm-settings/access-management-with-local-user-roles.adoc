@@ -1,0 +1,43 @@
+---
+permalink: sm-settings/access-management-with-local-user-roles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, local, user, roles, 
+summary: 'Administratoren können für das Zugriffsmanagement die im Storage Array erzwungenen RBAC-Funktionen (rollenbasierte Zugriffssteuerung) nutzen. Diese Funktionen werden als lokale Benutzerrollen bezeichnet.' 
+---
+= Zugriffsverwaltung mit lokalen Benutzerrollen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Administratoren können für das Zugriffsmanagement die im Storage Array erzwungenen RBAC-Funktionen (rollenbasierte Zugriffssteuerung) nutzen. Diese Funktionen werden als „lokale Benutzerrollen“ bezeichnet.
+
+
+
+== Konfigurationsworkflow
+
+Lokale Benutzerrollen sind für das Speicher-Array vorkonfiguriert. Um lokale Benutzerrollen für die Authentifizierung zu verwenden, können Administratoren Folgendes tun:
+
+. Ein Administrator meldet sich bei System Manager mit einem Benutzerprofil an, das die Berechtigungen für Sicherheitsadministrator enthält.
++
+[NOTE]
+====
+Der `admin` Der Benutzer hat vollen Zugriff auf alle Funktionen im System.
+
+====
+. Ein Administrator überprüft die Benutzerprofile, die vordefiniert sind und nicht geändert werden können.
+. Optional weist der Administrator jedem Benutzerprofil neue Passwörter zu.
+. Benutzer melden sich mit ihren zugewiesenen Anmeldedaten am System an.
+
+
+
+
+== Vereinfachtes
+
+Bei der Verwendung von nur lokalen Benutzerrollen für die Authentifizierung können Administratoren die folgenden Verwaltungsaufgaben ausführen:
+
+* Passwörter ändern.
+* Legen Sie eine Mindestlänge für Passwörter fest.
+* Benutzern erlauben, sich ohne Passwörter anzumelden.
+

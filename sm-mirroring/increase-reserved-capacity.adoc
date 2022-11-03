@@ -1,0 +1,60 @@
+---
+permalink: sm-mirroring/increase-reserved-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, increase, reserved, capacity 
+summary: Sie können die reservierte Kapazität erhöhen, die die physisch zugewiesene Kapazität, die für jeden Kopiervorgang auf einem Storage-Objekt genutzt wird. 
+---
+= Reservierte Kapazität wird erhöht
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die reservierte Kapazität erhöhen, die die physisch zugewiesene Kapazität, die für jeden Kopiervorgang auf einem Storage-Objekt genutzt wird.
+
+Bei Snapshot-Vorgängen beträgt dieser Anteil normalerweise 40 % des Basis-Volumes. Bei asynchronen Spiegelungsvorgängen beträgt der Anteil des Basis-Volumes normalerweise 20 %. Normalerweise erhöhen Sie die reservierte Kapazität, wenn Sie eine Warnung erhalten, dass die reservierte Kapazität des Storage-Objekts voll wird.
+
+.Bevor Sie beginnen
+* Das Volume im Pool oder in der Volume-Gruppe muss den optimalen Status aufweisen und darf sich nicht in einem bestimmten Zustand befinden.
+* Freie Kapazität muss im Pool bzw. in der Volume-Gruppe vorhanden sein, mit der die Kapazität erhöht werden soll.
++
+Wenn auf einem Pool oder Volume-Gruppen keine freie Kapazität vorhanden ist, können Sie einem Pool oder einer Volume-Gruppe nicht zugewiesene Kapazität in Form nicht verwendeter Laufwerke hinzufügen.
+
+
+
+Sie können die reservierte Kapazität nur in Schritten von 8 gib für die folgenden Storage-Objekte erhöhen:
+
+* Snapshot-Gruppe
+* Snapshot Volume
+* Mitgliedsvolume der Konsistenzgruppe
+* Gespiegeltes Paar-Volume
+
+
+Verwenden Sie einen hohen Prozentsatz, wenn Sie glauben, dass das primäre Volume viele Änderungen durchlaufen hat oder wenn die Lebensdauer eines bestimmten Kopierdienstes sehr lang ist.
+
+[NOTE]
+====
+Sie können die reservierte Kapazität für ein schreibgeschütztes Snapshot-Volume nicht erhöhen. Nur Snapshot Volumes mit Lese- und Schreibvorgängen erfordern reservierte Kapazität.
+
+====
+.Schritte
+. Wählen Sie Menü:Speicher[Pools & Volume Groups].
+. Wählen Sie die Registerkarte *reservierte Kapazität* aus.
+. Wählen Sie das Speicherobjekt aus, für das Sie die reservierte Kapazität erhöhen möchten, und klicken Sie dann auf *Kapazität erhöhen*.
++
+Das Dialogfeld reservierte Kapazität erhöhen wird angezeigt.
+
+. Verwenden Sie die Spinner-Box, um den Kapazitätsanteil einzustellen.
++
+Wenn im Pool oder in der Volume-Gruppe keine freie Kapazität vorhanden ist, die das ausgewählte Speicherobjekt enthält, und das Speicher-Array über nicht zugewiesene Kapazität verfügt, können Sie einen neuen Pool oder eine neue Volume-Gruppe erstellen. Sie können diesen Vorgang dann mit der neuen freien Kapazität in diesem Pool bzw. dieser Volume-Gruppe wiederholen.
+
+. Klicken Sie Auf *Erhöhen*.
+
+
+System Manager führt die folgenden Aktionen durch:
+
+* Erhöht die reservierte Kapazität für das Storage-Objekt.
+* Zeigt die neu hinzugefügte reservierte Kapazität an.
+

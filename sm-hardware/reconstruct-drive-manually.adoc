@@ -1,0 +1,32 @@
+---
+permalink: sm-hardware/reconstruct-drive-manually.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reconstruct, drive, manually, 
+summary: Die Laufwerksrekonstruktion wird normalerweise automatisch gestartet, nachdem Sie ein Laufwerk ersetzt haben. Wenn die Datenrekonstruktion nicht automatisch gestartet wird, können Sie die Rekonstruktion manuell starten. 
+---
+= Manuelles Rekonstruieren des Laufwerks
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Laufwerksrekonstruktion wird normalerweise automatisch gestartet, nachdem Sie ein Laufwerk ersetzt haben. Wenn die Datenrekonstruktion nicht automatisch gestartet wird, können Sie die Rekonstruktion manuell starten.
+
+[NOTE]
+====
+Führen Sie diesen Vorgang nur aus, wenn Sie vom technischen Support oder dem Recovery Guru dazu aufgefordert werden.
+
+====
+.Schritte
+. Wählen Sie *Hardware*.
+. Wenn die Grafik die Controller zeigt, klicken Sie auf *Vorderseite des Regals anzeigen*.
++
+Die Grafik ändert sich, um die Laufwerke anstelle der Controller anzuzeigen.
+
+. Klicken Sie auf das Laufwerk, das Sie manuell rekonstruieren möchten.
++
+Das Kontextmenü des Laufwerks wird angezeigt.
+
+. Wählen Sie * rekonstruieren*, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
+

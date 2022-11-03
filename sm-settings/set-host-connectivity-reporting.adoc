@@ -1,0 +1,37 @@
+---
+permalink: sm-settings/set-host-connectivity-reporting.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, set, host, connectivity, reporting, 
+summary: Sie können die Berichterstellung für die Host-Konnektivität aktivieren, damit das Storage-Array die Verbindung zwischen den Controllern und den konfigurierten Hosts fortlaufend überwacht. Anschließend werden Sie benachrichtigt, wenn die Verbindung unterbrochen wird. Diese Funktion ist standardmäßig aktiviert. 
+---
+= Legen Sie die Berichterstellung für Host-Konnektivität fest
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Berichterstellung für die Host-Konnektivität aktivieren, damit das Storage-Array die Verbindung zwischen den Controllern und den konfigurierten Hosts fortlaufend überwacht. Anschließend werden Sie benachrichtigt, wenn die Verbindung unterbrochen wird. Diese Funktion ist standardmäßig aktiviert.
+
+Wenn Sie die Berichterstellung für die Host-Konnektivität deaktivieren, überwacht das System bei einem mit dem Storage-Array verbundenen Host keine Verbindungs- oder Multipath-Treiberprobleme mehr.
+
+[NOTE]
+====
+Durch das Deaktivieren der Berichterstellung für Host-Konnektivität wird außerdem der automatische Lastausgleich deaktiviert, der die Ressourcenauslastung des Controllers überwacht und gleichmäßig belastet.
+
+====
+.Schritte
+. Wählen Sie Menü:Einstellungen[System].
+. Scrollen Sie nach unten zu *zusätzliche Einstellungen* und klicken Sie dann auf *Host Connectivity Reporting aktivieren/deaktivieren*.
++
+Der Text unter dieser Option gibt an, ob er derzeit aktiviert oder deaktiviert ist.
+
++
+Ein Bestätigungsdialogfeld wird geöffnet.
+
+. Klicken Sie auf *Ja*, um fortzufahren.
++
+Wenn Sie diese Option auswählen, schalten Sie die Funktion zwischen aktiviert/deaktiviert ein.
+
+

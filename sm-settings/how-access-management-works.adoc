@@ -1,0 +1,80 @@
+---
+permalink: sm-settings/how-access-management-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, authentication, users, roles, access, Management, 
+summary: Die Zugriffsverwaltung ist eine Methode zur Einrichtung der Benutzerauthentifizierung in SANtricity System Manager. 
+---
+= Funktionsweise von Access Management
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Access Management ist eine Methode zur Einrichtung der Benutzerauthentifizierung in System Manager.
+
+Konfiguration und Benutzerauthentifizierung:
+
+. Ein Administrator meldet sich bei System Manager mit einem Benutzerprofil an, das die Berechtigungen für Sicherheitsadministrator enthält.
++
+[NOTE]
+====
+Bei der ersten Anmeldung wird der Benutzername verwendet `admin` Wird automatisch angezeigt und kann nicht geändert werden. Der `admin` Der Benutzer hat vollen Zugriff auf alle Funktionen im System.
+
+====
+. Der Administrator navigiert in der Benutzeroberfläche zur Zugriffsverwaltung. Das Storage Array ist vorkonfiguriert zur Verwendung von lokalen Benutzerrollen, bei denen es sich um die Implementierung von RBAC-Funktionen (rollenbasierte Zugriffssteuerung) handelt.
+. Der Administrator konfiguriert eine oder mehrere der folgenden Authentifizierungsmethoden:
++
+** *Lokale Benutzerrollen* -- Authentifizierung wird über im Storage Array erzwungene RBAC-Funktionen gemanagt. Lokale Benutzerrollen umfassen vordefinierte Benutzerprofile und Rollen mit spezifischen Zugriffsberechtigungen. Administratoren können diese lokalen Benutzerrollen als einzige Authentifizierungsmethode verwenden oder in Kombination mit einem Verzeichnisdienst verwenden. Es ist keine Konfiguration erforderlich – abgesehen von der Festlegung von Passwörtern für die Benutzer.
+** *Directory Services* -- die Authentifizierung wird über einen LDAP-Server (Lightweight Directory Access Protocol) und einen Verzeichnisdienst verwaltet, z. B. über Microsoft Active Directory. Ein Administrator stellt eine Verbindung zum LDAP-Server her und ordnet die LDAP-Benutzer den im Speicher-Array eingebetteten lokalen Benutzerrollen zu.
+** *SAML* -- Authentifizierung wird über einen Identitäts-Provider (IdP) mit der Security Assertion Markup Language (SAML) 2.0 verwaltet. Ein Administrator stellt die Verbindung zwischen dem IdP-System und dem Storage-Array her und ordnet anschließend die IdP-Benutzer den im Storage-Array eingebetteten lokalen Benutzerrollen zu.
+
+
+. Der Administrator stellt Benutzern die Anmeldeinformationen für System Manager zur Verfügung.
+. Benutzer melden sich beim System an, indem sie ihre Anmeldedaten eingeben.
++
+[NOTE]
+====
+Wenn die Authentifizierung mit SAML und einem SSO (Single Sign On) verwaltet wird, umgehen das System möglicherweise das Anmeldedialogfeld von System Manager.
+
+====
++
+Während der Anmeldung führt das System die folgenden Hintergrundaufgaben aus:
+
++
+** Authentifiziert Benutzernamen und Kennwort anhand des Benutzerkontos.
+** Legt die Berechtigungen des Benutzers basierend auf den zugewiesenen Rollen fest.
+** Ermöglicht dem Benutzer den Zugriff auf Aufgaben in der Benutzeroberfläche.
+** Zeigt den Benutzernamen oben rechts in der Schnittstelle an.
+
+
+
+
+
+
+== In System Manager verfügbare Aufgaben
+
+Der Zugriff auf Aufgaben hängt von den zugewiesenen Rollen eines Benutzers ab. Dazu gehören:
+
+* *Storage Admin* -- Vollzugriff auf die Speicherobjekte (z. B. Volumes und Disk Pools), aber kein Zugriff auf die Sicherheitskonfiguration.
+* *Security Admin* -- Zugriff auf die Sicherheitskonfiguration in Access Management, Zertifikatverwaltung, Audit Log Management und die Möglichkeit, die alte Management-Schnittstelle (Symbol) ein- oder auszuschalten.
+* *Support Admin* -- Zugriff auf alle Hardware-Ressourcen auf dem Speicher-Array, Ausfalldaten, MEL-Ereignisse und Controller-Firmware-Upgrades. Kein Zugriff auf Speicherobjekte oder die Sicherheitskonfiguration.
+* *Monitor* -- schreibgeschützter Zugriff auf alle Speicherobjekte, aber kein Zugriff auf die Sicherheitskonfiguration.
+
+
+Eine nicht verfügbare Aufgabe ist entweder ausgegraut oder wird in der Benutzeroberfläche nicht angezeigt. Beispielsweise kann ein Benutzer mit der Rolle „Monitor“ alle Informationen zu Volumes anzeigen, jedoch keinen Zugriff auf Funktionen zum Ändern des Volumes haben. Die Registerkarten für Funktionen wie *Kopierdienste* und *zum Workload hinzufügen* werden ausgegraut; es sind nur *Einstellungen anzeigen/bearbeiten* verfügbar.
+
+
+
+== Einschränkungen bei Unified Manager und Storage Manager
+
+Wenn SAML für ein Storage-Array konfiguriert ist, können Benutzer den Speicher für dieses Array nicht über Unified Manager oder die alten Storage Manager-Schnittstellen erkennen oder managen.
+
+Wenn lokale Benutzerrollen und Verzeichnisdienste konfiguriert sind, müssen Benutzer Anmeldeinformationen eingeben, bevor eine der folgenden Funktionen ausgeführt wird:
+
+* Umbenennen des Speicher-Arrays
+* Aktualisieren der Controller-Firmware
+* Laden einer Speicherarray-Konfiguration
+* Ausführen eines Skripts
+* Es wird versucht, einen aktiven Vorgang auszuführen, wenn eine nicht verwendete Sitzung abgelaufen ist
+

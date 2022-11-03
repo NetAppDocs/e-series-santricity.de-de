@@ -1,0 +1,166 @@
+---
+permalink: sm-support/view-events-using-the-event-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, events, 
+summary: Sie können das Ereignisprotokoll anzeigen, das einen historischen Datensatz von Ereignissen enthält, die auf dem Speicher-Array aufgetreten sind. 
+---
+= Zeigen Sie mithilfe des Ereignisprotokolls Ereignisse an
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können das Ereignisprotokoll anzeigen, das einen historischen Datensatz von Ereignissen enthält, die auf dem Speicher-Array aufgetreten sind.
+
+.Schritte
+. Wählen Sie Menü:Support[Ereignisprotokoll].
++
+Die Seite Ereignisprotokoll wird angezeigt.
+
++
+.Seitendetails
+====
+[cols="25h,~"]
+|===
+| Element | Beschreibung 
+
+
+ a| 
+Feld „Alle anzeigen“
+ a| 
+Wechselt zwischen allen Ereignissen und nur den kritischen und den Warnungsereignissen.
+
+
+
+ a| 
+Filterfeld
+ a| 
+Filtert die Ereignisse. Nützlich, um nur Ereignisse anzuzeigen, die sich auf eine bestimmte Komponente, ein bestimmtes Ereignis usw. beziehen
+
+
+
+ a| 
+Wählen Sie das Spaltensymbol.
+ a| 
+Ermöglicht Ihnen die Auswahl weiterer Spalten, die angezeigt werden sollen. In anderen Spalten erhalten Sie zusätzliche Informationen über das Ereignis.
+
+
+
+ a| 
+Kontrollkästchen
+ a| 
+Ermöglicht die Auswahl der zu speicherenden Ereignisse. Das Kontrollkästchen in der Tabellenüberschrift wählt alle Ereignisse aus.
+
+
+
+ a| 
+Spalte „Datum/Uhrzeit“
+ a| 
+Der Datums- und Zeitstempel des Ereignisses, entsprechend der Steuerungsuhr.
+
+
+NOTE: Das Ereignisprotokoll sortiert anfänglich Ereignisse auf der Grundlage der Sequenznummer. In der Regel entspricht diese Sequenz dem Datum und der Uhrzeit. Die beiden Controller-Uhren im Speicher-Array konnten jedoch nicht synchronisiert werden. In diesem Fall könnten im Ereignisprotokoll einige vermeintliche Inkonsistenzen bezüglich der Ereignisse und des angezeigten Datums und der angezeigten Zeit angezeigt werden.
+
+
+
+ a| 
+Spalte „Priorität“
+ a| 
+Es gibt diese Prioritätswerte:
+
+** *Kritisch* -- beim Speicher-Array ist ein Problem vorhanden. Wenn Sie jedoch sofortige Maßnahmen ergreifen, können Sie den Zugriff auf die Daten unter Umständen verhindern. Kritische Ereignisse werden für Warnmeldungen verwendet. Alle kritischen Ereignisse werden an jeden Netzwerk-Management-Client (über SNMP-Traps) oder an den von Ihnen konfigurierten E-Mail-Empfänger gesendet.
+** *Warnung* -- ein Fehler ist aufgetreten, der die Leistung und die Fähigkeit des Speicherarrays beeinträchtigt hat, nach einem anderen Fehler wiederherzustellen.
+** *Informativ* -- nicht kritische Informationen im Zusammenhang mit dem Speicher-Array.
+
+
+
+
+ a| 
+Spalte Komponententyp
+ a| 
+Die vom Ereignis betroffene Komponente. Bei der Komponente kann es sich um Hardware, z. B. ein Laufwerk oder ein Controller, oder um Software, z. B. Controller-Firmware, handeln.
+
+
+
+ a| 
+Spalte „Komponentenposition“
+ a| 
+Der physische Speicherort der Komponente im Speicher-Array.
+
+
+
+ a| 
+Spalte Beschreibung
+ a| 
+Eine Beschreibung des Ereignisses.
+
+* Beispiel* -- `Drive write failure - retries exhausted`
+
+
+
+ a| 
+Spalte Sequenznummer
+ a| 
+Eine 64-Bit-Nummer, die einen bestimmten Protokolleintrag für ein Speicher-Array eindeutig identifiziert. Diese Zahl erhöht sich bei jedem neuen Ereignisprotokolleintrag um eins. Um diese Informationen anzuzeigen, klicken Sie auf das Symbol *Spalten auswählen*.
+
+
+
+ a| 
+Spalte Ereignistyp
+ a| 
+Eine 4-stellige Zahl, die jeden Typ des protokollierten Ereignisses identifiziert. Um diese Informationen anzuzeigen, klicken Sie auf das Symbol *Spalten auswählen*.
+
+
+
+ a| 
+Spalte Ereignisspezifische Codes
+ a| 
+Diese Informationen werden vom technischen Support verwendet. Um diese Informationen anzuzeigen, klicken Sie auf das Symbol *Spalten auswählen*.
+
+
+
+ a| 
+Spalte Ereigniskategorie
+ a| 
+** **Fehler** – Eine Komponente im Speicher-Array ist ausgefallen, z. B. ein Laufwerkausfall oder ein Batteriefehler.
+** **Statusänderung** – ein Element des Speicherarrays, das den Status geändert hat; beispielsweise ist ein Volume in den Status „optimal“ übergegangen oder ein Controller in den Status „Offline“ übergegangen.
+** **Intern** – interne Controller-Operationen, für die keine Benutzeraktion erforderlich ist; zum Beispiel hat der Controller den Tagesbeginn abgeschlossen.
+** **Befehl** – ein Befehl, der dem Speicher-Array ausgegeben wurde; zum Beispiel wurde ein Hot Spare zugewiesen.
+** **Fehler** – auf dem Speicher-Array wurde eine Fehlerbedingung erkannt, z. B. kann ein Controller den Cache nicht synchronisieren und bereinigen oder auf dem Speicher-Array wird ein Redundanzfehler erkannt.
+** **Allgemein** – jedes Ereignis, das nicht gut in eine andere Kategorie passt. Um diese Informationen anzuzeigen, klicken Sie auf das Symbol „ **Spalten auswählen “.
+
+
+
+
+ a| 
+Angemeldet durch Spalte
+ a| 
+Der Name des Controllers, der das Ereignis protokolliert hat. Um diese Informationen anzuzeigen, klicken Sie auf das Symbol „ **Spalten auswählen “.
+
+|===
+====
+. Um neue Ereignisse aus dem Speicher-Array abzurufen, klicken Sie auf **Aktualisieren**.
++
+Es kann einige Minuten dauern, bis ein Ereignis protokolliert und auf der Seite Ereignisprotokoll angezeigt wird.
+
+. So speichern Sie das Ereignisprotokoll in einer Datei:
++
+.. Aktivieren Sie das Kontrollkästchen neben jedem Ereignis, das Sie speichern möchten.
+.. Klicken Sie Auf *Speichern*.
++
+Die Datei wird im Ordner Downloads für Ihren Browser mit dem Namen gespeichert `major-event-log-timestamp.log`.
+
+
+
+. So löschen Sie Ereignisse aus dem Ereignisprotokoll:
++
+Das Ereignisprotokoll speichert ca. 8,000 Ereignisse, bevor ein Ereignis durch ein neues Ereignis ersetzt wird. Wenn Sie die Ereignisse beibehalten möchten, können Sie sie speichern und aus dem Ereignisprotokoll löschen.
+
++
+.. Speichern Sie zuerst das Ereignisprotokoll.
+.. Klicken Sie auf *alles löschen*, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
+
+
+

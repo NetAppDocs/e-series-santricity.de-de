@@ -1,0 +1,59 @@
+---
+permalink: sm-settings/enable-iscsi-discovery-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, iscsi, discovery, settings, 
+summary: Sie können Einstellungen für die Ermittlung von Speichergeräten in einem iSCSI-Netzwerk aktivieren. 
+---
+= Aktivieren Sie die iSCSI-Erkennungseinstellungen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Einstellungen für die Ermittlung von Speichergeräten in einem iSCSI-Netzwerk aktivieren.
+
+Mit den Einstellungen für die Zielerkennung können Sie die iSCSI-Informationen des Speicherarrays über das iSNS-Protokoll (Internet Storage Name Service) registrieren und bestimmen, ob nicht benannte Ermittlungssitzungen zugelassen werden sollen.
+
+Wenn der iSNS-Server eine statische IP-Adresse verwendet, muss diese Adresse für die iSNS-Registrierung verfügbar sein. IPv4 und IPv6 werden unterstützt.
+
+Sie können die folgenden Einstellungen für die iSCSI-Ermittlung aktivieren:
+
+* *ISNS-Server aktivieren, um ein Ziel zu registrieren* -- Wenn es aktiviert ist, registriert das Speicherarray seinen iSCSI-qualifizierten Namen (IQN) und Port-Informationen vom iSNS-Server. Diese Einstellung ermöglicht die iSNS-Erkennung, sodass ein Initiator die IQN- und Portinformationen vom iSNS-Server abrufen kann.
+* *Nicht benannte Ermittlungssitzungen aktivieren* -- Wenn nicht benannte Ermittlungssitzungen aktiviert sind, muss der Initiator (iSCSI-Host) während der Anmeldesequenz keine IQN des Ziels (Controller) für eine Ermittlungsverbindung bereitstellen. Wenn diese Option deaktiviert ist, müssen die Hosts den IQN zur Einrichtung einer Erkennungssitzung für den Controller bereitstellen. Die Ziel-IQN ist jedoch immer für eine normale (E/A-Lagersitzung) erforderlich. Wenn Sie diese Einstellung deaktivieren, kann dies verhindern, dass nicht autorisierte iSCSI-Hosts nur über ihre IP-Adresse eine Verbindung zum Controller herstellen.
+
+
+[NOTE]
+====
+Die iSCSI-Einstellungen und -Funktionen werden nur auf der Seite Einstellungen angezeigt, wenn Ihr Speicher-Array iSCSI unterstützt.
+
+====
+.Schritte
+. Wählen Sie Menü:Einstellungen[System].
+. Klicken Sie unter *iSCSI-Einstellungen* auf *Zielermittlungs-Einstellungen anzeigen/bearbeiten*.
++
+Das Dialogfeld Einstellungen für die Zielerkennung wird angezeigt. Unter dem Feld *iSNS-Server aktivieren*... wird im Dialogfeld angezeigt, ob der Controller bereits registriert ist.
+
+. Um den Controller zu registrieren, wählen Sie *iSNS-Server aktivieren, um mein Ziel zu registrieren*, und wählen Sie dann eine der folgenden Optionen aus:
++
+** *Konfiguration automatisch vom DHCP-Server beziehen* -- Wählen Sie diese Option, wenn Sie den iSNS-Server mit einem DHCP-Server (Dynamic Host Configuration Protocol) konfigurieren möchten. Wenn Sie diese Option verwenden, müssen alle iSCSI-Ports des Controllers auch für die Verwendung von DHCP konfiguriert sein. Aktualisieren Sie gegebenenfalls die iSCSI-Port-Einstellungen des Controllers, um diese Option zu aktivieren.
++
+[NOTE]
+====
+Damit der DHCP-Server die iSNS-Serveradresse bereitstellen kann, müssen Sie den DHCP-Server so konfigurieren, dass Option 43 -- „`anbieterspezifische Informationen`“ verwendet wird. Diese Option muss die IPv4-Adresse des iSNS-Servers in Datenbytes 0xA-0xd (10-13) enthalten.
+
+====
+** *Statische Konfiguration festlegen* -- Wählen Sie diese Option aus, wenn Sie eine statische IP-Adresse für den iSNS-Server eingeben möchten. (Bei Bedarf können Sie Adressen in die Felder ausschneiden und einfügen.) Geben Sie im Feld eine IPv4-Adresse oder eine IPv6-Adresse ein. Wenn Sie beide konfiguriert haben, ist IPv4 die Standardeinstellung. Geben Sie auch einen TCP-Listening-Port ein (verwenden Sie die Standardeinstellung 3205 oder geben Sie einen Wert zwischen 49152 und 65535 ein).
+
+
+. Um die Teilnahme des Speicher-Arrays an nicht benannten Ermittlungssitzungen zu ermöglichen, wählen Sie *nicht benannte Ermittlungssitzungen aktivieren* aus.
++
+** Wenn diese Option aktiviert ist, müssen iSCSI-Initiatoren nicht den Ziel-IQN angeben, um die Controller-Informationen abzurufen.
+** Wenn diese Option deaktiviert ist, werden Ermittlungssitzungen verhindert, es sei denn, der Initiator stellt die Ziel-IQN bereit. Durch das Deaktivieren von nicht benannten Ermittlungssitzungen wird zusätzliche Sicherheit gewährleistet.
+
+
+. Klicken Sie Auf *Speichern*.
+
+
+Es wird eine Statusleiste angezeigt, da der System Manager versucht, den Controller beim iSNS-Server zu registrieren. Dieser Vorgang kann bis zu fünf Minuten dauern.

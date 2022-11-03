@@ -1,0 +1,33 @@
+---
+permalink: sm-settings/default-host-operating-system-type.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, default, host, operating, system, 
+summary: Der standardmäßige Hosttyp wird vom Speicher-Array verwendet, wenn Hosts zunächst verbunden sind. Es definiert, wie die Controller im Speicher-Array mit dem Betriebssystem des Hosts arbeiten, wenn Volumes aufgerufen werden. 
+---
+= Standard-Host-Betriebssystem
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der standardmäßige Hosttyp wird vom Speicher-Array verwendet, wenn Hosts zunächst verbunden sind. Es definiert, wie die Controller im Storage-Array mit dem Betriebssystem des Hosts arbeiten, wenn auf Volumes zugegriffen wird.
+
+Sie können den Host-Typ ändern, wenn Sie den Betrieb des Storage-Arrays relativ zu den mit dem Array verbundenen Hosts ändern müssen. Im Allgemeinen ändern Sie den Standard-Hosttyp, bevor Sie Hosts mit dem Speicher-Array verbinden oder wenn Sie zusätzliche Hosts verbinden.
+
+Beachten Sie folgende Richtlinien:
+
+* Wenn alle Hosts, die Sie eine Verbindung zum Storage Array herstellen möchten, dasselbe Betriebssystem (homogene Host-Umgebung) verwenden möchten, ändern Sie den Host-Typ entsprechend dem Betriebssystem.
+* Falls Hosts mit verschiedenen Betriebssystemen vorhanden sind, für die eine Verbindung zum Storage Array (heterogene Host-Umgebung) geplant ist, ändern Sie den Host-Typ so, dass er mit der Mehrheit der Betriebssysteme der Hosts übereinstimmt.
++
+Wenn Sie beispielsweise acht verschiedene Hosts mit dem Speicher-Array verbinden und sechs dieser Hosts ein Windows-Betriebssystem ausführen, müssen Sie Windows als Standardbetriebssystem auswählen.
+
+* Wenn der Großteil der angeschlossenen Hosts eine Mischung verschiedener Betriebssysteme hat, ändern Sie den Hosttyp auf Werkseinstellung.
++
+Wenn Sie beispielsweise acht verschiedene Hosts mit dem Storage-Array verbinden und zwei dieser Hosts ein Windows-Betriebssystem ausführen, werden drei unter einem VMware Betriebssystem ausgeführt. Und weitere drei führen ein Linux-Betriebssystem aus. Sie müssen als Standard-Host-Betriebssystem Factory Default auswählen.
+
+
+
+====
+
+====

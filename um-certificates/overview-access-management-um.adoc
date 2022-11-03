@@ -1,0 +1,43 @@
+---
+permalink: um-certificates/overview-access-management-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, access management, authentication 
+summary: Die Zugriffsverwaltung ist eine Methode zur Konfiguration der Benutzerauthentifizierung in SANtricity Unified Manager. 
+---
+= Zugriffsmanagement – Überblick
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bei Access Management handelt es sich um eine Methode zur Konfiguration der Benutzerauthentifizierung in Unified Manager.
+
+
+
+== Welche Authentifizierungsmethoden sind verfügbar?
+
+Folgende Authentifizierungsmethoden sind verfügbar:
+
+* *Lokale Benutzerrollen* -- Authentifizierung wird über RBAC-Funktionen (rollenbasierte Zugriffssteuerung) verwaltet. Lokale Benutzerrollen umfassen vordefinierte Benutzerprofile und Rollen mit spezifischen Zugriffsberechtigungen.
+* *Directory Services* -- die Authentifizierung wird über einen LDAP-Server (Lightweight Directory Access Protocol) und einen Verzeichnisdienst verwaltet, z. B. über Microsoft Active Directory.
+
+
+Weitere Informationen:
+
+* link:how-access-management-works-unified.html["Funktionsweise von Access Management"]
+* link:access-management-terminology-unified.html["Terminologie für das Zugriffsmanagement"]
+* link:permissions-for-mapped-roles-unified.html["Berechtigungen für zugeordnete Rollen"]
+
+
+
+
+== Wie konfiguriere ich Access Management?
+
+Die SANtricity-Software ist für die Verwendung lokaler Benutzerrollen vorkonfiguriert. Wenn Sie LDAP verwenden möchten, können Sie es auf der Seite Zugriffsverwaltung konfigurieren.
+
+Weitere Informationen:
+
+* link:access-management-with-local-user-roles-unified.html["Zugriffsverwaltung mit lokalen Benutzerrollen"]
+* link:access-management-with-directory-services-unified.html["Zugriffsmanagement mit Verzeichnisdiensten"]
+

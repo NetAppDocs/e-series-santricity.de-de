@@ -1,0 +1,29 @@
+---
+permalink: sm-storage/rtv-why-dont-i-see-all-my-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volumes, destination, array 
+summary: Bei der Konfiguration eines Imports für die Remote-Speicherfunktion können Sie feststellen, dass einige Volumes aufgrund von Blockgröße, Kapazität oder Volume-Verfügbarkeit nicht in der Liste der Zielkandidaten angezeigt werden. 
+---
+= Warum sehe ich nicht alle meine Volumen auf meinem Ziel-Array?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bei der Konfiguration eines Imports für die Remote-Speicherfunktion können Sie feststellen, dass einige Volumes aufgrund von Blockgröße, Kapazität oder Volume-Verfügbarkeit nicht in der Liste der Zielkandidaten angezeigt werden.
+
+Um in der Liste angezeigt zu werden, müssen Volumenkandidaten Folgendes haben:
+
+* Kapazität, die dem Remote-Volume entspricht oder größer ist.
+* Blockgröße, die mit dem Remote Volume identisch ist.
+* Aktueller Status von optimal.
+
+
+Volumes-Kandidaten werden aus der Liste ausgeschlossen, wenn sie:
+
+* Jede der folgenden Beziehungen: Volume-Kopie, Snapshot oder Spiegelung.
+* Neukonfigurierung wird ausgeführt.
+* Zuordnung zu einem anderen Gerät (Host oder Host-Cluster)
+* Lese-Flash-Cache aktiviert.
+

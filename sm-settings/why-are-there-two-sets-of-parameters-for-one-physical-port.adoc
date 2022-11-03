@@ -1,0 +1,18 @@
+---
+permalink: sm-settings/why-are-there-two-sets-of-parameters-for-one-physical-port.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, parameters, physical, port, 
+summary: Das EF600 Storage-Array kann zwei HICs umfassen – einen externen und einen internen. 
+---
+= Warum gibt es zwei Parametersätze für einen physischen Port?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das EF600 Storage-Array kann zwei HICs umfassen – einen externen und einen internen.
+
+In dieser Konfiguration ist die externe HIC mit einer internen HIC-Zusatzkarte verbunden. Jeder physische Port, auf den Sie über die externe HIC zugreifen können, hat einen zugeordneten virtuellen Port von der internen HIC.
+
+Um eine maximale 200-GB-Performance zu erreichen, müssen Sie Parameter für die physischen und virtuellen Ports zuweisen, damit der Host Verbindungen zu jedem herstellen kann. Wenn Sie dem virtuellen Port keine Parameter zuweisen, läuft die HIC mit ungefähr halber Geschwindigkeit.

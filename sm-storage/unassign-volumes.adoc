@@ -1,0 +1,36 @@
+---
+permalink: sm-storage/unassign-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, unassign, volumes 
+summary: Heben Sie die Zuweisung von Volumes von Hosts oder Host Clustern auf, wenn Sie keinen I/O-Zugriff mehr vom Host oder Host-Cluster auf dieses Volume benötigen. 
+---
+= Zuweisung von Volumes aufheben
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Heben Sie die Zuweisung von Volumes von Hosts oder Host Clustern auf, wenn Sie keinen I/O-Zugriff mehr vom Host oder Host-Cluster auf dieses Volume benötigen.
+
+Beachten Sie bei der Zuweisung von Volumes die folgenden Richtlinien:
+
+* Wenn Sie das zuletzt zugewiesene Volume aus einem Host-Cluster entfernen und zudem über Hosts mit spezifischen zugewiesenen Volumes verfügen, stellen Sie sicher, dass Sie diese Zuweisungen entfernen oder verschieben, bevor Sie die letzte Zuweisung für den Host-Cluster entfernen.
+* Wenn ein Host-Cluster, ein Host oder ein Host-Port einem Volume zugewiesen ist, das beim Betriebssystem registriert ist, müssen Sie diese Registrierung löschen, bevor Sie diese Knoten entfernen können.
+
+
+.Schritte
+. Wählen Sie Menü:Storage[Hosts].
+. Wählen Sie den Host oder Host-Cluster aus, den Sie bearbeiten möchten, und klicken Sie dann auf *Zuweisen von Volumes*.
++
+Es wird ein Dialogfeld angezeigt, in dem alle Volumes angezeigt werden, die derzeit zugewiesen sind.
+
+. Aktivieren Sie das Kontrollkästchen neben jedem Volume, das Sie aufheben möchten, oder aktivieren Sie das Kontrollkästchen in der Tabellenüberschrift, um alle Volumes auszuwählen.
+. Klicken Sie Auf *Zuweisung Aufheben*.
+
+
+.Ergebnisse
+* Die nicht zugewiesenen Volumes sind für eine neue Zuweisung verfügbar.
+* Bis die Änderungen auf dem Host konfiguriert sind, wird das Volume weiterhin vom Host-Betriebssystem erkannt.
+

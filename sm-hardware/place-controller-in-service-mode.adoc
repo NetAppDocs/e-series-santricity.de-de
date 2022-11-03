@@ -1,0 +1,37 @@
+---
+permalink: sm-hardware/place-controller-in-service-mode.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, place, controller, service, mode, 
+summary: Wenn Sie dazu aufgefordert werden, können Sie einen Controller in den Servicemodus versetzen. 
+---
+= Platzieren Sie den Controller in den Servicemodus
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie dazu aufgefordert werden, können Sie einen Controller in den Servicemodus versetzen.
+
+.Bevor Sie beginnen
+* Das Speicher-Array muss zwei Controller haben. Der Controller, den Sie nicht im Servicemodus platzieren, muss online sein (im optimalen Status).
+* Stellen Sie sicher, dass keine Volumes verwendet werden oder dass auf allen Hosts, die diese Volumes verwenden, ein Multipath-Treiber installiert ist.
+
+
+[NOTE]
+====
+Wenn Sie einen Controller in den Servicemodus schalten, kann dies die Performance erheblich beeinträchtigen. Setzen Sie einen Controller nicht in den Servicemodus ein, es sei denn, Sie werden vom technischen Support dazu aufgefordert.
+
+====
+.Schritte
+. Wählen Sie *Hardware*.
+. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf *Zurück zum Regal anzeigen*.
++
+Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
+
+. Klicken Sie auf den Controller, den Sie in den Servicemodus platzieren möchten.
++
+Das Kontextmenü des Controllers wird angezeigt.
+
+. Wählen Sie * im Servicemodus*, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
+

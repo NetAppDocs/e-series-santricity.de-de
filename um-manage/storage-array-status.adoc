@@ -1,0 +1,72 @@
+---
+permalink: um-manage/storage-array-status.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, storage, array, status, communication, 
+summary: Unified Manager zeigt den Status jedes erkannten Storage-Arrays an. 
+---
+= Anzeigen des Status des Speicherarrays
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager zeigt den Status jedes erkannten Storage-Arrays an.
+
+Gehen Sie zur Seite *Verwalten - Alle*. Auf dieser Seite können Sie den Status der Verbindung zwischen dem Web Services Proxy und diesem Speicher-Array anzeigen.
+
+Die Statusanzeigen sind in der folgenden Tabelle beschrieben.
+
+[cols="25h,~"]
+|===
+| Status | Zeigt An 
+
+
+ a| 
+Optimal
+ a| 
+Das Storage-Array befindet sich in einem optimalen Zustand. Es gibt keine Zertifikatprobleme und das Passwort ist gültig.
+
+
+
+ a| 
+Ungültiges Kennwort
+ a| 
+Es wurde ein ungültiges Kennwort für das Speicher-Array angegeben.
+
+
+
+ a| 
+Nicht Vertrauenswürdiges Zertifikat
+ a| 
+Eine oder mehrere Verbindungen mit dem Speicher-Array sind nicht vertrauenswürdig, da das HTTPS-Zertifikat entweder selbst signiert ist und noch nicht importiert wurde, oder das Zertifikat eine CA-Signatur hat und die Stamm- und Intermediate-CA-Zertifikate nicht importiert wurden.
+
+
+
+ a| 
+Erfordert Aufmerksamkeit
+ a| 
+Es liegt ein Problem mit dem Speicher-Array vor, das Ihr Eingreifen erfordert, um es zu beheben.
+
+
+
+ a| 
+Verriegeln
+ a| 
+Das Storage-Array befindet sich in einem gesperrten Zustand.
+
+
+
+ a| 
+Unbekannt
+ a| 
+Das Speicher-Array wurde noch nie kontaktiert. Dies kann vorkommen, wenn der Web Services Proxy gestartet wird und noch keine Kontakte zum Speicher-Array hergestellt wurden oder das Speicher-Array offline ist und seit dem Start des Web Services Proxy noch nie kontaktiert wurde.
+
+
+
+ a| 
+Offline
+ a| 
+Der Web Services Proxy hatte sich bereits zuvor an das Speicher-Array gewandt, doch inzwischen sind sämtliche Verbindungen verloren gegangen.
+
+|===

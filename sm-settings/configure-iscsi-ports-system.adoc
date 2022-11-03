@@ -1,0 +1,145 @@
+---
+permalink: sm-settings/configure-iscsi-ports-system.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, iSCSI, ports, systems 
+summary: Wenn Ihr Controller eine iSCSI-Hostverbindung enthält, können Sie die iSCSI-Porteinstellungen auf der Seite System konfigurieren. 
+---
+= Konfigurieren Sie die iSCSI-Ports
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Ihr Controller eine iSCSI-Hostverbindung enthält, können Sie die iSCSI-Porteinstellungen auf der Seite System konfigurieren.
+
+.Bevor Sie beginnen
+* Der Controller muss iSCSI-Ports enthalten. Andernfalls sind die iSCSI-Einstellungen nicht verfügbar.
+* Sie müssen die Netzwerkgeschwindigkeit (die Datenübertragungsrate zwischen den Ports und dem Host) kennen.
+
+
+[NOTE]
+====
+Die iSCSI-Einstellungen und -Funktionen werden nur angezeigt, wenn Ihr Speicherarray iSCSI unterstützt.
+
+====
+.Schritte
+. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie unter *iSCSI-Einstellungen* die Option *iSCSI-Ports konfigurieren* aus.
++
+[NOTE]
+====
+Die Option iSCSI-Ports konfigurieren wird nur angezeigt, wenn System Manager iSCSI-Ports am Controller erkennt.
+
+====
+. Wählen Sie den Controller mit den iSCSI-Ports aus, die Sie konfigurieren möchten.
+. Wählen Sie in der Dropdown-Liste den Port aus, den Sie konfigurieren möchten, und klicken Sie dann auf *Weiter*.
+. Wählen Sie die Einstellungen für den Konfigurationsanschluss aus, und klicken Sie dann auf *Weiter*.
++
+Um alle Porteinstellungen anzuzeigen, klicken Sie rechts im Dialogfeld auf den Link *Weitere Porteinstellungen anzeigen*.
+
++
+.Felddetails
+====
+[cols="1a,1a"]
+|===
+| Port-Einstellung | Beschreibung 
+
+
+ a| 
+Konfigurierte ethernet-Port-Geschwindigkeit (erscheint nur für bestimmte Arten von Host-Schnittstellenkarten)
+ a| 
+Wählen Sie die Geschwindigkeit aus, die der Geschwindigkeitsfähigkeit des SFP am Port entspricht.
+
+
+
+ a| 
+FEC-Modus (Forward Error Correction) (wird nur für bestimmte Arten von Host Interface Cards angezeigt)
+ a| 
+Wählen Sie bei Bedarf einen der FEC-Modi für den angegebenen Host-Port aus.
+
+
+NOTE: Der Reed Solomon-Modus unterstützt die 25-Gbit/s-Port-Geschwindigkeit nicht.
+
+
+
+ a| 
+IPv4 aktivieren/IPv6 aktivieren
+ a| 
+Wählen Sie eine oder beide Optionen aus, um die Unterstützung für IPv4- und IPv6-Netzwerke zu aktivieren.
+
+
+NOTE: Wenn Sie den Portzugriff deaktivieren möchten, deaktivieren Sie beide Kontrollkästchen.
+
+
+
+ a| 
+TCP-Listening-Port (verfügbar durch Klicken auf *Weitere Port-Einstellungen anzeigen*.)
+ a| 
+Geben Sie bei Bedarf eine neue Portnummer ein.
+
+Der Listening-Port ist die TCP-Port-Nummer, die der Controller zum Abhören von iSCSI-Anmeldungen von Host-iSCSI-Initiatoren verwendet. Der standardmäßige Listenanschluss ist 3260. Sie müssen 3260 oder einen Wert zwischen 49152 und 65535 eingeben.
+
+
+
+ a| 
+MTU-Größe (verfügbar durch Klicken auf *Weitere Porteinstellungen anzeigen*.)
+ a| 
+Geben Sie bei Bedarf eine neue Größe in Byte für die maximale Übertragungseinheit (MTU) ein.
+
+Die Standardgröße für maximale Übertragungseinheit (Maximum Transmission Unit, MTU) beträgt 1500 Byte pro Frame. Sie müssen einen Wert zwischen 1500 und 9000 eingeben.
+
+
+
+ a| 
+ICMP PING-Antworten aktivieren
+ a| 
+Wählen Sie diese Option aus, um das ICMP (Internet Control Message Protocol) zu aktivieren. Die Betriebssysteme von vernetzten Computern verwenden dieses Protokoll zum Senden von Meldungen. Diese ICMP-Meldungen bestimmen, ob ein Host erreichbar ist und wie lange es dauert, bis Pakete von und zu diesem Host gelangen.
+
+|===
+====
++
+Wenn Sie *IPv4 aktivieren* ausgewählt haben, wird ein Dialogfeld zur Auswahl von IPv4-Einstellungen geöffnet, nachdem Sie auf *Weiter* geklickt haben. Wenn Sie *IPv6* aktivieren ausgewählt haben, wird ein Dialogfeld zur Auswahl von IPv6-Einstellungen geöffnet, nachdem Sie auf *Weiter* geklickt haben. Wenn Sie beide Optionen ausgewählt haben, wird zuerst das Dialogfeld für IPv4-Einstellungen geöffnet, und nach dem Klicken auf *Weiter* wird das Dialogfeld für IPv6-Einstellungen geöffnet.
+
+. Konfigurieren Sie die IPv4- und/oder IPv6-Einstellungen automatisch oder manuell. Um alle Porteinstellungen anzuzeigen, klicken Sie rechts im Dialogfeld auf den Link *Weitere Einstellungen anzeigen*.
++
+.Felddetails
+====
+[cols="1a,1a"]
+|===
+| Port-Einstellung | Beschreibung 
+
+
+ a| 
+Automatische Ermittlung der Konfiguration
+ a| 
+Wählen Sie diese Option aus, um die Konfiguration automatisch abzurufen.
+
+
+
+ a| 
+Statische Konfiguration manuell festlegen
+ a| 
+Wählen Sie diese Option aus, und geben Sie dann eine statische Adresse in die Felder ein. (Bei Bedarf können Sie Adressen in die Felder ausschneiden und einfügen.) Geben Sie bei IPv4 die Subnetzmaske und das Gateway des Netzwerks an. Geben Sie für IPv6 die routingfähige IP-Adresse und die Router-IP-Adresse ein.
+
+
+
+ a| 
+Aktivieren Sie die VLAN-Unterstützung (verfügbar durch Klicken auf *Weitere Einstellungen anzeigen*.)
+ a| 
+Wählen Sie diese Option aus, um ein VLAN zu aktivieren und seine ID einzugeben. Ein VLAN ist ein logisches Netzwerk, das sich verhält, als sei es physisch von anderen physischen und virtuellen lokalen Netzwerken (LANs) getrennt, die von denselben Switches, denselben Routern oder beiden unterstützt werden.
+
+
+
+ a| 
+ethernet-Priorität aktivieren (verfügbar durch Klicken auf *Weitere Einstellungen anzeigen*.)
+ a| 
+Wählen Sie diese Option aus, um den Parameter zu aktivieren, der die Priorität des Zugriffs auf das Netzwerk bestimmt. Verwenden Sie den Schieberegler, um eine Priorität zwischen 1 (niedrigste) und 7 (höchste) auszuwählen.
+
+In einer gemeinsamen LAN-Umgebung (Local Area Network) wie Ethernet könnten viele Stationen den Zugang zum Netzwerk zu schaffen haben. Der Zugriff erfolgt in der Reihenfolge der eingehenden Reservierungen. Zwei Stationen versuchen möglicherweise gleichzeitig, auf das Netzwerk zuzugreifen, was dazu führt, dass beide Stationen wieder aus- und abschalten und warten, bevor sie es erneut versuchen. Dieser Vorgang wird bei geswitchten Ethernet minimiert, bei dem nur eine Station mit einem Switch-Port verbunden ist.
+
+|===
+====
+. Klicken Sie Auf *Fertig Stellen*.
+

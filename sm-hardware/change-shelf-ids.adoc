@@ -1,0 +1,29 @@
+---
+permalink: sm-hardware/change-shelf-ids.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, shelf, ids, 
+summary: Die Shelf-ID ist eine Nummer, die ein Shelf im Storage Array eindeutig identifiziert. Die Regale werden nacheinander nummeriert, beginnend mit entweder 00 oder 01, oben links von jeder Regalansicht. 
+---
+= Ändern Sie Shelf-IDs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Shelf-ID ist eine Nummer, die ein Shelf im Storage Array eindeutig identifiziert. Die Regale werden nacheinander nummeriert, beginnend mit entweder 00 oder 01, oben links von jeder Regalansicht.
+
+Die Controller-Firmware weist automatisch die Shelf-ID zu. Sie können diese Nummer jedoch ändern, wenn Sie ein anderes Bestellschema erstellen möchten.
+
+.Schritte
+. Wählen Sie *Hardware*.
+. Wählen Sie die Dropdown-Liste für das Controller-Shelf oder Laufwerk-Shelf aus, und wählen Sie dann *ID ändern* aus.
+. Wählen Sie im Dialogfeld Shelf-ID ändern die Dropdown-Liste aus, um die verfügbaren Nummern anzuzeigen.
++
+In diesem Dialogfeld werden keine IDs angezeigt, die derzeit aktiven Shelfs zugewiesen sind.
+
+. Wählen Sie eine verfügbare Nummer aus, und klicken Sie dann auf *Speichern*.
++
+Je nach gewählter Nummer kann die Shelf-Reihenfolge auf der Hardware-Seite neu angeordnet werden. Auf Wunsch können Sie mit den nach-oben/unten-Pfeilen oben rechts auf jedem Regal die Reihenfolge neu einlesen.
+
+

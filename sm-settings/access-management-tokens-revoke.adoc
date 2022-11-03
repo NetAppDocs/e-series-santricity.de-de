@@ -1,0 +1,26 @@
+---
+permalink: sm-settings/access-management-tokens-revoke.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, revoke tokens 
+summary: Sie können alle Zugriffstoken aufheben, wenn Sie feststellen, dass ein Token kompromittiert wurde. 
+---
+= Access Token widerrufen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können alle Zugriffstoken aufheben, wenn Sie feststellen, dass ein Token kompromittiert wurde oder wenn Sie eine manuelle Schlüsselrotation für die kryptografischen Schlüssel durchführen möchten, die zum Signieren und Validieren der Access Tokens verwendet werden.
+
+Mit diesem Vorgang werden die zum Signieren der Token verwendeten Schlüssel neu generiert. Sobald die Schlüssel zurückgesetzt wurden, werden _all_ emittierte Token sofort ungültig. Da das Speicherarray keine Token verfolgt, können einzelne Token nicht entzogen werden.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[Zugriffsverwaltung].
+. Wählen Sie die Registerkarte *Access Token* aus.
+. Wählen Sie *Alle Zugriffstoken Aufheben*.
+. Klicken Sie im Dialogfeld auf *Ja*.
+
+
+Nachdem Sie alle Token entsorgt haben, können Sie neue Token erstellen und diese sofort verwenden.

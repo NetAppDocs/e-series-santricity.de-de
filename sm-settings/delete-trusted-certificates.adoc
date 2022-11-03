@@ -1,0 +1,41 @@
+---
+permalink: sm-settings/delete-trusted-certificates.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, trusted, certificates, 
+summary: Sie können die vom Benutzer installierten Zertifikate löschen, die zuvor über die Registerkarte „Vertrauenswürdig“ importiert wurden. 
+---
+= Vertrauenswürdige Zertifikate löschen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die vom Benutzer installierten Zertifikate löschen, die zuvor über die Registerkarte „Vertrauenswürdig“ importiert wurden.
+
+.Bevor Sie beginnen
+* Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.
+* Wenn Sie ein vertrauenswürdiges Zertifikat mit einer neuen Version aktualisieren, muss das aktualisierte Zertifikat importiert werden, bevor Sie das alte Zertifikat löschen.
+
+
+[CAUTION]
+====
+Möglicherweise verlieren Sie den Zugriff auf ein System, wenn Sie ein Zertifikat löschen, das zur Authentifizierung der Controller und eines anderen Servers, z. B. eines LDAP-Servers verwendet wird, bevor Sie ein Ersatzzertifikat importieren.
+
+====
+Diese Aufgabe beschreibt das Löschen von vom Benutzer installierten Zertifikaten. Die vorinstallierten, selbstsignierten Zertifikate können nicht gelöscht werden.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[Zertifikate].
+. Wählen Sie die Registerkarte * Trusted* aus.
++
+In der Tabelle sind die vertrauenswürdigen Zertifikate des Speicher-Arrays aufgeführt.
+
+. Wählen Sie in der Tabelle das Zertifikat aus, das Sie entfernen möchten.
+. Klicken Sie auf Menü:Sonstige Aufgaben[Löschen].
++
+Das Dialogfeld Vertrauenswürdiges Zertifikat bestätigen wird geöffnet.
+
+. Typ `delete` Klicken Sie im Feld auf *Löschen*.
+

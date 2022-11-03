@@ -1,0 +1,53 @@
+---
+permalink: sm-mirroring/synchronous-mirroring-status.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, status, 
+summary: Der Status eines synchronen gespiegelten Paares gibt an, ob die Daten auf dem primären Volume und auf dem sekundären Volume synchronisiert werden. Ein Spiegelstatus ist unabhängig vom Komponentenstatus der Volumes im gespiegelten Paar. 
+---
+= Status der synchronen Spiegelung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der Status eines synchronen gespiegelten Paars gibt an, ob die Daten auf dem primären Volume und auf dem sekundären Volume synchronisiert werden. Ein Spiegelstatus ist unabhängig vom Komponentenstatus der Volumes im gespiegelten Paar.
+
+[NOTE]
+====
+Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+
+====
+Synchrone gespiegelte Paare können einen der folgenden Status aufweisen:
+
+* *Optimal*
++
+Gibt an, dass die Volumes im gespiegelten Paar synchronisiert werden. Das bedeutet, dass die Fabric-Verbindung zwischen den Storage-Arrays funktionsfähig ist und jedes Volume sich in dem gewünschten Betriebszustand befindet.
+
+* *Synchronisieren*
++
+Zeigt den Fortschritt der Datensynchronisierung zwischen den gespiegelten Paaren an. Dieser Status wird auch während der ersten Synchronisierung angezeigt.
+
++
+Nach einer Unterbrechung der Kommunikationsverbindung werden nur die Datenblöcke, die sich während der Verbindungsunterbrechung auf dem primären Volume geändert haben, auf das sekundäre Volume kopiert.
+
+* *Nicht Synchronisiert*
++
+Zeigt an, dass das Speicher-Array des primären Volumes keine eingehenden Daten auf das Remote-Array schreiben kann. Der lokale Host kann weiterhin auf das primäre Volume schreiben, aber Remote-Schreibvorgänge erfolgen nicht. Verschiedene Bedingungen können verhindern, dass das Storage-Array des primären Volume eingehende Daten auf das sekundäre Volume schreibt, z. B.:
+
++
+** Auf das sekundäre Volume ist nicht zugegriffen werden kann.
+** Auf das Remote-Speicher-Array kann nicht zugegriffen werden.
+** Auf die Fabric-Verbindung zwischen den Storage-Arrays kann nicht zugegriffen werden.
+** Das sekundäre Volume kann nicht mit einem neuen World Wide Identifier (WWID) aktualisiert werden.
+
+
+* * Ausgesetzt*
++
+Zeigt an, dass der Synchronspiegelungsvorgang vom Benutzer unterbrochen wurde. Wenn ein gespiegeltes Paar ausgesetzt wird, wird kein Versuch unternommen, das sekundäre Volume zu kontaktieren. Alle Schreibvorgänge auf dem primären Volume werden permanent in den reservierten Kapazitäts-Volumes des Spiegels protokolliert.
+
+* *Fehlgeschlagen*
++
+Zeigt an, dass der Vorgang der synchronen Spiegelung nicht normal ausgeführt werden kann, weil das primäre Volume, das sekundäre Volume oder die reservierte Kapazität des Spiegels ausfällt.
+
+

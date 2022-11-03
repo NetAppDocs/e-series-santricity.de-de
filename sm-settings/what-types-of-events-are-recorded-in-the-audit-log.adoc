@@ -1,0 +1,20 @@
+---
+permalink: sm-settings/what-types-of-events-are-recorded-in-the-audit-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, events, recorded, audit, log, 
+summary: Das Revisionsprotokoll kann Änderungsereignisse oder sowohl Änderungs- als auch schreibgeschützte Ereignisse aufzeichnen. 
+---
+= Welche Arten von Ereignissen werden im Auditprotokoll aufgezeichnet?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das Revisionsprotokoll kann Änderungsereignisse oder sowohl Änderungs- als auch schreibgeschützte Ereignisse aufzeichnen.
+
+Abhängig von den Richtlinieneinstellungen werden die folgenden Ereignistypen angezeigt:
+
+* *Änderungsereignisse* -- Benutzeraktionen aus System Manager heraus, die Änderungen am System, z. B. die Bereitstellung von Speicher, mit sich bringen.
+* *Modifizierung und schreibgeschützte Ereignisse* -- Benutzeraktionen, die Änderungen am System beinhalten, sowie Ereignisse, die Informationen anzeigen oder herunterladen, wie zum Beispiel die Anzeige von Volume-Zuweisungen.
+

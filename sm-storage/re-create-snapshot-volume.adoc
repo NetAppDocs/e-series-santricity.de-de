@@ -1,0 +1,59 @@
+---
+permalink: sm-storage/re-create-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, re-create, snapshot, volume 
+summary: Sie können ein Snapshot-Volumen oder ein Snapshot-Snapshot-Volumen, das Sie zuvor deaktiviert haben, neu erstellen. Das erneute Erstellen eines Snapshot Volumes dauert weniger Zeit als das Erstellen eines neuen. 
+---
+= Snapshot Volumen neu erstellen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können ein Snapshot-Volumen oder ein Snapshot-Snapshot-Volumen, das Sie zuvor deaktiviert haben, neu erstellen. Das erneute Erstellen eines Snapshot Volumes dauert weniger Zeit als das Erstellen eines neuen.
+
+.Bevor Sie beginnen
+* Das Snapshot Volume muss sich entweder im optimalen oder deaktivierten Zustand befinden.
+* Alle Snapshot-Volumes der Mitglieder müssen sich im deaktivierten Zustand befinden, bevor Sie das Snapshot-Volume der Snapshot-Konsistenzgruppe neu erstellen können.
+
+
+Sie können ein Snapshot-Volumen eines einzelnen Mitglieds nicht neu erstellen, sondern nur das gesamte Snapshot-Consistency Group-Snapshot-Volumen neu erstellen.
+
+[NOTE]
+====
+Wenn das Snapshot-Volumen oder das Snapshot-Snapshot-Volumen Teil einer Online-Kopie-Beziehung ist, können Sie die Option zur erneuten Erstellung auf dem Volume nicht ausführen.
+
+====
+.Schritte
+. Wählen Sie Menü:Storage[Snapshots].
+. Wählen Sie die Registerkarte *Snapshot Volumes* aus.
++
+Die Tabelle Snapshot Volumes wird angezeigt und zeigt alle dem Speicher-Array zugeordneten Snapshot-Volumes an.
+
+. Wählen Sie das Snapshot-Volumen aus, das Sie neu erstellen möchten, und wählen Sie dann Menü:Sonstige Aufgaben[recreate].
++
+Das Dialogfeld Snapshot-Volume neu erstellen wird angezeigt.
+
+. Wählen Sie eine der folgenden Optionen:
++
+** *Ein vorhandenes Snapshot-Image, das aus Volume <Name>* erstellt wurde
++
+Wählen Sie diese Option aus, um ein vorhandenes Snapshot-Image anzuzeigen, aus dem das Snapshot-Volume neu erstellt werden soll.
+
+** *Ein neues (Instant) Snapshot-Image des Datenträgers <Name>*
++
+Wählen Sie diese Option aus, um ein neues Snapshot-Image zu erstellen, aus dem das Snapshot-Volume neu erstellt werden soll.
+
+
+
+. Klicken Sie Auf *Reproduzieren*.
+
+
+System Manager führt die folgenden Aktionen durch:
+
+* Löscht alle `write` Daten auf einem zugehörigen Snapshot Repository Volume.
+* Die Parameter des Snapshot-Volumes oder des Snapshot-Volumes von Konsistenzgruppen bleiben mit den zuvor deaktivierten Volume-Parametern identisch.
+* Behält die ursprünglichen Namen für das Snapshot Volume oder das Snapshot Consistency Group Snapshot Volume bei.
+

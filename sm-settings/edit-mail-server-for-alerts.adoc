@@ -1,0 +1,45 @@
+---
+permalink: sm-settings/edit-mail-server-for-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, mail, server, alerts, 
+summary: Sie können die E-Mail-Server-Adresse und die E-Mail-Absenderadresse ändern, die für E-Mail-Benachrichtigungen verwendet werden. 
+---
+= E-Mail-Server für Warnmeldungen bearbeiten
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die E-Mail-Server-Adresse und die E-Mail-Absenderadresse ändern, die für E-Mail-Benachrichtigungen verwendet werden.
+
+Die Adresse des Mail-Servers, den Sie ändern, muss verfügbar sein. Bei der Adresse kann es sich um eine IPv4- oder IPv6-Adresse oder einen vollqualifizierten Domänennamen handeln.
+
+[NOTE]
+====
+Um einen vollständig qualifizierten Domänennamen zu verwenden, müssen Sie auf beiden Controllern einen DNS-Server konfigurieren. Sie können einen DNS-Server auf der Seite Hardware konfigurieren.
+
+====
+.Schritte
+. Wählen Sie Menü:Einstellungen[Alarme].
+. Wählen Sie die Registerkarte *E-Mail* aus.
+. Wählen Sie *E-Mail-Server Konfigurieren*.
++
+Das Dialogfeld Mailserver konfigurieren wird geöffnet.
+
+. Bearbeiten Sie die Adresse des E-Mail-Servers, die Absenderinformationen und die Kontaktinformationen.
++
+** *Mail-Server-Adresse* -- Bearbeiten Sie den vollqualifizierten Domainnamen, die IPv4-Adresse oder die IPv6-Adresse des Mailservers.
++
+[NOTE]
+====
+Um einen vollständig qualifizierten Domänennamen zu verwenden, müssen Sie auf beiden Controllern einen DNS-Server konfigurieren. Sie können einen DNS-Server auf der Seite Hardware konfigurieren.
+
+====
+** *E-Mail-Absender-Adresse* -- Bearbeiten Sie die E-Mail-Adresse, die als Absender der E-Mail verwendet werden soll. Diese Adresse wird im Feld „von“ der E-Mail-Nachricht angezeigt.
+** *Kontaktinformationen in E-Mail einfügen* -- um die Kontaktdaten des Absenders zu bearbeiten, wählen Sie diese Option aus, und bearbeiten Sie dann den Namen und die Telefonnummer.
+
+
+. Klicken Sie Auf *Speichern*.
+

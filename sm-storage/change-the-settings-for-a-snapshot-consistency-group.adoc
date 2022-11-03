@@ -1,0 +1,79 @@
+---
+permalink: sm-storage/change-the-settings-for-a-snapshot-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, settings, snapshot, consistency group 
+summary: Ändern Sie die Einstellungen für eine Snapshot Konsistenzgruppe, wenn Sie ihren Namen, die Einstellungen zum automatischen Löschen oder die maximale Anzahl von Snapshot Images ändern möchten. 
+---
+= Ändern Sie die Einstellungen für eine Snapshot Konsistenzgruppe
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ändern Sie die Einstellungen für eine Snapshot Konsistenzgruppe, wenn Sie ihren Namen, die Einstellungen zum automatischen Löschen oder die maximale Anzahl von Snapshot Images ändern möchten.
+
+.Schritte
+. Wählen Sie Menü:Storage[Snapshots].
+. Klicken Sie auf die Registerkarte *Snapshot Consistency Groups*.
+. Wählen Sie die Snapshot Consistency Group aus, die Sie bearbeiten möchten, und klicken Sie dann auf *View/Edit Settings*.
++
+Das Dialogfeld Einstellung für Snapshot-Konsistenzgruppen wird angezeigt.
+
+. Ändern Sie ggf. die Einstellungen für die Snapshot-Konsistenzgruppe.
++
+.Felddetails
+====
+[cols="25h,~"]
+|===
+| Einstellung | Beschreibung 
+
+
+ a| 
+*Snapshot Consistency Group Einstellungen*
+
+
+
+ a| 
+Name
+ a| 
+Sie können den Namen für die Snapshot Konsistenzgruppe ändern.
+
+
+
+ a| 
+Automatisches Löschen
+ a| 
+Aktivieren Sie das Kontrollkästchen, wenn Snapshot-Bilder nach dem festgelegten Limit automatisch gelöscht werden sollen. Ändern Sie die Begrenzung mit dem Spinner-Feld. Wenn Sie dieses Kontrollkästchen deaktivieren, wird die Erstellung von Snapshot-Bildern nach 32 Bildern angehalten.
+
+
+
+ a| 
+Begrenzung des Snapshot Images
+ a| 
+Sie können die maximale Anzahl von Snapshot Images ändern, die für eine Snapshot-Gruppe zulässig sind.
+
+
+
+ a| 
+Snapshot Zeitplan
+ a| 
+Dieses Feld gibt an, ob ein Zeitplan der Snapshot-Konsistenzgruppe zugeordnet ist.
+
+
+
+ a| 
+*Assoziierte Objekte*
+
+
+
+ a| 
+Member-Volumes
+ a| 
+Sie können die Anzahl der Mitglied-Volumes anzeigen, die der Snapshot-Konsistenzgruppe zugeordnet sind.
+
+|===
+====
+. Klicken Sie Auf *Speichern*.
+

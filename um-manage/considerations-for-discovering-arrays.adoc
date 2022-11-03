@@ -1,0 +1,59 @@
+---
+permalink: um-manage/considerations-for-discovering-arrays.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, considerations, discovering, arrays 
+summary: Bevor Unified Manager Storage-Ressourcen anzeigen und verwalten kann, muss er die Speicherarrays ermitteln, die Sie im Netzwerk Ihres Unternehmens managen möchten. Sie können mehrere Arrays ermitteln oder ein einziges Array erkennen. 
+---
+= Überlegungen bei der Array-Ermittlung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bevor Unified Manager Storage-Ressourcen anzeigen und verwalten kann, muss er die Storage-Arrays ermitteln, die Sie im Netzwerk Ihres Unternehmens managen möchten. Sie können mehrere Arrays ermitteln oder ein einziges Array erkennen.
+
+
+
+== Erkennung mehrerer Storage-Arrays
+
+Wenn Sie mehrere Arrays ermitteln möchten, geben Sie einen Netzwerk-IP-Adressbereich ein, und Unified Manager versucht dann individuelle Verbindungen zu jeder IP-Adresse in diesem Bereich. Jedes erfolgreich erreichte Speicher-Array wird auf der Seite „Entdecken“ angezeigt und kann Ihrer Management-Domäne hinzugefügt werden.
+
+
+
+== Erkennen eines einzelnen Speicher-Arrays
+
+Wenn Sie ein einzelnes Array ermitteln möchten, geben Sie für einen der Controller im Speicher-Array die einzelne IP-Adresse ein, und das individuelle Speicher-Array wird hinzugefügt.
+
+[NOTE]
+====
+Unified Manager erkennt und zeigt nur die einzelne IP-Adresse oder IP-Adresse innerhalb eines dem Controller zugewiesenen Bereichs an. Wenn diesen Controllern alternative Controller oder IP-Adressen zugewiesen sind, die außerhalb dieser einzelnen IP-Adresse oder des IP-Adressbereichs liegen, werden sie von Unified Manager nicht ermittelt oder angezeigt. Sobald Sie jedoch das Speicher-Array hinzufügen, werden alle zugehörigen IP-Adressen ermittelt und in der Ansicht Verwalten angezeigt.
+
+====
+
+
+== Benutzeranmeldeinformationen
+
+Im Rahmen des Erkennungsvorgangs müssen Sie für jedes Speicherarray, das Sie hinzufügen möchten, das Administratorpasswort angeben.
+
+
+
+== Zertifikate für Webservices
+
+Im Rahmen der Bestandsaufnahme überprüft Unified Manager, ob die erkannten Speicher-Arrays Zertifikate von einer vertrauenswürdigen Quelle verwenden. Unified Manager verwendet zwei Arten von zertifikatbasierter Authentifizierung für alle Verbindungen, die es mit dem Browser herstellt:
+
+* * Vertrauenswürdige Zertifikate*
++
+Bei Arrays, die von Unified Manager entdeckt wurden, müssen Sie möglicherweise zusätzliche vertrauenswürdige Zertifikate installieren, die von der Zertifizierungsstelle bereitgestellt werden.
+
++
+Verwenden Sie die Schaltfläche *Import*, um diese Zertifikate zu importieren. Wenn Sie zuvor mit diesem Array verbunden haben, sind ein oder beide Controller-Zertifikate entweder abgelaufen, annulliert oder fehlen ein Stammzertifikat oder ein Zwischenzertifikat in der Zertifikatkette. Sie müssen das abgelaufene oder widersetzte Zertifikat ersetzen oder das fehlende Stammzertifikat oder Zwischenzertifikat hinzufügen, bevor Sie das Speicher-Array verwalten.
+
+* *Selbstsignierte Zertifikate*
++
+Es können auch selbstsignierte Zertifikate verwendet werden. Wenn der Administrator versucht, Arrays zu ermitteln, ohne signierte Zertifikate zu importieren, zeigt Unified Manager ein Fehlerdialogfeld an, in dem der Administrator das selbstsignierte Zertifikat akzeptieren kann. Das selbstsignierte Zertifikat des Speicher-Arrays wird als vertrauenswürdig gekennzeichnet und das Speicher-Array wird Unified Manager hinzugefügt.
+
++
+Wenn Sie den Verbindungen zum Speicher-Array nicht vertrauen, wählen Sie *Abbrechen* und validieren Sie die Sicherheitszertifikatstrategie des Speicher-Arrays, bevor Sie das Speicher-Array zu Unified Manager hinzufügen.
+
+

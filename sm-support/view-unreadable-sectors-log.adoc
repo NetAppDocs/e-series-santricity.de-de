@@ -1,0 +1,57 @@
+---
+permalink: sm-support/view-unreadable-sectors-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, unreadable, sectors, log 
+summary: Sie können das unlesbare Sektoren-Log speichern und die Datei zur Analyse an den technischen Support senden. 
+---
+= Unlesbare Sektoren-Log anzeigen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können das unlesbare Sektoren-Log speichern und die Datei zur Analyse an den technischen Support senden.
+
+Das unlesbare Sektoren-Log enthält detaillierte Aufzeichnungen von unlesbaren Sektoren, die durch Laufwerke verursacht werden, die unwiederherstellbare Medienfehler melden. Unlesbare Sektoren werden während der normalen I/O und bei Modifizierungsvorgängen, wie z.B. Rekonstruktionen, erkannt. Wenn unlesbare Sektoren auf einem Speicher-Array erkannt werden, wird für das Speicher-Array eine Warnmeldung erforderlich angezeigt. Der Recovery Guru unterscheidet, welche unlesbare Sektorbedingung Aufmerksamkeit benötigt. Daten, die in einem unlesbaren Sektor enthalten sind, können nicht wiederhergestellt werden und sollten als verloren betrachtet werden.
+
+Das unlesbare Sektoren-Log kann bis zu 1,000 unlesbare Sektoren speichern. Wenn das unlesbare Sektoren-Protokoll 1,000 Einträge erreicht, gelten die folgenden Bedingungen:
+
+* Wenn während der Rekonstruktion neue unlesbare Sektoren erkannt werden, schlägt die Rekonstruktion fehl, und es wird kein Eintrag protokolliert.
+* Bei neuen unlesbaren Sektoren, die während der E/A erkannt werden, schlägt die E/A fehl, und es wird kein Eintrag protokolliert.
++
+[NOTE]
+====
+Dazu gehören RAID 5-Schreibvorgänge und RAID 6-Schreibvorgänge, die vor dem Überlauf erfolgreich waren.
+
+====
+
+
+[CAUTION]
+====
+*Möglicher Datenverlust* -- Wiederherstellung aus unlesbaren Sektoren ist ein kompliziertes Verfahren, das mehrere verschiedene Methoden beinhalten kann. Führen Sie diesen Vorgang nur aus, wenn Sie vom technischen Support dazu aufgefordert werden.
+
+====
+.Schritte
+. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie *Unlesbare Sektoren Anzeigen/Löschen*.
+. So speichern Sie das Protokoll der unlesbaren Sektoren:
++
+.. In der ersten Spalte der Tabelle können Sie entweder einzelne Volumes auswählen, für die Sie das unlesbare Sektoren-Protokoll speichern möchten (klicken Sie auf das Kontrollkästchen neben jedem Volume), oder wählen Sie alle Volumes aus (aktivieren Sie das Kontrollkästchen in der Tabellenüberschrift).
++
+Um bestimmte Volumes zu finden, können Sie eine der Spalten sortieren oder Zeichen in das Feld *Filter* eingeben.
+
+.. Klicken Sie Auf *Speichern*.
+
+
++
+Die Datei wird im Ordner Downloads für Ihren Browser mit dem Namen gespeichert `unreadable-sectors.txt`.
+
+. Wenn Sie vom technischen Support aufgefordert werden, das unlesbare Sektoren-Protokoll zu löschen, führen Sie die folgenden Schritte aus:
++
+.. In der ersten Spalte der Tabelle können Sie entweder einzelne Volumes auswählen, für die Sie das unlesbare Sektoren-Protokoll löschen möchten (klicken Sie auf das Kontrollkästchen neben jedem Volume) oder alle Volumes auswählen (aktivieren Sie das Kontrollkästchen in der Tabellenüberschrift).
+.. Klicken Sie auf *Löschen* und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
+
+
+

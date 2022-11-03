@@ -1,0 +1,194 @@
+---
+permalink: sm-storage/how-do-i-view-and-interpret-all-ssd-cache-statistics.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ssd cache, statistics 
+summary: Sie können nominale Statistiken und detaillierte Statistiken für SSD Cache anzeigen. Die Nominalstatistiken sind eine Untergruppe der detaillierten Statistiken. 
+---
+= Wie kann ich sämtliche SSD Cache Statistiken anzeigen und interpretieren?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können nominale Statistiken und detaillierte Statistiken für SSD Cache anzeigen. Die Nominalstatistiken sind eine Untergruppe der detaillierten Statistiken.
+
+Die detaillierten Statistiken können nur angezeigt werden, wenn Sie alle SSD-Statistiken zu A exportieren `.csv` Datei: Während Sie die Statistiken überprüfen und interpretieren, beachten Sie, dass einige Interpretationen durch die Prüfung einer Kombination von Statistiken abgeleitet werden.
+
+
+
+== Nominale Statistiken
+
+Um SSD Cache Statistiken anzuzeigen, wählen Sie Menü:Speicher[Pools & Volume Groups]. Wählen Sie den SSD-Cache aus, für den Sie Statistiken anzeigen möchten, und wählen Sie dann Menü:Mehr[Statistik anzeigen]. Die nominalen Statistiken werden im Dialogfeld „View SSD Cache Statistics“ angezeigt.
+
+Die folgende Liste enthält nominale Statistiken, die eine Untermenge der detaillierten Statistiken sind.
+
+[cols="25h,~"]
+|===
+| Nominale Statistik | Beschreibung 
+
+
+ a| 
+Lese-/Schreibvorgänge
+ a| 
+Die Gesamtzahl der Host-Lesevorgänge von bzw. Host-Schreibvorgängen auf die SSD Cache-fähigen Volumes. Vergleichen Sie die Lesevorgänge relativ zu den Schreibvorgängen. Für einen effektiven SSD-Cache-Vorgang müssen die Schreibvorgänge größer sein als die Schreibvorgänge. Je mehr das Verhältnis von Lese- zu Schreibzugriffen ist, desto besser der Cache-Betrieb.
+
+
+
+ a| 
+Cache-Treffer
+ a| 
+Die Anzahl der Cache-Treffer.
+
+
+
+ a| 
+Cache-Treffer (%)
+ a| 
+Abgeleitet aus Cache-Hits / (Lese- + Schreibvorgänge). Der Cache-Trefferprozentsatz sollte im Hinblick auf einen effektiven SSD-Cache-Vorgang mehr als 50 Prozent betragen. Eine kleine Zahl könnte auf mehrere Dinge hinweisen:
+
+* Das Verhältnis von Lese- zu Schreibvorgängen ist zu klein
+* Lesezugriffe werden nicht wiederholt
+* Cache-Kapazität ist zu klein
+
+
+
+
+ a| 
+Cache-Zuweisung (%)
+ a| 
+Die zugewiesene SSD-Cache-Storage-Menge wird als Prozentsatz des SSD-Cache-Storage ausgedrückt, der für diesen Controller verfügbar ist. Abgeleitet von zugewiesenen Bytes/verfügbaren Bytes. Der Prozentsatz der Cache-Zuweisung wird normalerweise als 100 Prozent angezeigt. Wenn diese Zahl weniger als 100 % beträgt, bedeutet dies, dass entweder der Cache nicht aufgewärmt ist oder die SSD Cache Kapazität größer ist als alle Daten, auf die zugegriffen wird. Im zweiten Fall könnte eine kleinere SSD-Cache-Kapazität das gleiche Performance-Niveau bieten. Beachten Sie, dass dies nicht bedeutet, dass zwischengespeicherte Daten im SSD-Cache gespeichert wurden. Es ist lediglich ein Vorbereitungsschritt, bevor die Daten im SSD-Cache platziert werden können.
+
+
+
+ a| 
+Cache-Auslastung (%)
+ a| 
+Die Menge an SSD-Cache-Storage, die Daten von aktivierten Volumes enthält, ausgedrückt als Prozentsatz des zugewiesenen SSD-Cache-Storage. Dieser Wert stellt die Auslastung oder Dichte des SSD-Caches dar, der aus Benutzerdaten-Bytes/zugewiesenen Bytes abgeleitet wird. Die Cache-Auslastung ist in der Regel niedriger als 100 Prozent, vielleicht viel niedriger. Diese Zahl zeigt den Prozentsatz der SSD-Cache-Kapazität an, die mit Cache-Daten gefüllt ist. Diese Zahl ist niedriger als 100 %, da jede Zuweisungseinheit des SSD Cache, der SSD Cache-Block, in kleinere Einheiten unterteilt wird, die als Sub-Blöcke bezeichnet werden und die etwas unabhängig gefüllt werden. Eine höhere Zahl ist im Allgemeinen besser, aber die Leistungssteigerung kann auch bei einer kleineren Zahl signifikant sein.
+
+|===
+
+
+== Detaillierte Statistiken
+
+Die detaillierten Statistiken bestehen aus den Nominalstatistiken sowie zusätzlichen Statistiken. Diese zusätzlichen Statistiken werden zusammen mit den nominalen Statistiken gespeichert, werden aber im Gegensatz zu den nominalen Statistiken nicht im Dialogfeld „View SSD Cache Statistics“ angezeigt. Sie können die detaillierten Statistiken nur anzeigen, nachdem Sie die Statistiken auf A exportiert haben `.csv` Datei:
+
+Beim Anzeigen des `.csv` Beachten Sie, dass die detaillierten Statistiken nach den Nominalstatistiken aufgelistet sind:
+
+[cols="25h,~"]
+|===
+| Detaillierte Statistiken | Beschreibung 
+
+
+ a| 
+Blöcke Werden Gelesen
+ a| 
+Die Anzahl der Blöcke im Host-Lesezugriff.
+
+
+
+ a| 
+Schreibblöcke
+ a| 
+Die Anzahl der Blöcke im Host-Schreibvorgang.
+
+
+
+ a| 
+Full-Hit-Blöcke
+ a| 
+Die Anzahl der Blöcke im Cache-Treffer. Die vollständigen Hit-Blöcke geben an, wie viele Blöcke vollständig aus SSD Cache gelesen wurden. Der SSD-Cache bietet nur Vorteile für die Performance bei Vorgängen, die Vollcache-Treffer sind.
+
+
+
+ a| 
+Teilweise Treffer
+ a| 
+Die Anzahl der Host-Lesezugriffe, bei denen mindestens ein Block, aber nicht alle Blöcke, im SSD Cache waren. Ein partieller Hit ist ein SSD Cache *miss* wo die Reads vom Basis-Volume erfüllt wurden.
+
+
+
+ a| 
+Teilweise Treffer - Blöcke
+ a| 
+Die Anzahl der Blöcke in Teilbestrahungen. Teilweise Cache-Treffer und partielle Cache-Trefferblöcke resultieren aus einem Vorgang, der nur einen Teil seiner Daten im SSD Cache enthält. In diesem Fall muss der Vorgang die Daten aus dem zwischengespeicherten Festplattenlaufwerk (HDD) abrufen. Der SSD-Cache bietet für diese Art von Hit keine Performance-Vorteile. Wenn die Anzahl der teilweise Cachetreffer-Blöcke höher ist als die der Vollcache-Trefferblöcke, könnte ein anderer I/O-Merkmalstyp (Filesystem, Datenbank oder Web-Server) die Performance verbessern. Es wird erwartet, dass es im Vergleich zu Cache-Hits eine größere Anzahl von Teileinsätzen und -Auslassungen gibt, während sich der SSD Cache wärmt.
+
+
+
+ a| 
+Fehlschläge
+ a| 
+Die Anzahl der Host-Lesevorgänge, wo sich keine der Blöcke im SSD Cache befanden. Ein Ausfall des SSD-Caches tritt auf, wenn die Lesevorgänge vom Basis-Volume zufrieden waren. Es wird erwartet, dass es im Vergleich zu Cache-Hits eine größere Anzahl von Teileinsätzen und -Auslassungen gibt, während sich der SSD Cache wärmt.
+
+
+
+ a| 
+Fehlschläge - Blöcke
+ a| 
+Die Anzahl der Blöcke in Fehlschläge.
+
+
+
+ a| 
+Ausfüllen Von Aktionen (Host Reads)
+ a| 
+Die Anzahl der Host-Lesevorgänge, auf denen Daten vom Basis-Volume in den SSD Cache kopiert wurden.
+
+
+
+ a| 
+Füllen Sie Aktionen (Host-Lesevorgänge) - Blöcke
+ a| 
+Die Anzahl der Blöcke in den Befüllen-Aktionen (Host-Lesevorgänge).
+
+
+
+ a| 
+Ausfüllen Von Aktionen (Host-Schreibvorgänge)
+ a| 
+Die Anzahl der Host-Schreibvorgänge, bei denen Daten vom Basis-Volume in den SSD-Cache kopiert wurden. Die Anzahl der Befüllen-Aktionen (Host-Schreibvorgänge) kann für die Cache-Konfigurationseinstellungen, die den Cache als Folge eines I/O-Vorgangs nicht füllen, Null sein.
+
+
+
+ a| 
+Befüllen Von Aktionen (Host Writes) - Blöcken
+ a| 
+Die Anzahl der Blöcke in den Befüllen-Aktionen (Host-Schreibvorgänge).
+
+
+
+ a| 
+Aktionen Ungültig Machen
+ a| 
+Die Anzahl der Mal, dass Daten im SSD-Cache ungültig oder entfernt wurden. Für jeden Host-Schreibanforderung, jede Host-Leseanforderung mit Forced Unit Access (FUA), jede Anforderung zur Überprüfung und unter anderen Umständen wird ein nicht validierter Cache-Vorgang durchgeführt.
+
+
+
+ a| 
+Recyclingmaßnahmen
+ a| 
+Die Anzahl der Zeiten, in denen der SSD Cache Block für ein anderes Basis-Volume und/oder einen anderen LBA-Bereich (Logical Block Addressing) wiederverwendet wurde. Für einen effektiven Cache-Betrieb muss die Anzahl der Recycles im Vergleich zur kombinierten Anzahl von Lese- und Schreibvorgängen gering sein. Wenn sich die Anzahl der Recycle-Aktionen nahe der kombinierten Anzahl von Lese- und Schreibvorgängen befindet, ist der SSD Cache begeistert. Entweder die Cache-Kapazität muss erhöht werden oder der Workload eignet sich nicht für den Einsatz mit SSD Cache.
+
+
+
+ a| 
+Verfügbare Bytes
+ a| 
+Die Anzahl der im SSD-Cache zur Verwendung durch diesen Controller verfügbaren Bytes.
+
+
+
+ a| 
+Zugewiesene Bytes
+ a| 
+Die Anzahl der Bytes, die diesem Controller aus dem SSD-Cache zugewiesen wurden. Aus dem SSD-Cache zugewiesene Bytes können leer sein oder Daten aus Basis-Volumes enthalten.
+
+
+
+ a| 
+Benutzerdaten Bytes
+ a| 
+Die Anzahl der zugewiesenen Bytes im SSD-Cache, die Daten von Basis-Volumes enthalten. Die verfügbaren Bytes, zugewiesenen Bytes und Benutzerdaten Bytes werden zur Berechnung des prozentualen Cache-Zuordnungsanteils und des Prozentsatzes der Cache-Auslastung verwendet.
+
+|===

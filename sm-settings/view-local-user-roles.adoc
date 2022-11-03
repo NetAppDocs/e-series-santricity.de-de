@@ -1,0 +1,35 @@
+---
+permalink: sm-settings/view-local-user-roles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, local, user, roles, 
+summary: 'Auf der Registerkarte Lokale Benutzerrollen können Sie die Zuordnungen der Benutzerprofile zu den Standardrollen anzeigen. Diese Zuordnungen sind Teil der RBAC (rollenbasierte Zugriffssteuerung), die im Storage Array durchgesetzt wird.' 
+---
+= Zeigen Sie lokale Benutzerrollen an
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Registerkarte Lokale Benutzerrollen können Sie die Zuordnungen der Benutzerprofile zu den Standardrollen anzeigen. Diese Zuordnungen sind Teil der RBAC (rollenbasierte Zugriffssteuerung), die im Storage Array durchgesetzt wird.
+
+Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
+
+Die Benutzerprofile und Zuordnungen können nicht geändert werden. Es können nur Passwörter geändert werden.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[Zugriffsverwaltung].
+. Wählen Sie die Registerkarte * Lokale Benutzerrollen* aus.
++
+Die Benutzerprofile sind in der Tabelle aufgeführt:
+
++
+** *Root Admin* (admin) -- Super-Administrator, der Zugriff auf alle Funktionen im System hat. Dieses Benutzerprofil enthält alle Rollen.
+** *Storage Admin* (Storage) -- der Administrator für die gesamte Storage-Bereitstellung verantwortlich. Dieses Benutzerprofil umfasst die folgenden Rollen: Storage-Administrator, Support-Administrator und Monitor.
+** *Security Admin* (Security) -- der für die Sicherheitskonfiguration verantwortliche Benutzer, einschließlich Zugriffsverwaltung, Zertifikatverwaltung und Secure-Enabled Drive-Funktionen. Dieses Benutzerprofil umfasst die folgenden Rollen: Security Admin und Monitor.
+** *Support Admin* (Support) -- der Benutzer ist verantwortlich für Hardware-Ressourcen, Ausfalldaten und Firmware-Upgrades. Dieses Benutzerprofil umfasst die folgenden Rollen: Unterstützen Sie Admin und Monitor.
+** *Monitor* (Monitor) -- Ein Benutzer mit schreibgeschütztem Zugriff auf das System. Dieses Benutzerprofil enthält nur die Rolle Monitor.
+
+
+

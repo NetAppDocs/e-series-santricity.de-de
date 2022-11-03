@@ -1,0 +1,20 @@
+---
+permalink: sm-settings/how-do-i-interpret-nvme-over-fabrics-statistics.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, interpret, nvme, over, Fabrics, statistics, 
+summary: Im Dialogfeld „Statistik von NVMe over Fabrics anzeigen“ werden Statistiken für das NVMe-Subsystem und die RDMA-Schnittstelle angezeigt. Alle Statistiken sind schreibgeschützt und können nicht festgelegt werden. 
+---
+= Wie interpretiere ich NVMe over Fabrics Statistiken?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Dialogfeld „Statistik von NVMe over Fabrics anzeigen“ werden Statistiken für das NVMe-Subsystem und die RDMA-Schnittstelle angezeigt. Alle Statistiken sind schreibgeschützt und können nicht festgelegt werden.
+
+* *NVMe Subsystem-Statistik* -- zeigt Statistiken für den NVMe-Controller und seine Queue an. Der NVMe Controller stellt einen Zugriffspfad zwischen einem Host und den Namespaces im Storage-Array bereit. Sie können die NVMe-Subsystem-Statistiken für Elemente wie Verbindungsfehler, Zurücksetzen und Herunterfahren überprüfen. Für weitere Informationen über diese Statistiken klicken Sie auf *Legende anzeigen für Tabellenüberschriften*.
+* *RDMA Interface Statistics* -- stellt Statistiken für alle NVMe over Fabrics Ports auf der RDMA-Schnittstelle bereit, die Performance-Statistiken und Link-Fehlerinformationen enthält, die mit jedem Switch-Port verbunden sind. Diese Registerkarte wird nur angezeigt, wenn NVMe over Fabrics-Ports verfügbar sind. Für weitere Informationen zu den Statistiken klicken Sie auf *Legende anzeigen für Tabellenüberschriften*.
+
+
+Sie können jede dieser Statistiken als RAW-Statistiken oder als Baseline-Statistiken anzeigen. RAW-Statistiken sind alle Statistiken, die seit dem Start der Controller gesammelt wurden. Baseline-Statistiken sind zeitpunktgenaue Statistiken, die seit dem Festlegen der Baseline-Zeit erfasst wurden.

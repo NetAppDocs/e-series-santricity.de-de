@@ -1,0 +1,52 @@
+---
+permalink: sm-hardware/considerations-for-assigning-ip-addresses.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, considerations, assigning, ip, addresses 
+summary: Standardmäßig werden Controller bei beiden Netzwerk-Ports mit aktiviertem DHCP ausgeliefert. Sie können statische IP-Adressen zuweisen, die statischen Standardadressen verwenden oder DHCP-zugewiesene IP-Adressen verwenden. Sie können auch eine statusfreie IPv6-Konfiguration verwenden. 
+---
+= Überlegungen beim Zuweisen von IP-Adressen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Standardmäßig werden Controller bei beiden Netzwerk-Ports mit aktiviertem DHCP ausgeliefert. Sie können statische IP-Adressen zuweisen, die statischen Standardadressen verwenden oder DHCP-zugewiesene IP-Adressen verwenden. Sie können auch eine statusfreie IPv6-Konfiguration verwenden.
+
+[NOTE]
+====
+IPv6 ist bei neuen Controllern standardmäßig deaktiviert, Sie können jedoch die Management-Port-IP-Adressen mit einer alternativen Methode konfigurieren und dann IPv6 auf den Management-Ports mit System Manager aktivieren.
+
+====
+Wenn sich der Netzwerk-Port in einem Status „Link down“ befindet, d. h. von einem LAN getrennt, meldet das System seine Konfiguration entweder statisch, zeigt eine IP-Adresse von 0.0.0.0 (frühere Freigaben) an oder DHCP ist aktiviert, ohne dass eine IP-Adresse gemeldet wurde (spätere Freigaben). Wenn sich der Netzwerkport im Status „Verbindung nach oben“ befindet (d. h., verbunden mit einem LAN), versucht er, eine IP-Adresse über DHCP abzurufen.
+
+Wenn der Controller bei einem bestimmten Netzwerkport keine DHCP-Adresse erhalten kann, wird auf eine Standard-IP-Adresse zurückgesetzt, die bis zu 3 Minuten dauert. Folgende Standard-IP-Adressen sind vorgesehen:
+
+[listing]
+----
+Controller 1 (port 1): IP Address: 192.168.128.101
+----
+[listing]
+----
+Controller 1 (port 2): IP Address: 192.168.129.101
+----
+[listing]
+----
+Controller 2 (port 1): IP Address: 192.168.128.102
+----
+[listing]
+----
+Controller 2 (port 2): IP Address: 192.168.129.102
+----
+Beim Zuweisen von IP-Adressen:
+
+* Reservieren Sie Port 2 auf den Controllern für den Kunden-Support. Ändern Sie nicht die Standard-Netzwerkeinstellungen (DHCP ist aktiviert).
+* Verwenden Sie SANtricity System Manager, um statische IP-Adressen für E2800 und E5700 Controller festzulegen. Verwenden Sie SANtricity Storage Manager, um statische IP-Adressen für E2700 und E5600 Controller festzulegen. Nach der Konfiguration einer statischen IP-Adresse bleibt sie durch alle Verbindungs-Down-/Up-Ereignisse festgelegt.
+* Um DHCP zum Zuweisen der IP-Adresse des Controllers zu verwenden, verbinden Sie den Controller mit einem Netzwerk, das DHCP-Anfragen verarbeiten kann. Verwenden Sie einen permanenten DHCP-Leasing.
++
+[NOTE]
+====
+Die Standardadressen werden nicht über Ereignisse mit Verbindungsabfällen hinweg beibehalten. Wenn ein Netzwerk-Port auf einem Controller auf DHCP eingestellt ist, versucht der Controller bei jedem Link-Ereignis eine DHCP-Adresse zu erhalten, einschließlich Einführungen von Kabeln, Neustarts und Energiezyklen. Jedes Mal, wenn ein DHCP-Versuch fehlschlägt, wird die statische Standard-IP-Adresse für diesen Port verwendet.
+
+====
+

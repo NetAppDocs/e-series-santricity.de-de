@@ -1,0 +1,41 @@
+---
+permalink: sm-support/overview-event-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, event, log 
+summary: Verwenden Sie das Ereignisprotokoll, um einen historischen Datensatz mit Änderungen und Ereignissen anzuzeigen, die auf dem Speicher-Array stattgefunden haben. 
+---
+= Übersicht über das Ereignisprotokoll
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das Ereignisprotokoll liefert eine Verlaufsliste zu Ereignissen, die im Storage-Array aufgetreten sind. Dies hilft dem technischen Support bei der Behebung von Ereignissen, die zu Ausfällen führen.
+
+Sie können das Ereignisprotokoll als zusätzliches Diagnose-Tool für den Recovery Guru zur Verfolgung von Storage Array-Ereignissen verwenden. Greifen Sie stets zuerst auf den Recovery Guru zu, wenn Sie versuchen, eine Wiederherstellung nach Komponentenausfällen im Storage Array durchzuführen.
+
+
+
+== Ereigniskategorien
+
+Die Ereignisse im Ereignisprotokoll werden mit unterschiedlichen Status kategorisiert. Ereignisse, für die Sie Maßnahmen ergreifen müssen, haben die folgenden Status:
+
+* Kritisch
+* Warnung
+
+
+Ereignisse, die informativ sind und keine sofortigen Maßnahmen erfordern, sind die folgenden:
+
+* Informativ
+
+
+
+
+== Kritische Ereignisse
+
+Kritische Ereignisse weisen auf ein Problem mit dem Speicher-Array hin. Wenn das kritische Ereignis sofort behoben wird, kann der Verlust des Datenzugriffs verhindert werden.
+
+Wenn ein kritisches Ereignis eintritt, wird es im Ereignisprotokoll protokolliert. Alle kritischen Ereignisse werden an die SNMP-Verwaltungskonsole oder an den E-Mail-Empfänger gesendet, den Sie so konfiguriert haben, dass Sie Benachrichtigungen erhalten. Wenn die Shelf-ID zum Zeitpunkt des Ereignisses nicht bekannt ist, wird die Shelf-ID als „Shelf unbekannt“ aufgeführt.
+
+Bei Erhalt eines kritischen Ereignisses finden Sie im Recovery Guru Procedure eine detaillierte Beschreibung des kritischen Ereignisses. Schließen Sie das Verfahren des Recovery Guru zur Korrektur des kritischen Ereignisses ab. Zur Korrektur bestimmter kritischer Ereignisse müssen Sie sich möglicherweise an den technischen Support wenden.

@@ -1,0 +1,49 @@
+---
+permalink: um-certificates/access-management-with-directory-services-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, access management, directory services, 
+summary: 'Administratoren können einen LDAP-Server (Lightweight Directory Access Protocol) und einen Verzeichnisdienst wie Microsoft Active Directory verwenden.' 
+---
+= Zugriffsmanagement mit Verzeichnisdiensten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Administratoren können einen LDAP-Server (Lightweight Directory Access Protocol) und einen Verzeichnisdienst wie Microsoft Active Directory verwenden.
+
+
+
+== Konfigurationsworkflow
+
+Wenn ein LDAP-Server und ein Verzeichnisdienst im Netzwerk verwendet werden, funktioniert die Konfiguration wie folgt:
+
+. Ein Administrator meldet sich bei Unified Manager mit einem Benutzerprofil an, das die Berechtigungen für Sicherheitsadministratoren enthält.
++
+[NOTE]
+====
+Der `admin` Der Benutzer hat vollen Zugriff auf alle Funktionen im System.
+
+====
+. Der Administrator gibt die Konfigurationseinstellungen für den LDAP-Server ein. Zu den Einstellungen gehören der Domain-Name, die URL und die Bind-Kontoinformationen.
+. Wenn der LDAP-Server ein sicheres Protokoll (LDAPS) verwendet, lädt der Administrator eine Zertifikatskette für die Authentifizierung zwischen dem LDAP-Server und dem Hostsystem, auf dem der Web Services Proxy installiert ist, hoch.
+. Nachdem die Serververbindung hergestellt wurde, ordnet der Administrator die Benutzergruppen den lokalen Benutzerrollen zu. Diese Rollen sind vordefiniert und können nicht geändert werden.
+. Der Administrator testet die Verbindung zwischen dem LDAP-Server und dem Web Services Proxy.
+. Benutzer melden sich mit ihren zugewiesenen LDAP/Directory Services-Anmeldedaten am System an.
+
+
+
+
+== Vereinfachtes
+
+Bei der Verwendung von Verzeichnisdiensten zur Authentifizierung können Administratoren die folgenden Verwaltungsaufgaben ausführen:
+
+* Fügen Sie einen Verzeichnisserver hinzu.
+* Bearbeiten der Einstellungen des Verzeichnisservers.
+* Zuordnen von LDAP-Benutzern zu lokalen Benutzerrollen.
+* Entfernen Sie einen Verzeichnisserver.
+* Passwörter ändern.
+* Legen Sie eine Mindestlänge für Passwörter fest.
+* Benutzern erlauben, sich ohne Passwörter anzumelden.
+

@@ -1,0 +1,20 @@
+---
+permalink: sm-settings/how-do-i-interpret-iser-over-infiniband-statistics.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, interpret, iser, over, infiniband, statistics, 
+summary: 'Das Dialogfeld „iSER-over-InfiniBand-Statistiken“ zeigt Statistiken zu lokalen Zielen (Protokollen) und iSER-over-InfiniBand-Schnittstellen (IB) an. Alle Statistiken sind schreibgeschützt und können nicht festgelegt werden.' 
+---
+= Wie interpretiere ich iSER-over-InfiniBand-Statistiken?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das Dialogfeld „iSER-over-InfiniBand-Statistiken“ zeigt Statistiken zu lokalen Zielen (Protokollen) und iSER-over-InfiniBand-Schnittstellen (IB) an. Alle Statistiken sind schreibgeschützt und können nicht festgelegt werden.
+
+* *Statistiken zu lokalen Zielen (Protokoll)* -- stellt Statistiken für das iSER-over-InfiniBand-Ziel bereit, das den Zugriff auf die Speichermedien auf Blockebene anzeigt.
+* *ISER-over-InfiniBand-Interface-Statistik* -- stellt Statistiken für alle iSER-over-InfiniBand-Ports auf der InfiniBand-Schnittstelle bereit, die Performance-Statistiken und Link-Fehlerinformationen zu den einzelnen Switch-Ports enthalten.
+
+
+Sie können jede dieser Statistiken als RAW-Statistiken oder als Baseline-Statistiken anzeigen. RAW-Statistiken sind alle Statistiken, die seit dem Start der Controller gesammelt wurden. Baseline-Statistiken sind zeitpunktgenaue Statistiken, die seit dem Festlegen der Baseline-Zeit erfasst wurden.

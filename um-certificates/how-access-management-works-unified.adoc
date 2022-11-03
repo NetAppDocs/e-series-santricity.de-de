@@ -1,0 +1,59 @@
+---
+permalink: um-certificates/how-access-management-works-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, authentication, users, roles, access management 
+summary: Verwenden Sie die Zugriffsverwaltung, um die Benutzerauthentifizierung in SANtricity Unified Manager einzurichten. 
+---
+= Funktionsweise von Access Management
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Verwenden Sie Access Management, um die Benutzerauthentifizierung in Unified Manager einzurichten.
+
+
+
+== Konfigurationsworkflow
+
+Die Zugriffsmanagement-Konfiguration funktioniert wie folgt:
+
+. Ein Administrator meldet sich bei Unified Manager mit einem Benutzerprofil an, das die Berechtigungen für Sicherheitsadministratoren enthält.
++
+[NOTE]
+====
+Bei der ersten Anmeldung wird der Benutzername verwendet `admin` Wird automatisch angezeigt und kann nicht geändert werden. Der `admin` Der Benutzer hat vollen Zugriff auf alle Funktionen im System. Das Passwort muss bei der ersten Anmeldung festgelegt werden.
+
+====
+. Der Administrator navigiert zur Zugriffsverwaltung in der Benutzeroberfläche, die vorkonfigurierte lokale Benutzerrollen enthält. Diese Rollen sind eine Implementierung von RBAC-Funktionen (rollenbasierte Zugriffssteuerung).
+. Der Administrator konfiguriert eine oder mehrere der folgenden Authentifizierungsmethoden:
++
+** *Lokale Benutzerrollen* -- Authentifizierung wird über RBAC-Funktionen verwaltet. Lokale Benutzerrollen umfassen vordefinierte Benutzer und Rollen mit bestimmten Zugriffsberechtigungen. Administratoren können diese lokalen Benutzerrollen als einzige Authentifizierungsmethode verwenden oder in Kombination mit einem Verzeichnisdienst verwenden. Es ist keine Konfiguration erforderlich – abgesehen von der Festlegung von Passwörtern für die Benutzer.
+** *Directory Services* -- die Authentifizierung wird über einen LDAP-Server (Lightweight Directory Access Protocol) und einen Verzeichnisdienst verwaltet, z. B. über Microsoft Active Directory. Ein Administrator stellt eine Verbindung zum LDAP-Server her und ordnet die LDAP-Benutzer den lokalen Benutzerrollen zu.
+
+
+. Der Administrator stellt Benutzern die Anmeldeinformationen für Unified Manager zur Verfügung.
+. Benutzer melden sich beim System an, indem sie ihre Anmeldedaten eingeben. Während der Anmeldung führt das System die folgenden Hintergrundaufgaben aus:
++
+** Authentifiziert Benutzernamen und Kennwort anhand des Benutzerkontos.
+** Legt die Berechtigungen des Benutzers basierend auf den zugewiesenen Rollen fest.
+** Bietet dem Benutzer Zugriff auf Funktionen in der Benutzeroberfläche.
+** Zeigt den Benutzernamen im oberen Banner an.
+
+
+
+
+
+
+== Funktionen in Unified Manager verfügbar
+
+Der Zugriff auf Funktionen hängt von den zugewiesenen Rollen eines Benutzers ab. Dazu gehören:
+
+* *Storage Admin* -- Vollständiger Lese-/Schreibzugriff auf Speicherobjekte auf den Arrays, aber kein Zugriff auf die Sicherheitskonfiguration.
+* *Security Admin* -- Zugriff auf die Sicherheitskonfiguration in Access Management und Certificate Management.
+* *Support Admin* -- Zugriff auf alle Hardware-Ressourcen auf Speicher-Arrays, Ausfalldaten und MEL-Ereignisse. Kein Zugriff auf Speicherobjekte oder die Sicherheitskonfiguration.
+* *Monitor* -- schreibgeschützter Zugriff auf alle Speicherobjekte, aber kein Zugriff auf die Sicherheitskonfiguration.
+
+
+Eine nicht verfügbare Funktion ist entweder ausgegraut oder wird in der Benutzeroberfläche nicht angezeigt.

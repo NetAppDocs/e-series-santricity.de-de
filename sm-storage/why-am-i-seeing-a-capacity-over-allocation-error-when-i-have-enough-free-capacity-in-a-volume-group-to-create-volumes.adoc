@@ -1,0 +1,27 @@
+---
+permalink: sm-storage/why-am-i-seeing-a-capacity-over-allocation-error-when-i-have-enough-free-capacity-in-a-volume-group-to-create-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, capacity, over-allocation, error, 
+summary: Die ausgewählte Volume-Gruppe kann einen oder mehrere freie Kapazitätsbereiche haben. Ein freier Kapazitätsbereich stellt die freie Kapazität dar, die zum Löschen eines Volumes oder zum Nichtnutzen der gesamten verfügbaren freien Kapazität während der Volume-Erstellung führen kann. 
+---
+= Warum sehe ich einen Fehler bei der Überzuweisung, wenn ich genügend freie Kapazität in einer Volume-Gruppe habe, um Volumes zu erstellen?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die ausgewählte Volume-Gruppe kann einen oder mehrere freie Kapazitätsbereiche haben. Ein freier Kapazitätsbereich stellt die freie Kapazität dar, die zum Löschen eines Volumes oder zum Nichtnutzen der gesamten verfügbaren freien Kapazität während der Volume-Erstellung führen kann.
+
+Wenn Sie ein Volume in einer Volume-Gruppe mit einem oder mehreren freien Kapazitätsbereichen erstellen, ist die Kapazität des Volumes auf den größten freien Kapazitätsbereich in dieser Volume-Gruppe beschränkt. Wenn beispielsweise eine Volume-Gruppe insgesamt 15 gib freie Kapazität besitzt und der größte Bereich der freien Kapazität 10 gib beträgt, beträgt das größte Volume, das Sie erstellen können, 10 gib.
+
+Wenn eine Volume-Gruppe über freie Kapazitätsbereiche verfügt, enthält das Volume-Gruppendiagramm einen Link, der die Anzahl der vorhandenen freien Kapazitätsbereiche angibt. Wählen Sie den Link aus, um ein Popup-Fenster anzuzeigen, in dem die Kapazität der einzelnen Bereiche angezeigt wird.
+
+Durch die Konsolidierung der freien Kapazität können Sie zusätzliche Volumes aus der maximalen freien Kapazität in einer Volume-Gruppe erstellen. Sie können die vorhandene freie Kapazität in einer ausgewählten Volume-Gruppe mit einer der folgenden Methoden konsolidieren:
+
+* Wenn für eine Volume-Gruppe mindestens ein freier Kapazitätsbereich erkannt wird, erscheint die Empfehlung „freie Kapazität konsolidieren“ auf der Startseite im Benachrichtigungsbereich. Klicken Sie auf den Link *freie Kapazität konsolidieren*, um das Dialogfeld zu starten.
+* Sie können auch Menü:Pools & Volume Groups [Sonstige Aufgaben > freie Kapazität der Volumengruppe konsolidieren] wählen, um das Dialogfeld zu starten.
+
+
+Wenn Sie einen bestimmten freien Kapazitätsbereich anstelle des größten Bereichs mit freier Kapazität verwenden möchten, verwenden Sie das Command Line Interface (CLI).

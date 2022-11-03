@@ -1,0 +1,28 @@
+---
+permalink: sm-settings/add-alert-email-addresses.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add, email, addresses, alerts, 
+summary: Sie können bis zu 20 Empfänger für E-Mail-Benachrichtigungen hinzufügen. 
+---
+= Fügen Sie E-Mail-Adressen für Warnungen hinzu
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können bis zu 20 Empfänger für E-Mail-Benachrichtigungen hinzufügen.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[Alarme].
+. Wählen Sie die Registerkarte *E-Mail* aus.
+. Wählen Sie *E-Mails Hinzufügen*.
++
+Das Dialogfeld E-Mails hinzufügen wird geöffnet.
+
+. Geben Sie in das leere Feld eine neue E-Mail-Adresse ein. Wenn Sie mehr als eine Adresse hinzufügen möchten, wählen Sie *Weitere E-Mail hinzufügen*, um ein anderes Feld zu öffnen.
+. Klicken Sie Auf *Hinzufügen*.
+
+
+Auf der Registerkarte „E-Mail“ der Seite „Meldungen“ werden die neuen E-Mail-Adressen angezeigt.

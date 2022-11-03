@@ -1,0 +1,36 @@
+---
+permalink: sm-hardware/initialize-format-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, initialize, format, drive, 
+summary: 'Wenn Sie zugewiesene Laufwerke von einem Speicher-Array in ein anderes verschieben, müssen Sie die Laufwerke initialisieren (formatieren), bevor sie im neuen Speicher-Array verwendet werden können.' 
+---
+= Initialisieren (Formatieren) des Laufwerks
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie zugewiesene Laufwerke von einem Speicher-Array in ein anderes verschieben, müssen Sie die Laufwerke initialisieren (formatieren), bevor sie im neuen Speicher-Array verwendet werden können.
+
+Durch Initialisieren werden die vorherigen Konfigurationsinformationen von einem Laufwerk entfernt und in den Status „nicht zugewiesen“ zurückgeführt. Das Laufwerk kann dann einem neuen Pool oder einer neuen Volume-Gruppe im neuen Speicher-Array hinzugefügt werden.
+
+Verwenden Sie den Vorgang zum Initialisieren des Laufwerks, wenn Sie ein einzelnes Laufwerk verschieben. Sie müssen Laufwerke nicht initialisieren, wenn Sie eine ganze Volume-Gruppe von einem Speicher-Array in ein anderes verschieben.
+
+[CAUTION]
+====
+*Möglicher Datenverlust* -- Wenn Sie ein Laufwerk initialisieren, gehen alle Daten auf dem Laufwerk verloren. Führen Sie diesen Vorgang nur aus, wenn Sie vom technischen Support dazu aufgefordert werden.
+
+====
+.Schritte
+. Wählen Sie *Hardware*.
+. Wenn die Grafik die Controller zeigt, klicken Sie auf *Vorderseite des Regals anzeigen*.
++
+Die Grafik ändert sich, um die Laufwerke anstelle der Controller anzuzeigen.
+
+. Klicken Sie auf das Laufwerk, das Sie initialisieren möchten.
++
+Das Kontextmenü des Laufwerks wird angezeigt.
+
+. Wählen Sie *Initialisieren*, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
+

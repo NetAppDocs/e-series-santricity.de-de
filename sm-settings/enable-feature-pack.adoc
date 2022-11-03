@@ -1,0 +1,46 @@
+---
+permalink: sm-settings/enable-feature-pack.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, feature, pack, 
+summary: 'Ein Funktionspaket ist ein Bundle, das Attribute für Storage Arrays ändert (zum Beispiel Ändern des Protokolls von Fibre Channel auf iSCSI). Funktionspakete erfordern einen speziellen Schlüssel für die Unterstützung.' 
+---
+= Funktionspaket aktivieren
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ein Funktionspaket ist ein Bundle, das Attribute für Storage Arrays ändert (zum Beispiel Ändern des Protokolls von Fibre Channel auf iSCSI). Funktionspakete erfordern einen speziellen Schlüssel für die Unterstützung.
+
+.Bevor Sie beginnen
+* Sie haben die entsprechenden Anweisungen zur Konvertierung und zur Vorbereitung der Attribute des neuen Speicherarrays befolgt. Eine Anleitung zur Hostprotokollkonvertierung finden Sie im Hardware-Wartungsleitfaden für Ihr Controller-Modell.
+* Das Storage-Array ist offline, sodass keine Hosts oder Applikationen auf das Array zugreifen können.
+* Alle Daten werden gesichert.
+* Sie haben eine Feature Pack-Datei erhalten.
++
+Die Feature Pack-Datei wird auf den Management-Client geladen (das System mit einem Browser für den Zugriff auf System Manager).
+
+
+
+[NOTE]
+====
+Sie müssen ein Downtime-Wartungsfenster planen und alle I/O-Vorgänge zwischen dem Host und den Controllern beenden. Beachten Sie außerdem, dass Sie erst nach erfolgreichem Abschluss der Konvertierung auf Daten im Speicher-Array zugreifen können.
+
+====
+In dieser Aufgabe wird beschrieben, wie Sie mit System Manager ein Funktionspaket aktivieren. Wenn Sie fertig sind, müssen Sie das Speicher-Array neu starten.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie unter *Add-ons* die Option *Feature Pack ändern*.
+. Klicken Sie auf *Durchsuchen* und wählen Sie dann die Schlüsseldatei aus.
++
+Der Dateiname wird im Dialogfeld angezeigt.
+
+. Typ `change` Vor Ort.
+. Klicken Sie Auf *Ändern*.
++
+Die Funktionspaket-Migration beginnt und die Controller werden neu gestartet. Nicht geschriebene Cache-Daten werden gelöscht, wodurch keine I/O-Aktivität gewährleistet wird. Beide Controller werden automatisch neu gestartet, damit das neue Feature Pack wirksam wird. Das Speicher-Array kehrt nach Abschluss des Neubootens in einen reaktionsfähigen Zustand zurück.
+
+

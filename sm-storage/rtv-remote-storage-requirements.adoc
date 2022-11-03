@@ -1,0 +1,61 @@
+---
+permalink: sm-storage/rtv-remote-storage-requirements.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, storage, requirements 
+summary: Überprüfen Sie vor der Verwendung der Remote-Speicherfunktion die folgenden Anforderungen und Einschränkungen. 
+---
+= Anforderungen für Remote Storage-Funktionen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Überprüfen Sie vor der Verwendung der Remote-Speicherfunktion die folgenden Anforderungen und Einschränkungen.
+
+
+
+== Unterstützte Protokolle
+
+Folgende Protokolle werden unterstützt:
+
+* ISCSI
+* IPv4
+
+
+Aktuelle Informationen zu E-Series Support und Konfiguration finden Sie im https://imt.netapp.com/matrix/#welcome["NetApp Interoperabilitäts-Matrix-Tool"^].
+
+
+
+== Hardwareanforderungen
+
+Das E-Series Storage-System muss Folgendes umfassen:
+
+* Zwei Controller (Duplexmodus)
+* ISCSI-Verbindungen für E-Series Controller zur Kommunikation mit dem Remote-Storage-System über eine oder mehrere iSCSI-Verbindungen
+* SANtricity OS 11.71 oder höher
+* Remote Storage-Funktion in Submodell-ID (SMID) aktiviert
+
+
+Das Remote-System kann entweder ein E-Series Storage-System oder ein System eines anderen Anbieters sein. Sie muss Folgendes umfassen:
+
+* ISCSI-fähige Schnittstellen
+
+
+
+
+== Einschränkungen
+
+Die Remote-Speicherfunktion verfügt über folgende Einschränkungen:
+
+* Die Spiegelung muss deaktiviert werden.
+* Auf dem Ziel-Volume des E-Series Systems dürfen keine Snapshots vorhanden sein.
+* Das Ziel-Volume auf dem E-Series System darf vor dem Start des Imports keinen Hosts zugeordnet werden.
+* Auf dem Ziel-Volume des E-Series Systems muss die Ressourcen-Bereitstellung deaktiviert sein.
+* Direkte Zuordnungen des Remote-Storage-Volumes zu einem oder mehreren Hosts werden nicht unterstützt.
+* Web Services Proxy wird nicht unterstützt.
+* ISCSI-CHAP-Schlüssel werden nicht unterstützt.
+* SMcli wird nicht unterstützt.
+* VMware Datastore wird nicht unterstützt.
+* Ein Upgrade von nur einem Speichersystem im Verhältnis-/Importpaar kann zu einem Zeitpunkt durchgeführt werden, an dem ein Importpaar vorhanden ist.
+

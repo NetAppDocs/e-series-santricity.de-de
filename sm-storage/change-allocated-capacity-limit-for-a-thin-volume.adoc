@@ -1,0 +1,64 @@
+---
+permalink: sm-storage/change-allocated-capacity-limit-for-a-thin-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, allocated capacity, thin volume 
+summary: Für Thin Volumes, die Speicherplatz nach Bedarf zuweisen können, können Sie das Limit ändern, das die zugewiesene Kapazität einschränkt, auf der ein Thin Volume automatisch erweitert werden kann. 
+---
+= Ändern Sie die zugewiesene Kapazitätsgrenze für ein Thin Volume
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Für Thin Volumes, die Speicherplatz nach Bedarf zuweisen können, können Sie das Limit ändern, das die zugewiesene Kapazität einschränkt, auf der ein Thin Volume automatisch erweitert werden kann.
+
+Sie können auch den Prozentpunkt ändern, an dem eine Warnung (Warnungsschwellenwert überschritten) an den Benachrichtigungsbereich auf der Startseite gesendet wird, wenn sich ein Thin-Volume in der Nähe der zugewiesenen Kapazitätsgrenze befindet. Sie können diese Benachrichtigung aktivieren oder deaktivieren.
+
+[NOTE]
+====
+Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+
+====
+Basierend auf der zugewiesenen Kapazitätsgrenze erweitert das System die zugewiesene Kapazität automatisch. Die zugewiesene Kapazitätsgrenze ermöglicht es Ihnen, das automatische Wachstum des Thin Volumes unter der gemeldeten Kapazität zu begrenzen. Wenn die geschriebene Datenmenge sich in der Nähe der zugewiesenen Kapazität befindet, können Sie das zugewiesene Kapazitätslimit ändern.
+
+Wenn Sie die zugewiesene Kapazitätsgrenze und der Warnschwellenwert eines Thin Volume ändern, müssen Sie den Speicherplatz berücksichtigen, der von den Benutzerdaten des Volumes und den Kopierdienstdaten verbraucht wird.
+
+.Schritte
+. Wählen Sie Menü:Storage[Volumes].
+. Wählen Sie die Registerkarte *Thin Volume Monitoring* aus.
++
+Die Ansicht Thin Volume Monitoring wird angezeigt.
+
+. Wählen Sie das dünne Volumen aus, das Sie ändern möchten, und wählen Sie dann *Limit ändern*.
++
+Das Dialogfeld Grenzwert ändern wird angezeigt. Die Einstellung für Kapazitätsgrenze und Warnungsschwellenwert für das ausgewählte Thin-Volume wird in diesem Dialogfeld angezeigt.
+
+. Ändern Sie die zugewiesene Kapazitätsgrenze und den Warnungsschwellenwert nach Bedarf.
++
+.Felddetails
+====
+[cols="25h,~"]
+|===
+| Einstellung | Beschreibung 
+
+
+ a| 
+Zugewiesene Kapazitätsgrenze ändern in...
+ a| 
+Der Schwellenwert, bei dem Schreibzugriffe fehlschlagen, was den Verbrauch zusätzlicher Ressourcen durch Thin Volume verhindert. Dieser Schwellenwert ist ein Prozentsatz der gemeldeten Kapazitätsgröße des Volumes.
+
+
+
+ a| 
+Benachrichtigen, wenn... (Warnschwellenwert)
+ a| 
+Aktivieren Sie das Kontrollkästchen, wenn das System eine Warnmeldung erstellen soll, wenn sich ein Thin-Volume in der Nähe des zugewiesenen Kapazitätslimits befindet. Die Warnmeldung wird an den Benachrichtigungsbereich auf der Startseite gesendet. Dieser Schwellenwert ist ein Prozentsatz der gemeldeten Kapazitätsgröße des Volumes.
+
+Deaktivieren Sie das Kontrollkästchen, um die Benachrichtigung über Warnungsschwellenwert zu deaktivieren.
+
+|===
+====
+. Klicken Sie Auf *Speichern*.
+

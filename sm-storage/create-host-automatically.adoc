@@ -1,0 +1,36 @@
+---
+permalink: sm-storage/create-host-automatically.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, host, automatically 
+summary: 'Sie können dem Host Context Agent (HCA) erlauben, die Hosts automatisch zu erkennen und anschließend zu überprüfen, ob die Informationen korrekt sind. Das Erstellen eines Hosts ist einer der Schritte, die erforderlich sind, damit das Storage-Array wissen kann, an welche Hosts angeschlossen sind und um den I/O-Zugriff auf die Volumes zu ermöglichen.' 
+---
+= Host automatisch erstellen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können dem Host Context Agent (HCA) erlauben, die Hosts automatisch zu erkennen und anschließend zu überprüfen, ob die Informationen korrekt sind. Das Erstellen eines Hosts ist einer der Schritte, die erforderlich sind, damit das Storage-Array wissen kann, an welche Hosts angeschlossen sind und um den I/O-Zugriff auf die Volumes zu ermöglichen.
+
+Stellen Sie sicher, dass der Host Context Agent (HCA) auf jedem Host installiert ist und ausgeführt wird, der mit dem Speicher-Array verbunden ist. Hosts, auf denen die HCA installiert und mit dem Speicher-Array verbunden ist, werden automatisch erstellt. Um die HCA zu installieren, installieren Sie den SANtricity-Speicher-Manager auf dem Host und wählen Sie die Host-Option. Das HCA ist nicht auf allen unterstützten Betriebssystemen verfügbar. Wenn dieser nicht verfügbar ist, müssen Sie den Host manuell erstellen.
+
+.Schritte
+. Wählen Sie Menü:Storage[Hosts].
++
+In der Tabelle werden die automatisch erstellten Hosts aufgeführt.
+
+. Stellen Sie sicher, dass die vom HCA bereitgestellten Informationen richtig sind (Name, Hosttyp, Host Port-IDs).
++
+Wenn Sie eine der Informationen ändern müssen, wählen Sie den Host aus, und klicken Sie dann auf *Einstellungen anzeigen/bearbeiten*.
+
+. *Optional:* Wenn sich der automatisch erstellte Host in einem Cluster befinden soll, erstellen Sie einen Host-Cluster und fügen Sie den Host oder die Hosts hinzu.
+
+
+Nachdem ein Host automatisch erstellt wurde, zeigt das System die folgenden Elemente in der Tabelle Hosts an:
+
+* Der Hostname, der vom Systemnamen des Hosts abgeleitet wurde.
+* Die dem Host zugeordneten Host-Identifikator-Ports.
+* Der Host-Betriebssystem-Typ des Hosts.
+

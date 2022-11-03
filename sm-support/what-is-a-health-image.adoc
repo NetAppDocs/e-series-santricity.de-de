@@ -1,0 +1,16 @@
+---
+permalink: sm-support/what-is-a-health-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, health, images, controller, memory, processor 
+summary: Ein Health-Image ist ein RAW-Daten-Dump des Prozessorspeichers des Controllers, den der technische Support zur Diagnose eines Problems mit einem Controller verwenden kann. 
+---
+= Was ist ein Gesundheitsbild?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ein Systemzustand-Image ist ein Rohdaten-Dump des Prozessorspeichers des Controllers, mit dem der technische Support ein Problem mit einem Controller diagnostizieren kann.
+
+Die Firmware generiert automatisch ein Systemzustand-Image, wenn bestimmte Fehler erkannt werden. Bei bestimmten Fehlerbehebungsszenarios kann der technische Support anfordern, dass Sie die Datei für das Systemzustand abrufen und an sie senden.

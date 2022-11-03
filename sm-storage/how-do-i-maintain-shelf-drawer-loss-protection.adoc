@@ -1,0 +1,73 @@
+---
+permalink: sm-storage/how-do-i-maintain-shelf-drawer-loss-protection.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, shelf, drawer, loss, protection 
+summary: Verwenden Sie die in der folgenden Tabelle aufgeführten Kriterien, um den Schutz vor Shelf-/Schubladenverlusten für einen Pool oder eine Volume-Gruppe zu erhalten. 
+---
+= Wie kann ich den Schutz vor Shelf-/Schubladenverlust aufrechterhalten?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Verwenden Sie die in der folgenden Tabelle aufgeführten Kriterien, um den Schutz vor Shelf-/Schubladenverlusten für einen Pool oder eine Volume-Gruppe zu erhalten.
+
+[cols="1a,1a,1a"]
+|===
+| Ebene | Kriterien für den Schutz vor Shelf-/Schubladenverlust | Mindestanzahl der benötigten Regale/Schubladen 
+
+
+ a| 
+Pool
+ a| 
+Bei Shelfs darf der Pool nicht mehr als zwei Laufwerke in einem einzelnen Shelf enthalten.
+
+Bei Schubladen muss der Pool eine gleiche Anzahl von Laufwerken von jeder Schublade enthalten.
+ a| 
+6 für Shelves
+
+5 für Schubladen
+
+
+
+ a| 
+RAID 6
+ a| 
+Die Volume-Gruppe enthält nicht mehr als zwei Laufwerke in einem einzelnen Shelf oder einer einzelnen Schublade.
+ a| 
+3
+
+
+
+ a| 
+RAID 3 oder RAID 5
+ a| 
+Jedes Laufwerk in der Volume-Gruppe befindet sich in einem separaten Shelf oder einer separaten Schublade.
+ a| 
+3
+
+
+
+ a| 
+RAID 1
+ a| 
+Jedes Laufwerk in einem gespiegelten Paar muss sich in einem eigenen Shelf oder einer separaten Schublade befinden.
+ a| 
+2
+
+
+
+ a| 
+RAID 0
+ a| 
+Schutz vor Shelf-/Schubladenverlust kann nicht erreicht werden.
+ a| 
+Keine Angabe
+
+|===
+[NOTE]
+====
+Der Schutz vor Shelf-/Schubladenverlust bleibt nicht erhalten, wenn ein Laufwerk bereits in dem Pool oder der Volume-Gruppe ausgefallen ist. Geht in dieser Situation der Zugriff auf ein Festplatten-Shelf oder eine Laufwerksschublade verloren und somit ein weiteres Laufwerk im Pool bzw. der Volume-Gruppe, geht es zu Datenverlusten.
+
+====

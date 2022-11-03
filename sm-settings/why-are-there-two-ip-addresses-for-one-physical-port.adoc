@@ -1,0 +1,18 @@
+---
+permalink: sm-settings/why-are-there-two-ip-addresses-for-one-physical-port.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, IP, addresses, physical, port, 
+summary: Das EF600 Storage-Array kann zwei HICs umfassen – einen externen und einen internen. 
+---
+= Warum gibt es zwei IP-Adressen für einen physischen Port?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das EF600 Storage-Array kann zwei HICs umfassen – einen externen und einen internen.
+
+In dieser Konfiguration ist die externe HIC mit einer internen HIC-Zusatzkarte verbunden. Jeder physische Port, auf den Sie über die externe HIC zugreifen können, hat einen zugeordneten virtuellen Port von der internen HIC.
+
+Um eine maximale 200-GB-Performance zu erreichen, müssen Sie sowohl den physischen als auch den virtuellen Ports eine eindeutige IP-Adresse zuweisen, damit der Host Verbindungen zu jedem Server herstellen kann. Wenn Sie dem virtuellen Port keine IP-Adresse zuweisen, läuft die HIC mit etwa der Hälfte ihrer fähigen Geschwindigkeit.

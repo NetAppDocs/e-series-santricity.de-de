@@ -1,0 +1,92 @@
+---
+permalink: sm-storage/interpret-performance-data.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, interpret, performance data 
+summary: Performance-Daten können Sie dabei unterstützen, die Performance Ihres Storage-Arrays zu optimieren. 
+---
+= Performance-Daten analysieren
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performance-Daten können Sie dabei unterstützen, die Performance Ihres Storage-Arrays zu optimieren.
+
+Beachten Sie bei der Interpretation der Performance-Daten, dass mehrere Faktoren die Performance des Storage-Arrays beeinträchtigen. Die folgende Tabelle beschreibt die wichtigsten zu berücksichtigende Bereiche.
+
+[cols="25h,~"]
+|===
+| Performance-Daten | Auswirkungen auf das Performance-Tuning 
+
+
+ a| 
+Latenz (Millisekunden oder ms)
+ a| 
+Überwachen Sie die E/A-Aktivität eines bestimmten Objekts.
+
+Identifizierung von Objekten, die Engpässe sind:
+
+* Wenn eine Volume-Gruppe von mehreren Volumes gemeinsam genutzt wird, benötigen die einzelnen Volumes möglicherweise ihre eigenen Volume-Gruppen, um die sequenzielle Performance der Laufwerke zu verbessern und die Latenz zu verringern.
+* Bei Pools kommen größere Latenzen zum Einsatz und zwischen den Laufwerken können ungleichmäßige Workloads vorhanden sein, so dass die Latenzwerte weniger sinnvoll und im Allgemeinen auch höher sind.
+* Laufwerkstypen und Geschwindigkeit beeinflussen die Latenz. Mit zufälligen I/O-Operationen verbringen schnellere rotierende Laufwerke weniger Zeit damit, von und zu verschiedenen Speicherorten auf der Festplatte zu wechseln.
+* Zu wenige Laufwerke führen zu mehr Befehlen in Warteschlange und länger zur Verarbeitung des Befehls durch das Laufwerk, was die allgemeine Latenz des Systems erhöht.
+* Aufgrund der zusätzlichen Zeit, die mit der Datenübertragung verbunden ist, weisen größere I/OS eine höhere Latenz auf.
+* Eine höhere Latenz kann darauf hindeuten, dass das I/O-Muster von Natur aus zufällig ist. Laufwerke mit zufälligen I/O weisen eine größere Latenz als Laufwerke mit sequenziellem Streaming auf.
+* Ein Ungleichgewicht in der Latenz bei Laufwerken oder Volumes einer gemeinsamen Volume-Gruppe kann auf ein langsames Laufwerk hinweisen.
+
+
+
+
+ a| 
+IOPS
+ a| 
+Faktoren, die Input/Output Operations per Second (IOPS oder iOS/s) beeinflussen, sind folgende Faktoren:
+
+* Zugriffsmuster (zufällig oder sequenziell)
+* I/O-Größe
+* RAID-Level
+* Cache-Blockgröße
+* Gibt an, ob die Lese-Cache-Speicherung aktiviert ist
+* Gibt an, ob das Schreib-Caching aktiviert ist
+* Dynamischer Cache-Lese-Prefetch
+* Segmentgröße
+* Die Anzahl der Laufwerke in den Volume- oder Speicher-Arrays
+
+
+Je höher die Cache-Trefferrate ist, desto höher sind die I/O-Raten. Im Vergleich zu deaktiviertem Schreib-Caching können höhere I/O-Raten erzielt werden. Bei der Entscheidung, ob das Schreib-Caching für ein einzelnes Volume aktiviert werden soll, müssen die aktuellen IOPS und die maximalen IOPS geprüft werden. Bei sequenziellen I/O-Mustern sollten Sie höhere Raten feststellen als bei zufälligen I/O-Mustern. Aktivieren Sie unabhängig vom I/O-Muster das Caching von Schreibvorgängen, um die I/O-Rate zu maximieren und die Reaktionszeit der Applikationen zu verkürzen.
+
+Sie sehen Performance-Verbesserungen, die durch das Ändern der Segmentgröße in den IOPS-Statistiken für ein Volume verursacht wurden. Versuchen Sie, die optimale Segmentgröße zu bestimmen, oder verwenden Sie die Größe des Dateisystems oder die Datenbankblockgröße.
+
+
+
+ a| 
+MIB/s
+ a| 
+Die Übertragungsraten oder Durchsatzraten werden von der I/O-Größe der Applikation und der I/O-Rate festgelegt. Im Allgemeinen resultieren I/O-Anfragen kleiner Applikationen in einer geringeren Übertragungsrate, bieten aber schnellere I/O-Raten und kürzere Reaktionszeiten. Bei größeren Applikations-I/O-Anfragen sind höhere Durchsatzraten möglich.
+
+Wenn Sie die typischen I/O-Muster Ihrer Applikationen kennen, können Sie die maximale I/O-Übertragungsrate für ein bestimmtes Storage-Array ermitteln.
+
+
+
+ a| 
+CPU
+ a| 
+Dieser Wert ist ein Prozentsatz der genutzten Verarbeitungskapazität.
+
+Sie können feststellen, dass die CPU-Nutzung der gleichen Objekttypen eine Ungleichheit hat. Beispielsweise ist die CPU-Auslastung eines Controllers stark oder nimmt im Laufe der Zeit zu, während der des anderen Controllers leichter oder stabiler ist. In diesem Fall möchten Sie möglicherweise den Controller-Besitz von einem oder mehreren Volumes zu dem Controller mit dem niedrigeren CPU-Prozentsatz ändern.
+
+Möglicherweise möchten Sie die CPU über das Storage-Array hinweg überwachen. Wenn die CPU mit der Zeit zunimmt und gleichzeitig die Applikations-Performance abnimmt, müssen Sie möglicherweise Storage-Arrays hinzufügen. Durch Hinzufügen von Storage-Arrays zum Unternehmen werden die Applikationsanforderungen weiterhin auf einem akzeptablen Performance-Niveau erfüllt.
+
+
+
+ a| 
+Reserve
+ a| 
+„Reserve“ bezieht sich auf die verbleibende Performance-Fähigkeit der Controller, der Host-Kanäle des Controllers und der Laufwerkskanäle des Controllers. Dieser Wert wird in Prozent angegeben und stellt die Lücke zwischen der maximalen Performance dar, die diese Objekte liefern können, und dem aktuellen Performance-Level.
+
+* Für die Controller beträgt die Reserve einen Prozentsatz der maximal möglichen IOPS.
+* Für die Kanäle ist „Reserve“ ein Prozentsatz des maximalen Durchsatzes oder „MiB/s“ Der Lesedurchsatz, der Schreibdurchsatz und der bidirektionale Durchsatz sind in der Berechnung enthalten.
+
+
+|===

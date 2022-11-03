@@ -1,0 +1,21 @@
+---
+permalink: sm-storage/what-does-the-iops-graph-show.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, iops, graph, show 
+summary: Im IOPS-Diagramm werden Statistiken für die ein-/Ausgabe-Vorgänge pro Sekunde angezeigt. Auf der Startseite werden in diesem Diagramm Statistiken für das Speicher-Array angezeigt. In der logischen Ansicht, der physischen Ansicht und den Registerkarten Applikationen und Workloads der Performance-Ansicht werden in diesem Diagramm Statistiken für das Storage Array, die Volumes, Volume-Gruppen, Pools, Applikationen Und Workloads. 
+---
+= Was zeigt das IOPS-Diagramm?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im IOPS-Diagramm werden Statistiken für die ein-/Ausgabe-Vorgänge pro Sekunde angezeigt. Auf der Startseite werden in diesem Diagramm Statistiken für das Speicher-Array angezeigt. In der logischen Ansicht, der physischen Ansicht und den Registerkarten Applikationen und Workloads der Performance-Ansicht werden in diesem Diagramm Statistiken für das Storage Array, die Volumes, Volume-Gruppen, Pools, Applikationen Und Workloads.
+
+IOPS ist eine Abkürzung für _Input/Output (I/O) Operations per Second_. Bewegen Sie den Mauszeiger über einen Punkt im Diagramm, um die folgenden Werte für diesen Zeitpunkt anzuzeigen:
+
+* Anzahl der Lesevorgänge.
+* Anzahl der Schreibvorgänge.
+* Lese- und Schreibvorgänge insgesamt kombiniert.
+

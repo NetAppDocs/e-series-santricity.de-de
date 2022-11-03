@@ -1,0 +1,726 @@
+---
+permalink: sm-settings/view-iscsi-statistics-packages-system.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, iscsi, statistics, packages, 
+summary: Sie können Daten über die iSCSI-Verbindungen zu Ihrem Speicher-Array anzeigen. 
+---
+= Anzeigen von iSCSI-Statistikpaketen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Daten über die iSCSI-Verbindungen zu Ihrem Speicher-Array anzeigen.
+
+System Manager zeigt diese Typen von iSCSI-Statistiken. Alle Statistiken sind schreibgeschützt und können nicht festgelegt werden.
+
+* *Ethernet MAC Statistics* -- stellt Statistiken für die Media Access Control (MAC) bereit. MAC bietet auch einen Adressierungsmechanismus, der als physische Adresse oder MAC-Adresse bezeichnet wird. Die MAC-Adresse ist eine eindeutige Adresse, die jedem Netzwerkadapter zugewiesen wird. Die MAC-Adresse unterstützt die Übertragung von Datenpaketen an ein Ziel innerhalb des Subnetzwerks.
+* *Ethernet TCP/IP-Statistiken* -- liefert Statistiken für das TCP/IP, welches das Transmission Control Protocol (TCP) und das Internet Protocol (IP) für das iSCSI-Gerät ist. Mit TCP können Anwendungen auf vernetzten Hosts Verbindungen miteinander herstellen, über die sie Daten in Paketen austauschen können. Die IP ist ein datenorientiertes Protokoll, das Daten über ein paketgeschaltetes Inter-Netzwerk kommuniziert. Die IPv4-Statistiken und die IPv6-Statistiken werden separat angezeigt.
+* *Local Target/Initiator (Protocol) Statistics* -- zeigt Statistiken für das iSCSI-Ziel an, die Zugriff auf seine Speichermedien auf Blockebene ermöglichen, und zeigt die iSCSI-Statistiken für das Speicher-Array an, wenn es als Initiator bei asynchronen Spiegelungsvorgängen verwendet wird.
+* *DCBX Betriebszustände* -- zeigt die Betriebszustände der verschiedenen Funktionen von Data Center Bridging Exchange (DCBX) an.
+* *LLDP-TLV-Statistiken* -- zeigt die Statistiken zum Typ Length Value (TLV) des Link Layer Discovery Protocol (LLDP) an.
+* *DCBX TLV Statistics* -- zeigt die Informationen an, die die Speicher-Array-Host-Ports in einer Data Center Bridging (DCB)-Umgebung identifizieren. Diese Informationen werden zu Identifikations- und Funktionszwecken an Kollegen des Netzwerks weitergegeben.
+
+
+Sie können jede dieser Statistiken als RAW-Statistiken oder als Baseline-Statistiken anzeigen. RAW-Statistiken sind alle Statistiken, die seit dem Start der Controller gesammelt wurden. Baseline-Statistiken sind zeitpunktgenaue Statistiken, die seit dem Festlegen der Baseline-Zeit erfasst wurden.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie *Anzeigen von iSCSI-Statistikpaketen* aus.
+. Klicken Sie auf eine Registerkarte, um die verschiedenen Statistikgruppen anzuzeigen.
+. *Optional:* um den Basisplan festzulegen, klicken Sie auf *Neue Basislinie festlegen*.
++
+Durch das Festlegen der Baseline wird ein neuer Ausgangspunkt für die Erfassung der Statistiken festgelegt. Dieselbe Baseline wird für alle iSCSI-Statistiken verwendet.
+
+
+
+In den folgenden Abschnitten finden Sie weitere Informationen zu den verschiedenen Arten von Statistiken.
+
+
+
+== Statistiken ZUM SENDEN UND MAC-Empfang VON MAC
+
+Wenn Sie Ethernet-MAC-Statistiken auswählen, werden sowohl die Empfangs- als auch die Sendestatistiken angezeigt. Sie können jede dieser Statistiken als RAW-Statistiken oder als Baseline-Statistiken anzeigen.
+
+.Statistiken FÜR MAC übertragen:
+====
+[cols="25h,~"]
+|===
+| Statistik | Definition 
+
+
+ a| 
+F
+ a| 
+Bildanzahl
+
+
+
+ a| 
+B
+ a| 
+Byte-Anzahl
+
+
+
+ a| 
+MF
+ a| 
+Multicast-Frame-Anzahl
+
+
+
+ a| 
+BF
+ a| 
+Anzahl der Broadcast-Frames
+
+
+
+ a| 
+PF
+ a| 
+Umstellungsunterbrechung
+
+
+
+ a| 
+CF
+ a| 
+Kontrolle der Frame-Anzahl
+
+
+
+ a| 
+FDF
+ a| 
+Frame-Deferral-Anzahl
+
+
+
+ a| 
+GEFÜTTERT
+ a| 
+Überzähligen Rückstellwert einrahmen
+
+
+
+ a| 
+FLC
+ a| 
+Anzahl verspäteter Kollisionen erfassen
+
+
+
+ a| 
+FA
+ a| 
+Anzahl der Abbruchbilder
+
+
+
+ a| 
+FSC
+ a| 
+Einzelkollisionszählung im Rahmen
+
+
+
+ a| 
+FMC
+ a| 
+Mehrere Kollisionen erfassen
+
+
+
+ a| 
+FC
+ a| 
+Kollisionszählung des Rahmens
+
+
+
+ a| 
+FDR
+ a| 
+Anzahl der Einzelbilder gelöscht
+
+
+
+ a| 
+JF.
+ a| 
+Anzahl Jumbo-Frames
+
+|===
+====
+.MAC erhält Statistiken:
+====
+[cols="25h,~"]
+|===
+| Statistik | Definition 
+
+
+ a| 
+F
+ a| 
+Bildanzahl
+
+
+
+ a| 
+B
+ a| 
+Byte-Anzahl
+
+
+
+ a| 
+MF
+ a| 
+Multicast-Frame-Anzahl
+
+
+
+ a| 
+BF
+ a| 
+Anzahl der Broadcast-Frames
+
+
+
+ a| 
+PF
+ a| 
+Umstellungsunterbrechung
+
+
+
+ a| 
+CF
+ a| 
+Kontrolle der Frame-Anzahl
+
+
+
+ a| 
+FLE.
+ a| 
+Fehleranzahl der Frame-Länge
+
+
+
+ a| 
+FD.
+ a| 
+Anzahl der Einzelbilder gelöscht
+
+
+
+ a| 
+FCRCE
+ a| 
+Frame CRC-Fehleranzahl
+
+
+
+ a| 
+GEBÜHR
+ a| 
+Fehleranzahl der Frame-Codierung
+
+
+
+ a| 
+LFE
+ a| 
+Große Frame-Fehleranzahl
+
+
+
+ a| 
+SFE
+ a| 
+Fehleranzahl bei kleinem Frame
+
+
+
+ a| 
+J
+ a| 
+Jabber zählen
+
+
+
+ a| 
+UCC
+ a| 
+Unbekannte Anzahl der Kontrollrahmen
+
+
+
+ a| 
+CSE
+ a| 
+Fehleranzahl bei der Carrier-Sense
+
+|===
+====
+
+
+== Ethernet TCP/IP-Statistiken
+
+Wenn Sie Ethernet TCP/IP-Statistiken auswählen, werden sowohl die TCP- als auch die IP-Statistiken angezeigt. Sie können jede dieser Statistiken als RAW-Statistiken oder als Baseline-Statistiken anzeigen.
+
+.Ethernet TCP-Statistik:
+====
+[cols="25h,~"]
+|===
+| Statistik | Definition 
+
+
+ a| 
+TXS
+ a| 
+Anzahl übertragener Segmente
+
+
+
+ a| 
+TXB
+ a| 
+Übertragene Byte-Anzahl
+
+
+
+ a| 
+RTxTE
+ a| 
+Die Anzahl der abgelaufenen Wiederholungstimer ist abgelaufen
+
+
+
+ a| 
+TxDACK
+ a| 
+Verzögerte ACK-Anzahl übertragen
+
+
+
+ a| 
+TxACK
+ a| 
+ACK-Anzahl übertragen
+
+
+
+ a| 
+RXS
+ a| 
+Anzahl empfangene Segmente
+
+
+
+ a| 
+RXB
+ a| 
+Anzahl der empfangenen Bytes
+
+
+
+ a| 
+RxDACK
+ a| 
+Doppelte ACK-Anzahl empfangen
+
+
+
+ a| 
+RxACK
+ a| 
+ACK-Anzahl empfangen
+
+
+
+ a| 
+RxSEC
+ a| 
+Fehleranzahl des empfangenen Segments
+
+
+
+ a| 
+RxSOOC
+ a| 
+Nicht bestellbare Segmente erhalten
+
+
+
+ a| 
+RxWP
+ a| 
+Anzahl der Fühler für Fenster empfangen
+
+
+
+ a| 
+RxWU
+ a| 
+Anzahl der empfangenen Fensteraktualisierungen
+
+|===
+====
+.Ethernet-IP-Statistiken:
+====
+[cols="25h,~"]
+|===
+| Statistik | Definition 
+
+
+ a| 
+TXP
+ a| 
+Anzahl übertragener Pakete
+
+
+
+ a| 
+TXB
+ a| 
+Übertragene Byte-Anzahl
+
+
+
+ a| 
+TXF
+ a| 
+Anzahl der übertragenen Fragmente
+
+
+
+ a| 
+RXP
+ a| 
+Empfangene Pakete zählen. Wählen Sie *IPv4 anzeigen*, um die Anzahl der empfangenen IPv4-Pakete anzuzeigen. Wählen Sie *IPv6 anzeigen*, um die Anzahl der empfangenen IPv6-Pakete anzuzeigen.
+
+
+
+ a| 
+RXB
+ a| 
+Anzahl der empfangenen Bytes
+
+
+
+ a| 
+RXF
+ a| 
+Anzahl der empfangenen Fragmente
+
+
+
+ a| 
+RxPE
+ a| 
+Fehleranzahl der empfangenen Pakete
+
+
+
+ a| 
+DR
+ a| 
+Anzahl der Datagrammumzusammenbau
+
+
+
+ a| 
+DRE-OLFC
+ a| 
+Fehler bei der erneuten Datenzusammenlegung, überlappende Fragmentanzahl
+
+
+
+ a| 
+DRE-OOFC
+ a| 
+Fehler bei der erneuten Datenzusammenlegung, Anzahl der Fragmente außerhalb der Reihenfolge
+
+
+
+ a| 
+DRE-TOC
+ a| 
+Fehler beim erneuten Zusammenbau des Datagramms, Anzahl der Auszeiten
+
+|===
+====
+
+
+== ISCSI-Zielstatistiken und lokale Initiatorstatistiken
+
+Wenn Sie Zielstatistiken (Protokoll) oder Statistiken des lokalen Initiators (Protokoll) auswählen, werden die iSCSI-Statistiken angezeigt. Sie können jede dieser Statistiken als RAW-Statistiken oder als Baseline-Statistiken anzeigen.
+
+.ISCSI-Statistik:
+====
+[cols="25h,~"]
+|===
+| Statistik | Definition 
+
+
+ a| 
+SL
+ a| 
+Erfolgreiche iSCSI-Anmeldungen
+
+
+
+ a| 
+UL
+ a| 
+Anzahl der iSCSI-Anmeldungen war nicht erfolgreich
+
+
+
+ a| 
+SA
+ a| 
+Erfolgreiche iSCSI-Authentifizierungszahl (wenn die Authentifizierung aktiviert ist)
+
+
+
+ a| 
+UA
+ a| 
+ISCSI-Authentifizierungszahl nicht erfolgreich (bei aktivierter Authentifizierung)
+
+
+
+ a| 
+PDU
+ a| 
+Korrigieren Sie die Anzahl der verarbeiteten iSCSI-PDUs
+
+
+
+ a| 
+HDE
+ a| 
+ISCSI-PDUs mit Header-Digest-Fehleranzahl
+
+
+
+ a| 
+DDE
+ a| 
+ISCSI-PDUs mit Daten-Digest-Fehleranzahl
+
+
+
+ a| 
+RE
+ a| 
+PDUs mit iSCSI-Protokollfehlern zählen
+
+
+
+ a| 
+UST
+ a| 
+Unerwartete Anzahl der Anschlüsse für iSCSI-Sitzungen
+
+
+
+ a| 
+UCT
+ a| 
+Unerwartete Anzahl der Beendigung der iSCSI-Verbindung
+
+|===
+====
+
+
+== Statistiken zum DCBX-Betriebsstatus
+
+Wenn Sie Data Center Bridging Exchange (DCBX) Operational State Statistics auswählen, werden die DCBX-Statistiken angezeigt.
+
+.DCBX-Statistik:
+====
+[cols="25h,~"]
+|===
+| Statistik | Definition 
+
+
+ a| 
+ISCSI-Host-Port
+ a| 
+Zeigt die Position des erkannten Host-Ports im Controller #, Port #-Format an.
+
+
+
+ a| 
+Prioritätsgruppe
+ a| 
+Gibt den Betriebszustand der Anwendung „Priority Group (PG)“ an. Der Status ist entweder aktiviert oder deaktiviert.
+
+
+
+ a| 
+Prioritätsbasierte Flusssteuerung
+ a| 
+Zeigt den Betriebszustand der PFC-Funktion (Priority-Based Flow Control) an. Der Status ist entweder aktiviert oder deaktiviert.
+
+
+
+ a| 
+ISCSI-Funktion
+ a| 
+Zeigt den Betriebszustand der iSCSI-Anwendung (Internet Small Computer System Interface) an. Der Status ist entweder aktiviert oder deaktiviert.
+
+
+
+ a| 
+FCoE-Bandbreite
+ a| 
+Zeigt den Status der FCoE-Bandbreite (Fibre Channel over Ethernet) an. Der Status lautet wahr oder falsch.
+
+
+
+ a| 
+Keine Übereinstimmung der FCoE/FIP-Zuordnung stimmt nicht überein
+ a| 
+Zeigt an, ob eine Zuordnung zwischen FCoE und dem FCoE Initialization Protocol (FIP) nicht stimmt. Der Wert lautet wahr oder falsch.
+
+|===
+====
+
+NOTE: Weitere Statistiken zum Betriebsstatus von DCBX finden Sie in der Statuserfassungsdatei.
+
+
+
+== LLDP-TLV-Statistiken
+
+Wenn Sie „LLDP“ (Link Layer Discovery Protocol) Type Length Value (TLV) Statistics auswählen, werden zwei Statistiken angezeigt: Eine für das lokale Gerät und eine für das Remote-Gerät. Das lokale Gerät bezieht sich auf den Controller. Das Remote-Gerät bezieht sich auf das Peer-Gerät, an das der Controller angeschlossen ist, normalerweise auf einen Switch.
+
+.LLDP-TLV-Statistiken:
+====
+[cols="25h,~"]
+|===
+| Statistik | Definition 
+
+
+ a| 
+ISCSI-Host-Port
+ a| 
+Zeigt die Position des erkannten Host-Ports im Controller #, Port #-Format an.
+
+
+
+ a| 
+Chassis-ID
+ a| 
+Zeigt die Gehäuse-ID an.
+
+
+
+ a| 
+Untertyp Chassis-ID
+ a| 
+Gibt den Untertyp der Chassis-ID an.
+
+
+
+ a| 
+Port-ID
+ a| 
+Zeigt die Port-ID an.
+
+
+
+ a| 
+Subtyp für die Port-ID
+ a| 
+Gibt den Untertyp der Port-ID an.
+
+
+
+ a| 
+Live-Zeit
+ a| 
+Gibt die Anzahl der Sekunden an, die der LLDP-Mitarbeiter des Empfängers als gültig erachtet.
+
+|===
+====
+
+NOTE: Weitere LLDP-TLV-Statistiken finden Sie in der Statuserfassungsdatei.
+
+
+
+== DCBX TLV-Statistiken
+
+Wenn Sie Data Center Bridging Exchange (DCBX) Type Length Value (TLV) Statistics auswählen, werden die folgenden Statistiken angezeigt:
+
+* *Lokale Statistiken* -- die DCBX-Parameter, die auf dem Controller im Werk konfiguriert sind.
+* *Betriebsstatistiken* -- die DCBX-Parameter, die aus DCBX-Verhandlungen resultieren.
+* *Remote Statistics* -- die DCBX-Parameter vom Peer-Gerät, mit dem der Controller verbunden ist, normalerweise ein Schalter.
+
+
+.DCBX TLV-Statistiken:
+====
+[cols="25h,~"]
+|===
+| Statistik | Definition 
+
+
+ a| 
+ISCSI-Host-Port
+ a| 
+Zeigt die Position des erkannten Host-Ports im Controller #, Port #-Format an.
+
+
+
+ a| 
+Flusssteuerungsmodus
+ a| 
+Der Flow Control-Modus des gesamten Ports. Gültige Werte sind deaktiviert, Standard, pro Priorität oder unbestimmt.
+
+
+
+ a| 
+Protokoll
+ a| 
+Das Kommunikationsprotokoll. Gültige Werte sind FCoE, FIP, iSCSI oder UNBEKANNT.
+
+
+
+ a| 
+Priorität
+ a| 
+Ganzzahlwert, der die Prioritätnummer der Kommunikation angibt.
+
+
+
+ a| 
+Prioritätsgruppe
+ a| 
+Ganzzahlwert, der die Prioritätsgruppe darstellt, der das Protokoll zugewiesen wurde.
+
+
+
+ a| 
+Priorität Gruppe % Bandbreite
+ a| 
+Prozentwert, der die der Prioritätsgruppe zugewiesene Bandbreite angibt.
+
+
+
+ a| 
+DCBX PFC-Status
+ a| 
+Der Status der prioritätsbasierten Flow Control (PFC) des spezifischen Ports. Der Wert ist entweder aktiviert oder deaktiviert.
+
+|===
+====
+
+NOTE: Weitere DCBX TLV Statistiken finden Sie in der State Capture Datei.

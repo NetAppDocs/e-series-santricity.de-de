@@ -1,0 +1,35 @@
+---
+permalink: sm-settings/validate-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity,System Manager, E-Series, validate, security, key, 
+summary: Sie können den Sicherheitsschlüssel überprüfen, um sicherzustellen, dass er nicht beschädigt wurde, und um sicherzustellen, dass Sie über einen korrekten Passphrase verfügen. 
+---
+= Validierung des Sicherheitsschlüssels
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Sicherheitsschlüssel überprüfen, um sicherzustellen, dass er nicht beschädigt wurde, und um sicherzustellen, dass Sie über einen korrekten Passphrase verfügen.
+
+In dieser Aufgabe wird beschrieben, wie Sie den zuvor erstellten Sicherheitsschlüssel validieren. Dies ist ein wichtiger Schritt, um sicherzustellen, dass die Schlüsseldatei nicht beschädigt ist und der Passphrase korrekt ist, wodurch sichergestellt wird, dass Sie später auf die Laufwerkdaten zugreifen können, wenn Sie ein sicheres Laufwerk von einem Speicher-Array in ein anderes verschieben.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie unter * Security Key Management* die Option *Validate Key* aus.
++
+Das Dialogfeld Sicherheitsschlüssel validieren wird geöffnet.
+
+. Klicken Sie auf *Durchsuchen* und wählen Sie dann die Schlüsseldatei aus (z. B. `drivesecurity.slk`).
+. Geben Sie die Passphrase ein, die mit der ausgewählten Taste verknüpft ist.
++
+Wenn Sie eine gültige Schlüsseldatei auswählen und den Ausdruck übergeben, steht die Schaltfläche *Validieren* zur Verfügung.
+
+. Klicken Sie Auf *Validieren*.
++
+Die Ergebnisse der Validierung werden im Dialogfeld angezeigt.
+
+. Wenn in den Ergebnissen „der Sicherheitsschlüssel erfolgreich validiert wurde“ angezeigt wird, klicken Sie auf *Schließen*. Wenn eine Fehlermeldung angezeigt wird, befolgen Sie die im Dialogfeld angezeigten Anweisungen.
+

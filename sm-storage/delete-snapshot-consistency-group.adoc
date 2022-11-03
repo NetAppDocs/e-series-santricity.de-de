@@ -1,0 +1,37 @@
+---
+permalink: sm-storage/delete-snapshot-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, snapshot, consistency, group 
+summary: Sie können Snapshot-Konsistenzgruppen löschen, die nicht mehr benötigt werden. 
+---
+= Löschen der Snapshot Konsistenzgruppe
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Snapshot-Konsistenzgruppen löschen, die nicht mehr benötigt werden.
+
+Vergewissern Sie sich, dass die Images aller Mitgliedsvolumes nicht mehr für Backup- oder Testzwecke benötigt werden.
+
+Durch diesen Vorgang werden alle Snapshot-Images oder -Zeitpläne gelöscht, die mit der Snapshot-Konsistenzgruppe verknüpft sind.
+
+.Schritte
+. Wählen Sie Menü:Storage[Snapshots].
+. Wählen Sie die Registerkarte *Snapshot Consistency Groups* aus.
+. Wählen Sie die Snapshot-Konsistenzgruppe aus, die Sie löschen möchten, und wählen Sie dann Menü:Sonstige Aufgaben[Löschen].
++
+Das Dialogfeld „Konsistenzgruppe löschen bestätigen“ wird angezeigt.
+
+. Bestätigen Sie, dass Sie diesen Vorgang ausführen möchten, und klicken Sie dann auf *Löschen*.
+
+
+System Manager führt die folgenden Aktionen durch:
+
+* Löscht alle vorhandenen Snapshot-Images und Snapshot-Volumes aus der Snapshot-Konsistenzgruppe.
+* Löscht alle zugehörigen Snapshot-Images, die für jedes Mitgliedsvolume in der Snapshot-Konsistenzgruppe vorhanden sind.
+* Löscht alle zugehörigen Snapshot-Volumes, die für jedes Mitgliedsvolume in der Snapshot-Konsistenzgruppe vorhanden sind.
+* Löscht alle zugeordneten reservierten Kapazitäten für jedes Mitglied-Volume in der Snapshot-Konsistenzgruppe (wenn ausgewählt).
+

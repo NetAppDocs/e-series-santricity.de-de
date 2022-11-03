@@ -1,0 +1,44 @@
+---
+permalink: sm-storage/disable-resource-provisioning-on-existing-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, disable, resource provisioning, 
+summary: Sie können die Ressourcenbereitstellung in einem vorhandenen Pool oder einer Volume-Gruppe aktivieren oder deaktivieren. 
+---
+= Aktivieren oder deaktivieren Sie die Ressourcenbereitstellung in vorhandenen Volume-Gruppen und -Pools
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Für alle DELBE-fähigen Laufwerke können Sie die Ressourcenbereitstellung auf vorhandenen Volumes in einem Pool oder einer Volume-Gruppe aktivieren oder deaktivieren.
+
+Die Ressourcenbereitstellung ist eine Funktion der EF300- und EF600-Speicher-Arrays, mit der Volumes ohne Hintergrundinitialisierung sofort in Betrieb genommen werden können. Alle dem Volume zugewiesenen Festplattenblöcke werden aufgehoben (ihre Zuordnung wird nicht aufgehoben), was die SSD-Abnutzung verbessert und die maximale Schreib-Performance erhöht.
+
+Standardmäßig ist die Ressourcenbereitstellung auf Systemen aktiviert, auf denen die Laufwerke DULBE unterstützen. Die Ressourcenbereitstellung muss erst aktiviert werden, wenn Sie sie zuvor deaktiviert haben.
+
+.Bevor Sie beginnen
+* Sie benötigen ein EF300- oder EF600-Storage-Array.
+* Sie müssen SSD-Volume-Gruppen oder -Pools haben, wobei alle Laufwerke die Funktion zur Wiederherstellung von dezugewiesenen oder nicht geschriebenen logischen Blockfehlern (DULBE) unterstützen. Andernfalls ist die Option zur Ressourcenbereitstellung nicht verfügbar.
+
+
+Wenn Sie die Ressourcenbereitstellung für vorhandene Volume-Gruppen und -Pools aktivieren, werden alle Volumes in der ausgewählten Volume-Gruppe oder dem ausgewählten Pool geändert, damit die Blöcke wieder entzugewiesen werden können. Dieser Prozess kann einen Hintergrundvorgang erfordern, um eine konsistente Zuweisung auf der Granularität zu gewährleisten. Dieser Vorgang zeigt die Zuordnung von Speicherplatz nicht an. Sobald der Hintergrundvorgang abgeschlossen ist, muss das Betriebssystem die Zuordnung ungenutzter Blöcke aufheben, um freien Speicherplatz zu erstellen.
+
+Wenn Sie die Ressourcenbereitstellung für vorhandene Volume-Gruppen oder Pools deaktivieren, schreibt ein Hintergrundvorgang alle logischen Blöcke in jedem Volume neu. Die bestehenden Daten bleiben erhalten. Die Schreibvorgänge zuordnen oder stellen die Blöcke auf den Laufwerken bereit, die der Volume-Gruppe oder dem Pool zugeordnet sind.
+
+
+NOTE: Für neue Volume-Gruppen und -Pools können Sie die Ressourcenbereitstellung über Menü:Einstellungen[System > zusätzliche Einstellungen > Aktivieren/Deaktivieren von Volumes mit Ressourcenbereitstellung] aktivieren oder deaktivieren.
+
+.Schritte
+. Wählen Sie Menü:Speicher[Pools & Volume Groups].
+. Wählen Sie einen Pool oder eine Volume-Gruppe aus der Liste aus.
++
+Sie können jeweils nur einen Pool oder eine Volume-Gruppe auswählen. Scrollen Sie in der Liste nach unten, um weitere Pools oder Volume-Gruppen zu sehen.
+
+. Wählen Sie *Sonstige Aufgaben* und dann entweder *Ressourcenbereitstellung aktivieren* oder *Ressourcenbereitstellung deaktivieren*.
+. Bestätigen Sie im Dialogfeld den Vorgang.
+
+
+
+NOTE: *Wenn Sie DULBE* erneut aktiviert haben -- nach Abschluss des Hintergrundvorgangs müssen Sie möglicherweise den Host neu starten, damit die DULBE-Konfigurationsänderungen erkannt und anschließend alle Dateisysteme neu mounten.

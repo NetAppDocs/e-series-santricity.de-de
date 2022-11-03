@@ -1,0 +1,50 @@
+---
+permalink: sm-settings/access-management-tokens.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, tokens 
+summary: Access Tokens bieten Zugriff auf das Array, ohne Benutzernamen und Passwort offenzulegen. 
+---
+= Auf Token zugreifen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Access Tokens bieten eine Authentifizierungsmethode mit DER REST-API oder der Befehlszeilenschnittstelle (CLI), ohne Benutzernamen und Kennwörter offenzulegen. Ein Token ist einem bestimmten Benutzer (einschließlich LDAP-Benutzer) zugeordnet und umfasst eine Reihe von Berechtigungen und eine Ablauffrist.
+
+
+
+== Zugriff auf SAML- und JSON-Webtoken
+
+Standardmäßig ist ein System mit aktivierter SAML nicht für den Zugriff auf herkömmliche Befehlszeilentools verfügbar. DIE REST-API und die CLI funktionieren wirkungslos, da der MFA-Workflow zur Authentifizierung eine Umleitung zu einem Identity Provider-Server erfordert. Deshalb müssen Sie Token in System Manager generieren, die die Authentifizierung eines Benutzers über MFA vorgeben.
+
+
+NOTE: Für die Verwendung von Webtoken ist SAML nicht erforderlich, aber SAML wird für die höchste Sicherheitsstufe empfohlen.
+
+
+
+== Workflow zum Erstellen und Verwenden von Token
+
+. Erstellen Sie in System Manager ein Token, und bestimmen Sie dessen Ablauf.
+. Kopieren Sie den Token-Text in die Zwischenablage, oder laden Sie ihn in eine Datei herunter, und speichern Sie den Token-Text an einem sicheren Ort.
+. Verwenden Sie das Token wie folgt:
++
+** *Rest API*: Um ein Token in einer REST-API-Anforderung zu verwenden, fügen Sie einen HTTP-Header zu Ihren Anforderungen hinzu. Beispiel:
+`Authorization: Bearer _<access-token-value>_`
+** *Secure CLI*: Um ein Token in der CLI zu verwenden, fügen Sie den Token-Wert in die Befehlszeile ein oder verwenden Sie den Pfad zu einer Datei, die den Token-Wert enthält. Beispiel:
++
+*** Token-Wert in der Befehlszeile: `-t _access-token-value_`
+*** Pfad zu einer Datei mit dem Token-Wert: `-T _access-token-file_`
+
+
+
+
+
+
+Weitere Informationen:
+
+* link:access-management-tokens-create.html["Erstellen von Zugriffs-Tokens"]
+* link:access-management-tokens-edit.html["Bearbeiten Sie Access Tokens"]
+* link:access-management-tokens-revoke.html["Access Token widerrufen"]
+

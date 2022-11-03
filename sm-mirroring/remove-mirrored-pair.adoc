@@ -1,0 +1,39 @@
+---
+permalink: sm-mirroring/remove-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remove, asynchronous, mirror, relationship, 
+summary: Ein gespiegeltes Paar entfernen Sie die gespiegelte Beziehung vom primären Volume auf dem lokalen Storage Array und dem sekundären Volume im Remote Storage Array. 
+---
+= Entfernen Sie die asynchrone Spiegelbeziehung
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ein gespiegeltes Paar entfernen Sie die gespiegelte Beziehung vom primären Volume auf dem lokalen Storage Array und dem sekundären Volume im Remote Storage Array.
+
+Prüfen Sie die folgenden Informationen zu verwaisten gespiegelten Paaren:
+
+* Ein verwaister gespiegeltes Paar ist vorhanden, wenn ein Mitglied-Volume einer Consistency Mirror-Gruppe auf einer Seite entfernt wurde (entweder auf der Seite des lokalen Speicher-Arrays oder auf der Seite des Remote-Speicher-Arrays), jedoch nicht auf der anderen Seite.
+* Verwaiste gespiegelte Paare werden erkannt, wenn die Kommunikation zwischen den Arrays wiederhergestellt wird und die beiden Seiten der Spiegelkonfiguration die Spiegelparameter abgleichen.
+* Sie können ein gespiegeltes Paar entfernen, um den Status eines verwaisten gespiegelten Paares zu korrigieren.
+
+
+.Schritte
+. Wählen Sie Menü:Speicher[Asynchronous Mirroring].
+. Wählen Sie die Registerkarte *gespiegeltes Paar* aus.
++
+Die Tabelle mit gespiegelten Paaren wird angezeigt und zeigt alle gespiegelten Paare an, die dem Speicher-Array zugeordnet sind.
+
+. Wählen Sie das gespiegelte Paar aus, das Sie entfernen möchten, und klicken Sie dann auf *Entfernen*.
+. Bestätigen Sie, dass Sie das gespiegelte Paar entfernen möchten, und klicken Sie dann auf *Entfernen*.
+
+
+System Manager führt die folgenden Aktionen durch:
+
+* Entfernt die Spiegelbeziehung aus der SpiegelungsConsistency Group auf dem lokalen Speicher-Array und auf dem Remote-Speicher-Array und löscht die reservierte Kapazität.
+* Liefert das primäre und das sekundäre Volume zu hostfreien, nicht gespiegelten Volumes zurück.
+* Aktualisiert die Kachel „Asynchronous Mirroring“ beim Entfernen des asynchronen gespiegelten Paares.
+

@@ -1,0 +1,18 @@
+---
+permalink: sm-hardware/where-can-i-view-the-status-of-a-drive-undergoing-reconstruction.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, drive, reconstruction, 
+summary: Sie können den Rekonstruktionsstatus des Laufwerks über die Konsole „Operations in Progress“ anzeigen. 
+---
+= Wo kann ich den Status eines Laufwerks sehen, der derzeit rekonstruiert wird?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Rekonstruktionsstatus des Laufwerks über die Konsole „Operations in Progress“ anzeigen.
+
+Klicken Sie auf der Startseite oben rechts auf den Link *Vorgänge in Bearbeitung anzeigen*.
+
+Je nach Laufwerk kann die vollständige Rekonstruktion sehr viel Zeit in Anspruch nehmen. Wenn sich die Volume-Eigentümerschaft geändert hat, kann anstelle der schnellen Wiederherstellung eine vollständige Rekonstruktion stattfinden.

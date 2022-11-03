@@ -1,0 +1,165 @@
+---
+permalink: um-certificates/add-directory-server-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, add, directory, server 
+summary: Um die Authentifizierung für die Zugriffsverwaltung zu konfigurieren, stellen Sie eine Kommunikation zwischen einem LDAP-Server und dem Host her, auf dem der Web Services Proxy für SANtricity Unified Manager ausgeführt wird. Anschließend ordnen Sie die LDAP-Benutzergruppen den lokalen Benutzerrollen zu. 
+---
+= Verzeichnisserver hinzufügen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um die Authentifizierung für die Zugriffsverwaltung zu konfigurieren, stellen Sie eine Kommunikation zwischen einem LDAP-Server und dem Host her, auf dem der Web Services Proxy für Unified Manager ausgeführt wird. Anschließend ordnen Sie die LDAP-Benutzergruppen den lokalen Benutzerrollen zu.
+
+.Bevor Sie beginnen
+* Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
+* Benutzergruppen müssen in Ihrem Verzeichnisdienst definiert sein.
+* LDAP-Serveranmeldeinformationen müssen verfügbar sein, einschließlich Domänenname, Server-URL und optional Benutzername und Kennwort für das Bindekonto.
+* Bei LDAPS-Servern mit einem sicheren Protokoll muss die Zertifikatskette des LDAP-Servers auf Ihrem lokalen Computer installiert sein.
+
+
+Das Hinzufügen eines Verzeichnisservers ist ein zweistufiger Prozess. Geben Sie zuerst den Domain-Namen und die URL ein. Wenn Ihr Server ein sicheres Protokoll verwendet, müssen Sie auch ein CA-Zertifikat zur Authentifizierung hochladen, wenn es von einer nicht standardmäßigen Signierungsbehörde signiert ist. Wenn Sie über Anmeldedaten für ein Bindekonto verfügen, können Sie auch Ihren Benutzernamen und Ihr Kennwort eingeben. Als Nächstes werden die Benutzergruppen des LDAP-Servers lokalen Benutzerrollen zugeordnet.
+
+.Schritte
+. Wählen Sie *Zugriffsmanagement*.
+. Wählen Sie auf der Registerkarte *Directory Services* die Option *Add Directory Server* aus.
++
+Das Dialogfeld Add Directory Server wird geöffnet.
+
+. Geben Sie auf der Registerkarte *Server-Einstellungen* die Anmeldeinformationen für den LDAP-Server ein.
++
+.Felddetails
+====
+[cols="25h,~"]
+|===
+| Einstellung | Beschreibung 
+
+
+ a| 
+*Konfigurationseinstellungen*
+
+
+
+ a| 
+Domäne(en)
+ a| 
+Geben Sie den Domänennamen des LDAP-Servers ein. Geben Sie für mehrere Domänen die Domänen in eine kommagetrennte Liste ein. Der Domänenname wird in der Anmeldung (_username_@_Domain_) verwendet, um anzugeben, gegen welchen Verzeichnisserver sich authentifizieren soll.
+
+
+
+ a| 
+Server-URL
+ a| 
+Geben Sie die URL für den Zugriff auf den LDAP-Server in Form von ein `ldap[s]://*host*:*port*`.
+
+
+
+ a| 
+Zertifikat hochladen (optional)
+ a| 
+
+NOTE: Dieses Feld wird nur angezeigt, wenn ein LDAPS-Protokoll im obigen Feld Server-URL angegeben wird.
+
+Klicken Sie auf *Durchsuchen* und wählen Sie ein CA-Zertifikat zum Hochladen aus. Dies ist das vertrauenswürdige Zertifikat oder die Zertifikatskette, die für die Authentifizierung des LDAP-Servers verwendet wird.
+
+
+
+ a| 
+Konto binden (optional)
+ a| 
+Geben Sie ein schreibgeschütztes Benutzerkonto ein, um Suchanfragen auf dem LDAP-Server und für die Suche in den Gruppen durchzuführen. Geben Sie den Kontonamen im LDAP-Format ein. Wenn der Bindebenutzer beispielsweise „bind-Konto“ heißt, können Sie einen Wert wie eingeben `CN=bindacct,CN=Users,DC=cpoc,DC=local`.
+
+
+
+ a| 
+Bindepasswort (optional)
+ a| 
+
+NOTE: Dieses Feld wird angezeigt, wenn Sie ein Bindungskonto eingeben.
+
+Geben Sie das Passwort für das Bindekonto ein.
+
+
+
+ a| 
+Testen Sie die Serververbindung, bevor Sie sie hinzufügen
+ a| 
+Aktivieren Sie dieses Kontrollkästchen, wenn Sie sicherstellen möchten, dass das System mit der eingegebenen LDAP-Serverkonfiguration kommunizieren kann. Der Test erfolgt, nachdem Sie unten im Dialogfeld auf *Hinzufügen* geklickt haben.
+
+Wenn dieses Kontrollkästchen aktiviert ist und der Test fehlschlägt, wird die Konfiguration nicht hinzugefügt. Sie müssen den Fehler beheben oder das Kontrollkästchen deaktivieren, um den Test zu überspringen und die Konfiguration hinzuzufügen.
+
+
+
+ a| 
+*Berechtigungseinstellungen*
+
+
+
+ a| 
+Basis-DN suchen
+ a| 
+Geben Sie den LDAP-Kontext ein, um nach Benutzern zu suchen, normalerweise in Form von `CN=Users, DC=cpoc, DC=local`.
+
+
+
+ a| 
+Attribut Benutzername
+ a| 
+Geben Sie das Attribut ein, das zur Authentifizierung an die Benutzer-ID gebunden ist. Beispiel: `sAMAccountName`.
+
+
+
+ a| 
+Gruppenattribut(e)
+ a| 
+Geben Sie eine Liste der Gruppenattribute für den Benutzer ein, die für die Zuordnung von Gruppen zu Rollen verwendet werden. Beispiel: `memberOf, managedObjects`.
+
+|===
+====
+. Klicken Sie auf die Registerkarte *Rollenzuordnung*.
+. Weisen Sie den vordefinierten Rollen LDAP-Gruppen zu. Einer Gruppe können mehrere Rollen zugewiesen sein.
++
+.Felddetails
+====
+[cols="25h,~"]
+|===
+| Einstellung | Beschreibung 
+
+
+ a| 
+*Zuordnungen*
+
+
+
+ a| 
+Gruppen-DN
+ a| 
+Geben Sie den Group Distinguished Name (DN) für die zu zugeordnete LDAP-Benutzergruppe an. Reguläre Ausdrücke werden unterstützt. Diese speziellen regulären Ausdruckszeichen müssen mit einem umgekehrten Schrägstrich (\) entgangen werden, wenn sie nicht Teil eines regulären Ausdrucksmusters sind: \.[]{}()<>*+-=!?^
+
+
+
+ a| 
+Rollen
+ a| 
+Klicken Sie in das Feld, und wählen Sie eine der lokalen Benutzerrollen aus, die dem Gruppen-DN zugeordnet werden sollen. Sie müssen jede Rolle, die Sie für diese Gruppe aufnehmen möchten, einzeln auswählen. Die Monitorrolle ist erforderlich, um sich in SANtricity Unified Manager mit den anderen Rollen anzumelden. Die zugeordneten Rollen umfassen die folgenden Berechtigungen:
+
+** *Storage Admin* -- Vollständiger Lese-/Schreibzugriff auf Speicherobjekte auf den Arrays, aber kein Zugriff auf die Sicherheitskonfiguration.
+** *Security Admin* -- Zugriff auf die Sicherheitskonfiguration in Access Management und Certificate Management.
+** *Support Admin* -- Zugriff auf alle Hardware-Ressourcen auf Speicher-Arrays, Ausfalldaten und MEL-Ereignisse. Kein Zugriff auf Speicherobjekte oder die Sicherheitskonfiguration.
+** *Monitor* -- schreibgeschützter Zugriff auf alle Speicherobjekte, aber kein Zugriff auf die Sicherheitskonfiguration.
+
+
+|===
+====
++
+
+NOTE: Die Überwachungsrolle ist für alle Benutzer, einschließlich des Administrators, erforderlich.
+
+. Klicken Sie auf *Weitere Zuordnungen hinzufügen*, um weitere Gruppen-zu-Rolle-Zuordnungen einzugeben.
+. Wenn Sie mit den Zuordnungen fertig sind, klicken Sie auf *Hinzufügen*.
++
+Das System führt eine Validierung durch und stellt sicher, dass das Speicher-Array und der LDAP-Server kommunizieren können. Wenn eine Fehlermeldung angezeigt wird, überprüfen Sie die im Dialogfeld eingegebenen Anmeldeinformationen, und geben Sie die Informationen ggf. erneut ein.
+
+

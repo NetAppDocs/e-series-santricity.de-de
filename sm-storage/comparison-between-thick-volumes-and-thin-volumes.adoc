@@ -1,0 +1,61 @@
+---
+permalink: sm-storage/comparison-between-thick-volumes-and-thin-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, comparison, thick volumes, thin volumes 
+summary: Ein Thick Volume ist immer vollständig bereitgestellt, was bedeutet, dass bei der Erstellung des Volume alle Kapazitäten zugewiesen werden. Ein Thin Volume wird immer über Thin Provisioning bereitgestellt. Das heißt, die Kapazität wird beim Schreiben der Daten auf das Volume zugewiesen. 
+---
+= Vergleich von Thick Volumes und Thin Volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ein Thick Volume ist immer vollständig bereitgestellt, was bedeutet, dass bei der Erstellung des Volume alle Kapazitäten zugewiesen werden. Ein Thin Volume wird immer über Thin Provisioning bereitgestellt. Das heißt, die Kapazität wird beim Schreiben der Daten auf das Volume zugewiesen.
+
+[NOTE]
+====
+System Manager bietet keine Option zum Erstellen von Thin Volumes. Wenn Sie Thin Volumes erstellen möchten, verwenden Sie die Befehlszeilenschnittstelle (CLI).
+
+====
+[cols="25h,~"]
+|===
+| Volume-Typ | Beschreibung 
+
+
+ a| 
+Thick Volumes
+ a| 
+* Thick Volumes werden entweder aus einem Pool oder einer Volume-Gruppe erstellt.
+* Bei dicken Volumes wird bereits im Vorfeld ein großer Speicherplatz bereitgestellt, damit zukünftige Storage-Anforderungen erfüllt werden können.
+* Thick Volumes werden mit der gesamten Größe des Volumes erstellt, die bei der Erstellung des Volume vorab über physischen Storage zugewiesen sind. Aufgrund dieser Vorzuweisung verbraucht das Erstellen eines 100 gib Volumes tatsächlich 100 gib der zugewiesenen Kapazität auf Ihren Laufwerken. Der Speicherplatz könnte jedoch nicht genutzt werden, wodurch die Storage-Kapazität zu wenig genutzt wird.
+* Stellen Sie bei der Erstellung von Thick Volumes sicher, dass Sie die Kapazität eines einzelnen Volume nicht zu hoch zuweisen. Bei der Zuweisung von Kapazität für ein einzelnes Volume kann der gesamte physische Storage in Ihrem System schnell belegt werden.
+* Beachten Sie, dass auch für Copy-Services (Snapshot Images, Snapshot-Volumes, Volume-Kopien und asynchrone Spiegelung) Storage-Kapazität benötigt wird. Weisen Sie daher nicht alle Kapazitäten Thick Volumes zu. Unzureichender Speicherplatz kann Schreibvorgänge in den Pool oder die Volume-Gruppe blockieren. Im Falle dieses Problems erhalten Sie eine Warnung für den Freikapazitätsschwellenwert.
+
+
+
+
+ a| 
+Thin Volumes
+ a| 
+* Thin Volumes werden nur aus einem Pool und nicht aus einer Volume-Gruppe erstellt.
+* Thin Volumes müssen RAID 6 sein.
+* Thin Volumes sind auf dem EF600 oder EF300 Storage-System nicht verfügbar.
+* Sie müssen die CLI zum Erstellen von Thin Volumes verwenden.
+* Im Gegensatz zu dicken Volumes wird der für das Thin Volume erforderliche Speicherplatz nicht während der Erstellung zugewiesen, sondern zu einem späteren Zeitpunkt nach Bedarf bereitgestellt.
+* Dank eines Thin Volume können Sie seine Größe überdimensionieren. Das heißt, Sie können eine LUN-Größe zuweisen, die größer ist als das Volume. Sie können das Volume dann nach Bedarf erweitern (falls nötig weitere Laufwerke hinzufügen), ohne die Größe der LUN zu erweitern und müssen daher die Benutzer nicht trennen.
+* Mithilfe des Thin Provisioning Block Space Reclamation (UNMAP) können Blöcke eines Thin Provisioning Volumes auf dem Storage Array über einen vom Host ausgegebenen SCSI UNMAP-Befehl zurückgewonnen werden. Ein Storage Array, das Thin Provisioning unterstützt, kann den wieder zurückgewonnenen Speicherplatz wiederverwenden, um die Zuweisungsanforderungen für ein anderes Thin Provisioning Volume innerhalb desselben Storage Arrays zu erfüllen. Hierdurch kann der Festplattenplatzverbrauch besser gemeldet und die Ressourcen effizienter genutzt werden.
+
+
+|===
+
+
+== Thin-Volume-Einschränkungen
+
+Thin Volumes unterstützen alle Vorgänge als Thick Volumes. Die folgenden Ausnahmen gelten:
+
+* Sie können die Segmentgröße eines Thin-Volumes nicht ändern.
+* Sie können die vorlesende Redundanzprüfung für ein Thin Volume nicht aktivieren.
+* Ein Thin-Volume kann in einem Kopiervorgang nicht als Zielvolume verwendet werden.
+* Die zugewiesene Kapazitätsgrenze und der Warnschwellenwert eines Thin Volume können nur auf der primären Seite eines asynchronen gespiegelten Paares geändert werden. Alle Änderungen an diesen Parametern auf der primären Seite werden automatisch auf die sekundäre Seite übertragen.
+

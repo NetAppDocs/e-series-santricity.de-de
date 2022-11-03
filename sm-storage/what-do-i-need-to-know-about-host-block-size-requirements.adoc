@@ -1,0 +1,27 @@
+---
+permalink: sm-storage/what-do-i-need-to-know-about-host-block-size-requirements.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, block size, 
+summary: 'Bei EF300- und EF600-Systemen kann ein Volume so eingestellt werden, dass es eine Blockgröße von 512 Byte oder 4 KiB unterstützt (auch als „Speichergröße“ bezeichnet). Sie müssen den richtigen Wert während der Volume-Erstellung einstellen. Wenn möglich, schlägt das System den entsprechenden Standardwert vor.' 
+---
+= Was muss ich über die Anforderungen der Host-Blockgröße wissen?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bei EF300- und EF600-Systemen kann ein Volume so eingestellt werden, dass es 512 Byte oder 4 KiB-Blockgrößen unterstützt (auch als „Sektorgröße“ bezeichnet). Sie müssen den richtigen Wert während der Volume-Erstellung einstellen. Wenn möglich, schlägt das System den entsprechenden Standardwert vor.
+
+Bevor Sie die Blockgröße des Volumes festlegen, lesen Sie die folgenden Einschränkungen und Richtlinien.
+
+* Einige Betriebssysteme und Virtual Machines (vornehmlich VMware) erfordern derzeit eine 512-Byte-Blockgröße und unterstützen keine 4KiB. Achten Sie also darauf, die Host-Anforderungen zu kennen, bevor Sie ein Volume erstellen. In der Regel können Sie die beste Performance erreichen, indem Sie ein Volume so einstellen, dass eine 4KiB-Blockgröße vorliegt. Achten Sie jedoch darauf, dass Ihr Host 4KiB-Blöcke (oder „`4Kn`“) zulässt.
+* Der für den Pool bzw. die Volume-Gruppe ausgewählte Laufwerkstyp legt außerdem fest, welche Volume-Blockgrößen unterstützt werden:
++
+** Wenn Sie eine Volume-Gruppe mit Laufwerken erstellen, die in 512-Byte-Blöcke schreiben, dann können Sie nur Volumes mit 512-Byte-Blöcken erstellen.
+** Wenn Sie eine Volume-Gruppe mit Laufwerken erstellen, die in 4KiB-Blöcke schreiben, dann können Sie Volumes entweder mit 512-Byte- oder 4KiB-Blöcken erstellen.
+
+
+* Wenn das Array über eine iSCSI-Host-Schnittstellenkarte verfügt, sind alle Volumes auf 512-Byte-Blöcke beschränkt (unabhängig von der Blockgröße der Volume-Gruppe). Dies ist auf eine bestimmte Hardware-Implementierung zurückzuführen.
+* Sobald die Blockgröße festgelegt ist, können Sie sie nicht ändern. Wenn Sie eine Blockgröße ändern müssen, müssen Sie das Volume löschen und neu erstellen.
+

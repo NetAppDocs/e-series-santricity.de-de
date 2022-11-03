@@ -1,0 +1,37 @@
+---
+permalink: sm-support/view-iscsi-statistics-packages-support.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, iscsi, statistics, packages 
+summary: Sie können Daten über die iSCSI-Verbindungen zu Ihrem Speicher-Array anzeigen. 
+---
+= Anzeigen von iSCSI-Statistikpaketen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Daten über die iSCSI-Verbindungen zu Ihrem Speicher-Array anzeigen.
+
+System Manager zeigt diese Typen von iSCSI-Statistiken. Alle Statistiken sind schreibgeschützt und können nicht festgelegt werden.
+
+* *Ethernet MAC Statistics* -- stellt Statistiken für die Media Access Control (MAC) bereit. MAC bietet auch einen Adressierungsmechanismus, der als physische Adresse oder MAC-Adresse bezeichnet wird. Die MAC-Adresse ist eine eindeutige Adresse, die jedem Netzwerkadapter zugewiesen wird. Die MAC-Adresse unterstützt die Übertragung von Datenpaketen an ein Ziel innerhalb des Subnetzwerks.
+* *Ethernet TCP/IP-Statistiken* -- liefert Statistiken für das TCP/IP, welches das Transmission Control Protocol (TCP) und das Internet Protocol (IP) für das iSCSI-Gerät ist. Mit TCP können Anwendungen auf vernetzten Hosts Verbindungen miteinander herstellen, über die sie Daten in Paketen austauschen können. Die IP ist ein datenorientiertes Protokoll, das Daten über ein paketgeschaltetes Inter-Netzwerk kommuniziert. Die IPv4-Statistiken und die IPv6-Statistiken werden separat angezeigt.
+* *Local Target/Initiator (Protocol) Statistics* -- zeigt Statistiken für das iSCSI-Ziel an, die Zugriff auf seine Speichermedien auf Blockebene ermöglichen, und zeigt die iSCSI-Statistiken für das Speicher-Array an, wenn es als Initiator bei asynchronen Spiegelungsvorgängen verwendet wird.
+* *DCBX Betriebszustände* -- zeigt die Betriebszustände der verschiedenen Funktionen von Data Center Bridging Exchange (DCBX) an.
+* *LLDP-TLV-Statistiken* -- zeigt die Statistiken zum Typ Length Value (TLV) des Link Layer Discovery Protocol (LLDP) an.
+* *DCBX TLV Statistics* -- zeigt die Informationen an, die die Speicher-Array-Host-Ports in einer Data Center Bridging (DCB)-Umgebung identifizieren. Diese Informationen werden zu Identifikations- und Funktionszwecken an Kollegen des Netzwerks weitergegeben.
+
+
+Sie können jede dieser Statistiken als RAW-Statistiken oder als Baseline-Statistiken anzeigen. RAW-Statistiken sind alle Statistiken, die seit dem Start der Controller gesammelt wurden. Baseline-Statistiken sind zeitpunktgenaue Statistiken, die seit dem Festlegen der Baseline-Zeit erfasst wurden.
+
+.Schritte
+. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie *Anzeigen von iSCSI-Statistikpaketen* aus.
+. Klicken Sie auf eine Registerkarte, um die verschiedenen Statistikgruppen anzuzeigen.
+. Klicken Sie zum Festlegen des Basisplans auf *Neue Baseline festlegen*.
++
+Durch das Festlegen der Baseline wird ein neuer Ausgangspunkt für die Erfassung der Statistiken festgelegt. Dieselbe Baseline wird für alle iSCSI-Statistiken verwendet.
+
+

@@ -1,0 +1,94 @@
+---
+permalink: sm-hardware/configure-management-ports.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, management, port, 
+summary: Der Controller enthält einen für das Systemmanagement verwendeten Ethernet-Port. Bei Bedarf können Sie die Übertragungsparameter und IP-Adressen ändern. 
+---
+= Konfigurieren Sie den Managementport
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der Controller enthält einen für das Systemmanagement verwendeten Ethernet-Port. Bei Bedarf können Sie die Übertragungsparameter und IP-Adressen ändern.
+
+Während dieses Verfahrens wählen Sie Port 1 und bestimmen dann die Geschwindigkeit und Port Addressing-Methode. Port 1 stellt eine Verbindung zum Netzwerk her, in dem der Management-Client auf den Controller und System Manager zugreifen kann.
+
+[NOTE]
+====
+Verwenden Sie nicht Port 2 auf beiden Controllern. Port 2 ist dem technischen Support vorbehalten.
+
+====
+.Schritte
+. Wählen Sie *Hardware*.
+. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf *Zurück zum Regal anzeigen*.
++
+Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
+
+. Klicken Sie auf den Controller mit dem Managementport, den Sie konfigurieren möchten.
++
+Das Kontextmenü des Controllers wird angezeigt.
+
+. Wählen Sie *Management Ports konfigurieren*.
++
+Das Dialogfeld Management-Ports konfigurieren wird geöffnet.
+
+. Stellen Sie sicher, dass Port 1 angezeigt wird, und klicken Sie dann auf *Weiter*.
+. Wählen Sie die Einstellungen für den Konfigurationsanschluss aus, und klicken Sie dann auf *Weiter*.
++
+.Felddetails
+====
+[cols="25h,~"]
+|===
+| Feld | Beschreibung 
+
+
+ a| 
+Geschwindigkeit und Duplexmodus
+ a| 
+Behalten Sie die Einstellung für die automatische Aushandlung bei, wenn der System Manager die Übertragungsparameter zwischen dem Speicher-Array und dem Netzwerk bestimmen soll. Wenn Sie die Geschwindigkeit und den Modus Ihres Netzwerks kennen, wählen Sie die Parameter aus der Dropdown-Liste aus. In der Liste werden nur die gültigen Geschwindigkeits- und Duplexkombinationen angezeigt.
+
+
+
+ a| 
+IPv4 aktivieren/IPv6 aktivieren
+ a| 
+Wählen Sie eine oder beide Optionen aus, um die Unterstützung für IPv4- und IPv6-Netzwerke zu aktivieren.
+
+|===
+====
++
+Wenn Sie *IPv4 aktivieren* wählen, wird ein Dialogfeld zur Auswahl von IPv4-Einstellungen geöffnet, nachdem Sie auf *Weiter* geklickt haben. Wenn Sie *IPv6* aktivieren auswählen, wird ein Dialogfeld zur Auswahl von IPv6-Einstellungen geöffnet, nachdem Sie auf *Weiter* geklickt haben. Wenn Sie beide Optionen auswählen, wird zuerst das Dialogfeld für IPv4-Einstellungen geöffnet, und nach dem Klicken auf *Weiter* wird das Dialogfeld für IPv6-Einstellungen geöffnet.
+
+. Konfigurieren Sie die IPv4- und/oder IPv6-Einstellungen automatisch oder manuell.
++
+.Felddetails
+====
+[cols="25h,~"]
+|===
+| Feld | Beschreibung 
+
+
+ a| 
+Konfiguration automatisch vom DHCP-Server beziehen
+ a| 
+Wählen Sie diese Option aus, um die Konfiguration automatisch abzurufen.
+
+
+
+ a| 
+Statische Konfiguration manuell festlegen
+ a| 
+Wählen Sie diese Option aus, und geben Sie dann die IP-Adresse des Controllers ein. (Bei Bedarf können Sie Adressen in die Felder ausschneiden und einfügen.) Geben Sie bei IPv4 die Subnetzmaske und das Gateway des Netzwerks an. Geben Sie für IPv6 die routingfähige IP-Adresse und die Router-IP-Adresse ein.
+
+
+NOTE: Wenn Sie die Konfiguration der IP-Adresse ändern, geht der Verwaltungspfad zum Speicher-Array verloren. Wenn Sie Arrays in Ihrem Netzwerk global mit SANtricity Unified Manager verwalten, öffnen Sie die Benutzeroberfläche und gehen Sie zum Menü:Managen[Entdecken]. Wenn Sie SANtricity-Speicher-Manager verwenden, müssen Sie das Gerät aus dem Enterprise Management-Fenster (EMW) entfernen, es wieder zum EMW hinzufügen, indem Sie Menü:Bearbeiten[Speicher-Array hinzufügen] auswählen und dann die neue IP-Adresse eingeben.
+
+|===
+====
+. Klicken Sie Auf *Fertig Stellen*.
+
+
+Die Konfiguration des Managementport wird auf der Registerkarte Controller-Einstellungen, Management Ports, angezeigt.

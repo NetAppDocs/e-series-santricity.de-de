@@ -1,0 +1,67 @@
+---
+permalink: sm-storage/convert-a-snapshot-volume-to-read-write-mode.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, convert, snapshot, volume, read-write mode 
+summary: Sie können bei Bedarf ein schreibgeschütztes Snapshot Volume oder ein Snapshot Consistency Group Snapshot Volume in den Lese-/Schreibmodus konvertieren. 
+---
+= Konvertieren des Snapshot-Volumes in den Lese-/Schreibmodus
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können bei Bedarf ein schreibgeschütztes Snapshot Volume oder ein Snapshot Consistency Group Snapshot Volume in den Lese-/Schreibmodus konvertieren.
+
+Ein Snapshot Volume, das in den Zugriff auf Lese- und Schreibvorgänge umgewandelt wird, enthält seine eigene reservierte Kapazität. Mit dieser Kapazität werden nachfolgende Änderungen der Host-Applikation auf dem Basis-Volume gespeichert, ohne dass das referenzierte Snapshot Image beeinträchtigt wird.
+
+.Schritte
+. Wählen Sie Menü:Storage[Snapshots].
+. Wählen Sie die Registerkarte *Snapshot Volumes* aus.
++
+Die Tabelle Snapshot Volumes wird angezeigt und zeigt alle dem Speicher-Array zugeordneten Snapshot-Volumes an.
+
+. Wählen Sie das schreibgeschützte Snapshot-Volumen aus, das Sie konvertieren möchten, und klicken Sie dann auf *in Lesen/Schreiben konvertieren*.
++
+Das Dialogfeld in Lesen/Schreiben konvertieren wird angezeigt, wenn der Schritt *Reservekapazität* aktiviert ist. In der Tabelle Volume Candidate werden nur die Kandidaten angezeigt, die die angegebene reservierte Kapazität unterstützen.
+
+. Um die reservierte Kapazität für das Lese- und Schreib-Snapshot-Volume zuzuweisen, führen Sie eine der folgenden Aktionen aus:
++
+** *Übernehmen Sie die Standardeinstellungen* -- Verwenden Sie diese empfohlene Option, um die reservierte Kapazität für das Snapshot-Volumen mit den Standardeinstellungen zuzuweisen.
+** *Zuweisen Ihrer eigenen reservierten Kapazitätseinstellungen entsprechend Ihren Datenspeicheranforderungen* -- Zuweisen der reservierten Kapazität unter Verwendung der folgenden Richtlinien.
++
+*** Die Standardeinstellung für die reservierte Kapazität ist 40 % der Kapazität des Basis-Volumes, und in der Regel reicht diese Kapazität aus.
+*** Die benötigte Kapazität ist abhängig von der Häufigkeit und der Größe der I/O-Schreibvorgänge auf dem Volume.
+
+
+
+
+. Wählen Sie *Weiter*, um die Einstellungen zu überprüfen oder zu bearbeiten.
++
+Das Dialogfeld Einstellungen bearbeiten wird angezeigt.
+
+. Akzeptieren oder geben Sie die Einstellungen für das Snapshot-Volumen an, und wählen Sie dann *Fertig*, um das Snapshot-Volumen zu konvertieren.
++
+.Felddetails
+====
+[cols="25h,~"]
+|===
+| Einstellung | Beschreibung 
+
+
+ a| 
+*Reservierte Kapazitätseinstellungen*
+
+
+
+ a| 
+Benachrichtigen, wenn...
+ a| 
+Verwenden Sie die Spinner-Box, um den Prozentpunkt anzupassen, an dem das System eine Warnmeldung sendet, wenn sich die reservierte Kapazität einer Snapshot-Gruppe fast voll befindet.
+
+Wenn die reservierte Kapazität für das Snapshot-Volume den angegebenen Schwellenwert überschreitet, sendet das System eine Warnmeldung, sodass Sie die reservierte Kapazität erhöhen oder unnötige Objekte löschen können.
+
+|===
+====
+

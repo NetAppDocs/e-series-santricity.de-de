@@ -1,0 +1,38 @@
+---
+permalink: um-manage/what-do-i-need-to-know-before-creating-a-mirror-consistency-group-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, mirror, consistency, group 
+summary: Befolgen Sie die folgenden Richtlinien, bevor Sie eine gespiegelte Konsistenzgruppe erstellen. 
+---
+= Was muss ich wissen, bevor ich eine gespiegelte Konsistenzgruppe erstellt?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Befolgen Sie die folgenden Richtlinien, bevor Sie eine gespiegelte Konsistenzgruppe erstellen.
+
+Erfüllen Sie die folgenden Anforderungen für Unified Manager:
+
+* Der Web Services Proxy-Dienst muss ausgeführt werden.
+* Unified Manager muss auf Ihrem lokalen Host über eine HTTPS-Verbindung ausgeführt werden.
+* Unified Manager muss gültige SSL-Zertifikate für das Speicher-Array anzeigen. Sie können ein selbstsigniertes Zertifikat akzeptieren oder Ihr eigenes Sicherheitszertifikat mit Unified Manager installieren und zum Menü:Zertifikat[Zertifikatverwaltung] navigieren.
+
+
+Erfüllen Sie außerdem die folgenden Anforderungen an Storage-Arrays:
+
+* Die beiden Storage Arrays müssen in Unified Manager erkannt werden.
+* Jedes Speicher-Array muss zwei Controller haben.
+* Jeder Controller im primären Array und im sekundären Array muss über einen konfigurierten Ethernet-Managementport verfügen und mit dem Netzwerk verbunden sein.
+* Die Speicher-Arrays verfügen über eine Firmware-Version von mindestens 7.84. (Beide können unterschiedliche OS-Versionen ausführen.)
+* Sie müssen das Passwort für die lokalen und Remote-Speicher-Arrays kennen.
+* Ihre lokalen und Remote-Speicher-Arrays sind über eine Fibre Channel Fabric- oder iSCSI-Schnittstelle verbunden.
+
+
+[NOTE]
+====
+Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+
+====

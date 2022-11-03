@@ -1,0 +1,18 @@
+---
+permalink: sm-storage/what-is-a-pool.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, pool, 
+summary: 'Ein Pool ist eine Reihe von Laufwerken, die logisch gruppiert sind. Mit einem Pool können Sie ein oder mehrere Volumes erstellen, auf die ein Host zugreifen kann. (Sie erstellen Volumes entweder aus einem Pool oder einer Volume-Gruppe.)' 
+---
+= Was ist ein Pool?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ein Pool ist eine Reihe von Laufwerken, die logisch gruppiert sind. Mit einem Pool können Sie ein oder mehrere Volumes erstellen, auf die ein Host zugreifen kann. (Sie erstellen Volumes entweder aus einem Pool oder einer Volume-Gruppe.)
+
+Pools können Administratoren die Auslastung jedes Hosts nicht mehr überwachen und feststellen, wann dieser nicht mehr genügend Speicherplatz hat, und vermeiden, dass herkömmliche Ausfälle aufgrund der Festplattengröße auftreten. Wenn ein Pool knapp wird, können ohne Unterbrechungen zusätzliche Laufwerke zum Pool hinzugefügt werden, und das Kapazitätswachstum ist für den Host transparent.
+
+Mit Pools werden die Daten automatisch neu verteilt, um das Gleichgewicht aufrechtzuerhalten. Durch die Verteilung von Paritätsinformationen und freien Kapazitäten im gesamten Pool kann jedes Laufwerk im Pool zur Neuerstellung eines ausgefallenen Laufwerks verwendet werden. Bei diesem Ansatz werden keine dedizierten Hot Spare-Festplatten verwendet. Stattdessen wird im gesamten Pool die unveränderte (freie) Kapazität reserviert. Beim Laufwerksausfall werden Segmente auf anderen Laufwerken gelesen, um die Daten neu zu erstellen. Anschließend wird ein neues Laufwerk ausgewählt, um jedes Segment, das sich auf einem ausgefallenen Laufwerk befand, zu schreiben, damit die Datenverteilung auf verschiedenen Laufwerken erhalten bleibt.

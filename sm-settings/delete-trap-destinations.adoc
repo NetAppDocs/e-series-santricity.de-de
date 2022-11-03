@@ -1,0 +1,30 @@
+---
+permalink: sm-settings/delete-trap-destinations.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, trap, destinations, 
+summary: Sie können eine Trap-Zieladresse löschen, so dass der Event-Monitor des Speicherarrays keine SNMP-Traps mehr an diese Adresse sendet. 
+---
+= Löschen von Trap-Zielen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können eine Trap-Zieladresse löschen, sodass der Event-Monitor des Speicherarrays keine SNMP-Traps mehr an diese Adresse sendet.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[Alarme].
+. Wählen Sie die Registerkarte *SNMP* aus.
++
+Die Trap-Zieladressen werden in der Tabelle angezeigt.
+
+. Wählen Sie ein Trap-Ziel aus, und klicken Sie dann rechts oben auf der Seite auf *Löschen*.
+. Bestätigen Sie den Vorgang, und klicken Sie dann auf *Löschen*.
++
+Die Zieladresse wird nicht mehr auf der Seite „Meldungen“ angezeigt.
+
+
+
+Das gelöschte Trap-Ziel empfängt keine SNMP-Traps mehr vom Event-Monitor des Speicherarrays.

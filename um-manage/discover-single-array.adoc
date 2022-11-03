@@ -1,0 +1,56 @@
+---
+permalink: um-manage/discover-single-array.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, discover, single, array 
+summary: Verwenden Sie die Option Single Storage Array hinzufügen/ermitteln, um ein einzelnes Speicher-Array manuell zu ermitteln und dem Netzwerk Ihres Unternehmens hinzuzufügen. 
+---
+= Erkennen Sie ein einzelnes Array
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Verwenden Sie die Option Single Storage Array hinzufügen/erkennen, um ein einzelnes Speicher-Array manuell zu ermitteln und dem Netzwerk Ihres Unternehmens hinzuzufügen.
+
+.Bevor Sie beginnen
+* Das Speicher-Array muss ordnungsgemäß eingerichtet und konfiguriert sein.
+* Passwörter für das Storage-Array müssen mithilfe der Kachel „System Manager Access Management“ eingerichtet werden.
+
+
+.Schritte
+. Wählen Sie auf der Seite Verwalten die Option *Hinzufügen/Entdecken*.
++
+Das Dialogfeld Hinzufügen/Entdecken wird angezeigt.
+
+. Wählen Sie das Optionsfeld *Entdecken Sie ein einzelnes Speicherarray*.
+. Geben Sie die IP-Adresse für einen der Controller im Speicher-Array ein, und klicken Sie dann auf *Erkennung starten*.
++
+Es kann mehrere Minuten dauern, bis sich Unified Manager mit dem angegebenen Storage-Array verbindet.
+
++
+[NOTE]
+====
+Die Meldung Speicher-Array nicht zugänglich wird angezeigt, wenn die Verbindung zur IP-Adresse des angegebenen Controllers nicht erfolgreich ist.
+
+====
+. Lösen Sie gegebenenfalls selbstsignierte Zertifikate, wenn Sie dazu aufgefordert werden.
++
+Im Rahmen der Bestandsaufnahme überprüft das System, ob die erkannten Speicher-Arrays Zertifikate von einer vertrauenswürdigen Quelle verwenden. Wenn ein digitales Zertifikat für ein Speicherarray nicht gefunden werden kann, werden Sie aufgefordert, das nicht von einer anerkannten Zertifizierungsstelle (CA) signierte Zertifikat zu lösen, indem eine Sicherheitsausnahme hinzugefügt wird.
+
+. Lösen Sie ggf. nicht vertrauenswürdige Zertifikate, wenn Sie dazu aufgefordert werden.
++
+Nicht vertrauenswürdige Zertifikate treten auf, wenn ein Speicher-Array versucht, eine sichere Verbindung zu Unified Manager herzustellen, die Verbindung jedoch nicht als sicher bestätigt werden kann. Lösen Sie nicht vertrauenswürdige Zertifikate, indem Sie ein Zertifikat der Zertifizierungsstelle (CA) importieren, das von einem vertrauenswürdigen Dritten ausgestellt wurde.
+
+. Klicken Sie Auf *Weiter*.
+. *Optional:* das erkannte Speicher-Array einer Gruppe zuordnen: Wählen Sie aus der Dropdown-Liste die gewünschte Gruppe aus, die mit dem Speicher-Array verknüpft werden soll.
++
+Die Gruppe „Alle“ ist standardmäßig ausgewählt.
+
+. Geben Sie das Administratorkennwort für das Speicherarray ein, das Sie Ihrer Management-Domäne hinzufügen möchten, und klicken Sie dann auf *OK*.
+
+
+Das Speicher-Array wird Unified Manager hinzugefügt und, falls angegeben, wird es auch der ausgewählten Gruppe hinzugefügt.
+
+Wenn die automatische Erfassung von Support-Daten aktiviert ist, werden Support-Daten automatisch für ein von Ihnen hinzufügsames Speicher-Array erfasst.

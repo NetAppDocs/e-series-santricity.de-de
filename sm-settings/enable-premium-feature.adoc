@@ -1,0 +1,40 @@
+---
+permalink: sm-settings/enable-premium-feature.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, premium, feature, 
+summary: Eine Premium-Funktion ist eine zusätzliche Option, die einen Schlüssel zur Aktivierung erfordert. 
+---
+= Aktivieren Sie eine Premiumfunktion
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Eine Premium-Funktion ist eine zusätzliche Option, die einen Schlüssel zur Aktivierung erfordert.
+
+.Bevor Sie beginnen
+* Sie haben einen Funktionschlüssel erhalten. Wenden Sie sich bei Bedarf an den technischen Support, um einen Schlüssel zu erhalten.
+* Sie haben die Schlüsseldatei auf den Management-Client geladen (das System mit einem Browser zum Zugriff auf System Manager).
+
+
+In dieser Aufgabe wird beschrieben, wie Sie mit System Manager eine Premium-Funktion aktivieren.
+
+[NOTE]
+====
+Wenn Sie eine Premium-Funktion deaktivieren möchten, müssen Sie den Befehl „Speicher-Array-Funktion deaktivieren“ verwenden (`disable storageArray) (featurePack | feature=featureAttributeList`) In der Befehlszeilenschnittstelle (CLI).
+
+====
+.Schritte
+. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie unter *Add-ons* die Option *Premium Feature aktivieren*.
++
+Das Dialogfeld Premium-Funktion aktivieren wird geöffnet.
+
+. Klicken Sie auf *Durchsuchen* und wählen Sie dann die Schlüsseldatei aus.
++
+Der Dateiname wird im Dialogfeld angezeigt.
+
+. Klicken Sie Auf *Aktivieren*.
+

@@ -1,0 +1,21 @@
+---
+permalink: sm-settings/when-should-i-synchronize-storage-array-clocks.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronize, storage, array, clock, 
+summary: 'Sie sollten die Controller-Uhren im Speicher-Array manuell synchronisieren, wenn Sie bemerken, dass die in System Manager angezeigten Zeitstempel nicht mit den im Management-Client angezeigten Zeitstempeln (dem Computer, der über den Browser auf System Manager zugreift) ausgerichtet sind. Diese Aufgabe ist nur erforderlich, wenn das NTP (Network Time Protocol) in System Manager nicht aktiviert ist.' 
+---
+= Wann sollte ich Speicherarray-Uhren synchronisieren?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie sollten die Controller-Uhren im Speicher-Array manuell synchronisieren, wenn Sie bemerken, dass die in System Manager angezeigten Zeitstempel nicht mit den im Management-Client angezeigten Zeitstempeln (dem Computer, der über den Browser auf System Manager zugreift) ausgerichtet sind. Diese Aufgabe ist nur erforderlich, wenn das NTP (Network Time Protocol) in System Manager nicht aktiviert ist.
+
+[NOTE]
+====
+Es wird dringend empfohlen, einen NTP-Server zu verwenden, statt die Uhren manuell zu synchronisieren. NTP synchronisiert die Uhren automatisch mit einem externen Server mithilfe von SNTP (Simple Network Time Protocol).
+
+====
+Sie können den Synchronisierungsstatus über das Dialogfeld Speicherarray-Uhren synchronisieren überprüfen, das auf der Seite System verfügbar ist. Wenn die im Dialogfeld angezeigten Zeiten nicht übereinstimmen, führen Sie eine Synchronisierung aus. Sie können dieses Dialogfeld in regelmäßigen Abständen anzeigen, in dem angezeigt wird, ob die Zeitanzeigen der Controller-Uhren auseinander getrieben wurden und nicht mehr synchronisiert sind.

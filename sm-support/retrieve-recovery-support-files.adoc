@@ -1,0 +1,42 @@
+---
+permalink: sm-support/retrieve-recovery-support-files.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, retrieve, recovery, support files 
+summary: Der technische Support kann Dateien zum Recovery Support verwenden, um Probleme zu beheben. System Manager speichert diese Dateien automatisch. 
+---
+= Rufen Sie Recovery Support-Dateien
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der technische Support kann Dateien zum Recovery Support verwenden, um Probleme zu beheben. System Manager speichert diese Dateien automatisch.
+
+Der technische Support hat angefordert, dass Sie ihnen zusätzliche Dateien zur Fehlerbehebung senden.
+
+Recovery-Support-Dateien enthalten die folgenden Arten von Dateien:
+
+* Unterstützen von Datendateien
+* AutoSupport-Geschichte
+* AutoSupport-Log
+* SAS/RLS-Diagnosedateien
+* Recovery-Profildaten
+* Datenbankeinfassungsdateien
+
+
+.Schritte
+. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie *Wiederherstellungs-Support-Dateien Abrufen*.
++
+In einem Dialogfeld werden alle Dateien für die Recovery-Unterstützung aufgeführt, die Ihr Speicher-Array erfasst hat. Um bestimmte Dateien zu finden, können Sie eine der Spalten sortieren oder Zeichen in das Feld *Filter* eingeben.
+
+. Wählen Sie eine Datei aus und klicken Sie dann auf *Download*.
++
+Die Datei wird im Ordner Downloads für Ihren Browser gespeichert.
+
+. Wenn Sie weitere Dateien speichern müssen, wiederholen Sie den vorherigen Schritt.
+. Klicken Sie Auf *Schließen*.
+. Folgen Sie den Anweisungen des technischen Supports, um die Datei an sie zu senden.
+

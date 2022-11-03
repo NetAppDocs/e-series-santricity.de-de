@@ -1,0 +1,39 @@
+---
+permalink: sm-support/enable-or-disable-autosupport-features.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, disable, autosupport, 
+summary: Sie aktivieren die AutoSupport-Funktion und die einzelnen AutoSupport-Funktionen während der Ersteinrichtung oder Sie können sie später aktivieren oder deaktivieren. 
+---
+= Aktivieren oder Deaktivieren von AutoSupport Funktionen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie aktivieren die AutoSupport-Funktion und die einzelnen AutoSupport-Funktionen während der Ersteinrichtung oder Sie können sie später aktivieren oder deaktivieren.
+
+Wenn Sie AutoSupport OnDemand oder Remote-Diagnose aktivieren möchten, muss die AutoSupport-Bereitstellungsmethode auf HTTPS gesetzt werden.
+
+Sie können die AutoSupport-Funktion jederzeit deaktivieren, jedoch wird dringend empfohlen, sie aktiviert zu lassen. Wenn Sie die AutoSupport-Funktion aktivieren, kann die Problembestimmung und -Behebung bei Problemen mit Ihrem Storage Array erheblich beschleunigt werden.
+
+Die AutoSupport Funktion besteht aus drei separaten Funktionen, die separat aktiviert werden können.
+
+* *Basic AutoSupport* -- ermöglicht Ihrem Speicherarray die automatische Erfassung und Übermittlung von Daten an den technischen Support.
+* *AutoSupport OnDemand* -- ermöglicht technischen Support, bei Bedarf eine erneute Übertragung eines früheren AutoSupport Dispatch zur Fehlerbehebung anzufordern. Sämtliche Übertragungen werden vom Storage Array aus initiiert, nicht vom AutoSupport Server. Das Storage Array überprüft in regelmäßigen Abständen mit dem AutoSupport Server, um zu ermitteln, ob es noch ausstehende Neuübertragungsanfragen gibt und entsprechend darauf reagiert.
+* *Ferndiagnose* -- ermöglicht technischen Support, bei Bedarf einen neuen, aktuellen AutoSupport-Dispatch zur Fehlerbehebung anzufordern. Sämtliche Übertragungen werden vom Storage Array aus initiiert, nicht vom AutoSupport Server. Das Storage-Array überprüft in regelmäßigen Abständen mit dem AutoSupport Server, um zu ermitteln, ob ausstehende neue Anfragen zu bestehen und entsprechend darauf zu reagieren.
+
+
+.Schritte
+. Wählen Sie MENU:Support[Support Center > AutoSupport].
+. Wählen Sie *AutoSupport-Funktionen aktivieren/deaktivieren*.
+. Aktivieren Sie die Kontrollkästchen neben den AutoSupport-Funktionen, die Sie aktivieren möchten.
++
+Die Features hängen voneinander ab, wie durch die Einzüge der Elemente im Dialogfeld angegeben. Beispielsweise müssen Sie AutoSupport OnDemand aktivieren, bevor Sie die Remote-Diagnose aktivieren können.
+
+. Klicken Sie Auf *Speichern*.
++
+Wenn Sie AutoSupport deaktivieren, wird auf der Startseite eine Benachrichtigung angezeigt. Sie können die Benachrichtigung verwerfen, indem Sie auf *Ignorieren* klicken.
+
+

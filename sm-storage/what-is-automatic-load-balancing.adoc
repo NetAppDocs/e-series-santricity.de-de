@@ -1,0 +1,30 @@
+---
+permalink: sm-storage/what-is-automatic-load-balancing.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ALB, automatic, load, balancing 
+summary: Die Funktion „Automatischer Lastausgleich“ bietet einen automatischen I/O-Ausgleich und stellt sicher, dass eingehender I/O-Datenverkehr von den Hosts auf beiden Controllern dynamisch verwaltet und ausgeglichen wird. 
+---
+= Was ist der automatische Lastausgleich?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Funktion „Automatischer Lastausgleich“ bietet einen automatischen I/O-Ausgleich und stellt sicher, dass eingehender I/O-Datenverkehr von den Hosts auf beiden Controllern dynamisch verwaltet und ausgeglichen wird.
+
+Die Funktion Automatic Load Balancing bietet ein verbessertes I/O-Ressourcenmanagement, das dynamisch auf Laständerungen im Laufe der Zeit reagiert und die Eigentümerschaft der Volume-Controller automatisch angepasst wird, um Probleme bei der Lastverteilung, die zwischen den Controllern verschoben werden, zu beheben.
+
+Die Auslastung jedes Controllers wird kontinuierlich überwacht und, zusammen mit den auf den Hosts installierten Multipath-Treibern, kann bei Bedarf automatisch ausgeglichen werden. Wenn die Workload automatisch auf die Controller umverteilt wird, entlastet der Storage-Administrator die manuelle Anpassung der Eigentümerschaft der Volume Controller, um Laständerungen am Storage Array zu bewältigen.
+
+Wenn der automatische Lastenausgleich aktiviert ist, führt er folgende Funktionen aus:
+
+* Automatische Überwachung und ausgewogene Nutzung von Controller-Ressourcen
+* Bei Bedarf passt die Volume-Controller-Eigentümerschaft automatisch an, was die I/O-Bandbreite zwischen Hosts und Storage Array optimiert.
+
+
+[NOTE]
+====
+Jedes Volume, das der Nutzung des SSD-Caches eines Controllers zugewiesen ist, kann keine automatische Lastverteilung durchführen.
+
+====

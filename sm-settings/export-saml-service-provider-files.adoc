@@ -1,0 +1,47 @@
+---
+permalink: sm-settings/export-saml-service-provider-files.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, export, saml, Service Provider, files, 
+summary: 'Bei Bedarf können die Metadaten von Service-Providern für das Storage-Array exportiert und die Datei(en) in das IdP-System (Identity Provider) importiert werden.' 
+---
+= Exportieren Sie SAML-Dienstanbieter-Dateien
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bei Bedarf können die Metadaten von Service-Providern für das Storage-Array exportiert und die Datei(en) in das IdP-System (Identity Provider) importiert werden.
+
+.Bevor Sie beginnen
+* Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
+* SAML wurde konfiguriert und aktiviert.
+
+
+In dieser Aufgabe exportieren Sie Metadaten aus den Controllern (eine Datei für jeden Controller). Die IdP benötigt diese Metadaten, um eine Vertrauensbeziehung zu den Controllern aufzubauen und Authentifizierungsanforderungen zu verarbeiten. Die Datei enthält Informationen wie den Domänennamen des Controllers oder die IP-Adresse, die das IdP zum Senden von Anforderungen verwenden kann.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[Zugriffsverwaltung].
+. Wählen Sie die Registerkarte *SAML* aus.
+. Wählen Sie *Export*.
++
+Das Dialogfeld Dateien des Dienstanbieters exportieren wird geöffnet.
+
+. Klicken Sie für jeden Controller auf *Exportieren*, um die Metadatendatei auf Ihrem lokalen System zu speichern.
++
+[NOTE]
+====
+Die Domain-Name-Felder für jeden Controller sind schreibgeschützt.
+
+====
++
+Notieren Sie sich, wo die Datei gespeichert ist.
+
+. Suchen Sie im lokalen System die Metadatendatei(en) des Serviceanbieters, die Sie exportiert haben.
++
+Es gibt eine XML-formatierte Datei für jeden Controller.
+
+. Importieren Sie vom IdP-Server die Metadatendatei(en) des Dienstanbieters. Sie können die Dateien entweder direkt importieren oder manuell die Controller-Informationen von ihnen eingeben.
+. Klicken Sie Auf *Schließen*.
+

@@ -1,0 +1,74 @@
+---
+permalink: um-manage/mirroring-configuration-workflow.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, mirroring, configuration, workflow 
+summary: Sie konfigurieren asynchrone oder synchrone Spiegelung in Unified Manager und managen dann die Synchronisierung mit System Manager. 
+---
+= Spiegelung des Konfigurations-Workflows
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie konfigurieren asynchrone oder synchrone Spiegelung in Unified Manager und managen dann die Synchronisierung mit System Manager.
+
+
+
+== Workflow für asynchrone Spiegelung
+
+Die asynchrone Spiegelung umfasst den folgenden Workflow:
+
+. Die Erstkonfiguration in Unified Manager durchführen:
++
+.. Wählen Sie das lokale Speicher-Array als Quelle für den Datentransfer aus.
+.. Erstellen oder Auswählen einer vorhandenen SpiegelungsConsistency Group: Dies ist ein Container für das primäre Volume auf dem lokalen Array und dem sekundären Volume auf dem Remote-Array. Das primäre und sekundäre Volume werden als „gespiegeltes Paar“ bezeichnet. Wenn Sie zum ersten Mal die Spiegelkonsistent-Gruppe erstellen, legen Sie fest, ob Sie manuelle oder geplante Synchronisierungen durchführen möchten.
+.. Wählen Sie ein primäres Volume aus dem lokalen Speicher-Array aus, und bestimmen Sie dann die reservierte Kapazität. Die reservierte Kapazität ist die physisch zugewiesene Kapazität, die für den Kopiervorgang verwendet werden soll.
+.. Wählen Sie ein Remote-Speicher-Array als Ziel des Transfers, ein sekundäres Volume, und legen Sie dann seine reservierte Kapazität fest.
+.. Beginnen Sie den ersten Datentransfer vom primären Volume zum sekundären Volume. Je nach Volume-Größe kann dieser erste Transfer mehrere Stunden dauern.
+
+
+. Den Fortschritt der ersten Synchronisierung überprüfen:
++
+.. Starten Sie in Unified Manager den System Manager für das lokale Array.
+.. Zeigen Sie in System Manager den Status des Spiegelungsvorgangs an. Nach Abschluss der Spiegelung ist der Status des gespiegelten Paares „optimal“.
+
+
+. Optional können Sie nachfolgende Datentransfers in System Manager neu terminieren oder manuell durchführen. Es werden nur neue und geänderte Blöcke vom primären Volume auf das sekundäre Volume übertragen.
++
+[NOTE]
+====
+Da die asynchrone Replizierung periodisch erfolgt, kann das System die geänderten Blöcke konsolidieren und Netzwerkbandbreite sparen. Der Schreibdurchsatz und die Schreiblatenz sind nur minimal beeinträchtigt.
+
+====
+
+
+
+
+== Workflow für synchrones Spiegeln
+
+Die synchrone Spiegelung umfasst den folgenden Workflow:
+
+. Die Erstkonfiguration in Unified Manager durchführen:
++
+.. Wählen Sie ein lokales Speicher-Array als Quelle für den Datentransfer aus.
+.. Wählen Sie ein primäres Volume aus dem lokalen Speicher-Array aus.
+.. Wählen Sie ein Remote-Speicher-Array als Ziel für den Datentransfer aus, und wählen Sie dann ein sekundäres Volume aus.
+.. Wählen Sie Synchronisierungsprioritäten und Neusynchronisierung aus.
+.. Beginnen Sie den ersten Datentransfer vom primären Volume zum sekundären Volume. Je nach Volume-Größe kann dieser erste Transfer mehrere Stunden dauern.
+
+
+. Den Fortschritt der ersten Synchronisierung überprüfen:
++
+.. Starten Sie in Unified Manager den System Manager für das lokale Array.
+.. Zeigen Sie in System Manager den Status des Spiegelungsvorgangs an. Nach Abschluss der Spiegelung ist der Status des gespiegelten Paares „optimal“. Die beiden Arrays versuchen, während des normalen Betriebs synchronisiert zu bleiben. Es werden nur neue und geänderte Blöcke vom primären Volume auf das sekundäre Volume übertragen.
+
+
+. Optional können Sie die Synchronisierungseinstellungen in System Manager ändern.
++
+[NOTE]
+====
+Da die synchrone Replizierung kontinuierlich erfolgt, muss die Replizierungsverbindung zwischen den beiden Standorten ausreichend Bandbreitenkapazität bereitstellen.
+
+====
+

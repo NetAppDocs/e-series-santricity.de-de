@@ -1,0 +1,16 @@
+---
+permalink: sm-support/why-is-my-firmware-upgrade-progressing-so-slowly.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, firmware, upgrade, slow 
+summary: Der Fortschritt des Firmware-Upgrades hängt von der Gesamtlast des Systems ab. 
+---
+= Warum läuft mein Firmware-Upgrade so langsam voran?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der Fortschritt des Firmware-Upgrades hängt von der Gesamtlast des Systems ab.
+
+Sollte während eines Online-Upgrades der Laufwerk-Firmware ein Volume-Transfer während des schnellen Rekonstruktionsvorgangs durchgeführt werden, initiiert das System eine vollständige Rekonstruktion für das übertragene Volume. Dieser Vorgang kann sehr viel Zeit in Anspruch nehmen. Die tatsächliche komplette Rekonstruktionszeit hängt von mehreren Faktoren ab, einschließlich der Menge der I/O-Aktivitäten während des Rekonstruktionsvorgangs, der Anzahl der Laufwerke in der Volume-Gruppe, der Einstellung für die Priorität bei der Wiederherstellung und der Laufwerk-Performance.

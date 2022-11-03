@@ -1,0 +1,26 @@
+---
+permalink: sm-storage/why-would-i-create-a-snapshot-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, snapshot, consistency, group 
+summary: Sie erstellen eine Snapshot-Konsistenzgruppe, wenn Sie sicherstellen möchten, dass Snapshot-Images gleichzeitig auf mehreren Volumes erstellt werden. 
+---
+= Warum sollte ich eine Snapshot Konsistenzgruppe erstellen?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie erstellen eine Snapshot-Konsistenzgruppe, wenn Sie sicherstellen möchten, dass Snapshot-Images gleichzeitig auf mehreren Volumes erstellt werden.
+
+Beispielsweise würde eine Datenbank aus mehreren Volumes, die für Recovery-Zwecke konsistent bleiben müssen, eine Snapshot-Konsistenzgruppe benötigen, um koordinierte Snapshots aller Volumes zu erstellen und sie zum Wiederherstellen der gesamten Datenbank zu verwenden.
+
+Die Volumes, die in einer Snapshot Konsistenzgruppe enthalten sind, werden „_Member Volumes_“ genannt.
+
+Sie können die folgenden Snapshot-Vorgänge auf einer Snapshot-Konsistenzgruppe durchführen:
+
+* Erstellen Sie ein Snapshot-Image einer Snapshot-Konsistenzgruppe, um gleichzeitige Images der Mitglieder-Volumes zu erhalten.
+* Erstellen Sie einen Zeitplan für die Snapshot-Konsistenzgruppe, um automatisch gleichzeitig periodische Images der Mitglieder-Volumes zu erfassen.
+* Erstellen Sie ein über Host zugängliches Snapshot Volume eines Snapshot-Konsistenzgruppenabbilds.
+* Führen Sie einen Rollback-Vorgang für eine Snapshot-Konsistenzgruppe durch.
+

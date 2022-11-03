@@ -1,0 +1,19 @@
+---
+permalink: sm-hardware/change-view-order-of-shelves.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, view, order, shelves 
+summary: Sie können die Reihenfolge der auf der Seite Hardware angezeigten Shelfs ändern, um sie der physischen Reihenfolge der Regale in einem Schrank anzupassen. 
+---
+= Ansichtsreihenfolge der Shelfs ändern
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Reihenfolge der auf der Seite Hardware angezeigten Shelfs ändern, um sie der physischen Reihenfolge der Regale in einem Schrank anzupassen.
+
+.Schritte
+. Wählen Sie *Hardware*.
+. Wählen Sie oben rechts in einer Shelf-Ansicht die nach-oben- bzw. nach-unten-Pfeile aus, um die Reihenfolge der auf der Hardware-Seite angezeigten Shelfs neu anzuordnen.
+

@@ -1,0 +1,22 @@
+---
+permalink: um-manage/why-dont-i-see-all-my-volumes-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, volumes missing 
+summary: Wenn Sie ein primäres Volume für ein gespiegeltes Paar auswählen, werden in einer Liste alle berechtigten Volumes angezeigt. 
+---
+= Warum sehe ich nicht alle meine Bände?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie ein primäres Volume für ein gespiegeltes Paar auswählen, werden in einer Liste alle berechtigten Volumes angezeigt.
+
+Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser Liste nicht angezeigt. Volumes sind aus folgenden Gründen möglicherweise nicht verfügbar:
+
+* Die Lautstärke ist nicht optimal.
+* Das Volume beteiligt sich bereits an einer Spiegelbeziehung.
+* Für das synchrone Spiegeln müssen primäre und sekundäre Volumes eines gespiegelten Paars Standard-Volumes sein. Es können keine dünnen Volumes oder Snapshot Volumes sein.
+* Bei der asynchronen Spiegelung müssen Thin Volumes die automatische Erweiterung aktiviert haben.
+

@@ -1,0 +1,118 @@
+---
+permalink: sm-settings/view-audit-log-activity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, audit, log, activity, 
+summary: Durch die Anzeige von Prüfprotokollen können Benutzer mit Sicherheitsadministratorberechtigungen Benutzeraktionen, Authentifizierungsfehler, ungültige Anmeldeversuche und die Lebensdauer der Benutzersitzung überwachen. 
+---
+= Zeigen Sie die Aktivität des Prüfprotokolls an
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Durch die Anzeige von Prüfprotokollen können Benutzer mit Sicherheitsadministratorberechtigungen Benutzeraktionen, Authentifizierungsfehler, ungültige Anmeldeversuche und die Lebensdauer der Benutzersitzung überwachen.
+
+Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[Zugriffsverwaltung].
+. Wählen Sie die Registerkarte **Überwachungsprotokoll** aus.
++
+Die Aktivität des Überwachungsprotokolls wird im Tabellenformat angezeigt, das die folgenden Informationspalten enthält:
+
++
+** *Datum/Uhrzeit* -- Zeitstempel, wann das Speicherarray das Ereignis erkannt hat (in GMT).
+** *Benutzername* -- der Benutzername, der dem Ereignis zugeordnet ist. Bei nicht authentifizierten Aktionen im Speicher-Array wird „N/A“ als Benutzername angezeigt. Nicht authentifizierte Aktionen können vom internen Proxy oder einem anderen Mechanismus ausgelöst werden.
+** *Statuscode* -- HTTP-Statuscode der Operation (200, 400 usw.) und beschreibenden Text, der dem Ereignis zugeordnet ist.
+** *URL abgerufen* -- vollständige URL (einschließlich Host) und Abfragezeichenfolge.
+** *Client-IP-Adresse* -- IP-Adresse des Clients, der dem Ereignis zugeordnet ist.
+** *Quelle* -- Logging-Quelle, die mit dem Ereignis verknüpft ist, kann System Manager, CLI, Web Services oder Support Shell sein.
+** *Beschreibung* -- zusätzliche Informationen über die Veranstaltung, falls zutreffend.
+
+
+. Verwenden Sie die Auswahl auf der Seite „Überwachungsprotokoll“, um Ereignisse anzuzeigen und zu verwalten.
++
+.Auswahldetails
+====
+[cols="25h,~"]
+|===
+| Auswahl | Beschreibung 
+
+
+ a| 
+Zeigt Ereignisse aus dem...
+ a| 
+Grenzwerte für Ereignisse, die nach Datumsbereich angezeigt werden (letzte 24 Stunden, letzte 7 Tage, letzte 30 Tage oder ein benutzerdefinierter Datumsbereich).
+
+
+
+ a| 
+Filtern
+ a| 
+Begrenzungsereignisse, die durch die in das Feld eingegebenen Zeichen angezeigt werden. Verwenden Sie Anführungszeichen (") für eine genaue Wortabgleiche, geben Sie ein `OR` Um ein oder mehrere Wörter zurückzugeben, oder geben Sie einen Strich ( -- ) ein, um Wörter auszulassen.
+
+
+
+ a| 
+Aktualisierung
+ a| 
+Wählen Sie *Aktualisieren*, um die Seite auf die aktuellen Ereignisse zu aktualisieren.
+
+
+
+ a| 
+Einstellungen Anzeigen/Bearbeiten
+ a| 
+Wählen Sie *Einstellungen anzeigen/bearbeiten* aus, um ein Dialogfeld zu öffnen, in dem Sie eine vollständige Protokollrichtlinie und eine Ebene der zu protokollierenden Aktionen festlegen können.
+
+
+
+ a| 
+Löschen von Ereignissen
+ a| 
+Wählen Sie *Löschen* aus, um ein Dialogfeld zu öffnen, in dem Sie alte Ereignisse von der Seite entfernen können.
+
+
+
+ a| 
+Spalten ein-/ausblenden
+ a| 
+Klicken Sie auf das Spaltensymbol *ein-/ausblenden* image:../media/sam-1140-ss-access-columns.gif[""] So wählen Sie zusätzliche Spalten aus, die in der Tabelle angezeigt werden sollen. Weitere Spalten sind:
+
+** *Methode* -- die HTTP-Methode (z. B. POST, GET, DELETE usw.).
+** *CLI Befehl ausgeführt* -- der CLI-Befehl (Grammatik) ausgeführt für Secure CLI Anfragen.
+** *CLI Rückgabestatus* -- Ein CLI-Statuscode oder eine Anforderung für Eingabedateien vom Client.
+** *Symbol-Verfahren* -- das Symbol-Verfahren ausgeführt.
+** *SSH Event Type* -- Secure Shell (SSH) Ereignistyp, wie Login, Logout und Login_fail.
+** *SSH Session PID* -- Prozess-ID-Nummer der SSH-Sitzung.
+** *SSH Sitzungsdauer(en)* -- die Anzahl der Sekunden, die der Benutzer angemeldet war.
+** *Authentifizierungstyp* -- Typen können lokalen Benutzer, LDAP, SAML und Access Token enthalten.
+** *Authentifizierungs-ID* -- ID der authentifizierten Sitzung.
+
+
+
+
+ a| 
+Spaltenfilter ein- oder ausschalten
+ a| 
+Klicken Sie auf das Symbol *Umschalten* image:../media/sam-1140-ss-access-toggle.gif[""] Zum Öffnen von Filterfeldern für jede Spalte. Geben Sie in ein Spaltenfeld Zeichen ein, um die durch diese Zeichen angezeigten Ereignisse einzuschränken. Klicken Sie erneut auf das Symbol, um die Filterfelder zu schließen.
+
+
+
+ a| 
+Änderungen rückgängig machen
+ a| 
+Klicken Sie auf das Symbol *Rückgängig* image:../media/sam-1140-ss-access-undo.gif[""] Um die Tabelle auf die Standardkonfiguration zurückzugeben.
+
+
+
+ a| 
+Exportieren
+ a| 
+Klicken Sie auf *Exportieren*, um die Tabellendaten in einer kommagetrennten Datei (CSV) zu speichern.
+
+|===
+====
+

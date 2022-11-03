@@ -1,0 +1,162 @@
+---
+permalink: um-manage/create-asynchronous-mirrored-pair-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, create, asynchronous, mirrored, pair 
+summary: Zum Konfigurieren der asynchronen Spiegelung erstellen Sie ein gespiegeltes Paar, das ein primäres Volume auf dem lokalen Array und ein sekundäres Volume des Remote-Arrays umfasst. 
+---
+= Erstellen eines asynchronen gespiegelten Paares
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Zum Konfigurieren der asynchronen Spiegelung erstellen Sie ein gespiegeltes Paar, das ein primäres Volume auf dem lokalen Array und ein sekundäres Volume des Remote-Arrays umfasst.
+
+[NOTE]
+====
+Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+
+====
+Bevor Sie ein gespiegeltes Paar erstellen, erfüllen Sie die folgenden Anforderungen für Unified Manager:
+
+* Der Web Services Proxy-Dienst muss ausgeführt werden.
+* Unified Manager muss auf Ihrem lokalen Host über eine HTTPS-Verbindung ausgeführt werden.
+* Unified Manager muss gültige SSL-Zertifikate für das Speicher-Array anzeigen. Sie können ein selbstsigniertes Zertifikat akzeptieren oder Ihr eigenes Sicherheitszertifikat mit Unified Manager installieren und zum Menü:Zertifikat[Zertifikatverwaltung] navigieren.
+
+
+Stellen Sie außerdem sicher, dass Sie die folgenden Anforderungen an Storage Arrays und Volumes erfüllen:
+
+* Jedes Speicher-Array muss zwei Controller haben.
+* Die beiden Storage Arrays müssen in Unified Manager erkannt werden.
+* Jeder Controller im primären Array und im sekundären Array muss über einen konfigurierten Ethernet-Managementport verfügen und mit dem Netzwerk verbunden sein.
+* Die Speicher-Arrays verfügen über eine Firmware-Version von mindestens 7.84. (Beide können unterschiedliche OS-Versionen ausführen.)
+* Sie müssen das Passwort für die lokalen und Remote-Speicher-Arrays kennen.
+* Sie benötigen genügend freie Kapazität auf dem Remote-Speicher-Array, um ein sekundäres Volume zu erstellen, das dem primären Volume entspricht oder dessen Größe Sie spiegeln möchten.
+* Ihre lokalen und Remote-Speicher-Arrays sind über eine Fibre Channel Fabric- oder iSCSI-Schnittstelle verbunden.
+* Sie haben sowohl die primären als auch die sekundären Volumes erstellt, die Sie in der asynchronen Spiegelbeziehung verwenden möchten.
+* Das sekundäre Volume muss mindestens so groß sein wie das primäre Volume.
+
+
+Der Prozess zum Erstellen eines asynchronen gespiegelten Paares ist ein mehrstufiges Verfahren.
+
+
+
+== Schritt 1: Erstellen oder wählen Sie eine gespiegelte Konsistenzgruppe aus
+
+In diesem Schritt erstellen Sie eine neue Konsistenzgruppe für die Spiegelung, oder wählen Sie eine vorhandene Konsistenzgruppe aus. Eine gespiegelte Konsistenzgruppe ist ein Container für die primären und sekundären Volumes (das gespiegelte Paar) und gibt die gewünschte Resynchronisierung (manuell oder automatisch) für alle Paare in der Gruppe an.
+
+.Schritte
+. Wählen Sie auf der Seite *Verwalten* das lokale Speicher-Array aus, das Sie für die Quelle verwenden möchten.
+. Wählen Sie Menü:Aktionen[Asynchronous Mirrored Pair erstellen].
++
+Der Assistent Asynchronous Mirrored Pair erstellen wird geöffnet.
+
+. Wählen Sie entweder eine vorhandene SpiegelungsConsistency Group aus oder erstellen Sie eine neue Konsistenzgruppe.
++
+Um eine vorhandene Gruppe auszuwählen, stellen Sie sicher, dass *eine vorhandene SpiegelungsConsistency Group* ausgewählt ist, und wählen Sie dann die Gruppe aus der Tabelle aus. Eine Konsistenzgruppe kann mehrere gespiegelte Paare enthalten.
+
++
+Gehen Sie zum Erstellen einer neuen Gruppe wie folgt vor:
+
++
+.. Wählen Sie *Eine neue Spiegelkonsistent-Gruppe* aus und klicken Sie dann auf *Weiter*.
+.. Geben Sie einen eindeutigen Namen ein, der am besten die Daten auf den Volumes beschreibt, die zwischen den beiden Speicher-Arrays gespiegelt werden. Ein Name kann nur aus Buchstaben, Zahlen und den Sonderzeichen Unterstrichen (_), Bindestrich (-) und dem Hash-Zeichen (#) bestehen. Ein Name darf 30 Zeichen nicht überschreiten und darf keine Leerzeichen enthalten.
+.. Wählen Sie das Remote Storage Array aus, auf dem Sie eine Mirror-Beziehung zum lokalen Speicher-Array herstellen möchten.
++
+[NOTE]
+====
+Wenn Ihr Remote-Speicher-Array passwortgeschützt ist, fordert das System zur Eingabe eines Kennworts auf.
+
+====
+.. Wählen Sie aus, ob Sie die gespiegelten Paare manuell oder automatisch synchronisieren möchten:
++
+*** *Manuell* -- Wählen Sie diese Option, um die Synchronisierung für alle gespiegelten Paare innerhalb dieser Gruppe manuell zu starten. Beachten Sie, dass Sie, wenn Sie später eine Neusynchronisierung durchführen möchten, System Manager für das primäre Speicher-Array starten und dann zum Menü:Speicher[Asynchronous Mirroring] wechseln müssen, die Gruppe auf der Registerkarte *Mirror Consistency Groups* auswählen und dann Menü:Mehr[manuell neu synchronisieren] auswählen.
+*** *Automatisch* -- Wählen Sie das gewünschte Intervall in *Minuten*, *Stunden* oder *Tagen* aus, vom Beginn des vorherigen Updates bis zum Beginn des nächsten Updates. Wenn beispielsweise das Synchronisierungsintervall auf 30 Minuten eingestellt ist und der Synchronisationsprozess um 4:00 Uhr beginnt, beginnt der nächste Vorgang um 4:30 Uhr
+
+
+.. Wählen Sie die gewünschten Warnmeldungseinstellungen aus:
++
+*** Geben Sie bei manuellen Synchronisierungen den Schwellenwert (definiert durch den Prozentsatz der verbleibenden Kapazität) für den Zeitpunkt an, an dem Benachrichtigungen empfangen werden.
+*** Für automatische Synchronisierungen können Sie drei Arten der Alarmierung festlegen: Wenn die Synchronisierung in einer bestimmten Zeitspanne nicht abgeschlossen wurde, wenn die Daten der Wiederherstellungspunkt auf dem Remote-Array älter als ein bestimmtes Zeitlimit sind und sich die reservierte Kapazität einem bestimmten Schwellenwert nähert (definiert durch den Prozentsatz der verbleibenden Kapazität).
+
+
+
+
+. Wählen Sie *Weiter* und gehen Sie zu  2: Select the primary volume.
++
+Wenn Sie eine neue gespiegelte Konsistenzgruppe definiert haben, erstellt Unified Manager zuerst die gespiegelte Konsistenzgruppe im lokalen Storage Array und erstellt dann die gespiegelte Konsistenzgruppe im Remote-Storage-Array. Sie können die gespiegelte Konsistenzgruppe anzeigen und verwalten, indem Sie System Manager für jedes Array starten.
+
++
+[NOTE]
+====
+Wenn Unified Manager die SpiegelungsConsistency Group erfolgreich auf dem lokalen Speicher-Array erstellt, diese aber nicht auf dem Remote-Speicher-Array erstellt, wird die SpiegelConsistency Group automatisch aus dem lokalen Speicher-Array gelöscht. Wenn ein Fehler auftritt, während Unified Manager versucht, die gespiegelte Konsistenzgruppe zu löschen, müssen Sie sie manuell löschen.
+
+====
+
+
+
+
+== Schritt 2: Wählen Sie das primäre Volumen
+
+In diesem Schritt wählen Sie das primäre Volume aus, das in der Spiegelbeziehung verwendet werden soll, und weisen seine reservierte Kapazität zu. Wenn Sie ein primäres Volume auf dem lokalen Speicher-Array auswählen, zeigt das System eine Liste aller berechtigten Volumes für dieses gespiegelte Paar an. Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser Liste nicht angezeigt.
+
+Alle Volumes, die Sie der Spiegelungs-Consistency Group auf dem lokalen Speicher-Array hinzufügen, besitzen die primäre Rolle in der Spiegelbeziehung.
+
+.Schritte
+. Wählen Sie aus der Liste der berechtigten Volumes ein Volume aus, das Sie als primäres Volume verwenden möchten, und klicken Sie dann auf *Weiter*, um die reservierte Kapazität zuzuweisen.
+. Wählen Sie aus der Liste der teilnahmeberechtigten Kandidaten die reservierte Kapazität für das primäre Volume aus.
++
+Beachten Sie folgende Richtlinien:
+
++
+** Die Standardeinstellung für die reservierte Kapazität ist 20 % der Kapazität des Basis-Volumes, und in der Regel reicht diese Kapazität aus. Wenn Sie den Prozentsatz ändern, klicken Sie auf *Kandidaten aktualisieren*.
+** Die erforderliche Kapazität variiert abhängig von der Häufigkeit und Größe der I/O-Schreibvorgänge auf dem primären Volume und wie lange Sie die Kapazität beibehalten müssen.
+** Im Allgemeinen wählen Sie eine größere Kapazität für reservierte Kapazität aus, wenn eine oder beide Bedingungen vorhanden sind:
++
+*** Sie beabsichtigen, das gespiegelte Paar für einen langen Zeitraum zu halten.
+*** Ein großer Prozentsatz an Datenblöcken ändert sich auf dem primären Volume aufgrund von hoher I/O-Aktivität. Mithilfe von historischen Performance-Daten oder anderen Betriebssystem-Utilities können Sie typische I/O-Aktivitäten für das primäre Volume ermitteln.
+
+
+
+
+. Wählen Sie *Weiter* und gehen Sie zu  3: Select the secondary volume.
+
+
+
+
+== Schritt 3: Wählen Sie das sekundäre Volumen
+
+In diesem Schritt wählen Sie das sekundäre Volume aus, das in der Spiegelbeziehung verwendet werden soll, und weisen seine reservierte Kapazität zu. Wenn Sie ein sekundäres Volume auf dem Remote-Speicher-Array auswählen, zeigt das System eine Liste aller berechtigten Volumes für dieses gespiegelte Paar an. Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser Liste nicht angezeigt.
+
+Alle Volumes, die Sie der Spiegelungs-Konsistenzgruppe auf dem Remote-Speicher-Array hinzufügen, übernehmen die sekundäre Rolle in der Spiegelbeziehung.
+
+.Schritte
+. Wählen Sie aus der Liste der berechtigten Volumes ein Volume aus, das Sie als sekundäres Volume im gespiegelten Paar verwenden möchten, und klicken Sie dann auf *Weiter*, um die reservierte Kapazität zuzuweisen.
+. Wählen Sie aus der Liste der teilnahmeberechtigten Kandidaten die reservierte Kapazität für das sekundäre Volume aus.
++
+Beachten Sie folgende Richtlinien:
+
++
+** Die Standardeinstellung für die reservierte Kapazität ist 20 % der Kapazität des Basis-Volumes, und in der Regel reicht diese Kapazität aus. Wenn Sie den Prozentsatz ändern, klicken Sie auf *Kandidaten aktualisieren*.
+** Die erforderliche Kapazität variiert abhängig von der Häufigkeit und Größe der I/O-Schreibvorgänge auf dem primären Volume und wie lange Sie die Kapazität beibehalten müssen.
+** Im Allgemeinen wählen Sie eine größere Kapazität für reservierte Kapazität aus, wenn eine oder beide Bedingungen vorhanden sind:
++
+*** Sie beabsichtigen, das gespiegelte Paar für einen langen Zeitraum zu halten.
+*** Ein großer Prozentsatz an Datenblöcken ändert sich auf dem primären Volume aufgrund von hoher I/O-Aktivität. Mithilfe von historischen Performance-Daten oder anderen Betriebssystem-Utilities können Sie typische I/O-Aktivitäten für das primäre Volume ermitteln.
+
+
+
+
+. Wählen Sie *Fertig stellen*, um die asynchrone Spiegelsequenz abzuschließen.
+
+
+Unified Manager führt die folgenden Aktionen durch:
+
+* Startet die erste Synchronisierung zwischen dem lokalen Speicher-Array und dem Remote-Speicher-Array.
+* Legt die reservierte Kapazität für das gespiegelte Paar auf dem lokalen Speicher-Array und auf dem Remote-Speicher-Array fest.
+
+
+
+NOTE: Wenn es sich bei dem zu spiegelnden Volume um ein Thin Volume handelt, werden während der ersten Synchronisierung nur die bereitgestellten Blöcke (zugewiesene Kapazität statt gemeldete Kapazität) auf das sekundäre Volume übertragen. Dadurch wird die Datenmenge reduziert, die übertragen werden muss, um die erste Synchronisierung abzuschließen.

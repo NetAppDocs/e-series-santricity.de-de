@@ -1,0 +1,25 @@
+---
+permalink: sm-storage/what-do-i-need-to-know-about-increasing-reserved-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved, capacity 
+summary: In der Regel sollten Sie die Kapazität erhöhen, wenn Sie die Warnung erhalten, dass die reservierte Kapazität in Gefahr ist, voll zu werden. Sie können die reservierte Kapazität nur in Schritten von 8 gib erhöhen. 
+---
+= Was muss ich über die Erhöhung der reservierten Kapazität wissen?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In der Regel sollten Sie die Kapazität erhöhen, wenn Sie die Warnung erhalten, dass die reservierte Kapazität in Gefahr ist, voll zu werden. Sie können die reservierte Kapazität nur in Schritten von 8 gib erhöhen.
+
+* Sie müssen über ausreichende freie Kapazitäten im Pool oder Volume-Gruppe verfügen, damit diese bei Bedarf erweitert werden kann.
++
+Wenn auf einem Pool oder Volume-Gruppen keine freie Kapazität vorhanden ist, können Sie einem Pool oder einer Volume-Gruppe nicht zugewiesene Kapazität in Form nicht verwendeter Laufwerke hinzufügen.
+
+* Das Volume im Pool oder in der Volume-Gruppe muss den optimalen Status aufweisen und darf sich nicht in einem bestimmten Zustand befinden.
+* Freie Kapazität muss im Pool bzw. in der Volume-Gruppe vorhanden sein, mit der die Kapazität erhöht werden soll.
+* Sie können die reservierte Kapazität für ein schreibgeschütztes Snapshot-Volume nicht erhöhen. Nur Snapshot Volumes mit Lese- und Schreibvorgängen erfordern reservierte Kapazität.
+
+
+Für Snapshot-Vorgänge beträgt die reservierte Kapazität normalerweise 40 Prozent des Basis-Volumes. Bei asynchronen Spiegelungsvorgängen beträgt die reservierte Kapazität in der Regel 20 Prozent des Basis-Volumes. Verwenden Sie einen höheren Prozentsatz, wenn Sie glauben, dass das Basis-Volume viele Änderungen durchlaufen wird oder wenn die geschätzte Lebensdauer des Kopierservice eines Storage-Objekts sehr lang sein wird.

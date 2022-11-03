@@ -1,0 +1,60 @@
+---
+permalink: sm-storage/add-member-volumes-to-a-snapshot-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add, member, volume, snapshot consistency group 
+summary: Sie können einer vorhandenen Snapshot-Konsistenzgruppe ein neues Mitgliedsvolume hinzufügen. Wenn Sie ein neues Mitgliedsvolumen hinzufügen, müssen Sie auch Kapazität für das Mitgliedervolumen reservieren. 
+---
+= Fügen Sie einer Snapshot-Konsistenzgruppe ein Mitgliedsvolume hinzu
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können einer vorhandenen Snapshot-Konsistenzgruppe ein neues Mitgliedsvolume hinzufügen. Wenn Sie ein neues Mitgliedsvolumen hinzufügen, müssen Sie auch Kapazität für das Mitgliedervolumen reservieren.
+
+.Bevor Sie beginnen
+* Das Mitgliedervolumen muss optimal sein.
+* Die Snapshot-Consistency-Gruppe muss weniger als die maximale Anzahl zulässiger Volumes aufweisen (gemäß Ihrer Konfiguration).
+* Jedes reservierte Kapazitäts-Volume muss dieselben Data Assurance (da) und Sicherheitseinstellungen haben wie das zugehörige Mitglied-Volume.
+
+
+Sie können der Snapshot-Konsistenzgruppe Standard-Volumes oder Thin Volumes hinzufügen. Das Basis-Volume kann sich entweder in einem Pool oder in einer Volume-Gruppe befinden.
+
+.Schritte
+. Wählen Sie Menü:Storage[Snapshots].
+. Wählen Sie die Registerkarte *Snapshot Consistency Groups* aus.
++
+Die Tabelle wird angezeigt und zeigt alle Snapshot-Konsistenzgruppen an, die dem Speicher-Array zugeordnet sind.
+
+. Wählen Sie die Snapshot Consistency Group aus, die Sie ändern möchten, und klicken Sie dann auf *Mitglieder hinzufügen*.
++
+Das Dialogfeld Mitglieder hinzufügen wird angezeigt.
+
+. Wählen Sie die Mitglieder aus, die Sie hinzufügen möchten, und klicken Sie dann auf *Weiter*.
++
+Der Schritt Reserve Kapazität wird angezeigt. In der Tabelle Volume Candidate werden nur die Kandidaten angezeigt, die die angegebene reservierte Kapazität unterstützen.
+
+. Verwenden Sie den Spinner-Kasten, um die reservierte Kapazität für das Mitgliedervolumen zuzuweisen. Führen Sie eine der folgenden Aktionen aus:
++
+** *Die Standardeinstellungen akzeptieren.*
++
+Verwenden Sie diese empfohlene Option, um die reservierte Kapazität für das Mitglied-Volume mit den Standardeinstellungen zuzuweisen.
+
+** *Zuweisen Ihrer eigenen reservierten Kapazitätseinstellungen entsprechend Ihren Datenspeicheranforderungen.*
++
+Wenn Sie die Standardeinstellung für reservierte Kapazität ändern, klicken Sie auf *Kandidaten aktualisieren*, um die Kandidatenliste für die von Ihnen angegebene reservierte Kapazität zu aktualisieren.
+
++
+Weisen Sie die reservierte Kapazität mithilfe der folgenden Richtlinien zu.
+
++
+*** Die Standardeinstellung für die reservierte Kapazität ist 40 % der Kapazität des Basis-Volumes, und in der Regel reicht diese Kapazität aus.
+*** Die benötigte Kapazität ist unterschiedlich, abhängig von der Häufigkeit und Größe der I/O-Schreibvorgänge auf den Volumes sowie von der Menge und Dauer der Snapshot-Image-Erfassung.
+
+
+
+
+. Klicken Sie auf *Fertig stellen*, um die Mitgliedervolumes hinzuzufügen.
+

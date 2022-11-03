@@ -1,0 +1,48 @@
+---
+permalink: sm-storage/how-workloads-work.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, application, workloads, volume, 
+summary: Wenn Sie ein Volume erstellen, wählen Sie einen Workload aus, um die Storage-Array-Konfiguration für eine bestimmte Applikation anzupassen. 
+---
+= Funktionsweise von Workloads
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie ein Volume erstellen, wählen Sie einen Workload aus, um die Storage-Array-Konfiguration für eine bestimmte Applikation anzupassen.
+
+Ein Workload ist ein Storage-Objekt, das eine Applikation unterstützt. Sie können einen oder mehrere Workloads oder Instanzen pro Applikation definieren. Bei einigen Applikationen konfiguriert das System den Workload so, dass er Volumes mit ähnlichen zugrunde liegenden Volume-Merkmalen enthält. Diese Volume-Merkmale werden basierend auf dem Applikationstyp optimiert, den der Workload unterstützt. Wenn Sie beispielsweise einen Workload erstellen, der eine Microsoft SQL Server Applikation unterstützt und anschließend Volumes für diesen Workload erstellt, werden die zugrunde liegenden Volume-Merkmale zur Unterstützung von Microsoft SQL Server optimiert.
+
+Während der Volume-Erstellung werden Sie aufgefordert, Fragen zur Verwendung eines Workloads zu beantworten. Wenn Sie beispielsweise Volumes für Microsoft Exchange erstellen, werden Sie gefragt, wie viele Mailboxen Sie benötigen, wie viele Mailboxen Ihre durchschnittlichen Anforderungen an die Mailbox-Kapazität sind und wie viele Kopien der Datenbank Sie benötigen. Das System erstellt anhand dieser Informationen eine optimale Volume-Konfiguration für Sie, die Sie nach Bedarf bearbeiten können. Optional können Sie diesen Schritt in der Sequenz zur Volume-Erstellung überspringen.
+
+
+
+== Workload-Typen
+
+Es können zwei unterschiedliche Workload-Typen erstellt werden: Applikationsspezifisch oder sonstige.
+
+* *Anwendungsspezifisch*. Wenn Sie Volumes mit einem applikationsspezifischen Workload erstellen, empfiehlt das System möglicherweise eine optimierte Volume-Konfiguration, um Konflikte zwischen Applikations-Workload-I/O und anderem Datenverkehr aus Ihrer Applikationsinstanz zu minimieren. Volume-Merkmale wie I/O-Typ, Segmentgröße, Controller-Besitz und Lese- und Schreib-Cache werden automatisch für Workloads empfohlen und optimiert, die für die folgenden Applikationstypen erstellt wurden.
++
+** Microsoft® SQL Server™
+** Microsoft® Exchange Server™
+** Videoüberwachungsapplikationen
+** VMware ESXi™ (für Volumes, die mit dem File System der Virtual Machine verwendet werden sollen)
++
+Sie können die empfohlene Volume-Konfiguration überprüfen und die vom System empfohlenen Volumes und Merkmale bearbeiten, hinzufügen oder löschen. Verwenden Sie dazu das Dialogfeld Volumes hinzufügen/bearbeiten.
+
+
+
+* *Andere* (oder Anwendungen ohne spezifische Unterstützung für die Erstellung von Volumes). Bei anderen Workloads wird eine Volume-Konfiguration verwendet, die manuell angegeben werden muss, wann ein Workload erstellt werden soll, der nicht mit einer bestimmten Applikation verknüpft ist, oder ob das System keine integrierte Optimierung für die Applikation bietet, die Sie im Storage-Array verwenden möchten. Sie müssen die Volume-Konfiguration manuell über das Dialogfeld Volumes hinzufügen/bearbeiten angeben.
+
+
+
+
+== Anzeige von Applikationen und Workloads
+
+Um Anwendungen und Workloads anzuzeigen, starten Sie SANtricity System Manager. Über diese Schnittstelle können Sie die Informationen anzeigen, die mit einem applikationsspezifischen Workload verknüpft sind. Sie haben verschiedene Möglichkeiten:
+
+* Sie können die Registerkarte *Applikationen & Workloads* in der Kachel Volumes auswählen, um die nach Workload gruppierten Speicher-Array-Volumes und den Applikationstyp anzuzeigen, mit dem der Workload verknüpft ist.
+* Im Kachel Performance können Sie auf der Registerkarte *Applikationen & Workloads* Performance Performance Performance-Metriken (Latenz, IOPS und MB) für logische Objekte anzeigen. Die Objekte werden nach Applikation und zugehörieinem Workload gruppiert. Indem Sie diese Performance-Daten in regelmäßigen Abständen erfassen, können Sie Basismessungen vornehmen und Trends analysieren. Dies unterstützt Sie bei der Untersuchung von I/O-Performance-Problemen.
+

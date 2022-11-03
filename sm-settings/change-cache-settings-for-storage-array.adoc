@@ -1,0 +1,50 @@
+---
+permalink: sm-settings/change-cache-settings-for-storage-array.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, cache, settings, 
+summary: Für alle Volumes im Speicher-Array können Sie die Cache-Speichereinstellungen für die Spülung und die Blockgröße anpassen. 
+---
+= Ändern Sie die Cache-Einstellungen für das Speicher-Array
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Für alle Volumes im Speicher-Array können Sie die Cache-Speichereinstellungen für die Spülung und die Blockgröße anpassen.
+
+Cache-Speicher ist ein temporärer flüchtiger Speicher auf dem Controller, der eine schnellere Zugriffszeit als die Datenträger des Laufwerks hat. Um die Cache-Performance zu optimieren, können Sie folgende Einstellungen vornehmen:
+
+[cols="25h,~"]
+|===
+| Cache-Einstellung | Beschreibung 
+
+
+ a| 
+Starten Sie die Spülung des Cache-Bedarfs
+ a| 
+Die Cachetroscherung „Start Demand“ gibt den Prozentsatz der nicht geschriebenen Daten im Cache an, die eine Cachetülung auslösen (auf die Festplatte schreiben). Standardmäßig wird die Cache-Spülung gestartet, wenn nicht geschriebene Daten eine Kapazität von 80 % erreichen. Ein höherer Prozentsatz ist eine gute Wahl für Umgebungen, in denen in erster Linie Schreibvorgänge ausgeführt werden. Neue Schreibanforderungen können durch den Cache verarbeitet werden, ohne auf die Festplatte zugreifen zu müssen. Niedrigere Einstellungen sind besser in Umgebungen, in denen der I/O unzuverlässig ist (bei sprunghaften Datenanbrüchen), sodass das System häufig zwischen Datenstoßweisen den Cache-Speicher aufschreibt. Ein niedriger Startprozentsatz als 80 % kann jedoch zu einer Leistungssteigerung führen.
+
+
+
+ a| 
+Cache-Blockgröße
+ a| 
+Die Cache-Blockgröße bestimmt die maximale Größe jedes Cache-Blocks. Diese Einheit ist eine Organisationseinheit für das Cache Management. Standardmäßig ist die Blockgröße 32 KiB. Das System ermöglicht die Cache-Blockgröße von 4, 8, 16 oder 32 KiBs. Applikationen verwenden unterschiedliche Blockgrößen, die sich auf die Storage-Performance auswirken. Kleinere Größen sind eine gute Wahl für Dateisysteme oder Datenbankanwendungen. Eine größere Größe eignet sich ideal für Anwendungen, die sequenzielle I/O-Vorgänge wie Multimedia generieren.
+
+|===
+.Schritte
+. Wählen Sie Menü:Einstellungen[System].
+. Scrollen Sie nach unten zu *zusätzliche Einstellungen* und klicken Sie dann auf *Cache-Einstellungen ändern*.
++
+Das Dialogfeld Cache-Einstellungen ändern wird geöffnet.
+
+. Passen Sie die folgenden Werte an:
++
+** *Starten Sie die Cachespülung der Nachfrage* -- Wählen Sie einen Prozentsatz, der für die in Ihrer Umgebung verwendeten I/O-Vorgänge geeignet ist. Wenn Sie sich für einen Wert unter 80 % entscheiden, können Sie eine verminderte Leistung feststellen.
+** **Cache Blockgröße -- **Wählen Sie eine Größe, die für Ihre Anwendungen geeignet ist.
+
+
+. Klicken Sie Auf *Speichern*.
+

@@ -1,0 +1,21 @@
+---
+permalink: um-certificates/why-cant-i-log-in-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, log in, login 
+summary: Wenn Sie bei der Anmeldung einen Fehler erhalten, überprüfen Sie diese möglichen Ursachen. 
+---
+= Warum kann ich mich nicht anmelden?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie bei der Anmeldung einen Fehler erhalten, überprüfen Sie diese möglichen Ursachen.
+
+Aus einem der folgenden Gründe können Anmeldefehler auftreten:
+
+* Sie haben einen falschen Benutzernamen oder ein falsches Passwort eingegeben.
+* Sie verfügen über unzureichende Berechtigungen.
+* Sie haben mehrmals versucht, sich erfolglos anzumelden, was den Sperrmodus ausgelöst hat. Warten Sie 10 Minuten, bis Sie sich erneut anmelden können.
+

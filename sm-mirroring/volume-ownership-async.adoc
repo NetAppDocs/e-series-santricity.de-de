@@ -1,0 +1,33 @@
+---
+permalink: sm-mirroring/volume-ownership-async.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volume, ownership, async, change, preferred, controller, owner, mirrored, pair, 
+summary: Sie können den bevorzugten Controller-Eigentümer in einem gespiegelten Paar ändern. 
+---
+= Volume-Eigentum
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den bevorzugten Controller-Eigentümer in einem gespiegelten Paar ändern.
+
+[NOTE]
+====
+Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+
+====
+Wenn das primäre Volume des gespiegelten Paars Eigentum von Controller A ist, dann befindet sich das sekundäre Volume auch im Besitz von Controller A des Remote Storage Array. Wenn Sie den Eigentümer des primären Volume ändern, wird automatisch der Eigentümer des sekundären Volumes geändert, um sicherzustellen, dass beide Volumes Eigentum des gleichen Controllers sind. Aktuelle Eigentumsänderungen auf der primären Seite werden automatisch an die entsprechenden aktuellen Eigentumsänderungen auf der sekundären Seite übernommen.
+
+Beispielsweise befindet sich ein primäres Volume im Besitz von Controller A, und dann ändern Sie den Controller-Inhaber in Controller B. In diesem Fall ändert der nächste Remote-Schreibvorgang den Controller-Eigentümer des sekundären Volumes von Controller A zu B. Da Änderungen an der Eigentumsrechte am Controller auf der sekundären Seite vom primären Standort gesteuert werden, sind keine besonderen Eingriffe durch den Storage-Administrator erforderlich.
+
+
+
+== Controller wird zurückgesetzt
+
+Ein Reset des Controllers bewirkt eine Änderung des Volume-Eigentumsrechts auf der primären Seite vom bevorzugten Controller-Eigentümer zum alternativen Controller im Storage Array.
+
+Manchmal wird ein Remote-Schreibvorgang durch einen Controller-Reset oder das aus- und Wiedereinschalten des Storage Arrays unterbrochen, bevor dieser auf das sekundäre Volume geschrieben werden kann. Der Controller muss in diesem Fall keine vollständige Synchronisation des gespiegelten Paares durchführen.
+
+Wenn während eines Reset des Controllers ein Remote-Schreibvorgang unterbrochen wurde, liest der neue Controller-Eigentümer auf der primären Seite die in einer Protokolldatei im reservierten Kapazitäts-Volume des bevorzugten Controller-Inhabers gespeicherten Informationen. Der neue Controller-Eigentümer kopiert dann die betroffenen Datenblöcke vom primären Volume auf das sekundäre Volume, sodass keine vollständige Synchronisierung der gespiegelten Volumes erforderlich ist.

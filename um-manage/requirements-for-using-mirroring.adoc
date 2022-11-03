@@ -1,0 +1,116 @@
+---
+permalink: um-manage/requirements-for-using-mirroring.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, requirements, using, mirroring 
+summary: Wenn Sie die Spiegelung konfigurieren möchten, beachten Sie die folgenden Anforderungen. 
+---
+= Anforderungen für die Verwendung von Spiegelung
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie die Spiegelung konfigurieren möchten, beachten Sie die folgenden Anforderungen.
+
+
+
+== Unified Manager
+
+* Der Web Services Proxy-Dienst muss ausgeführt werden.
+* Unified Manager muss auf Ihrem lokalen Host über eine HTTPS-Verbindung ausgeführt werden.
+* Unified Manager muss gültige SSL-Zertifikate für das Speicher-Array anzeigen. Sie können ein selbstsigniertes Zertifikat akzeptieren oder Ihr eigenes Sicherheitszertifikat mit Unified Manager installieren und zum Menü:Zertifikat[Zertifikatverwaltung] navigieren.
+
+
+
+
+== Storage-Arrays durchführt
+
+[NOTE]
+====
+Eine Spiegelung ist nicht auf dem EF600 oder EF300-Speicher-Array verfügbar.
+
+====
+* Sie müssen über zwei Storage-Arrays verfügen.
+* Jedes Speicher-Array muss zwei Controller haben.
+* Die beiden Storage Arrays müssen in Unified Manager erkannt werden.
+* Jeder Controller im primären Array und im sekundären Array muss über einen konfigurierten Ethernet-Managementport verfügen und mit dem Netzwerk verbunden sein.
+* Die Speicher-Arrays verfügen über eine Firmware-Version von mindestens 7.84. (Beide können unterschiedliche OS-Versionen ausführen.)
+* Sie müssen das Passwort für die lokalen und Remote-Speicher-Arrays kennen.
+* Sie benötigen genügend freie Kapazität auf dem Remote-Speicher-Array, um ein sekundäres Volume zu erstellen, das dem primären Volume entspricht oder dessen Größe Sie spiegeln möchten.
+* Asynchrones Spiegeln wird auf Controllern mit Fibre Channel (FC)- oder iSCSI-Host-Ports unterstützt, während synchrones Spiegeln nur auf Controllern mit FC Host-Ports unterstützt wird.
+
+
+
+
+== Konnektivitätsanforderungen erfüllen
+
+Für die Spiegelung über eine FC-Schnittstelle (asynchron oder synchron) ist Folgendes erforderlich:
+
+* Jeder Controller des Storage-Arrays ordnet den am höchsten nummerierten FC-Host-Port der Spiegelung zu.
+* Wenn der Controller sowohl Basis-FC-Ports als auch Host-Schnittstellenkarten (HIC) FC-Ports hat, ist der Port mit der höchsten Nummer auf einer HIC. Alle Hosts, die am dedizierten Port angemeldet sind, werden abgemeldet, und es werden keine Anmeldeanforderungen für den Host akzeptiert. I/O-Anfragen auf diesem Port werden nur von Controllern akzeptiert, die an Spiegelungsvorgängen beteiligt sind.
+* Die dedizierten Spiegelungs-Ports müssen an eine FC-Fabric-Umgebung angeschlossen werden, die den Verzeichnisdienst und die Nameservice-Schnittstellen unterstützt. Insbesondere werden FC-AL und Point-to-Point nicht als Konnektivitätsoptionen zwischen den Controllern unterstützt, die an gespiegelten Beziehungen beteiligt sind.
+
+
+Die Spiegelung über eine iSCSI-Schnittstelle (nur asynchron) erfordert Folgendes:
+
+* Im Gegensatz zu FC erfordert iSCSI keinen dedizierten Port. Wenn Sie asynchrone Spiegelung in iSCSI-Umgebungen einsetzen, müssen Sie keine der Front-End iSCSI-Ports des Storage-Arrays für die asynchrone Spiegelung verwenden. Diese Ports werden sowohl für asynchronen Spiegeldatenverkehr als auch für Array-I/O-Verbindungen gemeinsam genutzt.
+* Der Controller verfügt über eine Liste der Remote-Speichersysteme, mit denen der iSCSI-Initiator versucht, eine Sitzung einzurichten. Der erste Port, der eine iSCSI-Verbindung erfolgreich herstellt, wird für die anschließende Kommunikation mit dem Remote-Speicher-Array verwendet. Wenn die Kommunikation fehlschlägt, wird eine neue Sitzung unter Verwendung aller verfügbaren Ports versucht.
+* ISCSI-Ports werden auf Array-Ebene für Port konfiguriert. Intercontroller Kommunikation für Konfigurationsnachrichten und Datentransfer verwendet die globalen Einstellungen, einschließlich Einstellungen für:
++
+** VLAN: Sowohl lokale als auch Remote-Systeme müssen die gleiche VLAN-Einstellung für die Kommunikation haben
+** ISCSI-Listening-Port
+** Jumbo-Frames
+** Ethernet-Priorität
+
+
+
+
+[NOTE]
+====
+Die iSCSI-Intercontroller-Kommunikation muss einen Host-Connect-Port und nicht den Management-Ethernet-Port verwenden.
+
+====
+
+
+== Kandidaten für gespiegelte Volumes
+
+* RAID-Level, Caching-Parameter und Segmentgröße können auf den primären und sekundären Volumes eines gespiegelten Paars unterschiedlich sein.
+* Das sekundäre Volume muss mindestens so groß sein wie das primäre Volume.
+* Ein Volume kann nur an einer Spiegelbeziehung beteiligt sein.
+* Für ein synchrones gespiegeltes Paar müssen die primären und sekundären Volumes Standard-Volumes sein. Es können keine dünnen Volumes oder Snapshot Volumes sein.
+* Für die synchrone Spiegelung gibt es eine Begrenzung für die Anzahl der Volumes, die auf einem bestimmten Storage Array unterstützt werden. Stellen Sie sicher, dass die Anzahl der konfigurierten Volumes in Ihrem Speicher-Array kleiner als das unterstützte Limit ist. Wenn das synchrone Spiegeln aktiv ist, werden die zwei reservierten Kapazitäts-Volumes, die erstellt werden, mit der Volume-Obergrenze verglichen.
+* Beim asynchronen Spiegeln müssen das primäre Volume und das sekundäre Volume dieselben Laufwerksicherheitsfunktionen aufweisen.
++
+** Wenn das primäre Volume FIPS-fähig ist, muss das sekundäre Volume FIPS-fähig sein.
+** Wenn das primäre Volume FDE-fähig ist, muss das sekundäre Volume FDE-fähig sein.
+** Wenn das primäre Volume keine Laufwerkssicherheit verwendet, darf das sekundäre Volume keine Laufwerkssicherheit verwenden.
+
+
+
+
+
+
+== Reservierte Kapazität
+
+Asynchrones Spiegeln:
+
+* Ein reserviertes Kapazitäts-Volume ist für ein primäres Volume und ein sekundäres Volume in einem gespiegelten Paar für das Protokollieren von Schreibinformationen erforderlich, um nach einem Controller-Reset und anderen temporären Unterbrechungen wiederherzustellen.
+* Da sowohl das primäre Volume als auch das sekundäre Volume in einem gespiegelten Paar zusätzliche reservierte Kapazität benötigen, müssen Sie sicherstellen, dass auf beiden Storage-Arrays in der Spiegelbeziehung freie Kapazität verfügbar ist.
+
+
+Synchrones Spiegeln:
+
+* Für ein primäres Volume und ein sekundäres Volume zur Protokollierung von Schreibinformationen zum Wiederherstellen nach Controller-Resets und anderen vorübergehenden Unterbrechungen ist die reservierte Kapazität erforderlich.
+* Die reservierten Kapazitäts-Volumes werden automatisch bei aktivierter synchronen Spiegelung erstellt. Da sowohl das primäre Volume als auch das sekundäre Volume in einem gespiegelten Paar reservierte Kapazität benötigen, müssen Sie sicherstellen, dass auf beiden Storage-Arrays, die an der Beziehung zur synchronen Spiegelung beteiligt sind, ausreichend freie Kapazität zur Verfügung steht.
+
+
+
+
+== Laufwerkssicherheit
+
+* Wenn Sie sichere Laufwerke verwenden, müssen das primäre und das sekundäre Volume über kompatible Sicherheitseinstellungen verfügen. Diese Beschränkung wird nicht durchgesetzt, deshalb müssen Sie sie selbst überprüfen.
+* Bei Verwendung von sicheren Laufwerken sollten das primäre Volume und das sekundäre Volume denselben Laufwerkstyp verwenden. Diese Beschränkung wird nicht durchgesetzt, deshalb müssen Sie sie selbst überprüfen.
+* Wenn Sie Data Assurance (da) verwenden, müssen das primäre Volume und das sekundäre Volume über dieselben da-Einstellungen verfügen.
+

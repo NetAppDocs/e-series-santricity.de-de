@@ -1,0 +1,28 @@
+---
+permalink: sm-hardware/update-battery-learn-cycles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, update, battery, learn, cycles 
+summary: 'Ein Lernzyklus ist ein automatischer Zyklus zum Kalibrieren der intelligenten Akkuanzeige. Die Zyklen werden in 8-Wochen-Intervallen (pro Controller) automatisch, am selben Tag und zur gleichen Zeit, gestartet. Wenn Sie einen anderen Zeitplan festlegen möchten, können Sie die Lernzyklen anpassen.' 
+---
+= Aktualisieren Sie die Lernzyklen der Batterie
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ein Lernzyklus ist ein automatischer Zyklus zum Kalibrieren der intelligenten Akkuanzeige. Die Zyklen werden in 8-Wochen-Intervallen (pro Controller) automatisch, am selben Tag und zur gleichen Zeit, gestartet. Wenn Sie einen anderen Zeitplan festlegen möchten, können Sie die Lernzyklen anpassen.
+
+Die Aktualisierung der Lernzyklen wirkt sich auf beide Controller-Batterien aus.
+
+.Schritte
+. Wählen Sie *Hardware*.
+. Wählen Sie die Dropdown-Liste für das Controller-Shelf aus, und wählen Sie dann *Einstellungen anzeigen* aus.
+. Wählen Sie die Registerkarte *Akkus* aus.
+. Wählen Sie *Akku-Lernzyklen aktualisieren*.
++
+Das Dialogfeld Akku-Lernzyklen aktualisieren wird geöffnet.
+
+. Wählen Sie aus den Dropdown-Listen einen neuen Tag und eine neue Uhrzeit aus.
+. Klicken Sie Auf *Speichern*.
+

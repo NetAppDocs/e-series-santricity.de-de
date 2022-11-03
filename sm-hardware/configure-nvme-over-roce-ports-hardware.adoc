@@ -1,0 +1,101 @@
+---
+permalink: sm-hardware/configure-nvme-over-roce-ports-hardware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, nvme, over, roce, ports 
+summary: 'Wenn Ihr Controller eine Verbindung für NVMe over RoCE (RDMA over Converged Ethernet) umfasst, können Sie die NVMe-Port-Einstellungen auf der Hardware-Seite konfigurieren.' 
+---
+= Konfigurieren Sie NVMe over RoCE-Ports
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Ihr Controller eine Verbindung für NVMe over RoCE (RDMA over Converged Ethernet) umfasst, können Sie die NVMe-Port-Einstellungen auf der Hardware-Seite konfigurieren.
+
+.Bevor Sie beginnen
+* Der Controller muss einen NVMe-over-RoCE-Host-Port umfassen. Andernfalls sind die NVMe-over-RoCE-Einstellungen in System Manager nicht verfügbar.
+* Sie müssen die IP-Adresse der Hostverbindung kennen.
+
+
+.Schritte
+. Wählen Sie *Hardware*.
+. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf *Zurück zum Regal anzeigen*.
++
+Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
+
+. Klicken Sie auf den Controller mit dem NVMe-over-RoCE-Port, den Sie konfigurieren möchten.
++
+Das Kontextmenü des Controllers wird angezeigt.
+
+. Wählen Sie *NVMe over RoCE Ports konfigurieren* aus.
++
+Das Dialogfeld NVMe-over-RoCE-Ports konfigurieren wird geöffnet.
+
+. Wählen Sie in der Dropdown-Liste den HIC-Port aus, den Sie konfigurieren möchten.
+. Klicken Sie Auf *Weiter*.
++
+Um alle Porteinstellungen anzuzeigen, klicken Sie rechts im Dialogfeld auf den Link *Weitere Porteinstellungen anzeigen*.
+
++
+.Felddetails
+====
+[cols="25h,~"]
+|===
+| Port-Einstellung | Beschreibung 
+
+
+ a| 
+Konfigurierte Geschwindigkeit des ethernet-Ports
+ a| 
+Wählen Sie die Geschwindigkeit aus, die der Geschwindigkeitsfähigkeit des SFP am Port entspricht.
+
+
+
+ a| 
+IPv4 aktivieren/IPv6 aktivieren
+ a| 
+Wählen Sie eine oder beide Optionen aus, um die Unterstützung für IPv4- und IPv6-Netzwerke zu aktivieren.
+
+
+NOTE: Wenn Sie den Portzugriff deaktivieren möchten, deaktivieren Sie beide Kontrollkästchen.
+
+
+
+ a| 
+MTU-Größe (verfügbar durch Klicken auf *Weitere Porteinstellungen anzeigen*.)
+ a| 
+Geben Sie bei Bedarf eine neue Größe in Byte für die maximale Übertragungseinheit (MTU) ein.
+
+Die Standardgröße für maximale Übertragungseinheit (Maximum Transmission Unit, MTU) beträgt 1500 Byte pro Frame. Sie müssen einen Wert zwischen 1500 und 9000 eingeben.
+
+|===
+====
++
+Wenn Sie *IPv4 aktivieren* ausgewählt haben, wird ein Dialogfeld zur Auswahl von IPv4-Einstellungen geöffnet, nachdem Sie auf *Weiter* geklickt haben. Wenn Sie *IPv6* aktivieren ausgewählt haben, wird ein Dialogfeld zur Auswahl von IPv6-Einstellungen geöffnet, nachdem Sie auf *Weiter* geklickt haben. Wenn Sie beide Optionen ausgewählt haben, wird zuerst das Dialogfeld für IPv4-Einstellungen geöffnet, und nach dem Klicken auf *Weiter* wird das Dialogfeld für IPv6-Einstellungen geöffnet.
+
+. Konfigurieren Sie die IPv4- und/oder IPv6-Einstellungen automatisch oder manuell.
++
+.Felddetails
+====
+[cols="25h,~"]
+|===
+| Port-Einstellung | Beschreibung 
+
+
+ a| 
+Automatische Ermittlung der Konfiguration
+ a| 
+Wählen Sie diese Option aus, um die Konfiguration automatisch abzurufen.
+
+
+
+ a| 
+Statische Konfiguration manuell festlegen
+ a| 
+Wählen Sie diese Option aus, und geben Sie dann eine statische Adresse in die Felder ein. (Bei Bedarf können Sie Adressen in die Felder ausschneiden und einfügen.) Geben Sie bei IPv4 die Subnetzmaske und das Gateway des Netzwerks an. Geben Sie für IPv6 die routingfähige IP-Adresse und die Router-IP-Adresse ein. Wenn Sie ein EF600 Speicher-Array mit einer 200-GB-fähigen HIC konfigurieren, werden in diesem Dialogfeld zwei Feldsätze für Netzwerkparameter angezeigt: Eines für einen physischen Port (extern) und eines für einen virtuellen Port (intern). Sie sollten für beide Ports eindeutige Parameter zuweisen. Mit diesen Einstellungen kann der Host einen Pfad zwischen jedem Port und für die HIC einrichten, um eine maximale Performance zu erzielen. Wenn Sie dem virtuellen Port keine IP-Adresse zuweisen, läuft die HIC mit etwa der Hälfte ihrer fähigen Geschwindigkeit.
+
+|===
+====
+. Klicken Sie Auf *Fertig Stellen*.
+

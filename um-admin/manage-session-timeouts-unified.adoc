@@ -1,0 +1,35 @@
+---
+permalink: um-admin/manage-session-timeouts-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, manage, session, timeouts 
+summary: Sie können Timeouts für SANtricity Unified Manager konfigurieren, so dass die inaktiven Sitzungen der Benutzer nach einer bestimmten Zeit getrennt werden. 
+---
+= Verwalten von Sitzungszeitungen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Timeouts für Unified Manager konfigurieren, so dass Benutzer inaktive Sitzungen nach einer bestimmten Zeit getrennt werden.
+
+Standardmäßig beträgt das Sitzungszeitlimit für Unified Manager 30 Minuten. Sie können diese Zeit anpassen oder Sitzungszeitausfälle ganz deaktivieren.
+
+.Schritte
+. Wählen Sie in der Menüleiste den Dropdown-Pfeil neben Ihrem Benutzernamen aus.
+. Wählen Sie *Zeitüberschreitung der Sitzung aktivieren/deaktivieren*.
++
+Das Dialogfeld „Session-Timeout aktivieren/deaktivieren“ wird geöffnet.
+
+. Verwenden Sie die Spinner-Regler, um die Zeit in Minuten zu erhöhen oder zu verringern.
++
+Die minimale Zeitüberschreitung, die Sie einstellen können, beträgt 15 Minuten.
+
++
+[NOTE]
+====
+Deaktivieren Sie zum Deaktivieren der Sitzungszeitzeiten das Kontrollkästchen *Zeitdauer festlegen...*.
+
+====
+. Klicken Sie Auf *Speichern*.
+

@@ -1,0 +1,33 @@
+---
+permalink: sm-storage/change-controller-ownership-of-a-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, controller ownership, volume 
+summary: Sie können den bevorzugten Controller-Besitz eines Volumes ändern, sodass die I/O-Vorgänge für Host-Applikationen durch den neuen Pfad geleitet werden. 
+---
+= Ändern Sie den Controller-Eigentum eines Volumes
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den bevorzugten Controller-Besitz eines Volumes ändern, sodass die I/O-Vorgänge für Host-Applikationen durch den neuen Pfad geleitet werden.
+
+Falls Sie keinen Multipath-Treiber verwenden, müssen alle Host-Applikationen, die derzeit das Volume verwenden, heruntergefahren werden. Dadurch werden Anwendungsfehler verhindert, wenn sich der I/O-Pfad ändert.
+
+Sie können die Controller-Eigentumsrechte für ein oder mehrere Volumes in einem Pool oder einer Volume-Gruppe ändern.
+
+.Schritte
+. Wählen Sie Menü:Storage[Volumes].
+. Wählen Sie ein beliebiges Volume aus, und wählen Sie dann Menü:Mehr[Eigentümerschaft ändern].
++
+Das Dialogfeld Volume-Eigentümer ändern wird angezeigt. In diesem Dialogfeld werden alle Volumes im Speicher-Array angezeigt.
+
+. Verwenden Sie die Dropdown-Liste *bevorzugter Eigentümer*, um den bevorzugten Controller für jedes zu ändernden Volume zu ändern, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
+
+
+.Ergebnisse
+* System Manager ändert den Controller-Eigentümer des Volume. Die I/O-Vorgänge zum Volume werden jetzt durch diesen I/O-Pfad geleitet.
+* Auf dem Volume wird möglicherweise der neue I/O-Pfad erst dann verwendet, wenn der Multipath-Treiber den neuen Pfad erkennt. Diese Aktion dauert in der Regel weniger als fünf Minuten.
+

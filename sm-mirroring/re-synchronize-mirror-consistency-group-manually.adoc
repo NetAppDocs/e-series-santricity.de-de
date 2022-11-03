@@ -1,0 +1,34 @@
+---
+permalink: sm-mirroring/re-synchronize-mirror-consistency-group-manually.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, re-synchronize, mirror, consistency, group, manually, 
+summary: Sie können die Neusynchronisierung für alle gespiegelten Paare innerhalb einer SpiegelungsConsistency Group manuell starten. 
+---
+= Die SpiegelungsConsistency Group manuell neu synchronisieren
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Neusynchronisierung für alle gespiegelten Paare innerhalb einer SpiegelungsConsistency Group manuell starten.
+
+.Schritte
+. Wählen Sie Menü:Speicher[Asynchronous Mirroring].
+. Wählen Sie die Registerkarte * Consistency Groups spiegeln* aus.
++
+Die Tabelle Mirror Consistency Group wird angezeigt und zeigt alle dem Speicher-Array zugeordneten Spiegelkonsistency Groups an.
+
+. Wählen Sie die SpiegelungsConsistency Group aus, die Sie erneut synchronisieren möchten, und wählen Sie dann Menü:Mehr[manuell neu synchronisieren].
++
+Das System zeigt eine Bestätigung an.
+
+. Wählen Sie zur Bestätigung * Ja* aus.
+
+
+Das System führt die folgenden Aktionen durch:
+
+* Initiiert die erneute Synchronisation von Daten auf allen gespiegelten Paaren innerhalb der ausgewählten SpiegelungsConsistency Group.
+* Aktualisiert geänderte Daten vom lokalen Speicher-Array auf das Remote-Speicher-Array.
+

@@ -1,0 +1,33 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-backing-up-a-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, backing up, security, key, 
+summary: Wenn Ihr ursprünglicher Sicherheitsschlüssel beschädigt wird und Sie kein Backup haben, verlieren Sie den Zugriff auf die Daten auf den Laufwerken, wenn sie von einem Speicher-Array zu einem anderen migriert werden. 
+---
+= Was muss ich vor dem Sichern eines Sicherheitsschlüssels beachten?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Ihr ursprünglicher Sicherheitsschlüssel beschädigt wird und Sie kein Backup haben, verlieren Sie den Zugriff auf die Daten auf den Laufwerken, wenn sie von einem Speicher-Array zu einem anderen migriert werden.
+
+Vor dem Sichern eines Sicherheitsschlüssels sollten Sie folgende Richtlinien beachten:
+
+* Stellen Sie sicher, dass Sie die Kennung des Sicherheitsschlüssels kennen und den Satz der ursprünglichen Schlüsseldatei übergeben.
++
+[NOTE]
+====
+Nur interne Schlüssel verwenden Kennungen. Beim Erstellen der Kennung wurden automatisch zusätzliche Zeichen generiert und an beide Enden der Identifikationszeichenfolge angehängt. Die generierten Zeichen stellen sicher, dass die Kennung eindeutig ist.
+
+====
+* Sie erstellen einen neuen Passphrase für das Backup. Diese Passphrase muss nicht mit der Passphrase übereinstimmen, die bei der Erstellung des ursprünglichen Schlüssels oder der letzten Änderung verwendet wurde. Der Passphrase wird nur auf das Backup angewendet, das Sie erstellen.
++
+[NOTE]
+====
+Der Passphrase für die Laufwerksicherheit sollte nicht mit dem Administratorkennwort des Speicherarrays verwechselt werden. Der Passphrase für die Laufwerksicherheit schützt Backups eines Sicherheitsschlüssels. Das Administratorpasswort schützt das gesamte Speicherarray vor unberechtigtem Zugriff.
+
+====
+* Die Backup-Sicherheitsschlüsseldatei wird auf den Management-Client heruntergeladen. Der Pfad für die heruntergeladene Datei hängt möglicherweise vom Standard-Download-Speicherort Ihres Browsers ab. Stellen Sie sicher, dass Sie den Speicherort Ihrer Sicherheitsschlüssel-Informationen notieren.
+

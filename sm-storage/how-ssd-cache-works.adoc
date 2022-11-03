@@ -1,0 +1,86 @@
+---
+permalink: sm-storage/how-ssd-cache-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ssd cache, 
+summary: 'Die SSD Cache Funktion ist eine Controller-basierte Lösung, die am häufigsten abgerufene Daten („heiße“ Daten) auf latenzarmen Solid State Drives (SSDs) zwischenspeichert und so die System-Performance dynamisch beschleunigt. SSD Cache wird ausschließlich für Host-Lesevorgänge verwendet.' 
+---
+= Funktionsweise von SSD Cache
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die SSD Cache Funktion ist eine Controller-basierte Lösung, die am häufigsten abgerufene Daten („heiße“ Daten) auf latenzarmen Solid State Drives (SSDs) zwischenspeichert und so die System-Performance dynamisch steigert. SSD Cache wird ausschließlich für Host-Lesevorgänge verwendet.
+
+[NOTE]
+====
+Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+
+====
+
+
+== SSD Cache im Vergleich zum primären Cache
+
+SSD Cache ist ein sekundärer Cache zur Verwendung mit dem primären Cache im dynamischen Random-Access Memory (DRAM) des Controllers.
+
+SSD Cache funktioniert anders als der primäre Cache:
+
+* Im primären Cache muss jeder I/O-Vorgang Daten durch den Cache stacieren, um den Vorgang durchzuführen.
++
+Im primären Cache werden die Daten nach dem Lesen des Hosts im DRAM gespeichert.
+
+* SSD Cache wird nur verwendet, um die Daten im Cache zu platzieren, um die Gesamt-Performance des Systems zu verbessern.
++
+Im SSD Cache werden die Daten aus Volumes kopiert und auf zwei internen RAID-Volumes (eine pro Controller) gespeichert, die bei der Erstellung eines SSD-Caches automatisch erstellt werden.
+
+
+
+Die internen RAID-Volumes werden für die interne Cache-Verarbeitung verwendet. Auf diese Volumes kann nicht zugegriffen oder in der Benutzeroberfläche angezeigt werden. Diese beiden Volumes zählen jedoch die Gesamtanzahl der im Storage Array zulässigen Volumes.
+
+
+
+== Verwendung von SSD Cache
+
+Mit der intelligenten Cache-Speicherung werden Daten auf einem Laufwerk mit niedrigerer Latenz platziert. So kann schneller auf zukünftige Anfragen nach diesen Daten reagiert werden. Wenn ein Programm Daten anfordert, die sich im Cache befinden (so genannte „`Cache Hit`“), kann diese Transaktion auf der Festplatte mit niedrigerer Latenz verarbeitet werden. Andernfalls tritt ein „`Cache Miss`“ auf, und auf die Daten muss vom ursprünglichen, langsameren Laufwerk zugegriffen werden. Je mehr Cache-Treffer auftreten, desto besser wird die Gesamt-Performance.
+
+Wenn ein Hostprogramm auf die Laufwerke des Storage-Arrays zugreift, werden die Daten im SSD-Cache gespeichert. Wenn das Hostprogramm wieder auf dieselben Daten zugreift, wird es anstelle der Festplatten aus dem SSD-Cache gelesen. Die am häufigsten abgerufenen Daten werden im SSD-Cache gespeichert. Auf die Festplatten wird nur zugegriffen, wenn die Daten nicht aus dem SSD-Cache gelesen werden können.
+
+SSD Cache wird nur verwendet, wenn es von Vorteil ist, die Daten im Cache zu platzieren, um die Gesamt-Performance des Systems zu verbessern.
+
+Wenn die CPU Lesedaten verarbeiten muss, führt dies wie folgt aus:
+
+. Überprüfen Sie den DRAM-Cache.
+. Wenn sie nicht im DRAM-Cache gefunden werden, überprüfen Sie den SSD-Cache.
+. Wenn nicht im SSD Cache gefunden, dann von der Festplatte. Wenn Daten für den Cache sinnvoll sind, sollten Sie diese in den SSD Cache kopieren.
+
+
+
+
+== Verbesserte Performance
+
+Das Kopieren der am häufigsten aufgerufenen Daten (Hot Spot) in SSD Cache ermöglicht einen effizienteren Festplattenbetrieb, geringere Latenz und eine beschleunigte Lese- und Schreibgeschwindigkeit. Mithilfe hochperformanter SSDs können Daten von HDD-Volumes zwischengespeichert werden, was die I/O-Performance und die Reaktionszeiten verbessert.
+
+Über einfache Volume-I/O-Mechanismen werden Daten in den und aus dem SSD-Cache verschoben. Nachdem Daten im Cache gespeichert und auf den SSDs gespeichert wurden, werden nachfolgende Lesezugriffe auf diese Daten im SSD Cache ausgeführt. Auf das HDD-Volume ist somit kein Zugriff mehr erforderlich.
+
+
+
+== SSD-Cache und die Laufwerkssicherheitsfunktion
+
+Wenn Sie SSD Cache auf einem Volume verwenden möchten, das auch die Laufwerkssicherheit verwendet (ist sicher aktiviert), müssen die Laufwerksicherheitsfunktionen des Volumes und des SSD-Caches übereinstimmen. Stimmen sie nicht überein, wird das Volume nicht sicher aktiviert.
+
+
+
+== Implementierung von SSD-Cache
+
+Gehen Sie zum Implementieren von SSD-Cache wie folgt vor:
+
+. Erstellen Sie den SSD-Cache.
+. Verbinden Sie den SSD-Cache mit den Volumes, für die Sie SSD-Lese-Caching implementieren möchten.
+
+
+[NOTE]
+====
+Jedes Volume, das der Nutzung des SSD-Caches eines Controllers zugewiesen ist, kann keine automatische Lastverteilung durchführen.
+
+====

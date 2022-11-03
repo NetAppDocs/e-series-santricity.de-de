@@ -1,0 +1,36 @@
+---
+permalink: um-certificates/view-local-user-roles-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, view, local, user, roles 
+summary: 'Auf der Registerkarte Lokale Benutzerrollen können Sie die Zuordnungen der Benutzer zu den Standardrollen anzeigen. Diese Zuordnungen sind Teil der RBAC (rollenbasierte Zugriffssteuerung), die im Web Services Proxy für SANtricity Unified Manager durchgesetzt wird.' 
+---
+= Zeigen Sie lokale Benutzerrollen an
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Registerkarte Lokale Benutzerrollen können Sie die Zuordnungen der Benutzer zu den Standardrollen anzeigen. Diese Zuordnungen sind Teil der RBAC (rollenbasierte Zugriffssteuerung), die im Web Services Proxy für Unified Manager durchgesetzt wird.
+
+Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
+
+Die Benutzer und Zuordnungen können nicht geändert werden. Es können nur Passwörter geändert werden.
+
+.Schritte
+. Wählen Sie *Zugriffsmanagement*.
+. Wählen Sie die Registerkarte * Lokale Benutzerrollen* aus.
++
+Die Benutzer sind in der Tabelle aufgeführt:
+
++
+** *Admin* -- Super-Administrator, der Zugriff auf alle Funktionen im System hat. Dieser Benutzer enthält alle Rollen.
+** *Storage* -- der Administrator, der für die gesamte Storage-Bereitstellung verantwortlich ist. Dieser Benutzer umfasst die folgenden Rollen: Storage-Administrator, Support-Administrator und Monitor.
+** *Sicherheit* -- der für die Sicherheitskonfiguration verantwortliche Benutzer, einschließlich Zugriffsverwaltung und Zertifikatverwaltung. Dieser Benutzer umfasst die folgenden Rollen: Security Admin und Monitor.
+** *Support* -- der Benutzer, der für Hardware-Ressourcen, Ausfalldaten und Firmware-Upgrades verantwortlich ist. Dieser Benutzer enthält die folgenden Rollen: Unterstützen Sie Admin und Monitor.
+** *Monitor* -- ein Benutzer mit schreibgeschütztem Zugriff auf das System. Dieser Benutzer enthält nur die Rolle „Monitor“.
+** *rw* (lesen/schreiben) -- dieser Benutzer enthält die folgenden Rollen: Speicheradministrator, Supportadministrator und Monitor.
+** *Ro* (schreibgeschützt) -- dieser Benutzer enthält nur die Rolle Monitor.
+
+
+

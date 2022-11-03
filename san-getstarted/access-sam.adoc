@@ -1,0 +1,59 @@
+---
+permalink: san-getstarted/access-sam.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access System Manager 
+summary: Um auf die Benutzeroberfläche von System Manager zuzugreifen, zeigen Sie einen Browser auf die IP-Adresse des Controllers. Ein Setup-Assistent hilft Ihnen beim Einstieg in die Systemkonfiguration. 
+---
+= Greifen Sie Auf System Manager Zu
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um auf die Benutzeroberfläche von System Manager zuzugreifen, zeigen Sie einen Browser auf die IP-Adresse des Controllers. Ein Setup-Assistent hilft Ihnen beim Einstieg in die Systemkonfiguration.
+
+.Bevor Sie beginnen
+* Installieren und konfigurieren Sie Ihre Hardware, wie in einer der Express-Konfigurationsanleitungen beschrieben:
++
+** https://docs.netapp.com/us-en/e-series/config-linux/index.html["Linux Express-Konfiguration"^]
+** https://docs.netapp.com/us-en/e-series/config-vmware/index.html["VMware Express-Konfiguration"^]
+** https://docs.netapp.com/us-en/e-series/config-windows/index.html["Windows Express-Konfiguration"^]
+
+
+* Konfigurieren Sie eine Management Station, die die folgenden Anforderungen erfüllt:
++
+** Mit einem Netzwerk verbunden, das 1 Gbit/s oder schneller ist.
+** An dasselbe Subnetz wie die Storage-Management-Ports angeschlossen.
+** Wird als separate Station und nicht als Host (angehangene I/O-Verbindung) verwendet, der für das Datenmanagement verwendet wird.
+** Einrichtung für Out-of-Band-Management, bei dem eine Storage-Management-Station Befehle über die Ethernet-Verbindungen zum Controller an das Storage-System sendet
+** Richten Sie die Einrichtung mit einem unterstützten Browser ein. Siehe link:supported-browsers-os.html["Unterstützte Browser und Betriebssysteme"].
+
+
+
+
+.Schritte
+. Geben Sie in Ihrem Browser die folgende URL ein: `+https://<IPAddress>+`
++
+`IPAddress` Ist die Adresse für einen der Storage Array Controller.
+
++
+Wenn System Manager zum ersten Mal auf einem Array geöffnet wird, das nicht konfiguriert wurde, wird die Eingabeaufforderung Administratorkennwort festlegen angezeigt.
+
+. Geben Sie in den Feldern Administratorpasswort festlegen und Passwort bestätigen das Passwort für die Administratorrolle ein und klicken Sie dann auf *Passwort festlegen*.
++
+Der Setup-Assistent wird bei der ersten Anmeldung gestartet.
+
+. Mit dem Setup-Assistenten können Sie die folgenden Aufgaben ausführen:
++
+** *Überprüfung der Hardware (Controller und Laufwerke)* - Überprüfen Sie die Anzahl der Controller und Laufwerke im Speicher-Array. Weisen Sie dem Array einen Namen zu.
+** *Überprüfung der Hosts und Betriebssysteme* - Überprüfen Sie die Host- und Betriebssystemtypen, auf die das Speicherarray zugreifen kann.
+** *Pools akzeptieren* -- Akzeptieren Sie die empfohlene Poolkonfiguration für die Express-Installationsmethode. Ein Pool ist eine logische Laufwerksgruppe.
+** *Warnungen konfigurieren* -- System Manager kann automatische Benachrichtigungen erhalten, wenn ein Problem mit dem Speicher-Array auftritt.
+** *AutoSupport aktivieren* -- überwacht automatisch den Zustand Ihres Speicherarrays und sendet Entsendungen an den technischen Support.
+
+
+
+
+Weitere Informationen zum Setup-Assistenten finden Sie unter link:../sm-interface/setup-wizard-overview.html["Übersicht über den Setup-Assistenten"].

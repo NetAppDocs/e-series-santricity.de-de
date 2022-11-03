@@ -1,0 +1,37 @@
+---
+permalink: sm-settings/import-trusted-certificates-for-controllers-acting-as-client.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, import, certificates, 
+summary: 'Wenn der Controller eine Verbindung zurückweist, weil er die Vertrauenskette für einen Netzwerkserver nicht validieren kann, können Sie ein Zertifikat über die Registerkarte „Trusted“ importieren, auf der der Controller (als Client agiert) die Kommunikation von diesem Server akzeptieren kann.' 
+---
+= Importieren Sie Zertifikate für Controller, wenn Sie als Clients fungieren
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn der Controller eine Verbindung zurückweist, weil er die Vertrauenskette für einen Netzwerkserver nicht validieren kann, können Sie ein Zertifikat über die Registerkarte „Trusted“ importieren, auf der der Controller (als Client agiert) die Kommunikation von diesem Server akzeptieren kann.
+
+.Bevor Sie beginnen
+* Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.
+* Die Zertifikatdateien werden auf Ihrem lokalen System installiert.
+
+
+Das Importieren von Zertifikaten aus der Registerkarte „Trusted“ ist möglicherweise erforderlich, wenn Sie zulassen möchten, dass andere Server die Controller kontaktieren (z. B. ein LDAP-Server oder ein Syslog-Server, der TLS verwendet).
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[Zertifikate].
+. Wählen Sie auf der Registerkarte Trusted die Option *Import* aus.
++
+Es wird ein Dialogfeld zum Importieren der vertrauenswürdigen Zertifikatdateien geöffnet.
+
+. Klicken Sie auf *Durchsuchen*, um die Zertifikatdateien für die Controller auszuwählen.
++
+Die Dateinamen werden im Dialogfeld angezeigt.
+
+. Klicken Sie Auf *Import*.
+
+
+Die Dateien werden hochgeladen und validiert.

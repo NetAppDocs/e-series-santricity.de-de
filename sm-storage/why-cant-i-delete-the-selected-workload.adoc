@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/why-cant-i-delete-the-selected-workload.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, selected, workload 
+summary: 'Dieser Workload besteht aus einer Gruppe von Volumes, die mithilfe der Befehlszeilenschnittstelle (CLI) erstellt oder von einem anderen Storage Array migriert (importiert/exportiert) wurden. Daher sind die Volumes in diesem Workload keinem applikationsspezifischen Workload zugeordnet, sodass der Workload nicht gelöscht werden kann.' 
+---
+= Warum kann ich den ausgewählten Workload nicht löschen?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dieser Workload besteht aus einer Gruppe von Volumes, die mithilfe der Befehlszeilenschnittstelle (CLI) erstellt oder von einem anderen Storage Array migriert (importiert/exportiert) wurden. Daher sind die Volumes in diesem Workload keinem applikationsspezifischen Workload zugeordnet, sodass der Workload nicht gelöscht werden kann.

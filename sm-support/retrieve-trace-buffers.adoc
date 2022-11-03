@@ -1,0 +1,36 @@
+---
+permalink: sm-support/retrieve-trace-buffers.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, retrieve, trace, buffers 
+summary: Sie können die Trace-Puffer von den Controllern abrufen und die Datei zur Analyse an den technischen Support senden. 
+---
+= Trace-Puffer abrufen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Trace-Puffer von den Controllern abrufen und die Datei zur Analyse an den technischen Support senden.
+
+Die Firmware verwendet die Trace-Puffer, um die Verarbeitung, insbesondere Ausnahmebedingungen, aufzuzeichnen, die für das Debuggen von Daten hilfreich sein können. Sie können Trace-Puffer abrufen, ohne den Betrieb des Storage Array zu unterbrechen und mit minimalen Auswirkungen auf die Performance.
+
+[NOTE]
+====
+Führen Sie diesen Vorgang nur aus, wenn Sie vom technischen Support dazu aufgefordert werden.
+
+====
+.Schritte
+. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie *Trace Buffers Abrufen*.
+. Aktivieren Sie das Kontrollkästchen neben jedem Controller, für den Trace-Puffer abgerufen werden sollen.
++
+Sie können einen oder beide Controller auswählen. Wenn die Statusmeldung des Controllers rechts von einem Kontrollkästchen fehlgeschlagen oder deaktiviert ist, ist das Kontrollkästchen deaktiviert.
+
+. Klicken Sie Auf *Ja*.
++
+Die Datei wird im Ordner Downloads für Ihren Browser mit dem Dateinamen gespeichert `trace-buffers.7z`.
+
+. Folgen Sie den Anweisungen des technischen Supports, um die Datei an sie zu senden.
+

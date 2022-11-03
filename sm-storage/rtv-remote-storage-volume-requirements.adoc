@@ -1,0 +1,58 @@
+---
+permalink: sm-storage/rtv-remote-storage-volume-requirements.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, storage, volume, requirements 
+summary: Für Importe verwendete Volumes müssen die Anforderungen für Größe, Status und andere Kriterien erfüllen. 
+---
+= Anforderungen für Remote Storage Volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Für Importe verwendete Volumes müssen die Anforderungen für Größe, Status und andere Kriterien erfüllen.
+
+
+
+== Remote Storage Volume
+
+Das Quell-Volume eines Imports wird als „Remote-Storage-Volume“ bezeichnet. Dieses Volume muss die folgenden Kriterien erfüllen:
+
+* Darf nicht Teil eines anderen Imports sein
+* Muss einen Online-Status haben
+
+
+Nach dem Import erstellt die Controller-Firmware im Hintergrund ein Remote-Speicher-Volume. Aufgrund dieses Hintergrundprozesses ist das Remote Storage Volume in System Manager nicht verwaltbar und kann nur für den Importvorgang verwendet werden.
+
+Nach der Erstellung wird das Remote Storage Volume wie jedes andere Standard-Volume des E-Series Systems behandelt. Folgende Ausnahmen gelten:
+
+* Kann als Proxys für das Remote-Speichergerät verwendet werden.
+* Kann nicht als Kandidaten für andere Volume-Kopien oder Snapshots verwendet werden.
+* Während des Imports kann die Data Assurance-Einstellung nicht geändert werden.
+* Es können keine Hosts zugeordnet werden, da sie ausschließlich für den Importvorgang reserviert sind.
+
+
+Jedes Remote-Storage-Volume ist nur einem Remote-Storage-Objekt zugewiesen. Ein Remote-Storage-Objekt kann jedoch mehreren Remote-Storage Volumes zugewiesen werden. Das Remote Storage Volume wird anhand folgender Elemente eindeutig identifiziert:
+
+* Objekt-ID für Remote-Storage
+* LUN-Nummer des Remote-Speichergeräts
+
+
+
+
+== Kandidaten für Zielvolumen
+
+Das Ziel-Volume ist das Ziel-Volume auf dem lokalen E-Series System. Das Ziel-Volume muss die folgenden Kriterien erfüllen:
+
+* Muss ein RAID/DDP-Volume sein.
+* Muss eine Kapazität aufweisen, die dem Remote-Storage-Volume entspricht oder größer ist.
+* Es müssen Blöcke vorhanden sein, die mit dem Remote-Storage-Volume identisch sind.
+* Muss einen gültigen Zustand (optimal) aufweisen.
+* Es können keine der folgenden Beziehungen vorhanden sein: Volume-Kopie, Snapshot-Kopien, asynchrones oder synchrones Spiegeln.
+* Keine Neukonfiguration möglich: Dynamische Volume-Erweiterung, dynamische Kapazitätserweiterung, dynamische Segmentgröße, dynamische RAID-Migration, dynamische Kapazitätsreduzierung, Oder Defragmentierung.
+* Vor dem Import kann einem Host nicht zugeordnet werden (er kann jedoch nach Abschluss des Imports zugeordnet werden).
+* Flash Read (FRC) kann nicht aktiviert sein.
+
+
+System Manager überprüft diese Anforderungen automatisch im Assistenten zum Importieren von Remote Storage. Für die Auswahl des Ziel-Volumes werden nur Volumes angezeigt, die alle Anforderungen erfüllen.

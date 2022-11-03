@@ -1,0 +1,48 @@
+---
+permalink: sm-hardware/fail-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, fail, drive, 
+summary: Wenn Sie dazu aufgefordert werden, können Sie ein Laufwerk manuell fehlschlagen. 
+---
+= Laufwerk ausfällt
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie dazu aufgefordert werden, können Sie ein Laufwerk manuell fehlschlagen.
+
+System Manager überwacht die Laufwerke im Speicher-Array. Wenn die Software feststellt, dass ein Laufwerk viele Fehler verursacht, benachrichtigt Sie der Recovery Guru über einen bevorstehenden Laufwerksausfall. Sollte dies der Fall sein und Sie können ein Ersatzlaufwerk verwenden, um präventiv zu handeln. Wenn kein Ersatzlaufwerk verfügbar ist, können Sie warten, bis das Laufwerk ausfällt.
+
+[CAUTION]
+====
+*Möglicher Verlust des Datenzugriffs* -- dieser Vorgang kann zu Datenverlust oder Datenverlust führen. Führen Sie diesen Vorgang nur aus, wenn Sie vom technischen Support oder dem Recovery Guru dazu aufgefordert werden.
+
+====
+.Schritte
+. Wählen Sie *Hardware*.
+. Wenn die Grafik die Controller zeigt, klicken Sie auf *Vorderseite des Regals anzeigen*.
++
+Die Grafik ändert sich, um die Laufwerke anstelle der Controller anzuzeigen.
+
+. Klicken Sie auf das Laufwerk, das Sie fehlschlagen möchten.
++
+Das Kontextmenü des Laufwerks wird angezeigt.
+
+. Wählen Sie *Fail*.
+. Aktivieren Sie das Kontrollkästchen *Inhalt kopieren von Laufwerk vor Ausfall*.
++
+Die Kopieroption wird nur für zugewiesene Laufwerke und für nicht-RAID 0-Volume-Gruppen angezeigt.
+
++
+Bevor Sie das Laufwerk ausfallen, müssen Sie den Inhalt des Laufwerks kopieren. Je nach Konfiguration könnten möglicherweise alle Daten- oder Datenredundanz auf dem zugehörigen Pool oder Volume-Gruppe verloren gehen, wenn Sie den Inhalt des Laufwerks nicht zuerst kopieren.
+
++
+Die Kopieroption ermöglicht eine schnellere Wiederherstellung des Laufwerks als zur Rekonstruktion und verringert somit die Möglichkeit eines Volume-Ausfalls, wenn während des Kopiervorgangs ein weiteres Laufwerk ausfällt.
+
+. Bestätigen Sie, dass das Laufwerk ausfallen soll.
++
+Warten Sie nach dem Ausfall des Laufwerks mindestens 30 Sekunden, bevor Sie es entfernen.
+
+

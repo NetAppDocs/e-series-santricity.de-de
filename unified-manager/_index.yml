@@ -1,0 +1,41 @@
+---
+indexpage:
+  tiles:
+  - title: Einrichtung
+    links:
+    - title: Übersicht über die Unified Manager Schnittstelle
+      url: "../um-admin/overview-interface-unified.html"
+    - title: Legen Sie das Admin-Passwort fest
+      url: "../um-admin/administrator-password-protection-unified.html"
+  - title: Arrays erkennen
+    links:
+    - title: Überlegungen zur Bestandsaufnahme
+      url: "../um-manage/considerations-for-discovering-arrays.html"
+    - title: Einzel-Array
+      url: "../um-manage/discover-single-array.html"
+    - title: Mehrere Arrays
+      url: "../um-manage/discover-multiple-arrays.html"
+  - title: Management von Arrays
+    links:
+    - title: Storage-Array-Gruppen
+      url: "../um-manage/overview-manage-groups.html"
+    - title: Status des Storage-Arrays
+      url: "../um-manage/storage-array-status.html"
+    - title: Software-Upgrade
+      url: "../um-manage/upgrade-controller-firmware.html"
+  - title: Zugriffsmanagement
+    links:
+    - title: Benutzerzugriff
+      url: "../um-certificates/how-access-management-works-unified.html"
+    - title: Zertifikate
+      url: "../um-certificates/how-certificates-work-unified.html"
+    - title: Verzeichnisdienste
+      url: "../um-certificates/access-management-with-directory-services-unified.html"
+  - title: Einstellungen verwalten
+    links:
+    - title: Einstellungen importieren
+      url: "../um-manage/how-import-settings-works.html"
+    - title: Kennworteinstellungen ändern
+      url: "../um-certificates/change-local-user-passwords-settings-unified.html"
+    - title: Ändern Sie die Einstellungen für den Verzeichnisserver
+      url: "../um-certificates/edit-directory-server-settings-unified.html"

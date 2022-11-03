@@ -1,0 +1,23 @@
+---
+permalink: um-manage/launch-system-manager.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, individual, storage, array 
+summary: Sie können die Option Start verwenden, um den Browser-basierten SANtricity-System-Manager für ein oder mehrere Storage-Arrays zu öffnen, wenn Sie Managementvorgänge ausführen möchten. 
+---
+= Management eines individuellen Storage Arrays
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Option Start verwenden, um den Browser-basierten System Manager für ein oder mehrere Speicher-Arrays zu öffnen, wenn Sie Managementvorgänge ausführen möchten.
+
+.Schritte
+. Wählen Sie auf der Seite Verwalten ein oder mehrere Storage Arrays aus, die Sie managen möchten.
+. Klicken Sie Auf *Start*.
++
+Das System öffnet ein neues Fenster und zeigt die Anmeldeseite von System Manager an.
+
+. Geben Sie Ihren Benutzernamen und Ihr Passwort ein und klicken Sie dann auf *Anmelden*.
+

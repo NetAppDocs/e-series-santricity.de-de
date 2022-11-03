@@ -1,0 +1,131 @@
+---
+permalink: sm-storage/copy-volume-function.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, copy, volume, 
+summary: 'Mit der Funktion Copy Volume können Sie eine zeitpunktgenaue Kopie eines Volumes erstellen, indem Sie auf demselben Storage-Array zwei separate Volumes erstellen: Das Quell-Volume und das Ziel-Volume.' 
+---
+= Volume-Übersicht kopieren
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit der Funktion Copy Volume können Sie eine zeitpunktgenaue Kopie eines Volumes erstellen, indem Sie auf demselben Storage-Array zwei separate Volumes erstellen: Das Quell-Volume und das Ziel-Volume.
+
+Diese Funktion erstellt eine Byte-Weise-Kopie vom Quell-Volume auf das Ziel-Volume, sodass die Daten auf dem Ziel-Volume identisch mit den Daten auf dem Quell-Volume sind.
+
+
+
+== Kopieren von Daten für besseren Zugriff
+
+Bei Änderungen der Storage-Anforderungen an ein Volume können Sie mithilfe der Funktion Volume kopieren Daten aus Pools oder Volume-Gruppen kopieren, die kleinere Kapazitätslaufwerke in Pools oder Volume-Gruppen verwenden, die größere Kapazitätslaufwerke nutzen. Beispielsweise können Sie mit der Funktion Volume kopieren folgende Aufgaben ausführen:
+
+* Verschieben Sie Daten auf größere Laufwerke.
+* Wechseln Sie auf Laufwerke mit einer höheren Datentransferrate.
+* Wechseln Sie zu Laufwerken mit neuen Technologien, um eine höhere Performance zu erzielen.
+* Ändern Sie ein Thin-Volume in ein Thick Volume.
+
+
+
+
+== Ändern Sie ein Thin-Volume in ein Thick Volume
+
+Wenn Sie ein Thin-Volume zu einem Thick Volume ändern möchten, erstellen Sie mithilfe der Operation „Copy Volume“ eine Kopie des Thin-Volume. Ziel eines Kopiervorgangs ist immer ein Thick Volume.
+
+[NOTE]
+====
+System Manager bietet keine Option zum Erstellen von Thin Volumes. Wenn Sie Thin Volumes erstellen möchten, verwenden Sie die Befehlszeilenschnittstelle (CLI).
+
+====
+
+
+== Backup-Daten
+
+Mit der Funktion Copy Volume können Sie Backups eines Volumes erstellen, indem Sie Daten von einem Volume auf ein anderes Volume im selben Storage Array kopieren. Sie können das Zielvolume als Backup für das Quell-Volume, für Systemtests oder für ein Backup auf einem anderen Gerät, z. B. als Bandlaufwerk, verwenden.
+
+
+
+== Stellen Sie Snapshot Volume-Daten auf dem Basis-Volume wieder her
+
+Wenn Sie Daten aus dem zugehörigen Snapshot-Volume in das Basis-Volume wiederherstellen müssen, können Sie die Funktion „Copy Volume“ verwenden, um Daten vom Snapshot-Volume in das Basis-Volume zu kopieren. Sie können eine Volume-Kopie der Daten auf dem Snapshot Volume erstellen und dann die Daten in das Basis-Volume kopieren.
+
+
+
+== Quell- und Ziel-Volumes
+
+Die folgende Tabelle gibt die Typen von Volumes an, die mit der Funktion „Volume kopieren“ für Quell- und Ziel-Volumes verwendet werden können.
+
+[cols="1a,1a,1a,1a"]
+|===
+| Volume-Typ | Offline Volume Copy Quell-Volume | Online Volume Copy Quell-Volume | Online- und Offline-Ziel-Volume 
+
+
+ a| 
+Thick Volume in einem Pool
+ a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+ a| 
+Thick Volume in einer Volume-Gruppe
+ a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Ja.
+
+
+
+ a| 
+Thin Volume
+ a| 
+Ja.
+ a| 
+Ja.
+ a| 
+Nein
+
+
+
+ a| 
+Snapshot Volume
+ a| 
+Ja^1^
+ a| 
+Nein
+ a| 
+Nein
+
+
+
+ a| 
+Snapshot Basis-Volume
+ a| 
+Ja.
+ a| 
+Nein
+ a| 
+Nein
+
+
+
+ a| 
+Primäres Remote-Spiegel-Volume
+ a| 
+Ja^2^
+ a| 
+Nein
+ a| 
+Ja.
+
+|===
+^1^ Sie können die Snapshot-Volume-Kopie erst verwenden, nachdem der Online-Kopiervorgang abgeschlossen ist.
+
+^2^ Wenn das Quell-Volume ein primäres Volume ist, muss die Kapazität des Ziel-Volumes der nutzbaren Kapazität des Quell-Volumes entsprechen oder größer sein.

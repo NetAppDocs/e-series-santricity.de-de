@@ -1,0 +1,33 @@
+---
+permalink: sm-mirroring/why-cant-i-access-my-chosen-mirroring-feature.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, mirroring, access 
+summary: Die Spiegelung ist in der Unified Manager-Schnittstelle konfiguriert. 
+---
+= Warum kann ich nicht auf meine gewählte Spiegelfunktion zugreifen?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Spiegelung ist in der Unified Manager-Schnittstelle konfiguriert.
+
+[NOTE]
+====
+Eine Spiegelung ist nicht auf dem EF600 oder EF300-Speicher-Array verfügbar.
+
+====
+Um die Spiegelung zwischen zwei Arrays zu aktivieren und zu konfigurieren, überprüfen Sie Folgendes:
+
+* Der Web Services Proxy-Dienst muss ausgeführt werden. (Unified Manager wird auf einem Host-System zusammen mit dem Web Services Proxy installiert.)
+* Unified Manager muss auf Ihrem lokalen Host über eine HTTPS-Verbindung ausgeführt werden.
+* Die beiden Storage Arrays, die Sie für die Spiegelung verwenden möchten, müssen in Unified Manager erkannt werden.
+* Unified Manager muss über gültige SSL-Zertifikate für die Speicher-Arrays verfügen. Sie können ein selbstsigniertes Zertifikat akzeptieren oder CA-signierte Zertifikate von Unified Manager installieren.
+
+
+Anweisungen zur Konfiguration finden Sie im folgenden Abschnitt:
+
+* link:../um-manage/create-asynchronous-mirrored-pair-um.html["Asynchrones gespiegeltes Paar erstellen (in Unified Manager)"]
+* link:../um-manage/create-synchronous-mirrored-pair-um.html["Synchrones gespiegeltes Paar erstellen (in Unified Manager)"]
+

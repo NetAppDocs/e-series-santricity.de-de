@@ -1,0 +1,70 @@
+---
+permalink: sm-settings/unlock-drives-using-an-internal-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, unlock, drives, internal, key, management, 
+summary: Wenn Sie das interne Verschlüsselungsmanagement konfiguriert haben und später sichere Laufwerke von einem Speicher-Array auf ein anderes verschieben, müssen Sie den Sicherheitsschlüssel dem neuen Speicher-Array neu zuweisen, um Zugriff auf die verschlüsselten Daten auf den Laufwerken zu erhalten. 
+---
+= Entsperren Sie Laufwerke bei Nutzung des internen Verschlüsselungsmanagements
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie das interne Verschlüsselungsmanagement konfiguriert haben und später sichere Laufwerke von einem Speicher-Array auf ein anderes verschieben, müssen Sie den Sicherheitsschlüssel dem neuen Speicher-Array neu zuweisen, um Zugriff auf die verschlüsselten Daten auf den Laufwerken zu erhalten.
+
+.Bevor Sie beginnen
+* Auf dem Quell-Array (dem Array, in dem Sie die Laufwerke entfernen) haben Sie Volume-Gruppen exportiert und die Laufwerke entfernt. Auf dem Ziel-Array haben Sie die Laufwerke neu installiert.
++
+
+NOTE: Die Funktion „Exportieren/Importieren“ wird in der Benutzeroberfläche von System Manager nicht unterstützt. Sie müssen die Befehlszeilenschnittstelle (CLI) verwenden, um eine Volume-Gruppe in ein anderes Storage-Array zu exportieren bzw. zu importieren.
+
++
+Detaillierte Anweisungen für die Migration einer Volume-Gruppe finden Sie in https://kb.netapp.com/["NetApp Knowledge Base"^]. Befolgen Sie die entsprechenden Anweisungen für neuere Arrays, die von System Manager oder für ältere Systeme gemanagt werden.
+
+* Die Laufwerkssicherheitsfunktion muss aktiviert sein. Andernfalls wird während dieser Aufgabe ein Dialogfeld „Sicherheitsschlüssel nicht erstellen“ geöffnet. Wenden Sie sich bei Bedarf an Ihren Storage-Anbieter, um Anweisungen zur Aktivierung der Laufwerkssicherheitsfunktion zu erhalten.
+* Sie müssen den Sicherheitsschlüssel kennen, der mit den Laufwerken verknüpft ist, die Sie entsperren möchten.
+* Die Sicherheitsschlüsseldatei steht auf dem Management-Client zur Verfügung (das System mit einem Browser, der zum Zugriff auf System Manager verwendet wird). Wenn Sie die Laufwerke in ein Storage-Array verschieben, das von einem anderen System gemanagt wird, müssen Sie die Sicherheitsschlüsseldatei auf diesen Management-Client verschieben.
+
+
+Wenn Sie die interne Schlüsselverwaltung verwenden, wird der Sicherheitsschlüssel lokal auf dem Speicher-Array gespeichert. Ein Sicherheitsschlüssel ist eine Zeichenkette, die vom Controller und den Laufwerken für Lese-/Schreibzugriff freigegeben wird. Wenn die Laufwerke physisch aus dem Array entfernt und in einem anderen installiert werden, können sie erst betrieben werden, wenn Sie den richtigen Sicherheitsschlüssel angeben.
+
+[NOTE]
+====
+Sie können entweder einen internen Schlüssel aus dem persistenten Speicher des Controllers oder einen externen Schlüssel von einem Schlüsselmanagementserver erstellen. In diesem Thema wird das Entsperren von Daten beschrieben, wenn das _interne_ Verschlüsselungsmanagement verwendet wird. Wenn Sie _External_ Key Management verwendet haben, lesen Sie link:unlock-drives-using-an-external-security-key.html["Entsperren von Laufwerken bei Verwendung von externer Schlüsselverwaltung"]. Wenn Sie ein Controller-Upgrade durchführen und alle Controller gegen die neueste Hardware austauschen, müssen Sie die verschiedenen Schritte ausführen, wie im E-Series und SANtricity Dokumentationszentrum in beschrieben link:https://docs.netapp.com/us-en/e-series/upgrade-controllers/upgrade-unlock-drives-task.html["Entsperren von Laufwerken"].
+
+====
+Nach der Neuinstallation von Secure-Enabled-Laufwerken in einem anderen Array erkennt das Array die Laufwerke und zeigt den Zustand „Need Attention“ sowie den Status „Security Key needed“ an. Um die Laufwerkdaten zu entsperren, wählen Sie die Sicherheitsschlüsseldatei aus und geben den Passphrase für den Schlüssel ein. (Dieser Passphrase entspricht nicht dem Administratorkennwort des Speicherarrays.)
+
+Wenn andere sichere Laufwerke im neuen Speicher-Array installiert sind, verwenden sie möglicherweise einen anderen Sicherheitsschlüssel als den, den Sie importieren. Während des Importvorgangs wird der alte Sicherheitsschlüssel nur verwendet, um die Daten für die zu installierenden Laufwerke freizuschalten. Wenn die Entsperrung erfolgreich ist, werden die neu installierten Laufwerke erneut auf den Sicherheitsschlüssel des Ziel-Speicher-Arrays codiert.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie unter * Security Key Management* * * Secure Drives entsperren* aus.
++
+Das Dialogfeld Sichere Laufwerke entsperren wird geöffnet. Alle Laufwerke, für die ein Sicherheitsschlüssel erforderlich ist, sind in der Tabelle aufgeführt.
+
+. *Optional:* bewegen Sie die Maus über eine Laufwerksnummer, um die Position des Laufwerks zu sehen (Regalnummer und Einschubnummer).
+. Klicken Sie auf *Durchsuchen* und wählen Sie dann die Sicherheitsschlüsseldatei aus, die dem Laufwerk entspricht, das Sie entsperren möchten.
++
+Die ausgewählte Schlüsseldatei wird im Dialogfeld angezeigt.
+
+. Geben Sie den Passphrase ein, der dieser Schlüsseldatei zugeordnet ist.
++
+Die eingegebenen Zeichen sind maskiert.
+
+. Klicken Sie Auf *Entsperren*.
++
+Wenn der Entsperrvorgang erfolgreich ist, wird im Dialogfeld „die zugeordneten sicheren Laufwerke wurden entsperrt“ angezeigt.
+
+
+
+Wenn alle Laufwerke gesperrt und dann entsperrt sind, wird jeder Controller im Speicher-Array neu gestartet. Wenn sich jedoch bereits einige nicht freigeschaltete Laufwerke im Ziel-Speicher-Array befinden, werden die Controller nicht neu gestartet.
+
+Auf dem Ziel-Array (dem Array mit den neu installierten Laufwerken) können Sie nun Volume-Gruppen importieren.
+
+
+NOTE: Die Funktion „Exportieren/Importieren“ wird in der Benutzeroberfläche von System Manager nicht unterstützt. Sie müssen die Befehlszeilenschnittstelle (CLI) verwenden, um eine Volume-Gruppe in ein anderes Storage-Array zu exportieren bzw. zu importieren.
+
+Detaillierte Anweisungen für die Migration einer Volume-Gruppe finden Sie in https://kb.netapp.com/["NetApp Knowledge Base"^].

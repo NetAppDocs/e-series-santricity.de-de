@@ -1,0 +1,37 @@
+---
+permalink: sm-storage/view-and-save-performance-data-tabular.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, save, tabular, performance, 
+summary: Sie können Performance-Diagrammdaten im Tabellenformat anzeigen und speichern. So können Sie die anzuzeigenden Daten filtern. 
+---
+= Anzeigen und Speichern von Leistungsdaten in Tabellenform
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Performance-Diagrammdaten im Tabellenformat anzeigen und speichern. So können Sie die anzuzeigenden Daten filtern.
+
+.Schritte
+. Klicken Sie in einem beliebigen Leistungsdatendiagramm auf *Tabellenansicht starten*.
++
+Es wird eine Tabelle angezeigt, in der alle Performancedaten für die ausgewählten Objekte aufgelistet sind.
+
+. Verwenden Sie bei Bedarf die Dropdown-Liste Objektauswahl und den Filter.
+. Klicken Sie auf die Schaltfläche *Spalten einblenden/ausblenden*, um die Spalten auszuwählen, die in die Tabelle eingefügt werden sollen.
++
+Sie können auf die einzelnen Kontrollkästchen klicken, um ein Element auszuwählen oder die Auswahl aufzuheben.
+
+. Wählen Sie unten im Bildschirm *Exportieren* aus, um die tabellarische Ansicht in einer Datei mit kommagetrennten Werten (CSV) zu speichern.
++
+Das Dialogfeld Tabelle exportieren wird angezeigt, in dem die Anzahl der zu exportierenden Zeilen und das Dateiformat des Exports (kommagetrennte Werte oder CSV-Format) angezeigt werden.
+
+. Klicken Sie auf *Exportieren*, um mit dem Download fortzufahren, oder klicken Sie auf *Abbrechen*.
++
+Abhängig von den Browsereinstellungen wird die Datei entweder gespeichert oder Sie werden aufgefordert, einen Namen und einen Speicherort für die Datei auszuwählen.
+
++
+Das Standardformat für den Dateinamen ist `performanceStatistics-yyyy-mm-dd_hh-mm-ss.csv`, Die das Datum und die Uhrzeit des Exports der Datei enthält.
+
+

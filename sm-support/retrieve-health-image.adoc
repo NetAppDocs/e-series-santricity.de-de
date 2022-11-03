@@ -1,0 +1,37 @@
+---
+permalink: sm-support/retrieve-health-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, retrieve, health, image 
+summary: Sie können ein Zustandsabbild für den Controller überprüfen. Ein Health-Image ist ein RAW-Daten-Dump des Prozessorspeichers des Controllers, den der technische Support zur Diagnose eines Problems mit einem Controller verwenden kann. 
+---
+= Abrufen des Integritätsabbilds
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können ein Zustandsabbild für den Controller überprüfen. Ein Systemzustand-Image ist ein Rohdaten-Dump des Prozessorspeichers des Controllers, mit dem der technische Support ein Problem mit einem Controller diagnostizieren kann.
+
+Die Firmware generiert automatisch ein Systemzustand-Image, wenn bestimmte Fehler erkannt werden. Nachdem ein Systemzustand-Image generiert wurde, wird der Controller, bei dem der Fehler neu gebootet wurde und ein Ereignis im Ereignisprotokoll protokolliert.
+
+Wenn AutoSupport aktiviert ist, wird das Systemzustand-Image automatisch an den technischen Support gesendet. Wenn Sie AutoSupport nicht aktiviert haben, müssen Sie sich an den technischen Support wenden, um Anweisungen zum Abrufen des Zustands-Images zu erhalten und dieses zur Analyse zu senden.
+
+[NOTE]
+====
+Führen Sie diesen Vorgang nur aus, wenn Sie vom technischen Support dazu aufgefordert werden.
+
+====
+.Schritte
+. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie *Integritätsbild Abrufen*.
++
+Sie können sich im Abschnitt Details die Größe des Integritätsabbilds anzeigen lassen, bevor Sie die Datei herunterladen.
+
+. Klicken Sie Auf *Collect*.
++
+Die Datei wird im Ordner Downloads für Ihren Browser mit dem Namen gespeichert `health-image.7z`.
+
+. Folgen Sie den Anweisungen des technischen Supports, um die Datei an sie zu senden.
+

@@ -1,0 +1,114 @@
+---
+permalink: sm-interface/setup-wizard-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, setup wizard 
+summary: Mit dem Setup-Assistenten können Sie Ihr Storage-Array konfigurieren, einschließlich Hardware, Hosts, Applikationen, Workloads Pools, Warnmeldungen und AutoSupport. 
+---
+= Übersicht über den Setup-Assistenten
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit dem Setup-Assistenten können Sie Ihr Storage-Array konfigurieren, einschließlich Hardware, Hosts, Applikationen, Workloads Pools, Warnmeldungen und AutoSupport.
+
+
+
+== Ersteinrichtung
+
+Wenn Sie System Manager zum ersten Mal öffnen, wird der Setup-Assistent gestartet. Der Setup-Assistent fordert Sie auf, grundlegende Konfigurationsaufgaben durchzuführen, z. B. die Benennung Ihres Speicher-Arrays, die Konfiguration Ihrer Hosts, die Auswahl von Anwendungen und die Erstellung von Speicherpools.
+
+
+NOTE: Bevor Sie mit der Ersteinrichtung fortfahren können, gehen Sie zum Upgrade Center (Menü:Support[Upgrade Center]) und stellen Sie sicher, dass Ihre SANtricity OS-Software auf dem neuesten Stand ist. Aktualisieren Sie bei Bedarf auf die neueste Version, und aktualisieren Sie Ihren Browser, um mit der Einrichtung fortzufahren. Weitere Informationen finden Sie unter link:../sm-support/overview-upgrade-center.html["Übersicht zum Upgrade Center"].
+
+Wenn Sie den Assistenten abbrechen, können Sie ihn nicht manuell neu starten. Der Assistent wird automatisch neu gestartet, wenn Sie den System Manager öffnen oder den Browser aktualisieren, und mindestens eine der folgenden Bedingungen erfüllt ist:
+
+* Es werden keine Pools und Volume-Gruppen erkannt.
+* Es werden keine Workloads erkannt.
+* Es werden keine Benachrichtigungen konfiguriert.
+
+
+
+
+== Terminologie
+
+Der Setup-Assistent verwendet die folgenden Begriffe.
+
+[cols="25h,~"]
+|===
+| Laufzeit | Beschreibung 
+
+
+ a| 
+Applikation
+ a| 
+Eine Applikation ist ein Software-Programm wie Microsoft SQL Server oder Microsoft Exchange.
+
+
+
+ a| 
+Alarm
+ a| 
+Warnungen benachrichtigen Administratoren über wichtige Ereignisse auf den Storage-Arrays. Warnmeldungen können per E-Mail, SNMP-Traps oder Syslog gesendet werden.
+
+
+
+ a| 
+AutoSupport
+ a| 
+Die AutoSupport Funktion überwacht den Zustand eines Storage Arrays und sendet automatische Aussendungen an den technischen Support.
+
+
+
+ a| 
+Trennt
+ a| 
+Die Storage-System-Hardware umfasst Storage Arrays, Controller und Laufwerke.
+
+
+
+ a| 
+Host
+ a| 
+Ein Host ist ein Server, der I/O an ein Volume auf einem Storage-Array sendet.
+
+
+
+ a| 
+Objekt
+ a| 
+Ein Objekt besteht aus jeder logischen oder physischen Storage-Komponente. Zu den logischen Objekten gehören Volume-Gruppen, Pools und Volumes. Zu den physischen Objekten gehören das Storage-Array, Array-Controller, Hosts und Laufwerke.
+
+
+
+ a| 
+Pool
+ a| 
+Ein Pool ist eine Reihe von Laufwerken, die logisch gruppiert sind. Mit einem Pool können Sie ein oder mehrere Volumes erstellen, auf die ein Host zugreifen kann. (Sie erstellen Volumes entweder aus einem Pool oder einer Volume-Gruppe.)
+
+
+
+ a| 
+Datenmenge
+ a| 
+Ein Volume ist ein Container, in dem Applikationen, Datenbanken und Filesysteme Daten speichern. Dies ist die logische Komponente, die erstellt wird, damit der Host auf den Speicher des Speicherarrays zugreifen kann.
+
+Ein Volume wird auf Basis der Kapazität erstellt, die in einem Pool oder einer Volume-Gruppe verfügbar ist. Ein Volume verfügt über eine definierte Kapazität. Obwohl ein Volume aus mehr als einem Laufwerk bestehen kann, wird ein Volume als eine logische Komponente für den Host angezeigt.
+
+
+
+ a| 
+Volume-Gruppe
+ a| 
+Eine Volume-Gruppe ist ein Container für Volumes mit gemeinsamen Merkmalen. Eine Volume-Gruppe verfügt über eine definierte Kapazität und einen RAID-Level. Sie können eine Volume-Gruppe verwenden, um ein oder mehrere Volumes zu erstellen, auf die ein Host zugreifen kann. (Sie erstellen Volumes entweder aus einer Volume-Gruppe oder aus einem Pool.)
+
+
+
+ a| 
+Workload
+ a| 
+Ein Workload ist ein Storage-Objekt, das eine Applikation unterstützt. Sie können einen oder mehrere Workloads oder Instanzen pro Applikation definieren. Bei einigen Applikationen konfiguriert das System den Workload so, dass er Volumes mit ähnlichen zugrunde liegenden Volume-Merkmalen enthält. Diese Volume-Merkmale werden basierend auf dem Applikationstyp optimiert, den der Workload unterstützt. Wenn Sie beispielsweise einen Workload erstellen, der eine Microsoft SQL Server Applikation unterstützt und anschließend Volumes für diesen Workload erstellt, werden die zugrunde liegenden Volume-Merkmale zur Unterstützung von Microsoft SQL Server optimiert.
+
+|===

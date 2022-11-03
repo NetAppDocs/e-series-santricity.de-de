@@ -1,0 +1,20 @@
+---
+permalink: sm-storage/what-is-a-snapshot-volume-and-when-does-it-need-reserved-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, volume, reserved, capacity 
+summary: Ein Snapshot-Volume ermöglicht dem Host den Zugriff auf Daten im Snapshot Image. Das Snapshot Volume verfügt über eine eigene reservierte Kapazität, um alle Änderungen am Basis-Volume ohne Beeinträchtigung des ursprünglichen Snapshot Images zu speichern. Snapshot Images sind für Hosts nicht Lese- oder Schreibzugriff möglich. Wenn Sie Snapshot-Daten lesen oder schreiben möchten, erstellen Sie ein Snapshot-Volume und weisen Sie es einem Host zu. 
+---
+= Was ist ein Snapshot Volume und wann braucht es reservierte Kapazität?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Ein Snapshot-Volume ermöglicht dem Host den Zugriff auf Daten im Snapshot Image. Das Snapshot Volume verfügt über eine eigene reservierte Kapazität, um alle Änderungen am Basis-Volume ohne Beeinträchtigung des ursprünglichen Snapshot Images zu speichern. Snapshot Images sind für Hosts nicht Lese- oder Schreibzugriff möglich. Wenn Sie Snapshot-Daten lesen oder schreiben möchten, erstellen Sie ein Snapshot-Volume und weisen Sie es einem Host zu.
+
+Sie können zwei Typen von Snapshot Volumes erstellen. Der Typ des Snapshot Volume bestimmt, ob die reservierte Kapazität genutzt wird.
+
+* *Schreibgeschützt* -- Ein Snapshot-Volumen, das als schreibgeschützt erstellt wird, bietet eine Host-Anwendung mit Lesezugriff auf eine Kopie der Daten im Snapshot-Image. Ein schreibgeschütztes Snapshot Volume verwendet keine reservierte Kapazität.
+* *Lesen-Schreiben* -- Ein Snapshot-Volumen, das als Lesen-Schreiben erstellt wird, ermöglicht es Ihnen, Änderungen am Snapshot-Volumen zu machen, ohne das referenzierte Snapshot-Bild zu beeinflussen. Ein Lese-Schreib-Snapshot-Volume nutzt die reservierte Kapazität, um diese Änderungen zu speichern. Sie können ein schreibgeschütztes Snapshot-Volumen jederzeit in Lese-/Schreibzugriff konvertieren.
+

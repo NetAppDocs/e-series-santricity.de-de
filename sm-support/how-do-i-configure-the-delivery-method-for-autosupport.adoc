@@ -1,0 +1,65 @@
+---
+permalink: sm-support/how-do-i-configure-the-delivery-method-for-autosupport.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, delivery, method, autosupport, 
+summary: Die AutoSupport-Funktion unterstützt die Protokolle HTTPS, HTTP und SMTP für den Einsatz von AutoSupport-Patches für den technischen Support. 
+---
+= Wie konfiguriere ich die Bereitstellungsmethode für die AutoSupport-Funktion?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die AutoSupport-Funktion unterstützt die Protokolle HTTPS, HTTP und SMTP für den Einsatz von AutoSupport-Patches für den technischen Support.
+
+.Bevor Sie beginnen
+* Die AutoSupport-Funktion muss aktiviert sein. Sie sehen, ob die Funktion auf der Seite AutoSupport aktiviert ist.
+* Ein DNS-Server muss in Ihrem Netzwerk installiert und konfiguriert sein. Die DNS-Server-Adresse muss in System Manager konfiguriert sein (diese Aufgabe ist auf der Seite Hardware verfügbar).
+
+
+Überprüfen Sie die verschiedenen Protokolle:
+
+* *HTTPS* -- ermöglicht es Ihnen, sich direkt mit dem Ziel-Server des technischen Supports über HTTPS zu verbinden. Wenn Sie AutoSupport OnDemand oder Remote-Diagnose aktivieren möchten, muss die AutoSupport-Bereitstellungsmethode auf HTTPS gesetzt werden.
+* *HTTP* -- ermöglicht Ihnen die direkte Verbindung mit dem Ziel-technischen Support-Server über HTTP.
+* *E-Mail* -- ermöglicht Ihnen, einen E-Mail-Server als Liefermethode für das Senden von AutoSupport-Entsendungen zu verwenden.
+
+
+[NOTE]
+====
+*Unterschiede zwischen den HTTPS/HTTP- und E-Mail-Methoden*. Die E-Mail-Bereitstellungsmethode, die SMTP verwendet, hat einige wichtige Unterschiede zu den HTTPS- und HTTP-Bereitstellungsmethoden. Erstens ist die Größe der Dispatches für die E-Mail-Methode auf 5 MB begrenzt, was bedeutet, dass einige ASUP Datensammlungen nicht versendet werden. Zweitens ist die Funktion AutoSupport OnDemand nur für HTPP- und HTTPS-Methoden verfügbar.
+
+====
+.Schritte
+. Wählen Sie MENU:Support[Support Center > AutoSupport].
+. Wählen Sie *AutoSupport-Bereitstellungsmethode konfigurieren*.
++
+Es wird ein Dialogfeld angezeigt, in dem die Versandmethoden aufgeführt sind.
+
+. Wählen Sie die gewünschte Liefermethode aus, und wählen Sie dann die Parameter für diese Bereitstellungsmethode aus. Führen Sie einen der folgenden Schritte aus:
++
+** Wenn Sie HTTPS oder HTTP ausgewählt haben, wählen Sie einen der folgenden Bereitstellungsparameter aus:
++
+*** *Direkt* -- dieser Lieferparameter ist die Standardauswahl. Wenn Sie diese Option auswählen, können Sie mithilfe des HTTPS- oder HTTP-Protokolls direkt eine Verbindung zum technischen Zielsystem herstellen.
+*** *Über Proxy Server* -- mit dieser Option können Sie die HTTP Proxy-Serverdetails angeben, die für die Verbindung mit dem technischen Zielunterstützungssystem erforderlich sind. Sie müssen die Host-Adresse und die Portnummer angeben. Sie müssen jedoch nur die Details zur Host-Authentifizierung (Benutzername und Passwort) eingeben, falls erforderlich.
+*** *Über Proxy Auto-Configuration Script (PAC)* -- Geben Sie den Speicherort einer PAC-Skriptdatei (Proxy Auto-Configuration) an. Mit einer PAC-Datei kann das System automatisch den entsprechenden Proxyserver auswählen, um eine Verbindung mit dem technischen Zielunterstützungssystem herzustellen.
+
+
+** Wenn Sie E-Mail ausgewählt haben, geben Sie die folgenden Informationen ein:
++
+*** Die E-Mail-Server-Adresse als vollständig qualifizierter Domain-Name, IPv4-Adresse oder IPv6-Adresse.
+*** Die E-Mail-Adresse, die im Feld „von“ der AutoSupport-Entsendmail angezeigt wird.
+*** *Optional; wenn Sie einen Konfigurationstest durchführen möchten.* die E-Mail-Adresse, an die eine Bestätigung gesendet wird, wenn das AutoSupport-System den Testversand erhält.
+*** Wenn Sie Nachrichten verschlüsseln möchten, wählen Sie *SMTPS* oder *STARTTLS* für den Verschlüsselungstyp aus, und wählen Sie dann die Portnummer für verschlüsselte Nachrichten aus. Wählen Sie andernfalls * Keine*.
+*** Geben Sie bei Bedarf einen Benutzernamen und ein Kennwort für die Authentifizierung mit dem ausgehenden Absender und dem E-Mail-Server ein.
+
+
+
+
+. Klicken Sie auf *Testkonfiguration*, um die Verbindung zum Server des technischen Supports mit den angegebenen Lieferparametern zu testen. Wenn Sie die AutoSupport On-Demand-Funktion aktiviert haben, testet das System auch die Verbindung für die AutoSupport OnDemand-Entsendungsbereitstellung.
++
+Wenn der Konfigurationstest fehlschlägt, überprüfen Sie Ihre Konfigurationseinstellungen, und führen Sie den Test erneut aus. Wenden Sie sich an den technischen Support, wenn der Test weiterhin fehlschlägt.
+
+. Klicken Sie Auf *Speichern*.
+

@@ -1,0 +1,16 @@
+---
+permalink: sm-settings/why-is-it-important-to-record-security-key-information.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, record, security, key, 
+summary: Wenn Sie die Informationen über die Sicherheitsschlüssel verlieren und kein Backup haben, können Sie Daten verlieren, wenn Sie sichere Laufwerke verschieben oder ein Controller-Upgrade durchführen. Sie benötigen einen Sicherheitsschlüssel, um die Daten auf den Laufwerken zu entsperren. 
+---
+= Warum sind Sicherheitsinformationen wichtig?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie die Informationen über die Sicherheitsschlüssel verlieren und kein Backup haben, können Sie Daten verlieren, wenn Sie sichere Laufwerke verschieben oder ein Controller-Upgrade durchführen. Sie benötigen einen Sicherheitsschlüssel, um die Daten auf den Laufwerken zu entsperren.
+
+Achten Sie darauf, die Sicherheitsschlüsselkennung, den zugehörigen Passphrase und den Speicherort auf dem lokalen Host, auf dem die Sicherheitsschlüsseldatei gespeichert wurde, zu notieren.

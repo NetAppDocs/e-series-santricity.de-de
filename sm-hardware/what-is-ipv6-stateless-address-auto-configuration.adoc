@@ -1,0 +1,28 @@
+---
+permalink: sm-hardware/what-is-ipv6-stateless-address-auto-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ipv6, stateless, address, auto, configuration, 
+summary: Bei einer statusfreien automatischen Konfiguration erhalten Hosts keine Adressen und andere Konfigurationsinformationen von einem Server. 
+---
+= Was ist eine statusfreie IPv6-Adressenkonfiguration?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bei einer statusfreien automatischen Konfiguration erhalten Hosts keine Adressen und andere Konfigurationsinformationen von einem Server.
+
+Die statusfreie automatische Konfiguration in IPv6 bietet Link-lokale Adressen, Multicasting und das Neighbor Discovery-Protokoll (ND). IPv6 kann die Schnittstellen-ID einer Adresse aus der zugrunde liegenden Datenverbindungslayer-Adresse generieren.
+
+Eine statusfreie automatische Konfiguration und eine statusorientierte automatische Konfiguration ergänzen sich gegenseitig. Beispielsweise kann der Host statusfreie Auto-Konfiguration verwenden, um seine eigenen Adressen zu konfigurieren, aber verwenden Sie Stateful Auto-Configuration, um andere Informationen abzurufen. Die zustandsorientierte automatische Konfiguration ermöglicht Hosts, Adressen und andere Konfigurationsinformationen von einem Server abzurufen. Internet Protocol Version 6 (IPv6) definiert auch eine Methode, bei der alle IP-Adressen in einem Netzwerk gleichzeitig neu nummeriert werden können. IPv6 definiert eine Methode für Geräte im Netzwerk, um ihre IP-Adresse und andere Parameter automatisch ohne Server zu konfigurieren.
+
+Geräte führen die folgenden Schritte durch, wenn eine statusfreie automatische Konfiguration verwendet wird:
+
+. *Generieren Sie eine Link-local-Adresse* -- das Gerät erzeugt eine Link-local-Adresse, die 10 Bit, gefolgt von 54 Nullen und gefolgt von der 64-Bit-Schnittstellen-ID hat.
+. *Testen Sie die Einzigartigkeit einer Link-local-Adresse* -- der Knoten testet, um sicherzustellen, dass die von ihm erzeugte Link-local-Adresse nicht bereits im lokalen Netzwerk verwendet wird. Der Knoten sendet mithilfe des ND-Protokolls eine „Neighbor“-Aufforderung. Das lokale Netzwerk wartet auf eine Meldung zur Anzeige des Nachbarn, die darauf hinweist, dass bereits ein anderes Gerät die Link-local-Adresse verwendet. In diesem Fall muss entweder eine neue Link-local-Adresse generiert werden, oder die automatische Konfiguration schlägt fehl, und eine andere Methode muss verwendet werden.
+. *Zuweisen einer Link-lokalen Adresse* -- Wenn das Gerät den Eindeutigkeit-Test übergibt, weist das Gerät seiner IP-Schnittstelle die Link-lokale Adresse zu. Die Link-local Adresse kann für die Kommunikation im lokalen Netzwerk, aber nicht über das Internet verwendet werden.
+. *Kontaktieren Sie den Router* -- der Knoten versucht, sich an einen lokalen Router zu wenden, um weitere Informationen zum Fortsetzen der Konfiguration zu erhalten. Dieser Kontakt wird entweder durch Abhören von regelmäßig von Routern gesendeten Routern-Werbemitteilungen oder durch Senden einer bestimmten Router-Nachricht ausgeführt, um einen Router um Informationen darüber zu bitten, was als Nächstes zu tun ist.
+. *Anweisungen zum Knoten geben* -- der Router gibt dem Knoten Anweisungen, wie mit der automatischen Konfiguration fortzufahren. Alternativ teilt der Router dem Host mit, wie die globale Internetadresse ermittelt werden soll.
+. *Konfigurieren Sie die globale Adresse* -- der Host konfiguriert sich mit seiner weltweit einzigartigen Internetadresse. Diese Adresse wird in der Regel aus einem Netzwerkpräfix gebildet, das dem Host vom Router bereitgestellt wird.
+

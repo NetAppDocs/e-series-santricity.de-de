@@ -1,0 +1,45 @@
+---
+permalink: um-manage/overview-mirroring-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, mirroring 
+summary: Mithilfe der Spiegelungsfunktionen können Daten entweder asynchron oder synchron zwischen einem lokalen Storage-Array und einem Remote-Storage-Array repliziert werden. 
+---
+= Spiegelung – Übersicht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mithilfe der Spiegelungsfunktionen können Daten entweder asynchron oder synchron zwischen einem lokalen Storage-Array und einem Remote-Storage-Array repliziert werden.
+
+[NOTE]
+====
+Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+
+====
+
+
+== Was ist Spiegelung?
+
+SANtricity-Applikationen beinhalten zwei Arten von Spiegelung: Asynchron und synchron. Die asynchrone Spiegelung kopiert Daten-Volumes nach Bedarf oder nach einem Zeitplan. So werden Ausfallzeiten, die auf Datenbeschädigung oder -Verlust zurückzuführen sind, minimiert oder vermieden. Bei der synchronen Spiegelung werden Daten-Volumes in Echtzeit repliziert, um eine kontinuierliche Verfügbarkeit zu gewährleisten.
+
+Weitere Informationen:
+
+* link:mirroring-overview.html["Funktionsweise von Spiegelung"]
+* link:mirroring-terminology.html["Terminologie wird gespiegelt"]
+
+
+
+
+== Wie konfiguriere ich Spiegelung?
+
+Sie konfigurieren asynchrone oder synchrone Spiegelung in Unified Manager und managen dann die Synchronisierung mit System Manager.
+
+Weitere Informationen:
+
+* link:mirroring-configuration-workflow.html["Spiegelung des Konfigurations-Workflows"]
+* link:requirements-for-using-mirroring.html["Anforderungen für die Verwendung von Spiegelung"]
+* link:create-asynchronous-mirrored-pair-um.html["Erstellen eines asynchronen gespiegelten Paares"]
+* link:create-synchronous-mirrored-pair-um.html["Erstellen eines synchronen gespiegelten Paares"]
+

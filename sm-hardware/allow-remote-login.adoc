@@ -1,0 +1,69 @@
+---
+permalink: sm-hardware/allow-remote-login.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, login, 
+summary: Mit der Remote-Anmeldung können Benutzer außerhalb des lokalen Netzwerks eine SSH-Sitzung starten und die Einstellungen auf dem Controller ändern. 
+---
+= Remote-Anmeldung konfigurieren (SSH)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Durch die Aktivierung der Remote-Anmeldung können Benutzer außerhalb des lokalen Netzwerks eine SSH-Sitzung starten und auf den Controller zugreifen.
+
+Bei SANtricity Version 11.74 und höher ist auch die Multi-Faktor-Autorisierung (MFA) möglich, indem Benutzer einen SSH-Schlüssel und/oder SSH-Passwort eingeben müssen. Bei SANtricity Version 11.73 und früher enthält diese Funktion eine Option für Multi-Faktor-Autorisierung mit SSH-Schlüsseln und -Passwörtern.
+
+[CAUTION]
+====
+*Sicherheitsrisiko* -- aus Sicherheitsgründen sollten nur Mitarbeiter des technischen Supports die Remote-Login-Funktion verwenden.
+
+====
+.Schritte
+. Wählen Sie *Hardware*.
+. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf *Zurück zum Regal anzeigen*.
++
+Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
+
+. Klicken Sie auf den Controller, für den Sie die Remote-Anmeldung konfigurieren möchten.
++
+Das Kontextmenü des Controllers wird angezeigt.
+
+. Wählen Sie *Remote-Anmeldung konfigurieren (SSH)* aus. (Für SANtricity Version 11.73 und früher lautet dieser Menüpunkt *Remote Login ändern*.)
++
+Das Dialogfeld wird geöffnet, um die Remote-Anmeldung zu aktivieren.
+
+. Aktivieren Sie das Kontrollkästchen * Remote-Anmeldung aktivieren*.
++
+Diese Einstellung bietet eine Remote-Anmeldung mit drei Optionen für die Autorisierung:
+
++
+** *Nur Passwort*. Für diese Option sind Sie fertig und können auf *Speichern* klicken. Wenn Sie über ein Duplex-System verfügen, können Sie die Remote-Anmeldung auf dem zweiten Controller aktivieren, indem Sie die vorherigen Schritte durchführen.
+** * Entweder SSH-Schlüssel oder Passwort*. Für diese Option fahren Sie mit dem nächsten Schritt fort.
+** *Passwort und SSH-Schlüssel*. Aktivieren Sie für diese Option das Kontrollkästchen *autorisierter öffentlicher Schlüssel und Passwort für Remote-Anmeldung erforderlich*, und fahren Sie mit dem nächsten Schritt fort.
+
+
+. Füllen Sie das Feld * Public Key* aus. Dieses Feld enthält eine Liste autorisierter öffentlicher Schlüssel im Format der OpenSSH *Authorized_keys*-Datei.
++
+Beachten Sie beim Ausfüllen des Feldes *autorisierter öffentlicher Schlüssel* die folgenden Richtlinien:
+
++
+** Das Feld *autorisierter öffentlicher Schlüssel* gilt für beide Controller und muss nur auf dem ersten Controller konfiguriert werden.
+** Die Datei *Authorized_keys* darf nur einen Schlüssel pro Zeile enthalten. Zeilen, die mit # beginnen und leere Zeilen werden ignoriert. Weitere Informationen zum Dateiformat finden Sie unter link:https://www.ssh.com/academy/ssh/authorized-keys-openssh["Konfigurieren von autorisierten Schlüsseln für OpenSSH"^].
+** Eine *authorisierte_keys*-Datei sollte ähnlich wie im folgenden Beispiel aussehen:
++
+[listing]
+----
+ssh-rsa
+AAAAB3NzaC1yc2EAAAADAQABAAABAQDJlG20rYTk4ok+xFjkPHYp/R0LfJqEYDLXA5AJ49w3DvAWLrUg+1CpNq76WSqmQBmoG9jgbcAB5ABGdswdeMQZHilJcu29iJ3OKKv6SlCulAj1tHymwtbdhPuipd2wIDAQAB
+----
+
+
+. Wenn Sie fertig sind, klicken Sie auf *Speichern*.
+. Bei Duplex-Systemen können Sie die Remote-Anmeldung auf dem zweiten Controller aktivieren, indem Sie die oben beschriebenen Schritte ausführen. Wenn Sie die Option sowohl für ein Passwort als auch für einen SSH-Schlüssel konfigurieren, aktivieren Sie erneut das Kontrollkästchen *autorisierter öffentlicher Schlüssel und Passwort für die Remote-Anmeldung*.
+. Nachdem die Fehlerbehebung für den technischen Support abgeschlossen ist, können Sie die Remote-Anmeldung deaktivieren, indem Sie zum Dialogfeld Remote-Anmeldung konfigurieren zurückkehren und das Kontrollkästchen *Remote-Anmeldung aktivieren* deaktivieren. Wenn die Remote-Anmeldung auf einem zweiten Controller aktiviert ist, wird ein Bestätigungsdialogfeld geöffnet, in dem Sie auch die Remote-Anmeldung auf dem zweiten Controller deaktivieren können.
++
+Wenn Sie die Remote-Anmeldung deaktivieren, werden alle aktuellen SSH-Sitzungen beendet und neue Anmeldeanfragen werden abgelehnt.
+
+

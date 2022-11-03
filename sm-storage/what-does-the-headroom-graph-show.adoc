@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-does-the-headroom-graph-show.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, headroom, graph, show, performance, capability 
+summary: Das Diagramm Reserve bezieht sich auf die verbleibende Performance-Fähigkeit für die Storage Array Controller. Dieses Diagramm ist auf der Startseite und auf der Registerkarte Physical View der Kachel Performance sichtbar. 
+---
+= Was zeigt das Diagramm „Reserve“?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das Diagramm Reserve bezieht sich auf die verbleibende Performance-Fähigkeit für die Storage Array Controller. Dieses Diagramm ist auf der Startseite und auf der Registerkarte Physical View der Kachel Performance sichtbar.
+
+Das Diagramm Reserve zeigt die verbleibende Performance-Fähigkeit der physischen Objekte im Storage-System. Halten Sie den Mauszeiger über einen Punkt im Diagramm, um den Prozentsatz der noch verbleibenden IOPS- und MiB/s-Fähigkeit für Controller A und für Controller B anzuzeigen

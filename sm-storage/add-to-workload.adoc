@@ -1,0 +1,45 @@
+---
+permalink: sm-storage/add-to-workload.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add workload, volume 
+summary: Sie können einem vorhandenen oder neuen Workload ein oder mehrere Volumes für Volumes hinzufügen, die derzeit keinem Workload zugewiesen sind. 
+---
+= Hinzufügen von Volumes zum Workload
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können einem vorhandenen oder neuen Workload ein oder mehrere Volumes für Volumes hinzufügen, die derzeit keinem Workload zugewiesen sind.
+
+Volumes sind keinem Workload zugeordnet, wenn sie mithilfe der Befehlszeilenschnittstelle (CLI) erstellt wurden oder aus einem anderen Storage-Array migriert (importiert/exportiert) wurden.
+
+.Schritte
+. Wählen Sie Menü:Storage[Volumes].
+. Wählen Sie die Registerkarte * Anwendungen & Workloads* aus.
++
+Die Ansicht Applikationen und Workloads wird angezeigt.
+
+. Wählen Sie *zu Workload hinzufügen*.
++
+Das Dialogfeld „Workload auswählen“ wird angezeigt.
+
+. Führen Sie eine der folgenden Aktionen aus:
++
+** *Hinzufügen von Volumes zu einem bestehenden Workload* -- Wählen Sie diese Option, um einem vorhandenen Workload Volumes hinzuzufügen.
++
+Wählen Sie einen Workload aus der Dropdown-Liste aus. Der zugehörige Applikationstyp des Workloads wird den Volumes zugewiesen, die Sie diesem Workload hinzufügen.
+
+** *Hinzufügen von Volumes zu einem neuen Workload* -- Wählen Sie diese Option aus, um einen neuen Workload für einen Anwendungstyp zu definieren und dem neuen Workload Volumes hinzuzufügen.
+
+
+. Wählen Sie *Weiter*, um mit der Add to Workload-Sequenz fortzufahren.
++
+Das Dialogfeld Volumes auswählen wird angezeigt.
+
+. Wählen Sie die Volumes aus, die Sie dem Workload hinzufügen möchten.
+. Prüfen Sie die Volumes, die Sie dem ausgewählten Workload hinzufügen möchten.
+. Wenn Sie mit Ihrer Workload-Konfiguration zufrieden sind, klicken Sie auf *Fertig stellen*.
+

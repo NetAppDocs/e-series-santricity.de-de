@@ -1,0 +1,105 @@
+---
+permalink: sm-mirroring/how-does-asynchronous-mirroring-differ-from-synchronous-mirroring-sync.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, asynchronous, mirroring, differ, synchronous, mirroring, 
+summary: 'Die asynchrone Spiegelung unterscheidet sich grundlegend von der Funktion zum synchronen Spiegeln: Sie erfasst den Status des Quell-Volumes zu einem bestimmten Zeitpunkt und kopiert nur die Daten, die sich seit der letzten Bildaufzeichnung geändert haben.' 
+---
+= Wie unterscheidet sich die asynchrone Spiegelung von der synchronen Spiegelung?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die asynchrone Spiegelung unterscheidet sich grundlegend von der Funktion zum synchronen Spiegeln: Sie erfasst den Status des Quell-Volumes zu einem bestimmten Zeitpunkt und kopiert nur die Daten, die sich seit der letzten Bildaufzeichnung geändert haben.
+
+Bei der synchronen Spiegelung wird der Status des primären Volume nicht zu einem bestimmten Zeitpunkt erfasst, sondern gibt alle Änderungen wieder, die am primären Volume auf das sekundäre Volume vorgenommen wurden. Das sekundäre Volume ist zu jedem Zeitpunkt mit dem primären Volume identisch, da bei dieser Art von Spiegelung jedes Mal, wenn ein Schreibvorgang auf dem primären Volume ausgeführt wird, ein Schreibvorgang auf das sekundäre Volume vorgenommen wird. Der Host erhält keine Bestätigung, dass der Schreibvorgang erfolgreich war, bis das sekundäre Volume mit den Änderungen auf dem primären Volume erfolgreich aktualisiert wurde.
+
+Bei der asynchronen Spiegelung ist das Remote-Storage-Array nicht vollständig mit dem lokalen Storage-Array synchronisiert. Falls die Applikation aufgrund eines Verlusts des lokalen Storage-Arrays zum Remote Storage-Array wechseln muss, können einige Transaktionen verloren gehen.
+
+Vergleich der Spiegelungsfunktionen:
+
+[cols="1a,1a"]
+|===
+| Asynchrones Spiegeln | Synchrones Spiegeln 
+
+
+ a| 
+*Replikationsmethode*
+
+
+
+ a| 
+* *Point-in-Time*
++
+Die Spiegelung erfolgt nach Bedarf oder automatisch gemäß einem benutzerdefinierten Zeitplan. Zeitpläne können mit der Granularität von Minuten definiert werden. Die Mindestzeit zwischen den Synchronisierungen beträgt 10 Minuten.
+
+
+ a| 
+* * Kontinuierlich*
++
+Die Spiegelung wird kontinuierlich ausgeführt und kopiert Daten von jedem Host-Schreibvorgang.
+
+
+
+
+
+ a| 
+*Reservierte Kapazität*
+
+
+
+ a| 
+* *Mehrfach*
++
+Für jedes gespiegelte Paar ist ein reserviertes Kapazitäts-Volume erforderlich.
+
+
+ a| 
+* *Single*
++
+Für alle gespiegelten Volumes ist ein einzelnes reserviertes Kapazitäts-Volume erforderlich.
+
+
+
+
+
+ a| 
+*Kommunikation*
+
+
+
+ a| 
+* *ISCSI und Fibre Channel*
++
+Unterstützt iSCSI- und Fibre Channel-Schnittstellen zwischen Storage Arrays.
+
+
+ a| 
+* * Fibre Channel*
++
+Unterstützt nur Fibre Channel-Schnittstellen zwischen Storage Arrays.
+
+
+
+
+
+ a| 
+*Entfernung*
+
+
+
+ a| 
+* *Unlimited*
++
+Unterstützung nahezu unbegrenzter Entfernungen zwischen dem lokalen Speicher-Array und dem Remote-Speicher-Array, wobei die Entfernung in der Regel nur durch die Fähigkeiten des Netzwerks und der Channel-Erweiterungstechnologie begrenzt wird.
+
+
+ a| 
+* *Eingeschränkt*
++
+Normalerweise muss das lokale Storage-Array innerhalb von etwa 10 km Entfernung (6.2 Meilen) liegen, um die Anforderungen an Latenz und Applikations-Performance zu erfüllen.
+
+
+
+|===

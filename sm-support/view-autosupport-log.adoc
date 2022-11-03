@@ -1,0 +1,40 @@
+---
+permalink: sm-support/view-autosupport-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, autosupport, log 
+summary: Das AutoSupport-Protokoll enthält Informationen zum Status, zum Versandverlauf und zu Fehlern, die bei der Lieferung von AutoSupport-Entsendungen auftreten. 
+---
+= Zeigen Sie das AutoSupport-Protokoll an
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das AutoSupport-Protokoll enthält Informationen zum Status, zum Versandverlauf und zu Fehlern, die bei der Lieferung von AutoSupport-Entsendungen auftreten.
+
+Es können mehrere Protokolldateien vorhanden sein. Wenn die aktuelle Protokolldatei 200 KB erreicht, wird sie archiviert und eine neue Protokolldatei erstellt. Der Name der archivierten Protokolldatei lautet `ASUPMessages.n`, Wobei _n_ eine Ganzzahl zwischen 1 und 9 ist. Wenn mehrere Protokolldateien vorhanden sind, können Sie das aktuellste Protokoll oder ein vorheriges Protokoll anzeigen.
+
+* *Aktueller Log* -- zeigt eine Liste der neuesten aufgezeichneten Ereignisse an.
+* *Archived Log* -- zeigt eine Liste früherer Ereignisse an.
+
+
+.Schritte
+. Wählen Sie MENU:Support[Support Center > AutoSupport].
+. Wählen Sie *AutoSupport-Protokoll anzeigen*.
++
+Es wird ein Dialogfeld angezeigt, in dem das aktuelle AutoSupport-Protokoll aufgelistet wird.
+
+. Wenn Sie frühere AutoSupport-Protokolle sehen möchten, wählen Sie das Optionsfeld *archiviert* und wählen Sie dann ein Protokoll aus der Dropdown-Liste *AutoSupport-Protokoll auswählen* aus.
++
+Die Option „archiviert“ wird nur angezeigt, wenn auf dem Speicher-Array archivierte Protokolle vorhanden sind.
+
++
+Das ausgewählte AutoSupport-Protokoll wird im Dialogfeld angezeigt.
+
+. *Optional:* um das AutoSupport-Protokoll zu durchsuchen, geben Sie einen Begriff in das Feld *Suchen* ein und klicken auf *Suchen*.
++
+Klicken Sie erneut auf *Suchen*, um nach weiteren Vorkommen des Begriffs zu suchen.
+
+

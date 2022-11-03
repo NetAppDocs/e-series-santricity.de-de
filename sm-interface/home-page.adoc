@@ -1,0 +1,34 @@
+---
+permalink: sm-interface/home-page.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, home page 
+summary: Die Startseite enthält eine Dashboard-Ansicht für die tägliche Verwaltung Ihres Speicherarrays. Wenn Sie sich bei System Manager anmelden, wird die Startseite der erste Bildschirm angezeigt. 
+---
+= Homepage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Startseite enthält eine Dashboard-Ansicht für die tägliche Verwaltung Ihres Speicherarrays. Wenn Sie sich bei System Manager anmelden, wird die Startseite der erste Bildschirm angezeigt.
+
+Die Dashboard-Ansicht enthält vier Übersichtsbereiche mit wichtigen Informationen zu Status und Zustand Ihres Storage-Arrays. Weitere Informationen finden Sie im Übersichtsbereich.
+
+* *Benachrichtigungen*
++
+Im Bereich Benachrichtigungen werden Problembenachrichtigungen angezeigt, die den Status des Speicher-Arrays und seiner Komponenten anzeigen. In diesem Portlet werden automatisierte Warnungen angezeigt, die Sie bei der Behebung von Problemen unterstützen können, bevor diese sich auf andere Bereiche Ihrer Storage-Umgebung auswirken.
+
+* *Leistung*
++
+Im Bereich Performance können Sie die Ressourcennutzung im Laufe der Zeit vergleichen und gegenüberstellen. Sie können die Performance-Kennzahlen eines Storage-Arrays für Reaktionszeit (IOPS), Übertragungsraten (MiB/s) und die Menge der genutzten Verarbeitungskapazität (CPU) anzeigen.
+
+* * Kapazität*
++
+Im Bereich Kapazität wird eine Diagrammansicht der zugewiesenen Kapazität, der freien Speicherkapazität und der nicht zugewiesenen Speicherkapazität im Speicher-Array angezeigt.
+
+* * Speicherhierarchie*
++
+Der Bereich Speicherhierarchie bietet eine organisierte Ansicht der verschiedenen Hardwarekomponenten und Speicherobjekte, die von Ihrem Speicher-Array verwaltet werden. Klicken Sie auf den Dropdown-Pfeil, um eine bestimmte Aktion für die Hardwarekomponente oder das Storage-Objekt auszuführen.
+
+

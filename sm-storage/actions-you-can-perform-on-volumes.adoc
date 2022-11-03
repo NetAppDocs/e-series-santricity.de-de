@@ -1,0 +1,135 @@
+---
+permalink: sm-storage/actions-you-can-perform-on-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volumes 
+summary: 'Sie können eine Reihe verschiedener Aktionen auf einem Volume durchführen: Die Kapazität erhöhen, löschen, kopieren, initialisieren, neu verteilen, Ändern der Eigentümerschaft, Ändern der Cache-Einstellungen und Ändern der Einstellungen für die Medienüberprüfung' 
+---
+= Aktionen, die Sie auf Volumes durchführen können
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können eine Reihe verschiedener Aktionen auf einem Volume durchführen: Die Kapazität erhöhen, löschen, kopieren, initialisieren, neu verteilen, Ändern der Eigentümerschaft, Ändern der Cache-Einstellungen und Ändern der Einstellungen für die Medienüberprüfung
+
+
+
+== Erhöhte Kapazität
+
+Es gibt zwei Möglichkeiten, die Kapazität für ein Volume zu erweitern:
+
+* Verwenden Sie die freie Kapazität, die im Pool bzw. der Volume-Gruppe verfügbar ist.
++
+Sie fügen einem Volume Kapazität hinzu, indem Sie Menü:Speicher[Pools und Volume-Gruppen > Kapazität hinzufügen] auswählen.
+
+* Fügen Sie dem Pool oder der Volume-Gruppe des Volume nicht zugewiesene Kapazität (in Form von nicht verwendeten Laufwerken) hinzu. Verwenden Sie diese Option, wenn im Pool oder in der Volume-Gruppe keine freie Kapazität vorhanden ist.
++
+Sie fügen dem Pool oder der Volume-Gruppe nicht zugewiesene Kapazität hinzu, indem Sie Menü:Storage[Pools und Volume Groups > Add Capacity] auswählen.
+
++
+Wenn im Pool oder in der Volume-Gruppe keine freie Kapazität verfügbar ist, können Sie die Kapazität des Volume nicht erhöhen. Sie müssen zunächst die Größe des Pools oder der Volume-Gruppe erhöhen oder ungenutzte Volumes löschen.
+
+
+
+Nachdem Sie die Volume-Kapazität erweitert haben, müssen Sie die Größe des Dateisystems manuell erhöhen, um sie anzupassen. Wie Sie dies tun, hängt von dem Dateisystem ab, das Sie verwenden. Weitere Informationen finden Sie in der Dokumentation Ihres Host-Betriebssystems.
+
+
+
+== Löschen
+
+Normalerweise löschen Sie Volumes, wenn die Volumes mit falschen Parametern oder Kapazität erstellt wurden, die Storage-Konfigurationsanforderungen nicht mehr erfüllen oder Snapshot Images sind, die nicht mehr für Backup oder Applikationstests erforderlich sind. Durch das Löschen eines Volumes wird die freie Kapazität im Pool oder der Volume-Gruppe erhöht.
+
+Das Löschen von Volumes verursacht den Verlust aller Daten auf diesen Volumes. Wenn Sie ein Volume löschen, werden auch alle zugehörigen Snapshot-Images, Zeitpläne und Snapshot-Volumes gelöscht und alle Spiegelungsbeziehungen entfernt.
+
+
+
+== Kopieren
+
+Wenn Sie Volumes kopieren, erstellen Sie eine zeitpunktgenaue Kopie von zwei separaten Volumes, dem Quell-Volume und dem Ziel-Volume, auf demselben Storage Array. Sie können Volumes kopieren, indem Sie Menü:Speicher[Volumes > Kopierdienste > Volume kopieren] wählen.
+
+
+
+== Initialisieren
+
+Durch das Initialisieren eines Volumes werden alle Daten aus dem Volume gelöscht. Ein Volume wird beim ersten Erstellen automatisch initialisiert. Möglicherweise empfiehlt der Recovery Guru jedoch, ein Volume manuell zu initialisieren, um eine Wiederherstellung nach bestimmten Fehlerbedingungen durchzuführen. Bei der Initialisierung eines Volume bleiben die WWN, Host-Zuweisungen, zugewiesene Kapazität und reservierte Kapazität des Volume erhalten. Zudem werden dieselben Data Assurance (da)-Einstellungen und Sicherheitseinstellungen beibehalten.
+
+Sie können Volumes initialisieren, indem Sie Menü:Speicher[Volumes > Mehr > Volumes initialisieren] auswählen.
+
+
+
+== Neu Verteilen
+
+Sie verteilen Volumes neu, um Volumes zurück zu ihren bevorzugten Controller-Besitzern zu verschieben. In der Regel verschieben Multipath-Treiber Volumes vom bevorzugten Controller-Eigentümer, wenn entlang des Datenpfads zwischen dem Host und dem Storage Array ein Problem auftritt.
+
+Die meisten Host Multipath-Treiber versuchen, auf jedes Volume auf einem Pfad zu seinem bevorzugten Controller-Eigentümer zuzugreifen. Falls dieser bevorzugte Pfad jedoch nicht mehr verfügbar ist, erfolgt ein Failover des Multipath-Treibers auf dem Host zu einem alternativen Pfad. Dieser Failover kann dazu führen, dass sich die Volume-Inhaberschaft auf den alternativen Controller ändert. Nachdem Sie die Bedingung behoben haben, die den Failover verursacht hat, verschieben einige Hosts möglicherweise automatisch die Volume-Eigentümerschaft zurück zu dem bevorzugten Controller-Eigentümer. In einigen Fällen müssen Sie die Volumes jedoch möglicherweise manuell neu verteilen.
+
+Sie können Volumes neu verteilen, indem Sie im Menü:Storage[Volumes > Mehr > Neuverteilung von Volumes] wählen.
+
+
+
+== Änderung der Volume-Eigentümerschaft
+
+Durch eine Änderung der Eigentümerschaft eines Volumes wird der bevorzugte Controller-Eigentümer des Volumes geändert. Der bevorzugte Controller-Eigentümer eines Volumes wird unter Menü:Storage[Volumes > Einstellungen anzeigen/bearbeiten > Registerkarte Erweitert] aufgelistet.
+
+Sie können das Eigentum eines Volumens ändern, indem Sie Menü:Storage[Volumes > Mehr > Eigentümerschaft ändern] auswählen.
+
+
+
+=== Spiegelung und Volume-Eigentum
+
+Wenn das primäre Volume des gespiegelten Paars Eigentum von Controller A ist, dann befindet sich das sekundäre Volume auch im Besitz von Controller A des Remote Storage Array. Wenn Sie den Eigentümer des primären Volume ändern, wird automatisch der Eigentümer des sekundären Volumes geändert, um sicherzustellen, dass beide Volumes Eigentum des gleichen Controllers sind. Aktuelle Eigentumsänderungen auf der primären Seite werden automatisch an die entsprechenden aktuellen Eigentumsänderungen auf der sekundären Seite übernommen.
+
+Wenn eine Spiegelkonsistent-Gruppe ein lokales sekundäres Volume enthält und die Controller-Eigentümerschaft geändert wird, wird das sekundäre Volume automatisch beim ersten Schreibvorgang wieder an den ursprünglichen Controller-Eigentümer übertragen. Sie können den Controller-Eigentümer eines sekundären Volumes nicht mit der Option *Eigentumsrechte ändern* ändern.
+
+
+
+=== Eigentümerschaft für Kopien und Volumes
+
+Während eines Kopiervorgangs muss derselbe Controller sowohl das Quell-Volume als auch das Ziel-Volume besitzen. Manchmal haben beide Volumen nicht den gleichen bevorzugten Controller, wenn der Kopiervorgang startet. Daher wird das Eigentum des Ziel-Volumes automatisch an den bevorzugten Controller des Quell-Volume übertragen. Wenn die Volume-Kopie abgeschlossen ist oder angehalten wird, wird der Eigentümer des Ziel-Volume auf dem bevorzugten Controller wiederhergestellt.
+
+Wenn sich während des Kopiervorgangs der Besitz des Quell-Volumes ändert, wird auch der Besitz des Zielvolume geändert. Unter bestimmten Betriebssystemumgebungen kann es notwendig sein, den Multipath-Host-Treiber neu zu konfigurieren, bevor ein I/O-Pfad verwendet werden kann. (Einige Multipath-Treiber erfordern eine Bearbeitung, um den I/O-Pfad zu erkennen. Weitere Informationen finden Sie in der Treiberdokumentation.)
+
+
+
+== Cache-Einstellungen ändern
+
+Cache-Speicher ist ein Bereich von temporär-flüchtigem Speicher (RAM) auf dem Controller, der eine schnellere Zugriffszeit hat als die Datenträger. Wenn Sie Cache-Speicher verwenden, können Sie die gesamte I/O-Performance aus folgenden Gründen erhöhen:
+
+* Die vom Host für einen Lesevorgang angeforderten Daten befinden sich möglicherweise bereits im Cache eines vorherigen Vorgangs, sodass ein Laufwerkzugriff nicht erforderlich ist.
+* Schreibdaten werden zunächst in den Cache geschrieben. Dadurch wird die Anwendung wieder freigegeben, anstatt auf das Schreiben der Daten auf das Laufwerk zu warten.
+
+
+Wählen Sie MENU:Speicher[Volumes > Mehr > Cache-Einstellungen ändern], um die folgenden Cache-Einstellungen zu ändern:
+
+* *Lese- und Schreib-Cache* -- der Lese-Cache ist ein Puffer, der Daten speichert, die von den Laufwerken gelesen wurden. Die Daten für einen Lesevorgang befinden sich möglicherweise bereits im Cache eines früheren Vorgangs, sodass kein Zugriff auf die Laufwerke erforderlich ist. Die Daten bleiben so lange im Lese-Cache, bis sie entfernt werden.
++
+Der Schreib-Cache ist ein Puffer, der Daten des Hosts speichert, die noch nicht auf die Laufwerke geschrieben wurden. Die Daten bleiben im Schreib-Cache, bis sie auf die Laufwerke geschrieben werden. Caching von Schreibzugriffen kann die I/O-Performance steigern.
+
+* *Schreib-Cache mit Spiegelung* -- Schreib-Caching mit Spiegelung tritt auf, wenn die in den Cache-Speicher eines Controllers geschriebenen Daten auch in den Cache-Speicher des anderen Controllers geschrieben werden. Wenn also ein Controller ausfällt, kann der andere alle ausstehenden Schreibvorgänge ausführen. Write Cache Mirroring ist nur verfügbar, wenn Write Caching aktiviert ist und zwei Controller vorhanden sind. Schreib-Caching mit Spiegelung ist die Standardeinstellung bei der Volume-Erstellung.
+* *Write Caching ohne Batterien* -- das Schreib-Caching ohne Akkueinstellung lässt das Schreib-Caching auch dann fortgesetzt, wenn die Batterien fehlen, ausfallen, vollständig entladen oder nicht vollständig geladen sind. Die Wahl des Schreib-Caching ohne Batterien ist in der Regel nicht empfohlen, da die Daten verloren gehen können, wenn die Stromversorgung verloren geht. In der Regel wird das Schreibcache vorübergehend vom Controller deaktiviert, bis die Akkus geladen sind oder eine fehlerhafte Batterie ausgetauscht wird.
++
+Diese Einstellung ist nur verfügbar, wenn Sie das Schreib-Caching aktiviert haben. Diese Einstellung ist für Thin-Volumes nicht verfügbar.
+
+* *Dynamischer Lese-Cache Prefetch* -- der dynamische Cache-Lesevorfetch ermöglicht dem Controller, zusätzliche sequenzielle Datenblöcke in den Cache zu kopieren, während er Datenblöcke von einem Laufwerk in den Cache liest. Dadurch erhöht sich die Wahrscheinlichkeit, dass zukünftige Datenanfragen aus dem Cache gefüllt werden können. Der dynamische Cache-Lese-Prefetch ist für Multimedia-Anwendungen, die sequenzielle I/O verwenden, wichtig Die Rate und die Menge der Daten, die im Cache abgerufen werden, passen sich basierend auf der Geschwindigkeit und der Anfragegröße des Host-Lesevorgängen automatisch an. Ein wahlfreier Zugriff bewirkt nicht, dass Daten im Cache abgerufen werden. Diese Funktion gilt nicht, wenn das Lese-Caching deaktiviert ist.
++
+Bei einem Thin Volume ist der dynamische Lese-Prefetch für den Cache immer deaktiviert und kann nicht geändert werden.
+
+
+
+
+
+== Ändern Sie die Einstellungen für die Medienüberprüfung
+
+Medienprüfungen erkennen und reparieren Medienfehler auf Festplattenlaufwerken, die selten von Applikationen gelesen werden. Durch diese Überprüfung kann verhindert werden, dass Datenverluste auftreten, wenn andere Laufwerke im Pool oder in der Volume-Gruppe ausfallen, da Daten für ausgefallene Laufwerke mithilfe von Redundanzinformationen und Daten anderer Laufwerke im Pool bzw. der Volume-Gruppe rekonstruiert werden.
+
+Die Medien-Scans werden kontinuierlich mit konstanter Geschwindigkeit ausgeführt, basierend auf der zu scannenden Kapazität und der Scandauer. Hintergrundscans können vorübergehend durch eine Hintergrundaufgabe mit höherer Priorität ausgesetzt werden (z. B. Rekonstruktion), werden jedoch mit derselben konstanten Geschwindigkeit fortgesetzt.
+
+Sie können die Dauer der Medienscan-Ausführung aktivieren und einstellen, indem Sie Menü:Speicher[Volumes > Mehr > Medienscan-Einstellungen ändern] auswählen.
+
+Ein Volume wird nur dann gescannt, wenn die Option zum Scannen von Medien für das Storage-Array und für das entsprechende Volume aktiviert ist. Wenn auch die Redundanzprüfung für das Volume aktiviert ist, werden die Redundanzinformationen auf dem Volume auf Konsistenz mit Daten überprüft, sofern das Volume über Redundanz verfügt. Der Medien-Scan mit Redundanzprüfung ist standardmäßig für jedes Volume bei seiner Erstellung aktiviert.
+
+Wenn während des Scans ein nicht behebbarer Medienfehler auftritt, werden die Daten gegebenenfalls durch Redundanzinformationen repariert. So stehen beispielsweise Informationen zur Redundanz in optimalen RAID 5-Volumes oder in RAID 6-Volumes zur Verfügung, die optimal sind oder nur ein Laufwerk ausfällt. Wenn der nicht behebbare Fehler nicht mithilfe von Redundanzinformationen behoben werden kann, wird der Datenblock zum unlesbaren Sektor-Log hinzugefügt. Das Event-Protokoll wird sowohl korrigierbare als auch nicht korrigierbare Medienfehler gemeldet.
+
+Wenn die Redundanzprüfung eine Inkonsistenz zwischen Daten und den Redundanzinformationen findet, wird sie dem Ereignisprotokoll gemeldet.

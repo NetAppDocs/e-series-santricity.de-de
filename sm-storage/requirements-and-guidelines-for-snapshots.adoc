@@ -1,0 +1,110 @@
+---
+permalink: sm-storage/requirements-and-guidelines-for-snapshots.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, requirements, guidelines, snapshots 
+summary: Überprüfen Sie bei der Erstellung und Verwendung von Snapshots die folgenden Anforderungen und Richtlinien. 
+---
+= Anforderungen und Richtlinien für Snapshots
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Überprüfen Sie bei der Erstellung und Verwendung von Snapshots die folgenden Anforderungen und Richtlinien.
+
+
+
+== Snapshot Images und Snapshot Gruppen
+
+* Jedes Snapshot Image ist mit genau einer Snapshot-Gruppe verknüpft.
+* Eine Snapshot-Gruppe wird beim ersten Erstellen eines geplanten oder sofortigen Snapshot-Images für ein zugehöriges Objekt erstellt. Dadurch wird reservierte Kapazität erstellt.
++
+Sie können Snapshot-Gruppen auf der Seite Pools & Volume-Gruppen anzeigen.
+
+* Geplante Snapshot-Images werden nicht ausgeführt, wenn das Speicher-Array offline ist oder ausgeschaltet ist.
+* Wenn Sie eine Snapshot-Gruppe mit einem Snapshot-Zeitplan löschen, wird auch der Snapshot-Zeitplan gelöscht.
+* Wenn Sie ein Snapshot-Volumen haben, das Sie nicht mehr benötigen, können Sie es zusammen mit beliebiger reservierter Kapazität wiederverwenden, anstatt es zu löschen. Dadurch wird ein anderes Snapshot Volume desselben Basis-Volumes erstellt. Sie können das Snapshot Volume oder das Snapshot Consistency Group Snapshot Volume mit demselben Snapshot Image oder einem anderen Snapshot Image neu verknüpfen, solange sich das Snapshot Image im selben Basis-Volume befindet.
+
+
+
+
+== Snapshot Konsistenzgruppe
+
+* Eine Snapshot Konsistenzgruppe enthält eine Snapshot-Gruppe für jedes Volume, das Mitglied der Snapshot-Konsistenzgruppe ist.
+* Sie können eine Snapshot Konsistenzgruppe nur mit einem Zeitplan verknüpfen.
+* Wenn Sie eine Snapshot-Konsistenzgruppe löschen, die über einen Snapshot-Zeitplan verfügt, wird auch der Snapshot-Zeitplan gelöscht.
+* Sie können eine Snapshot-Gruppe, die einer Snapshot-Konsistenzgruppe zugeordnet ist, nicht einzeln verwalten. Stattdessen müssen Sie die Vorgänge managen (Snapshot Image erstellen, Snapshot Image oder Snapshot-Gruppe löschen und Snapshot-Image zurücksetzen) auf der Ebene der Snapshot-Consistency Group ausführen.
+
+
+
+
+== Basis-Volume
+
+* Ein Snapshot-Volume muss dieselben Data Assurance (da) und Sicherheitseinstellungen haben wie das zugehörige Basis-Volume.
+* Sie können kein Snapshot-Volume eines ausgefallenen Basis-Volumes erstellen.
+* Wenn sich das Basis-Volume auf einer Volume-Gruppe befindet, können sich die Mitglieder-Volumes für eine zugehörige Snapshot-Konsistenzgruppe entweder im Pool oder in der Volume-Gruppe befinden.
+* Wenn sich ein Basis-Volume in einem Pool befindet, müssen sich alle Mitglieder-Volumes einer zugehörigen Snapshot-Konsistenzgruppe im selben Pool befinden wie das Basis-Volume.
+
+
+
+
+== Reservierte Kapazität
+
+* Die reservierte Kapazität ist nur mit einem Basis-Volume verbunden.
+* Die Verwendung eines Zeitplans kann zu einer großen Anzahl von Snapshot Images führen. Stellen Sie sicher, dass Sie über ausreichend reservierte Kapazität für geplante Snapshots verfügen.
+* Das für eine Snapshot-Konsistenzgruppe reservierte Kapazitäts-Volume muss dieselben Data Assurance (da) und Sicherheitseinstellungen haben wie das zugehörige Basisvolume für das Mitglied-Volume der Snapshot-Konsistenzgruppe.
+
+
+
+
+== Ausstehende Snapshot-Images
+
+Die Erstellung des Snapshot-Images kann unter folgenden Bedingungen im Status „Ausstehend“ verbleiben:
+
+* Das Basis-Volume, das dieses Snapshot Image enthält, ist Mitglied einer asynchronen Spiegelgruppe.
+* Das Basisvolume befindet sich derzeit in einem Synchronisierungsvorgang. Die Erstellung des Snapshot-Images ist abgeschlossen, sobald der Synchronisierungsvorgang abgeschlossen ist.
+
+
+
+
+== Maximale Anzahl von Snapshot Images
+
+* Wenn ein Volume Mitglied einer Snapshot Konsistenzgruppe ist, erstellt System Manager eine Snapshot Gruppe für das Mitglied-Volume. Diese Snapshot-Gruppe zählt zur maximal zulässigen Anzahl von Snapshot-Gruppen pro Basis-Volume.
+* Wenn Sie versuchen, ein Snapshot-Image auf einer Snapshot-Gruppe oder einer Snapshot-Konsistenzgruppe zu erstellen, die zugeordnete Gruppe jedoch die maximale Anzahl an Snapshot-Images erreicht hat, haben Sie zwei Optionen:
++
+** Aktivieren Sie das automatische Löschen für die Snapshot-Gruppe oder die Snapshot-Konsistenzgruppe.
+** Löschen Sie manuell ein oder mehrere Snapshot Images aus der Snapshot-Gruppe oder der Snapshot-Konsistenzgruppe, und versuchen Sie den Vorgang erneut.
+
+
+
+
+
+
+== Automatisches Löschen
+
+Wenn die Snapshot-Gruppe oder die Snapshot-Konsistenzgruppe für das automatische Löschen aktiviert ist, löscht System Manager das älteste Snapshot-Image, wenn das System ein neues für die Gruppe erstellt.
+
+
+
+== Rollback-Vorgang
+
+* Sie können die folgenden Aktionen nicht ausführen, wenn ein Rollback-Vorgang ausgeführt wird:
++
+** Löschen Sie das Snapshot-Image, das für das Rollback verwendet wird.
+** Erstellen Sie ein neues Snapshot-Image für ein Basis-Volume, das an einem Rollback-Vorgang beteiligt ist.
+** Ändern Sie die Repository-Full-Policy der zugehörigen Snapshot-Gruppe.
+
+
+* Sie können keinen Rollback-Vorgang starten, wenn einer dieser Vorgänge ausgeführt wird:
++
+** Kapazitätserweiterung (Hinzufügen von Kapazität zu einem Pool oder einer Volume-Gruppe)
+** Volume-Erweiterung (Erhöhung der Kapazität eines Volumes)
+** Änderung der RAID-Ebene für eine Volume-Gruppe
+** Segmentgröße für ein Volume ändern
+
+
+* Sie können keinen Rollback-Vorgang starten, wenn das Basisvolume an einer Volume-Kopie beteiligt ist.
+* Sie können keinen Rollback-Vorgang starten, wenn das Basisvolume ein sekundäres Volume in einer Remote-Spiegelung ist.
+* Ein Rollback-Vorgang schlägt fehl, wenn eine der im zugehörigen Snapshot-Repository-Volume verwendeten Kapazitäten unlesbare Sektoren hat.
+

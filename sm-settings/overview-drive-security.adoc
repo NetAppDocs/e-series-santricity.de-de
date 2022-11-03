@@ -1,0 +1,64 @@
+---
+permalink: sm-settings/overview-drive-security.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, system, security, key, management, 
+summary: Das Management von Sicherheitsschlüssels ist auf der Seite System verfügbar. 
+---
+= Übersicht über die Laufwerkssicherheit
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Laufwerksicherheit und die Schlüsselverwaltung über die Seite Sicherheitsschlüsselverwaltung konfigurieren.
+
+
+
+== Was ist Laufwerkssicherheit?
+
+_Drive Security_ ist eine Funktion, die unberechtigten Zugriff auf Daten auf sicheren Laufwerken verhindert, wenn sie aus dem Speicher-Array entfernt werden. Dabei können es sich entweder um vollständige Festplattenverschlüsselung (Full Disk Encryption, FDE)-Laufwerke oder um FIPS-Laufwerke (Federal Information Processing Standard) handeln. Wenn FDE- oder FIPS-Laufwerke physisch aus dem Array entfernt werden, kann dieser erst betrieben werden, wenn sie in einem anderen Array installiert sind. Dann befinden sich die Laufwerke erst dann in einem sicherheitsrelevanten Zustand, wenn der richtige Sicherheitsschlüssel bereitgestellt wird. Ein _Sicherheitsschlüssel_ ist eine Zeichenkette, die von diesen Laufwerkstypen und den Controllern in einem Speicher-Array gemeinsam genutzt wird.
+
+Weitere Informationen:
+
+* link:how-the-drive-security-feature-works.html["Funktionsweise der Laufwerkssicherheitsfunktion"]
+* link:how-security-key-management-works.html["Funktionsweise von Sicherheitsschlüsselmanagement"]
+* link:drive-security-terminology.html["Terminologie der Laufwerksicherheit"]
+
+
+
+
+== Wie konfiguriere ich Verschlüsselungsmanagement?
+
+Zur Implementierung von Laufwerkssicherheit müssen entweder FDE- oder FIPS-Laufwerke im Array installiert sein. Um die Schlüsselverwaltung für diese Laufwerke zu konfigurieren, gehen Sie zum Menü:Einstellungen[System > Sicherheitsschlüsselverwaltung], wo Sie entweder einen internen Schlüssel aus dem persistenten Speicher des Controllers oder einen externen Schlüssel von einem Schlüsselverwaltungsserver aus erstellen können. Schließlich aktivieren Sie die Laufwerksicherheit für Pools und Volume-Gruppen, indem Sie in den Volume-Einstellungen „sicher-fähig“ auswählen.
+
+Weitere Informationen:
+
+* link:create-internal-security-key.html["Interner Sicherheitsschlüssel erstellen"]
+* link:create-external-security-key.html["Externen Sicherheitsschlüssel erstellen"]
+* link:../sm-storage/create-pool-manually.html["Pool manuell erstellen"]
+* link:../sm-storage/create-volume-group.html["Volume-Gruppen erstellen"]
+
+
+
+
+== Wie entsperre ich Laufwerke?
+
+Wenn Sie das Verschlüsselungsmanagement konfiguriert haben und später sichere Laufwerke von einem Speicher-Array auf ein anderes verschieben, müssen Sie den Sicherheitsschlüssel dem neuen Speicher-Array neu zuweisen, um Zugriff auf die verschlüsselten Daten auf den Laufwerken zu erhalten.
+
+Weitere Informationen:
+
+* link:unlock-drives-using-an-internal-security-key.html["Entsperren Sie Laufwerke bei Nutzung des internen Verschlüsselungsmanagements"]
+* link:unlock-drives-using-an-external-security-key.html["Entsperren von Laufwerken bei Verwendung von externer Schlüsselverwaltung"]
+
+
+
+
+== Verwandte Informationen
+
+Weitere Informationen zu Aufgaben im Zusammenhang mit Verschlüsselungsmanagement:
+
+* link:use-ca-signed-certificates-for-authentication-with-a-key-management-server.html["Verwenden Sie CA-signierte Zertifikate zur Authentifizierung mit einem Schlüsselverwaltungsserver"]
+* link:back-up-security-key.html["Sicherheitsschlüssel sichern"]
+

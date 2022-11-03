@@ -1,0 +1,32 @@
+---
+permalink: sm-hardware/show-or-hide-component-status.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, show, hide, component, status, 
+summary: Sie können Statusbeschreibungen für Laufwerke, Controller, Lüfter und Netzteile anzeigen. 
+---
+= Komponentenstatus ein- oder ausblenden
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Statusbeschreibungen für Laufwerke, Controller, Lüfter und Netzteile anzeigen.
+
+.Schritte
+. Wählen Sie *Hardware*.
+. So sehen Sie die Komponenten auf der Rückseite oder auf der Vorderseite:
++
+** Wenn Sie die Komponenten des Reglers und des Power/Lüfter-Kanisters sehen möchten, aber die Laufwerke angezeigt werden, klicken Sie auf *Zurück zum Regal anzeigen*.
+** Wenn Sie die Laufwerke sehen möchten, aber die Komponenten des Controllers und des Power/Fan Kanisters werden angezeigt, klicken Sie auf *Vorderseite des Regals anzeigen*.
+
+
+. So zeigen Sie Pop-over-Statusbeschreibungen an oder verbergen sie:
++
+** Wenn Sie eine Pop-over-Beschreibung der Statussymbole sehen möchten, klicken Sie oben rechts in der Shelf-Ansicht auf *Statussymbol anzeigen*. (Aktivieren Sie das Kontrollkästchen).
+** Um die Pop-over-Beschreibungen auszublenden, klicken Sie erneut auf *Statusanzeige-Symboldetails* (deaktivieren Sie das Kontrollkästchen).
+
+
+. Wenn Sie vollständige Statusdetails sehen möchten, wählen Sie die Komponente in der Shelf-Ansicht aus, und wählen Sie dann *Einstellungen anzeigen*.
+. Wenn Sie die Beschreibungen der farbigen Komponenten anzeigen möchten, wählen Sie *Legende*.
+

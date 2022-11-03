@@ -1,0 +1,17 @@
+---
+permalink: sm-settings/what-is-read-write-accessibility.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, read/write, accessibility, 
+summary: Das Fenster Laufwerkseinstellungen enthält Informationen zu den Laufwerksicherheitsattributen. Der Zugriff auf Lesen/Schreiben ist eines der Attribute, das anzeigt, wenn die Daten eines Laufwerks gesperrt wurden. 
+---
+= Zugriff auf Lese-/Schreibzugriffe
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das Fenster Laufwerkseinstellungen enthält Informationen zu den Laufwerksicherheitsattributen. „Read/Write Accessible“ ist eines der Attribute, das anzeigt, ob Daten eines Laufwerks gesperrt wurden.
+
+Um die Attribute der Laufwerksicherheit anzuzeigen, gehen Sie zur Seite Hardware. Wählen Sie ein Laufwerk aus, klicken Sie auf *Einstellungen anzeigen* und dann auf *Weitere Einstellungen anzeigen*. Unten auf der Seite ist der Wert für das Attribut Lesen/Schreiben, auf das zugegriffen werden kann, *Ja*, wenn das Laufwerk entsperrt ist. Der Wert für das Attribut Read/Write, das auf die Zugriffsberechtigung zugegriffen werden kann, lautet *Nein, ungültiger Sicherheitsschlüssel*, wenn das Laufwerk gesperrt ist. Sie können ein sicheres Laufwerk entsperren, indem Sie einen Sicherheitsschlüssel importieren (gehen Sie zu Menü:Einstellungen[System > Sichere Laufwerke entsperren]).

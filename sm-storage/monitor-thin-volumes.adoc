@@ -1,0 +1,25 @@
+---
+permalink: sm-storage/monitor-thin-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, monitor, thin, volumes 
+summary: Sie können Thin Volumes auf Speicherplatz überwachen und entsprechende Warnmeldungen generieren, um Kapazitätswarnungen zu vermeiden. 
+---
+= Monitoring von Thin Volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Thin Volumes auf Speicherplatz überwachen und entsprechende Warnmeldungen generieren, um Kapazitätswarnungen zu vermeiden.
+
+[NOTE]
+====
+Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+
+====
+[NOTE]
+====
+SANtricity System Manager bietet keine Option zum Erstellen von Thin Volumes. Wenn Sie Thin Volumes erstellen möchten, verwenden Sie die Befehlszeilenschnittstelle (CLI).
+
+====

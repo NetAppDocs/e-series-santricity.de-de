@@ -1,0 +1,58 @@
+---
+permalink: sm-mirroring/role-change-of-volumes-in-a-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, role, change, between, volume, mirrored, pair, 
+summary: Sie können die Rolle zwischen Volumes in einem gespiegelten Paar ändern. Dazu wird das primäre Volume auf die sekundäre Rolle herabstufen oder das sekundäre Volume auf die primäre Rolle heraufstufen. 
+---
+= Rollenänderung zwischen Volumes in einem gespiegelten Paar
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Rolle zwischen Volumes in einem gespiegelten Paar ändern. Dazu wird das primäre Volume auf die sekundäre Rolle herabstufen oder das sekundäre Volume auf die primäre Rolle heraufstufen.
+
+[NOTE]
+====
+Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+
+====
+Überprüfen Sie die folgenden Informationen über den Rollenänderungsvorgang:
+
+* Wenn ein primäres Volume auf die sekundäre Rolle herabgestuft wird, wird das sekundäre Volume in diesem gespiegelten Paar zur primären Rolle heraufgestuft und umgekehrt.
+* Wenn das primäre Volume auf die sekundäre Rolle herabgestuft wird, haben Hosts, die diesem Volume zugewiesen wurden, keinen Schreibzugriff mehr.
+* Wenn das sekundäre Volume zur primären Rolle heraufgestuft wird, können alle Hosts, die auf das Volume zugreifen, jetzt darauf schreiben.
+* Wenn das lokale Speicher-Array nicht mit dem Remote-Speicher-Array kommunizieren kann, können Sie die Rollenänderung im lokalen Speicher-Array erzwingen.
+
+
+
+
+== Rollenänderung erzwingen
+
+Sie können eine Rollenänderung zwischen Volumes in einem gespiegelten Paar erzwingen, wenn ein Kommunikationsproblem zwischen dem lokalen Speicher-Array und dem Remote-Speicher-Array die Heraufstufung des sekundären Volumes oder die Herabstufung des primären Volumes verhindert.
+
+Sie können das Volume auf der sekundären Seite dazu zwingen, zur primären Rolle zu wechseln. Anschließend kann der Recovery-Host auf das neu aufgestuften Volume zugreifen, und der Geschäftsbetrieb kann fortgesetzt werden.
+
+[NOTE]
+====
+Wenn das Remote-Speicher-Array wiederhergestellt wurde und eventuelle Kommunikationsprobleme behoben wurden, tritt ein Synchronous Mirroring - Primary Volume Conflict-Zustand auf. Zu den Wiederherstellungsschritten gehört auch die Neusynchronisierung der Volumes. Verwenden Sie den Recovery Guru zur Wiederherstellung nach diesem Fehler.
+
+====
+
+
+== Wann ist eine erzwungene Promotion zulässig und nicht zulässig?
+
+Die erzwungene Beförderung eines Volumes in einem gespiegelten Paar ist unter den folgenden Bedingungen nicht zulässig:
+
+* Jedes der Volumes in einem gespiegelten Paar ist dabei, eine erste Synchronisierung durchzuführen.
+* Das gespiegelte Paar befindet sich im Status „Fehlgeschlagen“, „Role-Change-Pending“ oder „Role-Change-in-Progress“ oder wenn eines der zugehörigen Volumes mit reservierter Kapazität ausfällt.
+
+
+
+
+== Rollenänderung in Bearbeitung
+
+Wenn zwei Speicher-Arrays in einer Spiegelungskonfiguration getrennt werden, und das primäre Volume eines gespiegelten Paars erzwingen, dass es zu einer sekundären Rolle herabgestuft wird, und das sekundäre Volume eines gespiegelten Paares wird zu einer primären Rolle heraufgestuft. Wenn die Kommunikation wiederhergestellt wird, werden die Volumes auf beiden Storage Arrays im Status „Role-Change-in-Progress“ platziert.
+
+Das System führt den Rollenänderungsprozess durch, indem die Änderungsprotokolle übertragen, neu synchronisiert, der Zustand des gespiegelten Paares auf einen normalen Betriebszustand zurückversetzt wird und die Synchronisation fortführt.

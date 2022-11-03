@@ -1,0 +1,78 @@
+---
+permalink: sm-settings/configure-snmp-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, snmp, alerts, 
+summary: 'Um SNMP-Warnungen (Simple Network Management Protocol) zu konfigurieren, müssen Sie mindestens einen Server identifizieren, auf dem der Ereignismonitor des Speicherarrays SNMP-Traps senden kann. Die Konfiguration erfordert einen Community-Namen oder Benutzernamen und eine IP-Adresse für den Server.' 
+---
+= Konfigurieren von SNMP-Warnmeldungen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um SNMP-Warnungen (Simple Network Management Protocol) zu konfigurieren, müssen Sie mindestens einen Server identifizieren, auf dem der Ereignismonitor des Speicherarrays SNMP-Traps senden kann. Die Konfiguration erfordert einen Community-Namen oder Benutzernamen und eine IP-Adresse für den Server.
+
+.Bevor Sie beginnen
+* Ein Netzwerkserver muss mit einer SNMP-Dienstanwendung konfiguriert sein. Sie benötigen die Netzwerkadresse dieses Servers (entweder eine IPv4- oder eine IPv6-Adresse), damit der Ereignismonitor Trap-Meldungen an diese Adresse senden kann. Sie können mehrere Server verwenden (bis zu 10 Server sind zulässig).
+* Die Management Information Base (MIB)-Datei wurde kopiert und mit der SNMP-Dienst-Anwendung auf dem Server kompiliert. Diese MIB-Datei definiert die Daten, die überwacht und verwaltet werden.
++
+Wenn Sie nicht über die MIB-Datei, können Sie sie von der NetApp Support-Website erhalten:
+
++
+** Gehen Sie zu https://mysupport.netapp.com/site/global/dashboard["NetApp Support"^].
+** Klicken Sie auf die Registerkarte *Downloads* und wählen Sie dann *Downloads*.
+** Klicken Sie auf *E-Series SANtricity OS Controller Software*.
+** Wählen Sie *Letzte Version Herunterladen*.
+** Melden Sie sich an.
+** Akzeptieren Sie die Vorsichtserklärung und die Lizenzvereinbarung.
+** Scrollen Sie nach unten, bis Sie die MIB-Datei für Ihren Controller-Typ sehen, und klicken Sie dann auf den Link, um die Datei herunterzuladen.
+
+
+
+
+Diese Aufgabe beschreibt, wie Sie den SNMP-Server für Trap-Ziele identifizieren und anschließend Ihre Konfiguration testen.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[Alarme].
+. Wählen Sie die Registerkarte *SNMP* aus.
++
+Bei der Ersteinrichtung wird auf der Registerkarte SNMP „Configure Communities/Users“ angezeigt.
+
+. Wählen Sie * Communities/Benutzer Konfigurieren*.
++
+Das Dialogfeld SNMP-Version auswählen wird geöffnet.
+
+. Wählen Sie die SNMP-Version für die Alarme aus, entweder *SNMPv2c* oder *SNMPv3*.
++
+Je nach Auswahl wird das Dialogfeld „Communities konfigurieren“ oder das Dialogfeld „SNMPv3-Benutzer konfigurieren“ geöffnet.
+
+. Befolgen Sie die entsprechenden Anweisungen für SNMPv2c (Communities) oder SNMPv3 (Benutzer):
++
+** *SNMPv2c (Communities)* -- Geben Sie im Dialogfeld „Configure Communities“ eine oder mehrere Community-Strings für die Netzwerkserver ein. Ein Community-Name ist eine Zeichenfolge, die einen bekannten Satz von Management Stations identifiziert und in der Regel von einem Netzwerkadministrator erstellt wird. Es besteht nur aus druckbaren ASCII-Zeichen. Sie können bis zu 256 Communities hinzufügen. Wenn Sie fertig sind, klicken Sie auf *Speichern*.
+** *SNMPv3 (Users)* -- Klicken Sie im Dialogfeld Configure SNMPv3 Users auf *Add*, und geben Sie anschließend die folgenden Informationen ein:
++
+*** *Benutzername* -- Geben Sie einen Namen ein, um den Benutzer zu identifizieren, der bis zu 31 Zeichen lang sein kann.
+*** *Engine ID* -- Wählen Sie die Engine-ID aus, die zur Generierung von Authentifizierungs- und Verschlüsselungsschlüsseln für Nachrichten verwendet wird, und müssen in der Verwaltungsdomäne eindeutig sein. In den meisten Fällen sollten Sie *Lokal* wählen. Wenn Sie eine nicht-Standardkonfiguration haben, wählen Sie *Benutzerdefiniert* aus. Ein weiteres Feld wird angezeigt, in dem Sie die autoritative Engine-ID als Hexadezimalstring eingeben müssen, wobei eine gerade Anzahl von Zeichen zwischen 10 und 32 Zeichen lang ist.
+*** *Authentifizierungsdaten* -- Wählen Sie ein Authentifizierungsprotokoll, das die Identität der Benutzer sicherstellt. Geben Sie dann ein Authentifizierungspasswort ein, das erforderlich ist, wenn das Authentifizierungsprotokoll festgelegt oder geändert wird. Das Passwort muss zwischen 8 und 128 Zeichen lang sein.
+*** *Datenschutzhinweise* -- Wählen Sie ein Datenschutzprotokoll, das zur Verschlüsselung der Inhalte von Nachrichten verwendet wird. Geben Sie dann ein Datenschutzkennwort ein, das erforderlich ist, wenn das Datenschutzprotokoll festgelegt oder geändert wird. Das Passwort muss zwischen 8 und 128 Zeichen lang sein. Wenn Sie fertig sind, klicken Sie auf *Hinzufügen*, und klicken Sie dann auf *Schließen*.
+
+
+
+
+. Klicken Sie auf der Seite Warnungen auf der Registerkarte SNMP auf *Trap Destinations hinzufügen*.
++
+Das Dialogfeld Trap-Ziele hinzufügen wird geöffnet.
+
+. Geben Sie ein oder mehrere Trap-Ziele ein, wählen Sie die zugehörigen Community-Namen oder Benutzernamen aus, und klicken Sie dann auf *Hinzufügen*.
++
+** *Trap-Ziel* -- Geben Sie eine IPv4- oder IPv6-Adresse des Servers ein, auf dem ein SNMP-Dienst ausgeführt wird.
+** *Community-Name oder Benutzername* -- Wählen Sie in der Dropdown-Liste den Community-Namen (SNMPv2c) oder den Benutzernamen (SNMPv3) für dieses Trap-Ziel aus. (Wenn Sie nur einen definiert haben, wird der Name bereits in diesem Feld angezeigt.)
+** *Authentifizierungsfehler senden Trap* -- Wählen Sie diese Option (das Kontrollkästchen) aus, wenn Sie das Trap-Ziel benachrichtigen möchten, wenn eine SNMP-Anfrage aufgrund eines nicht erkannten Community-Namens oder Benutzernamens abgelehnt wird. Nach dem Klicken auf *Hinzufügen* werden die Trap-Ziele und die zugehörigen Namen auf der Seite *SNMP* auf der Registerkarte *Alarme* angezeigt.
+
+
+. Um sicherzustellen, dass ein Trap gültig ist, wählen Sie ein Trap-Ziel aus der Tabelle aus, und klicken Sie dann auf *Trap-Ziel testen*, um einen Test-Trap an die konfigurierte Adresse zu senden.
+
+
+Der Ereignismonitor sendet SNMP-Traps an den/die Server(s), wenn ein alertable Ereignis auftritt.

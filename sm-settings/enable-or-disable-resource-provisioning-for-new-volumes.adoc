@@ -1,0 +1,38 @@
+---
+permalink: sm-settings/enable-or-disable-resource-provisioning-for-new-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, disable, resource, provisioning, 
+summary: Wenn Sie die Standardfunktion für die Ressourcenbereitstellung zuvor deaktiviert haben, können Sie die Einstellungen aufrufen und sie für alle neuen von Ihnen erstellten SSD-Volume-Gruppen oder -Pools erneut aktivieren. Sie können die Einstellung auch wieder deaktivieren. 
+---
+= Aktivieren oder Deaktivieren der Ressourcenbereitstellung für neue Volume-Gruppen oder -Pools
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie zuvor die Standardfunktion für die Ressourcenbereitstellung deaktiviert haben, können Sie sie für alle neuen von Ihnen erstellten SSD-Volume-Gruppen oder -Pools erneut aktivieren. Sie können die Einstellung auch wieder deaktivieren.
+
+Die Ressourcenbereitstellung ist eine Funktion der EF300- und EF600-Speicher-Arrays, mit der Volumes ohne Hintergrundinitialisierung sofort in Betrieb genommen werden können. Alle dem Volume zugewiesenen Festplattenblöcke werden aufgehoben (ihre Zuordnung wird nicht aufgehoben), was die SSD-Abnutzung verbessert und die maximale Schreib-Performance erhöht.
+
+
+NOTE: Standardmäßig ist die Ressourcenbereitstellung auf Systemen aktiviert, auf denen die Laufwerke DULBE unterstützen.
+
+.Bevor Sie beginnen
+* Sie benötigen ein EF300- oder EF600-Storage-Array.
+* Sie müssen SSD-Volume-Gruppen oder -Pools haben, wobei alle Laufwerke die Funktion zur Wiederherstellung von dezugewiesenen oder nicht geschriebenen logischen Blockfehlern (DULBE) unterstützen.
+
+
+Wenn Sie die Ressourcen-Bereitstellung für neue Volume-Gruppen oder Pools erneut aktivieren, sind nur neu erstellte Volume-Gruppen und Pools betroffen. Alle vorhandenen Volume-Gruppen und Pools mit aktivierter Ressourcenbereitstellung bleiben unverändert.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[System].
+. Blättern Sie nach unten zu *zusätzliche Einstellungen*, und klicken Sie dann auf *Volumes mit Ressourcenzulauf aktivieren/deaktivieren*.
++
+Die Einstellungsbeschreibung gibt an, ob die Ressourcenbereitstellung derzeit aktiviert oder deaktiviert ist.
+
+. Bestätigen Sie im Dialogfeld den Vorgang.
+
+
+Das Aktivieren oder Deaktivieren der Ressourcenbereitstellung betrifft nur neue SSD-Pools oder Volume-Gruppen, die Sie erstellen. Vorhandene Pools oder Volume-Gruppen bleiben unverändert.

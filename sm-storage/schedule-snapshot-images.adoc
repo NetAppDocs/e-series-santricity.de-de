@@ -1,0 +1,219 @@
+---
+permalink: sm-storage/schedule-snapshot-images.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, schedule, snapshot, images 
+summary: Sie erstellen einen Snapshot-Zeitplan, um die Recovery bei Problemen mit dem Basis-Volume zu ermöglichen und geplante Backups durchzuführen. Snapshots von Basis-Volumes oder Snapshot-Konsistenzgruppen können täglich, wöchentlich oder monatlich erstellt werden, zu jeder Tageszeit. 
+---
+= Planen von Snapshot Images
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie erstellen einen Snapshot-Zeitplan, um die Recovery bei Problemen mit dem Basis-Volume zu ermöglichen und geplante Backups durchzuführen. Snapshots von Basis-Volumes oder Snapshot-Konsistenzgruppen können täglich, wöchentlich oder monatlich erstellt werden, zu jeder Tageszeit.
+
+Das Basis-Volume muss optimal sein.
+
+In dieser Aufgabe wird beschrieben, wie ein Snapshot-Zeitplan für eine vorhandene Snapshot-Konsistenzgruppe oder das Basis-Volume erstellt wird.
+
+[NOTE]
+====
+Sie können auch einen Snapshot-Zeitplan gleichzeitig erstellen, damit Sie ein Snapshot-Image eines Basis-Volumes oder einer Snapshot-Konsistenzgruppe erstellen können.
+
+====
+.Schritte
+. Führen Sie eine der folgenden Aktionen aus, um einen Snapshot-Zeitplan zu erstellen:
++
+** Wählen Sie Menü:Storage[Volumes].
++
+Wählen Sie das Objekt (Volume oder Snapshot Consistency Group) für diesen Snapshot-Zeitplan aus, und wählen Sie dann Menü:Copy Services[Create Snapshot Schedule].
+
+** Wählen Sie Menü:Storage[Snapshots].
++
+Wählen Sie die Registerkarte *Zeitpläne* aus und klicken Sie dann auf *Erstellen*.
+
+
+
+. Wählen Sie das Objekt (Volume oder Snapshot Consistency Group) für diesen Snapshot-Zeitplan aus, und klicken Sie dann auf *Next*.
++
+Das Dialogfeld Snapshot-Zeitplan erstellen wird angezeigt.
+
+. Führen Sie eine der folgenden Aktionen aus:
++
+** *Verwenden Sie einen zuvor definierten Zeitplan aus einem anderen Snapshot-Objekt*.
++
+Stellen Sie sicher, dass erweiterte Optionen angezeigt werden. Klicken Sie auf *Weitere Optionen anzeigen*. Klicken Sie auf *Zeitplan importieren*, wählen Sie das Objekt mit dem zu importierenden Zeitplan aus und klicken Sie dann auf *Import*.
+
+** *Ändern Sie die Basis- oder erweiterten Optionen*.
++
+Klicken Sie im oberen rechten Bereich des Dialogfelds auf *Weitere Optionen anzeigen*, um alle Optionen anzuzeigen, und gehen Sie dann in die folgende Tabelle.
+
+
+
++
+.Felddetails
+====
+[cols="25h,~"]
+|===
+| Feld | Beschreibung 
+
+
+ a| 
+*Grundeinstellungen*
+
+
+
+ a| 
+Wählen Sie Tage
+ a| 
+Wählen Sie einzelne Wochentage für Snapshot-Bilder aus.
+
+
+
+ a| 
+Startzeit
+ a| 
+Wählen Sie aus der Dropdown-Liste eine neue Startzeit für die täglichen Snapshots aus (die Auswahl erfolgt in Schritten von einer halben Stunde). Die Startzeit liegt standardmäßig auf eine halbe Stunde vor der aktuellen Zeit.
+
+
+
+ a| 
+Zeitzone
+ a| 
+Wählen Sie aus der Dropdown-Liste die Zeitzone Ihres Arrays aus.
+
+
+
+ a| 
+*Erweiterte Einstellungen*
+
+
+
+ a| 
+Tag / Monat
+ a| 
+Wählen Sie eine der folgenden Optionen:
+
+** *Daily / Weekly* -- Wählen Sie einzelne Tage für Synchronisations-Snapshots. Sie können auch das Kontrollkästchen *Alle Tage auswählen* oben rechts auswählen, wenn Sie einen Tagesablauf wünschen.
+** *Monatlich / jährlich* -- Wählen Sie einzelne Monate für Synchronisations-Snapshots aus. Geben Sie im Feld * am Tag(e)* die Tage des Monats ein, an denen Synchronisationen stattfinden sollen. Gültige Eingaben sind *1* bis *31* und *Letzte*. Sie können mehrere Tage durch Komma oder Semikolon voneinander trennen. Verwenden Sie einen Bindestrich für inklusives Datum. Zum Beispiel: 1,3,4,10-15,Last. Sie können auch das Kontrollkästchen *Alle Monate auswählen* oben rechts auswählen, wenn Sie einen monatlichen Zeitplan wünschen.
+
+
+
+
+ a| 
+Startzeit
+ a| 
+Wählen Sie aus der Dropdown-Liste eine neue Startzeit für die täglichen Snapshots aus (die Auswahl erfolgt in Schritten von einer halben Stunde). Die Startzeit liegt standardmäßig auf eine halbe Stunde vor der aktuellen Zeit.
+
+
+
+ a| 
+Zeitzone
+ a| 
+Wählen Sie aus der Dropdown-Liste die Zeitzone Ihres Arrays aus.
+
+
+
+ a| 
+Snapshots pro Tag/Zeit zwischen Snapshots
+ a| 
+Wählen Sie die Anzahl der pro Tag zu erstellenden Snapshot-Bilder aus. Wenn Sie mehrere auswählen, wählen Sie auch die Zeit zwischen Snapshot-Bildern aus. Bei mehreren Snapshot-Images ist darauf zu achten, dass ausreichend Kapazität reserviert ist.
+
+
+
+ a| 
+Jetzt Snapshot Image erstellen?
+ a| 
+Aktivieren Sie dieses Kontrollkästchen, um zusätzlich zu den von Ihnen erstellten automatischen Bildern ein sofortiges Bild zu erstellen.
+
+
+
+ a| 
+Start-/Enddatum oder kein Enddatum
+ a| 
+Geben Sie das Startdatum für die Synchronisierung ein. Geben Sie auch ein Enddatum ein oder wählen Sie *kein Enddatum*.
+
+|===
+====
+. Führen Sie eine der folgenden Aktionen aus:
++
+** Wenn es sich bei dem Objekt um eine Snapshot-Konsistenzgruppe handelt, klicken Sie auf *Erstellen*, um die Einstellungen zu akzeptieren und den Zeitplan zu erstellen.
+** Wenn es sich bei dem Objekt um ein Volume handelt, klicken Sie auf *Weiter*, um die reservierte Kapazität für die Snapshot-Images zuzuweisen.
++
+In der Tabelle für Volume-Kandidaten werden nur die Kandidaten angezeigt, die die angegebene reservierte Kapazität unterstützen. Reservierte Kapazität ist die zugewiesene physische Kapazität, die für jeden Kopierdienst- und Storage-Objekt verwendet wird. Er ist nicht direkt vom Host lesbar.
+
+
+
+. Verwenden Sie die Spinner-Box, um die reservierte Kapazität für die Snapshot-Bilder zuzuweisen. Führen Sie eine der folgenden Aktionen aus:
++
+** *Die Standardeinstellungen akzeptieren.*
++
+Verwenden Sie diese empfohlene Option, um die reservierte Kapazität für die Snapshot-Images mit den Standardeinstellungen zuzuweisen.
+
+** *Zuweisen Ihrer eigenen reservierten Kapazitätseinstellungen entsprechend Ihren Datenspeicheranforderungen.*
++
+Wenn Sie die Standardeinstellung für reservierte Kapazität ändern, klicken Sie auf *Kandidaten aktualisieren*, um die Kandidatenliste für die von Ihnen angegebene reservierte Kapazität zu aktualisieren.
+
++
+Weisen Sie die reservierte Kapazität mithilfe folgender Richtlinien zu:
+
++
+*** Die Standardeinstellung für die reservierte Kapazität ist 40 % der Kapazität des Basis-Volume. In der Regel ist diese Kapazität ausreichend.
+*** Die benötigte Kapazität ist unterschiedlich, abhängig von der Häufigkeit und Größe der I/O-Schreibvorgänge auf den Volumes sowie von der Menge und Dauer der Snapshot-Image-Erfassung.
+
+
+
+
+. Klicken Sie Auf *Weiter*.
++
+Das Dialogfeld Einstellungen bearbeiten wird angezeigt.
+
+. Bearbeiten Sie die Einstellungen für den Snapshot-Zeitplan nach Bedarf und klicken Sie dann auf *Fertig stellen*.
++
+.Felddetails
+====
+[cols="25h,~"]
+|===
+| Einstellung | Beschreibung 
+
+
+ a| 
+*Snapshot-Bildlimit*
+
+
+
+ a| 
+Automatisches Löschen von Snapshot-Images aktivieren, wenn...
+ a| 
+Aktivieren Sie das Kontrollkästchen, wenn Snapshot-Bilder nach dem festgelegten Limit automatisch gelöscht werden sollen. Ändern Sie die Begrenzung mit dem Spinner-Feld. Wenn Sie dieses Kontrollkästchen deaktivieren, wird die Erstellung von Snapshot-Bildern nach 32 Bildern angehalten.
+
+
+
+ a| 
+*Reservierte Kapazitätseinstellungen*
+
+
+
+ a| 
+Benachrichtigen, wenn...
+ a| 
+Verwenden Sie das Spinner-Feld, um den Prozentpunkt anzupassen, an dem das System eine Benachrichtigung sendet, wenn sich die reservierte Kapazität eines Zeitplans fast voll befindet.
+
+Wenn die reservierte Kapazität für den Zeitplan den angegebenen Schwellenwert überschreitet, verwenden Sie den Vorankündigung, um die reservierte Kapazität zu erhöhen oder um unnötige Objekte zu löschen, bevor der verbleibende Speicherplatz erschöpft ist.
+
+
+
+ a| 
+Richtlinie für vollständig reservierte Kapazität
+ a| 
+Wählen Sie eine der folgenden Richtlinien aus:
+
+** *Ältestes Snapshot-Image löschen* -- das System entfernt automatisch das älteste Snapshot-Image, welches die reservierte Kapazität für die Wiederverwendung innerhalb der Snapshot-Gruppe freigibt.
+** *Schreibvorgänge auf Basis-Volume ablehnen* -- Wenn die reservierte Kapazität ihren maximalen festgelegten Prozentsatz erreicht, weist das System eine E/A-Schreibanforderung auf das Basis-Volume zurück, das den reservierten Kapazitätszugriff ausgelöst hat.
+
+
+|===
+====
+

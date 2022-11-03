@@ -1,0 +1,41 @@
+---
+permalink: sm-hardware/place-controller-offline.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, place, controller, offline, 
+summary: Wenn Sie dazu aufgefordert werden, können Sie einen Controller in den Offline-Modus versetzen. 
+---
+= Platzieren Sie den Controller in den Offline-Modus
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie dazu aufgefordert werden, können Sie einen Controller in den Offline-Modus versetzen.
+
+.Bevor Sie beginnen
+* Ihr Storage-Array muss zwei Controller haben. Der Controller, den Sie nicht in den Offline-Modus versetzen, muss den Status „Online“ (im optimalen Status) aufweisen.
+* Stellen Sie sicher, dass keine Volumes verwendet werden oder dass auf allen Hosts, die diese Volumes verwenden, ein Multipath-Treiber installiert ist.
+
+
+++++
+
+[CAUTION]
+====
+Setzen Sie einen Controller nicht offline, es sei denn, Sie werden vom Recovery Guru oder technischen Support dazu aufgefordert.
+
+====
+.Schritte
+. Wählen Sie *Hardware*.
+. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf *Zurück zum Regal anzeigen*.
++
+Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
+
+. Klicken Sie auf den Controller, den Sie in den Offline-Modus versetzen möchten.
++
+Das Kontextmenü des Controllers wird angezeigt.
+
+. Wählen Sie *Offline platzieren* aus, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
+
+
+Es kann einige Minuten dauern, bis System Manager den Status des Controllers auf Offline aktualisiert. Beginnen Sie keine anderen Vorgänge, bis der Status aktualisiert wurde.

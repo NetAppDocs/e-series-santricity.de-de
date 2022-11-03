@@ -1,0 +1,68 @@
+---
+permalink: sm-settings/define-log-policies.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, define, audit, log, policies, 
+summary: Sie können die Überschreibungsrichtlinie und die im Audit-Protokoll aufgezeichneten Ereignistypen ändern. 
+---
+= Richtlinien für Prüfprotokolle definieren
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Überschreibungsrichtlinie und die im Audit-Protokoll aufgezeichneten Ereignistypen ändern.
+
+Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
+
+Dieser Task beschreibt, wie die Einstellungen für das Überwachungsprotokoll geändert werden, einschließlich der Richtlinie zum Überschreiben alter Ereignisse und der Richtlinie für die Aufzeichnung von Ereignistypen.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[Zugriffsverwaltung].
+. Wählen Sie die Registerkarte *Prüfprotokoll* aus.
+. Wählen Sie *Einstellungen Anzeigen/Bearbeiten*.
++
+Das Dialogfeld Einstellungen für das Überwachungsprotokoll wird geöffnet.
+
+. Ändern Sie die Überschreibungsrichtlinie oder die Arten der aufgezeichneten Ereignisse.
++
+.Felddetails
+====
+[cols="25h,~"]
+|===
+| Einstellung | Beschreibung 
+
+
+ a| 
+Überschreibungsrichtlinie
+ a| 
+Legt die Richtlinie zum Überschreiben alter Ereignisse fest, wenn die maximale Kapazität erreicht ist:
+
+** *Die ältesten Ereignisse im Audit-Protokoll können überschrieben werden, wenn das Audit-Protokoll voll ist* -- überschreibt die alten Ereignisse, wenn das Audit-Protokoll 50,000 Datensätze erreicht.
+** *Das manuelle Löschen von Audit-Protokollereignissen ist erforderlich* -- gibt an, dass Ereignisse nicht automatisch gelöscht werden; stattdessen erscheint eine Schwellenwertwarnung im festgelegten Prozentsatz. Ereignisse müssen manuell gelöscht werden.
++
+
+NOTE: Wenn die Überschreibungsrichtlinie deaktiviert ist und die Einträge des Prüfprotokolls die maximale Grenze erreichen, wird Benutzern der Zugriff auf System Manager ohne die Berechtigung des Sicherheitsadministrators verweigert. Um den Systemzugriff für Benutzer ohne Sicherheitsadministrator-Berechtigungen wiederherzustellen, muss ein Benutzer, der der Rolle Sicherheitsadministrator zugewiesen ist, die alten Ereignisdatensätze löschen.
+
++
+
+NOTE: Überschreibungsrichtlinien gelten nicht, wenn ein Syslog-Server für die Archivierung von Audit-Protokollen konfiguriert ist.
+
+
+
+
+
+ a| 
+Level der zu protokollierenden Aktionen
+ a| 
+Legt die Arten von zu protokollierenden Ereignissen fest:
+
+** *Änderungsereignisse aufzeichnen* -- zeigt nur Ereignisse an, bei denen eine Benutzeraktion eine Systemänderung beinhaltet.
+** *Alle Änderungen und schreibgeschützten Ereignisse* -- zeigt alle Ereignisse an, einschließlich einer Benutzeraktion, die das Lesen oder Herunterladen von Informationen beinhaltet.
+
+
+|===
+====
+. Klicken Sie Auf *Speichern*.
+

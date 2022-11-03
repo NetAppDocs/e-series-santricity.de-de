@@ -1,0 +1,30 @@
+---
+permalink: sm-settings/export-key-management-certificates.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, export, key, management, server, certificates, 
+summary: Sie können ein Zertifikat für einen Schlüsselverwaltungsserver auf Ihrem lokalen Computer speichern. 
+---
+= Export von Zertifikaten für den Schlüsselverwaltungsserver
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können ein Zertifikat für einen Schlüsselverwaltungsserver auf Ihrem lokalen Computer speichern.
+
+.Bevor Sie beginnen
+* Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.
+* Zertifikate müssen bereits importiert werden.
+
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[Zertifikate].
+. Wählen Sie die Registerkarte * Key Management* aus.
+. Wählen Sie in der Tabelle das Zertifikat aus, das Sie exportieren möchten, und klicken Sie dann auf *Exportieren*.
++
+Ein Dialogfeld „Speichern“ wird geöffnet.
+
+. Geben Sie einen Dateinamen ein und klicken Sie auf *Speichern*.
+

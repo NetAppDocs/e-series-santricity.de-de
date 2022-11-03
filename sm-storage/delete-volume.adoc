@@ -1,0 +1,61 @@
+---
+permalink: sm-storage/delete-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, volume 
+summary: Normalerweise löschen Sie Volumes, wenn die Volumes mit falschen Parametern oder Kapazität erstellt wurden, die Storage-Konfigurationsanforderungen nicht mehr erfüllen oder Snapshot Images sind, die nicht mehr für Backup oder Applikationstests erforderlich sind. 
+---
+= Volume löschen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Normalerweise löschen Sie Volumes, wenn die Volumes mit falschen Parametern oder Kapazität erstellt wurden, die Storage-Konfigurationsanforderungen nicht mehr erfüllen oder Snapshot Images sind, die nicht mehr für Backup oder Applikationstests erforderlich sind.
+
+Durch das Löschen eines Volumes wird die freie Kapazität im Pool oder der Volume-Gruppe erhöht. Sie können ein oder mehrere zu löschende Volumes auswählen.
+
+Stellen Sie für die Volumes, die Sie löschen möchten, Folgendes sicher:
+
+* Alle Daten werden gesichert.
+* Alle Eingänge/Ausgänge (E/A) werden angehalten.
+* Alle Geräte und Dateisysteme werden abgehängt.
+
+
+Ein Volume mit einer der folgenden Bedingungen kann nicht gelöscht werden:
+
+* Das Volume wird initialisiert.
+* Das Volume wird wiederhergestellt.
+* Das Volume ist Teil einer Volume-Gruppe, die ein Laufwerk enthält, das einen Copyback-Vorgang durchläuft.
+* Das Volume wird in einem Änderungsvorgang wie z. B. einer Änderung der Segmentgröße ausgeführt, sofern sich das Volume jetzt nicht mehr im Status „ausgefallen“ befindet.
+* Das Volume hält jede Art von persistenter Reservierung.
+* Das Volume ist ein Quell-Volume oder ein Ziel-Volume in einem Copy-Volume mit dem Status „Ausstehend“, „in Bearbeitung“ oder „fehlgeschlagen“.
+
+
+[CAUTION]
+====
+Das Löschen eines Volumes verursacht den Verlust aller Daten auf diesen Volumes.
+
+====
+[NOTE]
+====
+Wenn ein Volume eine bestimmte Größe überschreitet (derzeit 128 TB), wird das Löschen im Hintergrund ausgeführt, sodass der freigegebene Speicherplatz möglicherweise nicht sofort verfügbar ist.
+
+====
+.Schritte
+. Wählen Sie Menü:Storage[Volumes].
+. Klicken Sie Auf *Löschen*.
++
+Das Dialogfeld Volumes löschen wird angezeigt.
+
+. Wählen Sie ein oder mehrere Volumes aus, die Sie löschen möchten, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
+. Klicken Sie Auf *Löschen*.
+
+
+System Manager führt die folgenden Aktionen durch:
+
+* Löscht alle zugehörigen Snapshot-Images, Zeitpläne und Snapshot-Volumes.
+* Entfernt beliebige Spiegelungsbeziehungen.
+* Erhöht die freie Kapazität im Pool bzw. in der Volume-Gruppe.
+

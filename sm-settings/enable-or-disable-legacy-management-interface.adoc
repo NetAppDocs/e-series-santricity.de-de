@@ -1,0 +1,34 @@
+---
+permalink: sm-settings/enable-or-disable-legacy-management-interface.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, disable, legacy, management, interface, 
+summary: 'Sie können die Legacy-Managementoberfläche (Symbol) aktivieren oder deaktivieren, eine Kommunikationsmethode zwischen dem Storage-Array und dem Management-Client.' 
+---
+= Aktivieren oder deaktivieren Sie die veraltete Managementoberfläche
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Legacy-Managementoberfläche (Symbol) aktivieren oder deaktivieren, eine Kommunikationsmethode zwischen dem Storage-Array und dem Management-Client.
+
+Standardmäßig ist die ältere Managementoberfläche auf aktiviert. Wenn die Funktion deaktiviert wird, verwendet das Storage-Array und der Management-Client eine sicherere Kommunikationsmethode (REST-API über HTTPS). Bestimmte Tools und Aufgaben können jedoch beeinträchtigt werden, wenn die Übertragung deaktiviert ist.
+
+[NOTE]
+====
+Für das EF600 Storage-System ist diese Funktion standardmäßig deaktiviert.
+
+====
+Die Einstellung wirkt sich auf die Vorgänge wie folgt aus:
+
+* *Ein* (Standard) -- erforderliche Einstellung zum Konfigurieren der Spiegelung mit der CLI und einigen anderen Tools, wie dem OCI-Adapter.
+* *Aus* -- erforderliche Einstellung zur Durchsetzung von Vertraulichkeit bei der Kommunikation zwischen dem Speicher-Array und dem Management-Client und zum Zugriff auf externe Tools. Empfohlene Einstellung bei der Konfiguration eines Verzeichnisservers (LDAP).
+
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[System].
+. Blättern Sie nach unten zu *zusätzliche Einstellungen*, und klicken Sie dann auf *Verwaltungsschnittstelle ändern*.
+. Klicken Sie im Dialogfeld auf *Ja*, um fortzufahren.
+

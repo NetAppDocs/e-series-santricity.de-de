@@ -1,0 +1,47 @@
+---
+permalink: sm-settings/add-on-feature-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add-on, feature, terms 
+summary: Erfahren Sie, welche Zusatzfunktionenbedingungen auf Ihr Storage Array Anwendung finden. 
+---
+= Terminologie der Add-on-Funktionen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Erfahren Sie, welche Zusatzfunktionenbedingungen auf Ihr Storage Array Anwendung finden.
+
+[cols="25h,~"]
+|===
+| Laufzeit | Beschreibung 
+
+
+ a| 
+Kennzeichner Für Feature-Aktivierung
+ a| 
+Eine Kennzeichenkennung für die Aktivierung einer Funktion ist eine eindeutige Zeichenfolge, die das spezifische Speicherarray identifiziert. Mit dieser Kennung wird sichergestellt, dass die Premium-Funktion nur mit dem jeweiligen Speicherarray verknüpft ist. Dieser String wird unter Add-ons auf der Systemseite angezeigt.
+
+
+
+ a| 
+Feature-Schlüsseldatei
+ a| 
+Eine Feature-Schlüsseldatei ist eine Datei, die Sie zum Entsperren und Aktivieren einer Premium-Funktion oder eines Feature-Packs erhalten.
+
+
+
+ a| 
+Funktionspaket
+ a| 
+Ein Funktionspaket ist ein Bundle, das Attribute für Storage Arrays ändert (zum Beispiel Ändern des Protokolls von Fibre Channel auf iSCSI). Für die Aktivierung der Funktionen ist ein spezieller Schlüssel erforderlich.
+
+
+
+ a| 
+Premiumfunktion
+ a| 
+Eine Premium-Funktion ist eine zusätzliche Option, die einen Schlüssel erfordert, um sie zu aktivieren. Dies ist nicht in der Standardkonfiguration von System Manager enthalten.
+
+|===

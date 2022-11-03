@@ -1,0 +1,21 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-about-validating-the-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, validating, security, key, 
+summary: Nachdem Sie einen Sicherheitsschlüssel erstellt haben, sollten Sie die Schlüsseldatei überprüfen, um sicherzustellen, dass sie nicht beschädigt ist. 
+---
+= Was muss ich über die Validierung des Sicherheitsschlüssels wissen?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Nachdem Sie einen Sicherheitsschlüssel erstellt haben, sollten Sie die Schlüsseldatei überprüfen, um sicherzustellen, dass sie nicht beschädigt ist.
+
+Wenn die Validierung fehlschlägt, gehen Sie wie folgt vor:
+
+* Wenn die Sicherheitsschlüsselkennung nicht mit der Kennung auf dem Controller übereinstimmt, suchen Sie die richtige Sicherheitsschlüsseldatei, und versuchen Sie die Validierung erneut.
+* Wenn der Controller den Sicherheitsschlüssel nicht zur Validierung entschlüsseln kann, haben Sie möglicherweise den Passphrase falsch eingegeben. Überprüfen Sie den Passphrase, geben Sie ihn ggf. erneut ein, und versuchen Sie dann erneut die Validierung. Wenn die Fehlermeldung erneut angezeigt wird, wählen Sie eine Sicherungskopie der Schlüsseldatei (falls verfügbar) aus, und versuchen Sie die Validierung erneut.
+* Wenn Sie den Sicherheitsschlüssel immer noch nicht validieren können, ist die Originaldatei möglicherweise beschädigt. Erstellen Sie ein neues Backup des Schlüssels und validieren Sie diese Kopie.
+

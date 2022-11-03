@@ -1,0 +1,16 @@
+---
+permalink: sm-mirroring/why-do-i-see-more-than-one-reserved-capacity-candidate.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volume, pool, 
+summary: Wenn sich mehrere Volumes in einem Pool oder einer Volume-Gruppe befinden, die dem für das Storage-Objekt ausgewählten Kapazitätsprozentsatz entsprechen, werden mehrere Kandidaten angezeigt. 
+---
+= Warum kann ich mehr als einen Kandidaten für reservierte Kapazität sehen?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn sich mehrere Volumes in einem Pool oder einer Volume-Gruppe befinden, die dem für das Storage-Objekt ausgewählten Kapazitätsprozentsatz entsprechen, werden mehrere Kandidaten angezeigt.
+
+Sie können die Liste der empfohlenen Kandidaten aktualisieren, indem Sie den Prozentsatz des physischen Speicherplatzes ändern, den Sie im Basis-Volume für Kopierdienste reservieren möchten. Die besten Kandidaten werden basierend auf Ihrer Auswahl angezeigt.

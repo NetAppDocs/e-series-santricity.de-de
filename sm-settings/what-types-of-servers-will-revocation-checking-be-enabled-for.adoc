@@ -1,0 +1,14 @@
+---
+permalink: sm-settings/what-types-of-servers-will-revocation-checking-be-enabled-for.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, servers, revocation, checking, 
+summary: 'Das Speicher-Array führt Sperrprüfungen durch, wenn es eine Verbindung zu einem AutoSupport-Server, einem externen Schlüsselverwaltungsserver (EKMS), einem Lightweight Directory Access Protocol over SSL (LDAPS)-Server oder einem Syslog-Server herstellt.' 
+---
+= Für welche Servertypen wird die Überprüfung des Widerrufs aktiviert?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das Speicher-Array führt Sperrprüfungen durch, wenn es eine Verbindung zu einem AutoSupport-Server, einem externen Schlüsselverwaltungsserver (EKMS), einem Lightweight Directory Access Protocol over SSL (LDAPS)-Server oder einem Syslog-Server herstellt.

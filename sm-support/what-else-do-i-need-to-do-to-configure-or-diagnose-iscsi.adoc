@@ -1,0 +1,103 @@
+---
+permalink: sm-support/what-else-do-i-need-to-do-to-configure-or-diagnose-iscsi.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, diagnose, iscsi 
+summary: ISCSI-Sitzungen können bei Hosts oder Remote-Storage-Arrays in einer asynchronen Spiegelbeziehung durchgeführt werden. In der folgenden Tabelle sind die System Manager-Funktionen aufgeführt, mit denen Sie diese iSCSI-Sitzungen konfigurieren und verwalten können. 
+---
+= Was muss ich sonst noch tun, um iSCSI zu konfigurieren oder zu diagnostizieren?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ISCSI-Sitzungen können bei Hosts oder Remote-Storage-Arrays in einer asynchronen Spiegelbeziehung durchgeführt werden. In der folgenden Tabelle sind die System Manager-Funktionen aufgeführt, mit denen Sie diese iSCSI-Sitzungen konfigurieren und verwalten können.
+
+[NOTE]
+====
+Die iSCSI-Einstellungen sind nur verfügbar, wenn Ihr Speicher-Array iSCSI unterstützt.
+
+====
+
+
+== Konfigurieren Sie iSCSI
+
+[cols="1a,1a"]
+|===
+| Aktion | Standort 
+
+
+ a| 
+ISCSI-Einstellungen verwalten
+ a| 
+. Wählen Sie Menü:Einstellungen[System].
+. Blättern Sie nach unten zu *iSCSI-Einstellungen*, um alle Verwaltungsfunktionen anzuzeigen.
+
+
+
+
+ a| 
+Konfigurieren Sie die iSCSI-Ports
+ a| 
+. Wählen Sie *Hardware*.
+. Wählen Sie *Rückseite des Regals anzeigen*.
+. Wählen Sie einen Controller aus.
+. Wählen Sie *iSCSI-Ports konfigurieren*.
+
+
+
+
+ a| 
+Legen Sie den Host-CHAP-Schlüssel fest
+ a| 
+. Wählen Sie Menü:Einstellungen[System].
+. Blättern Sie nach unten zu *iSCSI-Einstellungen*, und wählen Sie dann *Authentifizierung konfigurieren*.
+
+
+Oder
+
+. Wählen Sie Menü:Storage[Hosts].
+. Wählen Sie ein Hostmitglied aus.
+. Klicken Sie auf Menü:Registerkarte Einstellungen anzeigen/bearbeiten[Host Ports].
+
+
+|===
+
+
+== ISCSI diagnostizieren
+
+[cols="1a,1a"]
+|===
+| Aktion | Standort 
+
+
+ a| 
+Anzeigen oder Beenden von iSCSI-Sitzungen
+ a| 
+. Wählen Sie Menü:Einstellungen[System].
+. Scrollen Sie nach unten zu *iSCSI-Einstellungen* und wählen Sie dann *iSCSI-Sitzungen anzeigen/beenden* aus.
+
+
+Oder
+
+. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie *Anzeigen/Beenden von iSCSI-Sitzungen*.
+
+
+
+
+ a| 
+Anzeigen von iSCSI-Statistiken
+ a| 
+. Wählen Sie Menü:Einstellungen[System].
+. Scrollen Sie nach unten zu *iSCSI-Einstellungen* und wählen Sie dann *iSCSI-Statistikpakete anzeigen* aus.
+
+
+Oder
+
+. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie *Anzeigen von iSCSI-Statistikpaketen* aus.
+
+
+|===

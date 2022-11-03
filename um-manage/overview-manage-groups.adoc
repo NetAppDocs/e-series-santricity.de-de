@@ -1,0 +1,37 @@
+---
+permalink: um-manage/overview-manage-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, manage, groups 
+summary: Auf der Seite „Gruppen managen“ können Sie eine Reihe von Speicher-Array-Gruppen erstellen, um die Verwaltung zu erleichtern. 
+---
+= Gruppenübersicht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Auf der Seite „Gruppen managen“ können Sie eine Reihe von Speicher-Array-Gruppen erstellen, um die Verwaltung zu erleichtern.
+
+
+
+== Was sind Array-Gruppen?
+
+Sie können Ihre physische und virtualisierte Infrastruktur managen, indem Sie eine Reihe von Storage-Arrays gruppieren. Möglicherweise möchten Sie Storage-Arrays gruppieren, um die Ausführung von Überwachungs- oder Reporting-Aufgaben zu erleichtern.
+
+Es gibt zwei Arten von Gruppen:
+
+* *Alle Gruppe* -- die All-Gruppe ist die Standardgruppe und umfasst alle Speicher-Arrays, die in Ihrem Unternehmen entdeckt wurden. Auf die Gruppe Alle kann über die Hauptansicht zugegriffen werden.
+* *Vom Benutzer erstellte Gruppe* -- Eine vom Benutzer erstellte Gruppe enthält die Speicherarrays, die Sie manuell auswählen, um diese Gruppe hinzuzufügen. Auf von Benutzern erstellte Gruppen kann über die Hauptansicht zugegriffen werden.
+
+
+
+
+== Wie konfiguriere ich Gruppen?
+
+Auf der Seite „Gruppen verwalten“ können Sie eine Gruppe erstellen und dieser Gruppe Arrays hinzufügen.
+
+Weitere Informationen:
+
+* link:create-storage-array-group.html["Speicherarray-Gruppe konfigurieren"]
+

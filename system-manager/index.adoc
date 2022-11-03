@@ -1,0 +1,13 @@
+---
+layout: landing-page 
+sidebar: sidebar 
+permalink: system-manager/index.html 
+summary: Mit der Dokumentation der SANtricity Software können Sie Ihr Storage-Array installieren, einrichten und warten. 
+---
+= Management von einzelnen Arrays mit System Manager 11.7
+:hardbreaks:
+:allow-uri-read: 
+:linkattrs: 
+:imagesdir: ./media/
+
+

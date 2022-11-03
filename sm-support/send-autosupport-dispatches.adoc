@@ -1,0 +1,28 @@
+---
+permalink: sm-support/send-autosupport-dispatches.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, send, autosupport, dispatches 
+summary: Mit System Manager können Sie AutoSupport-Patches an den technischen Support senden, ohne auf einen geplanten Versand warten zu müssen. 
+---
+= Senden Sie AutoSupport-Patches
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit System Manager können Sie AutoSupport-Patches an den technischen Support senden, ohne auf einen geplanten Versand warten zu müssen.
+
+Die AutoSupport-Funktion muss aktiviert sein. Sie sehen, ob die Funktion auf der Seite AutoSupport aktiviert ist.
+
+Dieser Vorgang erfasst Support-Daten und sendet sie automatisch an den technischen Support, damit Probleme behoben werden können.
+
+.Schritte
+. Wählen Sie MENU:Support[Support Center > AutoSupport].
+. Wählen Sie *AutoSupport Entsendung senden*.
++
+Das Dialogfeld Entsendung von AutoSupport senden wird angezeigt.
+
+. Bestätigen Sie den Vorgang, indem Sie *Senden* wählen.
+

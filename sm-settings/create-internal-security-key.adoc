@@ -1,0 +1,84 @@
+---
+permalink: sm-settings/create-internal-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, internal, security, key, 
+summary: Zur Verwendung der Laufwerkssicherheitsfunktion können Sie einen internen Sicherheitsschlüssel erstellen, der von den Controllern und sicheren Laufwerken im Speicher-Array gemeinsam genutzt wird. Interne Schlüssel werden im persistenten Speicher des Controllers aufbewahrt. 
+---
+= Interner Sicherheitsschlüssel erstellen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Zur Verwendung der Laufwerkssicherheitsfunktion können Sie einen internen Sicherheitsschlüssel erstellen, der von den Controllern und sicheren Laufwerken im Speicher-Array gemeinsam genutzt wird. Interne Schlüssel befinden sich im persistenten Speicher des Controllers.
+
+.Bevor Sie beginnen
+* Sichere Laufwerke müssen im Speicher-Array installiert sein. Es können sich bei diesen Laufwerken um vollständige Festplattenverschlüsselung (Full Disk Encryption, FDE) oder FIPS-Laufwerke (Federal Information Processing Standard) handelt.
+* Die Laufwerkssicherheitsfunktion muss aktiviert sein. Andernfalls wird während dieser Aufgabe ein Dialogfeld „Sicherheitsschlüssel nicht erstellen“ geöffnet. Wenden Sie sich bei Bedarf an Ihren Storage-Anbieter, um Anweisungen zur Aktivierung der Laufwerkssicherheitsfunktion zu erhalten.
+
+
+[NOTE]
+====
+Wenn sowohl FDE- als auch FIPS-Laufwerke im Storage Array installiert werden, nutzen sie alle denselben Sicherheitsschlüssel.
+
+====
+In dieser Aufgabe definieren Sie eine Kennung und eine Passphrase, die dem internen Sicherheitsschlüssel zugeordnet werden sollen.
+
+[NOTE]
+====
+Der Passphrase für die Laufwerksicherheit ist unabhängig vom Administratorkennwort des Speicherarrays.
+
+====
+.Schritte
+. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie unter *Security Key Management* die Option *Interner Schlüssel erstellen*.
++
+Wenn Sie noch keinen Sicherheitsschlüssel generiert haben, wird das Dialogfeld Sicherheitsschlüssel erstellen geöffnet.
+
+. Geben Sie Informationen in die folgenden Felder ein:
++
+** *Einen Sicherheitsschlüssel-Identifier definieren* -- Sie können entweder den Standardwert akzeptieren (Speicherarray-Name und Zeitstempel, der von der Controller-Firmware generiert wird) oder Ihren eigenen Wert eingeben. Sie können bis zu 189 alphanumerische Zeichen ohne Leerzeichen, Satzzeichen oder Symbole eingeben.
++
+[NOTE]
+====
+Zusätzliche Zeichen werden automatisch generiert und an beide Enden der eingegebenen Zeichenfolge angehängt. Die generierten Zeichen stellen sicher, dass die Kennung eindeutig ist.
+
+====
+** *Passphrase definieren/Passphrase erneut eingeben* -- Geben Sie eine Passphrase ein und bestätigen Sie diese. Der Wert kann 8 bis 32 Zeichen lang sein und muss Folgendes enthalten:
++
+*** Ein Großbuchstabe (einer oder mehrere). Beachten Sie, dass die Passphrase Groß- und Kleinschreibung beachtet.
+*** Eine Nummer (eine oder mehrere).
+*** Ein nicht-alphanumerisches Zeichen wie !, *, @ (eines oder mehrere).
+
+
+
+
++
+[CAUTION]
+====
+*Beachten Sie, Ihre Einträge zur späteren Verwendung aufzuzeichnen*. Wenn Sie ein sicheres Laufwerk aus dem Speicher-Array verschieben müssen, müssen Sie die Kennung kennen und den Ausdruck übergeben, um Laufwerkdaten zu entsperren.
+
+====
+. Klicken Sie Auf *Erstellen*.
++
+Der Sicherheitsschlüssel wird auf dem Controller an einem nicht zugänglichen Ort gespeichert. Zusammen mit dem eigentlichen Schlüssel gibt es eine verschlüsselte Schlüsseldatei, die von Ihrem Browser heruntergeladen wird.
+
++
+[NOTE]
+====
+Der Pfad für die heruntergeladene Datei hängt möglicherweise vom Standard-Download-Speicherort Ihres Browsers ab.
+
+====
+. Notieren Sie sich die Schlüsselkennung, den Passphrase und den Speicherort der heruntergeladenen Schlüsseldatei, und klicken Sie dann auf *Schließen*.
+
+
+Sie können jetzt sichere Volume-Gruppen oder -Pools erstellen oder die Sicherheit bei vorhandenen Volume-Gruppen und -Pools aktivieren.
+
+[NOTE]
+====
+Wenn die Stromversorgung der Laufwerke aus- und wieder eingeschaltet wird, wechseln alle sicheren Laufwerke in den Status Sicherheitsverriegelt. In diesem Zustand sind die Daten nicht zugänglich, bis der Controller den korrekten Sicherheitsschlüssel während der Laufwerkinitialisierung anwendet. Wenn ein gesperrtes Laufwerk physisch entfernt und in einem anderen System installiert wird, verhindert der Status „Sicherheitsgesperrt“ unbefugten Zugriff auf seine Daten.
+
+====
+Sie sollten den Sicherheitsschlüssel überprüfen, um sicherzustellen, dass die Schlüsseldatei nicht beschädigt ist.

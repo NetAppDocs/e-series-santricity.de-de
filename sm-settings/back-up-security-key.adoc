@@ -1,0 +1,54 @@
+---
+permalink: sm-settings/back-up-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, backup, security, key, 
+summary: Nach dem Erstellen oder Ändern eines Sicherheitsschlüssels können Sie eine Sicherungskopie der Schlüsseldatei erstellen, falls das Original beschädigt wird. 
+---
+= Sicherheitsschlüssel sichern
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Nach dem Erstellen oder Ändern eines Sicherheitsschlüssels können Sie eine Sicherungskopie der Schlüsseldatei erstellen, falls das Original beschädigt wird.
+
+In dieser Aufgabe wird beschrieben, wie Sie einen zuvor erstellten Sicherheitsschlüssel sichern. Während dieses Verfahrens erstellen Sie einen neuen Passphrase für das Backup. Diese Passphrase muss nicht mit der Passphrase übereinstimmen, die bei der Erstellung des ursprünglichen Schlüssels oder der letzten Änderung verwendet wurde. Der Passphrase wird nur auf das Backup angewendet, das Sie erstellen.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie unter * Security Key Management* die Option *Back Up Key*.
++
+Das Dialogfeld Sicherheitsschlüssel sichern wird geöffnet.
+
+. Geben Sie in den Feldern *Passphrase definieren/Passphrase erneut eingeben* einen Passphrase für dieses Backup ein und bestätigen Sie diesen.
++
+Der Wert kann 8 bis 32 Zeichen lang sein und muss Folgendes enthalten:
+
++
+** Ein Großbuchstabe (einer oder mehrere)
+** Eine Nummer (eine oder mehrere)
+** Ein nicht-alphanumerisches Zeichen wie !, *, @ (ein oder mehrere)
+
+
++
+[CAUTION]
+====
+*Bitte notieren Sie Ihren Eintrag für den späteren Gebrauch*. Sie benötigen den Passphrase, um auf die Sicherung dieses Sicherheitsschlüssels zuzugreifen.
+
+====
+. Klicken Sie Auf *Sichern*.
++
+Ein Backup des Sicherheitsschlüssels wird auf Ihren lokalen Host heruntergeladen, und dann wird das Dialogfeld *Sicherheitsschlüssel sichern/aufzeichnen* geöffnet.
+
++
+[NOTE]
+====
+Der Pfad für die heruntergeladene Sicherheitsschlüsseldatei hängt möglicherweise vom Standard-Download-Speicherort Ihres Browsers ab.
+
+====
+. Zeichnen Sie Ihren Passphrase an einem sicheren Ort auf, und klicken Sie dann auf *Schließen*.
+
+
+Sie sollten den Sicherungsschlüssel überprüfen.

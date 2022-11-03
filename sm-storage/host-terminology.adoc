@@ -1,0 +1,95 @@
+---
+permalink: sm-storage/host-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, host, terms 
+summary: Erfahren Sie, wie die Host-Bedingungen auf Ihr Storage Array zutreffen. 
+---
+= Hostterminologie
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Erfahren Sie, wie die Host-Bedingungen auf Ihr Storage Array zutreffen.
+
+[cols="25h,~"]
+|===
+| Komponente | Definition 
+
+
+ a| 
+Host
+ a| 
+Ein Host ist ein Server, der I/O an ein Volume auf einem Storage-Array sendet.
+
+
+
+ a| 
+Host-Name
+ a| 
+Der Hostname sollte dem Systemnamen des Hosts entsprechen.
+
+
+
+ a| 
+Host-Cluster
+ a| 
+Ein Host-Cluster ist eine Gruppe von Hosts. Sie erstellen ein Host-Cluster, damit Sie mehrere Hosts dieselben Volumes ganz einfach zuweisen können.
+
+
+
+ a| 
+Host-Schnittstellenprotokoll
+ a| 
+Ein Host-Schnittstellenprotokoll ist die Verbindung (wie Fibre Channel, iSCSI usw.) zwischen den Controllern und den Hosts.
+
+
+
+ a| 
+HBA oder Netzwerkschnittstellenkarte (NIC)
+ a| 
+Ein Host Bus Adapter (HBA) ist eine Platine, die sich auf einem Host befindet und einen oder mehrere Host-Ports enthält.
+
+
+
+ a| 
+Host-Port
+ a| 
+Ein Host Port ist ein Port an einem Host Bus Adapter (HBA), der die physische Verbindung zu einem Controller bereitstellt und für I/O-Vorgänge genutzt wird.
+
+
+
+ a| 
+Host-Port-ID
+ a| 
+Eine Host-Port-ID ist ein eindeutiger weltweiter Name, der jedem Host-Port an einem Host Bus Adapter (HBA) zugeordnet ist.
+
+* ISCSI-Host-Port-IDs (Internet Small Computer System Interface) müssen 1 bis 233 Zeichen lang sein. ISCSI-Host-Port-IDs werden im Standard-IQN-Format angezeigt (z. B. `iqn.xxx.com.xxx:8b3ad`).
+* Nicht-iSCSI-Host-Port-IDs wie Fibre Channel und Serial Attached SCSI (SAS) werden nach jeweils zwei Zeichen (z. B. `xx:yy:zz`). Die Fibre-Channel-Host-Port-IDs müssen 16 Zeichen lang sein.
+
+
+
+
+ a| 
+Host-Betriebssystem-Typ
+ a| 
+Der Host-Betriebssystemtyp ist eine Konfigurationseinstellung, die definiert, wie die Controller im Speicher-Array auf I/O reagieren, abhängig vom Betriebssystem (oder Variante) des Hosts. Dies wird manchmal auch als _Host type_ kurz bezeichnet.
+
+
+
+ a| 
+Controller-Host-Port
+ a| 
+Ein Controller-Host-Port ist ein Port am Controller, der die physische Verbindung zu einem Host bereitstellt und für I/O-Vorgänge verwendet wird.
+
+
+
+ a| 
+LUN
+ a| 
+Eine Logical Unit Number (LUN) ist die Nummer, die dem Adressraum zugewiesen ist, den ein Host für den Zugriff auf ein Volume verwendet. Das Volume wird dem Host als Kapazität in Form einer LUN präsentiert.
+
+Jeder Host verfügt über seinen eigenen LUN-Adressraum. Daher kann dieselbe LUN von unterschiedlichen Hosts für den Zugriff auf verschiedene Volumes verwendet werden.
+
+|===

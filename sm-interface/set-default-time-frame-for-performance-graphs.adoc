@@ -1,0 +1,22 @@
+---
+permalink: sm-interface/set-default-time-frame-for-performance-graphs.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, time, graphs 
+summary: Sie können den Standardzeitrahmen ändern, der von den Performance-Diagrammen angezeigt wird. 
+---
+= Legen Sie den Standardzeitrahmen für Performance-Diagramme fest
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Standardzeitrahmen ändern, der von den Performance-Diagrammen angezeigt wird.
+
+Performance-Diagramme, die auf der Startseite und auf der Seite Performance angezeigt werden, zeigen zunächst einen Zeitrahmen von 1 Stunde an. Einstellungen werden im lokalen Speicher des Browsers gespeichert, so dass alle Benutzer ihre eigenen Einstellungen haben können.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[Voreinstellungen festlegen].
+. Wählen Sie in der Dropdown-Liste entweder *5 Minuten*, *1 Stunde*, *8 Stunden*, *1 Tag* oder *7 Tage*, Und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
+

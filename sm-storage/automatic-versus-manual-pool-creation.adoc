@@ -1,0 +1,47 @@
+---
+permalink: sm-storage/automatic-versus-manual-pool-creation.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, automatic, manual, pool 
+summary: Sie erstellen Pools automatisch oder manuell, um eine Gruppierung des physischen Speichers zu ermöglichen und dann dynamisch nach Bedarf zuweisen zu können. Wenn ein Pool erstellt wird, können Sie physische Laufwerke hinzufügen. 
+---
+= Automatische Erstellung von Pools gegenüber manueller Poolanlage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie erstellen Pools automatisch oder manuell, um eine Gruppierung des physischen Speichers zu ermöglichen und dann dynamisch nach Bedarf zuweisen zu können. Wenn ein Pool erstellt wird, können Sie physische Laufwerke hinzufügen.
+
+
+
+== Automatische Erstellung
+
+Die automatische Poolerstellung wird initiiert, wenn der System Manager nicht zugewiesene Kapazitäten in einem Speicher-Array erkennt. Wenn nicht zugewiesene Kapazität erkannt wird, fordert System Manager Sie automatisch auf, einen oder mehrere Pools zu erstellen oder die nicht zugewiesene Kapazität einem vorhandenen oder beiden Pool hinzuzufügen.
+
+Automatische Poolerstellung tritt auf, wenn eine dieser Bedingungen zutrifft:
+
+* Pools sind nicht im Speicher-Array vorhanden, und es gibt genügend ähnliche Laufwerke, um einen neuen Pool zu erstellen.
+* Ein Speicher-Array mit mindestens einem Pool wird mit neuen Laufwerken erweitert.
+
+
+Jedes Laufwerk in einem Pool muss vom gleichen Laufwerkstyp (HDD oder SSD) sein und eine ähnliche Kapazität haben. Sie werden von System Manager aufgefordert, die folgenden Aufgaben auszuführen:
+
+* Erstellen Sie einen einzelnen Pool, wenn eine ausreichende Anzahl von Laufwerken dieser Typen vorhanden ist.
+* Erstellen Sie mehrere Pools, wenn die nicht zugewiesene Kapazität aus verschiedenen Laufwerkstypen besteht.
+* Fügen Sie die Laufwerke zum vorhandenen Pool hinzu, wenn bereits ein Pool im Speicher-Array definiert ist, und fügen Sie dem Pool neue Laufwerke desselben Laufwerkstyps hinzu.
+* Fügen Sie die Laufwerke desselben Laufwerkstyps zum vorhandenen Pool hinzu. Erstellen Sie dann mithilfe der anderen Laufwerktypen verschiedene Pools, wenn die neuen Laufwerke unterschiedliche Laufwerkstypen haben.
+
+
+
+
+== Manuelle Erstellung
+
+Sie möchten möglicherweise einen Pool manuell erstellen, wenn die automatische Erstellung die beste Konfiguration nicht bestimmen kann. Diese Situation kann aus einem der folgenden Gründe auftreten:
+
+* Die neuen Laufwerke können potenziell mehr als einem Pool hinzugefügt werden.
+* Mindestens eine der neuen Poolkandidaten kann einen Shelf-Verlust-Schutz oder Schubladenschutz verwenden.
+* Mindestens einer der aktuellen Poolkandidaten kann den Schutz vor Regalverlust oder Schubladenverlust nicht aufrechterhalten.
+
+
+Möglicherweise möchten Sie auch einen Pool manuell erstellen, wenn Sie mehrere Anwendungen auf Ihrem Speicher-Array haben und nicht möchten, dass sie mit den gleichen Laufwerkressourcen konkurrieren. In diesem Fall könnten Sie erwägen, manuell einen kleineren Pool für eine oder mehrere Anwendungen zu erstellen. Sie können nur ein oder zwei Volumes zuweisen, statt den Workload einem großen Pool mit vielen Volumes zuzuweisen, über die die Daten verteilt werden sollen. Durch die manuelle Erstellung eines separaten Pools, der dem Workload einer bestimmten Applikation zugewiesen ist, kann die Performance von Storage-Array-Operationen mit weniger Konflikten schneller erfolgen.

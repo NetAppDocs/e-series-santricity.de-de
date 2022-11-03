@@ -1,0 +1,18 @@
+---
+permalink: sm-storage/how-do-performance-statistics-for-individual-volumes-relate-to-the-total.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, performance, statistics, 
+summary: Die Statistiken für Pools und Volume-Gruppen werden durch Aggregation aller Volumes einschließlich reservierter Kapazitäts-Volumes berechnet. 
+---
+= Wie verhält sich Performance-Statistiken zu einzelnen Volumes mit dem Gesamt?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Statistiken für Pools und Volume-Gruppen werden durch Aggregation aller Volumes einschließlich reservierter Kapazitäts-Volumes berechnet.
+
+Die reservierte Kapazität wird intern vom Storage-System zur Unterstützung von Thin Volumes, Snapshots und asynchroner Spiegelung genutzt und ist für I/O-Hosts nicht sichtbar. Aus diesem Grund werden die Statistiken für Pool, Controller und Speicher-Array möglicherweise nicht als Summe der sichtbaren Volumes angezeigt.
+
+Für Applikations- und Workload-Statistiken werden jedoch nur die sichtbaren Volumes aggregiert.

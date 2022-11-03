@@ -1,0 +1,34 @@
+---
+permalink: sm-support/collect-configuration-data.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, collect, configuration data 
+summary: Sie können RAID-Konfigurationsdaten vom Controller speichern. Dieser enthält alle Daten für Volume-Gruppen und Festplatten-Pools. Anschließend können Sie sich an den technischen Support wenden, um Hilfe beim Wiederherstellen der Daten zu erhalten. 
+---
+= Erfassen von Konfigurationsdaten
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können RAID-Konfigurationsdaten vom Controller speichern. Dieser enthält alle Daten für Volume-Gruppen und Festplatten-Pools. Anschließend können Sie sich an den technischen Support wenden, um Hilfe beim Wiederherstellen der Daten zu erhalten.
+
+In dieser Aufgabe wird beschrieben, wie der aktuelle Status der RAID-Konfigurationsdatenbank gespeichert wird. Diese Daten werden vom RPA-Speicherort des Controllers abgerufen.
+
+[NOTE]
+====
+Die Funktion Konfigurationsdaten erfassen speichert die gleichen Informationen wie der CLI-Befehl für `save storageArray dbmDatabase`.
+
+====
+Sie sollten diese Aufgabe nur ausführen, wenn Sie von einer Recovery Guru-Operation oder technischem Support dazu aufgefordert werden.
+
+.Schritte
+. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie *Konfigurationsdaten Erfassen*.
+. Klicken Sie im Dialogfeld auf *Collect*.
++
+Die Datei, `configurationData-<arrayName>-<dateTime>.7z`, Wird im Ordner Downloads für Ihren Browser gespeichert.
+
+. Wenden Sie sich an den technischen Support, um weitere Informationen zum Senden der Datei an sie und zum Laden der Daten zurück in das System zu erhalten.
+

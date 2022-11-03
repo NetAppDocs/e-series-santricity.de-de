@@ -1,0 +1,46 @@
+---
+permalink: sm-settings/access-management-with-directory-services.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, directory services, 
+summary: 'Für die Zugriffsverwaltung können Administratoren einen LDAP-Server (Lightweight Directory Access Protocol) und einen Verzeichnisdienst wie das Microsoft Active Directory verwenden.' 
+---
+= Zugriffsmanagement mit Verzeichnisdiensten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Für die Zugriffsverwaltung können Administratoren einen LDAP-Server (Lightweight Directory Access Protocol) und einen Verzeichnisdienst wie Microsoft Active Directory verwenden.
+
+
+
+== Konfigurationsworkflow
+
+Wenn ein LDAP-Server und ein Verzeichnisdienst im Netzwerk verwendet werden, funktioniert die Konfiguration wie folgt:
+
+. Ein Administrator meldet sich bei System Manager mit einem Benutzerprofil an, das die Berechtigungen für Sicherheitsadministrator enthält.
++
+[NOTE]
+====
+Der `admin` Der Benutzer hat vollen Zugriff auf alle Funktionen im System.
+
+====
+. Der Administrator gibt die Konfigurationseinstellungen für den LDAP-Server ein. Zu den Einstellungen gehören der Domain-Name, die URL und die Bind-Kontoinformationen.
+. Wenn der LDAP-Server ein sicheres Protokoll (LDAPS) verwendet, lädt der Administrator eine Zertifikatskette für die Authentifizierung zwischen dem LDAP-Server und dem Speicher-Array hoch.
+. Nachdem die Serververbindung hergestellt wurde, ordnet der Administrator die Benutzergruppen den Rollen des Speicherarrays zu. Diese Rollen sind vordefiniert und können nicht geändert werden.
+. Der Administrator testet die Verbindung zwischen dem LDAP-Server und dem Speicher-Array.
+. Benutzer melden sich mit ihren zugewiesenen LDAP/Directory Services-Anmeldedaten am System an.
+
+
+
+
+== Vereinfachtes
+
+Bei der Verwendung von Verzeichnisdiensten zur Authentifizierung können Administratoren die folgenden Verwaltungsaufgaben ausführen:
+
+* Fügen Sie einen Verzeichnisserver hinzu.
+* Bearbeiten der Einstellungen des Verzeichnisservers.
+* Zuordnen von LDAP-Benutzern zu lokalen Benutzerrollen.
+* Entfernen Sie einen Verzeichnisserver.
+

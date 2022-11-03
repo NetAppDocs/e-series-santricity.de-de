@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/why-would-i-need-to-create-a-host-cluster.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, host, cluster 
+summary: Sie müssen ein Host-Cluster erstellen, wenn Sie mindestens zwei Hosts über gemeinsamen Zugriff auf dieselbe Gruppe von Volumes verfügen möchten. Normalerweise sind auf den einzelnen Hosts Clustering-Software installiert, um den Volume-Zugriff zu koordinieren. 
+---
+= Warum sollte ich ein Host-Cluster erstellen?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie müssen ein Host-Cluster erstellen, wenn Sie mindestens zwei Hosts über gemeinsamen Zugriff auf dieselbe Gruppe von Volumes verfügen möchten. Normalerweise sind auf den einzelnen Hosts Clustering-Software installiert, um den Volume-Zugriff zu koordinieren.

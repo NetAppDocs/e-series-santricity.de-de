@@ -1,0 +1,51 @@
+---
+permalink: sm-settings/what-else-do-i-need-to-do-to-configure-or-diagnose-iser-over-infiniband.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, diagnose, iser, infiniBand, 
+summary: In der folgenden Tabelle werden die System Manager Funktionen aufgeführt, mit denen Sie iSER-over-InfiniBand-Sitzungen konfigurieren und managen können. 
+---
+= Was muss ich noch tun, um iSER over InfiniBand zu konfigurieren oder zu diagnostizieren?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In der folgenden Tabelle werden die System Manager Funktionen aufgeführt, mit denen Sie iSER-over-InfiniBand-Sitzungen konfigurieren und managen können.
+
+[NOTE]
+====
+Die iSER-over-InfiniBand-Einstellungen sind nur verfügbar, wenn der Controller Ihres Storage-Arrays einen iSER-over-InfiniBand-Host-Management-Port umfasst.
+
+====
+[cols="35h,~"]
+|===
+| Aktion | Standort 
+
+
+ a| 
+Konfigurieren Sie iSER-over-InfiniBand-Ports
+ a| 
+. Wählen Sie *Hardware*.
+. Wählen Sie *Rückseite des Regals anzeigen*.
+. Wählen Sie einen Controller aus.
+. Wählen Sie *iSER-over-InfiniBand-Ports konfigurieren*.
+
+
+Oder
+
+. Wählen Sie Menü:Einstellungen[System].
+. Scrollen Sie nach unten nach *iSER über InfiniBand-Einstellungen*, und wählen Sie dann *iSER über InfiniBand-Ports konfigurieren* aus.
+
+
+
+
+ a| 
+Zeigen Sie iSER-over-InfiniBand-Statistiken an
+ a| 
+. Wählen Sie Menü:Einstellungen[System].
+. Scrollen Sie nach unten nach *iSER über InfiniBand-Einstellungen* und wählen Sie dann *Anzeigen iSER über InfiniBand-Statistik* aus.
+
+
+|===

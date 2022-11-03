@@ -1,0 +1,71 @@
+---
+permalink: sm-storage/how-reserved-capacity-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved, capacity, 
+summary: Reservierte Kapazität wird automatisch erstellt, wenn Kopierservice-Vorgänge wie Snapshots oder asynchrone Spiegelungsvorgänge für Ihre Volumes bereitgestellt werden. 
+---
+= Funktionsweise von reservierter Kapazität
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Reservierte Kapazität wird automatisch erstellt, wenn Kopierservice-Vorgänge wie Snapshots oder asynchrone Spiegelungsvorgänge für Ihre Volumes bereitgestellt werden.
+
+Der Zweck der reservierten Kapazität besteht darin, Datenänderungen auf diesen Volumes zu speichern, sollte etwas schief gehen. Wie Volumes wird auch reservierte Kapazität aus Pools oder Volume-Gruppen erstellt.
+
+
+
+== Kopieren Sie Serviceobjekte mit reservierter Kapazität
+
+Die reservierte Kapazität ist der zugrunde liegende Storage-Mechanismus, der von diesen Service-Objekten der Kopie verwendet wird:
+
+* Snapshot Gruppen
+* Lese-/Schreib-Snapshot-Volumes
+* Volumes für Mitglieder der Konsistenzgruppe
+* Gespiegelte Paar-Volumes
+
+
+Wenn Sie diese Servicepobjekte erstellen oder erweitern, müssen Sie neue reservierte Kapazität entweder aus einem Pool oder einer Volume-Gruppe erstellen. Die reservierte Kapazität beträgt normalerweise 40 % des Basis-Volumes für Snapshot-Vorgänge und 20 % des Basis-Volumes für asynchrone Spiegelungsvorgänge. Die reservierte Kapazität kann jedoch je nach Anzahl der Änderungen an den ursprünglichen Daten variieren.
+
+
+
+== Thin Volumes und reservierte Kapazität
+
+Wenn bei einem Thin-Volume die maximale gemeldete Kapazität von 256 tib erreicht ist, können Sie seine Kapazität nicht erhöhen. Stellen Sie sicher, dass die reservierte Kapazität des Thin-Volumes auf eine Größe gesetzt ist, die größer als die maximale gemeldete Kapazität ist. (Ein Thin Volume wird immer über Thin Provisioning bereitgestellt. Das bedeutet, dass die Kapazität beim Schreiben der Daten auf das Volume zugewiesen wird.)
+
+Wenn Sie reservierte Kapazität mit einem Thin-Volume in einem Pool erstellen, überprüfen Sie die folgenden Aktionen und Ergebnisse mit der reservierten Kapazität:
+
+* Wenn die reservierte Kapazität eines Thin Volume ausfällt, wechselt das Thin Volume selbst nicht automatisch in den Status „Fehlgeschlagen“. Da jedoch alle I/O-Vorgänge auf einem Thin Volume Zugriff auf das reservierte Kapazitäts-Volume erfordern, werden I/O-Vorgänge immer dazu führen, dass eine Check Condition an den anfordernden Host zurückgegeben wird. Kann das zugrunde liegende Problem mit dem reservierten Kapazitäts-Volume gelöst werden, wird das reservierte Kapazitäts-Volume wieder in einen optimalen Zustand zurückversetzt und das Thin Volume wird wieder in Funktion.
+* Wenn Sie ein vorhandenes Thin Volume zum Abschließen eines asynchronen gespiegelten Paares verwenden, wird dieses Thin Volume mit einem neuen reservierten Kapazitäts-Volume neu initialisiert. Bei der ersten Synchronisierung werden nur bereitgestellte Blöcke auf der primären Seite übertragen.
+
+
+
+
+== Kapazitätswarnungen
+
+Das Copy-Service-Objekt verfügt über eine konfigurierbare Kapazitätswarnung und Alarmschwelle sowie eine konfigurierbare Antwort, wenn die reservierte Kapazität voll ist.
+
+Wenn sich die reservierte Kapazität eines Volume eines Copy-Service-Objekts dem Füllpunkt nähert, wird dem Benutzer eine Warnmeldung ausgegeben. Standardmäßig wird diese Warnmeldung ausgegeben, wenn das reservierte Kapazitäts-Volume zu 75 % voll ist. Sie können diesen Warnhinweis jedoch nach Bedarf vertikal oder abwärts anpassen. Wenn diese Meldung erhalten wird, können Sie die Kapazität des reservierten Kapazitätsvolumes zu diesem Zeitpunkt erhöhen. Jedes Copy-Service-Objekt kann hier unabhängig konfiguriert werden.
+
+
+
+== Verwaiste reservierte Kapazitäts-Volumes
+
+Ein verwaiste kapazitätsstarkes Volume ist ein Volume, das keine Daten mehr für Kopierservicevorgänge speichert, da das zugehörige Copy-Service-Objekt gelöscht wurde. Sobald das Copy-Service-Objekt gelöscht wurde, sollte auch das reservierte Kapazitäts-Volume gelöscht werden. Das reservierte Kapazitäts-Volume konnte jedoch nicht gelöscht werden.
+
+Da auf verwaiste reservierte Kapazitäts-Volumes kein Host zugegriffen wird, sind sie Kandidaten für eine Rückgewinnung. Löschen Sie das verwaiste Volumes mit reservierter Kapazität manuell, sodass Sie dessen Kapazität für andere Vorgänge nutzen können.
+
+System Manager benachrichtigt Sie über verwaiste Kapazitäts-Volumes mit einer Meldung „nicht genutzte Kapazität neu erstellen“ im Bereich „Benachrichtigungen“ auf der Startseite. Sie können auf *ungenutzte Kapazität zurückgewinnen* klicken, um das Dialogfeld „ungenutzte Kapazität neu zuweisen“ anzuzeigen, in dem Sie das verwaiste Volumen der reservierten Kapazität löschen können.
+
+
+
+== Merkmale der reservierten Kapazität
+
+* Für die reservierte Kapazität muss während der Volume-Erstellung berücksichtigt werden, um ausreichend freie Kapazität zur Verfügung zu haben.
+* Die reservierte Kapazität kann kleiner sein als das Basis-Volume (die minimale Größe beträgt 8 MiB).
+* Einige Kapazität wird durch Metadaten verbraucht, aber es ist sehr wenig (192 KiB), somit muss man sie nicht bei der Bestimmung der Größe des reservierten Kapazitäts-Volume berücksichtigen.
+* Die reservierte Kapazität kann nicht direkt von einem Host gelesen oder geschrieben werden.
+* Für jedes Snapshot Volume mit Lese-/Schreibvorgängen, für jede Snapshot Gruppe, für ein Volume für Mitglied der Konsistenzgruppe und für ein gespiegeltes Paar-Volume ist reservierte Kapazität vorhanden.
+

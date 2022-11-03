@@ -1,0 +1,47 @@
+---
+permalink: sm-settings/switch-from-external-to-internal-key-management.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, switch, external, internal, key, management, 
+summary: Sie können die Verwaltungsmethode für die Laufwerksicherheit von einem externen Schlüsselserver in die interne Methode ändern, die vom Speicher-Array verwendet wird. Der zuvor für das externe Verschlüsselungsmanagement definierte Sicherheitsschlüssel wird dann für das interne Verschlüsselungsmanagement verwendet. 
+---
+= Wechsel von externem zu internem Verschlüsselungsmanagement
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Verwaltungsmethode für die Laufwerksicherheit von einem externen Schlüsselserver in die interne Methode ändern, die vom Speicher-Array verwendet wird. Der zuvor für das externe Verschlüsselungsmanagement definierte Sicherheitsschlüssel wird dann für das interne Verschlüsselungsmanagement verwendet.
+
+In dieser Aufgabe deaktivieren Sie die externe Schlüsselverwaltung und laden eine neue Sicherungskopie auf Ihren lokalen Host herunter. Der vorhandene Schlüssel wird weiterhin für die Laufwerksicherheit verwendet, wird aber intern im Speicher-Array verwaltet.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie unter * Security Key Management* die Option *External Key Management deaktivieren* aus.
++
+Das Dialogfeld External Key Management deaktivieren wird geöffnet.
+
+. Geben Sie unter *Passphrase definieren/Passphrase erneut eingeben* einen Passphrase für die Sicherung des Schlüssels ein und bestätigen Sie diesen. Der Wert kann 8 bis 32 Zeichen lang sein und muss Folgendes enthalten:
++
+** Ein Großbuchstabe (einer oder mehrere). Beachten Sie, dass die Passphrase Groß- und Kleinschreibung beachtet.
+** Eine Nummer (eine oder mehrere).
+** Ein nicht-alphanumerisches Zeichen wie !, *, @ (eines oder mehrere).
+
+
++
+[CAUTION]
+====
+_Notieren Sie sich Ihre Einträge für die spätere Verwendung_. Wenn Sie ein sicheres Laufwerk aus dem Speicher-Array verschieben müssen, müssen Sie die Kennung kennen und den Ausdruck übergeben, um Laufwerkdaten zu entsperren.
+
+====
+. Klicken Sie Auf *Deaktivieren*.
++
+Der Backup-Schlüssel wird auf Ihren lokalen Host heruntergeladen.
+
+. Notieren Sie sich die Schlüsselkennung, den Passphrase und den Speicherort der heruntergeladenen Schlüsseldatei, und klicken Sie dann auf *Schließen*.
+
+
+Die Laufwerksicherheit wird jetzt intern über das Speicher-Array verwaltet.
+
+Sie sollten den Sicherheitsschlüssel überprüfen, um sicherzustellen, dass die Schlüsseldatei nicht beschädigt ist.

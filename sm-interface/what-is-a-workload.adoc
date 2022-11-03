@@ -1,0 +1,18 @@
+---
+permalink: sm-interface/what-is-a-workload.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, workload 
+summary: Für einige Applikationen im Netzwerk, z. B. SQL Server oder Exchange, können Sie einen Workload definieren, der den Storage für die jeweilige Applikation optimiert. 
+---
+= Was ist ein Workload?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Für einige Applikationen im Netzwerk, z. B. SQL Server oder Exchange, können Sie einen Workload definieren, der den Storage für die jeweilige Applikation optimiert.
+
+Ein Workload ist ein Storage-Objekt, das eine Applikation unterstützt. Sie können einen oder mehrere Workloads oder Instanzen pro Applikation definieren. Bei einigen Applikationen konfiguriert das System den Workload so, dass er Volumes mit ähnlichen zugrunde liegenden Volume-Merkmalen enthält. Diese Volume-Merkmale werden basierend auf dem Applikationstyp optimiert, den der Workload unterstützt. Wenn Sie beispielsweise einen Workload erstellen, der eine Microsoft SQL Server Applikation unterstützt und anschließend Volumes für diesen Workload erstellt, werden die zugrunde liegenden Volume-Merkmale zur Unterstützung von Microsoft SQL Server optimiert.
+
+Während der Volume-Erstellung werden Sie aufgefordert, Fragen zur Verwendung eines Workloads zu beantworten. Wenn Sie beispielsweise Volumes für Microsoft Exchange erstellen, werden Sie gefragt, wie viele Mailboxen Sie benötigen, wie viele Mailboxen Ihre durchschnittlichen Anforderungen an die Mailbox-Kapazität sind und wie viele Kopien der Datenbank Sie benötigen. Das System erstellt anhand dieser Informationen eine optimale Volume-Konfiguration für Sie, die Sie nach Bedarf bearbeiten können.

@@ -1,0 +1,56 @@
+---
+permalink: sm-storage/overview-hosts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hosts 
+summary: Sie können Hosts und Host-Cluster konfigurieren, die die Verbindungen zwischen dem Speicher-Array und den Datenservern definieren. 
+---
+= Übersicht über Hosts und Host-Cluster
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Hosts und Host-Cluster konfigurieren, die die Verbindungen zwischen dem Speicher-Array und den Datenservern definieren.
+
+
+
+== Was sind Hosts und Host Cluster?
+
+Ein _Host_ ist ein Server, der I/O zu einem Volume auf einem Storage Array sendet. Ein_Host-Cluster_ ist eine Gruppe von Hosts, die Sie erstellen können, um dieselben Volumes mehreren Hosts zuzuweisen.
+
+Weitere Informationen:
+
+* link:host-terminology.html["Hostterminologie"]
+* link:access-volumes.html["Zugriff auf Volumes"]
+* link:maximum-number-of-luns.html["Maximale Anzahl an LUNs"]
+
+
+
+
+== Wie konfiguriere ich Hosts und Host Cluster?
+
+Zum Definieren von Hostverbindungen können Sie entweder zulassen, dass ein Host Context Agent (HCA) die Hosts automatisch erkennt oder Sie können im Menü:Speicher[Hosts] den Host manuell konfigurieren. Wenn mindestens zwei Hosts den Zugriff auf dieselbe Gruppe von Volumes gemeinsam nutzen möchten, können Sie dann einen Cluster definieren und die Volumes diesem Cluster zuweisen.
+
+Weitere Informationen:
+
+* link:automatic-versus-manual-host-creation.html["Automatische statt manueller Host-Erstellung"]
+* link:how-volumes-are-assigned-to-hosts-and-host-clusters.html["Wie Volumes Hosts und Host-Clustern zugewiesen werden"]
+* link:workflow-for-creating-hosts-and-assigning-volumes.html["Workflow für Host-Erstellung und Volume-Zuweisung"]
+* link:create-host-automatically.html["Host automatisch erstellen"]
+* link:create-host-manually.html["Host manuell erstellen"]
+* link:create-host-cluster.html["Erstellen Sie den Host-Cluster"]
+* link:assign-volumes.html["Weisen Sie Hosts Volumes zu"]
+
+
+
+
+== Verwandte Informationen
+
+Weitere Informationen zu Aufgaben für Hosts:
+
+* link:../sm-settings/set-automatic-load-balancing.html["Automatische Lastverteilung festlegen"]
+* link:../sm-settings/set-host-connectivity-reporting.html["Legen Sie die Berichterstellung für Host-Konnektivität fest"]
+* link:../sm-settings/change-default-host-type.html["Ändern des Standard-Hosttyps"]
+

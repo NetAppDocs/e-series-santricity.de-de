@@ -1,0 +1,95 @@
+---
+permalink: sm-settings/automatic-load-balancing-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, automatic, load, balancing, 
+summary: Der automatische Lastausgleich ermöglicht ein verbessertes I/O-Ressourcenmanagement, das dynamisch auf Laständerungen im Laufe der Zeit reagiert und die Eigentümerschaft der Volume-Controller automatisch angepasst wird, um Lastwucht-Ungleichgewicht zu beheben, wenn die Workloads zwischen den Controllern verschoben werden. 
+---
+= Automatischer Lastausgleich – Übersicht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der automatische Lastausgleich ermöglicht ein verbessertes I/O-Ressourcenmanagement, das dynamisch auf Laständerungen im Laufe der Zeit reagiert und die Eigentümerschaft der Volume-Controller automatisch angepasst wird, um Lastwucht-Ungleichgewicht zu beheben, wenn die Workloads zwischen den Controllern verschoben werden.
+
+Die Auslastung jedes Controllers wird kontinuierlich überwacht und, zusammen mit den auf den Hosts installierten Multipath-Treibern, kann bei Bedarf automatisch ausgeglichen werden. Wenn die Workload automatisch auf die Controller umverteilt wird, entlastet der Storage-Administrator die manuelle Anpassung der Eigentümerschaft der Volume Controller, um Laständerungen am Storage Array zu bewältigen.
+
+Wenn der automatische Lastenausgleich aktiviert ist, führt er folgende Funktionen aus:
+
+* Automatische Überwachung und ausgewogene Nutzung von Controller-Ressourcen
+* Bei Bedarf passt die Volume-Controller-Eigentümerschaft automatisch an, was die I/O-Bandbreite zwischen Hosts und Storage Array optimiert.
+
+
+
+
+== Aktivieren und Deaktivieren des automatischen Lastauswuchtes
+
+Der automatische Lastausgleich ist auf allen Speicherarrays standardmäßig aktiviert.
+
+Aus den folgenden Gründen möchten Sie den automatischen Lastausgleich auf Ihrem Speicher-Array deaktivieren:
+
+* Sie möchten die Controller-Eigentumsrechte eines bestimmten Volumes nicht automatisch ändern, um einen Workload-Ausgleich zu schaffen.
+* Sie arbeiten in einer hoch abgestimmten Umgebung, in der die Lastverteilung gezielt eingerichtet ist, um eine bestimmte Verteilung zwischen den Controllern zu erreichen.
+
+
+
+
+== Hosttypen, die die Funktion Automatischer Lastenausgleich unterstützen
+
+Obwohl der automatische Lastausgleich auf Speicherarray-Ebene aktiviert ist, hat der für einen Host oder Host-Cluster ausgewählte Hosttyp direkten Einfluss auf den Betrieb der Funktion.
+
+Wenn Sie die Workloads des Speicher-Arrays auf Controller verteilen, versucht die Funktion Automatischer Lastausgleich, Volumes zu verschieben, auf die beide Controller zugreifen können und die nur einem Host oder Host-Cluster zugewiesen sind, der die Funktion Automatischer Lastausgleich unterstützt.
+
+Dieses Verhalten verhindert, dass ein Host aufgrund des Lastausgleichprozesses den Zugriff auf ein Volume verliert. Das Vorhandensein von Volumes, die Hosts zugeordnet sind, die keinen automatischen Lastausgleich unterstützen, wirkt sich jedoch auf die Fähigkeit des Speicherarrays aus, den Workload auszugleichen. Damit der automatische Lastausgleich den Workload ausgleichen kann, muss der Multipath-Treiber TPGS unterstützen und der Hosttyp muss in der folgenden Tabelle enthalten sein.
+
+[NOTE]
+====
+Damit ein Hostcluster als für den automatischen Lastausgleich geeignet angesehen werden kann, müssen alle Hosts in dieser Gruppe den automatischen Lastausgleich unterstützen können.
+
+====
+[cols="1a,1a"]
+|===
+| Hosttyp unterstützt den automatischen Lastausgleich | Mit diesem Multipath-Treiber 
+
+
+ a| 
+Windows oder Windows Cluster
+ a| 
+MPIO mit NetApp E-Series DSM
+
+
+
+ a| 
+Linux DM-MP (Kernel 3.10 oder höher)
+ a| 
+DM-MP mit `scsi_dh_alua` Gerätehandler
+
+
+
+ a| 
+VMware
+ a| 
+Natives Multipathing-Plug-in (NMP) mit `VMW_SATP_ALUA Storage Array Type` Plug-in
+
+|===
+[NOTE]
+====
+Bis auf kleinere Ausnahmen funktionieren Host-Typen, die den automatischen Lastausgleich nicht unterstützen, weiterhin normal, unabhängig davon, ob die Funktion aktiviert ist oder nicht. Eine Ausnahme besteht darin, dass bei einem System ein Failover besteht, Storage-Arrays nicht zugewiesene oder nicht zugewiesene Volumes zurück zum entsprechenden Controller verschieben, wenn der Datenpfad wieder zurückkehrt. Alle Volumes, die nicht-automatischen Load-Balancing-Hosts zugeordnet oder zugewiesen sind, werden nicht verschoben.
+
+====
+Siehe https://mysupport.netapp.com/matrix["Interoperabilitäts-Matrix-Tool"^] Informationen zur Kompatibilität für bestimmte Multipath-Treiber, BS-Ebene und Controller-Laufwerksfachunterstützung
+
+
+
+== Überprüfung der Betriebssystemkompatibilität mit der Funktion Automatischer Lastenausgleich
+
+Überprüfen Sie die Betriebssystemkompatibilität mit der Funktion Automatischer Lastausgleich, bevor Sie ein neues (oder ein vorhandenes) System einrichten.
+
+. Wechseln Sie zum https://mysupport.netapp.com/matrix["Interoperabilitäts-Matrix-Tool"^] Um Ihre Lösung zu finden und den Support zu überprüfen.
++
+Wenden Sie sich an den technischen Support, wenn auf Ihrem System Red hat Enterprise Linux 6 oder SUSE Linux Enterprise Server 11 ausgeführt wird.
+
+. Aktualisieren und konfigurieren Sie den `/etc/multipath.conf file`.
+. Stellen Sie das beide sicher `retain_attached_device_handler` Und `detect_prio` Sind auf festgelegt `yes` Für den jeweiligen Anbieter und das jeweilige Produkt oder Standardeinstellungen verwenden.
+

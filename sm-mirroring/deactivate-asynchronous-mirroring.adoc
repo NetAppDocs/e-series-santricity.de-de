@@ -1,0 +1,36 @@
+---
+permalink: sm-mirroring/deactivate-asynchronous-mirroring.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, deactivate, asynchronous, mirroring, remote, 
+summary: Sie können die asynchrone Spiegelung auf den lokalen und Remote-Speicher-Arrays deaktivieren, um die normale Nutzung dedizierter Ports auf den Speicher-Arrays wiederherzustellen. 
+---
+= Deaktivieren Sie die asynchrone Spiegelung
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die asynchrone Spiegelung auf den lokalen und Remote-Speicher-Arrays deaktivieren, um die normale Nutzung dedizierter Ports auf den Speicher-Arrays wiederherzustellen.
+
+.Bevor Sie beginnen
+* Sie müssen alle Spiegelbeziehungen gelöscht haben. Stellen Sie sicher, dass alle Spiegelkonsistency Groups und gespiegelten Paare aus den lokalen und Remote Storage Arrays gelöscht wurden.
+* Das lokale Speicher-Array und das Remote-Speicher-Array müssen über eine Fibre-Channel Fabric- oder iSCSI-Schnittstelle verbunden sein.
+
+
+Wenn Sie die asynchrone Spiegelung deaktivieren, können auf den lokalen und Remote-Storage-Arrays keine Spiegelungsaktivitäten stattfinden.
+
+.Schritte
+. Wählen Sie Menü:Speicher[Asynchronous Mirroring].
+. Menü wählen:Sonstige Aufgaben[Deaktivieren].
++
+Das System zeigt eine Bestätigung an.
+
+. Wählen Sie zur Bestätigung * Ja* aus.
+
+
+.Ergebnisse
+* Die HBA-Host-Kanäle des Controllers, die für die Kommunikation mit asynchroner Spiegelung reserviert waren, können nun Lese- und Schreibanfragen des Hosts akzeptieren.
+* Keine der Volumes in diesem Speicher-Array sind in der Lage, an Spiegelbeziehungen entweder als primäre Volumen oder als sekundäre Volumen teilzunehmen.
+

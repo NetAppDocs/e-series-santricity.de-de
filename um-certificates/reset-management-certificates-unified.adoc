@@ -1,0 +1,32 @@
+---
+permalink: um-certificates/reset-management-certificates-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, reset, management, certificates 
+summary: Sie können das Managementzertifikat in den ursprünglichen, werkseitig selbstsignierten Status zurücksetzen. 
+---
+= Managementzertifikate zurücksetzen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können das Managementzertifikat in den ursprünglichen, werkseitig selbstsignierten Status zurücksetzen.
+
+Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.
+
+Diese Aufgabe löscht das aktuelle Managementzertifikat vom Host-System, auf dem Web Services Proxy und Unified Manager installiert sind. Nach dem Zurücksetzen des Zertifikats wird das Host-System auf das selbstsignierte Zertifikat zurückgesetzt.
+
+.Schritte
+. Wählen Sie *Zertifikatverwaltung*.
+. Wählen Sie auf der Registerkarte Verwaltung die Option *Zurücksetzen*.
++
+Das Dialogfeld „Zertifikat zurücksetzen bestätigen“ wird geöffnet.
+
+. Typ `reset` Klicken Sie im Feld auf *Zurücksetzen*.
++
+Nach der Aktualisierung Ihres Browsers kann der Browser den Zugriff auf die Zielseite blockieren und melden, dass die Website HTTP Strict Transport Security verwendet. Diese Bedingung tritt auf, wenn Sie wieder auf selbstsignierte Zertifikate wechseln. Um die Bedingung zu löschen, die den Zugriff auf das Ziel blockiert, müssen Sie die Browserdaten aus dem Browser löschen.
+
+
+
+Das System setzt auf die Verwendung des selbstsignierten Zertifikats des Servers zurück. Das System fordert Benutzer daher auf, das selbstsignierte Zertifikat für ihre Sitzungen manuell anzunehmen.

@@ -1,0 +1,51 @@
+---
+permalink: sm-storage/how-snapshot-storage-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, storage 
+summary: Die Snapshot Funktion verwendet Copy-on-Write-Technologie zum Speichern von Snapshot Images und zur Nutzung zugewiesener reservierter Kapazitäten. 
+---
+= Funktionsweise von Snapshot-Storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Snapshot Funktion verwendet Copy-on-Write-Technologie zum Speichern von Snapshot Images und zur Nutzung zugewiesener reservierter Kapazitäten.
+
+
+
+== Verwendung von Snapshot-Images
+
+Ein Snapshot-Image ist eine logische, schreibgeschützte Kopie des Volume-Inhalts, die zu einem bestimmten Zeitpunkt erfasst wurde. Sie können Snapshots zum Schutz vor Datenverlust verwenden.
+
+Snapshot Images sind ebenfalls nützlich für Testumgebungen. Es wird eine virtuelle Kopie von Daten erstellt, sodass Daten mithilfe des Snapshots getestet werden können, ohne das eigentliche Volume selbst zu ändern. Darüber hinaus haben Hosts keinen Schreibzugriff auf Snapshot-Images, so dass Ihre Snapshots immer eine sichere Backup-Ressource sind.
+
+
+
+== Erstellung des Snapshots
+
+Während Snapshots erstellt werden, speichert die Snapshot Funktion Bilddaten wie folgt:
+
+* Ein erstelltes Snapshot Image entspricht genau dem Basis-Volume. Die Snapshot Funktion verwendet Copy-on-Write-Technologie. Nach der Erstellung eines Snapshots werden bei dem ersten Schreibvorgang eines oder mehrere Blöcke in das Basis-Volume die Originaldaten in die reservierte Kapazität kopiert, bevor die neuen Daten in das Basis-Volume geschrieben werden.
+* Nachfolgende Snapshots enthalten nur geänderte Datenblöcke. Bevor Daten auf dem Basis-Volume überschrieben werden, verwendet die Snapshot-Funktion ihre Copy-on-Write-Technologie, um die erforderlichen Bilder der betroffenen Sektoren auf die Snapshot-reservierte Kapazität zu speichern.
++
+image::../media/sam1130-dwg-snapshots-cow-overview.gif[Sam1130 dwg Momentaufnahmen Kuhübersicht]
+
+
+
+^1^ Basis-Volume (physische Festplattenkapazität); ^2^ Snapshots (logische Festplattenkapazität); ^3^ reservierte Kapazität (physische Festplattenkapazität)
+
+* Die reservierte Kapazität speichert die ursprünglichen Datenblöcke für Teile des Basis-Volumes, die nach dem Erstellen des Snapshots geändert wurden, und enthält einen Index zum Nachverfolgen von Änderungen. Im Allgemeinen beträgt die Größe der reservierten Kapazität standardmäßig 40 % des Basis-Volumes. (Wenn Sie mehr reservierte Kapazität benötigen, können Sie den reservierten Speicherplatz erhöhen.)
+* Snapshot Images werden basierend auf ihrem Zeitstempel in einer bestimmten Reihenfolge gespeichert. Nur das älteste Snapshot-Image eines Basis-Volumes kann manuell gelöscht werden.
+
+
+
+
+== Snapshot Wiederherstellung
+
+Um Daten auf einem Basis-Volume wiederherzustellen, können Sie entweder ein Snapshot-Volume oder ein Snapshot-Image verwenden:
+
+* *Snapshot Volume* -- Wenn Sie gelöschte Dateien abrufen müssen, erstellen Sie ein Snapshot-Volume aus einem bekannten guten Snapshot-Image und weisen Sie es dem Host zu.
+* *Snapshot Image* -- Wenn Sie ein Basis-Volume zu einem bestimmten Zeitpunkt wiederherstellen müssen, verwenden Sie ein vorheriges Snapshot-Image, um ein Rollback der Daten auf das Basis-Volume durchzuführen.
+

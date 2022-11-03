@@ -1,0 +1,58 @@
+---
+permalink: sm-settings/cache-settings-and-performance.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cache, settings, performance, 
+summary: Der Cache-Speicher ist ein temporärer flüchtiger Speicher auf dem Controller, der eine schnellere Zugriffszeit hat als das Laufwerk. 
+---
+= Cache-Einstellungen und Performance
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der Cache-Speicher ist ein temporärer flüchtiger Speicher auf dem Controller, der eine schnellere Zugriffszeit hat als das Laufwerk.
+
+Durch Caching kann die I/O-Performance insgesamt wie folgt gesteigert werden:
+
+* Die vom Host für einen Lesevorgang angeforderten Daten befinden sich möglicherweise bereits im Cache eines vorherigen Vorgangs, sodass ein Laufwerkzugriff nicht erforderlich ist.
+* Schreibdaten werden zunächst in den Cache geschrieben. Dadurch wird die Anwendung wieder freigegeben, anstatt auf das Schreiben der Daten auf das Laufwerk zu warten.
+
+
+Die Standard-Cache-Einstellungen erfüllen die Anforderungen für die meisten Umgebungen, Sie können sie jedoch bei Bedarf ändern.
+
+
+
+== Cache-Einstellungen für Storage-Arrays
+
+Für alle Volumes im Speicher-Array können Sie auf der Seite System die folgenden Werte angeben:
+
+* *Startwert für Spülung* -- der Prozentsatz der nicht geschriebenen Daten im Cache, der einen Cache-Flush auslöst (auf Festplatte schreiben). Wenn der Cache den angegebenen Startprozentsatz der nicht geschriebenen Daten enthält, wird ein Flush ausgelöst. Standardmäßig wird der Cache vom Controller bereinigt, wenn der Cache zu 80 % voll ist.
+* *Cache Blockgröße* -- die maximale Größe jedes Cache Blocks, eine Organisationseinheit für Cache Management. Die Cache-Blockgröße ist standardmäßig 8 KiB, kann jedoch auf 4, 8, 16 oder 32 KiB eingestellt werden. Idealerweise sollte die Cache-Blockgröße auf die vorwiegend verwendete I/O-Größe Ihrer Applikationen eingestellt werden. Filesysteme oder Datenbankapplikationen verwenden in der Regel kleinere Größen, während eine größere Größe für Applikationen geeignet ist, die umfangreiche Datentransfers oder sequenzielle I/O benötigen
+
+
+
+
+== Volume-Cache-Einstellungen
+
+Für einzelne Volumes in einem Speicher-Array können Sie auf der Seite Volumes (Menü:Storage[Volumes]) die folgenden Werte angeben:
+
+* *Lese-Cache* -- der Lese-Cache ist ein Puffer, der Daten speichert, die von den Laufwerken gelesen wurden. Die Daten für einen Lesevorgang befinden sich möglicherweise bereits im Cache eines früheren Vorgangs, sodass kein Zugriff auf die Laufwerke erforderlich ist. Die Daten bleiben so lange im Lese-Cache, bis sie entfernt werden.
++
+** *Dynamischer Lese-Cache Prefetch* -- der dynamische Cache-Lesevorfetch ermöglicht dem Controller, zusätzliche sequenzielle Datenblöcke in den Cache zu kopieren, während er Datenblöcke von einem Laufwerk in den Cache liest. Dadurch erhöht sich die Wahrscheinlichkeit, dass zukünftige Datenanfragen aus dem Cache gefüllt werden können. Der dynamische Cache-Lese-Prefetch ist für Multimedia-Anwendungen, die sequenzielle I/O verwenden, wichtig Die Rate und die Menge der Daten, die im Cache abgerufen werden, passen sich basierend auf der Geschwindigkeit und der Anfragegröße des Host-Lesevorgängen automatisch an. Ein wahlfreier Zugriff bewirkt nicht, dass Daten im Cache abgerufen werden. Diese Funktion gilt nicht, wenn das Lese-Caching deaktiviert ist.
+
+
+* *Schreib-Cache* -- der Schreib-Cache ist ein Puffer, der Daten vom Host speichert, der noch nicht auf die Laufwerke geschrieben wurde. Die Daten bleiben im Schreib-Cache, bis sie auf die Laufwerke geschrieben werden. Caching von Schreibzugriffen kann die I/O-Performance steigern.
++
+[CAUTION]
+====
+*Möglicher Datenverlust* -- Wenn Sie die *Write Caching ohne Batterien* Option aktivieren und keine universelle Stromversorgung zum Schutz haben, könnten Sie Daten verlieren. Darüber hinaus könnten Sie Daten verlieren, wenn Sie keine Controller-Batterien haben und Sie die Option *Write Caching ohne Batterien* aktivieren.
+
+====
++
+** *Write Caching ohne Batterien* -- das Schreib-Caching ohne Akkueinstellung lässt das Schreib-Caching auch dann fortgesetzt, wenn die Batterien fehlen, ausfallen, vollständig entladen oder nicht vollständig geladen sind. Die Wahl des Schreib-Caching ohne Batterien ist in der Regel nicht empfohlen, da die Daten verloren gehen können, wenn die Stromversorgung verloren geht. In der Regel wird das Schreibcache vorübergehend vom Controller deaktiviert, bis die Akkus geladen sind oder eine fehlerhafte Batterie ausgetauscht wird.
+** *Schreib-Cache mit Spiegelung* -- Schreib-Caching mit Spiegelung tritt auf, wenn die in den Cache-Speicher eines Controllers geschriebenen Daten auch in den Cache-Speicher des anderen Controllers geschrieben werden. Wenn also ein Controller ausfällt, kann der andere alle ausstehenden Schreibvorgänge ausführen. Write Cache Mirroring ist nur verfügbar, wenn Write Caching aktiviert ist und zwei Controller vorhanden sind. Schreib-Caching mit Spiegelung ist die Standardeinstellung bei der Volume-Erstellung.
+
+
+

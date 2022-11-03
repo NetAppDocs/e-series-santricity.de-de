@@ -1,0 +1,22 @@
+---
+permalink: sm-storage/snapshot-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, volumes 
+summary: 'Sie können ein Snapshot-Volume erstellen und einem Host zuweisen, wenn Sie Snapshot-Daten lesen oder schreiben möchten. Das Snapshot Volume verfügt über dieselben Eigenschaften wie das Basis-Volume (RAID-Level, I/O-Eigenschaften usw.).' 
+---
+= Snapshot Volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können ein Snapshot-Volume erstellen und einem Host zuweisen, wenn Sie Snapshot-Daten lesen oder schreiben möchten. Das Snapshot Volume verfügt über dieselben Eigenschaften wie das Basis-Volume (RAID-Level, I/O-Eigenschaften usw.).
+
+Wenn Sie ein Snapshot-Volume erstellen, können Sie es als __read-onl__y oder _read-write Accessible_ bezeichnen.
+
+Wenn Sie schreibgeschützte Snapshot Volumes erstellen, müssen Sie keine reservierte Kapazität hinzufügen. Wenn Sie Snapshot-Volumes mit Lese- und Schreibvorgängen erstellen, müssen Sie reservierte Kapazität hinzufügen, um Schreibzugriff zu ermöglichen.
+
+image::../media/sam1130-dwg-snapshots-volumes-overview.gif[Sam1130 dwg Momentaufnahmen Volumen Übersicht]
+
+^1^ Basis-Volume; ^2^ Host; ^3^ schreibgeschütztes Snapshot-Volume; ^4^ Snapshot-Volume mit Lese- und Schreibzugriff; ^5^ reservierte Kapazität

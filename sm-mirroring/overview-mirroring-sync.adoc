@@ -1,0 +1,59 @@
+---
+permalink: sm-mirroring/overview-mirroring-sync.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, RVM, synchronous, mirroring, controllers, 
+summary: Die Funktion synchrone Spiegelung bietet Online-Datenreplizierung in Echtzeit zwischen Storage-Arrays über eine Remote-Entfernung. 
+---
+= Übersicht über synchrones Spiegeln
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Funktion synchrone Spiegelung bietet Online-Datenreplizierung in Echtzeit zwischen Storage-Arrays über eine Remote-Entfernung.
+
+[NOTE]
+====
+Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+
+====
+
+
+== Was ist synchrones Spiegeln?
+
+_Synchronous Mirroring_ repliziert Daten-Volumes in Echtzeit, um eine kontinuierliche Verfügbarkeit zu gewährleisten. Storage Array Controller managen den Spiegelungsvorgang, der für Host Machines und Softwareapplikationen transparent ist.
+
+Diese Art von Spiegelung ist ideal für Business Continuity-Zwecke wie Disaster Recovery.
+
+Weitere Informationen:
+
+* link:how-synchronous-mirroring-works.html["Funktionsweise der synchronen Spiegelung"]
+* link:synchronous-mirroring-terminology.html["Terminologie für synchrones Spiegeln"]
+* link:synchronous-mirroring-status.html["Status der synchronen Spiegelung"]
+* link:volume-ownership-sync.html["Volume-Eigentum"]
+* link:role-change-of-volumes-in-a-mirrored-pair.html["Rollenänderung zwischen Volumes in einem gespiegelten Paar"]
+
+
+
+
+== Wie konfiguriere ich die synchrone Spiegelung?
+
+Sie müssen die ursprüngliche Spiegelungskonfiguration zwischen den Arrays über die Unified Manager-Schnittstelle durchführen. Sobald diese konfiguriert ist, können Sie gespiegelte Paare in System Manager managen.
+
+Weitere Informationen:
+
+* link:requirements-for-using-synchronous-mirroring.html["Anforderungen für die Nutzung von synchroner Spiegelung"]
+* link:workflow-for-mirroring-a-volume-synchronously.html["Workflow für synchrones Spiegeln eines Volumes"]
+* link:../um-manage/create-synchronous-mirrored-pair-um.html["Synchrones gespiegeltes Paar erstellen (in Unified Manager)"]
+
+
+
+
+== Verwandte Informationen
+
+Erfahren Sie mehr über Konzepte zur synchronen Spiegelung:
+
+* link:synchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair.html["Was Sie wissen müssen, bevor Sie ein gespiegeltes Paar erstellen"]
+* link:how-does-asynchronous-mirroring-differ-from-synchronous-mirroring-async.html["Unterschiede zwischen der asynchronen Spiegelung und der synchronen Spiegelung"]
+

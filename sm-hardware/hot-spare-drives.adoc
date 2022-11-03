@@ -1,0 +1,84 @@
+---
+permalink: sm-hardware/hot-spare-drives.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hot, spare, drives, raid1, raid6, raid5 
+summary: Hot Spares fungieren als Standby-Laufwerke in RAID 1-, RAID 5- oder RAID 6-Volume-Gruppen für System Manager. 
+---
+= Übersicht über Hot-Spare-Laufwerke
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Hot Spares fungieren als Standby-Laufwerke in RAID 1-, RAID 5- oder RAID 6-Volume-Gruppen für System Manager.
+
+Es handelt sich dabei um voll funktionsfähige Laufwerke, die keine Daten enthalten. Wenn ein Laufwerk in der Volume-Gruppe ausfällt, rekonstruiert der Controller die Daten vom ausgefallenen Laufwerk automatisch auf ein Laufwerk, das als Hot Spare zugewiesen wurde.
+
+Hot Spares sind nicht für bestimmte Volume-Gruppen bestimmt. Sie können für jedes ausgefallene Laufwerk im Speicher-Array verwendet werden, solange das Hot Spare und das Laufwerk diese Attribute teilen:
+
+* Gleiche Kapazität (oder höhere Kapazität für das Hot Spare)
+* Derselbe Medientyp (beispielsweise Festplatte oder SSD)
+* Gleicher Schnittstellentyp (z. B. SAS)
+
+
+
+
+== Identifizierung von Hot Spares
+
+Sie können Hot Spares über den Setup-Assistenten oder über die Hardware-Seite zuweisen. Um festzustellen, ob Hot Spares zugewiesen werden, gehen Sie zur Hardware-Seite und suchen Sie nach den in Rosa angezeigten Laufwerkschächten.
+
+
+
+== Funktionsweise der Hot-Spare-Abdeckung
+
+Hot-Spare-Abdeckung funktioniert wie folgt:
+
+* Sie reservieren ein nicht zugewiesenes Laufwerk als Hot Spare für RAID 1-, RAID 5- oder RAID 6-Volume-Gruppen.
++
+[NOTE]
+====
+Hot Spares können nicht für Pools verwendet werden, die eine andere Methode der Datensicherheit haben. Anstatt eine zusätzliche Festplatte zu reservieren, reservieren Pools freie Kapazitäten (sogenannte _freie Kapazität_) innerhalb jedes Laufwerks des Pools. Wenn ein Laufwerk in einem Pool ausfällt, werden Daten in diesem freien Speicherplatz wiederhergestellt.
+
+====
+* Wenn ein Laufwerk in einer RAID 1-, RAID 5- oder RAID 6-Volume-Gruppe ausfällt, verwendet der Controller automatisch Redundanzdaten zur Rekonstruktion der Daten vom ausgefallenen Laufwerk. Das Hot Spare wird automatisch durch das ausgefallene Laufwerk ersetzt, ohne dass ein physischer Austausch erforderlich ist.
+* Wenn Sie das ausgefallene Laufwerk physisch ersetzt haben, erfolgt ein Kopiervorgang vom Hot-Spare-Laufwerk zum ausgetauschten Laufwerk. Wenn Sie das Hot Spare-Laufwerk als dauerhaftes Mitglied einer Volume-Gruppe angegeben haben, ist der Copyback-Vorgang nicht erforderlich.
+* Die Verfügbarkeit von Ablagefach-Verlustschutz und Schubladenschutz für eine Volume-Gruppe hängt von der Position der Laufwerke ab, aus denen die Volume-Gruppe besteht. Der Schutz vor Verlust des Fachs und der Schutz vor Schubladenverlust können aufgrund eines ausgefallenen Laufwerks und der Position des Hot-Spare-Laufwerks verloren gehen. Um sicherzustellen, dass der Schutz vor Verlust des Fachs und der Schutz vor Schubladenverlust nicht beeinträchtigt werden, müssen Sie ein ausgefallenes Laufwerk austauschen, um den Kopiervorgang zu initiieren.
+* Das Storage Array Volume bleibt während des Austauschs des ausgefallenen Laufwerks online und zugänglich, da das Hot-Spare-Laufwerk automatisch durch das ausgefallene Laufwerk ersetzt wird.
+
+
+
+
+== Überlegungen zur Kapazität von Hot-Spare-Festplatten
+
+Wählen Sie ein Laufwerk mit einer Kapazität aus, die der Gesamtkapazität des zu schützenden Laufwerks entspricht oder die größer ist. Wenn beispielsweise ein Laufwerk mit 18 gib und einer konfigurierten Kapazität von 8 gib vorhanden ist, können Sie ein Laufwerk mit 9 gib oder mehr als Hot Spare verwenden. Weisen Sie ein Laufwerk grundsätzlich nicht als Hot Spare zu, es sei denn, seine Kapazität entspricht oder ist größer als die Kapazität des größten Laufwerks im Speicher-Array.
+
+[NOTE]
+====
+Wenn nicht Hot Spares zur Verfügung stehen, die die gleiche physische Kapazität haben, kann ein Laufwerk mit geringerer Kapazität als Hot Spare verwendet werden, wenn die „genutzte Kapazität“ des Laufwerks gleich oder kleiner als die Kapazität des Hot-Spare-Laufwerks ist.
+
+====
+
+
+== Überlegungen zu Medien- und Schnittstellentypen
+
+Das als Hot Spare verwendete Laufwerk muss denselben Medientyp und dieselbe Schnittstelle verwenden wie die Laufwerke, die es schützen wird. Beispielsweise kann eine Festplatte nicht als Hot Spare für SSD-Laufwerke verwendet werden.
+
+
+
+== Überlegungen zu sicheren Laufwerken
+
+Ein sicheres Laufwerk wie FDE oder FIPS kann als Hot Spare für Laufwerke mit oder ohne Sicherheitsmerkmale genutzt werden. Ein nicht sicher fähiges Laufwerk kann jedoch nicht als Hot Spare für Laufwerke mit Sicherheitsfunktionen dienen.
+
+Wenn Sie ein sicheres Laufwerk auswählen, das für ein Hot Spare verwendet werden soll, werden Sie von System Manager aufgefordert, eine sichere Löschung durchzuführen, bevor Sie fortfahren können. Mit Secure Erase werden die Sicherheitsattribute des Laufwerks auf sicher-fähig, aber nicht sicher aktiviert zurückgesetzt.
+
+[NOTE]
+====
+Wenn Sie die Laufwerkssicherheitsfunktion aktivieren und dann aus sicheren Laufwerken einen Pool oder eine Volume-Gruppe erstellen, werden die Laufwerke _Secure-Enabled_. Lese- und Schreibzugriff ist nur über einen Controller verfügbar, der mit dem korrekten Sicherheitsschlüssel konfiguriert ist. Diese zusätzliche Sicherheit verhindert einen nicht autorisierten Zugriff auf die Daten auf einem Laufwerk, das physisch vom Storage-Array entfernt wird.
+
+====
+
+
+== Empfohlene Anzahl von Hot-Spare-Laufwerken
+
+Wenn Sie den anfänglichen Setup-Assistenten zur automatischen Erstellung von Hot Spares verwendet haben, erstellt der System Manager ein Hot Spare für alle 30 Laufwerke eines bestimmten Medientyps und eines bestimmten Schnittstellentyps. Andernfalls können Sie manuell Hot-Spare-Laufwerke zwischen den Volume-Gruppen im Speicher-Array erstellen.

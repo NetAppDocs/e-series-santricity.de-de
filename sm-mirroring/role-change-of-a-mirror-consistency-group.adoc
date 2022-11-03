@@ -1,0 +1,66 @@
+---
+permalink: sm-mirroring/role-change-of-a-mirror-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, role, change, mirror, consistency, group, secondary, mirror, consistency, group, 
+summary: Sie können die Rolle zwischen gespiegelten Paaren in einer gespiegelten Consistency Group ändern. Hierzu können Sie die Konsistenzgruppe der primären Spiegelung auf die sekundäre Rolle zurückstufen oder die Konsistenzgruppe für die sekundäre Spiegelung in die primäre Rolle heraufstufen. 
+---
+= Rollenwechsel einer SpiegelungsConsistency Group
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Rolle zwischen gespiegelten Paaren in einer gespiegelten Consistency Group ändern. Hierzu können Sie die Konsistenzgruppe der primären Spiegelung auf die sekundäre Rolle zurückstufen oder die Konsistenzgruppe für die sekundäre Spiegelung in die primäre Rolle heraufstufen.
+
+[NOTE]
+====
+Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+
+====
+Überprüfen Sie die folgenden Informationen über den Rollenänderungsvorgang:
+
+* Die Rollenänderung betrifft alle gespiegelten Paare innerhalb der ausgewählten SpiegelConsistency Group.
+* Wenn eine SpiegelungsConsistency Group auf die sekundäre Rolle herabgestuft wird, werden alle gespiegelten Paare innerhalb dieser SpiegelConsistency Group auch auf die sekundäre Rolle herabgestuft und umgekehrt.
+* Wenn die primäre SpiegelungsConsistency Group auf die sekundäre Rolle herabgestuft wird, haben Hosts, die den Mitgliedvolumes innerhalb dieser Gruppe zugewiesen wurden, keinen Schreibzugriff mehr auf sie.
+* Wenn eine gespiegelte Konsistenzgruppe in die primäre Rolle heraufgestuft wird, können alle Hosts, die auf die Mitglied-Volumes innerhalb dieser Gruppe zugreifen, diese nun schreiben.
+* Wenn das lokale Speicher-Array nicht mit dem Remote-Speicher-Array kommunizieren kann, können Sie die Rollenänderung im lokalen Speicher-Array erzwingen.
+
+
+
+
+== Rollenänderung erzwingen
+
+Sie können eine Rollenänderung zwischen gespiegelten Konsistenzgruppen erzwingen, wenn ein Kommunikationsproblem zwischen dem lokalen Speicher-Array und dem Remote-Speicher-Array verhindert, dass die Mitglied-Volumes innerhalb der Konsistenzgruppe der sekundären Spiegelung befördert werden oder die Herabstufung der Mitglied-Volumes innerhalb der Konsistenz der primären Spiegelung ausfällt Gruppieren.
+
+Sie können die gespiegelte Konsistenzgruppe auf der sekundären Seite zu der primären Rolle zwingen. Anschließend ist der Recovery-Host in der Lage, auf die neu beworbenen Mitglieder-Volumes innerhalb dieser SpiegelKonsistenzgruppe zuzugreifen, und Geschäftsprozesse können fortgesetzt werden.
+
+
+
+== Wann ist eine erzwungene Promotion zulässig und nicht zulässig?
+
+Die erzwungene Beförderung einer SpiegelungsConsistency Group ist nur zulässig, wenn alle Mitglied-Volumes der Consistency Group synchronisiert wurden und über konsistente Recovery-Punkte verfügen.
+
+Die erzwungene Beförderung einer SpiegelungsConsistency Group ist unter den folgenden Bedingungen nicht zulässig:
+
+* Jedes der Mitgliedsvolumes einer SpiegelungsConsistency Group befindet sich im Prozess einer ersten Synchronisation.
+* Jedes Mitglied-Volume einer SpiegelungsConsistency Group verfügt über kein Point-in-Time-Image des Wiederherstellungspunkts (beispielsweise aufgrund eines vollständigen Kapazitätsfehlers).
+* Die Konsistenzgruppe der Spiegelung enthält keine Mitglied-Volumes.
+* Die Konsistenzgruppe der Spiegelung befindet sich im Status „Fehlgeschlagen“, „Role-Change-Pending“ oder „Role-Change-in-Progress“ oder „Failed eines der zugehörigen Mitglied-Volumes oder reservierten Kapazitäts-Volumes“.
+
+
+
+
+== Konflikt mit der Spiegelgruppe
+
+Wenn ein Kommunikationsproblem zwischen den lokalen und den Remote-Speicher-Arrays behoben wurde, tritt ein Konflikt zwischen den Spiegelgruppen-Rollen auf. Verwenden Sie den Recovery Guru zur Wiederherstellung nach diesem Fehler. Eine erzwungene Beförderung ist nicht zulässig, wenn ein Konflikt mit zwei Rollen gelöst wird.
+
+Um den Konflikt zwischen den Spiegelgruppen und den nachfolgenden Wiederherstellungsschritten zu vermeiden, warten Sie, bis die Verbindung zwischen den Speicherarrays betriebsbereit ist, um die Rollenänderung zu erzwingen.
+
+
+
+== Rollenänderung in Bearbeitung
+
+Wenn zwei Speicher-Arrays in einer Spiegelungskonfiguration getrennt werden, und die primäre Seite einer SpiegelungsConsistency Group zum Zurückstufen auf eine sekundäre Rolle geherabgestuft wird und die sekundäre Seite einer SpiegelungsConsistency Group erzwingen wird, wird sie zu einer primären Rolle heraufgestuft. Wenn die Kommunikation wiederhergestellt wird, werden die gespiegelten Konsistenzgruppen auf beiden Storage Arrays in den Status „Role Change-in-Progress“ versetzt.
+
+Das System führt den Rollenänderungsprozess durch, indem die Änderungsprotokolle übertragen, neu synchronisiert, der Zustand der Consistency Group auf den normalen Betriebszustand zurückversetzt und regelmäßig synchronisiert wird.

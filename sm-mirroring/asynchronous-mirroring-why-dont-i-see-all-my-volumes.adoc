@@ -1,0 +1,21 @@
+---
+permalink: sm-mirroring/asynchronous-mirroring-why-dont-i-see-all-my-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, asynchronous, volumes 
+summary: Wenn Sie ein primäres Volume für ein gespiegeltes Paar auswählen, werden in einer Liste alle berechtigten Volumes angezeigt. 
+---
+= Asynchrones Spiegeln - Warum sehe ich nicht alle meine Volumen?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie ein primäres Volume für ein gespiegeltes Paar auswählen, werden in einer Liste alle berechtigten Volumes angezeigt.
+
+Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser Liste nicht angezeigt. Die Volumes können aus den folgenden Gründen nicht berechtigt sein:
+
+* Die Lautstärke ist nicht optimal.
+* Das Volume beteiligt sich bereits an einer Spiegelbeziehung.
+* Bei Thin Volumes muss die automatische Erweiterung aktiviert sein.
+

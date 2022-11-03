@@ -1,0 +1,130 @@
+---
+permalink: sm-settings/use-ca-signed-certificates-for-controllers.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ca-signed, certificates, controllers, 
+summary: Sie können Zertifikate von CA-signierte für die sichere Kommunikation zwischen den Controllern und dem Browser erhalten, der für den Zugriff auf System Manager verwendet wird. 
+---
+= Verwenden Sie CA-signierte Zertifikate für Controller
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Zertifikate von CA-signierte für die sichere Kommunikation zwischen den Controllern und dem Browser erhalten, der für den Zugriff auf System Manager verwendet wird.
+
+.Bevor Sie beginnen
+* Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.
+* Sie müssen die IP-Adresse oder DNS-Namen jedes Controllers kennen.
+
+
+Die Verwendung von CA-signierten Zertifikaten ist ein dreistufiges Verfahren.
+
+
+
+== Schritt 1: Schließen Sie CSRs für die Controller ab
+
+Sie müssen zuerst eine CSR-Datei (Certificate Signing Request) für jeden Controller im Speicher-Array generieren.
+
+In dieser Aufgabe wird beschrieben, wie eine CSR-Datei aus System Manager generiert wird. Der CSR stellt Informationen über Ihr Unternehmen und entweder die IP-Adresse oder den DNS-Namen des Controllers zur Verfügung. Während dieser Aufgabe wird eine CSR-Datei erzeugt, wenn das Speicher-Array einen Controller und zwei CSR-Dateien hat, wenn es zwei Controller hat.
+
+[NOTE]
+====
+Alternativ können Sie eine CSR-Datei mit einem Tool wie OpenSSL generieren und zu überspringen  2: Submit the CSR files.
+
+====
+.Schritte
+. Wählen Sie Menü:Einstellungen[Zertifikate].
+. Wählen Sie auf der Registerkarte Array Management die Option *Complete CSR* aus.
++
+[NOTE]
+====
+Wenn ein Dialogfeld angezeigt wird, in dem Sie aufgefordert werden, ein selbstsigniertes Zertifikat für den zweiten Controller anzunehmen, klicken Sie zum Fortfahren auf *Selbstsigniertes Zertifikat akzeptieren*.
+
+====
+. Geben Sie die folgenden Informationen ein, und klicken Sie dann auf *Weiter*:
++
+** *Organisation* -- der vollständige, rechtliche Name Ihres Unternehmens oder Ihrer Organisation. Fügen Sie Suffixe wie Inc. Oder Corp. Mit ein
+** *Organisationseinheit (optional)* -- die Abteilung Ihrer Organisation, die das Zertifikat bearbeitet.
+** *Stadt/Ort* -- die Stadt, in der sich Ihr Speicher-Array oder Geschäft befindet.
+** *Bundesland/Region (optional)* -- der Staat oder die Region, in der sich Ihr Speicher-Array oder Ihr Geschäft befindet.
+** *Land ISO Code* -- der zweistellige ISO-Code Ihres Landes (International Organization for Standardization), wie z. B. die USA.
+
+
++
+[CAUTION]
+====
+Einige Felder sind möglicherweise bereits mit den entsprechenden Informationen ausgefüllt, z. B. mit der IP-Adresse des Controllers. Ändern Sie die vorausgefüllten Werte nur, wenn Sie sich sicher sind, dass sie nicht korrekt sind. Wenn Sie zum Beispiel noch keinen CSR-Vorgang abgeschlossen haben, wird die Controller-IP-Adresse auf „`localhost.`“ gesetzt. In diesem Fall müssen Sie „`localhost`“ in den DNS-Namen oder die IP-Adresse des Controllers ändern.
+
+====
+. Überprüfen oder geben Sie die folgenden Informationen über Controller A in Ihrem Speicher-Array ein:
++
+** *Controller Ein gemeinsamer Name* -- die IP-Adresse oder der DNS-Name von Controller A wird standardmäßig angezeigt. Stellen Sie sicher, dass diese Adresse korrekt ist. Sie muss mit den Angaben übereinstimmen, die Sie für den Zugriff auf System Manager im Browser eingeben. Der DNS-Name kann nicht mit einem Platzhalter beginnen.
+** *Controller Eine alternative IP-Adresse* -- Wenn der gemeinsame Name eine IP-Adresse ist, können Sie optional weitere IP-Adressen oder Aliase für Controller A eingeben Verwenden Sie für mehrere Einträge ein kommagetrenntes Format.
+** *Controller Ein alternativer DNS-Name* -- Wenn der gemeinsame Name ein DNS-Name ist, geben Sie weitere DNS-Namen für Controller A. ein Verwenden Sie für mehrere Einträge ein kommagetrenntes Format. Falls es keine alternativen DNS-Namen gibt, aber Sie im ersten Feld einen DNS-Namen eingegeben haben, kopieren Sie diesen Namen hier. Der DNS-Name kann nicht mit einem Platzhalter beginnen. Wenn das Speicher-Array nur über einen Controller verfügt, steht die *Finish*-Taste zur Verfügung.
++
+Wenn das Speicher-Array über zwei Controller verfügt, steht die Schaltfläche *Weiter* zur Verfügung.
+
+
+
++
+[NOTE]
+====
+Klicken Sie nicht auf den Link *Skip this Step*, wenn Sie eine CSR-Anfrage erstellen. Dieser Link wird in Fehlerwiederherstellungssituationen bereitgestellt. In seltenen Fällen kann eine CSR-Anfrage auf einem Controller fehlschlagen, aber nicht auf dem anderen. Über diesen Link können Sie den Schritt zum Erstellen einer CSR-Anfrage für Controller A überspringen, wenn er bereits definiert ist, und mit dem nächsten Schritt zum erneuten Erstellen einer CSR-Anfrage auf Controller B fortfahren
+
+====
+. Wenn nur ein Controller vorhanden ist, klicken Sie auf *Fertig stellen*. Wenn zwei Controller vorhanden sind, klicken Sie auf *Weiter*, um die Daten für Controller B einzugeben (wie oben), und klicken Sie dann auf *Fertig stellen*.
++
+Für einen einzelnen Controller wird eine CSR-Datei auf Ihr lokales System heruntergeladen. Für Dual Controller werden zwei CSR-Dateien heruntergeladen. Der Speicherort des Downloads hängt von Ihrem Browser ab.
+
+. Gehen Sie zu  2: Submit the CSR files.
+
+
+
+
+== Schritt 2: Senden Sie die CSR-Dateien
+
+Nachdem Sie die CSR-Dateien (Certificate Signing Request) erstellt haben, senden Sie die Dateien an eine Zertifizierungsstelle (CA). Systeme der E-Series erfordern ein PEM-Format (Base64 ASCII-Kodierung) für signierte Zertifikate, das die folgenden Dateitypen umfasst: pem, .crt, .cer oder .key.
+
+.Schritte
+. Suchen Sie die heruntergeladenen CSR-Dateien.
+. Senden Sie die CSR-Dateien an eine CA (z. B. Verisign oder DigiCert), und fordern Sie signierte Zertifikate im PEM-Format an.
++
+[CAUTION]
+====
+*Nachdem Sie eine CSR-Datei an die CA gesendet haben, generieren SIE keine andere CSR-Datei.* Wenn Sie eine CSR generieren, erstellt das System ein privates und öffentliches Schlüsselpaar. Der öffentliche Schlüssel ist Teil der CSR, während der private Schlüssel im Schlüsselspeicher des Systems aufbewahrt wird. Wenn Sie die signierten Zertifikate erhalten und importieren, stellt das System sicher, dass sowohl der private als auch der öffentliche Schlüssel das ursprüngliche Paar sind. Wenn die Schlüssel nicht übereinstimmen, funktionieren die signierten Zertifikate nicht und Sie müssen neue Zertifikate von der CA anfordern.
+
+====
+. Wenn die Zertifizierungsstelle die signierten Zertifikate zurückgibt, gehen Sie zu  3: Import signed certificates for controllers.
+
+
+
+
+== Schritt 3: Importieren Sie signierte Zertifikate für Controller
+
+Nachdem Sie von der Zertifizierungsstelle (CA) signierte Zertifikate erhalten haben, importieren Sie die Dateien für die Controller.
+
+.Bevor Sie beginnen
+* Die CA hat signierte Zertifikatdateien zurückgegeben. Diese Dateien enthalten das Stammzertifikat, ein oder mehrere Zwischenzertifikate und die Serverzertifikate.
+* Wenn die CA eine verkettete Zertifikatdatei (z. B. eine .p7b-Datei) lieferte, müssen Sie die verkettete Datei in einzelne Dateien entpacken: Das Stammzertifikat, ein oder mehrere Zwischenzertifikate und die Serverzertifikate, die die Controller identifizieren. Sie können die Windows verwenden `certmgr` Dienstprogramm zum Auspacken der Dateien (Rechtsklick und wählen Sie Menü:Alle Aufgaben[Export]). Base-64-Kodierung wird empfohlen. Wenn die Exporte abgeschlossen sind, wird für jede Zertifikatdatei in der Kette eine CER-Datei angezeigt.
+* Sie haben die Zertifikatdateien auf das Hostsystem kopiert, auf das Sie auf System Manager zugreifen.
+
+
+.Schritte
+. Menü auswählen:Einstellungen[Zertifikate]
+. Wählen Sie auf der Registerkarte Array Management die Option *Import* aus.
++
+Es wird ein Dialogfeld zum Importieren der Zertifikatdatei(en) geöffnet.
+
+. Klicken Sie auf die Schaltflächen *Durchsuchen*, um zuerst die Stamm- und Zwischenzertifikatdateien auszuwählen, und wählen Sie dann jedes Serverzertifikat für die Controller aus. Die Root- und Zwischendateien sind für beide Controller gleich. Nur die Serverzertifikate sind für jeden Controller eindeutig. Wenn Sie die CSR aus einem externen Tool generiert haben, müssen Sie auch die private Schlüsseldatei importieren, die zusammen mit der CSR erstellt wurde.
++
+Die Dateinamen werden im Dialogfeld angezeigt.
+
+. Klicken Sie Auf *Import*.
++
+Die Dateien werden hochgeladen und validiert.
+
+
+
+Die Sitzung wird automatisch beendet. Sie müssen sich erneut anmelden, damit die Zertifikate wirksam werden. Wenn Sie sich erneut anmelden, werden die neuen CA-signierten Zertifikate für Ihre Sitzung verwendet.

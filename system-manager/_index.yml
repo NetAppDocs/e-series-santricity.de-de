@@ -1,0 +1,63 @@
+---
+indexpage:
+  tiles:
+  - title: Richten Sie das Array ein
+    links:
+    - title: Ersteinrichtung
+      url: "../sm-interface/setup-wizard-overview.html"
+    - title: Administratorpasswort
+      url: "../sm-interface/administrator-password-protection.html"
+    - title: Meldungen
+      url: "../sm-settings/how-alerts-work.html"
+    - title: AutoSupport
+      url: "../sm-support/autosupport-feature-overview.html"
+  - title: Storage erstellen
+    links:
+    - title: Pools
+      url: "../sm-storage/create-pool-manually.html"
+    - title: Volume-Gruppen
+      url: "../sm-storage/create-volume-group.html"
+    - title: SSD-Cache
+      url: "../sm-storage/create-ssd-cache.html"
+    - title: Volumes
+      url: "../sm-storage/create-volumes.html"
+  - title: Hardware managen
+    links:
+    - title: Shelfs
+      url: "../sm-hardware/hardware-page-overview.html"
+    - title: Controller
+      url: "../sm-hardware/controller-states.html"
+    - title: Laufwerke
+      url: "../sm-hardware/drive-states.html"
+    - title: Zertifikate
+      url: "../sm-settings/how-certificates-work-sam.html"
+  - title: Spiegelung, Snapshots und Remote-Storage
+    links:
+    - title: Asynchrones Spiegeln
+      url: "../sm-mirroring/how-asynchronous-mirroring-works.html"
+    - title: Synchrones Spiegeln
+      url: "../sm-mirroring/how-synchronous-mirroring-works.html"
+    - title: Snapshot Storage
+      url: "../sm-storage/overview-snapshots.html"
+    - title: Remote Storage
+      url: "../sm-storage/rtv-how-remote-storage-works.html"
+  - title: Diagnose
+    links:
+    - title: Erfassung von Support-Daten
+      url: "../sm-support/collect-support-data-manually.html"
+    - title: Überprüfen Sie Upgrade-Fehler
+      url: "../sm-support/review-the-possible-software-and-firmware-upgrade-errors.html"
+    - title: Problembenachrichtigungen
+      url: "../sm-interface/problem-notification.html"
+    - title: Betrieb wird ausgeführt
+      url: "../sm-interface/view-and-act-on-operations-in-progress.html"
+  - title: Recovery und Ereignisse
+    links:
+    - title: Protokoll nicht bearbeitete Sektoren
+      url: "../sm-support/view-unreadable-sectors-log.html"
+    - title: Recovery Guru
+      url: "../sm-interface/recover-from-problems-using-recovery-guru.html"
+    - title: Ereignisprotokoll
+      url: "../sm-support/overview-event-log.html"
+    - title: Recovery Support-Dateien
+      url: "../sm-support/retrieve-recovery-support-files.html"

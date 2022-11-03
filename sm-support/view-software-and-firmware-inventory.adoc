@@ -1,0 +1,30 @@
+---
+permalink: sm-support/view-software-and-firmware-inventory.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, software, firmware, inventory 
+summary: Im Software- und Firmwarebestand sind die Firmware-Versionen für jede Komponente im Speicher-Array aufgeführt. 
+---
+= Anzeige des Software- und Firmware-Inventars
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Im Software- und Firmwarebestand sind die Firmware-Versionen für jede Komponente im Speicher-Array aufgeführt.
+
+Ein Storage Array besteht aus vielen Komponenten, darunter Controller, Laufwerke, Schubladen und Input/Output-Module (IOMs). Jede dieser Komponenten enthält Firmware. Einige Firmware-Versionen hängen von anderen Firmware-Versionen ab. Um Informationen über alle Firmware-Versionen in Ihrem Speicher-Array zu erfassen, lesen Sie den Software- und Firmware-Bestand. Der technische Support kann die Software- und Firmware-Bestandsaufnahme analysieren, um falsche Firmware-Zuordnungen zu erkennen.
+
+.Schritte
+. Wählen Sie Menü:Registerkarte Support[Support Center > Support-Ressourcen].
+. Scrollen Sie nach unten zu *Ausführliche Speicher-Array-Informationen starten* und wählen Sie dann *Software- und Firmware-Bestandsaufnahme* aus.
++
+Der Bericht „Software- und Firmware-Bestandsaufnahme“ wird auf dem Bildschirm angezeigt.
+
+. Klicken Sie zum Speichern der Software- und Firmware-Bestandsliste auf *Speichern*.
++
+Die Datei wird im Ordner Downloads für Ihren Browser mit dem Dateinamen gespeichert `firmware-inventory.txt`.
+
+. Folgen Sie den Anweisungen des technischen Supports, um die Datei an sie zu senden.
+

@@ -1,0 +1,48 @@
+---
+permalink: sm-settings/overview-certificates.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, certificates, 
+summary: 'Mit System Manager können Sie Zertifikatsignierungsanforderungen (CSRs) erstellen, Zertifikate importieren und vorhandene Zertifikate verwalten.' 
+---
+= Zertifikatübersicht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit System Manager können Sie Zertifikatsignierungsanforderungen (CSRs) erstellen, Zertifikate importieren und vorhandene Zertifikate verwalten.
+
+
+
+== Was sind Zertifikate?
+
+_Zertifikate_ sind digitale Dateien, die Online-Einheiten wie Websites und Server für eine sichere Kommunikation im Internet identifizieren. Es gibt zwei Arten von Zertifikaten: Ein _signiertes Zertifikat_ wird von einer Zertifizierungsstelle (CA) validiert und ein _selbst-signiertes Zertifikat_ wird vom Eigentümer des Unternehmens anstelle eines Dritten validiert.
+
+Weitere Informationen:
+
+* link:how-certificates-work-sam.html["Funktionsweise von Zertifikaten"]
+* link:certificate-terminology.html["Terminologie des Zertifikats"]
+
+
+
+
+== Wie konfiguriere ich signierte Zertifikate?
+
+Sie generieren zuerst eine Signierungsanforderung von System Manager und senden die Datei anschließend an eine CA. Sobald die Zertifizierungsstelle die Zertifikatdateien zurückgibt, importieren Sie diese mit System Manager.
+
+Weitere Informationen:
+
+* link:use-ca-signed-certificates-for-controllers.html["Verwenden Sie CA-signierte Zertifikate für Controller"]
+* link:use-ca-signed-certificates-for-authentication-with-a-key-management-server.html["Verwenden Sie CA-signierte Zertifikate zur Authentifizierung mit einem Schlüsselverwaltungsserver"]
+
+
+
+
+== Verwandte Informationen
+
+Weitere Informationen zu Zertifikataufgaben:
+
+* link:view-imported-certificates.html["Anzeigen importierter Zertifikatinformationen"]
+* link:enable-certificate-revocation-checking.html["Überprüfung des Zertifikatsannuls aktivieren"]
+

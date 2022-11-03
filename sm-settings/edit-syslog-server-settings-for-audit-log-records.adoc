@@ -1,0 +1,40 @@
+---
+permalink: sm-settings/edit-syslog-server-settings-for-audit-log-records.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, syslog, server, settings, audit, log, records, 
+summary: 'Sie können die Einstellungen für den Syslog-Server ändern, der für die Archivierung von Audit-Protokollen verwendet wird, und auch ein neues Zertifikat für die Zertifizierungsstelle (Certificate Authority, CA) für den Server hochladen.' 
+---
+= Bearbeiten Sie die Syslog-Servereinstellungen für Audit-Protokolldatensätze
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Einstellungen für den Syslog-Server ändern, der für die Archivierung von Audit-Protokollen verwendet wird, und auch ein neues Zertifikat für die Zertifizierungsstelle (Certificate Authority, CA) für den Server hochladen.
+
+.Bevor Sie beginnen
+* Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
+* Die Syslog-Serveradresse, das Protokoll und die Portnummer müssen verfügbar sein. Bei der Serveradresse kann es sich um einen vollständig qualifizierten Domänennamen, eine IPv4-Adresse oder eine IPv6-Adresse handeln.
+* Wenn Sie ein neues CA-Zertifikat hochladen, muss das Zertifikat auf Ihrem lokalen System verfügbar sein.
+
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[Zugriffsverwaltung].
+. Wählen Sie auf der Registerkarte Audit Log die Option *Configure Syslog Servers* aus.
++
+Konfigurierte Syslog-Server werden auf der Seite angezeigt.
+
+. Um die Serverinformationen zu bearbeiten, wählen Sie rechts neben dem Servernamen das Symbol *Bearbeiten* (Bleistift) aus und nehmen Sie die gewünschten Änderungen in den folgenden Feldern vor:
++
+** *Server-Adresse* -- Geben Sie einen vollständig qualifizierten Domänennamen, eine IPv4-Adresse oder eine IPv6-Adresse ein.
+** *Protokoll* -- Wählen Sie aus der Dropdown-Liste ein Protokoll aus (z. B. TLS, UDP oder TCP).
+** *Port* -- Geben Sie die Portnummer für den Syslog-Empfänger ein.
+
+
+. Wenn Sie das Protokoll in das sichere TLS-Protokoll (entweder von UDP oder TCP) geändert haben, klicken Sie auf *Vertrautes Zertifikat importieren*, um ein CA-Zertifikat hochzuladen.
+. Um die neue Verbindung mit dem Speicher-Array zu testen, wählen Sie *Alle testen*.
+
+
+Nach der Konfiguration werden alle neuen Audit-Protokolle an den Syslog-Server gesendet. Frühere Protokolle werden nicht übertragen.

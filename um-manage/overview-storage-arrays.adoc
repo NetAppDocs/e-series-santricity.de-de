@@ -1,0 +1,42 @@
+---
+permalink: um-manage/overview-storage-arrays.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, discover, storage, arrays 
+summary: Zum Managen von Storage-Ressourcen müssen Sie zuerst die Storage-Arrays im Netzwerk erkennen. 
+---
+= Übersicht über die Bestandsaufnahme
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Zum Managen von Storage-Ressourcen müssen Sie zuerst die Storage-Arrays im Netzwerk erkennen.
+
+
+
+== Wie entdecke ich Arrays?
+
+Verwenden Sie die Seite Hinzufügen/Entdecken, um die zu verwaltenden Speicher-Arrays im Netzwerk Ihres Unternehmens zu suchen und hinzuzufügen. Sie können mehrere Arrays ermitteln oder ein einziges Array erkennen. Dazu geben Sie Netzwerk-IP-Adressen ein, und Unified Manager versucht dann individuelle Verbindungen zu jeder IP-Adresse in diesem Bereich.
+
+Weitere Informationen:
+
+* link:considerations-for-discovering-arrays.html["Überlegungen bei der Array-Ermittlung"]
+* link:discover-multiple-arrays.html["Erkennung mehrerer Storage-Arrays"]
+* link:discover-single-array.html["Erkennen Sie ein einzelnes Array"]
+
+
+
+
+== Wie managt ich Arrays?
+
+Nachdem Sie Arrays entdeckt haben, gehen Sie zur Seite *Verwalten - Alle*. Auf dieser Seite können Sie eine Liste der erkannten Speicher-Arrays in Ihrem Netzwerk durchblättern, ihren Status anzeigen und Vorgänge auf einem einzelnen Array oder einer Gruppe von Arrays durchführen.
+
+Wenn Sie ein einzelnes Array verwalten möchten, können Sie es auswählen und System Manager öffnen.
+
+Weitere Informationen:
+
+* link:launch-considerations.html["Überlegungen für den Zugriff auf System Manager"]
+* link:launch-system-manager.html["Management eines individuellen Storage Arrays"]
+* link:storage-array-status.html["Anzeigen des Status des Speicherarrays"]
+

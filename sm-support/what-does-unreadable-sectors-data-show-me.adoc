@@ -1,0 +1,89 @@
+---
+permalink: sm-support/what-does-unreadable-sectors-data-show-me.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, unreadable, sectors, 
+summary: Sie können detaillierte Daten über unlesbare Sektoren anzeigen, die auf den Laufwerken in Ihrem Speicher-Array erkannt wurden. 
+---
+= Was zeigt mir unlesbare Sektoren Daten?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können detaillierte Daten über unlesbare Sektoren anzeigen, die auf den Laufwerken in Ihrem Speicher-Array erkannt wurden.
+
+Das unlesbare Sektoren-Log zeigt zuerst den zuletzt unlesbaren Sektor an. Das Protokoll enthält die folgenden Informationen zu den Volumes, die die unlesbaren Sektoren enthalten. Die Felder sind sortischbar.
+
+[cols="25h,~"]
+|===
+| Feld | Beschreibung 
+
+
+ a| 
+Betroffenes Volume
+ a| 
+Zeigt die Beschriftung des Volumens an. Wenn ein fehlendes Volume unlesbare Sektoren enthält, wird für das fehlende Volume die World Wide Identifier angezeigt.
+
+
+
+ a| 
+Logical Unit Number (LUN)
+ a| 
+Zeigt die LUN für das Volume. Wenn auf dem Volume keine LUN vorhanden ist, wird im Dialogfeld „NA“ angezeigt.
+
+
+
+ a| 
+Zugewiesen Zu
+ a| 
+Zeigt die Hosts oder Host-Cluster, die Zugriff auf das Volume haben. Wenn ein Host, Host-Cluster oder sogar ein Standardcluster auf das Volume nicht zugreifen kann, wird im Dialogfeld „NA“ angezeigt.
+
+|===
+Um weitere Informationen zu den unlesbaren Sektoren zu erhalten, klicken Sie auf das Pluszeichen (+) neben einem Volume.
+
+[cols="25h,~"]
+|===
+| Feld | Beschreibung 
+
+
+ a| 
+Datum/Uhrzeit
+ a| 
+Zeigt das Datum und die Uhrzeit an, zu der der unlesbare Sektor erkannt wurde.
+
+
+
+ a| 
+Logische Block-Adresse Des Volume
+ a| 
+Zeigt die logische Blockadresse (LBA) des Volumes an.
+
+
+
+ a| 
+Position Des Laufwerks
+ a| 
+Zeigt das Festplatten-Shelf, die Schublade (wenn Ihr Festplatten-Shelf Schubladen aufweist) und den Auflageort des Laufwerks an.
+
+
+
+ a| 
+Logische Blockadresse Des Laufwerks
+ a| 
+Zeigt die LBA des Laufwerks an.
+
+
+
+ a| 
+Fehlertyp
+ a| 
+Zeigt einen der folgenden Fehlertypen an:
+
+* *Physical* -- Ein Fehler beim physischen Medium.
+* *Logisch* -- Ein Lesefehler an anderer Stelle im Stripe, der unlesbare Daten verursacht. Zum Beispiel ein unlesbarer Sektor aufgrund von Medienfehlern an anderer Stelle im Volumen.
+* * Inkonsistente* -- inkonsistente Redundanzdaten.
+* *Data Assurance* -- Ein Data Assurance-Fehler.
+
+
+|===

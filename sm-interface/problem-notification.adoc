@@ -1,0 +1,71 @@
+---
+permalink: sm-interface/problem-notification.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, notifications 
+summary: System Manager verwendet Symbole und verschiedene andere Methoden, um Sie über Probleme mit dem Speicher-Array zu informieren. 
+---
+= Problembenachrichtigungen – Übersicht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager verwendet Symbole und verschiedene andere Methoden, um Sie über Probleme mit dem Speicher-Array zu informieren.
+
+
+
+== Symbole
+
+System Manager verwendet diese Symbole, um den Status des Speicher-Arrays und seiner Komponenten anzuzeigen.
+
+[cols="1a,1a"]
+|===
+| Symbol | Beschreibung 
+
+
+ a| 
+image:../media/sam1130-ss-icon-status-success.gif[""]
+ a| 
+Optimal
+
+
+
+ a| 
+image:../media/sam1130-ss-icon-status-failure.gif[""]
+ a| 
+Nicht optimal oder fehlgeschlagen
+
+
+
+ a| 
+image:../media/sam1130-ss-icon-status-service.gif[""]
+ a| 
+Muss aufpassen oder korrigieren
+
+
+
+ a| 
+image:../media/sam1130-ss-icon-status-caution.gif[""]
+ a| 
+Achtung
+
+|===
+System Manager zeigt diese Symbole an verschiedenen Orten an.
+
+* Im Bereich Benachrichtigungen auf der Startseite werden das Fehlersymbol und eine Meldung angezeigt.
+* Das Symbol Startseite im Navigationsbereich zeigt das Fehlersymbol an.
+* Auf der Seite Komponenten wird in der Grafik für Laufwerke und Controller das Fehlersymbol angezeigt.
+
+
+
+
+== Meldungen und LEDs
+
+Zudem wird von System Manager über Probleme in anderer Weise benachrichtigt.
+
+* System Manager sendet SNMP-Benachrichtigungen oder E-Mail-Fehlermeldungen.
+* Die LEDs für die Serviceaktion, die für die Hardware erforderlich sind, leuchten auf.
+
+
+Wenn Sie eine Benachrichtigung über ein Problem erhalten, können Sie es mithilfe des Recovery Guru beheben. Verwenden Sie bei Bedarf die Hardware-Dokumentation mit den Wiederherstellungsschritten, um fehlerhafte Komponenten zu ersetzen.

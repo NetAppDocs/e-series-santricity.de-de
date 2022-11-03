@@ -1,0 +1,41 @@
+---
+permalink: sm-interface/recover-from-problems-using-recovery-guru.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, Recovery Guru 
+summary: Recovery Guru ist eine Komponente von System Manager, der Probleme im Storage Array diagnostiziert und Recovery-Verfahren zur Behebung dieser Probleme empfiehlt. 
+---
+= Mit Recovery Guru können Sie Probleme beheben
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Recovery Guru ist eine Komponente von System Manager, der Probleme im Storage Array diagnostiziert und Recovery-Verfahren zur Behebung dieser Probleme empfiehlt.
+
+.Schritte
+. Wählen Sie *Home*.
+. Klicken Sie in der Mitte des Fensters auf den Link *Recover from _n_ Problems*.
++
+Das Dialogfeld Recovery Guru wird angezeigt.
+
+. Wählen Sie das erste Problem aus der Zusammenfassungsliste aus, und befolgen Sie die Anweisungen im Wiederherstellungsverfahren, um das Problem zu beheben. Verwenden Sie bei Bedarf die Austauschanweisungen, um fehlerhafte Komponenten auszutauschen. Wiederholen Sie diesen Schritt für jedes aufgelistete Problem.
++
+Innerhalb eines Storage-Arrays können mehrere Probleme auftreten. In diesem Fall kann die Reihenfolge, in der die Probleme korrigiert werden, das Ergebnis beeinflussen. Wählen und korrigieren Sie die Probleme in der Reihenfolge, in der sie in der Zusammenfassungsliste aufgeführt sind.
+
++
+Mehrere Ausfälle für einen Netzteilbehälter werden gruppiert und als ein Problem in der Zusammenfassungsliste aufgeführt. Mehrere Ausfälle für einen Lüfterbehälter werden ebenfalls als ein Problem aufgeführt.
+
+. Um sicherzustellen, dass der Wiederherstellungsvorgang erfolgreich war, klicken Sie auf *recheck*.
++
+Wenn Sie ein Problem für eine asynchrone Spiegelgruppe oder ein Mitglied einer asynchronen Spiegelgruppe ausgewählt haben, klicken Sie zuerst auf *Löschen*, um den Fehler vom Controller zu löschen, und klicken Sie dann auf *recheck*, um das Ereignis aus dem Recovery Guru zu entfernen.
+
++
+Wenn alle Probleme behoben wurden, wechselt das Speicherarray-Symbol schließlich von der erforderlichen Aufmerksamkeit zum optimalen. Bei einigen Problemen wird während eines Vorgangs, z. B. der Rekonstruktion, ein Symbol zur Fehlerbehebung angezeigt.
+
+. *Optional:* um die Recovery Guru-Informationen in einer Datei zu speichern, klicken Sie auf das Symbol *Speichern*.
++
+Die Datei wird im Ordner Downloads für Ihren Browser mit dem Namen gespeichert `recovery-guru-failure-yyyy-mm-dd-hh-mm-ss-mmm.html`.
+
+. Um die Recovery Guru-Informationen auszudrucken, klicken Sie auf das Symbol *Drucken*.
+

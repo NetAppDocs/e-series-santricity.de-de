@@ -1,0 +1,33 @@
+---
+permalink: sm-mirroring/test-communication-for-synchronous-mirroring.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, test, communication, synchronous, mirroring, 
+summary: Sie können die Kommunikation zwischen einem lokalen Speicher-Array und einem Remote-Speicher-Array testen, um mögliche Kommunikationsprobleme für ein gespiegeltes Paar zu diagnostizieren, das an der synchronen Spiegelung beteiligt ist. 
+---
+= Testen Sie die Kommunikation zur synchronen Spiegelung
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Kommunikation zwischen einem lokalen Speicher-Array und einem Remote-Speicher-Array testen, um mögliche Kommunikationsprobleme für ein gespiegeltes Paar zu diagnostizieren, das an der synchronen Spiegelung beteiligt ist.
+
+Es werden zwei verschiedene Tests durchgeführt:
+
+* *Kommunikation* -- überprüft, ob die beiden Speicher-Arrays einen Kommunikationspfad haben. Der Kommunikationstest überprüft, ob das lokale Speicher-Array mit dem Remote-Speicher-Array kommunizieren kann und ob das mit dem gespiegelten Paar verbundene sekundäre Volume auf dem Remote-Speicher-Array vorhanden ist.
+* *Latenz* -- sendet einen SCSI-Testeinheit-Befehl an das sekundäre Volume auf dem Remote-Speicher-Array, das mit dem gespiegelten Paar verbunden ist, um die minimale, durchschnittliche und maximale Latenz zu testen.
+
+
+.Schritte
+. Wählen Sie Menü:Speicher[Synchronous Mirroring].
+. Wählen Sie das gespiegelte Paar aus, das Sie testen möchten, und wählen Sie dann *Kommunikation testen*.
+. Überprüfen Sie die im Ergebnisfenster angezeigten Informationen und befolgen Sie bei Bedarf die angezeigten Korrekturmaßnahmen.
++
+[NOTE]
+====
+Wenn der Kommunikationstest fehlschlägt, wird der Test nach dem Schließen dieses Dialogfelds fortgesetzt, bis die Kommunikation zwischen dem gespiegelten Paar wiederhergestellt ist.
+
+====
+

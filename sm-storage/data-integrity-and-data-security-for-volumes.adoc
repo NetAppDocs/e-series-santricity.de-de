@@ -1,0 +1,59 @@
+---
+permalink: sm-storage/data-integrity-and-data-security-for-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, data, integrity, security, volumes 
+summary: 'Sie können Volumes für die Verwendung der Data Assurance (da)-Funktion und der Laufwerkssicherheitsfunktion aktivieren. Diese Funktionen werden auf Pool- und Volume-Gruppenebene präsentiert.' 
+---
+= Datenintegrität und Datensicherheit für Volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Volumes für die Verwendung der Data Assurance (da)-Funktion und der Laufwerkssicherheitsfunktion aktivieren. Diese Funktionen werden auf Pool- und Volume-Gruppenebene präsentiert.
+
+
+
+== Datensicherheit
+
+Data Assurance (da) implementiert den T10 Protection Information (PI)-Standard. Dies erhöht die Datenintegrität, indem Fehler geprüft und korrigiert werden, die bei der Datenübertragung entlang des I/O-Pfads auftreten können. Die typische Nutzung der Data Assurance Funktion überprüft den Teil des I/O-Pfads zwischen den Controllern und Laufwerken. DA-Funktionen werden auf Pool- und Volume-Gruppenebene präsentiert.
+
+Wenn diese Funktion aktiviert ist, hängt das Speicherarray die Fehlerprüfungscodes (auch zyklische Redundanzprüfungen oder CRCs genannt) an jeden Datenblock im Volume an. Nach dem Verschieben eines Datenblocks ermittelt das Speicher-Array anhand dieser CRC-Codes, ob während der Übertragung Fehler aufgetreten sind. Potenziell beschädigte Daten werden weder auf Festplatte geschrieben noch an den Host zurückgegeben. Wenn Sie die da-Funktion verwenden möchten, wählen Sie einen Pool oder eine Volume-Gruppe aus, die bei der Erstellung eines neuen Volumes mit der da-Fähigkeit ausgestattet ist (suchen Sie in der Tabelle „da“ neben „da“ und „Volume-Gruppen-Kandidaten“ nach „Ja“).
+
+
+
+== Laufwerkssicherheit
+
+Drive Security ist eine Funktion, die bei Entfernung aus dem Speicher-Array unberechtigten Zugriff auf Daten auf sicheren Laufwerken verhindert. Diese Laufwerke können entweder vollständige Festplattenverschlüsselung (Full Disk Encryption, FDE) oder Laufwerke sein, die für die Einhaltung von Federal Information Processing Standards 140-2 Level 2 (FIPS-Laufwerke) zertifiziert sind.
+
+
+
+=== Wie Drive Security auf der Laufwerksebene funktioniert
+
+Ein sicheres Laufwerk mit FDE oder FIPS verschlüsselt Daten beim Schreiben und entschlüsselt Daten beim Lesen. Diese Ver- und Entschlüsselung hat keine Auswirkungen auf die Leistung oder den Anwender-Workflow. Jedes Laufwerk verfügt über einen eigenen eindeutigen Verschlüsselungsschlüssel, der nie vom Laufwerk übertragen werden kann.
+
+
+
+=== So arbeitet Drive Security auf Volume-Ebene
+
+Wenn Sie einen Pool oder eine Volume-Gruppe aus sicheren Laufwerken erstellen, können Sie auch die Laufwerksicherheit für diese Pools oder Volume-Gruppen aktivieren. Mit der Option Laufwerkssicherheit können die Laufwerke und damit verbundene Volume-Gruppen und Pools sicher-_enabled_ erstellt werden. Ein Pool oder eine Volume-Gruppe kann sowohl sichere als auch nicht sichere Laufwerke enthalten. Zur Nutzung der Verschlüsselungsfunktionen müssen jedoch alle Laufwerke sicher sein.
+
+
+
+=== So implementieren Sie Drive Security
+
+Um die Laufwerkssicherheit zu implementieren, führen Sie die folgenden Schritte aus.
+
+. Rüsten Sie Ihr Storage-Array mit sicheren Laufwerken aus – entweder mit FDE- oder mit FIPS-Laufwerken. (Für Volumes, die FIPS-Unterstützung erfordern, verwenden Sie nur FIPS-Laufwerke. Durch das Mischen von FIPS- und FDE-Laufwerken in einer Volume-Gruppe oder einem Pool werden alle Laufwerke als FDE-Laufwerke behandelt. Außerdem kann ein FDE-Laufwerk nicht zu einer Ersatzfestplatte in einer reinen FIPS-Volume-Gruppe oder einem Pool hinzugefügt oder verwendet werden.)
+. Erstellen Sie einen Sicherheitsschlüssel, d. h. eine Zeichenkette, die vom Controller und den Laufwerken für Lese-/Schreibzugriff freigegeben wird. Sie können entweder einen internen Schlüssel aus dem persistenten Speicher des Controllers oder einen externen Schlüssel von einem Schlüsselmanagementserver erstellen. Für das externe Verschlüsselungsmanagement muss eine Authentifizierung mit dem Verschlüsselungsmanagement-Server eingerichtet werden.
+. Aktivieren Sie die Laufwerkssicherheit für Pools und Volume-Gruppen:
++
+** Erstellen Sie einen Pool oder eine Volume-Gruppe (suchen Sie in der Spalte *Secure-able* in der Tabelle Kandidaten nach *Ja*).
+** Wählen Sie einen Pool oder eine Volume-Gruppe aus, wenn Sie ein neues Volume erstellen (suchen Sie nach *Ja* neben *sicher-fähig* in der Tabelle für Pool- und Volume-Gruppen Kandidaten).
++
+Mit der Laufwerkssicherheitsfunktion erstellen Sie einen Sicherheitsschlüssel, der von den sicheren Laufwerken und Controllern in einem Speicher-Array gemeinsam genutzt wird. Wenn die Stromversorgung der Laufwerke aus- und wieder eingeschaltet wird, wechseln die sicher-aktivierten Laufwerke in den Status Sicherheitsverriegelt, bis der Controller den Sicherheitsschlüssel anwendet.
+
+
+
+

@@ -1,0 +1,95 @@
+---
+permalink: sm-mirroring/how-synchronous-mirroring-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, 
+summary: Bei der synchronen Spiegelung werden Daten-Volumes in Echtzeit repliziert, um eine kontinuierliche Verfügbarkeit zu gewährleisten. 
+---
+= Funktionsweise der synchronen Spiegelung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bei der synchronen Spiegelung werden Daten-Volumes in Echtzeit repliziert, um eine kontinuierliche Verfügbarkeit zu gewährleisten.
+
+[NOTE]
+====
+Eine Spiegelung ist nicht auf dem EF600 oder EF300-Speicher-Array verfügbar.
+
+====
+Beim synchronen Spiegeln wird ein Recovery Point Objective (RPO) von null verloren gegangene Daten erreicht, da eine Kopie wichtiger Daten verfügbar ist, falls auf einem der beiden Storage Arrays ein Ausfall auftritt. Die Kopie ist zu jedem Zeitpunkt identisch mit den Produktionsdaten. Jedes Mal, wenn ein Schreibvorgang auf dem primären Volume ausgeführt wird, wird auf dem sekundären Volume ein Schreibvorgang vorgenommen. Der Host erhält keine Bestätigung, dass der Schreibvorgang erfolgreich war, bis das sekundäre Volume mit den Änderungen auf dem primären Volume erfolgreich aktualisiert wurde.
+
+Diese Art von Spiegelung ist ideal für Business Continuity-Zwecke wie Disaster Recovery.
+
+
+
+== Beziehung zwischen synchronem Spiegeln
+
+Eine synchrone Spiegelbeziehung besteht aus einem primären Volume und einem sekundären Volume auf separaten Storage Arrays. Das Storage-Array, das das primäre Volume enthält, befindet sich normalerweise am primären Standort und dient den aktiven Hosts. Das Storage-Array mit dem sekundären Volume befindet sich normalerweise an einem sekundären Standort und enthält ein Replikat der Daten. Das sekundäre Volume wird verwendet, wenn das Storage Array des primären Volumes nicht verfügbar ist, beispielsweise wegen eines vollständigen Stromausfalls, eines Brandes oder eines Hardware-Ausfalls am primären Standort.
+
+
+
+== Sitzung zur synchronen Spiegelung
+
+Bei der Konfiguration der synchronen Spiegelung müssen Volumes zu Paaren konfiguriert werden. Nachdem Sie ein gespiegeltes Paar erstellt haben, das aus einem primären Volume auf einem Storage Array und einem sekundären Volume auf einem anderen Storage Array besteht, können Sie mit der synchronen Spiegelung beginnen. Die Schritte im synchronen Spiegeln sind unten dargestellt.
+
+image::../media/sam-1130-dwg-sync-mirroring-session.gif[sam 1130 DWG Sync Spiegelungssitzung]
+
+. Ein Schreibvorgang erfolgt vom Host.
+. Der Schreibvorgang wird an das primäre Volume übertragen, an das Remote-System übertragen und anschließend an das sekundäre Volume übertragen.
+. Das Storage-Array des primären Volumes sendet eine I/O-Abschlussmeldung an das Host-System _nachdem_ beide Schreibvorgänge erfolgreich abgeschlossen wurden.
+
+
+Die reservierte Kapazität wird verwendet, um Informationen über die eingehende Schreibanforderung von einem Host zu protokollieren.
+
+Wenn der aktuelle Controller-Eigentümer des primären Volume eine Schreibanforderung von einem Host empfängt, protokolliert der Controller zuerst Informationen über den Schreibzugriff auf die reservierte Kapazität des primären Volumes. Anschließend werden die Daten auf das primäre Volume geschrieben. Anschließend initiiert der Controller einen Remote-Schreibvorgang, um die betroffenen Datenblöcke in das sekundäre Volume des Remote-Storage Arrays zu kopieren.
+
+Da die Host-Anwendung warten muss, bis der Schreibvorgang auf dem lokalen Speicher-Array und im Netzwerk auf dem Remote-Speicher-Array erfolgt, Eine sehr schnelle Verbindung zwischen dem lokalen Storage Array und dem Remote Storage Array ist erforderlich, um die Spiegelbeziehung aufrechtzuerhalten, ohne die lokale I/O Performance zu übermäßig zu reduzieren.
+
+
+
+== Disaster Recovery
+
+Bei der synchronen Spiegelung werden eine Kopie von Daten gespeichert, die sich physisch vom Standort entfernt befindet. Falls am primären Standort – beispielsweise bei einem Stromausfall oder einer Überflutung – ein Ausfall auftritt, ist der Zugriff auf die Daten vom sekundären Standort aus schnell möglich.
+
+Das sekundäre Volume ist zum Hosten von Applikationen nicht verfügbar, während der Synchronous Mirroring-Vorgang läuft. Somit kann bei einem Ausfall des lokalen Storage-Arrays ein Failover auf das Remote-Storage-Array durchgeführt werden. Setzen Sie das sekundäre Volume für die primäre Rolle ein, um ein Failover zu ermöglichen. Anschließend kann der Recovery-Host auf das neu beworbene Volume zugreifen, und die Geschäftsabläufe können fortgesetzt werden.
+
+
+
+== Synchronisierungseinstellungen
+
+Beim Erstellen eines gespiegelten Paares definieren Sie außerdem die Synchronisierungspriorität und die Resynchronisierungsrichtlinie, mit der das gespiegelte Paar den Neusynchronisierung nach einer Kommunikationsunterbrechung abgeschlossen.
+
+Wenn die Kommunikationsverbindung zwischen den beiden Speicherarrays nicht mehr funktioniert, erhalten Hosts weiterhin Bestätigungen vom lokalen Speicher-Array, um einen Zugriffsverlust zu verhindern. Wenn die Kommunikationsverbindung wieder funktioniert, können alle nicht replizierten Daten automatisch oder manuell zum Remote-Speicher-Array resynchronisiert werden.
+
+Ob Daten automatisch neu synchronisiert werden, hängt von der Resynchronisierung des gespiegelten Paars ab. Eine automatische Neusynchronisierung ermöglicht dem gespiegelten Paar die automatische Neusynchronisierung, wenn die Verbindung wieder funktioniert. Bei einer manuellen Neusynchronisierung müssen Sie die Synchronisierung nach einem Kommunikationsproblem manuell fortsetzen. Eine manuelle Neusynchronisierung ist die empfohlene Richtlinie.
+
+Sie können die Synchronisierungseinstellungen für ein gespiegeltes Paar nur auf dem Speicher-Array bearbeiten, das das primäre Volume enthält.
+
+
+
+== Nicht synchronisierte Daten
+
+Das primäre und das sekundäre Volume werden nicht synchronisiert, wenn das Storage-Array des primären Volumes keine Daten auf das sekundäre Volume schreiben kann. Dies kann durch folgende Probleme verursacht werden:
+
+* Netzwerkprobleme zwischen lokalen und Remote-Speicher-Arrays
+* Ein ausgefallenes sekundäres Volume
+* Die Synchronisierung wird manuell auf dem gespiegelten Paar ausgesetzt
+
+
+
+
+== Verwaiste gespiegelte Paare
+
+Ein verwaistes gespiegeltes Paar-Volume ist vorhanden, wenn ein Mitglied-Volume auf einer Seite entfernt wurde (entweder auf der primären oder sekundären Seite), aber nicht auf der anderen Seite.
+
+Verwaiste gespiegelte Paar-Volumes werden erkannt, wenn die Kommunikation zwischen den Arrays wiederhergestellt wird und die beiden Seiten der Spiegelkonfiguration die Spiegelparameter in Einklang bringen.
+
+Sie können ein gespiegeltes Paar entfernen, um den Status eines verwaisten gespiegelten Paares zu korrigieren.
+
+
+
+== Konfiguration und Management
+
+Um die Spiegelung zwischen zwei Arrays zu aktivieren und zu konfigurieren, müssen Sie die Unified Manager-Schnittstelle verwenden. Sobald die Spiegelung aktiviert ist, können Sie gespiegelte Paare und Synchronisierungseinstellungen in System Manager verwalten.

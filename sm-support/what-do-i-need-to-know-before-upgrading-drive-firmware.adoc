@@ -1,0 +1,22 @@
+---
+permalink: sm-support/what-do-i-need-to-know-before-upgrading-drive-firmware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, upgrading, drive, firmware 
+summary: Achten Sie vor dem Aktualisieren der Laufwerk-Firmware auf diese Elemente. 
+---
+= Was muss ich vor dem Aktualisieren der Laufwerk-Firmware beachten?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Achten Sie vor dem Aktualisieren der Laufwerk-Firmware auf diese Elemente.
+
+* Als Vorsichtsmaßnahme erstellen Sie Ihre Daten mittels Disk-to-Disk Backup, Volume-Kopie (in einer Volume-Gruppe, die nicht von der geplanten Firmware-Aktualisierung betroffen ist) oder einer Remote-Spiegelung.
+* Möglicherweise möchten Sie nur einige wenige Laufwerke aktualisieren, um das Verhalten der neuen Firmware zu testen, um sicherzustellen, dass sie ordnungsgemäß funktioniert. Wenn die neue Firmware ordnungsgemäß funktioniert, aktualisieren Sie die verbleibenden Laufwerke.
+* Wenn Laufwerke ausgefallen sind, beheben Sie sie, bevor Sie das Firmware-Upgrade starten.
+* Wenn die Laufwerke offline aktualisiert werden können, stoppen Sie die I/O-Aktivität aller Volumes, die mit den Laufwerken verbunden sind. Wenn die I/O-Aktivität angehalten ist, können keine Konfigurationsvorgänge für diese Volumes durchgeführt werden.
+* Entfernen Sie während des Upgrades der Laufwerk-Firmware keine Laufwerke.
+* Nehmen Sie während des Upgrades der Laufwerk-Firmware keine Konfigurationsänderungen am Speicher-Array vor.
+

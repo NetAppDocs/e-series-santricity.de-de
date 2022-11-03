@@ -1,0 +1,279 @@
+---
+permalink: sm-storage/create-volume-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, volume, group 
+summary: Sie erstellen mithilfe einer Volume-Gruppe ein oder mehrere Volumes, auf die der Host zugreifen kann. Eine Volume-Gruppe ist ein Container für Volumes mit gemeinsam genutzten Merkmalen wie RAID-Level und Kapazität. 
+---
+= Erstellen einer Volume-Gruppe
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie erstellen mithilfe einer Volume-Gruppe ein oder mehrere Volumes, auf die der Host zugreifen kann. Eine Volume-Gruppe ist ein Container für Volumes mit gemeinsam genutzten Merkmalen wie RAID-Level und Kapazität.
+
+Mit Laufwerken mit größerer Kapazität und der Möglichkeit, Volumes über Controller hinweg zu verteilen, bietet das Erstellen von mehr als einem Volume pro Volume-Gruppe eine gute Möglichkeit, die Storage-Kapazität zu nutzen und die Daten zu sichern.
+
+Überprüfen Sie diese Richtlinien, bevor Sie eine Volume-Gruppe erstellen:
+
+* Sie benötigen mindestens ein nicht zugewiesenes Laufwerk.
+* Für die Anzahl der Laufwerke, über die Sie in einer einzelnen Volume-Gruppe verfügen können, gibt es Einschränkungen. Diese Einschränkungen variieren je nach RAID-Level.
+* Um einen Verlust von Shelfs/Schubladen zu ermöglichen, müssen Sie eine Volume-Gruppe erstellen, die Laufwerke in mindestens drei Shelfs oder Schubladen verwendet, es sei denn, Sie verwenden RAID 1, wo mindestens zwei Shelfs/Schubladen verwendet werden.
+* Wenn Sie über ein EF600- oder EF300-Storage-Array verfügen und Sie eine Volume-Gruppe manuell erstellen möchten, stellen Sie sicher, dass jeder Controller in den ersten 12 Steckplätzen und in den letzten 12 Steckplätzen Zugriff auf eine gleiche Anzahl von Laufwerken hat. Mit dieser Konfiguration können die Controller beide PCIe-Busse auf der Laufwerkseite effektiver nutzen. Derzeit ermöglicht System Manager die Laufwerkauswahl unter der Funktion Erweitert, wenn eine Volume-Gruppe erstellt wird.
+* Überprüfen Sie, wie sich die RAID-Auswahl auf die resultierende Kapazität der Volume-Gruppe auswirkt:
++
+** Wenn Sie RAID 1 auswählen, müssen Sie jeweils zwei Laufwerke hinzufügen, um sicherzustellen, dass ein gespiegeltes Paar ausgewählt ist. Spiegelung und Striping (bekannt als RAID 10 oder RAID 1+0) wird erreicht, wenn vier oder mehr Laufwerke ausgewählt werden.
+** Wenn Sie RAID 5 auswählen, müssen Sie mindestens drei Laufwerke hinzufügen, um die Volume-Gruppe zu erstellen.
+** Wenn Sie RAID 6 auswählen, müssen Sie mindestens fünf Laufwerke hinzufügen, um die Volume-Gruppe zu erstellen.
+
+
+
+
+.Schritte
+. Wählen Sie Menü:Speicher[Pools & Volume Groups].
+. Klicken Sie auf Menü:Erstellen[Volume Group].
++
+Das Dialogfeld Volume-Gruppe erstellen wird angezeigt.
+
+. Geben Sie einen Namen für die Volume-Gruppe ein.
+. Wählen Sie das RAID Level aus, das Ihre Anforderungen an Storage und Datensicherheit am besten erfüllt.
++
+Die Kandidatentabelle für die Volume-Gruppe wird angezeigt und zeigt nur die Kandidaten an, die die ausgewählte RAID-Ebene unterstützen.
+
+. *Optional:* Wenn Sie mehr als einen Laufwerkstyp im Speicher-Array haben, wählen Sie den Laufwerkstyp aus, den Sie verwenden möchten.
++
+Die Kandidatentabelle für die Volume-Gruppe wird angezeigt und zeigt nur die Kandidaten an, die den ausgewählten Laufwerkstyp und den ausgewählten RAID-Level unterstützen.
+
+. *Optional:* Sie können entweder die automatische oder die manuelle Methode wählen, um festzulegen, welche Laufwerke in der Volume-Gruppe verwendet werden sollen. Die automatische Methode ist die Standardauswahl.
++
+Um Laufwerke manuell auszuwählen, klicken Sie auf den Link *Manuelle Auswahl von Laufwerken (erweitert)*. Wenn Sie auf diese Schaltfläche klicken, wird die Option *automatisch Laufwerke auswählen (erweitert)*.
+
++
+Mit der manuellen Methode können Sie auswählen, welche spezifischen Laufwerke die Volume-Gruppe umfassen. Wählen Sie bestimmte nicht zugewiesene Laufwerke aus, um die erforderliche Kapazität abzurufen. Wenn das Speicher-Array Laufwerke mit unterschiedlichen Medientypen oder unterschiedlichen Schnittstellentypen enthält, können Sie nur die nicht konfigurierte Kapazität für einen einzelnen Laufwerkstyp auswählen, um die neue Volume-Gruppe zu erstellen.
+
++
+[NOTE]
+====
+Die manuelle Methode sollte nur von Experten verwendet werden, die die Laufwerkredundanz und die optimale Laufwerkskonfiguration verstehen.
+
+====
+. Wählen Sie basierend auf den angezeigten Laufwerkeigenschaften die Laufwerke aus, die Sie in der Volume-Gruppe verwenden möchten, und klicken Sie dann auf *Erstellen*.
++
+Die angezeigten Laufwerkeigenschaften hängen davon ab, ob Sie die automatische oder die manuelle Methode ausgewählt haben.
+
++
+.Antriebseigenschaften der automatischen Methode
+====
+[cols="25h,~"]
+|===
+| Charakteristisch | Nutzung 
+
+
+ a| 
+Freie Kapazität
+ a| 
+Zeigt die verfügbare Kapazität in gib an. Wählen Sie einen Kandidaten für eine Volume-Gruppe mit der Kapazität für die Storage-Anforderungen Ihrer Applikation aus.
+
+
+
+ a| 
+Laufwerke Insgesamt
+ a| 
+Zeigt die Anzahl der für diese Volume-Gruppe verfügbaren Laufwerke an. Wählen Sie einen Kandidaten für eine Volume-Gruppe mit der Anzahl der gewünschten Laufwerke aus.
+
+
+
+ a| 
+Laufwerksblockgröße (nur EF300 und EF600)
+ a| 
+Zeigt die Blockgröße (Sektorgröße) an, die die Laufwerke in der Gruppe schreiben können. Die Werte können Folgendes umfassen:
+
+** 512 -- 512-Byte-Sektorgröße.
+** 4K – 4,096 Byte Sektorgröße.
+
+
+
+
+ a| 
+Sicher
+ a| 
+Zeigt an, ob dieser Kandidat für diese Volume-Gruppe vollständig aus sicheren Laufwerken besteht, bei denen es sich entweder um vollständige Festplattenverschlüsselung (Full Disk Encryption, FDE) oder FIPS-Laufwerke (Federal Information Processing Standard) handeln kann.
+
+** Sie können Ihre Volume-Gruppe mit Drive Security schützen, aber alle Laufwerke müssen sicher für diese Funktion geeignet sein.
+** Wenn Sie eine nur-FDE-Volume-Gruppe erstellen möchten, suchen Sie in der Spalte Secure-fähiger nach *Ja - FDE*. Wenn Sie eine nur-FIPS-Gruppe erstellen möchten, suchen Sie nach *Ja - FIPS* oder *Ja - FIPS (gemischt)*. „Mixed“ zeigt eine Mischung aus 140-2- und 140-3-Level-Laufwerken an. Wenn Sie eine Mischung dieser Ebenen verwenden, beachten Sie, dass die Volume-Gruppe dann auf einer niedrigeren Sicherheitsstufe arbeitet (140-2).
+** Sie können eine Volume-Gruppe aus Laufwerken erstellen, die möglicherweise sicher sind oder nicht, aber eine Kombination aus Sicherheitsstufen bieten. Wenn die Laufwerke in der Volume-Gruppe Laufwerke enthalten, die nicht sicher sind, können Sie die Volume-Gruppe nicht sichern.
+
+
+
+
+ a| 
+Sicherheit Aktivieren?
+ a| 
+Bietet die Möglichkeit, die Sicherheitsfunktion des Laufwerks mit sicheren Laufwerken zu aktivieren. Wenn die Volume-Gruppe sicher ist und Sie einen Sicherheitsschlüssel eingerichtet haben, können Sie die Laufwerksicherheit aktivieren, indem Sie das Kontrollkästchen aktivieren.
+
+
+NOTE: Die einzige Möglichkeit, die Laufwerksicherheit zu entfernen, nachdem sie aktiviert ist, ist, die Volume-Gruppe zu löschen und die Laufwerke zu löschen.
+
+
+
+ a| 
+DA-fähig
+ a| 
+Gibt an, ob Data Assurance (da) für diese Gruppe verfügbar ist. Data Assurance (da) überprüft und korrigiert Fehler, die auftreten können, wenn Daten durch die Controller zu den Laufwerken übertragen werden.
+
+Wenn Sie da verwenden möchten, wählen Sie eine Volume-Gruppe aus, die für das da-fähig ist. (Bei da-fähigen Laufwerken wird da automatisch auf im Pool erstellten Volumes aktiviert.)
+
+Eine Volume-Gruppe kann Laufwerke enthalten, die für da-fähig sind oder nicht für da-fähig sind, aber alle Laufwerke müssen für die Verwendung dieser Funktion als da-fähig sein.
+
+
+
+ a| 
+Resource Provisioning-fähig (nur EF300 und EF600)
+ a| 
+Zeigt an, ob Ressourcen-Provisioning für diese Gruppe verfügbar ist. Resource Provisioning ist eine Funktion, die in den EF300- und EF600-Speicher-Arrays zur Verfügung steht und die es ermöglicht, Volumes ohne Hintergrundinitialisierung sofort in Betrieb zu nehmen.
+
+
+
+ a| 
+Schutz Vor Shelf-Verlust
+ a| 
+Zeigt an, ob Regalverlustschutz verfügbar ist. Shelf-Schutz garantiert den Zugriff auf die Daten auf den Volumes in einer Volume-Gruppe, wenn ein vollständiger Verlust der Kommunikation zu einem Shelf auftritt.
+
+
+
+ a| 
+Schutz Vor Schubladenverlust
+ a| 
+Zeigt an, ob ein Schubladenschutz verfügbar ist, der nur zur Verfügung steht, wenn Sie ein Laufwerk-Shelf mit Schubladen verwenden. Der Schutz vor Schubladenverlust garantiert den Zugriff auf die Daten auf den Volumes in einer Volume-Gruppe, wenn ein vollständiger Verlust der Kommunikation mit einer einzelnen Schublade in einem Festplatten-Shelf auftritt.
+
+
+
+ a| 
+Unterstützte Volume-Block-Größen (nur EF300 und EF600)
+ a| 
+Zeigt die Blockgrößen an, die für die Volumes in der Gruppe erstellt werden können:
+
+** 512 n -- 512 Bytes nativ.
+** 512 e -- 512 Bytes emuliert.
+** 4K -- 4,096 Byte.
+
+
+|===
+====
++
+.Eigenschaften des Antriebs mit manueller Methode
+====
+[cols="25h,~"]
+|===
+| Charakteristisch | Nutzung 
+
+
+ a| 
+Medientyp
+ a| 
+Gibt den Medientyp an. Folgende Medientypen werden unterstützt:
+
+** Festplatte
+** Solid State-Festplatte (SSD)
+
+
+Alle Laufwerke in einer Volume-Gruppe müssen vom gleichen Medientyp (entweder alle SSDs oder alle Festplatten) sein. Volume-Gruppen können keine Mischung aus Medientypen oder Schnittstellentypen haben.
+
+
+
+ a| 
+Laufwerksblockgröße (nur EF300 und EF600)
+ a| 
+Zeigt die Blockgröße (Sektorgröße) an, die die Laufwerke in der Gruppe schreiben können. Die Werte können Folgendes umfassen:
+
+** 512 -- 512-Byte-Sektorgröße.
+** 4K – 4,096 Byte Sektorgröße.
+
+
+
+
+ a| 
+Laufwerkskapazität
+ a| 
+Zeigt die Laufwerkskapazität an.
+
+** Wählen Sie nach Möglichkeit Laufwerke aus, die eine Kapazität haben, die den Kapazitäten der aktuellen Laufwerke in der Volume-Gruppe entspricht.
+** Wenn nicht zugewiesene Laufwerke mit kleinerer Kapazität hinzugefügt werden müssen, müssen Sie beachten, dass die nutzbare Kapazität jedes Laufwerks, das sich derzeit in der Volume-Gruppe befindet, reduziert wird. Daher ist die Laufwerkskapazität für die gesamte Volume-Gruppe gleich.
+** Wenn nicht zugewiesene Laufwerke mit höherer Kapazität hinzugefügt werden müssen, müssen Sie beachten, dass die nutzbare Kapazität der hinzufügenden nicht zugewiesenen Laufwerke reduziert wird, damit sie den aktuellen Kapazitäten der Laufwerke in der Volume-Gruppe entsprechen.
+
+
+
+
+ a| 
+Fach
+ a| 
+Zeigt die Position des Fachs des Laufwerks an.
+
+
+
+ a| 
+Schlitz
+ a| 
+Zeigt die Position des Laufwerksteckplatzes an.
+
+
+
+ a| 
+Drehzahl (U/min)
+ a| 
+Zeigt die Geschwindigkeit des Laufwerks an.
+
+
+
+ a| 
+Größe des logischen Sektors
+ a| 
+Gibt die Größe und das Format des Sektors an.
+
+
+
+ a| 
+Sicher
+ a| 
+Zeigt an, ob dieser Kandidat für diese Volume-Gruppe vollständig aus sicheren Laufwerken besteht, bei denen es sich entweder um vollständige Festplattenverschlüsselung (Full Disk Encryption, FDE) oder FIPS-Laufwerke (Federal Information Processing Standard) handeln kann.
+
+** Sie können Ihre Volume-Gruppe mit Drive Security schützen, aber alle Laufwerke müssen sicher für diese Funktion geeignet sein.
+** Wenn Sie eine nur-FDE-Volume-Gruppe erstellen möchten, suchen Sie in der Spalte Secure-fähiger nach *Ja - FDE*. Wenn Sie eine nur-FIPS-Gruppe erstellen möchten, suchen Sie nach *Ja - FIPS* oder *Ja - FIPS (gemischt)*. „Mixed“ zeigt eine Mischung aus 140-2- und 140-3-Level-Laufwerken an. Wenn Sie eine Mischung dieser Ebenen verwenden, beachten Sie, dass die Volume-Gruppe dann auf einer niedrigeren Sicherheitsstufe arbeitet (140-2).
+** Sie können eine Volume-Gruppe aus Laufwerken erstellen, die möglicherweise sicher sind oder nicht, aber eine Kombination aus Sicherheitsstufen bieten. Wenn die Laufwerke in der Volume-Gruppe Laufwerke enthalten, die nicht sicher sind, können Sie die Volume-Gruppe nicht sichern.
+
+
+
+
+ a| 
+DA-fähig
+ a| 
+Gibt an, ob Data Assurance (da) für diese Gruppe verfügbar ist. Data Assurance (da) überprüft und korrigiert Fehler, die auftreten können, wenn Daten über die Controller bis zu den Laufwerken übermittelt werden.
+
+Wenn Sie da verwenden möchten, wählen Sie eine Volume-Gruppe aus, die für das da-fähig ist. (Bei da-fähigen Laufwerken wird da automatisch auf im Pool erstellten Volumes aktiviert.)
+
+Eine Volume-Gruppe kann Laufwerke enthalten, die für da-fähig sind oder nicht für da-fähig sind, aber alle Laufwerke müssen für die Verwendung dieser Funktion als da-fähig sein.
+
+
+
+ a| 
+Unterstützte Volume-Block-Größen (nur EF300 und EF600)
+ a| 
+Zeigt die Blockgrößen an, die für die Volumes in der Gruppe erstellt werden können:
+
+** 512 n -- 512 Bytes nativ.
+** 512 e -- 512 Bytes emuliert.
+** 4K -- 4,096 Byte.
+
+
+
+
+ a| 
+Resource Provisioning-fähig (nur EF300 und EF600)
+ a| 
+Zeigt an, ob Ressourcen-Provisioning für diese Gruppe verfügbar ist. Resource Provisioning ist eine Funktion, die in den EF300- und EF600-Speicher-Arrays zur Verfügung steht und die es ermöglicht, Volumes ohne Hintergrundinitialisierung sofort in Betrieb zu nehmen.
+
+|===
+====
+

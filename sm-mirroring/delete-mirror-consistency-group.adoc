@@ -1,0 +1,38 @@
+---
+permalink: sm-mirroring/delete-mirror-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, mirror, consistency, group, 
+summary: Sie können gespiegelte Konsistenzgruppen löschen, die nicht mehr im lokalen Storage Array und im Remote-Storage Array benötigt werden. 
+---
+= Löschen der gespiegelten Konsistenzgruppe
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können gespiegelte Konsistenzgruppen löschen, die nicht mehr im lokalen Storage Array und im Remote-Storage Array benötigt werden.
+
+Alle gespiegelten Paare müssen aus der Consistency Mirror-Gruppe entfernt werden.
+
+.Schritte
+. Wählen Sie Menü:Speicher[Asynchronous Mirroring].
+. Wählen Sie die Registerkarte * Consistency Groups spiegeln* aus.
++
+Die Tabelle Mirror Consistency Group wird angezeigt und zeigt alle dem Speicher-Array zugeordneten Spiegelkonsistency Groups an.
+
+. Wählen Sie die zu löschende SpiegelungsConsistency Group aus, und wählen Sie dann Menü:Sonstige Aufgaben[Löschen] aus.
++
+Das System zeigt eine Bestätigung an.
+
+. Wählen Sie *Ja* aus, um die Consistency Mirror-Gruppe zu löschen.
+
+
+System Manager führt die folgenden Aktionen durch:
+
+* Löscht zuerst die SpiegelConsistency Group auf dem lokalen Speicher-Array und löscht dann die SpiegelConsistency Group auf dem Remote-Speicher-Array.
+* Entfernt die gespiegelte Konsistenzgruppe aus der Tabelle „Konsistenzgruppe spiegeln“.
+
+
+Gelegentlich kann es vorkommen, dass die gespiegelte Konsistenzgruppe erfolgreich aus dem lokalen Speicher-Array gelöscht wird, aber ein Kommunikationsfehler verhindert, dass die gespiegelte Konsistenzgruppe aus dem Remote-Speicher-Array gelöscht wird. In diesem Fall müssen Sie auf das Remote-Speicher-Array zugreifen, um die entsprechende gespiegelte Konsistenzgruppe zu löschen.

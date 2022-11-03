@@ -1,0 +1,23 @@
+---
+permalink: sm-hardware/turn-on-shelf-locator-light.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, shelf, locator, light, LED 
+summary: Um die physische Position eines Regals zu finden, das auf der Hardware-Seite angezeigt wird, können Sie die Positionsleuchte des Regals einschalten. 
+---
+= Die Positionsleuchte für den Regal einschalten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um den physischen Speicherort eines auf der Hardware-Seite gezeigten Shelfs zu ermitteln, können Sie die Locator-LED des Shelfs einschalten.
+
+.Schritte
+. Wählen Sie *Hardware*.
+. Wählen Sie die Dropdown-Liste für das Controller-Shelf oder Laufwerk-Shelf aus, und wählen Sie dann *Locator einschalten*.
++
+Die Positionsleuchte für das Regal leuchtet auf.
+
+. Wenn Sie das Regal physisch gefunden haben, kehren Sie zum Dialogfeld zurück und wählen Sie *Ausschalten*.
+

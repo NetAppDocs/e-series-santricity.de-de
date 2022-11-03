@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/rtv-why-am-i-being-prompted-to-clean-up-my-remote-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remove, remote, volumes 
+summary: Wenn die maximale Anzahl an Remote-Volumes erreicht ist, erkennt das Speichersystem automatisch alle nicht verwendeten Remote-Volumes und fordert Sie auf, diese zu entfernen. 
+---
+= Warum wird ich aufgefordert, meine Remote-Volumes zu entfernen?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn die maximale Anzahl an Remote-Volumes erreicht ist, erkennt das Speichersystem automatisch alle nicht verwendeten Remote-Volumes und fordert Sie auf, diese zu entfernen.
+
+In einigen Fällen werden die nicht verwendeten Remote-Volumes während des Erstellungsprozesses nicht bereinigt. Bevor Sie weitere Importvorgänge starten, überprüfen Sie, ob Ihre Systeme optimal sind und die Netzwerkverbindungen stabil sind.

@@ -1,0 +1,19 @@
+---
+permalink: sm-storage/is-there-a-limit-on-the-number-of-drives-i-can-remove-from-a-pool.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, limit, number, pool, drive, 
+summary: System Manager legt Grenzen für die Anzahl der Laufwerke fest, die Sie aus einem Pool entfernen können. 
+---
+= Ist die Anzahl der Laufwerke, die ich aus einem Pool entfernen kann, begrenzt?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager legt Grenzen für die Anzahl der Laufwerke fest, die Sie aus einem Pool entfernen können.
+
+* Sie können die Anzahl der Laufwerke in einem Pool nicht auf weniger als 11 Laufwerke reduzieren.
+* Laufwerke können nicht entfernt werden, wenn nicht genügend freie Kapazität im Pool vorhanden ist, um die Daten von den entfernten Laufwerken zu enthalten, wenn diese Daten auf die übrigen Laufwerke im Pool verteilt werden.
+* Sie können maximal 60 Laufwerke gleichzeitig entfernen. Wenn Sie mehr als 60 Laufwerke auswählen, ist die Option Laufwerke entfernen deaktiviert. Wenn Sie mehr als 60 Laufwerke entfernen müssen, wiederholen Sie den Vorgang zum Entfernen von Laufwerken.
+

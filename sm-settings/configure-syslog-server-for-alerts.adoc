@@ -1,0 +1,43 @@
+---
+permalink: sm-settings/configure-syslog-server-for-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, syslog, server, alerts, 
+summary: Um Syslog-Warnmeldungen zu konfigurieren, müssen Sie eine Syslog-Serveradresse und einen UDP-Port eingeben. Es sind bis zu fünf Syslog-Server zulässig. 
+---
+= Konfigurieren Sie den Syslog-Server für Warnmeldungen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Um Syslog-Warnmeldungen zu konfigurieren, müssen Sie eine Syslog-Serveradresse und einen UDP-Port eingeben. Es sind bis zu fünf Syslog-Server zulässig.
+
+.Bevor Sie beginnen
+* Die Syslog-Serveradresse muss verfügbar sein. Bei dieser Adresse kann es sich um einen vollständig qualifizierten Domänennamen, eine IPv4-Adresse oder eine IPv6-Adresse handeln.
+* UDP-Portnummer des Syslog-Servers muss verfügbar sein. Dieser Port ist normalerweise 514.
+
+
+Diese Aufgabe beschreibt, wie Sie die Adresse und den Port für den Syslog-Server eingeben und anschließend die eingegebene Adresse testen.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[Alarme].
+. Wählen Sie die Registerkarte *Syslog* aus.
++
+Wenn noch kein Syslog-Server definiert ist, wird auf der Seite Warnungen „Syslog-Server hinzufügen“ angezeigt.
+
+. Klicken Sie Auf *Syslog-Server Hinzufügen*.
++
+Das Dialogfeld Syslog Server hinzufügen wird geöffnet.
+
+. Geben Sie Informationen für einen oder mehrere Syslog-Server ein (maximal fünf), und klicken Sie dann auf *Hinzufügen*.
++
+** *Server-Adresse* -- Geben Sie einen vollständig qualifizierten Domänennamen, eine IPv4-Adresse oder eine IPv6-Adresse ein.
+** *UDP Port* -- normalerweise ist der UDP Port für syslog 514. In der Tabelle werden die konfigurierten Syslog-Server angezeigt.
+
+
+. Um eine Testwarnung an die Serveradressen zu senden, wählen Sie *Alle Syslog-Server testen*.
+
+
+Der Ereignismonitor sendet bei jedem Ereignis, das in einem Alarmtabellen stattfindet, Warnmeldungen an den Syslog-Server.

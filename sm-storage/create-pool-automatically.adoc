@@ -1,0 +1,61 @@
+---
+permalink: sm-storage/create-pool-automatically.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, pool, automatically 
+summary: Die Erstellung des Pools wird automatisch initiiert, wenn System Manager nicht zugewiesene Laufwerke im Speicher-Array erkennt. Mithilfe der automatischen Pool-Erstellung können alle nicht zugewiesenen Laufwerke im Speicher-Array in einem Pool konfiguriert und Laufwerke zu vorhandenen Pools hinzugefügt werden. 
+---
+= Pool automatisch erstellen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Erstellung des Pools wird automatisch initiiert, wenn System Manager nicht zugewiesene Laufwerke im Speicher-Array erkennt. Mithilfe der automatischen Pool-Erstellung können alle nicht zugewiesenen Laufwerke im Speicher-Array in einem Pool konfiguriert und Laufwerke zu vorhandenen Pools hinzugefügt werden.
+
+Sie können das Dialogfeld „automatische Konfiguration des Pools“ starten, wenn eine der folgenden Bedingungen zutrifft:
+
+* Es wurde mindestens ein nicht zugewiesenes Laufwerk erkannt, das einem vorhandenen Pool mit ähnlichen Laufwerktypen hinzugefügt werden kann.
+* Es wurden elf (11) oder mehr nicht zugewiesene Laufwerke erkannt, die zur Erstellung eines neuen Pools verwendet werden können (wenn sie aufgrund unterschiedlicher Antriebstypen nicht zu einem vorhandenen Pool hinzugefügt werden können).
+
+
+Beachten Sie Folgendes:
+
+* Wenn Sie einem Speicher-Array Laufwerke hinzufügen, erkennt System Manager automatisch die Laufwerke und fordert Sie auf, basierend auf dem Laufwerkstyp und der aktuellen Konfiguration einen einzelnen Pool oder mehrere Pools zu erstellen.
+* Wenn bereits Pools definiert wurden, fordert Sie System Manager automatisch auf, die kompatiblen Laufwerke einem vorhandenen Pool hinzuzufügen. Wenn zu einem vorhandenen Pool neue Laufwerke hinzugefügt werden, verteilt System Manager die Daten automatisch auf die neue Kapazität, die jetzt die neuen Laufwerke enthält, die Sie hinzugefügt haben.
+* Wenn Sie ein EF600 oder EF300 Storage-Array konfigurieren, stellen Sie sicher, dass jeder Controller in den ersten 12 Steckplätzen und in den letzten 12 Steckplätzen Zugriff auf eine gleiche Anzahl von Laufwerken hat. Mit dieser Konfiguration können die Controller beide PCIe-Busse auf der Laufwerkseite effektiver nutzen.
+
+
+Sie können das Dialogfeld „automatische Konfiguration des Pools“ mit einer der folgenden Methoden starten:
+
+* Wenn nicht zugewiesene Kapazität erkannt wird, wird die Empfehlung für die automatische Konfiguration des Pools auf der Startseite im Bereich Benachrichtigungen angezeigt. Klicken Sie auf *Pool automatisch konfigurieren*, um das Dialogfeld zu starten.
+* Sie können das Dialogfeld Automatische Konfiguration des Pools auch auf der Seite Pools und Volume Groups starten, wie in der folgenden Aufgabe beschrieben.
+
+
+.Schritte
+. Wählen Sie Menü:Speicher[Pools & Volume Groups].
+. Wählen Sie MENU:Mehr[Pool Auto-Configuration starten].
++
+In der Ergebnistabelle werden neue Pools, vorhandene Pools mit hinzugefügten Laufwerken oder beides aufgeführt. Ein neuer Pool wird standardmäßig mit einer sequenziellen Nummer benannt.
+
++
+System Manager führt die folgenden Aufgaben aus:
+
++
+** Erstellt einen einzelnen Pool, wenn es eine ausreichende Anzahl von Laufwerken mit demselben Laufwerkstyp (HDD oder SSD) und ähnliche Kapazität gibt.
+** Erstellt mehrere Pools, wenn die nicht zugewiesene Kapazität aus verschiedenen Laufwerkstypen besteht.
+** Fügt die Laufwerke einem vorhandenen Pool hinzu, wenn bereits ein Pool im Speicher-Array definiert ist, und Sie fügen dem Pool neue Laufwerke desselben Laufwerkstyps hinzu.
+** Fügt dem vorhandenen Pool die Laufwerke desselben Laufwerkstyps hinzu und erstellt mithilfe der anderen Laufwerktypen verschiedene Pools, wenn die neuen Laufwerke unterschiedliche Laufwerkstypen haben.
+
+
+. Um den Namen eines neuen Pools zu ändern, klicken Sie auf das Symbol *Bearbeiten* (der Stift).
+. Um zusätzliche Merkmale des Pools anzuzeigen, positionieren Sie den Cursor über oder berühren Sie das Symbol *Details* (die Seite).
++
+Es werden Informationen zum Laufwerkstyp, zur Sicherheitsfunktion, zur Data Assurance (da)-Funktion, zum Schutz vor Shelf-Verlust und zum Schutz vor Schubladenverlust angezeigt.
+
++
+Bei EF600 und EF300 Storage-Arrays werden die Einstellungen auch für die Ressourcenbereitstellung und Volume-Blockgrößen angezeigt.
+
+. Klicken Sie Auf *Akzeptieren*.
+

@@ -1,0 +1,55 @@
+---
+permalink: sm-hardware/overview-hardware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hardware, page, 
+summary: Sie können den Komponentenstatus auf der Seite Hardware überprüfen und einige Funktionen ausführen, die mit diesen Komponenten zusammenhängen. 
+---
+= Übersicht über Hardwarekomponenten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Komponentenstatus auf der Seite Hardware überprüfen und einige Funktionen ausführen, die mit diesen Komponenten zusammenhängen.
+
+
+
+== Welche Komponenten kann ich managen?
+
+Sie können den Komponentenstatus prüfen und einige Funktionen im Zusammenhang mit diesen Komponenten ausführen:
+
+* **Regale** -- A _Shelf_ ist eine Komponente, die die Hardware für das Speicher-Array (Controller, Power/Fan Kanister und Laufwerke) enthält. Die Einlegeböden sind in drei Größen für Gehäuse mit bis zu 12, 24 oder 60 Laufwerken erhältlich.
+* **Controller** -- A _Controller_ ist die kombinierte Hardware und Firmware, die Speicher-Array und Verwaltungsfunktionen implementiert. Sie enthält Cache-Speicher, Laufwerksunterstützung und die Ports für Host-Verbindungen.
+* **Laufwerke** -- Ein Laufwerk_ kann entweder ein Festplattenlaufwerk (HDD) oder ein Solid State Drive (SSD) sein. Je nach Shelf-Größe können bis zu 12, 24 oder 60 Laufwerke im Shelf installiert werden.
+
+
+Weitere Informationen:
+
+* link:hardware-page-overview.html["Hardware-Seite"]
+* link:hardware-terminology.html["Terminologie der Hardware"]
+
+
+
+
+== Wie werden Hardwarekomponenten angezeigt?
+
+Wechseln Sie zur Hardware-Seite, die eine grafische Darstellung der physischen Komponenten des Storage Arrays bietet. Sie können zwischen der Vorder- und Rückseite der Array-Regale wechseln, indem Sie entweder *Rückseite des Regals* oder *Vorderseite des Regals anzeigen* von der oberen rechten Seite der Regalansicht auswählen.
+
+Weitere Informationen:
+
+* link:view-shelf-component-status-and-settings.html["Zeigt den Status und die Einstellungen von Shelf-Komponenten an"]
+* link:view-controller-settings.html["Zeigen Sie Controller-Einstellungen an"]
+* link:view-drive-status-and-settings.html["Zeigen Sie den Laufwerkstatus und die Einstellungen an"]
+
+
+
+
+= Verwandte Informationen
+
+Erfahren Sie mehr über Hardwarekonzepte:
+
+* link:controller-states.html["Controller-Status"]
+* link:drive-states.html["Laufwerksstatus"]
+* link:what-is-shelf-loss-protection-and-drawer-loss-protection.html["Schutz vor Regalverlust und Schutz vor Schubladenverlust"]
+

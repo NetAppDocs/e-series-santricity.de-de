@@ -1,0 +1,42 @@
+---
+permalink: sm-support/clear-recovery-mode.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, clear, recovery, mode 
+summary: Verwenden Sie nach dem Wiederherstellen einer Speicherarray-Konfiguration den Vorgang „Clear Recovery Mode“, um die I/O-Vorgänge auf dem Speicher-Array fortzusetzen und in den normalen Betrieb zurückzukehren. 
+---
+= Löschen Sie den Wiederherstellungsmodus
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Verwenden Sie nach dem Wiederherstellen einer Speicherarray-Konfiguration den Vorgang „Clear Recovery Mode“, um die I/O-Vorgänge auf dem Speicher-Array fortzusetzen und in den normalen Betrieb zurückzukehren.
+
+.Bevor Sie beginnen
+* Wenn Sie das Speicher-Array in eine frühere Konfiguration zurückversetzen möchten, müssen Sie die Konfiguration aus dem Backup wiederherstellen, bevor Sie den Wiederherstellungsmodus beenden.
+* Sie müssen Validierungsprüfungen oder technischen Support durchführen, um sicherzustellen, dass die Wiederherstellung erfolgreich war. Nachdem festgestellt wurde, dass die Wiederherstellung erfolgreich war, kann der Wiederherstellungsmodus gelöscht werden.
+
+
+Das Storage-Array enthält eine Konfigurationsdatenbank mit einem Datensatz seiner logischen Konfiguration (Pools, Volume-Gruppen, Volumes usw.). Wenn Sie die Speicherarray-Konfiguration absichtlich löschen oder die Konfigurationsdatenbank beschädigt wird, wechselt das Speicher-Array in den Recovery-Modus. Der Recovery-Modus stoppt den I/O und friert die Konfigurationsdatenbank an, sodass Sie eine der folgenden Aufgaben ausführen können:
+
+* Stellen Sie die Konfiguration aus dem automatischen Backup wieder her, das auf den Flash-Geräten des Controllers gespeichert ist. Hierfür müssen Sie sich an den technischen Support wenden.
+* Stellen Sie die Konfiguration aus einem früheren Vorgang „Konfigurationsdatenbank speichern“ wieder her. Vorgänge der Konfigurationsdatenbank speichern werden über die Befehlszeilenschnittstelle (CLI) ausgeführt.
+* Konfigurieren Sie das Storage-Array von Grund auf neu.
+
+
+Nachdem die Konfiguration des Speicherarrays wiederhergestellt oder neu definiert wurde und Sie überprüft haben, dass alles gut ist, müssen Sie den Wiederherstellungsmodus manuell deaktivieren.
+
+[NOTE]
+====
+Sie können den Vorgang „Wiederherstellung löschen“ nach dem Start nicht mehr abbrechen. Der Wiederherstellungsmodus kann lange dauern. Führen Sie diesen Vorgang nur aus, wenn Sie vom technischen Support dazu aufgefordert werden.
+
+====
+.Schritte
+. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie *Wiederherstellungsmodus löschen*, und bestätigen Sie, dass Sie diesen Vorgang ausführen möchten.
++
+Diese Option wird nur angezeigt, wenn sich das Speicher-Array im Wiederherstellungsmodus befindet.
+
+

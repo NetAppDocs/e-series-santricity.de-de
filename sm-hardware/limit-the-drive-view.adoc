@@ -1,0 +1,73 @@
+---
+permalink: sm-hardware/limit-the-drive-view.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, limit, drive, view, 
+summary: Wenn das Speicher-Array Laufwerke mit unterschiedlichen physischen und logischen Attributen enthält, bietet die Seite Hardware Filterfelder, die Ihnen helfen, die Laufwerkansicht zu begrenzen und bestimmte Laufwerke zu finden. 
+---
+= Begrenzen Sie die Laufwerkansicht
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn das Speicher-Array Laufwerke mit unterschiedlichen physischen und logischen Attributen enthält, bietet die Seite Hardware Filterfelder, die Ihnen helfen, die Laufwerkansicht zu begrenzen und bestimmte Laufwerke zu finden.
+
+Mit den Laufwerksfiltern kann die Ansicht auf bestimmte Typen physischer Laufwerke (z. B. alle SAS) mit bestimmten Sicherheitsattributen (z. B. sicher-fähig) an bestimmten logischen Standorten (z. B. Volume-Gruppe 1) beschränkt werden. Sie können diese Filter zusammen oder separat verwenden.
+
+[NOTE]
+====
+Wenn alle Laufwerke dieselben physischen Attribute verwenden, wird das Filterfeld *Laufwerke anzeigen, die...* sind, nicht angezeigt. Wenn alle Laufwerke dieselben logischen Attribute verwenden, wird das Filterfeld *Anywhere im Speicherarray* nicht angezeigt.
+
+====
+.Schritte
+. Wählen Sie *Hardware*.
+. Klicken Sie im ersten Filterfeld (unter *Laufwerke anzeigen, die...* sind) auf den Dropdown-Pfeil, um die verfügbaren Laufwerkstypen und Sicherheitsattribute anzuzeigen.
++
+Folgende Laufwerktypen können enthalten:
+
++
+** Laufwerkstyp (SSD, HDD)
+** Typ der Laufwerksschnittstelle
+** Laufwerkskapazität (höchste bis niedrigste)
+** Fahrgeschwindigkeit (höchste bis niedrigste) Sicherheitsattribute können Folgendes umfassen:
+** Sicher
+** Sicher aktiviert
+** DA (Data Assurance)-fähig
+** FIPS-konform
+** FIPS-konform (FIPS 140-2)
+** FIPS-konform (FIPS 140-3)
++
+Wenn eines dieser Attribute für alle Laufwerke gleich ist, werden sie in der Dropdown-Liste nicht angezeigt. Wenn das Storage-Array beispielsweise alle SSD-Laufwerke mit SAS-Schnittstellen und Geschwindigkeiten von 15000 U/min umfasst, aber einige SSDs unterschiedliche Kapazitäten haben, werden in der Dropdown-Liste nur die Kapazitäten als Filteroption angezeigt.
+
++
+Wenn Sie eine Option aus dem Feld auswählen, werden die Laufwerke, die nicht Ihren Filterkriterien entsprechen, in der grafischen Ansicht ausgegraut.
+
+
+
+. Klicken Sie im zweiten Filterfeld auf den Dropdown-Pfeil, um die verfügbaren logischen Positionen für die Laufwerke anzuzeigen.
++
+[NOTE]
+====
+Wenn Sie Ihre Filterkriterien löschen möchten, wählen Sie *Löschen* ganz rechts neben den Filterfeldern aus.
+
+====
++
+Logische Standorte:
+
++
+** Pools
+** Volume-Gruppen
+** Hot Spare
+** SSD Cache
+** Nicht Zugewiesen
++
+Wenn Sie eine Option aus dem Feld auswählen, werden die Laufwerke, die nicht Ihren Filterkriterien entsprechen, in der grafischen Ansicht ausgegraut.
+
+
+
+. Optional können Sie *Locator Lights* ganz rechts neben den Filterfeldern einschalten, um die Locator-Leuchten für die angezeigten Laufwerke einzuschalten.
++
+Diese Aktion unterstützt Sie dabei, die Laufwerke im Speicher-Array physisch zu finden.
+
+

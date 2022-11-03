@@ -1,0 +1,150 @@
+---
+permalink: um-certificates/edit-directory-server-settings-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, edit, directory, server, settings, role, mappings 
+summary: Wenn Sie zuvor einen Verzeichnisserver in der Zugriffsverwaltung konfiguriert haben, können Sie dessen Einstellungen jederzeit ändern. Zu den Einstellungen gehören die Informationen zur Serververbindung und die Zuordnungen von Gruppen zu Rollen. 
+---
+= Bearbeiten Sie die Einstellungen des Verzeichnisservers und die Rollenzuordnungen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie zuvor einen Verzeichnisserver in der Zugriffsverwaltung konfiguriert haben, können Sie dessen Einstellungen jederzeit ändern. Zu den Einstellungen gehören die Informationen zur Serververbindung und die Zuordnungen von Gruppen zu Rollen.
+
+.Bevor Sie beginnen
+* Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
+* Ein Verzeichnisserver muss definiert werden.
+
+
+.Schritte
+. Wählen Sie *Zugriffsmanagement*.
+. Wählen Sie die Registerkarte *Directory Services* aus.
+. Wenn mehr als ein Server definiert ist, wählen Sie den Server aus der Tabelle aus, den Sie bearbeiten möchten.
+. Wählen Sie *Einstellungen Anzeigen/Bearbeiten*.
++
+Das Dialogfeld Verzeichnisservereinstellungen wird geöffnet.
+
+. Ändern Sie auf der Registerkarte *Server-Einstellungen* die gewünschten Einstellungen.
++
+.Felddetails
+====
+[cols="25h,~"]
+|===
+| Einstellung | Beschreibung 
+
+
+ a| 
+*Konfigurationseinstellungen*
+
+
+
+ a| 
+Domäne(en)
+ a| 
+Der/die Domänenname(n) des/der LDAP-Server(e). Geben Sie für mehrere Domänen die Domänen in eine kommagetrennte Liste ein. Der Domänenname wird in der Anmeldung (_username_@_Domain_) verwendet, um anzugeben, gegen welchen Verzeichnisserver sich authentifizieren soll.
+
+
+
+ a| 
+Server-URL
+ a| 
+Die URL für den Zugriff auf den LDAP-Server in Form von `ldap[s]://host:port`.
+
+
+
+ a| 
+Konto binden (optional)
+ a| 
+Das schreibgeschützte Benutzerkonto für Suchabfragen am LDAP-Server und für die Suche in den Gruppen.
+
+
+
+ a| 
+Bindepasswort (optional)
+ a| 
+Das Kennwort für das Bindekonto. (Dieses Feld wird angezeigt, wenn ein Bindekonto eingegeben wird.)
+
+
+
+ a| 
+Testen Sie vor dem Speichern die Serververbindung
+ a| 
+Überprüft, ob das System mit der LDAP-Serverkonfiguration kommunizieren kann. Der Test erfolgt nach dem Klicken auf *Speichern*. Wenn dieses Kontrollkästchen aktiviert ist und der Test fehlschlägt, wird die Konfiguration nicht geändert. Sie müssen den Fehler beheben oder das Kontrollkästchen deaktivieren, um den Test zu überspringen und die Konfiguration erneut zu bearbeiten.
+
+
+
+ a| 
+*Berechtigungseinstellungen*
+
+
+
+ a| 
+Basis-DN suchen
+ a| 
+Der LDAP-Kontext für die Suche nach Benutzern, in der Regel in Form von `CN=Users, DC=cpoc, DC=local`.
+
+
+
+ a| 
+Attribut Benutzername
+ a| 
+Das Attribut, das zur Authentifizierung an die Benutzer-ID gebunden ist. Beispiel:
+`sAMAccountName`.
+
+
+
+ a| 
+Gruppenattribut(e)
+ a| 
+Eine Liste der Gruppenattribute für den Benutzer, die für die Zuordnung von Gruppen zu Rollen verwendet werden. Beispiel:
+`memberOf, managedObjects`.
+
+|===
+====
+. Ändern Sie auf der Registerkarte *Rollenzuordnung* die gewünschte Zuordnung.
++
+.Felddetails
+====
+[cols="25h,~"]
+|===
+| Einstellung | Beschreibung 
+
+
+ a| 
+*Zuordnungen*
+
+
+
+ a| 
+Gruppen-DN
+ a| 
+Der Domain-Name für die LDAP-Benutzergruppe, die zugeordnet werden soll. Reguläre Ausdrücke werden unterstützt. Diese speziellen regulären Ausdruckszeichen müssen mit einem umgekehrten Schrägstrich (\) entgangen werden, wenn sie nicht Teil eines regulären Ausdrucksmusters sind:
+
+\.[]{}()<>*+-=!?^
+
+
+
+ a| 
+Rollen
+ a| 
+Die Rollen, die dem Gruppen-DN zugeordnet werden sollen. Sie müssen jede Rolle, die Sie für diese Gruppe aufnehmen möchten, einzeln auswählen. Die Monitorrolle ist erforderlich, um sich in SANtricity Unified Manager mit den anderen Rollen anzumelden. Dazu gehören folgende Rollen:
+
+** *Storage Admin* -- Vollständiger Lese-/Schreibzugriff auf Speicherobjekte auf den Arrays, aber kein Zugriff auf die Sicherheitskonfiguration.
+** *Security Admin* -- Zugriff auf die Sicherheitskonfiguration in Access Management und Certificate Management.
+** *Support Admin* -- Zugriff auf alle Hardware-Ressourcen auf Speicher-Arrays, Ausfalldaten und MEL-Ereignisse. Kein Zugriff auf Speicherobjekte oder die Sicherheitskonfiguration.
+** *Monitor* -- schreibgeschützter Zugriff auf alle Speicherobjekte, aber kein Zugriff auf die Sicherheitskonfiguration.
+
+
+|===
+====
++
+
+NOTE: Die Überwachungsrolle ist für alle Benutzer, einschließlich des Administrators, erforderlich.
+
+. Klicken Sie auf *Weitere Zuordnungen hinzufügen*, um weitere Gruppen-zu-Rolle-Zuordnungen einzugeben.
+. Klicken Sie Auf *Speichern*.
+
+
+Nach Abschluss dieser Aufgabe werden alle aktiven Benutzersitzungen beendet. Nur Ihre aktuelle Benutzersitzung bleibt erhalten.

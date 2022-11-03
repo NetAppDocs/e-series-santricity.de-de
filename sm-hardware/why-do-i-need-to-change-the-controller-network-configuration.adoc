@@ -1,0 +1,16 @@
+---
+permalink: sm-hardware/why-do-i-need-to-change-the-controller-network-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, controller, network, configuration, gateway, 
+summary: 'Wenn Sie die Out-of-Band-Verwaltung verwenden, müssen Sie die Netzwerkkonfiguration für jeden Controller – seine Internet-Protokoll-Adresse (IP), Subnetwerkmaske (Subnetzmaske) und das Gateway – festlegen.' 
+---
+= Warum muss ich die Controller-Netzwerkkonfiguration ändern?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie müssen die Netzwerkkonfiguration für jeden Controller festlegen: IP-Adresse (Internet Protocol), Subnetzmaske (Subnetzmaske) und Gateway – wenn Sie Out-of-Band-Management verwenden.
+
+Sie können die Netzwerkkonfiguration mithilfe eines DHCP-Servers (Dynamic Host Configuration Protocol) festlegen. Wenn Sie keinen DHCP-Server verwenden, müssen Sie die Netzwerkkonfiguration manuell eingeben.

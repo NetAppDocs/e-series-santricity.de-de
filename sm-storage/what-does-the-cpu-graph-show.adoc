@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-does-the-cpu-graph-show.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cpu, graph, show, capacity, statistics, controller 
+summary: 'Das CPU-Diagramm zeigt die Statistiken zur Verarbeitungskapazität für jeden Controller (Controller A und Controller B) an. CPU ist eine Abkürzung für zentrale Bearbeitungseinheit. Auf der Startseite werden in diesem Diagramm Statistiken für das Speicher-Array angezeigt. Auf der Registerkarte „Physical View“ der Kachel „Performance“ werden in diesem Diagramm Statistiken für das Storage Array und die Laufwerke angezeigt.' 
+---
+= Was zeigt das CPU Diagramm?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das CPU-Diagramm zeigt die Statistiken zur Verarbeitungskapazität für jeden Controller (Controller A und Controller B) an. CPU ist eine Abkürzung für _Central Processing Unit_. Auf der Startseite werden in diesem Diagramm Statistiken für das Speicher-Array angezeigt. Auf der Registerkarte „Physical View“ der Kachel „Performance“ werden in diesem Diagramm Statistiken für das Storage Array und die Laufwerke angezeigt.
+
+Das CPU-Diagramm zeigt den Prozentsatz der CPU-Verarbeitungskapazität, die im Vergleich zu Operationen auf dem Array verwendet wird. Selbst wenn keine externe I/O-Vorgänge stattfinden, liegt die CPU-Auslastung in Prozent unter Umständen nicht ganz am Wert des Storage-Betriebssystems. Dies könnte dazu führen, dass Hintergrundvorgänge und das Monitoring durchgeführt werden. Bewegen Sie den Mauszeiger über einen Punkt im Diagramm, um einen Prozentsatz der Verarbeitungsfähigkeit anzuzeigen, die zu diesem Zeitpunkt verwendet werden.

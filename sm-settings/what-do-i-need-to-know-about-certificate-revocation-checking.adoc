@@ -1,0 +1,24 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-about-certificate-revocation-checking.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, certificate, revocation, checking, 
+summary: 'Mit System Manager können Sie mithilfe eines OCSP-Servers (Online Certificate Status Protocol) nach widerrufenen Zertifikaten suchen, anstatt Zertifikatsperrlisten (Certificate Revocation Lists, CRLs) hochzuladen.' 
+---
+= Was muss ich über die Überprüfung des Annullierung von Zertifikaten wissen?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit System Manager können Sie mithilfe eines OCSP-Servers (Online Certificate Status Protocol) nach widerrufenen Zertifikaten suchen, anstatt Zertifikatsperrlisten (Certificate Revocation Lists, CRLs) hochzuladen.
+
+Zurückwiderrufen Zertifikate sollten nicht mehr vertrauenswürdig sein. Ein Zertifikat kann aus mehreren Gründen widerrufen werden; beispielsweise wenn die Zertifizierungsstelle (CA) das Zertifikat nicht ordnungsgemäß ausgestellt hat, ein privater Schlüssel kompromittiert wurde oder die identifizierte Entität nicht den Richtlinienanforderungen entspricht.
+
+Nachdem Sie in System Manager eine Verbindung zu einem OCSP-Server hergestellt haben, führt das Speicherarray eine Widerrufs-Prüfung durch, wenn es eine Verbindung zu einem AutoSupport-Server, einem externen Schlüsselverwaltungsserver (EKMS), einem Lightweight Directory Access Protocol over SSL (LDAPS)-Server oder einem Syslog-Server herstellt. Das Speicher-Array versucht, die Zertifikate dieser Server zu validieren, um sicherzustellen, dass sie nicht widerrufen wurden. Der Server gibt dann für dieses Zertifikat einen Wert von „gut“, „gesperrt“ oder „unbekannt“ zurück. Wenn das Zertifikat widerrufen wird oder das Array nicht den OCSP-Server kontaktieren kann, wird die Verbindung abgelehnt.
+
+[NOTE]
+====
+Wenn Sie eine OCSP-Antwortadresse in System Manager oder in der Befehlszeilenschnittstelle (CLI) angeben, wird die OCSP-Adresse, die in der Zertifikatsdatei gefunden wurde, überschrieben.
+
+====

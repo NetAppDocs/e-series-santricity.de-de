@@ -1,0 +1,103 @@
+---
+permalink: sm-storage/performance-graphs-guidelines.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, performance, 
+summary: Die Seite Performance enthält Diagramme und Tabellen von Daten, mit denen Sie die Performance des Speicher-Arrays in verschiedenen wichtigen Bereichen bewerten können. 
+---
+= Performance-Diagramme und Richtlinien
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Seite Performance enthält Diagramme und Tabellen von Daten, mit denen Sie die Performance des Storage-Arrays in verschiedenen wichtigen Bereichen bewerten können.
+
+Mit Leistungsfunktionen können Sie die folgenden Aufgaben ausführen:
+
+* Zeigen Sie Performance-Daten nahezu in Echtzeit an, um zu ermitteln, ob ein Storage-Array Probleme hat.
+* Export von Performance-Daten, um eine historische Ansicht eines Storage-Arrays zu erstellen und zu ermitteln, wann ein Problem gestartet wurde oder welche Ursache ein Problem verursacht hat.
+* Wählen Sie die Objekte, Performance-Kennzahlen und den Zeitrahmen aus, die Sie anzeigen möchten.
+* Vergleichen von Metriken
+
+
+Performance-Daten sind in drei Formaten verfügbar:
+
+* *Echtzeit-Grafik* -- zeichnet Performancedaten auf einem Diagramm in nahezu Echtzeit.
+* *Beinahe Echtzeit-Tabelle* -- listet Performancedaten in einer Tabelle in nahezu Echtzeit auf.
+* *Exportierte CSV-Datei* -- ermöglicht das Speichern tabellarischer Leistungsdaten in einer Datei mit kommagetrennten Werten zur weiteren Anzeige und Analyse.
+
+
+
+
+== Merkmale der Performance-Datenformate
+
+[cols="1a,1a,1a,1a,1a"]
+|===
+| *Art der Leistungsüberwachung* | *Probenintervall* | *Angezeigte Zeitdauer* | *Maximale Anzahl der angezeigten Objekte* | *Möglichkeit Daten zu speichern* 
+
+
+ a| 
+Echtzeit-Grafik, Live
+
+Echtzeit-Grafik, historisch
+ a| 
+10 Sek. (Live)
+
+5 Min. (Historisch)
+
+Die angezeigten Datenpunkte hängen vom ausgewählten Zeitrahmen ab
+ a| 
+Der Standardzeitrahmen beträgt 1 Stunde.
+
+Optionen:
+
+* 5 Minuten
+* 1 Stunde
+* 8 Stunden
+* 1 Tag
+* 7 Tage
+* 30 Tage
+
+ a| 
+5
+ a| 
+Nein
+
+
+
+ a| 
+Tabelle nahezu in Echtzeit (Tabellenansicht)
+ a| 
+10 Sekunden - 1 Std
+ a| 
+Der aktuellste Wert
+ a| 
+Unbegrenzt
+ a| 
+Ja.
+
+
+
+ a| 
+CSV-Datei (Comma Separated Values)
+ a| 
+Abhängig vom ausgewählten Zeitrahmen
+ a| 
+Abhängig vom ausgewählten Zeitrahmen
+ a| 
+Unbegrenzt
+ a| 
+Ja.
+
+|===
+
+
+== Richtlinien zum Anzeigen von Performance-Daten
+
+* Die Erfassung von Performance-Daten ist jederzeit aktiviert. Es besteht keine Möglichkeit, es auszuschalten.
+* Jedes Mal, wenn das Abtastintervall abgelaufen ist, wird das Speicher-Array abgefragt und die Daten aktualisiert.
+* Für grafische Daten unterstützt der 5-minütige Zeitrahmen eine Aktualisierung von durchschnittlich 10 Sekunden über 5 Minuten. Alle anderen Zeitrahmen werden alle 5 Minuten aktualisiert, gemittelt über den ausgewählten Zeitrahmen.
+* Performancedaten in den grafischen Ansichten werden in Echtzeit aktualisiert. Performance-Daten in der Tabellenansicht werden nahezu in Echtzeit aktualisiert.
+* Wenn sich ein überwachtes Objekt während der Datenerfassung ändert, verfügt das Objekt möglicherweise nicht über einen vollständigen Satz von Datenpunkten über den ausgewählten Zeitrahmen. Beispielsweise können Volume-Sätze sich beim Erstellen, Löschen, Zuweisung oder nicht zugewiesenen Volume ändern. Oder Laufwerke können hinzugefügt, entfernt oder fehlgeschlagen werden.
+

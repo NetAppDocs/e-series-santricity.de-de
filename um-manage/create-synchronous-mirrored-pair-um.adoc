@@ -1,0 +1,144 @@
+---
+permalink: um-manage/create-synchronous-mirrored-pair-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, create, synchronous, mirrored, pair 
+summary: Zur Konfiguration der synchronen Spiegelung erstellen Sie ein gespiegeltes Paar, das ein primäres Volume auf dem lokalen Array und ein sekundäres Volume des Remote-Arrays umfasst. 
+---
+= Erstellen eines synchronen gespiegelten Paares
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Zur Konfiguration der synchronen Spiegelung erstellen Sie ein gespiegeltes Paar, das ein primäres Volume auf dem lokalen Array und ein sekundäres Volume des Remote-Arrays umfasst.
+
+[NOTE]
+====
+Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+
+====
+Bevor Sie ein gespiegeltes Paar erstellen, erfüllen Sie die folgenden Anforderungen für Unified Manager:
+
+* Der Web Services Proxy-Dienst muss ausgeführt werden.
+* Unified Manager muss auf Ihrem lokalen Host über eine HTTPS-Verbindung ausgeführt werden.
+* Unified Manager muss gültige SSL-Zertifikate für das Speicher-Array anzeigen. Sie können ein selbstsigniertes Zertifikat akzeptieren oder Ihr eigenes Sicherheitszertifikat mit Unified Manager installieren und zum Menü:Zertifikat[Zertifikatverwaltung] navigieren.
+
+
+Stellen Sie außerdem sicher, dass Sie die folgenden Anforderungen an Storage Arrays und Volumes erfüllen:
+
+* Die beiden Storage Arrays, die Sie für die Spiegelung verwenden möchten, werden in Unified Manager entdeckt.
+* Jedes Speicher-Array muss zwei Controller haben.
+* Jeder Controller im primären Array und im sekundären Array muss über einen konfigurierten Ethernet-Managementport verfügen und mit dem Netzwerk verbunden sein.
+* Die Speicher-Arrays verfügen über eine Firmware-Version von mindestens 7.84. (Beide können unterschiedliche OS-Versionen ausführen.)
+* Sie müssen das Passwort für die lokalen und Remote-Speicher-Arrays kennen.
+* Ihre lokalen und Remote-Speicher-Arrays sind über eine Fibre Channel Fabric verbunden.
+* Sie haben sowohl die primären als auch die sekundären Volumes erstellt, die Sie in der Beziehung zur synchronen Spiegelung verwenden möchten.
+* Das primäre Volume muss ein Standard-Volume sein. Es kann sich nicht um ein Thin-Volume oder ein Snapshot-Volume handelt.
+* Das sekundäre Volume muss ein Standard-Volume sein. Es kann sich nicht um ein Thin-Volume oder ein Snapshot-Volume handelt.
+* Das sekundäre Volume sollte mindestens so groß sein wie das primäre Volume.
+
+
+Das Erstellen von synchronen gespiegelten Paaren ist ein mehrstufiges Verfahren.
+
+
+
+== Schritt 1: Wählen Sie das primäre Volumen
+
+In diesem Schritt wählen Sie das primäre Volume aus, das in der Beziehung zur synchronen Spiegelung verwendet werden soll. Wenn Sie ein primäres Volume auf dem lokalen Speicher-Array auswählen, zeigt das System eine Liste aller berechtigten Volumes für dieses gespiegelte Paar an. Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser Liste nicht angezeigt. Das ausgewählte Volume besitzt die primäre Rolle in der Spiegelbeziehung.
+
+.Schritte
+. Wählen Sie auf der Seite *Verwalten* das lokale Speicher-Array aus, das Sie für die Quelle verwenden möchten.
+. Menü wählen:Aktionen[Synchronous Mirrored Pair erstellen].
++
+Der Assistent Synchronous Mirrored Pair erstellen wird geöffnet.
+
+. Wählen Sie aus der Liste der berechtigten Volumes ein Volume aus, das Sie als primäres Volume in der Spiegelung verwenden möchten.
+. Wählen Sie *Weiter* und gehen Sie zu  2: Select the secondary volume.
+
+
+
+
+== Schritt 2: Wählen Sie das sekundäre Volumen
+
+In diesem Schritt wählen Sie das sekundäre Volume aus, das in der Spiegelbeziehung verwendet werden soll. Wenn Sie ein sekundäres Volume auf dem Remote-Speicher-Array auswählen, zeigt das System eine Liste aller berechtigten Volumes für dieses gespiegelte Paar an. Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser Liste nicht angezeigt. Das ausgewählte Volumen hält die sekundäre Rolle in der Spiegelbeziehung.
+
+.Schritte
+. Wählen Sie das Remote Storage Array aus, auf dem Sie eine Mirror-Beziehung zum lokalen Speicher-Array herstellen möchten.
++
+[NOTE]
+====
+Wenn Ihr Remote-Speicher-Array passwortgeschützt ist, fordert das System zur Eingabe eines Kennworts auf.
+
+====
++
+** Die Liste der Storage-Arrays wird nach ihrem Storage-Array-Namen benannt. Wenn Sie kein Speicher-Array genannt haben, wird es als „unbenannt“ aufgeführt.
+** Wenn das zu verwendende Speicher-Array nicht in der Liste aufgeführt ist, stellen Sie sicher, dass es in Unified Manager erkannt wurde.
+
+
+. Wählen Sie aus der Liste der berechtigten Volumes ein Volume aus, das Sie als sekundäres Volume in der Spiegelung verwenden möchten.
++
+[NOTE]
+====
+Wird ein sekundäres Volume mit einer Kapazität ausgewählt, die größer als das primäre Volume ist, so ist die nutzbare Kapazität auf die Größe des primären Volumes beschränkt.
+
+====
+. Klicken Sie auf *Weiter* und gehen Sie zu  3: Select synchronization settings.
+
+
+
+
+== Schritt 3: Synchronisierungseinstellungen auswählen
+
+In diesem Schritt wählen Sie die Einstellungen aus, die bestimmen, wie Daten nach einer Kommunikationsunterbrechung synchronisiert werden. Sie können die Priorität festlegen, mit der der Controller-Eigentümer des primären Volumes nach einer Kommunikationsunterbrechung Daten mit dem sekundären Volume neu synchronisiert. Sie müssen außerdem die Resynchronisierung-Richtlinie entweder manuell oder automatisch auswählen.
+
+.Schritte
+. Verwenden Sie den Schieberegler, um die Synchronisationspriorität festzulegen.
++
+Die Synchronisierungspriorität legt fest, wie viele der Systemressourcen verwendet werden, um die erste Synchronisierung abzuschließen und die Neusynchronisierung nach einer Kommunikationsunterbrechung im Vergleich zu Service-I/O-Anforderungen zu ermöglichen.
+
++
+Die in diesem Dialogfeld festgelegte Priorität gilt sowohl für das primäre Volume als auch für das sekundäre Volume. Sie können die Rate für das primäre Volume zu einem späteren Zeitpunkt ändern, indem Sie zu System Manager wechseln und Menü:Storage[Synchronous Mirroring > More > Edit Settings] auswählen.
+
++
+Es gibt fünf Prioritätsraten für die Synchronisierung:
+
++
+** Am Niedrigsten
+** Niedrig
+** Mittel
+** Hoch
+** Höchste
++
+Wenn die Synchronisierungspriorität auf die niedrigste Rate eingestellt ist, wird die I/O-Aktivität priorisiert und die Neusynchronisierung dauert länger. Wenn die Synchronisierungspriorität auf die höchste Rate festgelegt ist, wird der Neusynchronisierung nach Priorität geordnet, aber die I/O-Aktivität für das Speicher-Array ist möglicherweise betroffen.
+
+
+
+. Wählen Sie aus, ob Sie die gespiegelten Paare auf dem Remote-Speicher-Array entweder manuell oder automatisch neu synchronisieren möchten.
++
+** *Manuell* (die empfohlene Option) -- Wählen Sie diese Option aus, damit die Synchronisierung manuell fortgesetzt werden muss, nachdem die Kommunikation auf einem gespiegelten Paar wiederhergestellt wurde. Diese Option bietet die beste Möglichkeit für die Wiederherstellung von Daten.
+** *Automatisch* -- Wählen Sie diese Option, um die Neusynchronisierung automatisch zu starten, nachdem die Kommunikation auf einem gespiegelten Paar wiederhergestellt wurde.
++
+Um die Synchronisierung manuell fortzusetzen, wählen Sie System Manager und Menü:Speicherung[Synchronous Mirroring], markieren Sie das gespiegelte Paar in der Tabelle, und wählen Sie unter *Mehr* *Resume*.
+
+
+
+. Klicken Sie auf *Fertig stellen*, um die Synchronspiegelung abzuschließen.
+
+
+Wenn die Spiegelung aktiviert ist, führt das System folgende Aktionen durch:
+
+* Startet die erste Synchronisierung zwischen dem lokalen Speicher-Array und dem Remote-Speicher-Array.
+* Legt die Synchronisierungspriorität und die Resynchronisierungsrichtlinie fest.
+* Behält sich den Port mit der höchsten Nummer der HIC des Controllers bei der Datenübertragung mit gespiegelten Daten vor.
++
+Auf diesem Port empfangene I/O-Anfragen werden nur von dem bevorzugten Remote-Controller-Eigentümer des sekundären Volumes im gespiegelten Paar akzeptiert. (Reservierungen für das primäre Volume sind zulässig.)
+
+* Erstellt zwei reservierte Kapazitäts-Volumes, eines für jeden Controller, die zum Protokollieren von Schreibinformationen für die Wiederherstellung nach Controller-Resets und anderen temporären Unterbrechungen verwendet werden.
++
+Die Kapazität eines jeden Volumes beträgt 128 MiB. Wenn die Volumes jedoch in einen Pool aufgenommen werden, wird 4 gib für jedes Volume reserviert.
+
+
+
+Wechseln Sie zu System Manager und wählen Sie MENU:Startseite[Vorgänge in Bearbeitung anzeigen], um den Fortschritt des Synchronspiegelung-Vorgangs anzuzeigen. Dieser Vorgang kann langwierig sein und die System-Performance beeinträchtigen.

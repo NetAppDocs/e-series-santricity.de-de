@@ -1,0 +1,32 @@
+---
+permalink: sm-support/schedule-autosupport-dispatches.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, schedule, autosupport, dispatches 
+summary: System Manager erstellt automatisch einen Standardzeitplan für den AutoSupport-Entsendungen. Wenn Sie es bevorzugen, können Sie Ihren eigenen Zeitplan angeben. 
+---
+= Planen Sie AutoSupport-Entsendungen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager erstellt automatisch einen Standardzeitplan für den AutoSupport-Entsendungen. Wenn Sie es bevorzugen, können Sie Ihren eigenen Zeitplan angeben.
+
+Die AutoSupport-Funktion muss aktiviert sein. Sie sehen, ob die Funktion auf der Seite AutoSupport aktiviert ist.
+
+.Über diese Aufgabe
+* *Tageszeit* -- tägliche Dispatches werden täglich im von Ihnen angegebenen Zeitraum gesammelt und gesendet. System Manager wählt eine Zufallszeit während des Bereichs aus. Alle Zeiten werden in Coordinated Universal Time (UTC) angegeben, was sich von der lokalen Zeit des Speicherarrays unterscheiden kann. Sie müssen die lokale Zeit Ihres Speicher-Arrays in UTC konvertieren.
+* *Wochentag* -- wöchentliche Entsendungen werden gesammelt und einmal pro Woche versendet. System Manager wählt einen Tag nach dem Zufallsprinzip aus den von Ihnen angegebenen Tagen aus. Deaktivieren Sie alle Tage, an denen keine wöchentliche Entsendung erfolgen soll. System Manager wählt einen Tag nach dem Zulassen aus.
+* *Wöchentliche Zeit* -- wöchentliche Entsendungen werden einmal pro Woche in dem von Ihnen angegebenen Zeitraum gesammelt und versendet. System Manager wählt eine Zufallszeit während des Bereichs aus. Alle Zeiten werden in Coordinated Universal Time (UTC) angegeben, was sich von der lokalen Zeit des Speicherarrays unterscheiden kann. Sie müssen die lokale Zeit Ihres Speicher-Arrays in UTC konvertieren.
+
+
+.Schritte
+. Wählen Sie MENU:Support[Support Center > AutoSupport].
+. Wählen Sie *AutoSupport-Entsendungen planen*.
++
+Der Assistent AutoSupport-Entsendungen planen wird angezeigt.
+
+. Befolgen Sie die Schritte im Assistenten.
+

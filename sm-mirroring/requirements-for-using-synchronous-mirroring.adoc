@@ -1,0 +1,87 @@
+---
+permalink: sm-mirroring/requirements-for-using-synchronous-mirroring.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, requirements, synchronous, mirroring, 
+summary: Wenn Sie die synchrone Spiegelung verwenden möchten, beachten Sie die folgenden Anforderungen. 
+---
+= Anforderungen für die Nutzung von synchroner Spiegelung
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie die synchrone Spiegelung verwenden möchten, beachten Sie die folgenden Anforderungen.
+
+
+
+== Unified Manager
+
+Um die Spiegelung zwischen zwei Arrays zu aktivieren und zu konfigurieren, müssen Sie die Unified Manager-Schnittstelle verwenden. Unified Manager wird auf einem Host-System zusammen mit dem Web Services Proxy installiert.
+
+* Der Web Services Proxy-Dienst muss ausgeführt werden.
+* Unified Manager muss auf Ihrem lokalen Host über eine HTTPS-Verbindung ausgeführt werden.
+* Unified Manager muss gültige SSL-Zertifikate für das Speicher-Array anzeigen. Sie können ein selbstsigniertes Zertifikat akzeptieren oder Ihr eigenes Sicherheitszertifikat mit Unified Manager installieren und zum Menü:Zertifikat[Zertifikatverwaltung] navigieren.
+
+
+
+
+== Storage-Arrays durchführt
+
+[NOTE]
+====
+Auf dem EF300- oder EF600-Speicher-Array ist keine Spiegelung verfügbar.
+
+====
+* Sie müssen über zwei Storage-Arrays verfügen.
+* Jedes Speicher-Array muss zwei Controller haben.
+* Die beiden Storage Arrays müssen in Unified Manager erkannt werden.
+* Jeder Controller im primären Array und im sekundären Array muss über einen konfigurierten Ethernet-Managementport verfügen und mit dem Netzwerk verbunden sein.
+* Die Speicher-Arrays verfügen über eine Firmware-Version von mindestens 7.84. (Beide können unterschiedliche OS-Versionen ausführen.)
+* Sie müssen das Passwort für die lokalen und Remote-Speicher-Arrays kennen.
+* Sie benötigen genügend freie Kapazität auf dem Remote-Speicher-Array, um ein sekundäres Volume zu erstellen, das dem primären Volume entspricht oder dessen Größe Sie spiegeln möchten.
+* Ihre lokalen und Remote-Speicher-Arrays sind über eine Fibre Channel Fabric verbunden.
+
+
+
+
+== Unterstützte Verbindungen
+
+Kommunikation für synchrones Spiegeln wird nur auf Controllern mit Fibre Channel (FC) Host Ports unterstützt.
+
+Bei der synchronen Spiegelung wird der am höchsten nummerierte Host Port auf jedem Controller verwendet, sowohl auf dem lokalen Storage-Array als auch auf dem Remote-Storage-Array. Der Controller Host Bus Adapter (HBA) Host-Port 4 ist normalerweise für die Übertragung von Spiegeldaten reserviert.
+
+
+
+== Kandidaten für gespiegelte Volumes
+
+* RAID-Level, Caching-Parameter und Segmentgröße können auf den primären und sekundären Volumes eines synchronen gespiegelten Paars unterschiedlich sein.
+* Die primären und sekundären Volumes in einem synchronen gespiegelten Paar müssen Standard-Volumes sein. Es können keine dünnen Volumes oder Snapshot Volumes sein.
+* Das sekundäre Volume muss mindestens so groß sein wie das primäre Volume.
+* Mit dem primären Volume sind möglicherweise nur Snapshots verknüpft, und/oder das Quell- oder Ziel-Volume während eines Volume-Kopiervorgangs.
+* Ein Volume kann nur an einer Spiegelbeziehung beteiligt sein.
+* Die Anzahl der Volumes, die auf einem bestimmten Storage Array unterstützt werden, ist begrenzt. Stellen Sie sicher, dass die Anzahl der konfigurierten Volumes in Ihrem Speicher-Array kleiner als das unterstützte Limit ist. Wenn das synchrone Spiegeln aktiv ist, werden die zwei reservierten Kapazitäts-Volumes, die erstellt werden, mit der Volume-Obergrenze verglichen.
+
+
+
+
+== Reservierte Kapazität
+
+* Für ein primäres Volume und ein sekundäres Volume zur Protokollierung von Schreibinformationen zum Wiederherstellen nach Controller-Resets und anderen vorübergehenden Unterbrechungen ist die reservierte Kapazität erforderlich.
+* Die reservierten Kapazitäts-Volumes werden automatisch bei aktivierter synchronen Spiegelung erstellt. Da sowohl das primäre Volume als auch das sekundäre Volume in einem gespiegelten Paar reservierte Kapazität benötigen, müssen Sie sicherstellen, dass auf beiden Storage-Arrays, die an der Beziehung zur synchronen Spiegelung beteiligt sind, ausreichend freie Kapazität zur Verfügung steht.
+
+
+
+
+== Laufwerkssicherheit
+
+* Wenn Sie sichere Laufwerke verwenden, müssen das primäre und das sekundäre Volume über kompatible Sicherheitseinstellungen verfügen. Diese Beschränkung wird nicht durchgesetzt, deshalb müssen Sie sie selbst überprüfen.
+* Bei Verwendung von sicheren Laufwerken sollten das primäre Volume und das sekundäre Volume denselben Laufwerkstyp verwenden. Diese Beschränkung wird nicht durchgesetzt, deshalb müssen Sie sie selbst überprüfen.
++
+** Wenn das primäre Volume vollständige Festplattenverschlüsselung (Full Disk Encryption, FDE) verwendet, sollten auf dem sekundären Volume FDE-Laufwerke verwendet werden.
+** Wenn das primäre Volume gemäß FIPS (Federal Information Processing Standards 140-2) zertifizierte Laufwerke verwendet, sollte auf dem sekundären Volume FIPS 140-2-2-zertifizierte Laufwerke verwendet werden.
+
+
+* Wenn Sie Data Assurance (da) verwenden, müssen das primäre Volume und das sekundäre Volume über dieselben da-Einstellungen verfügen.
+

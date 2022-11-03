@@ -1,0 +1,143 @@
+---
+permalink: sm-hardware/what-is-shelf-loss-protection-and-drawer-loss-protection.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, shelf, loss, protection, drawer, 
+summary: Shelf-Schutz und Schutz vor Schubladenverlust sind Attribute von Pools und Volume-Gruppen, die es Ihnen ermöglichen, den Datenzugriff bei Ausfall eines einzelnen Shelfs oder einer Schublade aufrechtzuerhalten. 
+---
+= Was ist der Schutz vor Regalverlust und der Schutz vor Schubladenverlust?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Shelf-Schutz und Schutz vor Schubladenverlust sind Attribute von Pools und Volume-Gruppen, die es Ihnen ermöglichen, den Datenzugriff bei Ausfall eines einzelnen Shelfs oder einer Schublade aufrechtzuerhalten.
+
+
+
+== Schutz vor Regalverlust
+
+Ein Shelf ist das Gehäuse, das entweder die Laufwerke oder die Laufwerke und den Controller enthält. Der Shelf-Verlust-Schutz garantiert den Zugriff auf die Daten auf den Volumes in einem Pool oder einer Volume-Gruppe, wenn ein totaler Verlust der Kommunikation mit einem einzelnen Festplatten-Shelf auftritt. Ein Beispiel für einen völligen Verlust der Kommunikation kann ein Verlust an Strom am Festplatten-Shelf oder ein Ausfall beider I/O-Module (IOMs) sein.
+
+[NOTE]
+====
+Der Schutz vor Shelf-Verlust ist nicht gewährleistet, wenn ein Laufwerk bereits im Pool oder in der Volume-Gruppe ausgefallen ist. In dieser Situation kommt es beim Verlust des Zugriffs auf ein Festplatten-Shelf und folglich auch eines anderen Laufwerks im Pool oder der Volume-Gruppe zu Datenverlusten.
+
+====
+Die Kriterien für den Regalverlustschutz sind abhängig von der Schutzmethode, wie in der folgenden Tabelle beschrieben:
+
+[cols="1a,1a,1a"]
+|===
+| Ebene | Kriterien für den Schutz vor Shelf-Verlust | Mindestanzahl der benötigten Shelves 
+
+
+ a| 
+Pool
+ a| 
+Der Pool muss Laufwerke von mindestens fünf Shelfs enthalten, und es muss eine gleiche Anzahl von Laufwerken in jedem Shelf vorhanden sein. Der Schutz vor Shelf-Datenverlusten ist nicht auf Shelfs mit hoher Kapazität anwendbar. Wenn das System kapazitätsstarke Shelfs enthält, finden Sie weitere Informationen unter Abflussschutz.
+ a| 
+5
+
+
+
+ a| 
+RAID 6
+ a| 
+Die Volume-Gruppe enthält nicht mehr als zwei Laufwerke in einem einzelnen Shelf.
+ a| 
+3
+
+
+
+ a| 
+RAID 3 oder RAID 5
+ a| 
+Jedes Laufwerk in der Volume-Gruppe befindet sich in einem separaten Shelf.
+ a| 
+3
+
+
+
+ a| 
+RAID 1
+ a| 
+Jedes Laufwerk in einem RAID-1-Paar muss sich in einem separaten Shelf befinden.
+ a| 
+2
+
+
+
+ a| 
+RAID 0
+ a| 
+Shelf-Verlustschutz kann nicht erreicht werden.
+ a| 
+Keine Angabe
+
+|===
+
+
+== Schutz vor Schubladenverlust
+
+Eine Schublade ist eines der Fächer eines Regals, das Sie herausziehen, um auf die Laufwerke zuzugreifen. Nur die Regale mit hoher Kapazität verfügen über Schubladen. Der Schutz vor Schubladenverlust garantiert den Zugriff auf die Daten auf den Volumes in einem Pool oder einer Volume-Gruppe, wenn ein vollständiger Verlust der Kommunikation mit einem einzelnen Fach auftritt. Ein Beispiel für einen Totalverlust der Kommunikation kann zu einem Stromausfall in der Schublade oder einem Ausfall einer internen Komponente in der Schublade führen.
+
+[NOTE]
+====
+Der Schutz vor Schubladenverlust ist nicht gewährleistet, wenn ein Laufwerk bereits im Pool oder in der Volume-Gruppe ausgefallen ist. Wenn in dieser Situation der Zugriff auf eine Schublade (und folglich ein anderes Laufwerk im Pool oder der Volume-Gruppe) verloren geht, gehen Daten verloren.
+
+====
+Die Kriterien für den Schubladenschutz sind abhängig von der Schutzmethode, wie in der folgenden Tabelle beschrieben:
+
+[cols="1a,1a,1a"]
+|===
+| Ebene | Kriterien für den Schutz vor Schubladenverlust | Mindestanzahl der benötigten Schubladen 
+
+
+ a| 
+Pool
+ a| 
+Poolkandidaten müssen Laufwerke aus allen Schubladen enthalten, und in jedem Fach muss eine gleiche Anzahl von Laufwerken vorhanden sein.
+
+Der Pool muss Laufwerke aus mindestens fünf Schubladen enthalten und in jeder Schublade muss eine gleiche Anzahl von Laufwerken vorhanden sein.
+
+Ein Shelf mit 60 Laufwerken kann einen Schubladenschutz erreichen, wenn der Pool 15, 20, 25, 30, 35, 40, 45, 50, 55 oder 60 Laufwerke. Nach der ersten Erstellung können Vielfache von 5 dem Pool hinzugefügt werden.
+ a| 
+5
+
+
+
+ a| 
+RAID 6
+ a| 
+Die Volume-Gruppe enthält nicht mehr als zwei Laufwerke in einem einzigen Einschub.
+ a| 
+3
+
+
+
+ a| 
+RAID 3 oder RAID 5
+ a| 
+Jedes Laufwerk in der Volume-Gruppe befindet sich in einem separaten Einschub.
+ a| 
+3
+
+
+
+ a| 
+RAID 1
+ a| 
+Jedes Laufwerk in einem gespiegelten Paar muss sich in einem separaten Fach befinden.
+ a| 
+2
+
+
+
+ a| 
+RAID 0
+ a| 
+Der Schutz vor Schubladenverlust kann nicht erreicht werden.
+ a| 
+Keine Angabe
+
+|===

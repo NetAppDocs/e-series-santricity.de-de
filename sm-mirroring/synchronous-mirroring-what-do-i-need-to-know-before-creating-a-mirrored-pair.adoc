@@ -1,0 +1,27 @@
+---
+permalink: sm-mirroring/synchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous mirroring, 
+summary: Sie konfigurieren gespiegelte Paare in der Benutzeroberfläche von Unified Manager und managen dann die Paare in System Manager. 
+---
+= Synchrones Spiegeln - Was muss ich wissen, bevor ein gespiegeltes Paar erstellt wird?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie konfigurieren gespiegelte Paare in der Benutzeroberfläche von Unified Manager und managen dann die Paare in System Manager.
+
+Befolgen Sie vor dem Erstellen eines gespiegelten Paares die folgenden Richtlinien:
+
+* Sie müssen über zwei Storage-Arrays verfügen.
+* Jedes Speicher-Array muss zwei Controller haben.
+* Jeder Controller im primären Array und im sekundären Array muss über einen konfigurierten Ethernet-Managementport verfügen und mit dem Netzwerk verbunden sein.
+* Ihre lokalen und Remote-Speicher-Arrays sind über eine Fibre Channel Fabric verbunden.
+* Die Speicher-Arrays verfügen über eine Firmware-Version von mindestens 7.84. (Beide können unterschiedliche OS-Versionen ausführen.)
+* Sie müssen das Passwort für die lokalen und Remote-Speicher-Arrays kennen.
+* Sie benötigen genügend freie Kapazität auf dem Remote-Speicher-Array, um ein sekundäres Volume zu erstellen, das dem primären Volume entspricht oder dessen Größe Sie spiegeln möchten.
+* Sie haben Web Services Proxy und Unified Manager installiert. Gespiegelte Paare werden in der Unified Manager Schnittstelle konfiguriert.
+* Die beiden Storage Arrays werden in Unified Manager erkannt.
+

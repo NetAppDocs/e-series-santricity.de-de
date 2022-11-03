@@ -1,0 +1,34 @@
+---
+permalink: sm-support/enable-autosupport-maintenance-window.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, autosupport, ASUP, maintenance window 
+summary: Aktivieren Sie das AutoSupport-Wartungsfenster, um die automatische Ticketerstellung bei Fehlerereignissen zu unterdrücken. Im normalen Betriebsmodus eröffnet das Storage Array über AutoSupport einen Support-Fall, wenn ein Problem auftritt. 
+---
+= Fenster AutoSupport-Wartung aktivieren
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Aktivieren Sie das AutoSupport-Wartungsfenster, um die automatische Ticketerstellung bei Fehlerereignissen zu unterdrücken. Im normalen Betriebsmodus eröffnet das Storage Array über AutoSupport einen Support-Fall, wenn ein Problem auftritt.
+
+.Schritte
+. Wählen Sie MENU:Support[Support Center > AutoSupport].
+. Wählen Sie *Fenster AutoSupport-Wartung aktivieren*.
+. Geben Sie die E-Mail-Adresse ein, um eine Bestätigung zu erhalten, dass das Wartungsfenster bearbeitet wurde.
++
+Je nach Konfiguration können Sie bis zu fünf E-Mail-Adressen eingeben. Wenn Sie mehr als eine Adresse hinzufügen möchten, wählen Sie *Weitere E-Mail hinzufügen*, um ein anderes Feld zu öffnen.
+
+. Geben Sie die Dauer (in Stunden) an, um das Wartungsfenster zu aktivieren.
++
+Die maximal unterstützte Dauer beträgt 72 Stunden.
+
+. Klicken Sie Auf *Ja*.
++
+Die automatische Erstellung von AutoSupport-Tickets bei Fehlerereignissen wird vorübergehend für das angegebene Zeitfenster unterbunden.
+
+
+
+Das Wartungsfenster beginnt erst, wenn die Anfrage des Storage-Arrays von den AutoSupport-Servern verarbeitet wird. Warten Sie, bis Sie eine Bestätigungs-E-Mail erhalten haben, bevor Sie Wartungsarbeiten an Ihrem Speicher-Array durchführen.

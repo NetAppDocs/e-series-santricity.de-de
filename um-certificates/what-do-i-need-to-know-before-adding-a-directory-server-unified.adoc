@@ -1,0 +1,19 @@
+---
+permalink: um-certificates/what-do-i-need-to-know-before-adding-a-directory-server-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, adding, directory, server 
+summary: Bevor Sie einen Verzeichnisserver in Access Management hinzufügen, müssen Sie bestimmte Anforderungen erfüllen. 
+---
+= Was muss ich vor dem Hinzufügen eines Verzeichnisservers wissen?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bevor Sie einen Verzeichnisserver in Access Management hinzufügen, müssen Sie bestimmte Anforderungen erfüllen.
+
+* Benutzergruppen müssen in Ihrem Verzeichnisdienst definiert sein.
+* LDAP-Serveranmeldeinformationen müssen verfügbar sein, einschließlich Domänenname, Server-URL und optional Benutzername und Kennwort für das Bindekonto.
+* Bei LDAPS-Servern mit einem sicheren Protokoll muss die Zertifikatskette des LDAP-Servers auf Ihrem lokalen Computer installiert sein.
+

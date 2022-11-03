@@ -1,0 +1,50 @@
+---
+permalink: um-manage/requirements-for-replicating-storage-configurations.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, requirements, replicating, storage, configurations 
+summary: Bevor Sie eine Speicherkonfiguration von einem Speicher-Array in ein anderes importieren, überprüfen Sie die Anforderungen und Richtlinien. 
+---
+= Anforderungen für die Replizierung von Storage-Konfigurationen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bevor Sie eine Speicherkonfiguration von einem Speicher-Array in ein anderes importieren, überprüfen Sie die Anforderungen und Richtlinien.
+
+
+
+== Shelfs
+
+* Die Shelfs, in denen sich die Controller befinden, müssen auf den Quell- und Ziel-Arrays identisch sein.
+* Shelf IDs müssen auf den Quell- und Ziel-Arrays identisch sein.
+* Erweiterungs-Shelfs müssen in denselben Steckplätzen mit denselben Laufwerktypen bestückt werden (wenn das Laufwerk in der Konfiguration verwendet wird, ist die Position nicht verwendeter Laufwerke unwichtig).
+
+
+
+
+== Controller
+
+* Der Controller-Typ kann sich zwischen Quell- und Ziel-Arrays unterscheiden (beispielsweise beim Import von einer E2800 in eine E5700), aber der RBOD-Gehäusetyp muss identisch sein.
+* Die HICs, einschließlich der da-Fähigkeiten des Hosts, müssen identisch sein zwischen den Quell- und Ziel-Arrays.
+* Der Import von einer Duplex-Konfiguration in eine Simplex-Konfiguration wird nicht unterstützt. Der Import von Simplex in Duplex ist jedoch zulässig.
+* FDE-Einstellungen sind beim Importvorgang nicht enthalten.
+
+
+
+
+== Status
+
+* Die Ziel-Arrays müssen den optimalen Status haben.
+* Das Quell-Array muss nicht im optimalen Status sein.
+
+
+
+
+== Storage
+
+* Die Laufwerkskapazität kann zwischen den Quell- und Ziel-Arrays variieren, solange die Volume-Kapazität auf dem Ziel größer ist als die Quelle. (In einem Ziel-Array sind unter Umständen neuere Laufwerke mit höherer Kapazität enthalten, die durch den Replizierungsvorgang nicht vollständig in Volumes konfiguriert wären.)
+* Laufwerk-Pool-Volumes mit einer Größe von mindestens 64 TB auf dem Quell-Array verhindern den Importvorgang auf den Zielen.
+* Thin Volumes sind beim Importvorgang nicht enthalten.
+

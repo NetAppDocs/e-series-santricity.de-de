@@ -1,0 +1,32 @@
+---
+permalink: sm-settings/what-is-controller-cache.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, controller, cache, 
+summary: 'Der Controller-Cache ist ein physischer Speicherplatz, der zwei Arten von I/O-Vorgängen (Input/Output) vereinfacht: Zwischen den Controllern und Hosts sowie zwischen den Controllern und Festplatten.' 
+---
+= Was ist der Controller Cache?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der Controller-Cache ist ein physischer Speicherplatz, der zwei Arten von I/O-Vorgängen (Input/Output) vereinfacht: Zwischen den Controllern und Hosts sowie zwischen den Controllern und Festplatten.
+
+Beim Lesen und Schreiben von Datentransfers kommunizieren die Hosts und Controller über High-Speed-Verbindungen. Die Kommunikation zwischen dem Backend des Controllers und den Festplatten ist jedoch langsamer, da die Festplatten relativ langsam sind.
+
+Wenn der Controller-Cache Daten erhält, bestätigt der Controller den Host-Applikationen, dass er jetzt die Daten hält. Auf diese Weise müssen die Host-Applikationen nicht warten, bis der I/O auf die Festplatte geschrieben wird. Stattdessen können Applikationen den Betrieb fortsetzen. Auf die im Cache gespeicherten Daten können zudem von Server-Applikationen schnell zugegriffen werden, sodass kein zusätzliches Lesen von Festplatten erforderlich ist, um auf die Daten zuzugreifen.
+
+Der Controller-Cache wirkt sich auf die Gesamt-Performance des Storage Arrays aus:
+
+* Der Cache fungiert als Puffer, sodass die Übertragung von Host- und Festplattendaten nicht synchronisiert werden muss.
+* Die Daten eines Lese- oder Schreibvorgangs vom Host befinden sich möglicherweise im Cache eines vorherigen Vorgangs, sodass kein Zugriff auf die Festplatte erforderlich ist.
+* Bei Verwendung von Schreib-Caching kann der Host nachfolgende Schreibbefehle senden, bevor die Daten eines früheren Schreibvorgangs auf die Festplatte geschrieben werden.
+* Wenn Cache-Prefetch aktiviert ist, wird der sequenzielle Lesezugriff optimiert. Cache Prefetch sorgt für einen Lesevorgang, bei dem die Daten im Cache gefunden werden, anstatt die Daten von der Festplatte zu lesen.
+
+
+[CAUTION]
+====
+*Möglicher Datenverlust* -- Wenn Sie die *Write Caching ohne Batterien* Option aktivieren und keine universelle Stromversorgung zum Schutz haben, könnten Sie Daten verlieren. Darüber hinaus könnten Sie Daten verlieren, wenn Sie keine Controller-Batterien haben und Sie die Option *Write Caching ohne Batterien* aktivieren.
+
+====

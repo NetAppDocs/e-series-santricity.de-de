@@ -1,0 +1,59 @@
+---
+permalink: sm-storage/change-the-settings-for-a-host.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, settings, host 
+summary: Sie können den Namen, den Host-Betriebssystemtyp und die zugehörigen Host-Cluster für einen Host ändern. 
+---
+= Ändern Sie die Einstellungen für einen Host
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können den Namen, den Host-Betriebssystemtyp und die zugehörigen Host-Cluster für einen Host ändern.
+
+.Schritte
+. Wählen Sie Menü:Storage[Hosts].
+. Wählen Sie den Host aus, den Sie bearbeiten möchten, und klicken Sie dann auf *Einstellungen anzeigen/bearbeiten*.
++
+Es wird ein Dialogfeld angezeigt, in dem die aktuellen Hosteinstellungen angezeigt werden.
+
+. Wenn er nicht bereits ausgewählt ist, klicken Sie auf die Registerkarte *Eigenschaften*.
+. Ändern Sie die Einstellungen nach Bedarf.
++
+.Felddetails
+====
+[cols="25h,~"]
+|===
+| Einstellung | Beschreibung 
+
+
+ a| 
+Name
+ a| 
+Sie können den vom Benutzer bereitgestellten Namen des Hosts ändern. Die Angabe eines Namens für den Host ist erforderlich.
+
+
+
+ a| 
+Zugehöriger Host-Cluster
+ a| 
+Sie können eine der folgenden Optionen auswählen:
+
+** *Keine* -- der Host bleibt ein eigenständiger Host. Wenn der Host einem Host-Cluster zugewiesen war, wird der Host vom Cluster entfernt.
+** *<Host Cluster>* -- das System ordnet den Host dem ausgewählten Cluster zu.
+
+
+
+
+ a| 
+Host-Betriebssystem-Typ
+ a| 
+Sie können den Typ des Betriebssystems ändern, das auf dem von Ihnen definierten Host ausgeführt wird.
+
+|===
+====
+. Klicken Sie Auf *Speichern*.
+

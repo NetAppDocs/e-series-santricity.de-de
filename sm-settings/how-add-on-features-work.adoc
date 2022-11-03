@@ -1,0 +1,26 @@
+---
+permalink: sm-settings/how-add-on-features-work.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add-on, features, 
+summary: Add-ons sind Funktionen, die nicht in der Standardkonfiguration von System Manager enthalten sind und möglicherweise einen Schlüssel zur Aktivierung erfordern. Eine Add-on-Funktion kann entweder eine einzelne Premium-Funktion oder ein im Paket enthaltene Features sein. 
+---
+= Funktionsweise der Add-on-Funktionen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Add-ons sind Funktionen, die nicht in der Standardkonfiguration von System Manager enthalten sind und möglicherweise einen Schlüssel zur Aktivierung erfordern. Eine Add-on-Funktion kann entweder eine einzelne Premium-Funktion oder ein im Paket enthaltene Features sein.
+
+Die folgenden Schritte geben einen Überblick über die Aktivierung einer Premium-Funktion oder eines Features-Packs:
+
+. Beziehen Sie sich auf folgende Informationen:
++
+** Seriennummer des Gehäuses und Feature Enable Identifier, die das Speicher-Array für das zu installierende Feature identifizieren. Diese Elemente sind in System Manager verfügbar.
+** Aktivierungscode für die Funktion, der bei Kauf der Funktion auf der Support-Website verfügbar ist.
+
+
+. Erhalten Sie den Funktionsschlüssel, indem Sie sich an Ihren Storage-Provider wenden oder den Standort zur Aktivierung der Premium-Funktion aufrufen. Geben Sie die Seriennummer des Gehäuses, aktivieren Sie den Bezeichner und den Funktionscode für die Aktivierung an.
+. Aktivieren Sie mit System Manager die Premium-Funktion oder das Feature Pack mithilfe der Feature-Key-Datei.
+

@@ -1,0 +1,28 @@
+---
+permalink: sm-storage/why-would-i-want-to-manually-configure-a-pool.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, manually, configure, pool 
+summary: Die folgenden Beispiele beschreiben, warum Sie einen Pool manuell konfigurieren möchten. 
+---
+= Warum sollte ich einen Pool manuell konfigurieren?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die folgenden Beispiele beschreiben, warum Sie einen Pool manuell konfigurieren möchten.
+
+* Wenn Ihr Storage-Array über mehrere Applikationen verfügt und Sie nicht möchten, dass dieselben Laufwerkressourcen miteinander konkurrieren, sollten Sie möglicherweise manuell einen kleineren Pool für eine oder mehrere Applikationen erstellen.
++
+Sie können nur ein oder zwei Volumes zuweisen, statt den Workload einem großen Pool mit vielen Volumes zuzuweisen, über die die Daten verteilt werden sollen. Durch die manuelle Erstellung eines separaten Pools, der dem Workload einer bestimmten Applikation zugewiesen ist, kann die Performance von Storage-Array-Operationen mit weniger Konflikten schneller erfolgen.
+
++
+Um einen Pool manuell zu erstellen, wählen Sie *Speicher* und dann *Pools & Volume Groups*. Klicken Sie auf der Registerkarte Alle Kapazitäten auf Menü:Create[Pool].
+
+* Wenn mehrere Pools desselben Laufwerkstyps vorhanden sind, wird eine Meldung angezeigt, dass System Manager die Laufwerke nicht automatisch für einen Pool empfehlen kann. Sie können die Laufwerke jedoch manuell einem vorhandenen Pool hinzufügen.
++
+So fügen Sie manuell Laufwerke zu einem vorhandenen Pool hinzu: Wählen Sie auf der Seite Pools & Volume Groups den Pool aus und klicken Sie dann auf *Add Capacity*.
+
+

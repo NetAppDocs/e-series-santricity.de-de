@@ -1,0 +1,60 @@
+---
+permalink: sm-storage/replace-drive-logically-storage.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, replace, drive, logically 
+summary: Wenn ein Laufwerk ausfällt oder Sie es aus einem anderen Grund ersetzen möchten und ein nicht zugewiesenes Laufwerk im Speicher-Array vorhanden ist, können Sie das ausgefallene Laufwerk logisch durch das nicht zugewiesene Laufwerk ersetzen. Wenn Sie kein nicht zugewiesenes Laufwerk haben, können Sie stattdessen das Laufwerk physisch ersetzen. 
+---
+= Laufwerk logisch ersetzen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn ein Laufwerk ausfällt oder Sie es aus einem anderen Grund ersetzen möchten und ein nicht zugewiesenes Laufwerk im Speicher-Array vorhanden ist, können Sie das ausgefallene Laufwerk logisch durch das nicht zugewiesene Laufwerk ersetzen. Wenn Sie kein nicht zugewiesenes Laufwerk haben, können Sie stattdessen das Laufwerk physisch ersetzen.
+
+Wenn Sie ein Laufwerk logisch durch ein nicht zugewiesenes Laufwerk ersetzen, wird das nicht zugewiesene Laufwerk zugewiesen und ist dann dauerhaftes Mitglied des zugeordneten Pools oder der Volume-Gruppe. Sie verwenden die Option „logischer Austausch“, um die folgenden Laufwerkstypen zu ersetzen:
+
+* Ausgefallene Laufwerke
+* Laufwerke fehlen
+* SSD-Laufwerke, die der Recovery Guru benachrichtigt hat, dass sich ihrem Ende ihres Lebenszyklus nähert
+* Festplatten, die der Recovery Guru benachrichtigt hat, die über einen bevorstehenden Laufwerksausfall verfügen
+* Zugewiesene Laufwerke (nur für Laufwerke in einer Volume-Gruppe, nicht in einem Pool verfügbar)
+
+
+Das Ersatzlaufwerk muss die folgenden Eigenschaften aufweisen:
+
+* Im optimalen Zustand
+* Im Status nicht zugewiesen
+* Die gleichen Attribute wie das zu ersetzende Laufwerk (Medientyp, Schnittstellentyp usw.)
+* Dieselben FDE-Funktionen (empfohlen, jedoch nicht erforderlich)
+* Die gleiche da-Fähigkeit (empfohlen, aber nicht erforderlich)
+
+
+.Schritte
+. Wählen Sie *Hardware*.
+. Wenn die Grafik die Controller zeigt, klicken Sie auf *Vorderseite des Regals anzeigen*.
++
+Die Grafik ändert sich, um die Laufwerke anstelle der Controller anzuzeigen.
+
+. Klicken Sie auf das Laufwerk, das Sie logisch ersetzen möchten.
++
+Das Kontextmenü des Laufwerks wird angezeigt.
+
+. Klicken Sie auf *logisch ersetzen*.
+. *Optional:* Aktivieren Sie das Kontrollkästchen *fail drive, nachdem es ersetzt wurde*, um das ursprüngliche Laufwerk nach dem Ersetzen zu scheitern.
++
+Dieses Kontrollkästchen ist nur aktiviert, wenn das ursprünglich zugewiesene Laufwerk nicht ausgefallen ist oder fehlt.
+
+. Wählen Sie in der Tabelle *Ersatzlaufwerk auswählen* das Ersatzlaufwerk aus, das Sie verwenden möchten.
++
+In der Tabelle werden nur die Laufwerke aufgeführt, die mit dem Laufwerk kompatibel sind, das Sie ersetzen. Wenn möglich, wählen Sie ein Laufwerk aus, das den Schutz vor Regalverlust und den Schutz vor Schubladenverlust aufrechterhalten soll.
+
+. Klicken Sie Auf *Ersetzen*.
++
+Wenn das ursprüngliche Laufwerk ausgefallen ist oder fehlt, werden die Daten mithilfe der Paritätsinformationen auf dem Ersatzlaufwerk rekonstruiert. Diese Rekonstruktion beginnt automatisch. Die Fehleranzeige des Laufwerks erlischt, und die Aktivitäts-LED der Laufwerke im Pool oder in der Volume-Gruppe beginnt zu blinken.
+
++
+Wenn das ursprüngliche Laufwerk nicht ausgefallen ist oder fehlt, werden seine Daten auf das Ersatzlaufwerk kopiert. Dieser Kopiervorgang startet automatisch. Nachdem der Kopiervorgang abgeschlossen ist, wechselt das System das ursprüngliche Laufwerk in den Status nicht zugewiesen oder wenn das Kontrollkästchen aktiviert wurde, in den Status fehlgeschlagen.
+
+

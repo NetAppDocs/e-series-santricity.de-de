@@ -1,0 +1,31 @@
+---
+permalink: sm-settings/why-cant-i-log-in.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, log, in, login 
+summary: Wenn Sie beim Versuch, sich bei System Manager anzumelden, einen Fehler erhalten, überprüfen Sie die möglichen Ursachen. 
+---
+= Warum kann ich mich nicht anmelden?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn Sie beim Versuch, sich bei System Manager anzumelden, einen Fehler erhalten, überprüfen Sie die möglichen Ursachen.
+
+Fehler beim Anmelden bei System Manager können aus einem der folgenden Gründe auftreten:
+
+* Sie haben einen falschen Benutzernamen oder ein falsches Passwort eingegeben.
+* Sie verfügen über unzureichende Berechtigungen.
+* Der Verzeichnisserver (falls konfiguriert) ist möglicherweise nicht verfügbar. Wenn dies der Fall ist, melden Sie sich mit einer lokalen Benutzerrolle an.
+* Sie haben mehrmals versucht, sich erfolglos anzumelden, was den Sperrmodus ausgelöst hat. Warten Sie 10 Minuten, bis Sie sich erneut anmelden können.
+* Eine Sperrbedingung wurde ausgelöst und Ihr Prüfprotokoll ist möglicherweise voll. Wechseln Sie zu Zugriffsmanagement und löschen Sie alte Ereignisse aus dem Revisionsprotokoll.
+* SAML-Authentifizierung ist aktiviert. Aktualisieren Sie Ihren Browser, um sich anzumelden.
+
+
+Aus einem der folgenden Gründe können Anmeldefehler bei einem Remote-Speicher-Array auftreten:
+
+* Sie haben ein falsches Kennwort eingegeben.
+* Sie haben mehrmals versucht, sich erfolglos anzumelden, was den Sperrmodus ausgelöst hat. Warten Sie 10 Minuten, um sich erneut anzumelden.
+* Die maximale Anzahl an Client-Verbindungen, die auf dem Controller verwendet werden, wurde erreicht. Suchen Sie nach mehreren Benutzern oder Clients.
+

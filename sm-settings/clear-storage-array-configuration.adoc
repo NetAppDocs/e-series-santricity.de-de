@@ -1,0 +1,100 @@
+---
+permalink: sm-settings/clear-storage-array-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, clear, storage, array, configuration, 
+summary: Verwenden Sie den Vorgang Konfiguration löschen, wenn Sie alle Pools, Volume-Gruppen, Volumes, Host-Definitionen und Host-Zuweisungen aus dem Speicher-Array löschen möchten. 
+---
+= Löschen Sie die Konfiguration des Speicherarrays
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Verwenden Sie den Vorgang Konfiguration löschen, wenn Sie alle Pools, Volume-Gruppen, Volumes, Host-Definitionen und Host-Zuweisungen aus dem Speicher-Array löschen möchten.
+
+Sichern Sie vor dem Löschen der Konfiguration des Speicherarrays die Daten.
+
+Es gibt zwei Optionen für eine klare Speicherarray-Konfiguration:
+
+* *Volume* -- normalerweise können Sie mit der Option Volume ein Test-Storage-Array als Produktions-Storage-Array neu konfigurieren. Beispielsweise können Sie ein Storage-Array für Tests konfigurieren und dann, wenn Sie die Testkonfiguration abgeschlossen haben, entfernen und das Storage-Array für eine Produktionsumgebung einrichten.
+* *Speicher-Array* -- normalerweise können Sie die Option Speicher-Array verwenden, um ein Speicher-Array in eine andere Abteilung oder Gruppe zu verschieben. Beispielsweise können Sie ein Storage Array im Engineering verwenden, und jetzt erhält Engineering ein neues Storage Array, also möchten Sie das aktuelle Storage Array zu Administration verschieben, wo es neu konfiguriert wird.
++
+Mit der Option Speicher-Array werden einige zusätzliche Einstellungen gelöscht.
+
+
+
+[cols="1a,1a,1a"]
+|===
+|  | Datenmenge | Storage Array Durchführt 
+
+
+ a| 
+Löscht Pools und Volume-Gruppen
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Löscht Volumes
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Löscht Hosts und Host-Cluster
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Löscht Host-Zuweisungen
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Löscht den Namen des Speicher-Arrays
+ a| 
+ a| 
+X
+
+
+
+ a| 
+Setzt die Cache-Einstellungen des Speicherarrays auf die Standardeinstellung zurück
+ a| 
+ a| 
+X
+
+|===
+[CAUTION]
+====
+*Risiko des Datenverlustes* -- dieser Vorgang löscht alle Daten aus Ihrem Speicher-Array. (Es wird kein sicheres Löschen durchgeführt.) Sie können diesen Vorgang nach dem Start nicht mehr abbrechen. Führen Sie diesen Vorgang nur aus, wenn Sie vom technischen Support dazu aufgefordert werden.
+
+====
+.Schritte
+. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie *Speicherarray-Konfiguration Löschen*.
+. Wählen Sie in der Dropdown-Liste entweder *Volume* oder *Storage Array* aus.
+. *Optional:* Wenn Sie die Konfiguration speichern möchten (nicht die Daten), verwenden Sie die Links im Dialogfeld.
+. Bestätigen Sie, dass Sie den Vorgang ausführen möchten.
+
+
+.Ergebnisse
+* Die aktuelle Konfiguration wird gelöscht und alle vorhandenen Daten auf dem Speicher-Array zerstört.
+* Zuweisung aller Laufwerke aufgehoben.
+

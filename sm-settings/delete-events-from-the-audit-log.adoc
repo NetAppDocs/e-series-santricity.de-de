@@ -1,0 +1,36 @@
+---
+permalink: sm-settings/delete-events-from-the-audit-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, events, audit, log, 
+summary: 'Sie können das Audit-Protokoll von alten Ereignissen löschen, wodurch das Suchen durch Ereignisse leichter zu verwalten ist. Sie haben die Möglichkeit, alte Ereignisse beim Löschen in einer CSV-Datei (kommagetrennte Werte) zu speichern.' 
+---
+= Löschen von Ereignissen aus dem Auditprotokoll
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können das Audit-Protokoll von alten Ereignissen löschen, wodurch das Suchen durch Ereignisse leichter zu verwalten ist. Sie haben die Möglichkeit, alte Ereignisse beim Löschen in einer CSV-Datei (kommagetrennte Werte) zu speichern.
+
+Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[Zugriffsverwaltung].
+. Wählen Sie die Registerkarte *Prüfprotokoll* aus.
+. Wählen Sie *Löschen*.
++
+Das Dialogfeld Prüfprotokoll löschen wird geöffnet.
+
+. Wählen Sie oder geben Sie die Anzahl der ältesten Ereignisse ein, die Sie löschen möchten.
+. Wenn Sie die gelöschten Ereignisse in eine CSV-Datei exportieren möchten (empfohlen), lassen Sie das Kontrollkästchen aktiviert. Sie werden aufgefordert, einen Dateinamen und Speicherort einzugeben, wenn Sie im nächsten Schritt auf *Löschen* klicken. Wenn Sie keine Ereignisse in einer CSV-Datei speichern möchten, aktivieren Sie das Kontrollkästchen, um die Auswahl aufzuheben.
+. Klicken Sie Auf *Löschen*.
++
+Ein Bestätigungsdialogfeld wird geöffnet.
+
+. Typ `delete` Klicken Sie im Feld auf *Löschen*.
++
+Die ältesten Ereignisse werden von der Seite „Überwachungsprotokoll“ entfernt.
+
+

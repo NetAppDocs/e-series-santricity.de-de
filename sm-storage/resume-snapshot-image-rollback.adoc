@@ -1,0 +1,30 @@
+---
+permalink: sm-storage/resume-snapshot-image-rollback.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, resume, snapshot, image, rollback 
+summary: Wenn während eines Rollback-Vorgangs eines Snapshot-Images ein Fehler auftritt, wird der Vorgang automatisch angehalten. Sie können einen Rollback-Vorgang fortsetzen, der sich im Status „Pause“ befindet. 
+---
+= Setzen Sie das Rollback von Snapshot-Bildern fort
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Wenn während eines Rollback-Vorgangs eines Snapshot-Images ein Fehler auftritt, wird der Vorgang automatisch angehalten. Sie können einen Rollback-Vorgang fortsetzen, der sich im Status „Pause“ befindet.
+
+.Schritte
+. Wählen Sie Menü:Storage[Snapshots].
+. Klicken Sie auf die Registerkarte *Snapshot Images*.
+. Markieren Sie das angehaltene Rollback, und wählen Sie dann Menü:Rollback[Resume].
++
+Der Vorgang wird fortgesetzt.
+
+
+
+System Manager führt die folgenden Aktionen durch:
+
+* Wenn der Rollback-Vorgang erfolgreich fortgesetzt wird, können Sie den Fortschritt des Rollback-Vorgangs im Fenster „Vorgänge in Bearbeitung“ anzeigen.
+* Ist der Rollback-Vorgang nicht erfolgreich, wird der Vorgang erneut angehalten. Sie können das Problem durch die Recovery Guru-Prozedur beheben oder sich an den technischen Support wenden.
+

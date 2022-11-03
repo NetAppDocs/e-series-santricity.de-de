@@ -1,0 +1,23 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-configuring-a-syslog-server.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configuring, syslog, server, 
+summary: Sie können Audit-Protokolle auf einem externen Syslog-Server archivieren. 
+---
+= Was muss ich vor der Konfiguration eines Syslog-Servers wissen?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können Audit-Protokolle auf einem externen Syslog-Server archivieren.
+
+Beachten Sie vor der Konfiguration eines Syslog-Servers die folgenden Richtlinien.
+
+* Stellen Sie sicher, dass Sie die Serveradresse, das Protokoll und die Portnummer kennen. Bei der Serveradresse kann es sich um einen vollständig qualifizierten Domänennamen, eine IPv4-Adresse oder eine IPv6-Adresse handeln.
+* Wenn Ihr Server ein sicheres Protokoll verwendet (z. B. TLS), muss auf Ihrem lokalen System ein Zertifikat für Zertifizierungsstellen (CA) verfügbar sein. CA-Zertifikate identifizieren Website-Eigentümer für sichere Verbindungen zwischen Servern und Clients.
+* Nach der Konfiguration werden alle neuen Audit-Protokolle an den Syslog-Server gesendet. Frühere Protokolle werden nicht übertragen.
+* Die Einstellungen der Überschreibrichtlinie (verfügbar unter *Ansicht/Einstellungen bearbeiten*) haben keinen Einfluss auf das Management von Protokollen mit einer Syslog-Serverkonfiguration.
+* Auditprotokolle folgen dem Nachrichtenformat RFC 5424.
+

@@ -1,0 +1,48 @@
+---
+permalink: sm-hardware/solid-state-disks-ssds.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, solid, state, disk, SSD 
+summary: 'Solid State Disks (SSDs) sind Daten-Storage-Geräte, die Solid State Memory (Flash) verwenden, um Daten dauerhaft zu speichern. SSDs bieten herkömmliche Festplatten an und sind mit denselben Schnittstellen verfügbar wie die Festplatten.' 
+---
+= Solid State Disks (SSDs)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Solid State Disks (SSDs) sind Daten-Storage-Geräte, die Solid State Memory (Flash) verwenden, um Daten dauerhaft zu speichern. SSDs bieten herkömmliche Festplatten an und sind mit denselben Schnittstellen verfügbar wie die Festplatten.
+
+
+
+== Vorteile von SSDs
+
+SSDs bieten im Vergleich zu Festplatten folgende Vorteile:
+
+* Schnellerer Start (kein Hochfahren)
+* Geringere Latenz
+* Höhere I/O-Operationen pro Sekunde (IOPS)
+* Höhere Zuverlässigkeit mit weniger beweglichen Teilen
+* Geringerer Stromverbrauch
+* Geringerer Wärmeaufwand und geringerer Kühlungsbedarf
+
+
+
+
+== SSDs werden identifiziert
+
+Auf der Hardware-Seite finden Sie die SSDs in der Front-Shelf-Ansicht. Suchen Sie nach Laufwerksschächten, die ein Blitzsymbol anzeigen, das darauf hinweist, dass eine SSD installiert ist.
+
+
+
+== Volume-Gruppen
+
+Alle Laufwerke in einer Volume-Gruppe müssen vom gleichen Medientyp (entweder alle SSDs oder alle Festplatten) sein. Volume-Gruppen können keine Mischung aus Medientypen oder Schnittstellentypen haben.
+
+
+
+== Caching
+
+Das Schreib-Caching des Controllers ist immer für SSDs aktiviert. Schreib-Caching verbessert die Performance und verlängert die Lebensdauer der SSDs.
+
+Zusätzlich zum Controller-Cache können Sie die SSD-Cache-Funktion implementieren, um die Performance des gesamten Systems zu verbessern. Im SSD-Cache werden die Daten aus Volumes kopiert und auf zwei internen RAID-Volumes (eine pro Controller) gespeichert.

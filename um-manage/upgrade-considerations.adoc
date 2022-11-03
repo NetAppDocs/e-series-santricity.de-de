@@ -1,0 +1,42 @@
+---
+permalink: um-manage/upgrade-considerations.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, upgrade, considerations 
+summary: Bevor Sie Unified Manager für das Upgrade mehrerer Storage-Arrays verwenden, sollten Sie die wichtigsten Überlegungen bei der Planung beachten. 
+---
+= Upgrade-Überlegungen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bevor Sie Unified Manager für das Upgrade mehrerer Storage-Arrays verwenden, sollten Sie die wichtigsten Überlegungen bei der Planung beachten.
+
+
+
+== Aktuelle Versionen
+
+Sie können die aktuellen Softwareversionen des SANtricity Betriebssystems von der Seite Verwalten von Unified Manager für jedes erkannte Storage-Array anzeigen. Die Version wird in der Spalte SANtricity OS Software angezeigt. Die Informationen zu Controller-Firmware und NVSRAM finden Sie in einem Popup-Dialogfeld, wenn Sie in den einzelnen Zeilen auf die SANtricity OS-Version klicken.
+
+
+
+== Andere Komponenten müssen aktualisiert werden
+
+Im Rahmen des Upgrades müssen Sie eventuell auch den Multipath-/Failover-Treiber oder den HBA-Treiber des Hosts aktualisieren, damit der Host korrekt mit den Controllern interagieren kann.
+
+Informationen zur Kompatibilität finden Sie im https://imt.netapp.com/matrix/#welcome["NetApp Interoperabilitätsmatrix"^]. Lesen Sie auch die Verfahren in den Express-Leitfäden für Ihr Betriebssystem. Express-Leitfäden finden Sie im https://docs.netapp.com/us-en/e-series/index.html["E-Series und SANtricity Dokumentation"^].
+
+
+
+== Dual-Controller
+
+Wenn ein Storage-Array zwei Controller enthält und ein Multipath-Treiber installiert ist, kann das Storage-Array die I/O-Verarbeitung während des Upgrades fortsetzen. Während des Upgrades erfolgt der folgende Vorgang:
+
+. Controller A Failover aller LUNs zu Controller B
+. Das Upgrade erfolgt bei Controller A
+. Controller A nimmt seine LUNs und alle Controller B LUNs wieder auf.
+. Upgrade erfolgt auf Controller B.
+
+
+Nach Abschluss des Upgrades müssen Sie Volumes möglicherweise manuell zwischen den Controllern neu verteilen, um sicherzustellen, dass die Volumes wieder zum korrekten Controller zurückkehren.

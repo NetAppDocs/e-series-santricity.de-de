@@ -1,0 +1,55 @@
+---
+permalink: sm-storage/overview-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volumes 
+summary: Sie können ein Volume als Container erstellen, in dem Applikationen, Datenbanken und Filesysteme Daten speichern. Bei der Erstellung eines Volumes wählen Sie auch einen Workload aus, um die Storage-Array-Konfiguration für eine bestimmte Applikation anzupassen. 
+---
+= Volumes und Workloads – Überblick
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können ein Volume als Container erstellen, in dem Applikationen, Datenbanken und Filesysteme Daten speichern. Bei der Erstellung eines Volumes wählen Sie auch einen Workload aus, um die Storage-Array-Konfiguration für eine bestimmte Applikation anzupassen.
+
+
+
+== Was sind Volumes und Workloads?
+
+Ein _Volume_ ist die logische Komponente, die mit spezifischer Kapazität erstellt wurde, auf die der Host zugreifen kann. Obwohl ein Volume aus mehr als einem Laufwerk bestehen kann, wird ein Volume als eine logische Komponente für den Host angezeigt. Sobald ein Volume definiert ist, können Sie es einem Workload hinzufügen. Ein _Workload_ ist ein Storage-Objekt, das eine Applikation wie SQL Server oder Exchange unterstützt, mittels dessen Sie den Storage für die jeweilige Applikation optimieren können.
+
+Weitere Informationen:
+
+* link:how-volumes-work.html["Wie Volumen funktionieren"]
+* link:how-workloads-work.html["Funktionsweise von Workloads"]
+* link:volume-terminology.html["Volume-Terminologie"]
+* link:capacity-for-volumes.html["Zuweisung von Kapazität für Volumes"]
+* link:actions-you-can-perform-on-volumes.html["Aktionen, die Sie auf Volumes durchführen können"]
+
+
+
+
+== Wie erstellen Sie Volumes und Workloads?
+
+Zunächst erstellen Sie einen Workload. Gehen Sie zu menu:Storage[Volumes] und öffnen Sie einen Assistenten, der Sie durch die Schritte führt. Als Nächstes erstellen Sie ein Volume anhand der Kapazität, die in einem Pool oder einer Volume-Gruppe verfügbar ist, und weisen dann den erstellten Workload zu.
+
+Weitere Informationen:
+
+* link:workflow-for-creating-volumes.html["Workflow für die Erstellung von Volumes"]
+* link:create-workloads.html["Workloads erstellen"]
+* link:create-volumes.html["Volumes erstellen"]
+* link:add-to-workload.html["Hinzufügen von Volumes zum Workload"]
+
+
+
+
+== Verwandte Informationen
+
+Erfahren Sie mehr über Konzepte in Bezug auf Volumes:
+
+* link:data-integrity-and-data-security-for-volumes.html["Datenintegrität und Datensicherheit für Volumes"]
+* link:ssd-cache-and-volumes.html["SSD Cache und Volumes"]
+* link:thin-volume-monitoring.html["Thin Volume-Monitoring"]
+

@@ -1,0 +1,135 @@
+---
+permalink: sm-hardware/drive-states.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, drive, states, 
+summary: System Manager meldet verschiedene Status für Laufwerke. 
+---
+= Laufwerksstatus
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager meldet verschiedene Status für Laufwerke.
+
+
+
+== Zugänglichkeitszustände
+
+[cols="25h,~"]
+|===
+| Bundesland | Definition 
+
+
+ a| 
+Umgangen
+ a| 
+Das Laufwerk ist physisch vorhanden, aber der Controller kann nicht mit ihm über einen Port kommunizieren.
+
+
+
+ a| 
+Inkompatibel
+ a| 
+Eine der folgenden Bedingungen besteht:
+
+* Das Laufwerk ist nicht für die Verwendung im Speicher-Array zertifiziert.
+* Das Laufwerk hat eine andere Sektorgröße.
+* Das Laufwerk verfügt über unbrauchbare Konfigurationsdaten von einer älteren oder neueren Firmware-Version.
+
+
+
+
+ a| 
+Entfernt
+ a| 
+Das Laufwerk wurde nicht ordnungsgemäß aus dem Speicher-Array entfernt.
+
+
+
+ a| 
+Präsent
+ a| 
+Der Controller kann an beiden Ports mit dem Laufwerk kommunizieren.
+
+
+
+ a| 
+Nicht Ansprechbar
+ a| 
+Das Laufwerk antwortet nicht auf Befehle.
+
+|===
+
+
+== Rollenstaaten
+
+[cols="25h,~"]
+|===
+| Bundesland | Definition 
+
+
+ a| 
+Zugewiesen
+ a| 
+Das Laufwerk ist Mitglied eines Pools oder einer Volume-Gruppe.
+
+
+
+ a| 
+In-Use-Hot-Spare
+ a| 
+Das Laufwerk wird derzeit als Ersatz für ein ausgefallenes Laufwerk verwendet. Hot Spares werden nur in Volume-Gruppen verwendet, nicht Pools.
+
+
+
+ a| 
+Standby-Hot-Spare
+ a| 
+Das Laufwerk kann als Ersatz für ein ausgefallenes Laufwerk verwendet werden. Hot Spares werden nur in Volume-Gruppen verwendet, nicht Pools.
+
+
+
+ a| 
+Nicht Zugewiesen
+ a| 
+Das Laufwerk ist kein Mitglied eines Pools oder einer Volume-Gruppe.
+
+|===
+
+
+== Verfügbarkeitsstatus
+
+[cols="25h,~"]
+|===
+| Bundesland | Definition 
+
+
+ a| 
+Fehlgeschlagen
+ a| 
+Das Laufwerk funktioniert nicht. Die Daten auf dem Laufwerk sind nicht verfügbar.
+
+
+
+ a| 
+Drohender Ausfall
+ a| 
+Es wurde festgestellt, dass das Laufwerk bald ausfallen könnte. Die Daten auf dem Laufwerk sind weiterhin verfügbar.
+
+
+
+ a| 
+Offline
+ a| 
+Das Laufwerk ist normalerweise nicht zum Speichern von Daten verfügbar, weil es Teil einer Volume-Gruppe ist, die exportiert wird oder ein Firmware-Upgrade durchgeführt wird.
+
+
+
+ a| 
+Optimal
+ a| 
+Das Laufwerk funktioniert ordnungsgemäß.
+
+|===

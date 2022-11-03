@@ -1,0 +1,164 @@
+---
+permalink: sm-mirroring/asynchronous-mirror-status.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, asynchronous, mirror, status, consistency, group, 
+summary: Der Status der Spiegelung definiert den Status von Konsistenzgruppen und gespiegelten Volume-Paaren. 
+---
+= Status der asynchronen Spiegelung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der Status der Spiegelung definiert den Status von Konsistenzgruppen und gespiegelten Volume-Paaren.
+
+[NOTE]
+====
+Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+
+====
+
+
+== Der Status von Spiegelungskonsistency Groups
+
+[cols="25h,~"]
+|===
+| Status | Beschreibung 
+
+
+ a| 
+Synchronisieren (erste Synchronisierung)
+ a| 
+Der Fortschritt der ersten Datensynchronisation, die zwischen den gespiegelten Volume-Paaren abgeschlossen wurde.
+
+Während einer ersten Synchronisierung können die Volumes in folgende Zustände überführt werden: Degraded/failed/optimal/Unbekannt.
+
+
+
+ a| 
+Synchronisieren (Intervallsynch)
+ a| 
+Der Fortschritt der periodischen Datensynchronisierung, die zwischen den gespiegelten Volume-Paaren abgeschlossen wurde.
+
+
+
+ a| 
+System unterbrochen
+ a| 
+Speichersystemsuspendierte Synchronisierung von Daten auf allen gespiegelten Paaren auf der Ebene der Consistency Group als Spiegelung.
+
+Mindestens ein gespiegeltes Paar in der gespiegelten Konsistenzgruppe befindet sich in einem Status „angehalten“ oder „fehlgeschlagen“.
+
+
+
+ a| 
+Benutzer ausgesetzt
+ a| 
+Vom Benutzer suspendierte Synchronisierung von Daten auf allen gespiegelten Paaren auf der Ebene der Consistency Group Mirror.
+
+Dieser Status reduziert die Performance-Einbußen für die Host-Applikation, die auftreten können, während geänderte Daten im lokalen Storage-Array in das Remote Storage Array kopiert werden.
+
+
+
+ a| 
+Angehalten
+ a| 
+Die Datensynchronisierung wurde vorübergehend unterbrochen, weil ein Fehler beim Zugriff auf das Remote-Speicher-Array aufgetreten ist.
+
+
+
+ a| 
+„Verlorene“
+ a| 
+Ein verwaistes gespiegeltes Paar-Volume ist vorhanden, wenn ein Mitglied-Volume in einer Konsistenzgruppe entfernt wurde auf einer Seite der Consistency Mirror-Gruppe (entweder auf der primären oder sekundären Seite), nicht jedoch auf der anderen Seite.
+
+Verwaiste gespiegelte Paar-Volumes werden erkannt, wenn die Kommunikation zwischen den Arrays wiederhergestellt wird und die beiden Seiten der Spiegelkonfiguration die Spiegelparameter in Einklang bringen.
+
+Sie können ein gespiegeltes Paar entfernen, um den Status eines verwaisten gespiegelten Paares zu korrigieren.
+
+
+
+ a| 
+Rollenänderung ausstehend/in-progress
+ a| 
+Eine Rollenänderung zwischen den gespiegelten Konsistenzgruppen steht an oder wird gerade ausgeführt.
+
+Die Änderung der Rollenumkehr (entweder in eine primäre Rolle oder eine sekundäre Rolle) betrifft alle asynchronen gespiegelten Paare innerhalb der ausgewählten SpiegelConsistency Group.
+
+Sie können eine ausstehende Rollenänderung abbrechen, jedoch keine in Bearbeitung laufende Rollenänderung.
+
+
+
+ a| 
+Rollenkonflikt
+ a| 
+Ein Rollenkonflikt zwischen den Spiegelkonsistency Groups ist aufgetreten, weil bei einem Rollenänderungsvorgang ein Kommunikationsproblem zwischen dem lokalen Speicher-Array und dem Remote-Speicher-Array aufgetreten ist.
+
+Wenn das Kommunikationsproblem gelöst wurde, tritt ein Rollenkonflikt auf. Verwenden Sie den Recovery Guru zur Wiederherstellung nach diesem Fehler.
+
+Eine erzwungene Beförderung ist nicht zulässig, wenn ein Rollenkonflikt gelöst wird.
+
+|===
+
+
+== Status der gespiegelten Paare
+
+Der Status eines gespiegelten Paars gibt an, ob die Daten auf dem primären Volume und auf dem sekundären Volume synchronisiert werden.
+
+[cols="25h,~"]
+|===
+| Status | Beschreibung 
+
+
+ a| 
+Synchronisieren
+ a| 
+Der Fortschritt der anfänglichen oder periodischen Datensynchronisierung, die zwischen den gespiegelten Paaren abgeschlossen wurde.
+
+Es gibt zwei Arten der Synchronisierung: Die erste Synchronisierung und die periodische Synchronisierung. Der anfängliche Synchronisierungsfortschritt wird auch im Dialogfeld Long Running Operations angezeigt.
+
+
+
+ a| 
+Optimal
+ a| 
+Die Volumes im gespiegelten Paar sind synchronisiert, was bedeutet, dass die Verbindung zwischen den Speicher-Arrays betriebsbereit ist und jedes Volume sich in dem gewünschten Betriebszustand befindet.
+
+
+
+ a| 
+Unvollständig
+ a| 
+Das asynchrone gespiegelte Paar ist auf dem Remote-Speicher-Array unvollständig, da die Sequenz zur Erstellung eines gespiegelten Paares auf einem Speicher-Array initiiert wurde, das von System Manager nicht unterstützt wird und das gespiegelte Paar auf dem sekundären nicht abgeschlossen wurde.
+
+Der Erstellungsvorgang für gespiegelte Paare ist abgeschlossen, wenn der Konsistenzgruppe der Spiegelung im Remote-Speicher-Array ein Volume hinzugefügt wird. Dieses Volume wird zum sekundären Volume im asynchronen gespiegelten Paar.
+
+Das gespiegelte Paar wird automatisch abgeschlossen, wenn das Remote-Speicher-Array von System Manager verwaltet wird.
+
+
+
+ a| 
+Fehlgeschlagen
+ a| 
+Der asynchrone Spiegelungsvorgang kann aufgrund eines Fehlers bei den primären Volumes, sekundären Volumes oder der reservierten Spiegelkapazität nicht normal ausgeführt werden.
+
+
+
+ a| 
+„Verlorene“
+ a| 
+Ein verwaistes gespiegeltes Paar-Volume ist vorhanden, wenn ein Mitglied-Volume in einer Konsistenzgruppe entfernt wurde auf einer Seite der Consistency Mirror-Gruppe (entweder auf der primären oder sekundären Seite), nicht jedoch auf der anderen Seite.
+
+Verwaiste gespiegelte Paar-Volumes werden erkannt, wenn die Kommunikation zwischen den beiden Speicher-Arrays wiederhergestellt wird und die beiden Seiten der Spiegelkonfiguration die Spiegelparameter abstimmen.
+
+Sie können ein gespiegeltes Paar entfernen, um den Status eines verwaisten gespiegelten Paares zu korrigieren.
+
+
+
+ a| 
+Angehalten
+ a| 
+Das gespiegelte Paar befindet sich in einem Status „angehalten“, da sich die Konsistenzgruppe der Spiegelung in einem System befindet.
+
+|===

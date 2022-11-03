@@ -1,0 +1,98 @@
+---
+permalink: sm-storage/create-snapshot-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, snapshot, image 
+summary: Sie können manuell ein Snapshot-Image aus einem Basis-Volume oder einer Snapshot-Konsistenzgruppe erstellen. Dies wird auch als sofortiger Snapshot oder Instant Image bezeichnet. 
+---
+= Erstellen von Snapshot Images
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können manuell ein Snapshot-Image aus einem Basis-Volume oder einer Snapshot-Konsistenzgruppe erstellen. Dies wird auch als _Instant Snapshot_ oder _Instant Image_ bezeichnet.
+
+.Bevor Sie beginnen
+* Das Basis-Volume muss optimal sein.
+* Der Antrieb muss optimal sein.
+* Die Snapshot-Gruppe kann nicht als „`reserviert.`“ bezeichnet werden.
+* Das Volume mit reservierter Kapazität muss über dieselben Data Assurance (da)-Einstellungen wie das zugehörige Basis-Volume für die Snapshot-Gruppe verfügen.
+
+
+.Schritte
+. Führen Sie eine der folgenden Aktionen durch, um ein Snapshot-Image zu erstellen:
++
+** Wählen Sie Menü:Storage[Volumes]. Wählen Sie das Objekt (Basis-Volume oder Snapshot-Konsistenzgruppe) aus, und wählen Sie dann Menü:Kopierdienste[Instant Snapshot erstellen].
+** Wählen Sie Menü:Storage[Snapshots]. Wählen Sie die Registerkarte *Snapshot Images* und dann Menü:Erstellen[Instant Snapshot].
++
+Das Dialogfeld Snapshot-Bild erstellen wird angezeigt. Wählen Sie das Objekt aus (Basis-Volume oder Snapshot-Consistency Group) und klicken Sie dann auf *Next*. Wenn ein vorheriges Snapshot Image für die Konsistenzgruppe des Volumes oder Snapshots erstellt wurde, erstellt das System sofort den sofortigen Snapshot. Andernfalls wird das Dialogfeld Snapshot-Bild bestätigen angezeigt, wenn dies das erste Mal ist, wenn ein Snapshot-Image für die Konsistenzgruppe des Volumes oder der Snapshot erstellt wird.
+
+
+
+. Klicken Sie auf *Erstellen*, um die Benachrichtigung zu akzeptieren, dass reservierte Kapazität benötigt wird, und um mit dem Schritt Reserve Kapazität fortzufahren.
++
+Das Dialogfeld Kapazität reservieren wird angezeigt.
+
+. Verwenden Sie das Spinner-Feld, um den Kapazitätsprozentsatz anzupassen, und klicken Sie dann auf *Weiter*, um die in der Tabelle hervorgehobene Kandidatenmenge zu akzeptieren.
++
+Das Dialogfeld Einstellungen bearbeiten wird angezeigt.
+
+. Wählen Sie die entsprechenden Einstellungen für das Snapshot-Image aus, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
++
+.Felddetails
+====
+[cols="25h,~"]
+|===
+| Einstellung | Beschreibung 
+
+
+ a| 
+*Snapshot-Bildeinstellungen*
+
+
+
+ a| 
+Begrenzung des Snapshot Images
+ a| 
+Aktivieren Sie das Kontrollkästchen, wenn Snapshot-Bilder nach dem festgelegten Limit automatisch gelöscht werden sollen. Ändern Sie die Begrenzung mit dem Spinner-Feld. Wenn Sie dieses Kontrollkästchen deaktivieren, wird die Erstellung von Snapshot-Bildern nach 32 Bildern angehalten.
+
+
+
+ a| 
+*Reservierte Kapazitätseinstellungen*
+
+
+
+ a| 
+Benachrichtigen, wenn...
+ a| 
+Verwenden Sie die Spinner-Box, um den Prozentpunkt anzupassen, an dem das System eine Warnmeldung sendet, wenn sich die reservierte Kapazität einer Snapshot-Gruppe fast voll befindet.
+
+Wenn die reservierte Kapazität der Snapshot-Gruppe den angegebenen Schwellenwert überschreitet, erhöhen Sie mit der Vorankündigung die reservierte Kapazität oder löschen Sie unnötige Objekte, bevor der verbleibende Speicherplatz ausgeht.
+
+
+
+ a| 
+Richtlinie für vollständig reservierte Kapazität
+ a| 
+Wählen Sie eine der folgenden Richtlinien aus:
+
+** *Ältestes Snapshot-Image löschen* -- das System entfernt automatisch das älteste Snapshot-Image in der Snapshot-Gruppe, wodurch das Snapshot-Image der reservierten Kapazität zur Wiederverwendung innerhalb der Gruppe freigegeben wird.
+** *Schreibvorgänge auf Basis-Volume ablehnen* -- Wenn die reservierte Kapazität ihren maximalen festgelegten Prozentsatz erreicht, weist das System eine E/A-Schreibanforderung auf das Basis-Volume zurück, das den reservierten Kapazitätszugriff ausgelöst hat.
+
+
+|===
+====
+
+
+.Ergebnisse
+* System Manager zeigt das neue Snapshot-Image in der Tabelle Snapshot Images an. In der Tabelle ist das neue Image nach Zeitstempel und dem zugehörigen Basis-Volume oder der Snapshot Konsistenzgruppe aufgeführt.
+* Die Erstellung eines Snapshot kann aufgrund der folgenden Bedingungen in einem Status „Ausstehend“ verbleiben:
++
+** Das Basis-Volume, das dieses Snapshot Image enthält, ist Mitglied einer asynchronen Spiegelgruppe.
+** Das Basisvolume befindet sich derzeit in einem Synchronisierungsvorgang. Die Erstellung des Snapshot-Images ist abgeschlossen, sobald der Synchronisierungsvorgang abgeschlossen ist.
+
+
+

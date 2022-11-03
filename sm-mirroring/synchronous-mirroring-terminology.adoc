@@ -1,0 +1,84 @@
+---
+permalink: sm-mirroring/synchronous-mirroring-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, terms 
+summary: Erfahren Sie, wie die Bedingungen für synchrone Spiegelung auf Ihr Storage Array angewendet werden. 
+---
+= Terminologie für synchrones Spiegeln
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Erfahren Sie, wie die Bedingungen für synchrone Spiegelung auf Ihr Storage Array angewendet werden.
+
+[cols="25h,~"]
+|===
+| Laufzeit | Beschreibung 
+
+
+ a| 
+Lokales Storage-Array
+ a| 
+Das lokale Storage-Array ist das Storage-Array, auf dem Sie arbeiten.
+
+Wenn in der Spalte Lokale Rolle *Primary* angezeigt wird, zeigt dies an, dass das Speicherarray das Volume enthält, das die primäre Rolle in der Spiegelbeziehung enthält. Wenn in der Spalte Lokale Rolle *sekundär* angezeigt wird, weist dies darauf hin, dass das Speicherarray das Volume enthält, das die sekundäre Rolle in der Spiegelbeziehung enthält.
+
+
+
+ a| 
+Gespiegeltes Paar
+ a| 
+Ein gespiegeltes Paar besteht aus zwei Volumes, einem primären Volume und einem sekundären Volume.
+
+
+
+ a| 
+Primäres Volume
+ a| 
+Das primäre Volume eines gespiegelten Paars ist das zu spiegelnden Quell-Volume.
+
+
+
+ a| 
+Recovery-Zeitpunkt (RPO)
+ a| 
+Der Recovery-Zeitpunkt (Recovery Point Objective, RPO) bezeichnet ein Ziel, das die als akzeptabel berücksichtigende Differenz zwischen dem primären Volume und dem sekundären Volume in einem gespiegelten Paar angibt. Ein RPO von null zeigt an, dass kein Unterschied zwischen dem primären Volume und dem sekundären Volume toleriert werden kann. Ein RPO größer als null zeigt an, dass das sekundäre Volume weniger aktuell ist oder weniger hinter dem primären Volume liegt.
+
+
+
+ a| 
+Remote Storage Array
+ a| 
+Das Remote Storage Array wird in der Regel als sekundärer Standort bezeichnet, der in der Regel ein Replikat der Daten in einer Spiegelungskonfiguration enthält.
+
+
+
+ a| 
+Reservierte Kapazität
+ a| 
+Reservierte Kapazität ist die zugewiesene physische Kapazität, die für jeden Kopierdienst- und Storage-Objekt verwendet wird. Er ist nicht direkt vom Host lesbar.
+
+
+
+ a| 
+Rollenänderung
+ a| 
+Rollenänderung bedeutet, dass dem sekundären Volume die primäre Rolle zugewiesen wird und umgekehrt.
+
+
+
+ a| 
+Sekundäres Volume
+ a| 
+Das sekundäre Volume eines gespiegelten Paars befindet sich normalerweise an einem sekundären Standort und enthält ein Replikat der Daten.
+
+
+
+ a| 
+Synchronisierung
+ a| 
+Die Synchronisierung erfolgt bei der ersten Synchronisierung zwischen dem lokalen Speicher-Array und dem Remote-Speicher-Array. Die Synchronisierung findet auch statt, wenn primäre und sekundäre Volumes nach einer Kommunikationsunterbrechung nicht mehr synchronisiert werden. Wenn die Kommunikationsverbindung wieder funktioniert, werden alle nicht replizierten Daten mit dem Storage-Array des sekundären Volumes synchronisiert.
+
+|===

@@ -1,0 +1,104 @@
+---
+permalink: sm-storage/capacity-for-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, capacity, volumes, 
+summary: Die Laufwerke in Ihrem Speicher-Array stellen die physische Speicherkapazität für Ihre Daten bereit. Bevor Sie mit dem Speichern von Daten beginnen können, müssen Sie die zugewiesene Kapazität in logischen Komponenten – Pools oder Volume-Gruppen – konfigurieren. Mithilfe dieser Speicherobjekte lassen sich Daten auf dem Speicher-Array konfigurieren, speichern, verwalten und erhalten. 
+---
+= Zuweisung von Kapazität für Volumes
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Laufwerke in Ihrem Speicher-Array stellen die physische Speicherkapazität für Ihre Daten bereit. Bevor Sie mit dem Speichern von Daten beginnen können, müssen Sie die zugewiesene Kapazität in logischen Komponenten – Pools oder Volume-Gruppen – konfigurieren. Mithilfe dieser Speicherobjekte lassen sich Daten auf dem Speicher-Array konfigurieren, speichern, verwalten und erhalten.
+
+
+
+== Erstellung und Erweiterung von Volumes mithilfe von Kapazität
+
+Sie können Volumes entweder aus der nicht zugewiesenen Kapazität oder aus freien Kapazitäten in einem Pool oder einer Volume-Gruppe erstellen.
+
+* Wenn Sie ein Volume aus nicht zugewiesenen Kapazitäten erstellen, können Sie gleichzeitig einen Pool oder eine Volume-Gruppe und das Volume erstellen.
+* Wenn Sie ein Volume mit freier Kapazität erstellen, erstellen Sie ein zusätzliches Volume in einem bereits vorhandenen Pool oder einer Volume-Gruppe.
+
+
+Nachdem Sie die Volume-Kapazität erweitert haben, müssen Sie die Größe des Dateisystems manuell erhöhen, um sie anzupassen. Wie Sie dies tun, hängt von dem Dateisystem ab, das Sie verwenden. Weitere Informationen finden Sie in der Dokumentation Ihres Host-Betriebssystems.
+
+
+
+== Kapazitätstypen für Thick Volumes und Thin Volumes
+
+Sie können entweder Thick Volumes oder Thin Volumes erstellen. Gemeldete Kapazität und zugewiesene Kapazität sind für Thick Volumes identisch, unterscheiden sich jedoch bei Thin Volumes.
+
+* Bei einem Thick Volume entspricht die gemeldete Kapazität des Volumes der zugewiesenen physischen Storage-Kapazität. Es muss die gesamte physische Storage-Kapazität vorhanden sein. Der physisch zugewiesene Speicherplatz entspricht dem Speicherplatz, der dem Host gemeldet wird.
++
+Normalerweise stellen Sie die gemeldete Kapazität des Thick Volume so ein, dass die maximale Kapazität sein wird, die Ihrer Meinung nach das Volume vergrößern wird. Thick Volumes bieten eine hohe und vorhersehbare Performance für Ihre Applikationen, vor allem weil sämtliche Benutzerkapazitäten bei der Erstellung reserviert und zugewiesen sind.
+
+* Bei einem Thin Volume ist die gemeldete Kapazität die den Hosts gemeldete Kapazität, während die zugewiesene Kapazität die Menge an Festplattenspeicher ist, die derzeit zum Schreiben von Daten zugewiesen ist.
++
+Die gemeldete Kapazität kann größer sein als die zugewiesene Kapazität im Speicher-Array. Thin Volumes können angepasst werden, um mit Wachstum Schritt zu halten, ohne die derzeit verfügbaren Ressourcen zu berücksichtigen.
+
+
+
+[NOTE]
+====
+SANtricity System Manager bietet keine Option zum Erstellen von Thin Volumes. Wenn Sie Thin Volumes erstellen möchten, verwenden Sie die Befehlszeilenschnittstelle (CLI).
+
+====
+
+
+== Kapazitätsbeschränkungen für Thick Volumes
+
+Die minimale Kapazität für ein dickes Volume beträgt 1 MiB, und die maximale Kapazität wird durch die Anzahl und Kapazität der Laufwerke im Pool oder der Volume-Gruppe bestimmt.
+
+Beachten Sie bei der Erhöhung der gemeldeten Kapazität für ein dickes Volumen die folgenden Richtlinien:
+
+* Sie können bis zu drei Dezimalstellen (z. B. 65.375 gib) angeben.
+* Die Kapazität muss kleiner sein als (oder gleich) die maximale in der Volume-Gruppe verfügbar ist.
++
+Wenn Sie ein Volume erstellen, wird für die DSS-Migration (Dynamic Segment Size) zusätzliche Kapazität vorab zugewiesen. Die DSS-Migration ist eine Funktion der Software, mit der Sie die Segmentgröße eines Volumes ändern können.
+
+* Volumes mit einer Größe von mehr als 2 tib werden von einigen Host-Betriebssystemen unterstützt (die maximale gemeldete Kapazität wird vom Host-Betriebssystem bestimmt). Tatsächlich unterstützen einige Host-Betriebssysteme bis zu 128 tib Volumes. Weitere Informationen finden Sie in der Dokumentation Ihres Host-Betriebssystems.
+
+
+
+
+== Kapazitätsgrenzen für Thin Volumes
+
+Sie können Thin Volumes mit einer gemeldeten Kapazität und einer relativ kleinen zugewiesenen Kapazität erstellen. Dies bietet Vorteile bei der Storage-Auslastung und -Effizienz. Thin Volumes vereinfachen die Storage-Administration, da die zugewiesene Kapazität je nach Applikationsanforderungen erhöht werden kann, ohne Unterbrechung der Applikation zugunsten einer besseren Storage-Auslastung.
+
+Neben der gemeldeten Kapazität und der zugewiesenen Kapazität enthalten Thin Volumes auch die geschriebene Kapazität. Die geschriebene Kapazität ist die Menge an Kapazität, die aus der für Thin Volumes zugewiesenen reservierten Kapazität geschrieben wurde.
+
+In der folgenden Tabelle werden die Kapazitätsgrenzen für ein Thin Volume aufgeführt.
+
+[cols="3*"]
+|===
+| Art der Kapazität | Mindestgröße | Maximale Größe 
+
+
+ a| 
+Berichtet
+ a| 
+32 MiB
+ a| 
+256 tib
+
+
+
+ a| 
+Zugewiesen
+ a| 
+4 MiB
+ a| 
+64 tib
+
+|===
+Wenn bei einem Thin-Volume die maximale gemeldete Kapazität von 256 tib erreicht ist, können Sie seine Kapazität nicht erhöhen. Stellen Sie sicher, dass die reservierte Kapazität des Thin-Volumes auf eine Größe gesetzt ist, die größer als die maximale gemeldete Kapazität ist.
+
+Basierend auf der zugewiesenen Kapazitätsgrenze erweitert das System die zugewiesene Kapazität automatisch. Die zugewiesene Kapazitätsgrenze ermöglicht es Ihnen, das automatische Wachstum des Thin Volumes unter der gemeldeten Kapazität zu begrenzen. Wenn die geschriebene Datenmenge sich in der Nähe der zugewiesenen Kapazität befindet, können Sie das zugewiesene Kapazitätslimit ändern.
+
+Um die zugewiesene Kapazitätsgrenze zu ändern, wählen Sie Menü:Speicher[Volumes > Registerkarte Thin Volume Monitoring > Limit ändern].
+
+Da System Manager beim Erstellen eines Thin Volume nicht die volle Kapazität zuweist, besteht möglicherweise im Pool keine unzureichende freie Kapazität. Nicht genügend Speicherplatz kann Schreibvorgänge in den Pool blockieren, nicht nur für die Thin-Volumes, sondern auch für andere Vorgänge, die Kapazität aus dem Pool benötigen (z. B. Snapshot-Images oder Snapshot-Volumes). Sie können jedoch weiterhin Lesevorgänge aus dem Pool ausführen. Wenn dieser Fall eintritt, erhalten Sie eine Warnung für den Alarmschwellenwert.

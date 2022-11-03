@@ -1,0 +1,1503 @@
+---
+settings:
+  name: SANtricity 11.7
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  versions:
+  - name: SANtricity Software
+    url: "/e-series-santricity"
+    version-number: '11.7'
+  - name: SANtricity Software
+    url: "/e-series-santricity-116"
+    version-number: '11.6'
+  - name: SANtricity Software
+    url: "/e-series-santricity-115"
+    version-number: '11.5'
+  langs: de-de,us-en,ja-jp,zh-cn,zh-tw,ko-kr,fr-fr
+sidebar:
+  entries:
+  - title: SANtricity 11.7 Dokumentation
+    url: "/index.html"
+  - title: Versionshinweise
+    entries:
+    - title: Was ist neu
+      url: "/whats-new.html"
+    - title: Versionshinweise
+      url: "/known-issues.html"
+  - title: Los geht's
+    entries:
+    - title: Überblick
+      url: "/san-getstarted/santricity-overview.html"
+    - title: Unterstützte Browser und Betriebssysteme
+      url: "/san-getstarted/supported-browsers-os.html"
+    - title: Einrichtung von System Manager
+      entries:
+      - title: Greifen Sie Auf System Manager Zu
+        url: "/san-getstarted/access-sam.html"
+      - title: Übersicht über den Setup-Assistenten
+        url: "/sm-interface/setup-wizard-overview.html"
+      - title: FAQs
+        entries:
+        - title: Was, wenn ich nicht alle meine Hardware-Komponenten sehen?
+          url: "/sm-interface/what-if-i-dont-see-all-of-my-hardware-components.html"
+        - title: Was, wenn ich nicht alle meine Gastgeber sehen?
+          url: "/sm-interface/what-if-i-dont-see-all-of-my-hosts.html"
+        - title: Wie kann ich anhand der Identifizierung von Applikationen mein Storage-Array
+            managen?
+          url: "/sm-interface/how-does-identifying-applications-help-me-manage-my-storage-array.html"
+        - title: Was ist ein Workload?
+          url: "/sm-interface/what-is-a-workload.html"
+        - title: Wie konfiguriere ich die Bereitstellungsmethode für AutoSupport?
+          url: "/sm-interface/how-do-i-configure-the-delivery-method-for-autosupport-new.html"
+        - title: Woher weiß ich, ob ich die empfohlene Pool-Konfiguration akzeptieren
+            sollte?
+          url: "/sm-interface/how-do-i-know-if-i-should-accept-the-recommended-pool-configuration.html"
+        - title: System Manager hat keine Hosts erkannt. Was mache ich?
+          url: "/sm-interface/system-manager-has-not-detected-any-hosts-what-do-i-do.html"
+    - title: Einrichtung von Unified Manager
+      entries:
+      - title: Installation Von Unified Manager
+        url: "/san-getstarted/install-um.html"
+      - title: Zugriff Auf Unified Manager
+        url: "/san-getstarted/login-um.html"
+  - title: System Manager
+    url: "/system-manager/index.html"
+    entries:
+    - title: Hauptschnittstelle
+      entries:
+      - title: Überblick über die System Manager Schnittstelle
+        url: "/sm-interface/overview-interface-sam.html"
+      - title: Anzeigen von Performance-Daten
+        entries:
+        - title: Überblick
+          url: "/sm-storage/overview-performance.html"
+        - title: Performance-Diagramme und Richtlinien
+          url: "/sm-storage/performance-graphs-guidelines.html"
+        - title: Performante Terminologie
+          url: "/sm-storage/performance-terminology.html"
+        - title: Anzeigen grafischer Performance-Daten
+          url: "/sm-storage/view-performance-data-graphical.html"
+        - title: Anzeigen und Speichern von Leistungsdaten in Tabellenform
+          url: "/sm-storage/view-and-save-performance-data-tabular.html"
+        - title: Performance-Daten analysieren
+          url: "/sm-storage/interpret-performance-data.html"
+      - title: Speicherhierarchie anzeigen
+        url: "/sm-interface/view-storage-hierarchy.html"
+      - title: Verwalten von Schnittstelleneinstellungen
+        entries:
+        - title: Passwortschutz verwalten
+          url: "/sm-interface/administrator-password-protection.html"
+        - title: Legen Sie die Standardkapazitätswerte fest
+          url: "/sm-interface/set-default-units-for-capacity-values.html"
+        - title: Legen Sie die Standardeinstellungen für Performance-Diagramme fest
+          url: "/sm-interface/set-default-time-frame-for-performance-graphs.html"
+        - title: Anmeldebanner konfigurieren
+          url: "/sm-settings/configure-login-banner.html"
+        - title: Verwalten von Sitzungszeitungen
+          url: "/sm-settings/manage-session-timeouts-sam.html"
+      - title: Benachrichtigungen verwalten
+        entries:
+        - title: Problembenachrichtigungen – Übersicht
+          url: "/sm-interface/problem-notification.html"
+        - title: Vorgänge in Bearbeitung anzeigen und umsetzen
+          url: "/sm-interface/view-and-act-on-operations-in-progress.html"
+        - title: Mit Recovery Guru können Sie Probleme beheben
+          url: "/sm-interface/recover-from-problems-using-recovery-guru.html"
+      - title: FAQs
+        entries:
+        - title: Welche Browser werden unterstützt?
+          url: "/sm-interface/what-are-the-supported-browsers.html"
+        - title: Was sind die Tastenkombinationen?
+          url: "/sm-interface/what-are-the-keyboard-shortcuts.html"
+        - title: Wie verhält sich Performance-Statistiken zu einzelnen Volumes mit
+            dem Gesamt?
+          url: "/sm-storage/how-do-performance-statistics-for-individual-volumes-relate-to-the-total.html"
+        - title: Warum werden Daten in den Diagrammen und in der Tabelle als Null
+            angezeigt?
+          url: "/sm-storage/why-does-the-data-display-as-zero-in-the-graphs-and-table.html"
+        - title: Was zeigt das Latenzdiagramm?
+          url: "/sm-storage/what-does-the-latency-graph-show.html"
+        - title: Was zeigt das IOPS-Diagramm?
+          url: "/sm-storage/what-does-the-iops-graph-show.html"
+        - title: Was wird im MiB/s-Diagramm angezeigt?
+          url: "/sm-storage/what-does-the-mib-s-graph-show.html"
+        - title: Was zeigt das CPU Diagramm?
+          url: "/sm-storage/what-does-the-cpu-graph-show.html"
+        - title: Was zeigt das Diagramm „Reserve“?
+          url: "/sm-storage/what-does-the-headroom-graph-show.html"
+        - title: Wo finde ich weitere Informationen zu Anzeigeeinstellungen?
+          url: "/sm-interface/where-can-i-find-more-information-about-display-preferences.html"
+    - title: Pools und Volume-Gruppen
+      entries:
+      - title: Überblick
+        url: "/sm-storage/overview-pools-volume-groups.html"
+      - title: Konzepte
+        entries:
+        - title: Funktionsweise von Pools und Volume-Gruppen
+          url: "/sm-storage/how-pools-and-volume-groups-work.html"
+        - title: Bedingungen
+          url: "/sm-storage/capacity-terminology.html"
+        - title: Auswählen eines Pools oder einer Volume-Gruppe
+          url: "/sm-storage/decide-to-use-a-pool-or-volume-group.html"
+        - title: Automatische Erstellung von Pools gegenüber manueller Poolanlage
+          url: "/sm-storage/automatic-versus-manual-pool-creation.html"
+      - title: Speicher konfigurieren
+        entries:
+        - title: Pool automatisch erstellen
+          url: "/sm-storage/create-pool-automatically.html"
+        - title: Pool manuell erstellen
+          url: "/sm-storage/create-pool-manually.html"
+        - title: Volume-Gruppe erstellen
+          url: "/sm-storage/create-volume-group.html"
+        - title: Hinzufügen von Kapazitäten für den Pool oder die Volume-Gruppe
+          url: "/sm-storage/add-capacity-to-a-pool-or-volume-group.html"
+      - title: Storage-Management
+        entries:
+        - title: Volume-Redundanz prüfen
+          url: "/sm-storage/check-volume-redundancy.html"
+        - title: Pool oder Volume-Gruppe löschen
+          url: "/sm-storage/delete-pool-or-volume-group.html"
+        - title: Konsolidieren Sie freie Kapazitäten für eine Volume-Gruppe
+          url: "/sm-storage/consolidate-volume-group-free-capacity.html"
+        - title: Volume-Gruppen exportieren/importieren
+          url: "/sm-storage/export-import-volume-groups.html"
+        - title: Suchen Sie das Laufwerk, das für die Speicherung verwendet wird
+          url: "/sm-storage/turn-on-locator-lights-in-a-pool-volume-group-or-ssd-cache.html"
+        - title: Kapazitäten entfernen
+          url: "/sm-storage/remove-capacity-from-a-pool-or-ssd-cache.html"
+      - title: Ändern Sie die Pool- und Gruppeneinstellungen
+        entries:
+        - title: Ändern Sie die Konfigurationseinstellungen für einen Pool
+          url: "/sm-storage/change-configuration-settings-for-a-pool.html"
+        - title: Ändern Sie die Konfigurationseinstellungen für eine Volume-Gruppe
+          url: "/sm-storage/change-configuration-settings-for-a-volume-group.html"
+        - title: Aktivieren oder Deaktivieren von Ressourcenbereitstellung (vorhandene
+            Volumes)
+          url: "/sm-storage/disable-resource-provisioning-on-existing-volumes.html"
+        - title: Aktivieren oder Deaktivieren von Ressourcenbereitstellung (neue Volumes)
+          url: "/sm-settings/enable-or-disable-resource-provisioning-for-new-volumes.html"
+        - title: Sicherheit aktivieren
+          url: "/sm-storage/enable-security.html"
+      - title: Management des SSD-Caches
+        entries:
+        - title: Funktionsweise von SSD Cache
+          url: "/sm-storage/how-ssd-cache-works.html"
+        - title: Einschränkungen für SSD-Cache
+          url: "/sm-storage/ssd-cache-restrictions.html"
+        - title: Erstellen Sie SSD-Cache
+          url: "/sm-storage/create-ssd-cache.html"
+        - title: Ändern Sie die SSD-Cache-Einstellungen
+          url: "/sm-storage/change-ssd-cache-settings.html"
+        - title: Anzeigen von SSD-Cache-Statistiken
+          url: "/sm-storage/view-ssd-cache-statistics.html"
+      - title: Management reservierter Kapazitäten
+        entries:
+        - title: Funktionsweise von reservierter Kapazität
+          url: "/sm-storage/how-reserved-capacity-works.html"
+        - title: Erhöhte Kapazität
+          url: "/sm-storage/increase-reserved-capacity.html"
+        - title: Weniger Kapazität
+          url: "/sm-storage/decrease-reserved-capacity.html"
+        - title: Ändern Sie die Kapazität für die Snapshot-Gruppe
+          url: "/sm-storage/change-the-reserved-capacity-settings-for-a-snapshot-group.html"
+        - title: Ändern Sie die Kapazität für das Snapshot Volume
+          url: "/sm-storage/change-the-reserved-capacity-settings-for-a-snapshot-volume.html"
+        - title: Ändern Sie das Kapazitäts-Konsistenzgruppenvolume
+          url: "/sm-storage/change-the-reserved-capacity-settings-for-a-consistency-group-member-volume.html"
+        - title: Ändern Sie die Kapazitätseinstellungen für das gespiegelte Paar-Volume
+          url: "/sm-storage/change-the-reserved-capacity-settings-for-a-mirrored-pair-volume.html"
+        - title: Abbrechen des ausstehenden Snapshot-Images
+          url: "/sm-storage/cancel-pending-snapshot-image.html"
+        - title: Snapshot-Gruppe löschen
+          url: "/sm-storage/delete-snapshot-group.html"
+      - title: FAQs
+        entries:
+        - title: Was ist eine Volume-Gruppe?
+          url: "/sm-storage/what-is-a-volume-group.html"
+        - title: Was ist ein Pool?
+          url: "/sm-storage/what-is-a-pool.html"
+        - title: Was ist reservierte Kapazität?
+          url: "/sm-storage/what-is-reserved-capacity.html"
+        - title: Was ist FDE/FIPS-Sicherheit?
+          url: "/sm-storage/what-is-fde-fips-security.html"
+        - title: Was ist Redundanzprüfung?
+          url: "/sm-storage/what-is-redundancy-check.html"
+        - title: Worin bestehen die Unterschiede zwischen Pools und Volume-Gruppen?
+          url: "/sm-storage/what-are-the-differences-between-pools-and-volume-groups.html"
+        - title: Warum sollte ich einen Pool manuell konfigurieren?
+          url: "/sm-storage/why-would-i-want-to-manually-configure-a-pool.html"
+        - title: Warum sind Kapazitätswarnungen wichtig?
+          url: "/sm-storage/why-are-capacity-alerts-important.html"
+        - title: Warum kann ich meine Erhaltungskapazität nicht erhöhen?
+          url: "/sm-storage/why-cant-i-increase-my-preservation-capacity.html"
+        - title: Ist die Anzahl der Laufwerke, die ich aus einem Pool entfernen kann,
+            begrenzt?
+          url: "/sm-storage/is-there-a-limit-on-the-number-of-drives-i-can-remove-from-a-pool.html"
+        - title: Welche Medientypen werden für ein Laufwerk unterstützt?
+          url: "/sm-storage/what-media-types-are-supported-for-a-drive.html"
+        - title: Warum werden einige Laufwerke nicht angezeigt?
+          url: "/sm-storage/why-are-some-drives-not-showing-up.html"
+        - title: Wie kann ich den Schutz vor Shelf-/Schubladenverlust aufrechterhalten?
+          url: "/sm-storage/how-do-i-maintain-shelf-drawer-loss-protection.html"
+        - title: Wie sieht die optimale Laufwerkspositionierung von Pools und Volume-Gruppen
+            aus?
+          url: "/sm-storage/what-is-the-optimal-drive-positioning-for-pools-and-volume-groups.html"
+        - title: Welches RAID-Level eignet sich am besten für meine Applikation?
+          url: "/sm-storage/what-raid-level-is-best-for-my-application.html"
+        - title: Was ist Data Assurance?
+          url: "/sm-storage/what-is-data-assurance.html"
+        - title: Was ist sicher-fähig (Drive Security)?
+          url: "/sm-storage/what-is-security-capable-drive-security.html"
+        - title: Was muss ich über die Erhöhung der reservierten Kapazität wissen?
+          url: "/sm-storage/what-do-i-need-to-know-about-increasing-reserved-capacity.html"
+        - title: Warum kann ich nicht eine andere Menge wählen, um zu verringern?
+          url: "/sm-storage/why-cant-i-choose-another-amount-to-decrease-by.html"
+        - title: Warum brauche ich reservierte Kapazität für jedes Member Volume?
+          url: "/sm-storage/why-do-i-need-reserved-capacity-for-every-member-volume.html"
+        - title: Wie kann ich sämtliche SSD Cache Statistiken anzeigen und interpretieren?
+          url: "/sm-storage/how-do-i-view-and-interpret-all-ssd-cache-statistics.html"
+        - title: Was ist die Optimierungskapazität für Pools?
+          url: "/sm-storage/what-is-optimization-capacity-pools.html"
+        - title: Was ist die Optimierungskapazität für Volume-Gruppen?
+          url: "/sm-storage/what-is-optimization-capacity-volume-groups.html"
+        - title: Was ist die Fähigkeit zur Ressourcenbereitstellung?
+          url: "/sm-storage/what-is-resource-provisioning-capable.html"
+        - title: Was muss ich über die Funktion der Ressourcen-bereitgestellten Volumes
+            wissen?
+          url: "/sm-settings/what-do-i-need-to-know-about-the-resource-provisioned-volumes-feature.html"
+    - title: Volumes und Workloads
+      entries:
+      - title: Überblick
+        url: "/sm-storage/overview-volumes.html"
+      - title: Konzepte
+        entries:
+        - title: Wie Volumen funktionieren
+          url: "/sm-storage/how-volumes-work.html"
+        - title: Funktionsweise von Workloads
+          url: "/sm-storage/how-workloads-work.html"
+        - title: Bedingungen
+          url: "/sm-storage/volume-terminology.html"
+        - title: Workflow für die Erstellung von Volumes
+          url: "/sm-storage/workflow-for-creating-volumes.html"
+        - title: Datenintegrität und Datensicherheit
+          url: "/sm-storage/data-integrity-and-data-security-for-volumes.html"
+        - title: SSD Cache und Volumes
+          url: "/sm-storage/ssd-cache-and-volumes.html"
+        - title: Aktionen, die Sie auf Volumes durchführen können
+          url: "/sm-storage/actions-you-can-perform-on-volumes.html"
+        - title: Kapazität für Volumes
+          url: "/sm-storage/capacity-for-volumes.html"
+        - title: Thin Volume-Monitoring
+          url: "/sm-storage/thin-volume-monitoring.html"
+        - title: Thick Volumes im Vergleich zu Thin Volumes
+          url: "/sm-storage/comparison-between-thick-volumes-and-thin-volumes.html"
+      - title: Speicher konfigurieren
+        entries:
+        - title: Workloads erstellen
+          url: "/sm-storage/create-workloads.html"
+        - title: Volumes erstellen
+          url: "/sm-storage/create-volumes.html"
+        - title: Fügen Sie dem Workload hinzu
+          url: "/sm-storage/add-to-workload.html"
+      - title: Volumes managen
+        entries:
+        - title: Erhöhte Kapazität
+          url: "/sm-storage/increase-capacity-of-a-volume.html"
+        - title: Volumes initialisieren
+          url: "/sm-storage/initialize-volumes.html"
+        - title: Neuverteilung von Volumes
+          url: "/sm-storage/redistribute-volumes.html"
+        - title: Controller-Eigentum ändern
+          url: "/sm-storage/change-controller-ownership-of-a-volume.html"
+        - title: Volume löschen
+          url: "/sm-storage/delete-volume.html"
+        - title: Zugewiesene Kapazität für Thin Volumes ändern
+          url: "/sm-storage/change-allocated-capacity-limit-for-a-thin-volume.html"
+      - title: Einstellungen verwalten
+        entries:
+        - title: Ändern Sie die Lautstärkeeinstellungen
+          url: "/sm-storage/change-settings-for-a-volume.html"
+        - title: Workload-Einstellungen ändern
+          url: "/sm-storage/change-workload-settings.html"
+        - title: Cache-Einstellungen ändern
+          url: "/sm-storage/change-cache-settings.html"
+        - title: Ändern Sie die Einstellungen für die Medienüberprüfung
+          url: "/sm-storage/change-media-scan-settings.html"
+      - title: Verwenden Sie Kopierdienste
+        entries:
+        - title: Funktion Volume kopieren
+          url: "/sm-storage/copy-volume-function.html"
+        - title: Arten von Operationen
+          url: "/sm-storage/types-of-copy-volume-operations.html"
+        - title: Volumes kopieren
+          url: "/sm-storage/copy-volume.html"
+        - title: Managen von Abläufen
+          url: "/sm-storage/take-action-on-a-copy-volume-operation.html"
+      - title: FAQs
+        entries:
+        - title: Was ist ein Volume?
+          url: "/sm-storage/what-is-a-volume.html"
+        - title: Warum sehe ich einen Fehler bei der Überzuweisung, wenn ich genügend
+            freie Kapazität in einer Volume-Gruppe habe, um Volumes zu erstellen?
+          url: "/sm-storage/why-am-i-seeing-a-capacity-over-allocation-error-when-i-have-enough-free-capacity-in-a-volume-group-to-create-volumes.html"
+        - title: Wie wirkt sich mein ausgewählter Workload auf die Erstellung des
+            Volumes aus?
+          url: "/sm-storage/how-does-my-selected-workload-impact-volume-creation.html"
+        - title: Warum sind diese Volumen nicht mit einem Workload verbunden?
+          url: "/sm-storage/why-arent-these-volumes-associated-with-a-workload.html"
+        - title: Warum kann ich den ausgewählten Workload nicht löschen?
+          url: "/sm-storage/why-cant-i-delete-the-selected-workload.html"
+        - title: Wie können mir applikationsspezifische Workloads beim Management
+            meines Storage Arrays helfen?
+          url: "/sm-storage/how-do-application-specific-workloads-help-me-manage-my-storage-array.html"
+        - title: Wie können durch die Bereitstellung dieser Informationen Speicher
+            erstellt werden?
+          url: "/sm-storage/how-does-providing-this-information-help-create-storage.html"
+        - title: Was muss ich tun, um die erweiterte Kapazität erkennen zu können?
+          url: "/sm-storage/what-do-i-need-to-do-to-recognize-the-expanded-capacity.html"
+        - title: Warum sehe ich nicht alle meine Pools und/oder Volume-Gruppen?
+          url: "/sm-storage/why-dont-i-see-all-my-pools-and-or-volume-groups.html"
+        - title: Was ist Segmentgröße?
+          url: "/sm-storage/what-is-segment-sizing.html"
+        - title: Was ist Ihre bevorzugte Controller-Inhaberschaft?
+          url: "/sm-storage/what-is-preferred-controller-ownership.html"
+        - title: Wann soll ich die spätere Auswahl Host zuweisen verwenden?
+          url: "/sm-storage/when-would-i-want-to-use-the-assign-host-later-selection.html"
+        - title: Was muss ich über die Anforderungen der Host-Blockgröße wissen?
+          url: "/sm-storage/what-do-i-need-to-know-about-host-block-size-requirements.html"
+    - title: Hosts und Host-Cluster
+      entries:
+      - title: Überblick
+        url: "/sm-storage/overview-hosts.html"
+      - title: Konzepte
+        entries:
+        - title: Bedingungen
+          url: "/sm-storage/host-terminology.html"
+        - title: Workflow für Host-Erstellung und Volume-Zuweisung
+          url: "/sm-storage/workflow-for-creating-hosts-and-assigning-volumes.html"
+        - title: Automatische statt manueller Host-Erstellung
+          url: "/sm-storage/automatic-versus-manual-host-creation.html"
+        - title: Wie Volumes zugewiesen werden
+          url: "/sm-storage/how-volumes-are-assigned-to-hosts-and-host-clusters.html"
+        - title: Zugriff auf Volumes
+          url: "/sm-storage/access-volumes.html"
+        - title: Maximale Anzahl an LUNs
+          url: "/sm-storage/maximum-number-of-luns.html"
+        - title: Standard-Host-Betriebssystem
+          url: "/sm-settings/default-host-operating-system-type.html"
+      - title: Konfigurieren Sie den Hostzugriff
+        entries:
+        - title: Host automatisch erstellen
+          url: "/sm-storage/create-host-automatically.html"
+        - title: Host manuell erstellen
+          url: "/sm-storage/create-host-manually.html"
+        - title: Erstellen Sie den Host-Cluster
+          url: "/sm-storage/create-host-cluster.html"
+        - title: Weisen Sie Hosts Volumes zu
+          url: "/sm-storage/assign-volumes.html"
+      - title: Management von Hosts und Clustern
+        entries:
+        - title: Ändern des Standard-Hosttyps
+          url: "/sm-settings/change-default-host-type.html"
+        - title: Zuweisung von Volumes aufheben
+          url: "/sm-storage/unassign-volumes.html"
+        - title: Host oder Host-Cluster löschen
+          url: "/sm-storage/delete-host-or-host-cluster.html"
+        - title: Legen Sie die Berichterstellung für Host-Konnektivität fest
+          url: "/sm-settings/set-host-connectivity-reporting.html"
+      - title: Einstellungen verwalten
+        entries:
+        - title: Ändern Sie die Einstellungen für den Host
+          url: "/sm-storage/change-the-settings-for-a-host.html"
+        - title: Ändern Sie die Einstellungen für Host-Cluster
+          url: "/sm-storage/change-the-settings-for-a-host-cluster.html"
+        - title: Ändern der Host-Port-IDs für den Host
+          url: "/sm-storage/change-host-port-identifiers-for-a-host.html"
+      - title: FAQs
+        entries:
+        - title: Was sind Hosts und Host Cluster?
+          url: "/sm-storage/what-are-hosts-and-host-clusters.html"
+        - title: Warum sollte ich ein Host-Cluster erstellen?
+          url: "/sm-storage/why-would-i-need-to-create-a-host-cluster.html"
+        - title: Wie kann ich feststellen, welches Host-Betriebssystem richtig ist?
+          url: "/sm-storage/how-do-i-know-which-host-operating-system-type-is-correct.html"
+        - title: Was sind HBAs und Adapter-Ports?
+          url: "/sm-storage/what-are-hbas-and-adapter-ports.html"
+        - title: Wie Stelle ich die Host-Ports einem Host gegenüber?
+          url: "/sm-storage/how-do-i-match-the-host-ports-to-a-host.html"
+        - title: Wie erstelle ich CHAP-Schlüssel?
+          url: "/sm-storage/how-do-i-create-chap-secrets.html"
+        - title: Was ist das Standard-Cluster?
+          url: "/sm-storage/what-is-the-default-cluster.html"
+        - title: Was ist die Berichterstellung über Host-Konnektivität?
+          url: "/sm-settings/what-is-host-connectivity-reporting.html"
+    - title: Snapshots
+      entries:
+      - title: Überblick
+        url: "/sm-storage/overview-snapshots.html"
+      - title: Konzepte
+        entries:
+        - title: Funktionsweise von Snapshot-Storage
+          url: "/sm-storage/how-snapshot-storage-works.html"
+        - title: Bedingungen
+          url: "/sm-storage/snapshot-terminology.html"
+        - title: Workflow für die Erstellung von Snapshot Images und Volumes
+          url: "/sm-storage/workflow-for-creating-snapshot-images-and-snapshot-volumes.html"
+        - title: Anforderungen
+          url: "/sm-storage/requirements-and-guidelines-for-snapshots.html"
+        - title: Basis-Volumes, reservierte Kapazität und Snapshot-Gruppen
+          url: "/sm-storage/base-volumes-reserved-capacity-and-snapshot-groups.html"
+        - title: Snapshot Zeitpläne und Snapshot Konsistenzgruppen
+          url: "/sm-storage/snapshot-schedules-and-snapshot-consistency-groups.html"
+        - title: Snapshot Volumes
+          url: "/sm-storage/snapshot-volumes.html"
+        - title: Snapshot Rollback
+          url: "/sm-storage/snapshot-rollback.html"
+      - title: Erstellen von Snapshots und Snapshot-Objekten
+        entries:
+        - title: Erstellen von Snapshot Images
+          url: "/sm-storage/create-snapshot-image.html"
+        - title: Planen von Snapshot Images
+          url: "/sm-storage/schedule-snapshot-images.html"
+        - title: Erstellen der Snapshot Konsistenzgruppe
+          url: "/sm-storage/create-snapshot-consistency-group.html"
+        - title: Erstellung von Snapshot Volumes
+          url: "/sm-storage/create-snapshot-volume.html"
+      - title: Managen von Snapshot-Zeitplänen
+        entries:
+        - title: Einstellungen ändern
+          url: "/sm-storage/change-the-settings-for-a-snapshot-schedule.html"
+        - title: Aktivieren und aussetzen
+          url: "/sm-storage/activate-or-suspend-snapshot-schedule.html"
+        - title: Löschen Sie den Snapshot Zeitplan
+          url: "/sm-storage/delete-snapshot-schedule.html"
+      - title: Snapshot-Images verwalten
+        entries:
+        - title: Anzeigen der Einstellungen für Snapshot-Images
+          url: "/sm-storage/view-snapshot-image-settings.html"
+        - title: Starten Sie das Rollback von Snapshot Image für das Basisvolumen
+          url: "/sm-storage/start-snapshot-image-rollback-for-base-volume.html"
+        - title: Starten Sie das Rollback von Snapshot Image für Volumes von Mitgliedern
+            der Snapshot Consistency Group
+          url: "/sm-storage/start-snapshot-image-rollback-for-consistency-group-member-volumes.html"
+        - title: Setzen Sie das Rollback von Snapshot-Bildern fort
+          url: "/sm-storage/resume-snapshot-image-rollback.html"
+        - title: Abbrechen des Zurücksetzvorgangs von Snapshot-Bildern
+          url: "/sm-storage/cancel-snapshot-image-rollback.html"
+        - title: Snapshot Image löschen
+          url: "/sm-storage/delete-snapshot-image.html"
+      - title: Verwalten von Snapshot Konsistenzgruppen
+        entries:
+        - title: Fügen Sie ein Mitgliedsvolume hinzu
+          url: "/sm-storage/add-member-volumes-to-a-snapshot-consistency-group.html"
+        - title: Mitgliedsvolume entfernen
+          url: "/sm-storage/remove-member-volumes-from-a-consistency-group.html"
+        - title: Einstellungen ändern
+          url: "/sm-storage/change-the-settings-for-a-snapshot-consistency-group.html"
+        - title: Löschen der Snapshot Konsistenzgruppe
+          url: "/sm-storage/delete-snapshot-consistency-group.html"
+      - title: Managen von Snapshot Volumes
+        entries:
+        - title: Konvertieren des Snapshot-Volumes in den Lese-/Schreibmodus
+          url: "/sm-storage/convert-a-snapshot-volume-to-read-write-mode.html"
+        - title: Ändern Sie die Volume-Einstellungen für das Snapshot-Volume
+          url: "/sm-storage/change-the-settings-for-a-snapshot-volume.html"
+        - title: Snapshot Volume kopieren
+          url: "/sm-storage/copy-snapshot-volume.html"
+        - title: Snapshot Volumen neu erstellen
+          url: "/sm-storage/re-create-snapshot-volume.html"
+        - title: Deaktivieren Sie das Snapshot-Volumen
+          url: "/sm-storage/disable-snapshot-volume.html"
+        - title: Snapshot Volume löschen
+          url: "/sm-storage/delete-snapshot-volume.html"
+      - title: FAQs
+        entries:
+        - title: Warum sehe ich nicht alle meine Bände, Hosts oder Host Cluster?
+          url: "/sm-storage/why-dont-i-see-all-my-volumes-hosts-or-host-clusters.html"
+        - title: Was ist ein Snapshot Image?
+          url: "/sm-storage/what-is-a-snapshot-image.html"
+        - title: Warum Snapshot-Bilder verwenden?
+          url: "/sm-storage/why-use-snapshot-images.html"
+        - title: Welche Arten von Volumen können für Snapshots verwendet werden?
+          url: "/sm-storage/what-kind-of-volumes-can-be-used-for-snapshots.html"
+        - title: Warum sollte ich eine Snapshot Konsistenzgruppe erstellen?
+          url: "/sm-storage/why-would-i-create-a-snapshot-consistency-group.html"
+        - title: Was ist ein Snapshot Volume und wann braucht es reservierte Kapazität?
+          url: "/sm-storage/what-is-a-snapshot-volume-and-when-does-it-need-reserved-capacity.html"
+        - title: Was ist eine Snapshot Gruppe?
+          url: "/sm-storage/what-is-a-snapshot-group.html"
+        - title: Warum sollte ich ein Snapshot-Volumen deaktivieren?
+          url: "/sm-storage/why-would-i-disable-a-snapshot-volume.html"
+        - title: Was ist der deaktivierte Zustand?
+          url: "/sm-storage/what-is-the-disabled-state.html"
+        - title: Warum sollte ich einen Snapshot Zeitplan aussetzen?
+          url: "/sm-storage/why-would-i-suspend-a-snapshot-schedule.html"
+    - title: Spiegelung
+      entries:
+      - title: Überblick
+        entries:
+        - title: Asynchrones Spiegeln
+          url: "/sm-mirroring/overview-mirroring-async.html"
+        - title: Synchrones Spiegeln
+          url: "/sm-mirroring/overview-mirroring-sync.html"
+      - title: Asynchrone Konzepte
+        entries:
+        - title: Funktionsweise der asynchronen Spiegelung
+          url: "/sm-mirroring/how-asynchronous-mirroring-works.html"
+        - title: Bedingungen
+          url: "/sm-mirroring/asynchronous-terminology.html"
+        - title: Workflow
+          url: "/sm-mirroring/workflow-for-mirroring-a-volume-asynchronously.html"
+        - title: Anforderungen
+          url: "/sm-mirroring/requirements-for-using-asynchronous-mirroring.html"
+        - title: Status der asynchronen Spiegelung
+          url: "/sm-mirroring/asynchronous-mirror-status.html"
+        - title: Volume-Eigentum
+          url: "/sm-mirroring/volume-ownership-async.html"
+        - title: Rollenwechsel einer SpiegelungsConsistency Group
+          url: "/sm-mirroring/role-change-of-a-mirror-consistency-group.html"
+      - title: Konzepte synchronisieren
+        entries:
+        - title: Funktionsweise der synchronen Spiegelung
+          url: "/sm-mirroring/how-synchronous-mirroring-works.html"
+        - title: Bedingungen
+          url: "/sm-mirroring/synchronous-mirroring-terminology.html"
+        - title: Workflow
+          url: "/sm-mirroring/workflow-for-mirroring-a-volume-synchronously.html"
+        - title: Anforderungen
+          url: "/sm-mirroring/requirements-for-using-synchronous-mirroring.html"
+        - title: Status der synchronen Spiegelung
+          url: "/sm-mirroring/synchronous-mirroring-status.html"
+        - title: Volume-Eigentum
+          url: "/sm-mirroring/volume-ownership-sync.html"
+        - title: Rollenänderung zwischen Volumes in einem gespiegelten Paar
+          url: "/sm-mirroring/role-change-of-volumes-in-a-mirrored-pair.html"
+      - title: Management von asynchronen Spiegelungskonzerne
+        entries:
+        - title: Kommunikation testen
+          url: "/sm-mirroring/test-communication-for-mirror-consistency-groups.html"
+        - title: Die Synchronisierung unterbrechen oder fortsetzen
+          url: "/sm-mirroring/suspend-or-resume-mirror-consistency-group.html"
+        - title: Synchronisierungseinstellungen ändern
+          url: "/sm-mirroring/change-synchronization-settings-for-a-mirror-consistency-group.html"
+        - title: SpiegelungsConsistency Group neu synchronisieren
+          url: "/sm-mirroring/re-synchronize-mirror-consistency-group-manually.html"
+        - title: Anzeige des nicht synchronisierungsbebetrags
+          url: "/sm-mirroring/view-unsynchronized-data-amount-between-mirror-consistency-groups.html"
+        - title: Remote-IP-Adresse aktualisieren
+          url: "/sm-mirroring/update-remote-ip-address.html"
+        - title: Ändern Sie die Rolle der Consistency Group für den Spiegel
+          url: "/sm-mirroring/change-mirror-consistency-group-role-to-primary-or-secondary.html"
+        - title: Löschen der gespiegelten Konsistenzgruppe
+          url: "/sm-mirroring/delete-mirror-consistency-group.html"
+      - title: Management von asynchronen gespiegelten Paaren
+        entries:
+        - title: Entfernen Sie die asynchrone Spiegelbeziehung
+          url: "/sm-mirroring/remove-mirrored-pair.html"
+        - title: Reservierte Kapazität wird erhöht
+          url: "/sm-mirroring/increase-reserved-capacity.html"
+        - title: Reservierte Kapazität für gespiegeltes Paar-Volume ändern
+          url: "/sm-mirroring/change-the-reserved-capacity-settings-for-a-mirrored-pair-volume.html"
+        - title: Vollständiges gespiegeltes Paar für auf dem alten System erstellte
+            primäre Volumes
+          url: "/sm-mirroring/complete-mirrored-pair-for-primary-volumes-created-on-legacy-system.html"
+      - title: Management von synchronen, gespiegelten Paaren
+        entries:
+        - title: Kommunikation testen
+          url: "/sm-mirroring/test-communication-for-synchronous-mirroring.html"
+        - title: Die Synchronisierung unterbrechen und fortsetzen
+          url: "/sm-mirroring/suspend-and-resume-synchronization-for-a-mirrored-pair.html"
+        - title: Ändern Sie die Rolle zwischen den Volumes
+          url: "/sm-mirroring/change-role-between-volumes-in-a-mirrored-pair.html"
+        - title: Synchronisierungseinstellungen ändern
+          url: "/sm-mirroring/change-synchronization-settings-for-a-mirrored-pair.html"
+        - title: Spiegelbeziehung entfernen
+          url: "/sm-mirroring/remove-synchronous-mirror-relationship.html"
+      - title: Spiegelung deaktivieren
+        entries:
+        - title: Deaktivieren Sie die asynchrone Spiegelung
+          url: "/sm-mirroring/deactivate-asynchronous-mirroring.html"
+        - title: Deaktivieren Sie die synchrone Spiegelung
+          url: "/sm-mirroring/deactivate-synchronous-mirroring.html"
+      - title: Async FAQs
+        entries:
+        - title: Wie unterscheidet sich die asynchrone Spiegelung von der synchronen
+            Spiegelung?
+          url: "/sm-mirroring/how-does-asynchronous-mirroring-differ-from-synchronous-mirroring-async.html"
+        - title: Warum kann ich nicht auf meine gewählte Spiegelfunktion zugreifen?
+          url: "/sm-mirroring/why-cant-i-access-my-chosen-mirroring-feature.html"
+        - title: Was muss ich wissen, bevor ich eine gespiegelte Konsistenzgruppe
+            erstellt?
+          url: "/sm-mirroring/what-do-i-need-to-know-before-creating-a-mirror-consistency-group.html"
+        - title: Asynchrones Spiegeln - Was muss ich wissen, bevor ich ein gespiegeltes
+            Paar erstellt habe?
+          url: "/sm-mirroring/asynchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair.html"
+        - title: Was muss ich wissen, bevor ich meine reservierte Kapazität auf einem
+            gespiegelten Paar-Volume erhöhen kann?
+          url: "/sm-mirroring/what-do-i-need-to-know-before-increasing-my-reserved-capacity-on-a-mirrored-pair-volume.html"
+        - title: Warum kann ich die reservierte Kapazität nicht mit meinem angeforderten
+            Betrag erhöhen?
+          url: "/sm-mirroring/why-cant-i-increase-reserved-capacity-with-my-requested-amount.html"
+        - title: Warum sollte ich diesen Prozentsatz ändern?
+          url: "/sm-mirroring/why-would-i-change-this-percentage.html"
+        - title: Warum kann ich mehr als einen Kandidaten für reservierte Kapazität
+            sehen?
+          url: "/sm-mirroring/why-do-i-see-more-than-one-reserved-capacity-candidate.html"
+        - title: Warum werden in der Tabelle keine verfügbaren Werte angezeigt?
+          url: "/sm-mirroring/why-do-i-see-not-available-values-displayed-in-the-table.html"
+        - title: Warum sehe ich nicht alle meine Pools und Volume-Gruppen?
+          url: "/sm-mirroring/why-dont-i-see-all-of-my-pools-and-volume-groups.html"
+        - title: Asynchrones Spiegeln - Warum sehe ich nicht alle meine Volumen?
+          url: "/sm-mirroring/asynchronous-mirroring-why-dont-i-see-all-my-volumes.html"
+        - title: Asynchrones Spiegeln - Warum sehe ich nicht alle Volumen auf dem
+            Remote-Speicher-Array?
+          url: "/sm-mirroring/asynchronous-mirroring-why-dont-i-see-all-the-volumes-on-the-remote-storage-array.html"
+        - title: Warum sollte ich die IP-Adresse meines Remote-Speicherarrays aktualisieren?
+          url: "/sm-mirroring/why-would-i-update-my-remote-storage-arrays-ip-address.html"
+      - title: FAQs synchronisieren
+        entries:
+        - title: Wie unterscheidet sich die synchrone Spiegelung von der asynchronen
+            Spiegelung?
+          url: "/sm-mirroring/how-does-asynchronous-mirroring-differ-from-synchronous-mirroring-sync.html"
+        - title: Synchronous Mirroring - Warum sehe ich nicht alle meine Volumen?
+          url: "/sm-mirroring/synchronous-mirroring-why-dont-i-see-all-my-volumes.html"
+        - title: Synchrones Spiegeln - Warum sehe ich nicht alle Volumes auf dem Remote
+            Storage Array?
+          url: "/sm-mirroring/synchronous-mirroring-why-dont-i-see-all-the-volumes-on-the-remote-storage-array.html"
+        - title: Synchrones Spiegeln - Was muss ich wissen, bevor ein gespiegeltes
+            Paar erstellt wird?
+          url: "/sm-mirroring/synchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair.html"
+        - title: Welche Auswirkungen hat die Synchronisierungspriorität auf die Synchronisierungsraten?
+          url: "/sm-mirroring/what-impact-does-synchronization-priority-have-on-synchronization-rates.html"
+        - title: Warum wird empfohlen, eine manuelle Synchronisierungsrichtlinie zu
+            verwenden?
+          url: "/sm-mirroring/why-is-it-recommended-to-use-a-manual-synchronization-policy.html"
+    - title: Remote Storage
+      entries:
+      - title: Überblick
+        url: "/sm-storage/overview-remote-storage.html"
+      - title: Konzepte
+        entries:
+        - title: Funktionsweise von Remote Storage
+          url: "/sm-storage/rtv-how-remote-storage-works.html"
+        - title: Bedingungen
+          url: "/sm-storage/rtv-terminology.html"
+        - title: Anforderungen an die Funktionen
+          url: "/sm-storage/rtv-remote-storage-requirements.html"
+        - title: Volume-Anforderungen
+          url: "/sm-storage/rtv-remote-storage-volume-requirements.html"
+      - title: Remote-Storage managen
+        entries:
+        - title: Remote-Speicher importieren
+          url: "/sm-storage/rtv-import-remote-storage.html"
+        - title: Fortschritt der Remote-Storage-Importe managen
+          url: "/sm-storage/rtv-manage-progress-of-remote-volume-import.html"
+        - title: Verbindungseinstellungen für Remote-Speicher ändern
+          url: "/sm-storage/rtv-modify-connection-settings-for-remote-storage.html"
+        - title: Remote-Storage-Objekt entfernen
+          url: "/sm-storage/rtv-remove-remote-storage.html"
+      - title: FAQs
+        entries:
+        - title: Was muss ich vor der Erstellung einer Remote-Speicherverbindung wissen?
+          url: "/sm-storage/rtv-what-do-i-need-to-know-before-creating-a-remote-storage.html"
+        - title: Warum wird ich aufgefordert, meine Remote-Volumes zu entfernen?
+          url: "/sm-storage/rtv-why-am-i-being-prompted-to-clean-up-my-remote-volumes.html"
+        - title: Warum sehe ich nicht alle meine Volumen auf meinem Ziel-Array?
+          url: "/sm-storage/rtv-why-dont-i-see-all-my-volumes.html"
+        - title: Was muss ich über das Remote Volume bei einem Import wissen?
+          url: "/sm-storage/rtv-what-do-i-need-to-know-about-the-remote-device-in-an-import.html"
+        - title: Was muss ich vor dem Start eines Remote-Storage-Imports beachten?
+          url: "/sm-storage/rtv-what-do-i-need-to-know-before-starting-a-remote-storage-import.html"
+    - title: Hardwarekomponenten
+      entries:
+      - title: Überblick
+        url: "/sm-hardware/overview-hardware.html"
+      - title: Konzepte
+        entries:
+        - title: Hardware-Seite
+          url: "/sm-hardware/hardware-page-overview.html"
+        - title: Bedingungen
+          url: "/sm-hardware/hardware-terminology.html"
+      - title: Management von Shelf-Komponenten
+        entries:
+        - title: Hardwarekomponenten von View
+          url: "/sm-hardware/view-hardware-components.html"
+        - title: Komponentenstatus ein- oder ausblenden
+          url: "/sm-hardware/show-or-hide-component-status.html"
+        - title: Wechseln Sie zwischen Vorder- und Rückseite
+          url: "/sm-hardware/switch-between-front-and-back-views.html"
+        - title: Ansichtsreihenfolge der Shelfs ändern
+          url: "/sm-hardware/change-view-order-of-shelves.html"
+        - title: Die Positionsleuchte für den Regal einschalten
+          url: "/sm-hardware/turn-on-shelf-locator-light.html"
+        - title: Ändern Sie Shelf-IDs
+          url: "/sm-hardware/change-shelf-ids.html"
+        - title: Zeigt den Status und die Einstellungen von Shelf-Komponenten an
+          url: "/sm-hardware/view-shelf-component-status-and-settings.html"
+        - title: Aktualisieren Sie die Lernzyklen der Batterie
+          url: "/sm-hardware/update-battery-learn-cycles.html"
+      - title: Management von Controllern
+        entries:
+        - title: Controller-Status
+          url: "/sm-hardware/controller-states.html"
+        - title: Überlegungen beim Zuweisen von IP-Adressen
+          url: "/sm-hardware/considerations-for-assigning-ip-addresses.html"
+        - title: Konfigurieren Sie den Managementport
+          url: "/sm-hardware/configure-management-ports.html"
+        - title: Konfigurieren Sie NTP-Serveradressen
+          url: "/sm-hardware/configure-ntp-server-addresses.html"
+        - title: Konfigurieren Sie DNS-Serveradressen
+          url: "/sm-hardware/configure-dns-server-addresses.html"
+        - title: Zeigen Sie Controller-Einstellungen an
+          url: "/sm-hardware/view-controller-settings.html"
+        - title: Remote-Anmeldung konfigurieren (SSH)
+          url: "/sm-hardware/allow-remote-login.html"
+        - title: Platzieren Sie den Controller in den Online-Modus
+          url: "/sm-hardware/place-controller-online.html"
+        - title: Platzieren Sie den Controller in den Offline-Modus
+          url: "/sm-hardware/place-controller-offline.html"
+        - title: Platzieren Sie den Controller in den Servicemodus
+          url: "/sm-hardware/place-controller-in-service-mode.html"
+        - title: Controller zurücksetzen (neu booten
+          url: "/sm-hardware/reset-reboot-controller.html"
+      - title: Verwalten von iSCSI-Ports
+        entries:
+        - title: Konfigurieren Sie die iSCSI-Ports
+          url: "/sm-hardware/configure-iscsi-ports-hardware.html"
+        - title: Konfigurieren Sie die iSCSI-Authentifizierung
+          url: "/sm-settings/configure-iscsi-authentication.html"
+        - title: Aktivieren Sie die iSCSI-Erkennungseinstellungen
+          url: "/sm-settings/enable-iscsi-discovery-settings.html"
+        - title: Anzeigen von iSCSI-Statistikpaketen
+          url: "/sm-support/view-iscsi-statistics-packages-support.html"
+        - title: Anzeigen von iSCSI-Sitzungen
+          url: "/sm-settings/view-iscsi-sessions-system.html"
+        - title: ISCSI-Sitzung beenden
+          url: "/sm-settings/end-iscsi-session-system.html"
+        - title: Konfigurieren Sie iSER-over-InfiniBand-Ports
+          url: "/sm-hardware/configure-iser-over-infiniband-ports-hardware.html"
+        - title: Zeigen Sie iSER-over-InfiniBand-Statistiken an
+          url: "/sm-settings/view-iser-over-infiniband-statistics-system.html"
+      - title: Managen Sie NVMe-Ports
+        entries:
+        - title: NVMe Übersicht
+          url: "/sm-settings/nvme-overview.html"
+        - title: Konfigurieren Sie NVMe-over-InfiniBand-Ports
+          url: "/sm-hardware/configure-nvme-over-infiniband-ports-hardware.html"
+        - title: Konfigurieren Sie NVMe over RoCE-Ports
+          url: "/sm-hardware/configure-nvme-over-roce-ports-hardware.html"
+        - title: Anzeigen der NVMe over Fabrics Statistiken
+          url: "/sm-settings/view-nvme-over-fabrics-statistics-system.html"
+      - title: Verwalten Sie Laufwerke
+        entries:
+        - title: Laufwerksstatus
+          url: "/sm-hardware/drive-states.html"
+        - title: Solid State Disks (SSDs)
+          url: "/sm-hardware/solid-state-disks-ssds.html"
+        - title: Ansicht der Laufwerke begrenzen
+          url: "/sm-hardware/limit-the-drive-view.html"
+        - title: Schalten Sie die Anzeige der Laufwerksuchhilfe ein
+          url: "/sm-hardware/turn-on-drive-locator-light.html"
+        - title: Zeigen Sie den Laufwerkstatus und die Einstellungen an
+          url: "/sm-hardware/view-drive-status-and-settings.html"
+        - title: Laufwerk logisch ersetzen
+          url: "/sm-hardware/replace-drive-logically-hardware.html"
+        - title: Manuelles Rekonstruieren des Laufwerks
+          url: "/sm-hardware/reconstruct-drive-manually.html"
+        - title: Initialisieren (Formatieren) des Laufwerks
+          url: "/sm-hardware/initialize-format-drive.html"
+        - title: Laufwerk ausfällt
+          url: "/sm-hardware/fail-drive.html"
+        - title: Laufwerke löschen
+          url: "/sm-hardware/erase-drive.html"
+        - title: Locked NVMe- oder FIPS-Laufwerke entsperren oder zurücksetzen
+          url: "/sm-hardware/unlock-or-reset-a-locked-nvme-drive.html"
+      - title: Management von Hot Spares
+        entries:
+        - title: Übersicht über Hot-Spare-Laufwerke
+          url: "/sm-hardware/hot-spare-drives.html"
+        - title: Weisen Sie Hot Spares zu
+          url: "/sm-hardware/assign-hot-spares-hardware.html"
+        - title: Heben Sie die Zuweisung von Hot Spares wieder auf
+          url: "/sm-hardware/unassign-hot-spares.html"
+      - title: Shelf-FAQs
+        entries:
+        - title: Was ist der Schutz vor Regalverlust und der Schutz vor Schubladenverlust?
+          url: "/sm-hardware/what-is-shelf-loss-protection-and-drawer-loss-protection.html"
+        - title: Was sind Akkulaufläufe?
+          url: "/sm-hardware/what-are-battery-learn-cycles.html"
+      - title: Controller-FAQs
+        entries:
+        - title: Was ist Auto-Negotiation?
+          url: "/sm-hardware/what-is-auto-negotiation.html"
+        - title: Was ist eine statusfreie IPv6-Adressenkonfiguration?
+          url: "/sm-hardware/what-is-ipv6-stateless-address-auto-configuration.html"
+        - title: Welche Option wähle ich - DHCP- oder manuelle Konfiguration?
+          url: "/sm-hardware/which-do-i-choose-dhcp-or-manual-configuration.html"
+        - title: Was ist ein DHCP-Server?
+          url: "/sm-hardware/what-is-a-dhcp-server.html"
+        - title: Wie konfiguriere ich meinen DHCP-Server?
+          url: "/sm-hardware/how-do-i-configure-my-dhcp-server.html"
+        - title: Warum muss ich die Controller-Netzwerkkonfiguration ändern?
+          url: "/sm-hardware/why-do-i-need-to-change-the-controller-network-configuration.html"
+        - title: Wo erhalte ich die Netzwerkkonfiguration?
+          url: "/sm-hardware/where-do-i-get-the-network-configuration.html"
+        - title: Was sind ICMP PING Antworten?
+          url: "/sm-hardware/what-are-icmp-ping-responses.html"
+        - title: Wann sollte ich die Portkonfiguration aktualisieren?
+          url: "/sm-hardware/when-should-i-refresh-the-port-configuration-or-the-isns-server-from-the-dhcp-server.html"
+        - title: Was soll ich nach dem Konfigurieren der Management-Ports tun?
+          url: "/sm-hardware/what-should-i-do-after-configuring-the-management-ports.html"
+        - title: Warum befindet sich das Storage-System im nicht optimalen Modus?
+          url: "/sm-hardware/why-is-the-storage-system-in-non-optimal-mode.html"
+      - title: ISCSI FAQs
+        entries:
+        - title: Was passiert, wenn ich einen iSNS Server für die Registrierung verwende?
+          url: "/sm-settings/what-happens-when-i-use-an-isns-server.html"
+        - title: Welche Registrierungsmethoden werden für iSCSI automatisch unterstützt?
+          url: "/sm-settings/which-registration-methods-are-automatically-supported-for-iscsi.html"
+        - title: Wie interpretiere ich iSER-over-InfiniBand-Statistiken?
+          url: "/sm-settings/how-do-i-interpret-iser-over-infiniband-statistics.html"
+        - title: Was muss ich noch tun, um iSER over InfiniBand zu konfigurieren oder
+            zu diagnostizieren?
+          url: "/sm-settings/what-else-do-i-need-to-do-to-configure-or-diagnose-iser-over-infiniband.html"
+        - title: Was muss ich sonst noch tun, um iSCSI zu konfigurieren oder zu diagnostizieren?
+          url: "/sm-support/what-else-do-i-need-to-do-to-configure-or-diagnose-iscsi.html"
+      - title: NVMe FAQs
+        entries:
+        - title: Wie interpretiere ich NVMe over Fabrics Statistiken?
+          url: "/sm-settings/how-do-i-interpret-nvme-over-fabrics-statistics.html"
+        - title: Was muss ich sonst noch tun, um NVMe over InfiniBand zu konfigurieren
+            oder zu diagnostizieren?
+          url: "/sm-settings/what-else-do-i-need-to-do-to-configure-or-diagnose-nvme-over-infiniband.html"
+        - title: Was muss ich sonst noch tun, um NVMe over RoCE zu konfigurieren oder
+            zu diagnostizieren?
+          url: "/sm-settings/what-else-do-i-need-to-do-to-configure-or-diagnose-nvme-over-roce.html"
+        - title: Warum gibt es zwei IP-Adressen für einen physischen Port?
+          url: "/sm-settings/why-are-there-two-ip-addresses-for-one-physical-port.html"
+        - title: Warum gibt es zwei Parametersätze für einen physischen Port?
+          url: "/sm-settings/why-are-there-two-sets-of-parameters-for-one-physical-port.html"
+      - title: FAQs zu Laufwerken
+        entries:
+        - title: Was ist eine Hot-Spare-Festplatte?
+          url: "/sm-storage/what-is-a-hot-spare-drive.html"
+        - title: Was ist Erhaltungskapazität?
+          url: "/sm-hardware/what-is-preservation-capacity.html"
+        - title: Warum sollte ich ein Laufwerk logisch ersetzen?
+          url: "/sm-hardware/why-would-i-logically-replace-a-drive.html"
+        - title: Wo kann ich den Status eines Laufwerks sehen, der derzeit rekonstruiert
+            wird?
+          url: "/sm-hardware/where-can-i-view-the-status-of-a-drive-undergoing-reconstruction.html"
+    - title: Meldungen
+      entries:
+      - title: Überblick
+        url: "/sm-settings/overview-alerts.html"
+      - title: Konzepte
+        entries:
+        - title: Funktionsweise von Warnmeldungen
+          url: "/sm-settings/how-alerts-work.html"
+        - title: Bedingungen
+          url: "/sm-settings/alerts-terminology.html"
+      - title: Verwalten von E-Mail-Warnmeldungen
+        entries:
+        - title: Konfigurieren Sie Mail-Server und Empfänger
+          url: "/sm-settings/configure-mail-server-and-recipients-for-alerts.html"
+        - title: E-Mail-Adressen bearbeiten
+          url: "/sm-settings/edit-alert-email-addresses.html"
+        - title: E-Mail-Adressen hinzufügen
+          url: "/sm-settings/add-alert-email-addresses.html"
+        - title: Löschen Sie E-Mail-Server oder E-Mail-Adressen
+          url: "/sm-settings/delete-alert-email-addresses.html"
+        - title: Mailserver bearbeiten
+          url: "/sm-settings/edit-mail-server-for-alerts.html"
+      - title: Managen von SNMP-Warnmeldungen
+        entries:
+        - title: Konfigurieren von SNMP-Warnmeldungen
+          url: "/sm-settings/configure-snmp-alerts.html"
+        - title: Fügen Sie Trap-Ziele hinzu
+          url: "/sm-settings/add-trap-destinations-for-snmp-alerts.html"
+        - title: Konfigurieren Sie SNMP-MIB-Variablen
+          url: "/sm-settings/configure-snmp-mib-variables.html"
+        - title: Communities bearbeiten
+          url: "/sm-settings/edit-community-names-for-snmp-traps.html"
+        - title: Benutzereinstellungen bearbeiten
+          url: "/sm-settings/edit-user-names-for-snmp-traps.html"
+        - title: Fügen Sie Communities hinzu
+          url: "/sm-settings/add-community-names-for-snmp-traps.html"
+        - title: Benutzer hinzufügen
+          url: "/sm-settings/add-user-names-for-snmp-traps.html"
+        - title: Entfernen Sie Communities
+          url: "/sm-settings/remove-community-name-for-snmp-traps.html"
+        - title: Benutzer entfernen
+          url: "/sm-settings/remove-user-for-snmp-traps.html"
+        - title: Löschen von Trap-Zielen
+          url: "/sm-settings/delete-trap-destinations.html"
+      - title: Managen von Syslog-Warnmeldungen
+        entries:
+        - title: Syslog-Server konfigurieren
+          url: "/sm-settings/configure-syslog-server-for-alerts.html"
+        - title: Bearbeiten von Syslog-Servern
+          url: "/sm-settings/edit-syslog-servers-for-alerts.html"
+        - title: Fügen Sie Syslog-Server hinzu
+          url: "/sm-settings/add-syslog-servers-for-alerts.html"
+        - title: Löschen der Syslog-Server
+          url: "/sm-settings/delete-syslog-servers-for-alerts.html"
+      - title: FAQs
+        entries:
+        - title: Was ist, wenn Alarme deaktiviert sind?
+          url: "/sm-settings/what-if-alerts-are-disabled.html"
+        - title: Wie konfiguriere ich SNMP- oder syslog-Alarme?
+          url: "/sm-settings/how-do-i-configure-snmp-or-syslog-alerts.html"
+        - title: Warum sind Zeitstempel zwischen dem Array und Warnungen uneinheitlich?
+          url: "/sm-settings/why-are-timestamps-inconsistent-between-the-array-and-alerts.html"
+    - title: Array-Einstellungen
+      entries:
+      - title: Einstellungsübersicht
+        url: "/sm-settings/overview-settings.html"
+      - title: Konzepte
+        entries:
+        - title: Cache-Einstellungen und Performance
+          url: "/sm-settings/cache-settings-and-performance.html"
+        - title: Automatischer Lastausgleich – Übersicht
+          url: "/sm-settings/automatic-load-balancing-overview.html"
+      - title: Konfigurieren Sie Array-Einstellungen
+        entries:
+        - title: Name des Speicher-Arrays bearbeiten
+          url: "/sm-settings/edit-storage-array-name.html"
+        - title: Schalten Sie die Speicher-Array Locator-Leuchten ein
+          url: "/sm-settings/turn-on-storage-array-locator-lights.html"
+        - title: Speicherarray-Uhren synchronisieren
+          url: "/sm-settings/synchronize-storage-array-clocks.html"
+        - title: Speicherarray-Konfiguration speichern
+          url: "/sm-settings/save-storage-array-configuration.html"
+        - title: Löschen Sie die Konfiguration des Speicherarrays
+          url: "/sm-settings/clear-storage-array-configuration.html"
+        - title: Cache-Einstellungen ändern
+          url: "/sm-settings/change-cache-settings-for-storage-array.html"
+        - title: Automatische Lastverteilung festlegen
+          url: "/sm-settings/set-automatic-load-balancing.html"
+        - title: Aktivieren oder deaktivieren Sie die veraltete Managementoberfläche
+          url: "/sm-settings/enable-or-disable-legacy-management-interface.html"
+      - title: Add-on-Funktionen konfigurieren
+        entries:
+        - title: Funktionsweise der Add-on-Funktionen
+          url: "/sm-settings/how-add-on-features-work.html"
+        - title: Add-on-Bedingungen
+          url: "/sm-settings/add-on-feature-terminology.html"
+        - title: Abrufen der Feature-Schlüsseldatei
+          url: "/sm-settings/obtain-a-feature-key-file.html"
+        - title: Aktivieren Sie Premium Feature
+          url: "/sm-settings/enable-premium-feature.html"
+        - title: Funktionspaket aktivieren
+          url: "/sm-settings/enable-feature-pack.html"
+      - title: Laden Sie CLI herunter
+        url: "/sm-settings/download-cli.html"
+      - title: FAQs
+        entries:
+        - title: Was ist der automatische Lastausgleich?
+          url: "/sm-storage/what-is-automatic-load-balancing.html"
+        - title: Was ist der Controller Cache?
+          url: "/sm-settings/what-is-controller-cache.html"
+        - title: Was wird Cachespülung?
+          url: "/sm-settings/what-is-cache-flushing.html"
+        - title: Was ist die Cache-Blockgröße?
+          url: "/sm-settings/what-is-cache-block-size.html"
+        - title: Wann sollte ich Speicherarray-Uhren synchronisieren?
+          url: "/sm-settings/when-should-i-synchronize-storage-array-clocks.html"
+    - title: Laufwerkssicherheit
+      entries:
+      - title: Überblick
+        url: "/sm-settings/overview-drive-security.html"
+      - title: Konzepte
+        entries:
+        - title: Funktionsweise der Laufwerksicherheitsfunktion
+          url: "/sm-settings/how-the-drive-security-feature-works.html"
+        - title: Funktionsweise von Sicherheitsschlüsselmanagement
+          url: "/sm-settings/how-security-key-management-works.html"
+        - title: Bedingungen
+          url: "/sm-settings/drive-security-terminology.html"
+      - title: Konfigurieren Sie die Sicherheitsschlüssel
+        entries:
+        - title: Interner Sicherheitsschlüssel erstellen
+          url: "/sm-settings/create-internal-security-key.html"
+        - title: Externen Sicherheitsschlüssel erstellen
+          url: "/sm-settings/create-external-security-key.html"
+      - title: Management von Sicherheitsschlüsseln
+        entries:
+        - title: Sicherheitsschlüssel ändern
+          url: "/sm-settings/change-security-key.html"
+        - title: Wechsel von externem zu internem Verschlüsselungsmanagement
+          url: "/sm-settings/switch-from-external-to-internal-key-management.html"
+        - title: Bearbeiten der Einstellungen des Verschlüsselungsmanagementservers
+          url: "/sm-settings/edit-key-management-server-settings.html"
+        - title: Sicherheitsschlüssel sichern
+          url: "/sm-settings/back-up-security-key.html"
+        - title: Validierung des Sicherheitsschlüssels
+          url: "/sm-settings/validate-security-key.html"
+        - title: Entsperren Sie Laufwerke bei Nutzung des internen Verschlüsselungsmanagements
+          url: "/sm-settings/unlock-drives-using-an-internal-security-key.html"
+        - title: Entsperren von Laufwerken bei Verwendung von externer Schlüsselverwaltung
+          url: "/sm-settings/unlock-drives-using-an-external-security-key.html"
+      - title: FAQs
+        entries:
+        - title: Was muss ich vor der Erstellung eines Sicherheitsschlüssels wissen?
+          url: "/sm-settings/what-do-i-need-to-know-before-creating-a-security-key.html"
+        - title: Warum muss ich eine Passphrase definieren?
+          url: "/sm-settings/why-do-i-need-to-define-a-pass-phrase.html"
+        - title: Warum sind Sicherheitsinformationen wichtig?
+          url: "/sm-settings/why-is-it-important-to-record-security-key-information.html"
+        - title: Was muss ich vor dem Sichern eines Sicherheitsschlüssels beachten?
+          url: "/sm-settings/what-do-i-need-to-know-before-backing-up-a-security-key.html"
+        - title: Was muss ich wissen, bevor sichere Laufwerke entsperrt werden?
+          url: "/sm-settings/what-do-i-need-to-know-before-unlocking-secure-drives.html"
+        - title: Zugriff auf Lese-/Schreibzugriffe
+          url: "/sm-settings/what-is-read-write-accessibility.html"
+        - title: Was muss ich über die Validierung des Sicherheitsschlüssels wissen?
+          url: "/sm-settings/what-do-i-need-to-know-about-validating-the-security-key.html"
+        - title: Worin besteht der Unterschied zwischen internem Sicherheitsschlüssel
+            und externem Sicherheitsschlüsselmanagement?
+          url: "/sm-settings/what-is-the-difference-between-internal-security-key-and-external-security-key-management.html"
+    - title: Zugriffsmanagement
+      entries:
+      - title: Überblick
+        url: "/sm-settings/overview-access-management.html"
+      - title: Konzepte
+        entries:
+        - title: Funktionsweise von Access Management
+          url: "/sm-settings/how-access-management-works.html"
+        - title: Bedingungen
+          url: "/sm-settings/access-management-terminology.html"
+        - title: Berechtigungen für zugeordnete Rollen
+          url: "/sm-settings/permissions-for-mapped-roles.html"
+        - title: Lokale Benutzerrollen
+          url: "/sm-settings/access-management-with-local-user-roles.html"
+        - title: Verzeichnisdienste
+          url: "/sm-settings/access-management-with-directory-services.html"
+        - title: SAML
+          url: "/sm-settings/access-management-with-saml.html"
+        - title: Auf Token zugreifen
+          url: "/sm-settings/access-management-tokens.html"
+      - title: Lokale Benutzerrollen verwenden
+        entries:
+        - title: Zeigen Sie lokale Benutzerrollen an
+          url: "/sm-settings/view-local-user-roles.html"
+        - title: Passwörter ändern
+          url: "/sm-settings/change-passwords.html"
+        - title: Ändern Sie die Einstellungen für das lokale Benutzerpasswort
+          url: "/sm-settings/change-local-user-passwords-settings.html"
+      - title: Verzeichnisdienste verwenden
+        entries:
+        - title: Verzeichnisserver hinzufügen
+          url: "/sm-settings/add-directory-server.html"
+        - title: Bearbeiten Sie die Einstellungen des Verzeichnisservers und die Rollenzuordnungen
+          url: "/sm-settings/edit-directory-server-settings.html"
+        - title: Verzeichnisserver entfernen
+          url: "/sm-settings/remove-directory-server.html"
+      - title: Verwenden Sie SAML
+        entries:
+        - title: Konfigurieren Sie SAML
+          url: "/sm-settings/configure-saml.html"
+        - title: SAML-Rollenzuordnungen ändern
+          url: "/sm-settings/change-saml-role-mappings.html"
+        - title: Exportieren Sie SAML-Dienstanbieter-Dateien
+          url: "/sm-settings/export-saml-service-provider-files.html"
+      - title: Verwenden Sie Access Tokens
+        entries:
+        - title: Erstellen von Zugriffs-Tokens
+          url: "/sm-settings/access-management-tokens-create.html"
+        - title: Bearbeiten Sie die Einstellungen für das Zugriffstoken
+          url: "/sm-settings/access-management-tokens-edit.html"
+        - title: Access Token widerrufen
+          url: "/sm-settings/access-management-tokens-revoke.html"
+      - title: Syslog managen
+        entries:
+        - title: Zeigen Sie die Aktivität des Prüfprotokolls an
+          url: "/sm-settings/view-audit-log-activity.html"
+        - title: Richtlinien für Prüfprotokolle definieren
+          url: "/sm-settings/define-log-policies.html"
+        - title: Löschen von Ereignissen aus dem Auditprotokoll
+          url: "/sm-settings/delete-events-from-the-audit-log.html"
+        - title: Syslog-Server für Audit-Protokolle konfigurieren
+          url: "/sm-settings/configure-syslog-server-for-audit-logs.html"
+        - title: Bearbeiten Sie die Syslog-Servereinstellungen für Audit-Protokolldatensätze
+          url: "/sm-settings/edit-syslog-server-settings-for-audit-log-records.html"
+      - title: FAQs
+        entries:
+        - title: Warum kann ich mich nicht anmelden?
+          url: "/sm-settings/why-cant-i-log-in.html"
+        - title: Was muss ich vor dem Hinzufügen eines Verzeichnisservers wissen?
+          url: "/sm-settings/what-do-i-need-to-know-before-adding-a-directory-server.html"
+        - title: Was muss ich über die Zuordnung von Speicher-Array-Rollen wissen?
+          url: "/sm-settings/what-do-i-need-to-know-about-mapping-storage-array-roles.html"
+        - title: Welche externen Verwaltungstools können von dieser Änderung betroffen
+            sein?
+          url: "/sm-settings/which-external-management-tools-may-be-affected-by-this-change.html"
+        - title: Was muss ich vor der Konfiguration und Aktivierung von SAML wissen?
+          url: "/sm-settings/what-do-i-need-to-know-before-configuring-and-enabling-saml.html"
+        - title: Welche Arten von Ereignissen werden im Auditprotokoll aufgezeichnet?
+          url: "/sm-settings/what-types-of-events-are-recorded-in-the-audit-log.html"
+        - title: Was muss ich vor der Konfiguration eines Syslog-Servers wissen?
+          url: "/sm-settings/what-do-i-need-to-know-before-configuring-a-syslog-server.html"
+        - title: Der Syslog-Server empfängt keine Audit-Protokolle mehr. Was mache
+            ich?
+          url: "/sm-settings/the-syslog-server-is-no-longer-receiving-audit-logs-what-do-i-do.html"
+    - title: Zertifikate
+      entries:
+      - title: Überblick
+        url: "/sm-settings/overview-certificates.html"
+      - title: Konzepte
+        entries:
+        - title: Funktionsweise von Zertifikaten
+          url: "/sm-settings/how-certificates-work-sam.html"
+        - title: Bedingungen
+          url: "/sm-settings/certificate-terminology.html"
+      - title: Zertifikate verwenden
+        entries:
+        - title: Verwenden Sie CA-signierte Zertifikate für Controller
+          url: "/sm-settings/use-ca-signed-certificates-for-controllers.html"
+        - title: Managementzertifikate zurücksetzen
+          url: "/sm-settings/reset-management-certificates.html"
+        - title: Anzeigen von importierten Zertifikatinformationen
+          url: "/sm-settings/view-imported-certificates.html"
+        - title: Importieren Sie Zertifikate für Controller, wenn Sie als Clients
+            fungieren
+          url: "/sm-settings/import-trusted-certificates-for-controllers-acting-as-client.html"
+        - title: Überprüfung des Zertifikatsannuls aktivieren
+          url: "/sm-settings/enable-certificate-revocation-checking.html"
+        - title: Vertrauenswürdige Zertifikate löschen
+          url: "/sm-settings/delete-trusted-certificates.html"
+        - title: Verwenden Sie CA-signierte Zertifikate für den Authentifizierungsserver
+          url: "/sm-settings/use-ca-signed-certificates-for-authentication-with-a-key-management-server.html"
+        - title: Export von Zertifikaten für den Schlüsselverwaltungsserver
+          url: "/sm-settings/export-key-management-certificates.html"
+      - title: FAQs
+        entries:
+        - title: Warum wird das Dialogfeld „Zugriff auf anderen Controller nicht möglich“
+            angezeigt?
+          url: "/sm-settings/why-does-the-cannot-access-other-controller-dialog-appear.html"
+        - title: Wie weiß ich, welche Zertifikate zum externen Verschlüsselungsmanagement
+            in System Manager hochgeladen werden müssen?
+          url: "/sm-settings/how-do-i-know-what-certificates-need-to-be-uploaded-to-system-manager.html"
+        - title: Was muss ich über die Überprüfung des Annullierung von Zertifikaten
+            wissen?
+          url: "/sm-settings/what-do-i-need-to-know-about-certificate-revocation-checking.html"
+        - title: Für welche Servertypen wird die Überprüfung des Widerrufs aktiviert?
+          url: "/sm-settings/what-types-of-servers-will-revocation-checking-be-enabled-for.html"
+    - title: Unterstützung
+      entries:
+      - title: Überblick
+        url: "/sm-support/overview-support.html"
+      - title: Informationen und Diagnosen anzeigen
+        entries:
+        - title: Anzeigen des Speicher-Array-Profils
+          url: "/sm-support/view-storage-array-profile.html"
+        - title: Anzeige des Software- und Firmware-Inventars
+          url: "/sm-support/view-software-and-firmware-inventory.html"
+      - title: Erfassen von Diagnosedaten
+        entries:
+        - title: Manuelles Sammeln von Support-Daten
+          url: "/sm-support/collect-support-data-manually.html"
+        - title: Erfassen von Konfigurationsdaten
+          url: "/sm-support/collect-configuration-data.html"
+        - title: Rufen Sie Recovery Support-Dateien
+          url: "/sm-support/retrieve-recovery-support-files.html"
+        - title: Trace-Puffer abrufen
+          url: "/sm-support/retrieve-trace-buffers.html"
+        - title: Erstellen von Statistiken zu I/O-Pfaden
+          url: "/sm-support/collect-i-o-path-statistics.html"
+        - title: Abrufen des Integritätsabbilds
+          url: "/sm-support/retrieve-health-image.html"
+      - title: Führen Sie Wiederherstellungsmaßnahmen durch
+        entries:
+        - title: Unlesbare Sektoren-Log anzeigen
+          url: "/sm-support/view-unreadable-sectors-log.html"
+        - title: Aktivieren Sie die Laufwerksanschlüsse neu
+          url: "/sm-support/re-enable-drive-ports.html"
+        - title: Löschen Sie den Wiederherstellungsmodus
+          url: "/sm-support/clear-recovery-mode.html"
+      - title: Managen Sie AutoSupport
+        entries:
+        - title: Übersicht über die Funktionen von AutoSupport
+          url: "/sm-support/autosupport-feature-overview.html"
+        - title: Workflow für die AutoSupport Funktion
+          url: "/sm-support/workflow-for-autosupport.html"
+        - title: Aktivieren oder Deaktivieren von AutoSupport Funktionen
+          url: "/sm-support/enable-or-disable-autosupport-features.html"
+        - title: Konfigurieren der AutoSupport-Bereitstellungsmethode
+          url: "/sm-support/configure-autosupport-delivery-method.html"
+        - title: Planen Sie AutoSupport-Entsendungen
+          url: "/sm-support/schedule-autosupport-dispatches.html"
+        - title: Senden Sie AutoSupport-Patches
+          url: "/sm-support/send-autosupport-dispatches.html"
+        - title: Anzeigen des AutoSupport-Status
+          url: "/sm-support/view-autosupport-status.html"
+        - title: Zeigen Sie das AutoSupport-Protokoll an
+          url: "/sm-support/view-autosupport-log.html"
+        - title: Fenster AutoSupport-Wartung aktivieren
+          url: "/sm-support/enable-autosupport-maintenance-window.html"
+        - title: Deaktivieren Sie das AutoSupport-Wartungsfenster
+          url: "/sm-support/disable-autosupport-maintenance-window.html"
+      - title: Veranstaltungen anzeigen
+        entries:
+        - title: Übersicht über das Ereignisprotokoll
+          url: "/sm-support/overview-event-log.html"
+        - title: Zeigen Sie das Ereignisprotokoll an
+          url: "/sm-support/view-events-using-the-event-log.html"
+      - title: Management von Upgrades
+        entries:
+        - title: Überblick
+          url: "/sm-support/overview-upgrade-center.html"
+        - title: Aktualisieren von Software und Firmware
+          url: "/sm-support/upgrade-controller-software-and-firmware.html"
+        - title: Aktivieren von Controller-Software und -Firmware
+          url: "/sm-support/activate-controller-software-and-firmware.html"
+        - title: Aktualisieren Sie die Laufwerk-Firmware
+          url: "/sm-support/upgrade-drive-firmware.html"
+        - title: Überprüfen Sie die möglichen Software- und Firmware-Upgrade-Fehler
+          url: "/sm-support/review-the-possible-software-and-firmware-upgrade-errors.html"
+      - title: FAQs
+        entries:
+        - title: Welche Daten sammle ich?
+          url: "/sm-support/which-data-am-i-collecting-in-a-customer-support-bundle.html"
+        - title: Was zeigt mir unlesbare Sektoren Daten?
+          url: "/sm-support/what-does-unreadable-sectors-data-show-me.html"
+        - title: Was ist ein Gesundheitsbild?
+          url: "/sm-support/what-is-a-health-image.html"
+        - title: Was tun die AutoSupport-Funktionen?
+          url: "/sm-support/what-do-the-autosupport-features-do.html"
+        - title: Welche Datentypen werden über die AutoSupport Funktion erfasst?
+          url: "/sm-support/what-type-of-data-is-collected-through-autosupport.html"
+        - title: Wie konfiguriere ich die Bereitstellungsmethode für die AutoSupport-Funktion?
+          url: "/sm-support/how-do-i-configure-the-delivery-method-for-autosupport.html"
+        - title: Was sind Konfigurationsdaten?
+          url: "/sm-support/what-is-configuration-data.html"
+        - title: Was muss ich vor einem Upgrade der SANtricity OS Software beachten?
+          url: "/sm-support/what-do-i-need-to-know-before-upgrading-the-santricity-os-software.html"
+        - title: Was muss ich wissen, bevor ich die automatische EAM-Synchronisierung
+            unterhalte?
+          url: "/sm-support/what-do-i-need-to-know-before-suspending-iom-auto-synchronization.html"
+        - title: Warum läuft mein Firmware-Upgrade so langsam voran?
+          url: "/sm-support/why-is-my-firmware-upgrade-progressing-so-slowly.html"
+        - title: Was muss ich vor dem Aktualisieren der Laufwerk-Firmware beachten?
+          url: "/sm-support/what-do-i-need-to-know-before-upgrading-drive-firmware.html"
+        - title: Wie wähle ich die Art des Upgrades aus?
+          url: "/sm-support/how-do-i-choose-which-type-of-upgrade-to-perform.html"
+  - title: Unified Manager
+    url: "/unified-manager/index.html"
+    entries:
+    - title: Hauptschnittstelle
+      entries:
+      - title: Übersicht über die Unified Manager Schnittstelle
+        url: "/um-admin/overview-interface-unified.html"
+      - title: Unterstützte Browser
+        url: "/um-admin/supported-browsers-unified.html"
+      - title: Legen Sie den Schutz des Admin-Passworts fest
+        url: "/um-admin/administrator-password-protection-unified.html"
+      - title: Ändern Sie das Admin-Passwort
+        url: "/um-admin/change-admin-password-unified.html"
+      - title: Verwalten von Sitzungszeitungen
+        url: "/um-admin/manage-session-timeouts-unified.html"
+    - title: Storage-Arrays durchführt
+      entries:
+      - title: Überblick
+        url: "/um-manage/overview-storage-arrays.html"
+      - title: Konzepte
+        entries:
+        - title: Überlegungen bei der Array-Ermittlung
+          url: "/um-manage/considerations-for-discovering-arrays.html"
+        - title: Überlegungen für den Zugriff auf System Manager
+          url: "/um-manage/launch-considerations.html"
+      - title: Arrays erkennen
+        entries:
+        - title: Erkennung mehrerer Storage-Arrays
+          url: "/um-manage/discover-multiple-arrays.html"
+        - title: Erkennen Sie ein einzelnes Array
+          url: "/um-manage/discover-single-array.html"
+      - title: Management von Arrays
+        entries:
+        - title: Anzeigen des Array-Status
+          url: "/um-manage/storage-array-status.html"
+        - title: Starten Sie System Manager
+          url: "/um-manage/launch-system-manager.html"
+        - title: Array-Passwörter ändern
+          url: "/um-admin/change-storage-array-passwords.html"
+        - title: Entfernen Sie Arrays aus der Ansicht
+          url: "/um-manage/remove-storage-array.html"
+    - title: Einstellungen werden importiert
+      entries:
+      - title: Überblick
+        url: "/um-manage/overview-import-settings.html"
+      - title: Konzepte
+        entries:
+        - title: Funktionsweise der Importeinstellungen
+          url: "/um-manage/how-import-settings-works.html"
+        - title: Anforderungen für die Replizierung von Storage-Konfigurationen
+          url: "/um-manage/requirements-for-replicating-storage-configurations.html"
+      - title: Verwenden Sie Batch-Importe
+        entries:
+        - title: Warnungseinstellungen importieren
+          url: "/um-manage/import-alert-settings.html"
+        - title: AutoSupport-Einstellungen importieren
+          url: "/um-manage/import-autosupport-settings.html"
+        - title: Einstellungen für Verzeichnisdienste importieren
+          url: "/um-manage/import-directory-services-settings.html"
+        - title: Systemeinstellungen importieren
+          url: "/um-manage/import-system-settings.html"
+        - title: Importieren der Speicherkonfigurationseinstellungen
+          url: "/um-manage/import-storage-configuration-settings.html"
+      - title: FAQs
+        entries:
+        - title: Welche Einstellungen werden importiert?
+          url: "/um-manage/what-settings-will-be-imported.html"
+        - title: Warum sehe ich nicht all meine Storage Arrays?
+          url: "/um-manage/why-dont-i-see-all-of-my-storage-arrays.html"
+    - title: Array-Gruppen
+      entries:
+      - title: Überblick
+        url: "/um-manage/overview-manage-groups.html"
+      - title: Gruppen konfigurieren
+        url: "/um-manage/create-storage-array-group.html"
+      - title: Entfernen Sie Arrays aus der Gruppe
+        url: "/um-manage/remove-storage-arrays-from-group.html"
+      - title: Gruppe löschen
+        url: "/um-manage/delete-storage-array-group.html"
+      - title: Gruppe umbenennen
+        url: "/um-manage/rename-storage-array-group.html"
+    - title: Upgrades
+      entries:
+      - title: Überblick
+        url: "/um-manage/overview-upgrade-center-um.html"
+      - title: Aktualisieren von Software und Firmware
+        entries:
+        - title: Führen Sie eine Integritätsprüfung vor dem Upgrade durch
+          url: "/um-manage/perform-pre-upgrade-health-check.html"
+        - title: Upgrade von SANtricity OS
+          url: "/um-manage/upgrade-controller-firmware.html"
+        - title: Aktivieren Sie die stufenweise Betriebssystemsoftware
+          url: "/um-manage/activate-pending-firmware.html"
+        - title: Software-Repository managen
+          url: "/um-manage/manage-repository.html"
+        - title: Software für das überstaltete Betriebssystem löschen
+          url: "/um-manage/clear-staged-os-software.html"
+    - title: Spiegelung
+      entries:
+      - title: Überblick
+        url: "/um-manage/overview-mirroring-um.html"
+      - title: Konzepte
+        entries:
+        - title: Funktionsweise von Spiegelung
+          url: "/um-manage/mirroring-overview.html"
+        - title: Konfigurationsworkflow
+          url: "/um-manage/mirroring-configuration-workflow.html"
+        - title: Bedingungen
+          url: "/um-manage/mirroring-terminology.html"
+        - title: Anforderungen
+          url: "/um-manage/requirements-for-using-mirroring.html"
+      - title: Konfigurieren Sie die Spiegelung
+        entries:
+        - title: Erstellen eines asynchronen gespiegelten Paares
+          url: "/um-manage/create-asynchronous-mirrored-pair-um.html"
+        - title: Erstellen eines synchronen gespiegelten Paares
+          url: "/um-manage/create-synchronous-mirrored-pair-um.html"
+      - title: FAQs
+        entries:
+        - title: Was muss ich wissen, bevor ich eine gespiegelte Konsistenzgruppe
+            erstellt?
+          url: "/um-manage/what-do-i-need-to-know-before-creating-a-mirror-consistency-group-um.html"
+        - title: Was muss ich vor der Erstellung eines gespiegelten Paares wissen?
+          url: "/um-manage/what-do-i-need-to-know-before-creating-a-mirrored-pair-um.html"
+        - title: Warum sollte ich diesen Prozentsatz ändern?
+          url: "/um-manage/why-would-i-change-this-percentage-um.html"
+        - title: Warum kann ich mehr als einen Kandidaten für reservierte Kapazität
+            sehen?
+          url: "/um-manage/why-do-i-see-more-than-one-reserved-capacity-candidate-um.html"
+        - title: Warum sehe ich nicht alle meine Bände?
+          url: "/um-manage/why-dont-i-see-all-my-volumes-um.html"
+        - title: Warum sehe ich nicht alle Volumes auf dem Remote-Speicher-Array?
+          url: "/um-manage/why-dont-i-see-all-the-volumes-on-the-remote-storage-array-um.html"
+        - title: Welche Auswirkungen hat die Synchronisierungspriorität auf die Synchronisierungsraten?
+          url: "/um-manage/what-impact-does-synchronization-priority-have-on-synchronization-rates-um.html"
+        - title: Warum wird empfohlen, eine manuelle Synchronisierungsrichtlinie zu
+            verwenden?
+          url: "/um-manage/why-is-it-recommended-to-use-a-manual-synchronization-policy-um.html"
+    - title: Zertifikate
+      entries:
+      - title: Überblick
+        url: "/um-certificates/overview-certificates-um.html"
+      - title: Konzepte
+        entries:
+        - title: Funktionsweise von Zertifikaten
+          url: "/um-certificates/how-certificates-work-unified.html"
+        - title: Bedingungen
+          url: "/um-certificates/certificate-terminology-unified.html"
+      - title: Verwenden Sie Management-Host-Zertifikate
+        url: "/um-certificates/use-ca-signed-certificate-um.html"
+      - title: Managementzertifikate zurücksetzen
+        url: "/um-certificates/reset-management-certificates-unified.html"
+      - title: Verwenden Sie Array-Zertifikate
+        entries:
+        - title: Importieren Sie Zertifikate für Arrays
+          url: "/um-certificates/import-array-certificates-unified.html"
+        - title: Vertrauenswürdige Zertifikate löschen
+          url: "/um-certificates/delete-trusted-certificates-unified.html"
+        - title: Lösen Sie nicht vertrauenswürdige Zertifikate
+          url: "/um-certificates/resolve-untrusted-certificates-certificate-page.html"
+      - title: Verwalten von Zertifikaten
+        entries:
+        - title: Anzeigen von Zertifikaten
+          url: "/um-certificates/view-certificates-unified.html"
+        - title: Exportieren von Zertifikaten
+          url: "/um-certificates/export-certificates-unified.html"
+    - title: Zugriffsmanagement
+      entries:
+      - title: Überblick
+        url: "/um-certificates/overview-access-management-um.html"
+      - title: Konzepte
+        entries:
+        - title: Funktionsweise von Access Management
+          url: "/um-certificates/how-access-management-works-unified.html"
+        - title: Bedingungen
+          url: "/um-certificates/access-management-terminology-unified.html"
+        - title: Berechtigungen für zugeordnete Rollen
+          url: "/um-certificates/permissions-for-mapped-roles-unified.html"
+        - title: Lokale Benutzerrollen
+          url: "/um-certificates/access-management-with-local-user-roles-unified.html"
+        - title: Verzeichnisdienste
+          url: "/um-certificates/access-management-with-directory-services-unified.html"
+      - title: Lokale Benutzerrollen verwenden
+        entries:
+        - title: Zeigen Sie lokale Benutzerrollen an
+          url: "/um-certificates/view-local-user-roles-unified.html"
+        - title: Passwörter ändern
+          url: "/um-certificates/change-passwords-unified.html"
+        - title: Ändern Sie die Einstellungen für das lokale Benutzerpasswort
+          url: "/um-certificates/change-local-user-passwords-settings-unified.html"
+      - title: Verzeichnisdienste verwenden
+        entries:
+        - title: Verzeichnisserver hinzufügen
+          url: "/um-certificates/add-directory-server-unified.html"
+        - title: Bearbeiten Sie die Einstellungen des Verzeichnisservers und die Rollenzuordnungen
+          url: "/um-certificates/edit-directory-server-settings-unified.html"
+        - title: Verzeichnisserver entfernen
+          url: "/um-certificates/remove-directory-server-unified.html"
+      - title: FAQs
+        entries:
+        - title: Warum kann ich mich nicht anmelden?
+          url: "/um-certificates/why-cant-i-log-in-unified.html"
+        - title: Was muss ich vor dem Hinzufügen eines Verzeichnisservers wissen?
+          url: "/um-certificates/what-do-i-need-to-know-before-adding-a-directory-server-unified.html"
+        - title: Was muss ich über die Zuordnung von Speicher-Array-Rollen wissen?
+          url: "/um-certificates/what-do-i-need-to-know-about-mapping-storage-array-roles-unified.html"
+        - title: Welche lokalen Benutzer gibt es?
+          url: "/um-certificates/what-are-the-local-users.html"
+  - title: Frühere Versionen
+    url: "/early-versions.html"
+  - title: Rechtliche Hinweise
+    url: "/legal-notices.html"
+product-family:
+  name: E-Series
+  repo: e-series-family

@@ -1,0 +1,72 @@
+---
+permalink: sm-hardware/hardware-page-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hardware, page, components, 
+summary: Die Seite Hardware bietet eine grafische Darstellung der physischen Komponenten des Speicherarrays. Hier können Sie den Komponentenstatus prüfen und einige Funktionen ausführen, die mit diesen Komponenten zusammenhängen. 
+---
+= Hardwareseiten und -Komponenten
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Seite Hardware bietet eine grafische Darstellung der physischen Komponenten des Storage Arrays. Hier können Sie den Komponentenstatus prüfen und einige Funktionen ausführen, die mit diesen Komponenten zusammenhängen.
+
+
+
+== Shelfs
+
+Ein Shelf ist eine Komponente, die die Hardware für das Storage-Array enthält (Controller, Strom-/Lüfterbehälter und Laufwerke). Es gibt zwei Arten von Shelfs:
+
+* *Controller-Regal* -- enthält die Laufwerke, Power/Fan-Kanister und Controller.
+* *Laufwerk-Shelf* (oder *Erweiterungs-Shelf*) -- enthält Laufwerke, Strom-/Lüfterbehälter und zwei Eingangs-/Ausgangsmodule (IOMs). Die IOMs, auch als Environmental Service Modules (ESMs) bekannt, umfassen SAS-Ports, die das Festplatten-Shelf mit dem Controller-Shelf verbinden.
+
+
+Die Einlegeböden sind in drei Größen für Gehäuse mit bis zu 12, 24 oder 60 Laufwerken erhältlich. Jedes Shelf enthält eine ID-Nummer, die von der Controller-Firmware zugewiesen wird. Die ID wird oben links in der Shelf-Ansicht angezeigt.
+
+In der Shelf-Ansicht auf der Seite Hardware werden die Komponenten vorne oder hinten angezeigt. Sie können zwischen den beiden Ansichten wechseln, indem Sie entweder *Rückseite des Regals* oder *Vorderseite des Regals anzeigen* aus der oberen rechten Seite der Regalansicht auswählen. Sie können auch *Alle anzeigen* oder *Alle anzeigen* von unten auf der Seite auswählen. Die Vorder- und Rückseite zeigen Folgendes:
+
+* *Front Components* -- Laufwerke und leere Laufwerksschächte.
+* *Back Components* -- Controller und Power/Fan Kanister (für Controller-Shelves) oder die IOMs und Power/Fan Kanister (für Laufwerk-Shelfs).
+
+
+Sie können die folgenden Funktionen in Bezug auf die Shelves ausführen:
+
+* Schalten Sie die Positionsleuchte des Shelfs ein, sodass Sie die physische Position des Shelfs im Schrank oder Rack finden können.
+* Ändern Sie die ID-Nummer, die oben links in der Shelf-Ansicht angezeigt wird.
+* Zeigen Sie die Shelf-Einstellungen an, z. B. die Typen installierter Laufwerke und die Seriennummer.
+* Verschieben Sie die Shelf-Ansichten nach oben oder unten, um das physische Layout im Storage-Array zu entsprechen.
+
+
+
+
+== Controller
+
+Ein Controller ist die kombinierte Hardware und Firmware, die Storage-Array- und Managementfunktionen implementiert. Sie umfasst Cache-Speicher, Laufwerksunterstützung und Host-Interface-Unterstützung.
+
+Sie können die folgenden Funktionen für Controller ausführen:
+
+* Konfigurieren Sie die Management-Ports für IP-Adressen und Geschwindigkeit.
+* Konfigurieren Sie iSCSI-Hostverbindungen (wenn iSCSI-Hosts vorhanden sind).
+* Konfigurieren Sie einen NTP-Server (Network Time Protocol) und einen DNS-Server (Domain Name System).
+* Zeigen Sie den Controller-Status und die -Einstellungen an.
+* Benutzern außerhalb des lokalen Netzwerks ermöglichen, eine SSH-Sitzung zu starten und die Einstellungen auf dem Controller zu ändern.
+* Platzieren Sie den Controller offline, online oder in Servicemodus.
+
+
+
+
+== Laufwerke
+
+Das Storage-Array kann Festplattenlaufwerke (HDDs) oder Solid State-Laufwerke (SSDs) umfassen. Je nach Shelf-Größe können bis zu 12, 24 oder 60 Laufwerke im Shelf installiert werden.
+
+Sie können die folgenden Funktionen im Zusammenhang mit Laufwerken ausführen:
+
+* Schalten Sie die Positionsleuchte des Laufwerks ein, damit Sie den physischen Speicherort des Laufwerks im Shelf finden können.
+* Zeigen Sie den Laufwerkstatus und die Einstellungen an.
+* Weisen Sie ein Laufwerk erneut zu (ersetzen Sie ein ausgefallenes Laufwerk durch ein nicht zugewiesenes Laufwerk logisch), und rekonstruieren Sie es bei Bedarf manuell.
+* Ein Laufwerk kann manuell ausfallen, sodass Sie es ersetzen können. (Wenn ein Laufwerk ausfällt, können Sie den Inhalt des Laufwerks kopieren, bevor Sie es ersetzen.)
+* Zuweisung oder Zuweisung von Hot Spares
+* Laufwerke löschen.
+

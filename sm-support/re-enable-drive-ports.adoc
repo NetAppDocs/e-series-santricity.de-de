@@ -1,0 +1,26 @@
+---
+permalink: sm-support/re-enable-drive-ports.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, re-enable, drive, ports 
+summary: Sie können dem Controller anzeigen, dass zur Wiederherstellung einer Fehldrahtbedingung Korrekturmaßnahmen ergriffen wurden. 
+---
+= Aktivieren Sie die Laufwerksanschlüsse neu
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können dem Controller anzeigen, dass zur Wiederherstellung einer Fehldrahtbedingung Korrekturmaßnahmen ergriffen wurden.
+
+.Schritte
+. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie *Laufwerksanschlüsse wieder aktivieren* aus, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
++
+Diese Option wird nur angezeigt, wenn im Speicher-Array Laufwerkanschlüsse deaktiviert sind.
+
++
+Der Controller aktiviert alle SAS-Ports, die bei Erkennung einer Fehlleitung deaktiviert wurden.
+
+

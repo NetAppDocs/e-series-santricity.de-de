@@ -1,0 +1,42 @@
+---
+permalink: sm-mirroring/change-mirror-consistency-group-role-to-primary-or-secondary.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, mirror, consistency group, primary, secondary 
+summary: Sie können die Rolle zwischen gespiegelten Konsistenzgruppen für administrative Zwecke oder im Falle einer Störung im lokalen Speicher-Array ändern. 
+---
+= Ändern Sie die Rolle der gespiegelten Consistency Group auf primär oder sekundär
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Rolle zwischen gespiegelten Konsistenzgruppen für administrative Zwecke oder im Falle einer Störung im lokalen Speicher-Array ändern.
+
+Die primäre Rolle wird durch Spiegelkonsistency Groups, die auf dem lokalen Speicher-Array erstellt wurden, übernommen. Spiegelung von auf dem Remote-Speicher-Array erstellten Konsistenzgruppen enthalten die sekundäre Rolle. Sie können die Konsistenzgruppe der lokalen Spiegelung auf eine sekundäre Rolle herabstufen oder die Consistency Group für Remote-Spiegelungen auf eine primäre Rolle hochstufen.
+
+.Schritte
+. Wählen Sie Menü:Speicher[Asynchronous Mirroring].
+. Wählen Sie die Registerkarte * Consistency Groups spiegeln* aus.
++
+Die Tabelle Mirror Consistency Group wird angezeigt und zeigt alle dem Speicher-Array zugeordneten Spiegelkonsistency Groups an.
+
+. Wählen Sie die Consistency Mirror-Gruppe aus, für die Sie die Rolle ändern möchten, und wählen Sie dann Menü:Mehr[Rolle ändern in <Primär > Sekundär>]*>*.
++
+Das System zeigt eine Bestätigung an.
+
+. Bestätigen Sie, dass Sie die Rolle der Consistency Mirror-Gruppe ändern möchten, und klicken Sie dann auf *Rolle ändern*.
++
+[NOTE]
+====
+Das Dialogfeld „Speicher-Array nicht kontaktieren“ wird angezeigt, wenn eine Rollenänderung angefordert wird, aber das Remote-Speicher-Array kann nicht kontaktiert werden. Klicken Sie auf *Ja*, um die Rollenänderung zu erzwingen.
+
+====
+
+
+System Manager führt die folgenden Aktionen durch:
+
+* In der Tabelle Mirror Consistency Group wird neben der SpiegelConsistency Group, die die Rollenänderung durchläuft, der Status „ausstehend“ oder „in Bearbeitung“ angezeigt. Sie können einen ausstehenden Rollenänderungsvorgang abbrechen, indem Sie auf den Link *Abbrechen* in der Tabellenzelle klicken.
+* Wenn die zugehörige gespiegelte Konsistenzgruppe kontaktiert werden kann, ändern sich die Rollen zwischen den Konsistenzgruppen für die Spiegelung. System Manager unterstützt die Konsistenzgruppe der sekundären Spiegelung auf eine primäre Rolle oder stuft die Konsistenzgruppe der primären Spiegelung auf eine sekundäre Rolle ein (abhängig von Ihrer Auswahl). Die Rollenänderung betrifft alle gespiegelten Paare innerhalb der ausgewählten SpiegelConsistency Group.
+

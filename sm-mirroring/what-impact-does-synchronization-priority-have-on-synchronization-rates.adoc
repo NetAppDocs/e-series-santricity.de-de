@@ -1,0 +1,68 @@
+---
+permalink: sm-mirroring/what-impact-does-synchronization-priority-have-on-synchronization-rates.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronization, priority, rates, 
+summary: Die Synchronisierungspriorität definiert, wie viel Verarbeitungszeit für Synchronisierungsaktivitäten im Verhältnis zur Systemleistung zugewiesen wird. 
+---
+= Welche Auswirkungen hat die Synchronisierungspriorität auf die Synchronisierungsraten?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Synchronisierungspriorität definiert, wie viel Verarbeitungszeit für Synchronisierungsaktivitäten im Verhältnis zur Systemleistung zugewiesen wird.
+
+Der Controller-Eigentümer des primären Volume führt diesen Vorgang im Hintergrund durch. Gleichzeitig verarbeitet der Controller-Inhaber lokale I/O-Schreibvorgänge auf das primäre Volume und verbundene Remote-Schreibvorgänge auf das sekundäre Volume. Da durch die Resynchronisierung der Controller-Verarbeitungsressourcen von der I/O-Aktivität umgeleitet werden, kann eine Neusynchronisierung die Performance der Host-Applikation nach sich ziehen.
+
+Beachten Sie diese Richtlinien, um zu ermitteln, wie lange eine Synchronisierungspriorität dauern könnte und wie sich die Synchronisierungsprioritäten auf die Systemleistung auswirken können.
+
+.Allgemeines zu Prioritätsraten für die Synchronisierung
+====
+Diese Prioritätsraten sind verfügbar:
+
+* Am Niedrigsten
+* Niedrig
+* Mittel
+* Hoch
+* Höchste
+
+
+Die niedrigste Prioritätsrate unterstützt die System-Performance, die Neusynchronisierung dauert jedoch länger. Die höchste Prioritätsrate unterstützt eine Neusynchronisierung, aber die System-Performance ist möglicherweise beeinträchtigt.
+
+====
+Diese Leitlinien entsprechen ungefähr den Unterschieden zwischen den Prioritäten.
+
+[cols="35h,~"]
+|===
+| Prioritätsrate für vollständige Synchronisierung | Verstrichene Zeit im Vergleich zur höchsten Synchronisationsrate 
+
+
+ a| 
+Am Niedrigsten
+ a| 
+Etwa achtmal so lange wie bei der höchsten Prioritätsrate.
+
+
+
+ a| 
+Niedrig
+ a| 
+Etwa sechsmal so lange wie bei der höchsten Prioritätsrate.
+
+
+
+ a| 
+Mittel
+ a| 
+Etwa dreieinhalb Mal so lang wie bei der höchsten Prioritätsrate.
+
+
+
+ a| 
+Hoch
+ a| 
+Etwa doppelt so lange wie bei der höchsten Prioritätsrate.
+
+|===
+Volume-Größe und Host-I/O-Rate-Lasten wirken sich auf den Vergleich der Synchronisierungszeit aus.

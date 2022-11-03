@@ -1,0 +1,55 @@
+---
+permalink: sm-mirroring/change-synchronization-settings-for-a-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, synchronization, settings, mirrored, pair, 
+summary: Sie können die Synchronisierungspriorität und die Resynchronisierungsrichtlinie ändern, die das gespiegelte Paar verwendet, um die Neusynchronisierung nach einer Kommunikationsunterbrechung abzuschließen. 
+---
+= Ändern Sie die Synchronisierungseinstellungen für ein gespiegeltes Paar
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die Synchronisierungspriorität und die Resynchronisierungsrichtlinie ändern, die das gespiegelte Paar verwendet, um die Neusynchronisierung nach einer Kommunikationsunterbrechung abzuschließen.
+
+Sie können die Synchronisierungseinstellungen für ein gespiegeltes Paar nur auf dem Speicher-Array bearbeiten, das das primäre Volume enthält.
+
+.Schritte
+. Wählen Sie Menü:Speicher[Synchronous Mirroring].
+. Wählen Sie das gespiegelte Paar aus, das Sie bearbeiten möchten, und wählen Sie dann Menü:Mehr[Einstellungen bearbeiten].
++
+Das Dialogfeld Einstellungen anzeigen/bearbeiten wird angezeigt.
+
+. Verwenden Sie den Schieberegler, um die Synchronisationspriorität zu bearbeiten.
++
+Die Synchronisierungspriorität legt fest, wie viele der Systemressourcen verwendet werden, um den Neusynchronisierung nach einer Kommunikationsunterbrechung im Vergleich zu Service-I/O-Anfragen abzuschließen.
+
++
+.Mehr zu Synchronisierungsraten
+====
+Es gibt fünf Prioritätsraten für die Synchronisierung:
+
+** Am Niedrigsten
+** Niedrig
+** Mittel
+** Hoch
+** Höchste
+
+
+====
++
+Wenn die Synchronisierungspriorität auf die niedrigste Rate eingestellt ist, wird die I/O-Aktivität priorisiert und die Neusynchronisierung dauert länger. Wenn die Synchronisierungspriorität auf die höchste Rate festgelegt ist, wird der Neusynchronisierung nach Priorität geordnet, aber die I/O-Aktivität für das Speicher-Array ist möglicherweise betroffen.
+
+. Bearbeiten Sie die Resynchronisierung-Richtlinie nach Bedarf.
++
+Sie können die gespiegelten Paare auf dem Remote-Speicher-Array entweder manuell oder automatisch neu synchronisieren.
+
++
+** *Manuell* (die empfohlene Option) -- Wählen Sie diese Option aus, damit die Synchronisierung manuell fortgesetzt werden muss, nachdem die Kommunikation auf einem gespiegelten Paar wiederhergestellt wurde. Diese Option bietet die beste Möglichkeit für die Wiederherstellung von Daten.
+** *Automatisch* -- Wählen Sie diese Option, um die Neusynchronisierung automatisch zu starten, nachdem die Kommunikation auf einem gespiegelten Paar wiederhergestellt wurde.
+
+
+. Wählen Sie *Speichern*.
+

@@ -1,0 +1,35 @@
+---
+permalink: sm-settings/edit-alert-email-addresses.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, email, addresses, alerts, 
+summary: Sie können die E-Mail-Adressen der Empfänger, die E-Mail-Benachrichtigungen erhalten, ändern. 
+---
+= E-Mail-Adressen für Warnmeldungen bearbeiten
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die E-Mail-Adressen der Empfänger, die E-Mail-Benachrichtigungen erhalten, ändern.
+
+Die E-Mail-Adresse, die Sie bearbeiten möchten, muss auf der Registerkarte „E-Mail“ der Seite „Benachrichtigungen“ definiert sein.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[Alarme].
+. Wählen Sie die Registerkarte *E-Mail* aus.
+. Wählen Sie in der Tabelle *E-Mail-Adresse* die Adresse aus, die Sie ändern möchten, und klicken Sie dann rechts auf das Symbol *Bearbeiten* (Bleistift).
++
+Die Zeile wird zu einem bearbeitbaren Feld.
+
+. Geben Sie eine neue Adresse ein, und klicken Sie auf das Symbol *Speichern* (Häkchen).
++
+[NOTE]
+====
+Wenn Sie die Änderungen abbrechen möchten, wählen Sie das Symbol *Abbrechen* (X).
+
+====
+
+
+Auf der Registerkarte „E-Mail“ der Seite „Meldungen“ werden die aktualisierten E-Mail-Adressen angezeigt.

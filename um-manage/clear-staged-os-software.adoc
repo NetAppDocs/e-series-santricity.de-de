@@ -1,0 +1,28 @@
+---
+permalink: um-manage/clear-staged-os-software.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, clear, staged, os, software 
+summary: Sie können die stufenweise Betriebssystemsoftware entfernen, um sicherzustellen, dass eine ausstehende Version zu einem späteren Zeitpunkt nicht versehentlich aktiviert wird. Das Entfernen der stufenweisen Betriebssystemsoftware hat keine Auswirkungen auf die aktuelle Version, die auf den Speicher-Arrays ausgeführt wird. 
+---
+= Software für das überstaltete Betriebssystem löschen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sie können die stufenweise Betriebssystemsoftware entfernen, um sicherzustellen, dass eine ausstehende Version zu einem späteren Zeitpunkt nicht versehentlich aktiviert wird. Das Entfernen der stufenweisen Betriebssystemsoftware hat keine Auswirkungen auf die aktuelle Version, die auf den Speicher-Arrays ausgeführt wird.
+
+.Schritte
+. Wählen Sie in der Hauptansicht *Verwalten* und dann Menü:Upgrade Center[Staged OS Software löschen].
++
+Das Dialogfeld „Staged OS Software löschen“ wird geöffnet und listet alle erkannten Speichersysteme mit ausstehender Software oder NVSRAM auf.
+
+. Filtern oder sortieren Sie die Speichersysteme in der Liste, falls erforderlich, so dass Sie alle Systeme mit stufenweise Software anzeigen können.
+. Aktivieren Sie die Kontrollkästchen für die Speichersysteme mit ausstehender Software, die Sie löschen möchten.
+. Klicken Sie Auf *Löschen*.
++
+Der Status des Vorgangs wird im Dialogfeld angezeigt.
+
+

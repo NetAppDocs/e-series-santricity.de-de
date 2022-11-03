@@ -1,0 +1,18 @@
+---
+permalink: sm-storage/what-is-preferred-controller-ownership.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, preferred, controller, ownership 
+summary: Der bevorzugte Controller-Besitz definiert den Controller, der als Eigentümer des Volume oder als primärer Controller bestimmt ist. 
+---
+= Was ist Ihre bevorzugte Controller-Inhaberschaft?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Der bevorzugte Controller-Besitz definiert den Controller, der als Eigentümer des Volume oder als primärer Controller bestimmt ist.
+
+Die Eigentümerschaft der Controller ist sehr wichtig und sollte sorgfältig geplant werden. Controller sollten für eine GesamtI/OS so eng wie möglich ausgeglichen werden.
+
+Wenn ein Controller beispielsweise in erster Linie große, sequenzielle Datenblöcke liest und der andere Controller kleine Datenblöcke mit häufigen Lese- und Schreibvorgängen hat, unterscheiden sich die Lasten sehr. Wenn Sie wissen, welche Volumes welche Art von Daten enthalten, können Sie I/O-Transfers gleichmäßig über beide Controller verteilen.

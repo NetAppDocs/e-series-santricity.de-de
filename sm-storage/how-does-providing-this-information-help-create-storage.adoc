@@ -1,0 +1,20 @@
+---
+permalink: sm-storage/how-does-providing-this-information-help-create-storage.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, workload 
+summary: Die Workload-Informationen werden verwendet, um die Volume-Merkmale wie I/O-Typ, Segmentgröße und Lese-/Schreib-Cache für den ausgewählten Workload zu optimieren. Diese optimierten Eigenschaften bestimmen, wie Ihr Workload mit den Storage Array-Komponenten interagiert. 
+---
+= Wie können durch die Bereitstellung dieser Informationen Speicher erstellt werden?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Die Workload-Informationen werden verwendet, um die Volume-Merkmale wie I/O-Typ, Segmentgröße und Lese-/Schreib-Cache für den ausgewählten Workload zu optimieren. Diese optimierten Eigenschaften bestimmen, wie Ihr Workload mit den Storage Array-Komponenten interagiert.
+
+Basierend auf den von Ihnen bereitgestellten Workload-Informationen erstellt der System Manager die entsprechenden Volumes und platziert sie in den verfügbaren Pools oder Volume-Gruppen, die derzeit im System vorhanden sind. Das System erstellt die Volumes und optimiert ihre Eigenschaften auf Grundlage der aktuellen Best Practices für den ausgewählten Workload.
+
+Bevor Sie das Erstellen von Volumes für einen bestimmten Workload abgeschlossen haben, können Sie die empfohlene Volume-Konfiguration prüfen und im Dialogfeld Volumes und -Eigenschaften hinzufügen/bearbeiten, hinzufügen oder löschen, die vom System empfohlen werden.
+
+Informationen zu Best Practices finden Sie in Ihrer anwendungsspezifischen Dokumentation.
