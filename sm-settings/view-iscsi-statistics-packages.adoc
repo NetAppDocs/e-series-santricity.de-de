@@ -14,6 +14,7 @@ summary: Sie können Daten über die iSCSI-Verbindungen zu Ihrem Speicher-Array 
 [role="lead"]
 Sie können Daten über die iSCSI-Verbindungen zu Ihrem Speicher-Array anzeigen.
 
+.Über diese Aufgabe
 System Manager zeigt diese Typen von iSCSI-Statistiken. Alle Statistiken sind schreibgeschützt und können nicht festgelegt werden.
 
 * *Ethernet MAC Statistics* -- stellt Statistiken für die Media Access Control (MAC) bereit. MAC bietet auch einen Adressierungsmechanismus, der als physische Adresse oder MAC-Adresse bezeichnet wird. Die MAC-Adresse ist eine eindeutige Adresse, die jedem Netzwerkadapter zugewiesen wird. Die MAC-Adresse unterstützt die Übertragung von Datenpaketen an ein Ziel innerhalb des Subnetzwerks.
@@ -45,6 +46,7 @@ In den folgenden Abschnitten finden Sie weitere Informationen zu den verschieden
 Wenn Sie Ethernet-MAC-Statistiken auswählen, werden sowohl die Empfangs- als auch die Sendestatistiken angezeigt. Sie können jede dieser Statistiken als RAW-Statistiken oder als Baseline-Statistiken anzeigen.
 
 .Statistiken FÜR MAC übertragen:
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -157,6 +159,7 @@ Anzahl Jumbo-Frames
 |===
 ====
 .MAC erhält Statistiken:
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -275,6 +278,7 @@ Fehleranzahl bei der Carrier-Sense
 Wenn Sie Ethernet TCP/IP-Statistiken auswählen, werden sowohl die TCP- als auch die IP-Statistiken angezeigt. Sie können jede dieser Statistiken als RAW-Statistiken oder als Baseline-Statistiken anzeigen.
 
 .Ethernet TCP-Statistik:
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -373,6 +377,7 @@ Anzahl der empfangenen Fensteraktualisierungen
 |===
 ====
 .Ethernet-IP-Statistiken:
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -463,6 +468,7 @@ Fehler beim erneuten Zusammenbau des Datagramms, Anzahl der Auszeiten
 Wenn Sie Zielstatistiken (Protokoll) oder Statistiken des lokalen Initiators (Protokoll) auswählen, werden die iSCSI-Statistiken angezeigt. Sie können jede dieser Statistiken als RAW-Statistiken oder als Baseline-Statistiken anzeigen.
 
 .ISCSI-Statistik:
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -546,6 +552,7 @@ Unerwartete Anzahl der Beendigung der iSCSI-Verbindung
 Wenn Sie Data Center Bridging Exchange (DCBX) Operational State Statistics auswählen, werden die DCBX-Statistiken angezeigt.
 
 .DCBX-Statistik:
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -604,6 +611,7 @@ NOTE: Weitere Statistiken zum Betriebsstatus von DCBX finden Sie in der Statuser
 Wenn Sie „LLDP“ (Link Layer Discovery Protocol) Type Length Value (TLV) Statistics auswählen, werden zwei Statistiken angezeigt: Eine für das lokale Gerät und eine für das Remote-Gerät. Das lokale Gerät bezieht sich auf den Controller. Das Remote-Gerät bezieht sich auf das Peer-Gerät, an das der Controller angeschlossen ist, normalerweise auf einen Switch.
 
 .LLDP-TLV-Statistiken:
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -667,6 +675,7 @@ Wenn Sie Data Center Bridging Exchange (DCBX) Type Length Value (TLV) Statistics
 
 
 .DCBX TLV-Statistiken:
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

@@ -14,6 +14,7 @@ summary: Heben Sie die Zuweisung von Volumes von Hosts oder Host Clustern auf, w
 [role="lead"]
 Heben Sie die Zuweisung von Volumes von Hosts oder Host Clustern auf, wenn Sie keinen I/O-Zugriff mehr vom Host oder Host-Cluster auf dieses Volume benötigen.
 
+.Über diese Aufgabe
 Beachten Sie bei der Zuweisung von Volumes die folgenden Richtlinien:
 
 * Wenn Sie das zuletzt zugewiesene Volume aus einem Host-Cluster entfernen und zudem über Hosts mit spezifischen zugewiesenen Volumes verfügen, stellen Sie sicher, dass Sie diese Zuweisungen entfernen oder verschieben, bevor Sie die letzte Zuweisung für den Host-Cluster entfernen.

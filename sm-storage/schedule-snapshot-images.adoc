@@ -14,8 +14,10 @@ summary: Sie erstellen einen Snapshot-Zeitplan, um die Recovery bei Problemen mi
 [role="lead"]
 Sie erstellen einen Snapshot-Zeitplan, um die Recovery bei Problemen mit dem Basis-Volume zu ermöglichen und geplante Backups durchzuführen. Snapshots von Basis-Volumes oder Snapshot-Konsistenzgruppen können täglich, wöchentlich oder monatlich erstellt werden, zu jeder Tageszeit.
 
+.Bevor Sie beginnen
 Das Basis-Volume muss optimal sein.
 
+.Über diese Aufgabe
 In dieser Aufgabe wird beschrieben, wie ein Snapshot-Zeitplan für eine vorhandene Snapshot-Konsistenzgruppe oder das Basis-Volume erstellt wird.
 
 [NOTE]
@@ -54,6 +56,7 @@ Klicken Sie im oberen rechten Bereich des Dialogfelds auf *Weitere Optionen anze
 
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -173,6 +176,7 @@ Das Dialogfeld Einstellungen bearbeiten wird angezeigt.
 . Bearbeiten Sie die Einstellungen für den Snapshot-Zeitplan nach Bedarf und klicken Sie dann auf *Fertig stellen*.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

@@ -14,6 +14,7 @@ summary: Sie erstellen ein Host-Cluster, wenn zwei oder mehr Hosts I/O-Zugriff a
 [role="lead"]
 Sie erstellen ein Host-Cluster, wenn zwei oder mehr Hosts I/O-Zugriff auf dieselben Volumes benötigen.
 
+.Über diese Aufgabe
 Beachten Sie beim Erstellen eines Host-Clusters die folgenden Richtlinien:
 
 * Dieser Vorgang startet nicht, wenn zum Erstellen des Clusters zwei oder mehr Hosts zur Verfügung stehen.
@@ -36,6 +37,7 @@ Das Dialogfeld Host-Cluster erstellen wird angezeigt.
 . Wählen Sie die entsprechenden Einstellungen für den Host-Cluster aus.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -65,4 +67,5 @@ DA erhöht die Datenintegrität im gesamten Storage-System. DA ermöglicht es de
 
 
 
+.Ergebnisse
 Der neue Hostcluster wird in der Tabelle mit den zugewiesenen Hosts in den Zeilen darunter angezeigt.

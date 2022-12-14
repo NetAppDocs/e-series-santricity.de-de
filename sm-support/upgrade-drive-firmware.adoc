@@ -79,6 +79,7 @@ Die Datei wird im Ordner Downloads für Ihren Browser mit dem Namen gespeichert 
 
 
 .Fehler und empfohlene Aktionen
+[%collapsible]
 ====
 [cols="40h,~"]
 |===
@@ -197,4 +198,5 @@ Wenden Sie sich an den technischen Support, um dieses Problem zu lösen.
 
 |===
 ====
+.Nachdem Sie fertig sind
 Die Aktualisierung der Laufwerk-Firmware ist abgeschlossen. Sie können den normalen Betrieb fortsetzen.

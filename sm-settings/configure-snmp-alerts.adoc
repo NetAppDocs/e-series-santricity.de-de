@@ -32,6 +32,7 @@ Wenn Sie nicht über die MIB-Datei, können Sie sie von der NetApp Support-Websi
 
 
 
+.Über diese Aufgabe
 Diese Aufgabe beschreibt, wie Sie den SNMP-Server für Trap-Ziele identifizieren und anschließend Ihre Konfiguration testen.
 
 .Schritte
@@ -75,4 +76,5 @@ Das Dialogfeld Trap-Ziele hinzufügen wird geöffnet.
 . Um sicherzustellen, dass ein Trap gültig ist, wählen Sie ein Trap-Ziel aus der Tabelle aus, und klicken Sie dann auf *Trap-Ziel testen*, um einen Test-Trap an die konfigurierte Adresse zu senden.
 
 
+.Ergebnisse
 Der Ereignismonitor sendet SNMP-Traps an den/die Server(s), wenn ein alertable Ereignis auftritt.

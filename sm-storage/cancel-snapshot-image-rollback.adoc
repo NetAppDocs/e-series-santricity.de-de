@@ -14,6 +14,7 @@ summary: 'Sie können ein aktives Rollback abbrechen, das gerade läuft (Daten a
 [role="lead"]
 Sie können ein aktives Rollback abbrechen, das gerade läuft (Daten aktiv kopieren), ein ausstehendes Rollback (in einer Warteschlange, in der auf den Start warten) oder ein Rollback, das aufgrund eines Fehlers angehalten wurde.
 
+.Über diese Aufgabe
 Wenn Sie einen laufenden Rollback-Vorgang abbrechen, wird das Basis-Volume in einen unbrauchbaren Zustand zurückgesetzt und wird als fehlgeschlagen angezeigt. Daher sollten Sie einen Rollback-Vorgang nur dann abbrechen, wenn Recovery-Optionen zur Wiederherstellung des Inhalts des Basis-Volumes vorhanden sind.
 
 [NOTE]
@@ -31,8 +32,10 @@ Das Dialogfeld Rollback bestätigen wird angezeigt.
 . Klicken Sie zur Bestätigung auf *Ja*.
 
 
+.Ergebnisse
 System Manager stoppt den Rollback-Vorgang. Das Basis-Volume ist zwar nutzbar, kann aber Daten enthalten, die inkonsistent oder nicht intakt sind.
 
+.Nachdem Sie fertig sind
 Nachdem Sie einen Rollback-Vorgang abgebrochen haben, müssen Sie eine der folgenden Aktionen durchführen:
 
 * Initialisieren Sie den Inhalt des Basis-Volume neu.

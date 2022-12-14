@@ -14,6 +14,7 @@ summary: Sie können die Menge der nicht synchronisierten Daten zwischen den Spi
 [role="lead"]
 Sie können die Menge der nicht synchronisierten Daten zwischen den Spiegelungskonsistenzgruppen im lokalen Speicher-Array und auf dem Remote-Speicher-Array anzeigen. Während sich die Konsistenzgruppe der Spiegelung in einem nicht synchronisierten Status befindet, erfolgt keine Spiegelungsaktivität.
 
+.Über diese Aufgabe
 Sie können diese Aufgabe ausführen, wenn die ausgewählte SpiegelungsConsistency Group gespiegelte Paare enthält und die Synchronisierung derzeit nicht ausgeführt wird.
 
 .Schritte

@@ -14,6 +14,7 @@ summary: Sie können die Trace-Puffer von den Controllern abrufen und die Datei 
 [role="lead"]
 Sie können die Trace-Puffer von den Controllern abrufen und die Datei zur Analyse an den technischen Support senden.
 
+.Über diese Aufgabe
 Die Firmware verwendet die Trace-Puffer, um die Verarbeitung, insbesondere Ausnahmebedingungen, aufzuzeichnen, die für das Debuggen von Daten hilfreich sein können. Sie können Trace-Puffer abrufen, ohne den Betrieb des Storage Array zu unterbrechen und mit minimalen Auswirkungen auf die Performance.
 
 [NOTE]

@@ -20,11 +20,13 @@ Sie können Daten von einem Volume auf ein anderes im selben Storage Array kopie
 * Wenn Sie das Ziel-Volume zuvor bei einem Kopiervolume-Vorgang verwendet haben, benötigen Sie diese Daten nicht mehr oder haben Sie ein Backup der Daten.
 
 
+.Über diese Aufgabe
 Das Quell-Volume ist das Volume, das Host-I/O akzeptiert und Applikationsdaten speichert. Wenn ein Copy Volume gestartet wird, werden Daten aus dem Quell-Volume vollständig in das Ziel-Volume kopiert.
 
 Das Ziel-Volume ist ein Standard-Volume, das eine Kopie der Daten vom Quell-Volume beibehält. Nach Abschluss des Kopiervorgangs ist das Ziel-Volume identisch mit dem Quell-Volume. Das Zielvolume muss die gleiche oder größere Kapazität haben wie das Quell-Volume, es kann jedoch ein anderes RAID-Level aufweisen.
 
 .Mehr zu Online- und Offline-Kopien
+[%collapsible]
 ====
 *Online-Kopie*
 
@@ -56,6 +58,7 @@ Die Kopierpriorität legt fest, wie viele der Systemressourcen zum Abschluss des
 
 +
 .Mehr zu den Prioritätsraten für Kopien
+[%collapsible]
 ====
 Es gibt fünf Prioritätsstufen für Kopien:
 
@@ -90,6 +93,8 @@ Weisen Sie die reservierte Kapazität mithilfe folgender Richtlinien zu:
 
 
 
+.Ergebnisse
 System Manager kopiert alle Daten vom Quell-Volume auf das Ziel-Volume. Nachdem der Vorgang des Copy-Volume abgeschlossen ist, wird das Ziel-Volume automatisch schreibgeschützt für die Hosts.
 
+.Nachdem Sie fertig sind
 Wählen Sie MENU:Home[Vorgänge in Bearbeitung anzeigen], um den Fortschritt des Vorgangs „Copy Volume“ anzuzeigen. Dieser Vorgang kann langwierig sein und die System-Performance beeinträchtigen.

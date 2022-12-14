@@ -14,6 +14,7 @@ summary: Der Controller enthält einen für das Systemmanagement verwendeten Eth
 [role="lead"]
 Der Controller enthält einen für das Systemmanagement verwendeten Ethernet-Port. Bei Bedarf können Sie die Übertragungsparameter und IP-Adressen ändern.
 
+.Über diese Aufgabe
 Während dieses Verfahrens wählen Sie Port 1 und bestimmen dann die Geschwindigkeit und Port Addressing-Methode. Port 1 stellt eine Verbindung zum Netzwerk her, in dem der Management-Client auf den Controller und System Manager zugreifen kann.
 
 [NOTE]
@@ -39,6 +40,7 @@ Das Dialogfeld Management-Ports konfigurieren wird geöffnet.
 . Wählen Sie die Einstellungen für den Konfigurationsanschluss aus, und klicken Sie dann auf *Weiter*.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -65,6 +67,7 @@ Wenn Sie *IPv4 aktivieren* wählen, wird ein Dialogfeld zur Auswahl von IPv4-Ein
 . Konfigurieren Sie die IPv4- und/oder IPv6-Einstellungen automatisch oder manuell.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -91,4 +94,5 @@ NOTE: Wenn Sie die Konfiguration der IP-Adresse ändern, geht der Verwaltungspfa
 . Klicken Sie Auf *Fertig Stellen*.
 
 
+.Ergebnisse
 Die Konfiguration des Managementport wird auf der Registerkarte Controller-Einstellungen, Management Ports, angezeigt.

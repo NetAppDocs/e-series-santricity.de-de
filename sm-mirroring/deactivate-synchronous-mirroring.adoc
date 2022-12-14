@@ -14,6 +14,7 @@ summary: 'Sie können die Funktion Synchronous Mirroring auf einem Speicher-Arra
 [role="lead"]
 Sie können die Funktion Synchronous Mirroring auf einem Speicher-Array deaktivieren, um die normale Nutzung des Host Bus Adapters (HBA) Host-Ports 4, der für die Datenübertragung an der Spiegelung reserviert war, wiederherzustellen.
 
+.Bevor Sie beginnen
 Sie müssen alle synchronen Spiegelbeziehungen gelöscht haben. Überprüfen Sie, ob alle gespiegelten Paare aus dem Speicher-Array gelöscht wurden.
 
 .Schritte

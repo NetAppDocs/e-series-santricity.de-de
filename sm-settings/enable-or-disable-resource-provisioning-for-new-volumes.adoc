@@ -24,6 +24,7 @@ NOTE: Standardmäßig ist die Ressourcenbereitstellung auf Systemen aktiviert, a
 * Sie müssen SSD-Volume-Gruppen oder -Pools haben, wobei alle Laufwerke die Funktion zur Wiederherstellung von dezugewiesenen oder nicht geschriebenen logischen Blockfehlern (DULBE) unterstützen.
 
 
+.Über diese Aufgabe
 Wenn Sie die Ressourcen-Bereitstellung für neue Volume-Gruppen oder Pools erneut aktivieren, sind nur neu erstellte Volume-Gruppen und Pools betroffen. Alle vorhandenen Volume-Gruppen und Pools mit aktivierter Ressourcenbereitstellung bleiben unverändert.
 
 .Schritte
@@ -35,4 +36,5 @@ Die Einstellungsbeschreibung gibt an, ob die Ressourcenbereitstellung derzeit ak
 . Bestätigen Sie im Dialogfeld den Vorgang.
 
 
+.Ergebnisse
 Das Aktivieren oder Deaktivieren der Ressourcenbereitstellung betrifft nur neue SSD-Pools oder Volume-Gruppen, die Sie erstellen. Vorhandene Pools oder Volume-Gruppen bleiben unverändert.

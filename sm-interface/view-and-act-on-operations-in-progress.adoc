@@ -13,6 +13,7 @@ summary: Verwenden Sie die Seite „Vorgänge in Bearbeitung“, um bei lang lau
 [role="lead"]
 Verwenden Sie die Seite „Vorgänge in Bearbeitung“, um bei lang laufenden Vorgängen Aktionen anzuzeigen und Maßnahmen zu ergreifen.
 
+.Über diese Aufgabe
 Für jeden Vorgang, der auf der Seite „Vorgänge in Bearbeitung“ aufgeführt ist, werden ein Prozentsatz der Fertigstellung und die geschätzte verbleibende Zeit bis zum Abschluss des Vorgangs angezeigt. In einigen Fällen können Sie einen Vorgang anhalten oder eine höhere oder niedrigere Priorität zuweisen. Sie können einen abgeschlossenen Kopiervorgang auch aus der Liste löschen.
 
 .Schritte

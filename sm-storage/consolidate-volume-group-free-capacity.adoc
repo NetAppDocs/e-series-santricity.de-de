@@ -20,6 +20,7 @@ Verwenden Sie die Option freie Kapazität konsolidieren, um vorhandene freie Erw
 * Volume-Änderungsvorgänge dürfen nicht ausgeführt werden, z. B. das Ändern der Segmentgröße eines Volumes.
 
 
+.Über diese Aufgabe
 Sie können den Vorgang nach dem Start nicht mehr abbrechen. Der Zugriff auf Ihre Daten bleibt während des Konsolidierungsvorgangs erhalten.
 
 Sie können das Dialogfeld Freie Kapazität konsolidieren mit einer der folgenden Methoden starten:
@@ -29,6 +30,7 @@ Sie können das Dialogfeld Freie Kapazität konsolidieren mit einer der folgende
 
 
 .Mehr über freie Kapazitätsbereiche
+[%collapsible]
 ====
 Ein freier Kapazitätsbereich stellt die freie Kapazität dar, die zum Löschen eines Volumes oder zum Nichtnutzen der gesamten verfügbaren freien Kapazität während der Volume-Erstellung führen kann. Wenn Sie ein Volume in einer Volume-Gruppe mit einem oder mehreren freien Kapazitätsbereichen erstellen, ist die Kapazität des Volumes auf den größten freien Kapazitätsbereich in dieser Volume-Gruppe beschränkt. Wenn beispielsweise eine Volume-Gruppe insgesamt 15 gib freie Kapazität besitzt und der größte Bereich der freien Kapazität 10 gib beträgt, beträgt das größte Volume, das Sie erstellen können, 10 gib.
 
@@ -50,4 +52,5 @@ System Manager beginnt die Konsolidierung (Defragmentierung) der freien Kapazit�
 
 
 
+.Nachdem Sie fertig sind
 Wählen Sie MENU:Home[Vorgänge in Bearbeitung anzeigen], um den Fortschritt des Vorgangs „Freie Kapazität konsolidieren“ anzuzeigen. Dieser Vorgang kann langwierig sein und die System-Performance beeinträchtigen.

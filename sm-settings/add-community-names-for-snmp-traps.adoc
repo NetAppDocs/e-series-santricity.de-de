@@ -28,4 +28,5 @@ Das Dialogfeld „Communities konfigurieren“ wird geöffnet.
 . Geben Sie den neuen Community-Namen ein und klicken Sie dann auf *Speichern*.
 
 
+.Ergebnisse
 Der neue Community-Name wird auf der Registerkarte SNMP der Seite Meldungen angezeigt.

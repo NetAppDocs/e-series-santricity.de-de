@@ -14,6 +14,7 @@ summary: Sie können den Standardzeitrahmen ändern, der von den Performance-Dia
 [role="lead"]
 Sie können den Standardzeitrahmen ändern, der von den Performance-Diagrammen angezeigt wird.
 
+.Über diese Aufgabe
 Performance-Diagramme, die auf der Startseite und auf der Seite Performance angezeigt werden, zeigen zunächst einen Zeitrahmen von 1 Stunde an. Einstellungen werden im lokalen Speicher des Browsers gespeichert, so dass alle Benutzer ihre eigenen Einstellungen haben können.
 
 .Schritte

@@ -14,6 +14,7 @@ summary: Sie können die Eigenschaften, den Status, die reservierte Kapazität u
 [role="lead"]
 Sie können die Eigenschaften, den Status, die reservierte Kapazität und die zugehörigen Objekte anzeigen, die jedem Snapshot-Image zugewiesen sind.
 
+.Über diese Aufgabe
 Zu den zugehörigen Objekten für ein Snapshot Image zählen das Basis-Volume oder die Snapshot Konsistenzgruppe, für die dieses Snapshot Image ein Wiederherstellungspunkt ist, die zugehörige Snapshot Gruppe und alle aus dem Snapshot Image erstellten Snapshot Volumes. Bestimmen Sie mithilfe der Snapshot-Einstellungen, ob Sie das Snapshot-Image kopieren oder konvertieren möchten.
 
 .Schritte

@@ -21,6 +21,7 @@ Mit der Option Kapazität verkleinern Sie die reservierte Kapazität für die fo
 * Wenn es sich bei dem Speicherobjekt um eine Snapshot-Gruppe handelt, darf es keine zugehörigen Snapshot-Images enthalten.
 
 
+.Über diese Aufgabe
 Lesen Sie sich die folgenden Richtlinien durch:
 
 * Sie können reservierte Kapazitäts-Volumes nur in der umgekehrten Reihenfolge entfernen, in der sie hinzugefügt wurden.
@@ -37,6 +38,7 @@ Das Dialogfeld reservierte Kapazität verringern wird angezeigt.
 . Wählen Sie den Kapazitätsbetrag aus, um den die reservierte Kapazität verringert werden soll, und klicken Sie dann auf *verringern*.
 
 
+.Ergebnisse
 System Manager führt die folgenden Aktionen durch:
 
 * Aktualisiert die Kapazität für das Storage-Objekt.

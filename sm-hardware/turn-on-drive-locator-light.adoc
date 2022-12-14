@@ -13,6 +13,7 @@ summary: Auf der Seite Hardware können Sie die Locator-LED einschalten, um den 
 [role="lead"]
 Auf der Seite Hardware können Sie die Locator-LED einschalten, um den physischen Standort eines Laufwerks im Speicher-Array zu finden.
 
+.Über diese Aufgabe
 Sie können einzelne oder mehrere Laufwerke finden, die auf der Seite Hardware angezeigt werden.
 
 .Schritte

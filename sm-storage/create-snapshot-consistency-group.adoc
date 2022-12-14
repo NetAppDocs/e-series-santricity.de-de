@@ -16,6 +16,7 @@ Um sicherzustellen, dass Sie über konsistente Kopien verfügen, können Sie ein
 
 Mit dieser Gruppe können Sie zur Wahrung der Konsistenz gleichzeitig Snapshot-Images aller Volumes erstellen. Jedes Volume, das zu einer Snapshot Konsistenzgruppe gehört, wird als „_Member Volume_“ bezeichnet. Wenn Sie einer Snapshot Konsistenzgruppe ein Volume hinzufügen, erstellt das System automatisch eine neue Snapshot-Gruppe, die diesem Mitglied-Volume entspricht.
 
+.Über diese Aufgabe
 Mit der Sequenz zur Erstellung von Snapshot-Konsistenzgruppen können Sie Mitglieder-Volumes für die Gruppe auswählen und den Mitglied-Volumes Kapazität zuweisen.
 
 Der Prozess zum Erstellen einer Snapshot-Konsistenzgruppe wird in mehreren Schritten durchgeführt.
@@ -26,6 +27,7 @@ Der Prozess zum Erstellen einer Snapshot-Konsistenzgruppe wird in mehreren Schri
 
 Wählen Sie Mitglieder aus, um eine Sammlung von Volumes anzugeben, die die Snapshot-Konsistenzgruppe enthalten. Alle Aktionen, die Sie auf der Snapshot Konsistenzgruppe durchführen, werden gleichmäßig auf ausgewählte Mitglied-Volumes erweitert.
 
+.Bevor Sie beginnen
 Die Mitgliedvolumes müssen optimal sein.
 
 .Schritte
@@ -36,7 +38,7 @@ Die Mitgliedvolumes müssen optimal sein.
 Das Dialogfeld Snapshot Konsistenzgruppe erstellen wird angezeigt.
 
 . Wählen Sie die Volumes aus, die der Snapshot-Konsistenzgruppe als Mitgliedvolumes hinzugefügt werden sollen.
-. Klicken Sie auf *Weiter*, und gehen Sie zu  2: Reserve capacity for snapshot consistency group.
+. Klicken Sie auf *Weiter*, und gehen Sie zu <<Schritt 2: Reservekapazität für Snapshot Konsistenzgruppe>>.
 
 
 
@@ -45,6 +47,7 @@ Das Dialogfeld Snapshot Konsistenzgruppe erstellen wird angezeigt.
 
 Zuweisen der reservierten Kapazität zur Snapshot-Konsistenzgruppe. System Manager legt die Volumes und die Kapazität auf Grundlage der Eigenschaften der Snapshot-Konsistenzgruppe vor. Sie können die empfohlene Konfiguration für reservierte Kapazität akzeptieren oder den zugewiesenen Storage anpassen.
 
+.Über diese Aufgabe
 Im Dialogfeld „Reserve-Kapazität“ werden in der Tabelle „Volume-Kandidaten“ nur die Kandidaten angezeigt, die die angegebene reservierte Kapazität unterstützen. Reservierte Kapazität ist die zugewiesene physische Kapazität, die für jeden Kopierdienst- und Storage-Objekt verwendet wird. Er ist nicht direkt vom Host lesbar.
 
 .Schritte
@@ -66,7 +69,7 @@ Weisen Sie die reservierte Kapazität mithilfe der folgenden Richtlinien zu.
 
 
 . *Optional:* Wenn Sie die Einstellung für reservierte Standardkapazität ändern, klicken Sie auf *Kandidaten aktualisieren* um die Kandidatenliste für die von Ihnen angegebene reservierte Kapazität zu aktualisieren.
-. Klicken Sie auf *Weiter*, und gehen Sie zu  3: Edit settings for snapshot consistency group.
+. Klicken Sie auf *Weiter*, und gehen Sie zu <<Schritt 3: Bearbeiten Sie die Einstellungen für die Snapshot Konsistenzgruppe>>.
 
 
 
@@ -75,12 +78,14 @@ Weisen Sie die reservierte Kapazität mithilfe der folgenden Richtlinien zu.
 
 Akzeptieren oder wählen Sie die Einstellungen zum automatischen Löschen und die Schwellenwerte für reservierte Kapazitätswarnschwellenwerte für die Snapshot-Konsistenzgruppe aus.
 
+.Über diese Aufgabe
 Mit der Sequenz zur Erstellung von Snapshot-Konsistenzgruppen können Sie Mitglieder-Volumes für die Gruppe auswählen und den Mitglied-Volumes Kapazität zuweisen.
 
 .Schritte
 . Übernehmen Sie die Standardeinstellungen für die Snapshot-Konsistenzgruppe oder ändern Sie diese je nach Bedarf.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

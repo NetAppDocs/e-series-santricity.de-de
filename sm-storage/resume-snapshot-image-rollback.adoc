@@ -23,6 +23,7 @@ Der Vorgang wird fortgesetzt.
 
 
 
+.Ergebnisse
 System Manager führt die folgenden Aktionen durch:
 
 * Wenn der Rollback-Vorgang erfolgreich fortgesetzt wird, können Sie den Fortschritt des Rollback-Vorgangs im Fenster „Vorgänge in Bearbeitung“ anzeigen.

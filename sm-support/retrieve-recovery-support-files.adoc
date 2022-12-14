@@ -14,8 +14,10 @@ summary: Der technische Support kann Dateien zum Recovery Support verwenden, um 
 [role="lead"]
 Der technische Support kann Dateien zum Recovery Support verwenden, um Probleme zu beheben. System Manager speichert diese Dateien automatisch.
 
+.Bevor Sie beginnen
 Der technische Support hat angefordert, dass Sie ihnen zusätzliche Dateien zur Fehlerbehebung senden.
 
+.Über diese Aufgabe
 Recovery-Support-Dateien enthalten die folgenden Arten von Dateien:
 
 * Unterstützen von Datendateien

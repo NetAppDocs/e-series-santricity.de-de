@@ -19,6 +19,7 @@ Sie können eine AutoSupport-Konfiguration von einem Speicher-Array in andere Sp
 * Die vorhandene Konfiguration für die Ziel-Speicher-Arrays wird in System Manager gesichert (Menü:Einstellungen[System > Speicherarray-Konfiguration speichern]).
 
 
+.Über diese Aufgabe
 Zu den importierten Einstellungen gehören die separaten Funktionen (Basic AutoSupport, AutoSupport OnDemand und Remote Diagnostics), das Wartungsfenster, die Bereitstellungsmethode, Und dem Versandplan.
 
 .Schritte
@@ -44,4 +45,5 @@ Auf der Seite Operationen werden die Ergebnisse des Importvorgangs angezeigt. We
 
 
 
+.Ergebnisse
 Die Ziel-Storage-Arrays sind nun mit denselben AutoSupport-Einstellungen wie das Quell-Array konfiguriert.

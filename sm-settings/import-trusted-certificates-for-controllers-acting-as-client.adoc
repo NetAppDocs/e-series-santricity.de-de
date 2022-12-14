@@ -19,6 +19,7 @@ Wenn der Controller eine Verbindung zurückweist, weil er die Vertrauenskette f�
 * Die Zertifikatdateien werden auf Ihrem lokalen System installiert.
 
 
+.Über diese Aufgabe
 Das Importieren von Zertifikaten aus der Registerkarte „Trusted“ ist möglicherweise erforderlich, wenn Sie zulassen möchten, dass andere Server die Controller kontaktieren (z. B. ein LDAP-Server oder ein Syslog-Server, der TLS verwendet).
 
 .Schritte
@@ -34,4 +35,5 @@ Die Dateinamen werden im Dialogfeld angezeigt.
 . Klicken Sie Auf *Import*.
 
 
+.Ergebnisse
 Die Dateien werden hochgeladen und validiert.

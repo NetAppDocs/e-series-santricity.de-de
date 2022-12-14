@@ -37,4 +37,5 @@ Wenn Sie das bearbeitbare Feld schließen möchten, ohne Änderungen vorzunehmen
 ====
 
 
+.Ergebnisse
 Der neue Name wird in der Titelleiste des SANtricity System Managers angezeigt.

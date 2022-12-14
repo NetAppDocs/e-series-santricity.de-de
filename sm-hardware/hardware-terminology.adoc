@@ -14,6 +14,7 @@ summary: Erfahren Sie, wie die Hardwarebedingungen auf Ihr Storage Array angewen
 Die folgenden Hardwarebedingungen gelten für Storage Arrays.
 
 .Allgemeine Begriffe der Hardware:
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -91,6 +92,7 @@ Ein Storage-Array umfasst Shelfs, Controller, Laufwerke, Software und Firmware.
 |===
 ====
 .Controller-Begriffe:
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -196,6 +198,7 @@ Ein Virtual Local Area Network (VLAN) ist ein logisches Netzwerk, das sich so ve
 |===
 ====
 .Laufwerksbedingungen:
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -294,6 +297,7 @@ Solid State Disks (SSDs) sind Daten-Storage-Geräte, die Solid State Memory (Fla
 |===
 ====
 .Bedingungen für iSCSI:
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -392,6 +396,7 @@ Wenn die Option für nicht benannte Ermittlungssitzungen aktiviert ist, müssen 
 |===
 ====
 .Begriffe im Zusammenhang mit NVMe:
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

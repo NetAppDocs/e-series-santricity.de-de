@@ -13,6 +13,7 @@ summary: Wenn ein Laufwerk ausfällt oder Sie es aus einem anderen Grund ersetze
 [role="lead"]
 Wenn ein Laufwerk ausfällt oder Sie es aus einem anderen Grund ersetzen möchten und ein nicht zugewiesenes Laufwerk im Speicher-Array vorhanden ist, können Sie das ausgefallene Laufwerk logisch durch das nicht zugewiesene Laufwerk ersetzen. Wenn Sie kein nicht zugewiesenes Laufwerk haben, können Sie stattdessen das Laufwerk physisch ersetzen.
 
+.Über diese Aufgabe
 Wenn Sie ein Laufwerk logisch durch ein nicht zugewiesenes Laufwerk ersetzen, wird das nicht zugewiesene Laufwerk zugewiesen und ist dann dauerhaftes Mitglied des zugeordneten Pools oder der Volume-Gruppe. Sie verwenden die Option „logischer Austausch“, um die folgenden Laufwerkstypen zu ersetzen:
 
 * Ausgefallene Laufwerke

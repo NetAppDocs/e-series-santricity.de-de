@@ -23,6 +23,7 @@ Es wird ein Dialogfeld angezeigt, in dem die aktuellen Host-Cluster-Einstellunge
 . Ändern Sie die Einstellungen für das Host-Cluster nach Bedarf.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

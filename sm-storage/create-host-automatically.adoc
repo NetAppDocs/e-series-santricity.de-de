@@ -14,6 +14,7 @@ summary: 'Sie können dem Host Context Agent (HCA) erlauben, die Hosts automatis
 [role="lead"]
 Sie können dem Host Context Agent (HCA) erlauben, die Hosts automatisch zu erkennen und anschließend zu überprüfen, ob die Informationen korrekt sind. Das Erstellen eines Hosts ist einer der Schritte, die erforderlich sind, damit das Storage-Array wissen kann, an welche Hosts angeschlossen sind und um den I/O-Zugriff auf die Volumes zu ermöglichen.
 
+.Bevor Sie beginnen
 Stellen Sie sicher, dass der Host Context Agent (HCA) auf jedem Host installiert ist und ausgeführt wird, der mit dem Speicher-Array verbunden ist. Hosts, auf denen die HCA installiert und mit dem Speicher-Array verbunden ist, werden automatisch erstellt. Um die HCA zu installieren, installieren Sie den SANtricity-Speicher-Manager auf dem Host und wählen Sie die Host-Option. Das HCA ist nicht auf allen unterstützten Betriebssystemen verfügbar. Wenn dieser nicht verfügbar ist, müssen Sie den Host manuell erstellen.
 
 .Schritte
@@ -28,6 +29,7 @@ Wenn Sie eine der Informationen ändern müssen, wählen Sie den Host aus, und k
 . *Optional:* Wenn sich der automatisch erstellte Host in einem Cluster befinden soll, erstellen Sie einen Host-Cluster und fügen Sie den Host oder die Hosts hinzu.
 
 
+.Ergebnisse
 Nachdem ein Host automatisch erstellt wurde, zeigt das System die folgenden Elemente in der Tabelle Hosts an:
 
 * Der Hostname, der vom Systemnamen des Hosts abgeleitet wurde.

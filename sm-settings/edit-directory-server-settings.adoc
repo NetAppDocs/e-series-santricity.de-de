@@ -30,6 +30,7 @@ Das Dialogfeld Verzeichnisservereinstellungen wird geöffnet.
 . Ändern Sie auf der Registerkarte Servereinstellungen die gewünschten Einstellungen.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -105,6 +106,7 @@ Eine Liste der Gruppenattribute für den Benutzer, die für die Zuordnung von Gr
 . Ändern Sie auf der Registerkarte Rollenzuordnung die gewünschte Zuordnung.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -146,4 +148,5 @@ Die Überwachungsrolle ist für alle Benutzer, einschließlich des Administrator
 . Klicken Sie Auf *Speichern*.
 
 
+.Ergebnisse
 Nach Abschluss dieser Aufgabe werden alle aktiven Benutzersitzungen beendet. Nur Ihre aktuelle Benutzersitzung bleibt erhalten.

@@ -21,6 +21,7 @@ Um die Authentifizierung für die Zugriffsverwaltung zu konfigurieren, können S
 * Bei LDAPS-Servern mit einem sicheren Protokoll muss die Zertifikatskette des LDAP-Servers auf Ihrem lokalen Computer installiert sein.
 
 
+.Über diese Aufgabe
 Das Hinzufügen eines Verzeichnisservers ist ein zweistufiger Prozess. Geben Sie zuerst den Domain-Namen und die URL ein. Wenn Ihr Server ein sicheres Protokoll verwendet, müssen Sie auch ein CA-Zertifikat zur Authentifizierung hochladen, wenn es von einer nicht standardmäßigen Signierungsbehörde signiert ist. Wenn Sie über Anmeldedaten für ein Bindekonto verfügen, können Sie auch Ihren Benutzernamen und Ihr Kennwort eingeben. Als Nächstes werden die Benutzergruppen des LDAP-Servers den vordefinierten Rollen des Speicher-Arrays zugeordnet.
 
 [NOTE]
@@ -37,6 +38,7 @@ Das Dialogfeld Add Directory Server wird geöffnet.
 . Geben Sie auf der Registerkarte Servereinstellungen die Anmeldeinformationen für den LDAP-Server ein.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -126,6 +128,7 @@ Geben Sie eine Liste der Gruppenattribute für den Benutzer ein, die für die Zu
 . Weisen Sie den vordefinierten Rollen LDAP-Gruppen zu. Einer Gruppe können mehrere Rollen zugewiesen sein.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

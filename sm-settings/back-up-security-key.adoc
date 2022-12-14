@@ -14,6 +14,7 @@ summary: Nach dem Erstellen oder Ändern eines Sicherheitsschlüssels können Si
 [role="lead"]
 Nach dem Erstellen oder Ändern eines Sicherheitsschlüssels können Sie eine Sicherungskopie der Schlüsseldatei erstellen, falls das Original beschädigt wird.
 
+.Über diese Aufgabe
 In dieser Aufgabe wird beschrieben, wie Sie einen zuvor erstellten Sicherheitsschlüssel sichern. Während dieses Verfahrens erstellen Sie einen neuen Passphrase für das Backup. Diese Passphrase muss nicht mit der Passphrase übereinstimmen, die bei der Erstellung des ursprünglichen Schlüssels oder der letzten Änderung verwendet wurde. Der Passphrase wird nur auf das Backup angewendet, das Sie erstellen.
 
 .Schritte
@@ -51,4 +52,5 @@ Der Pfad für die heruntergeladene Sicherheitsschlüsseldatei hängt möglicherw
 . Zeichnen Sie Ihren Passphrase an einem sicheren Ort auf, und klicken Sie dann auf *Schließen*.
 
 
+.Nachdem Sie fertig sind
 Sie sollten den Sicherungsschlüssel überprüfen.

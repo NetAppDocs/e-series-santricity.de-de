@@ -19,6 +19,7 @@ Bei Bedarf können die Metadaten von Service-Providern für das Storage-Array ex
 * SAML wurde konfiguriert und aktiviert.
 
 
+.Über diese Aufgabe
 In dieser Aufgabe exportieren Sie Metadaten aus den Controllern (eine Datei für jeden Controller). Die IdP benötigt diese Metadaten, um eine Vertrauensbeziehung zu den Controllern aufzubauen und Authentifizierungsanforderungen zu verarbeiten. Die Datei enthält Informationen wie den Domänennamen des Controllers oder die IP-Adresse, die das IdP zum Senden von Anforderungen verwenden kann.
 
 .Schritte

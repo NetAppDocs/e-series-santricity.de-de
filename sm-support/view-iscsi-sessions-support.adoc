@@ -23,6 +23,7 @@ Eine Liste der aktuellen iSCSI-Sitzungen wird angezeigt.
 . Um zusätzliche Informationen zu einer bestimmten iSCSI-Sitzung anzuzeigen, wählen Sie eine Sitzung aus und klicken dann auf *Details anzeigen*.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

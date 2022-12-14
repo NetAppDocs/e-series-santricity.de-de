@@ -19,6 +19,7 @@ Wenn Sie ein oder mehrere gesperrte NVMe- oder FIPS-Laufwerke in ein Storage-Arr
 * Für die Option Zurücksetzen müssen Sie die PSID auf jedem Laufwerk finden, das Sie zurücksetzen möchten. Um die PSID zu finden, entfernen Sie das Laufwerk physisch und suchen Sie die PSID-Zeichenfolge (maximal 32 Zeichen) auf dem Laufwerketikett, und installieren Sie dann das Laufwerk neu.
 
 
+.Über diese Aufgabe
 In dieser Aufgabe wird beschrieben, wie Daten aus NVMe- oder FIPS-Laufwerken durch Importieren einer Sicherheitsschlüsseldatei in das Storage Array entsperrt werden. In Fällen, in denen der Sicherheitsschlüssel nicht verfügbar ist, beschreibt diese Aufgabe auch, wie ein Reset auf einem gesperrten Laufwerk durchgeführt wird.
 
 [NOTE]
@@ -59,4 +60,5 @@ Für einen Entsperrvorgang muss dieser Vorgang nur einmal ausgeführt werden, um
 
 
 
+.Ergebnisse
 Das Laufwerk kann nun in einer anderen Volume-Gruppe oder einem anderen Laufwerk-Pool oder in einem anderen Speicher-Array verwendet werden.

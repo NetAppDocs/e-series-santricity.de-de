@@ -31,4 +31,5 @@ Die automatische Erstellung von AutoSupport-Tickets bei Fehlerereignissen wird v
 
 
 
+.Nachdem Sie fertig sind
 Das Wartungsfenster beginnt erst, wenn die Anfrage des Storage-Arrays von den AutoSupport-Servern verarbeitet wird. Warten Sie, bis Sie eine Bestätigungs-E-Mail erhalten haben, bevor Sie Wartungsarbeiten an Ihrem Speicher-Array durchführen.

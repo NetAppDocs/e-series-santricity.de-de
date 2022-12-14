@@ -24,6 +24,7 @@ Sie können die vom Benutzer installierten Zertifikate löschen, die zuvor über
 Möglicherweise verlieren Sie den Zugriff auf ein System, wenn Sie ein Zertifikat löschen, das zur Authentifizierung der Controller und eines anderen Servers, z. B. eines LDAP-Servers verwendet wird, bevor Sie ein Ersatzzertifikat importieren.
 
 ====
+.Über diese Aufgabe
 Diese Aufgabe beschreibt das Löschen von vom Benutzer installierten Zertifikaten. Die vorinstallierten, selbstsignierten Zertifikate können nicht gelöscht werden.
 
 .Schritte

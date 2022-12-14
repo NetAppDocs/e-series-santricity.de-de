@@ -24,6 +24,7 @@ Wenn auf einem Pool oder Volume-Gruppen keine freie Kapazität vorhanden ist, k�
 
 
 
+.Über diese Aufgabe
 Sie können die reservierte Kapazität nur in Schritten von 8 gib für die folgenden Storage-Objekte erhöhen:
 
 * Snapshot-Gruppe
@@ -53,6 +54,7 @@ Wenn im Pool oder in der Volume-Gruppe keine freie Kapazität vorhanden ist, die
 . Klicken Sie Auf *Erhöhen*.
 
 
+.Ergebnisse
 System Manager führt die folgenden Aktionen durch:
 
 * Erhöht die reservierte Kapazität für das Storage-Objekt.

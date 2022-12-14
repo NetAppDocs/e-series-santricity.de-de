@@ -13,6 +13,7 @@ summary: Wenn ein Laufwerk ausfällt oder Sie es aus einem anderen Grund ersetze
 [role="lead"]
 Wenn ein Laufwerk ausfällt oder Sie es aus einem anderen Grund ersetzen möchten, können Sie das ausgefallene Laufwerk logisch durch ein nicht zugewiesenes Laufwerk oder ein vollständig integriertes Hot Spare ersetzen.
 
+.Über diese Aufgabe
 Wenn Sie ein Laufwerk logisch ersetzen, wird es zugewiesen und ist dann dauerhaftes Mitglied des zugeordneten Pools oder der Volume-Gruppe.
 
 Sie verwenden die Option „logischer Austausch“, um die folgenden Laufwerkstypen zu ersetzen:
@@ -24,6 +25,7 @@ Sie verwenden die Option „logischer Austausch“, um die folgenden Laufwerksty
 * Zugewiesene Laufwerke (nur für Laufwerke in einer Volume-Gruppe, nicht in einem Pool verfügbar)
 
 
+.Bevor Sie beginnen
 Das Ersatzlaufwerk muss die folgenden Eigenschaften aufweisen:
 
 * Im optimalen Zustand

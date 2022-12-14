@@ -14,6 +14,7 @@ summary: Sie können RAID-Konfigurationsdaten vom Controller speichern. Dieser e
 [role="lead"]
 Sie können RAID-Konfigurationsdaten vom Controller speichern. Dieser enthält alle Daten für Volume-Gruppen und Festplatten-Pools. Anschließend können Sie sich an den technischen Support wenden, um Hilfe beim Wiederherstellen der Daten zu erhalten.
 
+.Über diese Aufgabe
 In dieser Aufgabe wird beschrieben, wie der aktuelle Status der RAID-Konfigurationsdatenbank gespeichert wird. Diese Daten werden vom RPA-Speicherort des Controllers abgerufen.
 
 [NOTE]

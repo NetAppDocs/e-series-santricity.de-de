@@ -29,6 +29,7 @@ Die Feature Pack-Datei wird auf den Management-Client geladen (das System mit ei
 Sie müssen ein Downtime-Wartungsfenster planen und alle I/O-Vorgänge zwischen dem Host und den Controllern beenden. Beachten Sie außerdem, dass Sie erst nach erfolgreichem Abschluss der Konvertierung auf Daten im Speicher-Array zugreifen können.
 
 ====
+.Über diese Aufgabe
 In dieser Aufgabe wird beschrieben, wie Sie mit System Manager ein Funktionspaket aktivieren. Wenn Sie fertig sind, müssen Sie das Speicher-Array neu starten.
 
 .Schritte

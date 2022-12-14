@@ -14,6 +14,7 @@ summary: Sie können verschiedene Arten von Inventar-, Status- und Performance-D
 [role="lead"]
 Sie können verschiedene Arten von Inventar-, Status- und Performance-Daten zu Ihrem Storage-Array in einer einzelnen Datei sammeln. Der technische Support kann die Datei zur Fehlerbehebung und weiteren Analyse verwenden.
 
+.Über diese Aufgabe
 ++++
 
 [NOTE]

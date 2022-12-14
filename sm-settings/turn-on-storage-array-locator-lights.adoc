@@ -23,4 +23,5 @@ Das Dialogfeld Speicherarray Locator Lights einschalten wird geöffnet, und die 
 . Wenn Sie das Speicher-Array physisch gefunden haben, kehren Sie zum Dialogfeld zurück und wählen Sie *aus*.
 
 
+.Ergebnisse
 Die Positionsleuchten werden ausgeschaltet, und das Dialogfeld wird geschlossen.

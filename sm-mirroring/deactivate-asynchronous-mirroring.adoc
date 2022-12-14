@@ -19,6 +19,7 @@ Sie können die asynchrone Spiegelung auf den lokalen und Remote-Speicher-Arrays
 * Das lokale Speicher-Array und das Remote-Speicher-Array müssen über eine Fibre-Channel Fabric- oder iSCSI-Schnittstelle verbunden sein.
 
 
+.Über diese Aufgabe
 Wenn Sie die asynchrone Spiegelung deaktivieren, können auf den lokalen und Remote-Storage-Arrays keine Spiegelungsaktivitäten stattfinden.
 
 .Schritte

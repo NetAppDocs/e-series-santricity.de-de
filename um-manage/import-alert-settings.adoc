@@ -19,6 +19,7 @@ Sie können Alarmkonfigurationen von einem Speicher-Array in andere Speicher-Arr
 * Die vorhandene Konfiguration für die Ziel-Speicher-Arrays wird in System Manager gesichert (Menü:Einstellungen[System > Speicherarray-Konfiguration speichern]).
 
 
+.Über diese Aufgabe
 Sie können E-Mail-, SNMP- oder Syslog-Warnungen für den Importvorgang auswählen. Die importierten Einstellungen umfassen:
 
 * *E-Mail-Benachrichtigungen* -- Eine E-Mail-Server-Adresse und die E-Mail-Adressen der Alarmempfänger.
@@ -49,4 +50,5 @@ Auf der Seite Operationen werden die Ergebnisse des Importvorgangs angezeigt. We
 
 
 
+.Ergebnisse
 Die Ziel-Storage-Arrays sind jetzt so konfiguriert, dass sie Warnmeldungen per E-Mail, SNMP oder Syslog an Administratoren senden.

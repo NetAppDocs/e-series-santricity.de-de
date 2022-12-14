@@ -14,6 +14,7 @@ summary: Sie können einen Prozess zum Kopieren von Volumes auf einem Snapshot-V
 [role="lead"]
 Sie können einen Prozess zum Kopieren von Volumes auf einem Snapshot-Volume oder einem Snapshot-Snapshot-Volume der Konsistenzgruppe durchführen.
 
+.Über diese Aufgabe
 Sie können ein Snapshot-Volume wie bei einem normalen Kopiervorgang auf das Ziel-Volume kopieren. Snapshot-Volumen können jedoch während des Kopiervorgangs nicht online bleiben.
 
 .Schritte

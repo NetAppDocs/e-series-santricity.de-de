@@ -14,6 +14,7 @@ summary: Sie können die E-Mail-Server-Adresse und die E-Mail-Absenderadresse ä
 [role="lead"]
 Sie können die E-Mail-Server-Adresse und die E-Mail-Absenderadresse ändern, die für E-Mail-Benachrichtigungen verwendet werden.
 
+.Bevor Sie beginnen
 Die Adresse des Mail-Servers, den Sie ändern, muss verfügbar sein. Bei der Adresse kann es sich um eine IPv4- oder IPv6-Adresse oder einen vollqualifizierten Domänennamen handeln.
 
 [NOTE]

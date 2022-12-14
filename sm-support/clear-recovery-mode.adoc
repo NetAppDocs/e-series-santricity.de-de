@@ -19,6 +19,7 @@ Verwenden Sie nach dem Wiederherstellen einer Speicherarray-Konfiguration den Vo
 * Sie müssen Validierungsprüfungen oder technischen Support durchführen, um sicherzustellen, dass die Wiederherstellung erfolgreich war. Nachdem festgestellt wurde, dass die Wiederherstellung erfolgreich war, kann der Wiederherstellungsmodus gelöscht werden.
 
 
+.Über diese Aufgabe
 Das Storage-Array enthält eine Konfigurationsdatenbank mit einem Datensatz seiner logischen Konfiguration (Pools, Volume-Gruppen, Volumes usw.). Wenn Sie die Speicherarray-Konfiguration absichtlich löschen oder die Konfigurationsdatenbank beschädigt wird, wechselt das Speicher-Array in den Recovery-Modus. Der Recovery-Modus stoppt den I/O und friert die Konfigurationsdatenbank an, sodass Sie eine der folgenden Aufgaben ausführen können:
 
 * Stellen Sie die Konfiguration aus dem automatischen Backup wieder her, das auf den Flash-Geräten des Controllers gespeichert ist. Hierfür müssen Sie sich an den technischen Support wenden.

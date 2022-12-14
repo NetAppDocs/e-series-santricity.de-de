@@ -16,6 +16,7 @@ Normalerweise löschen Sie Volumes, wenn die Volumes mit falschen Parametern ode
 
 Durch das Löschen eines Volumes wird die freie Kapazität im Pool oder der Volume-Gruppe erhöht. Sie können ein oder mehrere zu löschende Volumes auswählen.
 
+.Bevor Sie beginnen
 Stellen Sie für die Volumes, die Sie löschen möchten, Folgendes sicher:
 
 * Alle Daten werden gesichert.
@@ -23,6 +24,7 @@ Stellen Sie für die Volumes, die Sie löschen möchten, Folgendes sicher:
 * Alle Geräte und Dateisysteme werden abgehängt.
 
 
+.Über diese Aufgabe
 Ein Volume mit einer der folgenden Bedingungen kann nicht gelöscht werden:
 
 * Das Volume wird initialisiert.
@@ -53,6 +55,7 @@ Das Dialogfeld Volumes löschen wird angezeigt.
 . Klicken Sie Auf *Löschen*.
 
 
+.Ergebnisse
 System Manager führt die folgenden Aktionen durch:
 
 * Löscht alle zugehörigen Snapshot-Images, Zeitpläne und Snapshot-Volumes.

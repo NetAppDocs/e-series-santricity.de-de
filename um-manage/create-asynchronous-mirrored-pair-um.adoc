@@ -19,6 +19,7 @@ Zum Konfigurieren der asynchronen Spiegelung erstellen Sie ein gespiegeltes Paar
 Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
 
 ====
+.Bevor Sie beginnen
 Bevor Sie ein gespiegeltes Paar erstellen, erfüllen Sie die folgenden Anforderungen für Unified Manager:
 
 * Der Web Services Proxy-Dienst muss ausgeführt werden.
@@ -39,6 +40,7 @@ Stellen Sie außerdem sicher, dass Sie die folgenden Anforderungen an Storage Ar
 * Das sekundäre Volume muss mindestens so groß sein wie das primäre Volume.
 
 
+.Über diese Aufgabe
 Der Prozess zum Erstellen eines asynchronen gespiegelten Paares ist ein mehrstufiges Verfahren.
 
 
@@ -84,7 +86,7 @@ Wenn Ihr Remote-Speicher-Array passwortgeschützt ist, fordert das System zur Ei
 
 
 
-. Wählen Sie *Weiter* und gehen Sie zu  2: Select the primary volume.
+. Wählen Sie *Weiter* und gehen Sie zu <<Schritt 2: Wählen Sie das primäre Volumen>>.
 +
 Wenn Sie eine neue gespiegelte Konsistenzgruppe definiert haben, erstellt Unified Manager zuerst die gespiegelte Konsistenzgruppe im lokalen Storage Array und erstellt dann die gespiegelte Konsistenzgruppe im Remote-Storage-Array. Sie können die gespiegelte Konsistenzgruppe anzeigen und verwalten, indem Sie System Manager für jedes Array starten.
 
@@ -121,7 +123,7 @@ Beachten Sie folgende Richtlinien:
 
 
 
-. Wählen Sie *Weiter* und gehen Sie zu  3: Select the secondary volume.
+. Wählen Sie *Weiter* und gehen Sie zu <<Schritt 3: Wählen Sie das sekundäre Volumen>>.
 
 
 
@@ -152,6 +154,7 @@ Beachten Sie folgende Richtlinien:
 . Wählen Sie *Fertig stellen*, um die asynchrone Spiegelsequenz abzuschließen.
 
 
+.Ergebnisse
 Unified Manager führt die folgenden Aktionen durch:
 
 * Startet die erste Synchronisierung zwischen dem lokalen Speicher-Array und dem Remote-Speicher-Array.

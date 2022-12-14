@@ -14,8 +14,10 @@ summary: Verwenden Sie den Vorgang Konfiguration löschen, wenn Sie alle Pools, 
 [role="lead"]
 Verwenden Sie den Vorgang Konfiguration löschen, wenn Sie alle Pools, Volume-Gruppen, Volumes, Host-Definitionen und Host-Zuweisungen aus dem Speicher-Array löschen möchten.
 
+.Bevor Sie beginnen
 Sichern Sie vor dem Löschen der Konfiguration des Speicherarrays die Daten.
 
+.Über diese Aufgabe
 Es gibt zwei Optionen für eine klare Speicherarray-Konfiguration:
 
 * *Volume* -- normalerweise können Sie mit der Option Volume ein Test-Storage-Array als Produktions-Storage-Array neu konfigurieren. Beispielsweise können Sie ein Storage-Array für Tests konfigurieren und dann, wenn Sie die Testkonfiguration abgeschlossen haben, entfernen und das Storage-Array für eine Produktionsumgebung einrichten.

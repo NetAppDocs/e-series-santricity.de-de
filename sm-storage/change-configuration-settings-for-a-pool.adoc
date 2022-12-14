@@ -14,6 +14,7 @@ summary: Sie können die Einstellungen für einen Pool bearbeiten, einschließli
 [role="lead"]
 Sie können die Einstellungen für einen Pool bearbeiten, einschließlich Name, Kapazitätswarnungen, Änderungsprioritäten und Erhaltungskapazität.
 
+.Über diese Aufgabe
 In dieser Aufgabe wird beschrieben, wie die Konfigurationseinstellungen für einen Pool geändert werden.
 
 [NOTE]
@@ -30,6 +31,7 @@ Das Dialogfeld Pool-Einstellungen wird angezeigt.
 . Wählen Sie die Registerkarte *Einstellungen* aus, und bearbeiten Sie anschließend die Pooleinstellungen entsprechend.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

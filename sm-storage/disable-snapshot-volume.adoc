@@ -14,6 +14,7 @@ summary: Sie können ein Snapshot-Volume oder ein Snapshot-Volume in einer Snaps
 [role="lead"]
 Sie können ein Snapshot-Volume oder ein Snapshot-Volume in einer Snapshot-Konsistenzgruppe deaktivieren, wenn Sie es nicht mehr benötigen oder vorübergehend nicht verwenden möchten.
 
+.Über diese Aufgabe
 Verwenden Sie die Option Deaktivieren, wenn eine dieser Bedingungen zutrifft:
 
 * Sie sind mit dem Snapshot-Volumen oder dem Snapshot-Volumen der Konsistenzgruppen fertig.

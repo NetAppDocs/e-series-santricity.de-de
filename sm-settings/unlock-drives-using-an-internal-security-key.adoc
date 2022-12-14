@@ -28,6 +28,7 @@ Detaillierte Anweisungen für die Migration einer Volume-Gruppe finden Sie in ht
 * Die Sicherheitsschlüsseldatei steht auf dem Management-Client zur Verfügung (das System mit einem Browser, der zum Zugriff auf System Manager verwendet wird). Wenn Sie die Laufwerke in ein Storage-Array verschieben, das von einem anderen System gemanagt wird, müssen Sie die Sicherheitsschlüsseldatei auf diesen Management-Client verschieben.
 
 
+.Über diese Aufgabe
 Wenn Sie die interne Schlüsselverwaltung verwenden, wird der Sicherheitsschlüssel lokal auf dem Speicher-Array gespeichert. Ein Sicherheitsschlüssel ist eine Zeichenkette, die vom Controller und den Laufwerken für Lese-/Schreibzugriff freigegeben wird. Wenn die Laufwerke physisch aus dem Array entfernt und in einem anderen installiert werden, können sie erst betrieben werden, wenn Sie den richtigen Sicherheitsschlüssel angeben.
 
 [NOTE]
@@ -60,8 +61,10 @@ Wenn der Entsperrvorgang erfolgreich ist, wird im Dialogfeld „die zugeordneten
 
 
 
+.Ergebnisse
 Wenn alle Laufwerke gesperrt und dann entsperrt sind, wird jeder Controller im Speicher-Array neu gestartet. Wenn sich jedoch bereits einige nicht freigeschaltete Laufwerke im Ziel-Speicher-Array befinden, werden die Controller nicht neu gestartet.
 
+.Nachdem Sie fertig sind
 Auf dem Ziel-Array (dem Array mit den neu installierten Laufwerken) können Sie nun Volume-Gruppen importieren.
 
 

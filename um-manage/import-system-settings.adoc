@@ -19,6 +19,7 @@ Sie können die Systemkonfiguration von einem Speicher-Array in andere Speicher-
 * Die vorhandene Konfiguration für die Ziel-Speicher-Arrays wird in System Manager gesichert (Menü:Einstellungen[System > Speicherarray-Konfiguration speichern]).
 
 
+.Über diese Aufgabe
 Importierte Einstellungen umfassen Medien-Scan-Einstellungen für ein Volume, SSD-Einstellungen für Controller und automatischen Lastausgleich (ohne Berichterstellung für Host-Konnektivität).
 
 .Schritte
@@ -44,4 +45,5 @@ Auf der Seite Operationen werden die Ergebnisse des Importvorgangs angezeigt. We
 
 
 
+.Ergebnisse
 Die Ziel-Storage-Arrays sind nun mit denselben Systemeinstellungen wie das Quell-Array konfiguriert.

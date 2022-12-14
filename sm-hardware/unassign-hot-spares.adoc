@@ -13,8 +13,10 @@ summary: Sie können ein Hot Spare wieder auf ein nicht zugewiesenes Laufwerk ä
 [role="lead"]
 Sie können ein Hot Spare wieder auf ein nicht zugewiesenes Laufwerk ändern.
 
+.Bevor Sie beginnen
 Das Hot Spare muss im Status optimal, Standby sein.
 
+.Über diese Aufgabe
 Sie können die Zuweisung eines Ersatzlaufwerks, das derzeit für ein ausgefallenes Laufwerk übernimmt, nicht aufheben. Wenn sich das Hot Spare nicht im optimalen Status befindet, befolgen Sie die Recovery Guru-Verfahren, um Probleme zu beheben, bevor Sie versuchen, die Zuweisung des Laufwerks zu aufheben.
 
 .Schritte
@@ -37,4 +39,5 @@ Das Dialogfeld zeigt alle Volume-Gruppen an, die durch Entfernen dieses Hot Spar
 . Bestätigen Sie die Zuweisung.
 
 
+.Ergebnisse
 Das Laufwerk wird an Unassigned (in grau dargestellt) zurückgegeben.

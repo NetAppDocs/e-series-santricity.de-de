@@ -14,6 +14,7 @@ summary: Verwenden Sie die Einstellung Standardbetriebssystem ändern, um den St
 [role="lead"]
 Verwenden Sie die Einstellung Standardbetriebssystem ändern, um den Standardhosttyp auf Speicherarray-Ebene zu ändern. Im Allgemeinen ändern Sie den Standard-Hosttyp, bevor Sie Hosts mit dem Speicher-Array verbinden oder wenn Sie zusätzliche Hosts verbinden.
 
+.Über diese Aufgabe
 Beachten Sie folgende Richtlinien:
 
 * Wenn alle Hosts, die Sie eine Verbindung zum Storage Array herstellen möchten, dasselbe Betriebssystem (homogene Host-Umgebung) verwenden möchten, ändern Sie den Host-Typ entsprechend dem Betriebssystem.

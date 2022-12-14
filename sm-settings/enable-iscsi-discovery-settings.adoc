@@ -16,8 +16,10 @@ Sie können Einstellungen für die Ermittlung von Speichergeräten in einem iSCS
 
 Mit den Einstellungen für die Zielerkennung können Sie die iSCSI-Informationen des Speicherarrays über das iSNS-Protokoll (Internet Storage Name Service) registrieren und bestimmen, ob nicht benannte Ermittlungssitzungen zugelassen werden sollen.
 
+.Bevor Sie beginnen
 Wenn der iSNS-Server eine statische IP-Adresse verwendet, muss diese Adresse für die iSNS-Registrierung verfügbar sein. IPv4 und IPv6 werden unterstützt.
 
+.Über diese Aufgabe
 Sie können die folgenden Einstellungen für die iSCSI-Ermittlung aktivieren:
 
 * *ISNS-Server aktivieren, um ein Ziel zu registrieren* -- Wenn es aktiviert ist, registriert das Speicherarray seinen iSCSI-qualifizierten Namen (IQN) und Port-Informationen vom iSNS-Server. Diese Einstellung ermöglicht die iSNS-Erkennung, sodass ein Initiator die IQN- und Portinformationen vom iSNS-Server abrufen kann.
@@ -56,4 +58,5 @@ Damit der DHCP-Server die iSNS-Serveradresse bereitstellen kann, müssen Sie den
 . Klicken Sie Auf *Speichern*.
 
 
+.Ergebnisse
 Es wird eine Statusleiste angezeigt, da der System Manager versucht, den Controller beim iSNS-Server zu registrieren. Dieser Vorgang kann bis zu fünf Minuten dauern.

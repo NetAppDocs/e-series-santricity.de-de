@@ -34,6 +34,7 @@ Einige Registerkarten haben einen Link für *Weitere Einstellungen anzeigen* obe
 
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

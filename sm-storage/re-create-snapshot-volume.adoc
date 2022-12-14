@@ -19,6 +19,7 @@ Sie können ein Snapshot-Volumen oder ein Snapshot-Snapshot-Volumen, das Sie zuv
 * Alle Snapshot-Volumes der Mitglieder müssen sich im deaktivierten Zustand befinden, bevor Sie das Snapshot-Volume der Snapshot-Konsistenzgruppe neu erstellen können.
 
 
+.Über diese Aufgabe
 Sie können ein Snapshot-Volumen eines einzelnen Mitglieds nicht neu erstellen, sondern nur das gesamte Snapshot-Consistency Group-Snapshot-Volumen neu erstellen.
 
 [NOTE]
@@ -51,6 +52,7 @@ Wählen Sie diese Option aus, um ein neues Snapshot-Image zu erstellen, aus dem 
 . Klicken Sie Auf *Reproduzieren*.
 
 
+.Ergebnisse
 System Manager führt die folgenden Aktionen durch:
 
 * Löscht alle `write` Daten auf einem zugehörigen Snapshot Repository Volume.

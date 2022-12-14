@@ -14,6 +14,7 @@ summary: Sie können Daten über die iSCSI-Verbindungen zu Ihrem Speicher-Array 
 [role="lead"]
 Sie können Daten über die iSCSI-Verbindungen zu Ihrem Speicher-Array anzeigen.
 
+.Über diese Aufgabe
 System Manager zeigt diese Typen von iSCSI-Statistiken. Alle Statistiken sind schreibgeschützt und können nicht festgelegt werden.
 
 * *Ethernet MAC Statistics* -- stellt Statistiken für die Media Access Control (MAC) bereit. MAC bietet auch einen Adressierungsmechanismus, der als physische Adresse oder MAC-Adresse bezeichnet wird. Die MAC-Adresse ist eine eindeutige Adresse, die jedem Netzwerkadapter zugewiesen wird. Die MAC-Adresse unterstützt die Übertragung von Datenpaketen an ein Ziel innerhalb des Subnetzwerks.

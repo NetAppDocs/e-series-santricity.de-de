@@ -14,6 +14,7 @@ summary: Im Software- und Firmwarebestand sind die Firmware-Versionen für jede 
 [role="lead"]
 Im Software- und Firmwarebestand sind die Firmware-Versionen für jede Komponente im Speicher-Array aufgeführt.
 
+.Über diese Aufgabe
 Ein Storage Array besteht aus vielen Komponenten, darunter Controller, Laufwerke, Schubladen und Input/Output-Module (IOMs). Jede dieser Komponenten enthält Firmware. Einige Firmware-Versionen hängen von anderen Firmware-Versionen ab. Um Informationen über alle Firmware-Versionen in Ihrem Speicher-Array zu erfassen, lesen Sie den Software- und Firmware-Bestand. Der technische Support kann die Software- und Firmware-Bestandsaufnahme analysieren, um falsche Firmware-Zuordnungen zu erkennen.
 
 .Schritte

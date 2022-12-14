@@ -14,8 +14,10 @@ summary: Sie können die Option Löschen verwenden, um ein nicht zugewiesenes La
 [role="lead"]
 Sie können die Option Löschen verwenden, um ein nicht zugewiesenes Laufwerk zum Entfernen aus dem System vorzubereiten. Durch dieses Verfahren werden die Daten endgültig entfernt, sodass die Daten nicht erneut gelesen werden können.
 
+.Bevor Sie beginnen
 Das Laufwerk muss sich im Status „nicht zugewiesen“ befinden.
 
+.Über diese Aufgabe
 Verwenden Sie die Option Löschen nur, wenn Sie alle Daten auf einem Laufwerk dauerhaft entfernen möchten. Wenn das Laufwerk sicher aktiviert ist, führt die Option Löschen eine kryptografische Löschung durch und setzt die Sicherheitsattribute des Laufwerks wieder auf sicher-fähig zurück.
 
 [NOTE]
@@ -55,6 +57,8 @@ Stellen Sie sicher, dass Sie mit diesem Vorgang fortfahren möchten. Wenn Sie im
 . Klicken Sie im Dialogfeld geschätzte Abschlusszeit auf *Ja*, um mit dem Löschvorgang fortzufahren.
 
 
+.Ergebnisse
 Der Löschvorgang kann mehrere Minuten oder mehrere Stunden dauern. Sie können den Status im Menü:Startseite[Vorgänge in Bearbeitung anzeigen] anzeigen. Wenn der Vorgang Löschen abgeschlossen ist, können die Laufwerke in einer anderen Volume-Gruppe oder einem anderen Laufwerk-Pool oder in einem anderen Speicher-Array verwendet werden.
 
+.Nachdem Sie fertig sind
 Wenn Sie das Laufwerk wieder verwenden möchten, müssen Sie es zuerst initialisieren. Wählen Sie dazu im Kontextmenü des Laufwerks *Initialisieren* aus.

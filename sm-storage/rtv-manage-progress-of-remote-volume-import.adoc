@@ -14,6 +14,7 @@ summary: Nach Beginn des Importvorgangs können Sie den Fortschritt anzeigen und
 [role="lead"]
 Nach Beginn des Importvorgangs können Sie den Fortschritt anzeigen und ausführen.
 
+.Über diese Aufgabe
 Für jeden Importvorgang wird im Dialogfeld „Vorgänge in Bearbeitung“ ein Prozentsatz der Fertigstellung und die geschätzte verbleibende Zeit angezeigt. Zu den Aktionen gehören die Änderung der Importpriorität, das Stoppen und Wiederaufnehmen von Vorgängen und das Trennen von dem Vorgang.
 
 Sie können die laufenden Vorgänge auch auf der Startseite anzeigen (Menü:Startseite[Vorgänge in Bearbeitung anzeigen]).

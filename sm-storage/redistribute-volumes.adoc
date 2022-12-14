@@ -22,6 +22,7 @@ Wenn Sie Volumes ohne Multipath-Treiber auf den Hosts neu verteilen möchten, m�
 
 
 
+.Über diese Aufgabe
 Die meisten Host Multipath-Treiber versuchen, auf jedes Volume auf einem Pfad zu seinem bevorzugten Controller-Eigentümer zuzugreifen. Falls dieser bevorzugte Pfad jedoch nicht mehr verfügbar ist, erfolgt ein Failover des Multipath-Treibers auf dem Host zu einem alternativen Pfad. Dieser Failover kann dazu führen, dass sich die Volume-Inhaberschaft auf den alternativen Controller ändert. Nachdem Sie die Bedingung behoben haben, die den Failover verursacht hat, verschieben einige Hosts möglicherweise automatisch die Volume-Eigentümerschaft zurück zu dem bevorzugten Controller-Eigentümer. In einigen Fällen müssen Sie die Volumes jedoch möglicherweise manuell neu verteilen.
 
 .Schritte
@@ -33,4 +34,5 @@ Das Dialogfeld Volumes neu verteilen wird angezeigt. Alle Volumes im Storage-Arr
 . Wählen Sie ein oder mehrere Volumes aus, die Sie neu verteilen möchten, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
 
 
+.Ergebnisse
 System Manager verschiebt die ausgewählten Volumes in die bevorzugten Controller-Eigentümer oder ein Dialogfeld zum Neuverteilen von Volumes ist nicht erforderlich.

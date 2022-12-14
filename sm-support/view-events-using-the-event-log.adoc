@@ -21,6 +21,7 @@ Die Seite Ereignisprotokoll wird angezeigt.
 
 +
 .Seitendetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

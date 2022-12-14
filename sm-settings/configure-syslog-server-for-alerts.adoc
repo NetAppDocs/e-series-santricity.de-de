@@ -19,6 +19,7 @@ Um Syslog-Warnmeldungen zu konfigurieren, müssen Sie eine Syslog-Serveradresse 
 * UDP-Portnummer des Syslog-Servers muss verfügbar sein. Dieser Port ist normalerweise 514.
 
 
+.Über diese Aufgabe
 Diese Aufgabe beschreibt, wie Sie die Adresse und den Port für den Syslog-Server eingeben und anschließend die eingegebene Adresse testen.
 
 .Schritte
@@ -40,4 +41,5 @@ Das Dialogfeld Syslog Server hinzufügen wird geöffnet.
 . Um eine Testwarnung an die Serveradressen zu senden, wählen Sie *Alle Syslog-Server testen*.
 
 
+.Ergebnisse
 Der Ereignismonitor sendet bei jedem Ereignis, das in einem Alarmtabellen stattfindet, Warnmeldungen an den Syslog-Server.

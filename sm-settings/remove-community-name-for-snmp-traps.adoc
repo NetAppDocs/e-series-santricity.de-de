@@ -31,4 +31,5 @@ Wenn Trap-Ziele mit diesem Community-Namen verknüpft sind, werden im Dialogfeld
 . Bestätigen Sie den Vorgang, und klicken Sie dann auf *Entfernen*.
 
 
+.Ergebnisse
 Der Community-Name und das zugehörige Trap-Ziel werden von der Seite Alerts entfernt.

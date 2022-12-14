@@ -19,6 +19,7 @@ Zur Konfiguration der synchronen Spiegelung erstellen Sie ein gespiegeltes Paar,
 Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
 
 ====
+.Bevor Sie beginnen
 Bevor Sie ein gespiegeltes Paar erstellen, erfüllen Sie die folgenden Anforderungen für Unified Manager:
 
 * Der Web Services Proxy-Dienst muss ausgeführt werden.
@@ -40,6 +41,7 @@ Stellen Sie außerdem sicher, dass Sie die folgenden Anforderungen an Storage Ar
 * Das sekundäre Volume sollte mindestens so groß sein wie das primäre Volume.
 
 
+.Über diese Aufgabe
 Das Erstellen von synchronen gespiegelten Paaren ist ein mehrstufiges Verfahren.
 
 
@@ -55,7 +57,7 @@ In diesem Schritt wählen Sie das primäre Volume aus, das in der Beziehung zur 
 Der Assistent Synchronous Mirrored Pair erstellen wird geöffnet.
 
 . Wählen Sie aus der Liste der berechtigten Volumes ein Volume aus, das Sie als primäres Volume in der Spiegelung verwenden möchten.
-. Wählen Sie *Weiter* und gehen Sie zu  2: Select the secondary volume.
+. Wählen Sie *Weiter* und gehen Sie zu <<Schritt 2: Wählen Sie das sekundäre Volumen>>.
 
 
 
@@ -84,7 +86,7 @@ Wenn Ihr Remote-Speicher-Array passwortgeschützt ist, fordert das System zur Ei
 Wird ein sekundäres Volume mit einer Kapazität ausgewählt, die größer als das primäre Volume ist, so ist die nutzbare Kapazität auf die Größe des primären Volumes beschränkt.
 
 ====
-. Klicken Sie auf *Weiter* und gehen Sie zu  3: Select synchronization settings.
+. Klicken Sie auf *Weiter* und gehen Sie zu <<Schritt 3: Synchronisierungseinstellungen auswählen>>.
 
 
 
@@ -127,6 +129,7 @@ Um die Synchronisierung manuell fortzusetzen, wählen Sie System Manager und Men
 . Klicken Sie auf *Fertig stellen*, um die Synchronspiegelung abzuschließen.
 
 
+.Ergebnisse
 Wenn die Spiegelung aktiviert ist, führt das System folgende Aktionen durch:
 
 * Startet die erste Synchronisierung zwischen dem lokalen Speicher-Array und dem Remote-Speicher-Array.
@@ -141,4 +144,5 @@ Die Kapazität eines jeden Volumes beträgt 128 MiB. Wenn die Volumes jedoch in 
 
 
 
+.Nachdem Sie fertig sind
 Wechseln Sie zu System Manager und wählen Sie MENU:Startseite[Vorgänge in Bearbeitung anzeigen], um den Fortschritt des Synchronspiegelung-Vorgangs anzuzeigen. Dieser Vorgang kann langwierig sein und die System-Performance beeinträchtigen.

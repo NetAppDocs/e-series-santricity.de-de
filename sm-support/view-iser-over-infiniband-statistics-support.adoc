@@ -14,6 +14,7 @@ summary: Wenn der Controller Ihres Speicherarrays einen iSER-over-InfiniBand-Por
 [role="lead"]
 Wenn der Controller Ihres Storage-Arrays einen iSER-over-InfiniBand-Port umfasst, können Sie Daten zu den Host-Verbindungen anzeigen.
 
+.Über diese Aufgabe
 System Manager zeigt die folgenden Arten von iSER-over-InfiniBand-Statistiken an. Alle Statistiken sind schreibgeschützt und können nicht festgelegt werden.
 
 * *Statistiken zu lokalen Zielen (Protokoll)* -- stellt Statistiken für das iSER-over-InfiniBand-Ziel bereit, das den Zugriff auf die Speichermedien auf Blockebene anzeigt.

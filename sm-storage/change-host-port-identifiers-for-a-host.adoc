@@ -14,6 +14,7 @@ summary: Ändern Sie die Host-Port-IDs Wenn Sie die Benutzerbezeichnung auf eine
 [role="lead"]
 Ändern Sie die Host-Port-IDs Wenn Sie die Benutzerbezeichnung auf einer Host-Port-ID ändern möchten, fügen Sie dem Host eine neue Host-Port-ID hinzu oder löschen Sie eine Host-Port-ID vom Host.
 
+.Über diese Aufgabe
 Beachten Sie beim Ändern der Host-Port-IDs die folgenden Richtlinien:
 
 * *Hinzufügen* -- Wenn Sie einen Host-Port hinzufügen, verknüpfen Sie die Host-Port-ID mit dem Host, den Sie für die Verbindung mit Ihrem Speicher-Array erstellt haben. Sie können Portinformationen manuell über ein HBA-Dienstprogramm (Host Bus Adapter) eingeben.

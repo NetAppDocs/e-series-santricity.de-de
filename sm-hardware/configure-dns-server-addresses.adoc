@@ -18,6 +18,7 @@ Mit dem Domain Name System (DNS) werden vollständig qualifizierte Domain-Namen 
 * Sie kennen die Adresse des primären DNS-Servers und einen optionalen Backup-DNS-Server. Bei diesen Adressen können es sich um IPv4-Adressen oder IPv6-Adressen handeln.
 
 
+.Über diese Aufgabe
 In diesem Verfahren wird beschrieben, wie Sie eine primäre DNS-Serveradresse und eine DNS-Backup-Adresse angeben. Der Backup-DNS-Server kann optional so konfiguriert werden, dass er verwendet wird, wenn ein primärer DNS-Server ausfällt.
 
 [NOTE]
@@ -55,4 +56,5 @@ Wenn das Speicherarray auf eine statische DNS-Adresse eingestellt ist, werden ke
 . Wiederholen Sie diese Schritte für den anderen Controller.
 
 
+.Ergebnisse
 Die DNS-Konfiguration wird auf der Registerkarte Controllereinstellungen *DNS/NTP* angezeigt.

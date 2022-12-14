@@ -14,6 +14,7 @@ summary: Sie können gespiegelte Konsistenzgruppen löschen, die nicht mehr im l
 [role="lead"]
 Sie können gespiegelte Konsistenzgruppen löschen, die nicht mehr im lokalen Storage Array und im Remote-Storage Array benötigt werden.
 
+.Bevor Sie beginnen
 Alle gespiegelten Paare müssen aus der Consistency Mirror-Gruppe entfernt werden.
 
 .Schritte
@@ -29,10 +30,12 @@ Das System zeigt eine Bestätigung an.
 . Wählen Sie *Ja* aus, um die Consistency Mirror-Gruppe zu löschen.
 
 
+.Ergebnisse
 System Manager führt die folgenden Aktionen durch:
 
 * Löscht zuerst die SpiegelConsistency Group auf dem lokalen Speicher-Array und löscht dann die SpiegelConsistency Group auf dem Remote-Speicher-Array.
 * Entfernt die gespiegelte Konsistenzgruppe aus der Tabelle „Konsistenzgruppe spiegeln“.
 
 
+.Nachdem Sie fertig sind
 Gelegentlich kann es vorkommen, dass die gespiegelte Konsistenzgruppe erfolgreich aus dem lokalen Speicher-Array gelöscht wird, aber ein Kommunikationsfehler verhindert, dass die gespiegelte Konsistenzgruppe aus dem Remote-Speicher-Array gelöscht wird. In diesem Fall müssen Sie auf das Remote-Speicher-Array zugreifen, um die entsprechende gespiegelte Konsistenzgruppe zu löschen.

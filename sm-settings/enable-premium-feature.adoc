@@ -19,6 +19,7 @@ Eine Premium-Funktion ist eine zusätzliche Option, die einen Schlüssel zur Akt
 * Sie haben die Schlüsseldatei auf den Management-Client geladen (das System mit einem Browser zum Zugriff auf System Manager).
 
 
+.Über diese Aufgabe
 In dieser Aufgabe wird beschrieben, wie Sie mit System Manager eine Premium-Funktion aktivieren.
 
 [NOTE]

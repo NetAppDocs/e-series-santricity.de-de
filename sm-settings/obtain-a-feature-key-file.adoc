@@ -14,6 +14,7 @@ summary: Um ein Premium Feature oder Feature Pack auf Ihrem Speicher-Array zu ak
 [role="lead"]
 Um ein Premium Feature oder Feature Pack auf Ihrem Speicher-Array zu aktivieren, müssen Sie zuerst eine Feature Key-Datei erhalten. Ein Schlüssel ist nur einem Storage-Array zugeordnet.
 
+.Über diese Aufgabe
 In dieser Aufgabe wird beschrieben, wie die erforderlichen Informationen für die Funktion gesammelt werden und anschließend eine Anforderung für eine Feature Key-Datei gesendet wird. Erforderliche Informationen:
 
 * Seriennummer des Chassis
@@ -45,4 +46,5 @@ Sie können auch zu gehen http://partnerspfk.netapp.com["Aktivierung der NetApp 
 
 
 
+.Nachdem Sie fertig sind
 Wenn Sie über eine Feature Key-Datei verfügen, können Sie das Premium Feature oder Feature Pack aktivieren.

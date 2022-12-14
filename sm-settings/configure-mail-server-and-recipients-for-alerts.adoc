@@ -26,6 +26,7 @@ Um einen vollständig qualifizierten Domänennamen zu verwenden, müssen Sie auf
 * Die E-Mail-Adresse(n) der Warnungsempfänger muss verfügbar sein. Der Empfänger ist in der Regel eine Adresse für einen Netzwerkadministrator oder Speicheradministrator. Sie können bis zu 20 E-Mail-Adressen eingeben.
 
 
+.Über diese Aufgabe
 Diese Aufgabe beschreibt die Konfiguration des E-Mail-Servers, die Eingabe von E-Mail-Adressen für den Absender und die Empfänger und das Testen aller von der Seite Warnungen eingegebenen E-Mail-Adressen.
 
 [NOTE]
@@ -72,4 +73,5 @@ Die E-Mail-Adressen werden auf der Seite „Meldungen“ angezeigt.
 . Wenn Sie sicherstellen möchten, dass die E-Mail-Adressen gültig sind, klicken Sie auf *Alle E-Mails testen*, um Testmeldungen an die Empfänger zu senden.
 
 
+.Ergebnisse
 Nachdem Sie E-Mail-Alarme konfiguriert haben, sendet der Ereignismonitor immer dann E-Mail-Nachrichten an die angegebenen Empfänger.

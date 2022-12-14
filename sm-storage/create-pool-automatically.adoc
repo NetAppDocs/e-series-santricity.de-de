@@ -14,12 +14,14 @@ summary: Die Erstellung des Pools wird automatisch initiiert, wenn System Manage
 [role="lead"]
 Die Erstellung des Pools wird automatisch initiiert, wenn System Manager nicht zugewiesene Laufwerke im Speicher-Array erkennt. Mithilfe der automatischen Pool-Erstellung können alle nicht zugewiesenen Laufwerke im Speicher-Array in einem Pool konfiguriert und Laufwerke zu vorhandenen Pools hinzugefügt werden.
 
+.Bevor Sie beginnen
 Sie können das Dialogfeld „automatische Konfiguration des Pools“ starten, wenn eine der folgenden Bedingungen zutrifft:
 
 * Es wurde mindestens ein nicht zugewiesenes Laufwerk erkannt, das einem vorhandenen Pool mit ähnlichen Laufwerktypen hinzugefügt werden kann.
 * Es wurden elf (11) oder mehr nicht zugewiesene Laufwerke erkannt, die zur Erstellung eines neuen Pools verwendet werden können (wenn sie aufgrund unterschiedlicher Antriebstypen nicht zu einem vorhandenen Pool hinzugefügt werden können).
 
 
+.Über diese Aufgabe
 Beachten Sie Folgendes:
 
 * Wenn Sie einem Speicher-Array Laufwerke hinzufügen, erkennt System Manager automatisch die Laufwerke und fordert Sie auf, basierend auf dem Laufwerkstyp und der aktuellen Konfiguration einen einzelnen Pool oder mehrere Pools zu erstellen.

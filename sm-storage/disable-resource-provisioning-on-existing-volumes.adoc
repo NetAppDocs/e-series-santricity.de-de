@@ -23,6 +23,7 @@ Standardmäßig ist die Ressourcenbereitstellung auf Systemen aktiviert, auf den
 * Sie müssen SSD-Volume-Gruppen oder -Pools haben, wobei alle Laufwerke die Funktion zur Wiederherstellung von dezugewiesenen oder nicht geschriebenen logischen Blockfehlern (DULBE) unterstützen. Andernfalls ist die Option zur Ressourcenbereitstellung nicht verfügbar.
 
 
+.Über diese Aufgabe
 Wenn Sie die Ressourcenbereitstellung für vorhandene Volume-Gruppen und -Pools aktivieren, werden alle Volumes in der ausgewählten Volume-Gruppe oder dem ausgewählten Pool geändert, damit die Blöcke wieder entzugewiesen werden können. Dieser Prozess kann einen Hintergrundvorgang erfordern, um eine konsistente Zuweisung auf der Granularität zu gewährleisten. Dieser Vorgang zeigt die Zuordnung von Speicherplatz nicht an. Sobald der Hintergrundvorgang abgeschlossen ist, muss das Betriebssystem die Zuordnung ungenutzter Blöcke aufheben, um freien Speicherplatz zu erstellen.
 
 Wenn Sie die Ressourcenbereitstellung für vorhandene Volume-Gruppen oder Pools deaktivieren, schreibt ein Hintergrundvorgang alle logischen Blöcke in jedem Volume neu. Die bestehenden Daten bleiben erhalten. Die Schreibvorgänge zuordnen oder stellen die Blöcke auf den Laufwerken bereit, die der Volume-Gruppe oder dem Pool zugeordnet sind.

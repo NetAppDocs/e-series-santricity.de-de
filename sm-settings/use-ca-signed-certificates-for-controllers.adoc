@@ -19,6 +19,7 @@ Sie können Zertifikate von CA-signierte für die sichere Kommunikation zwischen
 * Sie müssen die IP-Adresse oder DNS-Namen jedes Controllers kennen.
 
 
+.Über diese Aufgabe
 Die Verwendung von CA-signierten Zertifikaten ist ein dreistufiges Verfahren.
 
 
@@ -27,11 +28,12 @@ Die Verwendung von CA-signierten Zertifikaten ist ein dreistufiges Verfahren.
 
 Sie müssen zuerst eine CSR-Datei (Certificate Signing Request) für jeden Controller im Speicher-Array generieren.
 
+.Über diese Aufgabe
 In dieser Aufgabe wird beschrieben, wie eine CSR-Datei aus System Manager generiert wird. Der CSR stellt Informationen über Ihr Unternehmen und entweder die IP-Adresse oder den DNS-Namen des Controllers zur Verfügung. Während dieser Aufgabe wird eine CSR-Datei erzeugt, wenn das Speicher-Array einen Controller und zwei CSR-Dateien hat, wenn es zwei Controller hat.
 
 [NOTE]
 ====
-Alternativ können Sie eine CSR-Datei mit einem Tool wie OpenSSL generieren und zu überspringen  2: Submit the CSR files.
+Alternativ können Sie eine CSR-Datei mit einem Tool wie OpenSSL generieren und zu überspringen <<Schritt 2: Senden Sie die CSR-Dateien>>.
 
 ====
 .Schritte
@@ -78,7 +80,7 @@ Klicken Sie nicht auf den Link *Skip this Step*, wenn Sie eine CSR-Anfrage erste
 +
 Für einen einzelnen Controller wird eine CSR-Datei auf Ihr lokales System heruntergeladen. Für Dual Controller werden zwei CSR-Dateien heruntergeladen. Der Speicherort des Downloads hängt von Ihrem Browser ab.
 
-. Gehen Sie zu  2: Submit the CSR files.
+. Gehen Sie zu <<Schritt 2: Senden Sie die CSR-Dateien>>.
 
 
 
@@ -96,7 +98,7 @@ Nachdem Sie die CSR-Dateien (Certificate Signing Request) erstellt haben, senden
 *Nachdem Sie eine CSR-Datei an die CA gesendet haben, generieren SIE keine andere CSR-Datei.* Wenn Sie eine CSR generieren, erstellt das System ein privates und öffentliches Schlüsselpaar. Der öffentliche Schlüssel ist Teil der CSR, während der private Schlüssel im Schlüsselspeicher des Systems aufbewahrt wird. Wenn Sie die signierten Zertifikate erhalten und importieren, stellt das System sicher, dass sowohl der private als auch der öffentliche Schlüssel das ursprüngliche Paar sind. Wenn die Schlüssel nicht übereinstimmen, funktionieren die signierten Zertifikate nicht und Sie müssen neue Zertifikate von der CA anfordern.
 
 ====
-. Wenn die Zertifizierungsstelle die signierten Zertifikate zurückgibt, gehen Sie zu  3: Import signed certificates for controllers.
+. Wenn die Zertifizierungsstelle die signierten Zertifikate zurückgibt, gehen Sie zu <<Schritt 3: Importieren Sie signierte Zertifikate für Controller>>.
 
 
 
@@ -127,4 +129,5 @@ Die Dateien werden hochgeladen und validiert.
 
 
 
+.Ergebnis
 Die Sitzung wird automatisch beendet. Sie müssen sich erneut anmelden, damit die Zertifikate wirksam werden. Wenn Sie sich erneut anmelden, werden die neuen CA-signierten Zertifikate für Ihre Sitzung verwendet.

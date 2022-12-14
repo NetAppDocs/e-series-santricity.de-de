@@ -18,6 +18,7 @@ Der Controller-Eigentümer des primären Volume führt diesen Vorgang im Hinterg
 Beachten Sie diese Richtlinien, um zu ermitteln, wie lange eine Synchronisierungspriorität dauern könnte und wie sich die Synchronisierungsprioritäten auf die Systemleistung auswirken können.
 
 .Allgemeines zu Prioritätsraten für die Synchronisierung
+[%collapsible]
 ====
 Diese Prioritätsraten sind verfügbar:
 

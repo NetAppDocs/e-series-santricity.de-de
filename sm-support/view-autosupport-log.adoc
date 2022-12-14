@@ -14,6 +14,7 @@ summary: Das AutoSupport-Protokoll enthält Informationen zum Status, zum Versan
 [role="lead"]
 Das AutoSupport-Protokoll enthält Informationen zum Status, zum Versandverlauf und zu Fehlern, die bei der Lieferung von AutoSupport-Entsendungen auftreten.
 
+.Über diese Aufgabe
 Es können mehrere Protokolldateien vorhanden sein. Wenn die aktuelle Protokolldatei 200 KB erreicht, wird sie archiviert und eine neue Protokolldatei erstellt. Der Name der archivierten Protokolldatei lautet `ASUPMessages.n`, Wobei _n_ eine Ganzzahl zwischen 1 und 9 ist. Wenn mehrere Protokolldateien vorhanden sind, können Sie das aktuellste Protokoll oder ein vorheriges Protokoll anzeigen.
 
 * *Aktueller Log* -- zeigt eine Liste der neuesten aufgezeichneten Ereignisse an.

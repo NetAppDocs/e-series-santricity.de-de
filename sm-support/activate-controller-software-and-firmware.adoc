@@ -14,6 +14,7 @@ summary: Sie können die Upgrade-Dateien sofort aktivieren oder bis zu einem ang
 [role="lead"]
 Sie können die Upgrade-Dateien sofort aktivieren oder bis zu einem angenehmeren Zeitpunkt warten.
 
+.Über diese Aufgabe
 Sie können die Dateien herunterladen und übertragen, ohne sie zu aktivieren. Aus folgenden Gründen können Sie sich später aktivieren:
 
 * *Tageszeit* -- die Aktivierung der Software und Firmware kann eine lange Zeit dauern, so dass Sie möglicherweise warten möchten, bis I/O-Lasten leichter sind. Der Controller-Failover während der Aktivierung, sodass die Performance möglicherweise niedriger ist als üblich, bis das Upgrade abgeschlossen ist.

@@ -23,6 +23,7 @@ Zum Konfigurieren der Authentifizierung für das Zugriffsmanagement können Sie 
 * Eine IdP-Metadatendatei wird vom IdP-System heruntergeladen und ist auf dem lokalen System verfügbar, das für den Zugriff auf System Manager verwendet wird.
 
 
+.Über diese Aufgabe
 Ein Identitäts-Provider (IdP) ist ein externes System, mit dem Anmeldeinformationen von einem Benutzer angefordert und festgestellt werden können, ob dieser Benutzer erfolgreich authentifiziert wurde. Der IdP kann so konfiguriert werden, dass er Multi-Faktor-Authentifizierung bietet und eine beliebige Benutzerdatenbank, wie z. B. Active Directory, verwendet. Ihr Sicherheitsteam ist für die Instandhaltung des IdP verantwortlich. Ein Service-Provider (SP) ist ein System, das die Benutzerauthentifizierung und den Zugriff steuert. Wenn Access Management mit SAML konfiguriert ist, fungiert das Storage-Array als Dienstanbieter für die Anforderung der Authentifizierung vom Identity Provider. Um eine Verbindung zwischen dem IdP und dem Storage-Array herzustellen, teilen Sie Metadatendateien zwischen diesen beiden Einheiten gemeinsam. Als Nächstes ordnen Sie die IdP-Benutzereinheiten den Storage-Array-Rollen zu. Und schließlich testen Sie die Verbindung und SSO-Anmeldedaten, bevor Sie SAML aktivieren.
 
 [NOTE]
@@ -102,6 +103,7 @@ Das Dialogfeld Rollenzuordnung wird geöffnet.
 . Weisen Sie den vordefinierten Rollen IdP-Benutzerattribute und -Gruppen zu. Einer Gruppe können mehrere Rollen zugewiesen sein.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -216,4 +218,5 @@ Das Dialogfeld SAML aktivieren bestätigen wird geöffnet.
 . Geben Sie die Benutzeranmeldeinformationen für einen SSO-Anmeldetest ein.
 
 
+.Ergebnisse
 Nachdem das System SAML aktiviert hat, werden alle aktiven Sitzungen beendet und die Authentifizierung von Benutzern über SAML beginnt.

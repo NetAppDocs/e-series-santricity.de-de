@@ -14,6 +14,7 @@ summary: Sie können den Sicherheitsschlüssel überprüfen, um sicherzustellen,
 [role="lead"]
 Sie können den Sicherheitsschlüssel überprüfen, um sicherzustellen, dass er nicht beschädigt wurde, und um sicherzustellen, dass Sie über einen korrekten Passphrase verfügen.
 
+.Über diese Aufgabe
 In dieser Aufgabe wird beschrieben, wie Sie den zuvor erstellten Sicherheitsschlüssel validieren. Dies ist ein wichtiger Schritt, um sicherzustellen, dass die Schlüsseldatei nicht beschädigt ist und der Passphrase korrekt ist, wodurch sichergestellt wird, dass Sie später auf die Laufwerkdaten zugreifen können, wenn Sie ein sicheres Laufwerk von einem Speicher-Array in ein anderes verschieben.
 
 .Schritte

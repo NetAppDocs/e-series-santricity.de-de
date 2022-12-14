@@ -14,6 +14,7 @@ summary: Sie können das unlesbare Sektoren-Log speichern und die Datei zur Anal
 [role="lead"]
 Sie können das unlesbare Sektoren-Log speichern und die Datei zur Analyse an den technischen Support senden.
 
+.Über diese Aufgabe
 Das unlesbare Sektoren-Log enthält detaillierte Aufzeichnungen von unlesbaren Sektoren, die durch Laufwerke verursacht werden, die unwiederherstellbare Medienfehler melden. Unlesbare Sektoren werden während der normalen I/O und bei Modifizierungsvorgängen, wie z.B. Rekonstruktionen, erkannt. Wenn unlesbare Sektoren auf einem Speicher-Array erkannt werden, wird für das Speicher-Array eine Warnmeldung erforderlich angezeigt. Der Recovery Guru unterscheidet, welche unlesbare Sektorbedingung Aufmerksamkeit benötigt. Daten, die in einem unlesbaren Sektor enthalten sind, können nicht wiederhergestellt werden und sollten als verloren betrachtet werden.
 
 Das unlesbare Sektoren-Log kann bis zu 1,000 unlesbare Sektoren speichern. Wenn das unlesbare Sektoren-Protokoll 1,000 Einträge erreicht, gelten die folgenden Bedingungen:

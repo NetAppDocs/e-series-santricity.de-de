@@ -14,6 +14,7 @@ summary: Sie können die Berichterstellung für die Host-Konnektivität aktivier
 [role="lead"]
 Sie können die Berichterstellung für die Host-Konnektivität aktivieren, damit das Storage-Array die Verbindung zwischen den Controllern und den konfigurierten Hosts fortlaufend überwacht. Anschließend werden Sie benachrichtigt, wenn die Verbindung unterbrochen wird. Diese Funktion ist standardmäßig aktiviert.
 
+.Über diese Aufgabe
 Wenn Sie die Berichterstellung für die Host-Konnektivität deaktivieren, überwacht das System bei einem mit dem Storage-Array verbundenen Host keine Verbindungs- oder Multipath-Treiberprobleme mehr.
 
 [NOTE]

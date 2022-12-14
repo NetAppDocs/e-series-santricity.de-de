@@ -14,6 +14,7 @@ summary: Sie können einem vorhandenen oder neuen Workload ein oder mehrere Volu
 [role="lead"]
 Sie können einem vorhandenen oder neuen Workload ein oder mehrere Volumes für Volumes hinzufügen, die derzeit keinem Workload zugewiesen sind.
 
+.Über diese Aufgabe
 Volumes sind keinem Workload zugeordnet, wenn sie mithilfe der Befehlszeilenschnittstelle (CLI) erstellt wurden oder aus einem anderen Storage-Array migriert (importiert/exportiert) wurden.
 
 .Schritte

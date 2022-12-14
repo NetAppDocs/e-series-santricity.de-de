@@ -28,4 +28,5 @@ Das Dialogfeld SNMPv3-Benutzer konfigurieren wird geöffnet.
 . Bestätigen Sie den Vorgang, und klicken Sie dann auf *Löschen*.
 
 
+.Ergebnisse
 Der Benutzername und das zugehörige Trap-Ziel werden von der Seite Warnungen entfernt.

@@ -42,6 +42,7 @@ Das Dialogfeld Einstellungen bearbeiten wird angezeigt.
 . Wählen Sie die entsprechenden Einstellungen für das Snapshot-Image aus, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

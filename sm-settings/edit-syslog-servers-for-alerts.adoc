@@ -24,4 +24,5 @@ Die Zeile wird zu einem bearbeitbaren Feld.
 . Bearbeiten Sie die Serveradresse und die UDP-Portnummer und klicken Sie dann auf das Symbol *Speichern* (Häkchen).
 
 
+.Ergebnisse
 Die aktualisierte Serveradresse wird in der Tabelle angezeigt.

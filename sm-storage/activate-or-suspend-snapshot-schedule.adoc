@@ -14,6 +14,7 @@ summary: Sie können die geplante Sammlung von Snapshot-Images vorübergehend un
 [role="lead"]
 Sie können die geplante Sammlung von Snapshot-Images vorübergehend unterbrechen, wenn Sie Speicherplatz sparen müssen. Diese Methode ist effizienter als das Löschen und das spätere Erstellen des Snapshot-Zeitplans.
 
+.Über diese Aufgabe
 Der Status des Snapshot-Zeitplans bleibt ausgesetzt, bis Sie die Option *Aktivieren* verwenden, um die geplanten Snapshot-Aktivitäten wieder aufzunehmen.
 
 .Schritte

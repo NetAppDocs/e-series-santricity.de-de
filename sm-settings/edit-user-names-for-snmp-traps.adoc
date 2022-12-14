@@ -14,6 +14,7 @@ summary: Sie können Benutzerdefinitionen für SNMPv3-Traps bearbeiten.
 [role="lead"]
 Sie können Benutzerdefinitionen für SNMPv3-Traps bearbeiten.
 
+.Bevor Sie beginnen
 Für den SNMPv3-Trap muss ein Benutzer erstellt werden.
 
 .Schritte
@@ -34,4 +35,5 @@ Die Trap-Ziele und Benutzernamen werden in der Tabelle angezeigt.
 
 
 
+.Ergebnisse
 Auf der Registerkarte SNMP der Seite Meldungen werden die aktualisierten Einstellungen angezeigt.

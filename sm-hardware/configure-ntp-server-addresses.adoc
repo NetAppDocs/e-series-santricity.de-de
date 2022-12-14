@@ -23,6 +23,7 @@ Sie können eine Verbindung zum NTP-Server (Network Time Protocol) konfigurieren
 Wenn Sie einen oder mehrere Domänennamen für die NTP-Server eingeben, müssen Sie auch einen DNS-Server konfigurieren, um die NTP-Serveradresse aufzulösen. Sie müssen den DNS-Server nur auf den Controllern konfigurieren, auf denen Sie NTP konfiguriert und einen Domain-Namen angegeben haben.
 
 ====
+.Über diese Aufgabe
 NTP ermöglicht dem Speicher-Array die automatische Synchronisierung der Uhren des Controllers mit einem externen Host mithilfe des Simple Network Time Protocol (SNTP). Der Controller fragt regelmäßig den konfigurierten NTP-Server ab und aktualisiert dann seine interne Uhrzeit mit den Ergebnissen. Wenn nur ein Controller NTP aktiviert ist, synchronisiert der alternative Controller regelmäßig seine Uhr mit dem Controller, auf dem NTP aktiviert ist. Wenn auf keinem der Controller NTP aktiviert ist, synchronisieren die Controller regelmäßig ihre Uhren miteinander.
 
 [NOTE]
@@ -64,4 +65,5 @@ Wenn das Speicher-Array auf die Verwendung einer statischen NTP-Adresse eingeste
 . Klicken Sie Auf *Speichern*.
 
 
+.Ergebnisse
 Die NTP-Serverkonfiguration wird auf der Registerkarte Controllereinstellungen *DNS/NTP* angezeigt.

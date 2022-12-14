@@ -14,8 +14,10 @@ summary: Sie können die Konfigurationsinformationen eines Speicher-Arrays in ei
 [role="lead"]
 Sie können die Konfigurationsinformationen eines Speicherarrays in einer Skriptdatei speichern, um Zeit beim Einrichten zusätzlicher Speicher-Arrays mit der gleichen Konfiguration zu sparen.
 
+.Bevor Sie beginnen
 Das Speicher-Array darf keinen Vorgang durchlaufen, der seine logischen Konfigurationseinstellungen ändert. Beispiele für diese Vorgänge sind das Erstellen oder Löschen von Volumes, das Herunterladen der Controller-Firmware, das Zuweisen oder Ändern von Hot-Spare-Laufwerken oder das Hinzufügen von Kapazität (Laufwerken) zu einer Volume-Gruppe.
 
+.Über diese Aufgabe
 Das Speichern der Speicherarray-Konfiguration generiert ein CLI-Skript (Command Line Interface), das Storage Array-Einstellungen, Volume-Konfiguration, Host-Konfiguration oder Host-to-Volume-Zuweisungen für ein Storage-Array enthält. Sie können dieses generierte CLI-Skript verwenden, um eine Konfiguration auf einem anderen Speicher-Array mit genau derselben Hardwarekonfiguration zu replizieren.
 
 Sie sollten jedoch das erzeugte CLI-Skript nicht für die Disaster Recovery verwenden. Verwenden Sie stattdessen für eine Systemwiederherstellung die Sicherungsdatei der Konfigurationsdatenbank, die Sie manuell erstellen, oder wenden Sie sich an den technischen Support, um diese Daten von den neuesten Auto-Support-Daten zu erhalten.
@@ -60,6 +62,7 @@ Die Datei wird im Ordner Downloads für Ihren Browser mit dem Namen gespeichert 
 
 
 
+.Nachdem Sie fertig sind
 Um die gespeicherte Speicher-Array-Konfiguration auf ein anderes Speicher-Array zu laden, verwenden Sie die SANtricity-Befehlszeilenschnittstelle (SMcli) mit dem `-f` Option zum Anwenden des `.cfg` Datei:
 
 [NOTE]

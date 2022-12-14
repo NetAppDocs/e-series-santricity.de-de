@@ -14,6 +14,7 @@ summary: Sie können die Synchronisierungseinstellungen und die Warnschwellenwer
 [role="lead"]
 Sie können die Synchronisierungseinstellungen und die Warnschwellenwerte ändern, die von der Spiegelkonsistent-Gruppe im lokalen Speicher-Array verwendet werden, wenn Daten zu Beginn synchronisiert werden oder wenn Daten während der asynchronen Spiegelung neu synchronisiert werden.
 
+.Über diese Aufgabe
 Das Ändern der Synchronisationseinstellungen wirkt sich auf die Synchronisierungsvorgänge aller gespiegelten Paare innerhalb der Consistency Mirror-Gruppe aus.
 
 .Schritte
@@ -29,6 +30,7 @@ Das Dialogfeld „Einstellungen bearbeiten“ wird angezeigt.
 . Bearbeiten Sie die Synchronisierungseinstellungen und die Einstellungen für Warnmeldungen, und klicken Sie dann auf *Speichern*.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -60,4 +62,5 @@ Wenn Sie die Synchronisationsmethode auf automatisch einstellen, legen Sie die f
 ====
 
 
+.Ergebnisse
 System Manager ändert die Synchronisierungseinstellungen für jedes gespiegelte Paar in der Consistency Group.

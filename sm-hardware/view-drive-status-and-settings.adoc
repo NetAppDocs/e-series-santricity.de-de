@@ -30,6 +30,7 @@ Das Dialogfeld Laufwerkeinstellungen wird geöffnet.
 . Um alle Einstellungen anzuzeigen, klicken Sie oben rechts im Dialogfeld auf *Weitere Einstellungen anzeigen*.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

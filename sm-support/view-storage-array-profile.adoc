@@ -14,6 +14,7 @@ summary: Das Speicherarrayprofil enthält eine Beschreibung aller Komponenten un
 [role="lead"]
 Das Speicherarrayprofil enthält eine Beschreibung aller Komponenten und Eigenschaften des Speicherarrays.
 
+.Über diese Aufgabe
 Sie können das Speicher-Array-Profil als Hilfe bei der Wiederherstellung oder als Übersicht über die aktuelle Konfiguration des Speicher-Arrays verwenden. Möglicherweise möchten Sie eine Kopie des Speicher-Array-Profils auf dem Management-Client speichern und eine Papierkopie des Speicher-Array-Profils mit dem Speicher-Array aufbewahren. Erstellen Sie eine neue Kopie des Speicher-Array-Profils, wenn sich Ihre Konfiguration ändert.
 
 .Schritte
@@ -24,6 +25,7 @@ Der Bericht wird auf Ihrem Bildschirm angezeigt.
 
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

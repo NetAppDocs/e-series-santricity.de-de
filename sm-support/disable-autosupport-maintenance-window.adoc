@@ -27,4 +27,5 @@ Die automatische Erstellung von AutoSupport Tickets bei Fehlerereignissen ist ak
 
 
 
+.Nachdem Sie fertig sind
 Das Wartungsfenster wird erst enden, wenn die Anfrage des Storage-Arrays von den AutoSupport-Servern bearbeitet wurde. Warten Sie, bis Sie eine Bestätigungs-E-Mail erhalten haben, bevor Sie fortfahren.

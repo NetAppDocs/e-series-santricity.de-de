@@ -14,6 +14,7 @@ summary: Sie können ein Zustandsabbild für den Controller überprüfen. Ein He
 [role="lead"]
 Sie können ein Zustandsabbild für den Controller überprüfen. Ein Systemzustand-Image ist ein Rohdaten-Dump des Prozessorspeichers des Controllers, mit dem der technische Support ein Problem mit einem Controller diagnostizieren kann.
 
+.Über diese Aufgabe
 Die Firmware generiert automatisch ein Systemzustand-Image, wenn bestimmte Fehler erkannt werden. Nachdem ein Systemzustand-Image generiert wurde, wird der Controller, bei dem der Fehler neu gebootet wurde und ein Ereignis im Ereignisprotokoll protokolliert.
 
 Wenn AutoSupport aktiviert ist, wird das Systemzustand-Image automatisch an den technischen Support gesendet. Wenn Sie AutoSupport nicht aktiviert haben, müssen Sie sich an den technischen Support wenden, um Anweisungen zum Abrufen des Zustands-Images zu erhalten und dieses zur Analyse zu senden.

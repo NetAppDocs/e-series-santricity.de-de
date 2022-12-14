@@ -13,6 +13,7 @@ summary: Wenn Sie dazu aufgefordert werden, können Sie ein Laufwerk manuell feh
 [role="lead"]
 Wenn Sie dazu aufgefordert werden, können Sie ein Laufwerk manuell fehlschlagen.
 
+.Über diese Aufgabe
 System Manager überwacht die Laufwerke im Speicher-Array. Wenn die Software feststellt, dass ein Laufwerk viele Fehler verursacht, benachrichtigt Sie der Recovery Guru über einen bevorstehenden Laufwerksausfall. Sollte dies der Fall sein und Sie können ein Ersatzlaufwerk verwenden, um präventiv zu handeln. Wenn kein Ersatzlaufwerk verfügbar ist, können Sie warten, bis das Laufwerk ausfällt.
 
 [CAUTION]

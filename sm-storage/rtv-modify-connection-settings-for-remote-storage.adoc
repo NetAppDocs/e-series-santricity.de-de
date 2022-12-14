@@ -14,6 +14,7 @@ summary: Über die Option „Einstellungen anzeigen/bearbeiten“ können Sie Ve
 [role="lead"]
 Über die Option „Einstellungen anzeigen/bearbeiten“ können Sie Verbindungseinstellungen für eine beliebige Remote-Speicherkonfiguration bearbeiten, hinzufügen oder löschen.
 
+.Über diese Aufgabe
 Änderungen an Verbindungseigenschaften wirken sich auf laufende Importe aus. Um Unterbrechungen zu vermeiden, nehmen Sie nur Änderungen an Verbindungseigenschaften vor, wenn keine Importe ausgeführt werden.
 
 .Schritte

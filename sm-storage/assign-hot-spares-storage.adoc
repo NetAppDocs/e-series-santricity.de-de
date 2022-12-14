@@ -25,6 +25,7 @@ Sie können ein Hot Spare als Standby-Laufwerk für zusätzlichen Datenschutz in
 
 
 
+.Über diese Aufgabe
 In dieser Aufgabe wird beschrieben, wie Sie auf der Seite Hardware manuell ein Hot Spare zuweisen. Die empfohlene Abdeckung beträgt zwei Hot Spares pro Laufwerk-Set.
 
 [CAUTION]

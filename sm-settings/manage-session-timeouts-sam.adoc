@@ -14,6 +14,7 @@ summary: Sie können Timeouts in SANtricity System Manager konfigurieren, so das
 [role="lead"]
 Sie können Timeouts in System Manager konfigurieren, so dass die inaktiven Sitzungen der Benutzer nach einer bestimmten Zeit getrennt werden.
 
+.Über diese Aufgabe
 Standardmäßig beträgt die Session-Zeitüberschreitung für System Manager 30 Minuten. Sie können diese Zeit anpassen oder Sitzungszeitausfälle ganz deaktivieren.
 
 [NOTE]

@@ -38,6 +38,7 @@ Das Dialogfeld Grenzwert ändern wird angezeigt. Die Einstellung für Kapazität
 . Ändern Sie die zugewiesene Kapazitätsgrenze und den Warnungsschwellenwert nach Bedarf.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

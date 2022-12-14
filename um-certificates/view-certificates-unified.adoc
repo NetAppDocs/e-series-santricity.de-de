@@ -13,6 +13,7 @@ summary: 'Sie können zusammenfassende Informationen für ein Zertifikat anzeige
 [role="lead"]
 Sie können zusammenfassende Informationen für ein Zertifikat anzeigen, das die Organisation, die das Zertifikat verwendet, die Behörde, die das Zertifikat ausgestellt hat, den Gültigkeitszeitraum und die Fingerabdrücke (eindeutige Kennungen) umfasst.
 
+.Bevor Sie beginnen
 Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.
 
 .Schritte

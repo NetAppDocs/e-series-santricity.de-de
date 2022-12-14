@@ -14,6 +14,7 @@ summary: Sie können ein Mitglied-Volume aus einer vorhandenen Snapshot-Konsiste
 [role="lead"]
 Sie können ein Mitglied-Volume aus einer vorhandenen Snapshot-Konsistenzgruppe entfernen.
 
+.Über diese Aufgabe
 Wenn Sie ein Mitglied-Volume aus einer Snapshot Konsistenzgruppe entfernen, löscht der System Manager automatisch die Snapshot Objekte, die diesem Mitglied-Volume zugeordnet sind.
 
 .Schritte
@@ -24,6 +25,7 @@ Wenn Sie ein Mitglied-Volume aus einer Snapshot Konsistenzgruppe entfernen, lös
 . Bestätigen Sie, dass Sie den Vorgang ausführen möchten, und klicken Sie dann auf *Entfernen*.
 
 
+.Ergebnisse
 System Manager führt die folgenden Aktionen durch:
 
 * Löscht alle Snapshot-Images und Snapshot-Volumes, die dem Mitgliedvolume zugeordnet sind.

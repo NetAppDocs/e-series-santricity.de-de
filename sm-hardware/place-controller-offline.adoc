@@ -18,6 +18,7 @@ Wenn Sie dazu aufgefordert werden, können Sie einen Controller in den Offline-M
 * Stellen Sie sicher, dass keine Volumes verwendet werden oder dass auf allen Hosts, die diese Volumes verwenden, ein Multipath-Treiber installiert ist.
 
 
+.Über diese Aufgabe
 ++++
 
 [CAUTION]
@@ -38,4 +39,5 @@ Das Kontextmenü des Controllers wird angezeigt.
 . Wählen Sie *Offline platzieren* aus, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
 
 
+.Ergebnisse
 Es kann einige Minuten dauern, bis System Manager den Status des Controllers auf Offline aktualisiert. Beginnen Sie keine anderen Vorgänge, bis der Status aktualisiert wurde.

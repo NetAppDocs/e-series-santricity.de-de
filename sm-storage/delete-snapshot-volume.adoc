@@ -16,6 +16,7 @@ Sie können ein Snapshot-Volume oder ein Snapshot-Snapshot-Snapshot-Snapshot-Vol
 
 Sie können auch angeben, ob das zu einem zugeordnete Snapshot-Kapazitätsvolume gelöscht werden soll `read-write` snapshot Volume oder Beibehaltung des reservierten Kapazitäts-Volumes des Snapshots als nicht zugewiesenes Volume.
 
+.Über diese Aufgabe
 Durch das Löschen eines Basis-Volumes werden automatisch alle zugehörigen Snapshot-Volumes oder Snapshot-Volumes der Konsistenzgruppe gelöscht. Ein Snapshot-Volume, das sich in einer Volume-Kopie befindet, kann nicht mit dem Status *in Bearbeitung* gelöscht werden.
 
 .Schritte
@@ -28,6 +29,7 @@ System Manager zeigt alle Snapshot Volumes an, die dem Speicher-Array zugeordnet
 . Bestätigen Sie, dass Sie den Vorgang ausführen möchten, und klicken Sie dann auf *Löschen*.
 
 
+.Ergebnisse
 System Manager führt die folgenden Aktionen durch:
 
 * Löscht alle Snapshot-Volumes der Mitglieder (für ein Snapshot-Snapshot-Snapshot-Volumen der Konsistenzgruppe).

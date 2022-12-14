@@ -27,6 +27,7 @@ Das System zeigt eine Bestätigung an.
 . Wählen Sie zur Bestätigung * Ja* aus.
 
 
+.Ergebnisse
 Das System führt die folgenden Aktionen durch:
 
 * Initiiert die erneute Synchronisation von Daten auf allen gespiegelten Paaren innerhalb der ausgewählten SpiegelungsConsistency Group.

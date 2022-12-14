@@ -30,6 +30,7 @@ Um alle Porteinstellungen anzuzeigen, klicken Sie rechts im Dialogfeld auf den L
 
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="1a,1a"]
 |===
@@ -68,6 +69,7 @@ Wenn Sie *IPv4 aktivieren* ausgewählt haben, wird ein Dialogfeld zur Auswahl vo
 . Konfigurieren Sie die IPv4- und/oder IPv6-Einstellungen automatisch oder manuell.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="1a,1a"]
 |===

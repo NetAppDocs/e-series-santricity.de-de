@@ -27,4 +27,5 @@ Die Zieladresse wird nicht mehr auf der Seite „Meldungen“ angezeigt.
 
 
 
+.Ergebnisse
 Das gelöschte Trap-Ziel empfängt keine SNMP-Traps mehr vom Event-Monitor des Speicherarrays.

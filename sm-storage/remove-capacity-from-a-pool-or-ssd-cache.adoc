@@ -16,6 +16,7 @@ Sie können Laufwerke entfernen, um die Kapazität eines vorhandenen Pools oder 
 
 Nach dem Entfernen von Laufwerken werden die Daten in jedem Volume des Pools oder SSD-Caches auf die übrigen Laufwerke verteilt. Die entfernten Laufwerke werden nicht mehr zugewiesen und ihre Kapazität wird Teil der gesamten freien Kapazität des Speicher-Arrays.
 
+.Über diese Aufgabe
 Beachten Sie beim Entfernen der Kapazität die folgenden Richtlinien:
 
 * Sie können das letzte Laufwerk in einem SSD-Cache nicht entfernen, ohne zuerst den SSD-Cache zu löschen.
@@ -25,6 +26,7 @@ Beachten Sie beim Entfernen der Kapazität die folgenden Richtlinien:
 
 
 .Hier erhalten Sie Informationen zu potenziellen Auswirkungen auf die Performance
+[%collapsible]
 ====
 * Das Entfernen von Laufwerken aus einem Pool oder SSD Cache kann zu einer reduzierten Volume-Performance führen.
 * Die unveränderte Kapazität wird nicht verbraucht, wenn Sie Kapazität aus einem Pool oder SSD Cache entfernen. Die Konservierungskapazität kann sich jedoch aufgrund der Anzahl der im Pool verbliebenen Laufwerke oder des SSD Cache verringern.
@@ -32,6 +34,7 @@ Beachten Sie beim Entfernen der Kapazität die folgenden Richtlinien:
 
 ====
 .Lesen Sie, welche Auswirkungen sichere Laufwerke haben
+[%collapsible]
 ====
 * Wenn Sie das letzte Laufwerk entfernen, das nicht sicher-fähig ist, wird der Pool mit allen sicheren Laufwerken belassen. In dieser Situation haben Sie die Möglichkeit, die Sicherheit für den Pool zu aktivieren.
 * Wenn Sie das letzte Laufwerk entfernen, das nicht Data Assurance (da)-fähig ist, bleibt der Pool mit allen da-fähigen Laufwerken.

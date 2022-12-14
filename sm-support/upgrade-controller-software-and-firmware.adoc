@@ -33,6 +33,7 @@ Gründe für eine spätere Aktivierung sind u. a.:
 * Sie wissen, ob Sie eine rollenbasierte Zugriffssteuerung in Ihrem Storage-Array nutzen möchten.
 
 
+.Über diese Aufgabe
 Sie können nur die Betriebssystemsoftware oder nur die NVSRAM-Controller-Datei aktualisieren oder Sie können beide Dateien aktualisieren.
 
 Führen Sie diesen Vorgang nur aus, wenn Sie vom technischen Support dazu aufgefordert werden.

@@ -14,6 +14,7 @@ summary: Die Funktion Automatic Load Balancing stellt sicher, dass eingehender I
 [role="lead"]
 Die Funktion Automatic Load Balancing stellt sicher, dass eingehender I/O-Datenverkehr von den Hosts dynamisch verwaltet und auf beiden Controllern ausgeglichen wird. Diese Funktion ist standardmäßig aktiviert, Sie können sie jedoch im System Manager deaktivieren.
 
+.Über diese Aufgabe
 Wenn der automatische Lastenausgleich aktiviert ist, führt er folgende Funktionen aus:
 
 * Automatische Überwachung und ausgewogene Nutzung von Controller-Ressourcen

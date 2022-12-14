@@ -19,6 +19,7 @@ Sie können eine Konfiguration für Verzeichnisdienste von einem Speicher-Array 
 * Die vorhandene Konfiguration für die Ziel-Speicher-Arrays wird in System Manager gesichert (Menü:Einstellungen[System > Speicherarray-Konfiguration speichern]).
 
 
+.Über diese Aufgabe
 Zu den importierten Einstellungen gehören der Domänenname und die URL eines LDAP-Servers (Lightweight Directory Access Protocol) sowie die Zuordnungen der Benutzergruppen des LDAP-Servers zu den vordefinierten Rollen des Speicher-Arrays.
 
 .Schritte

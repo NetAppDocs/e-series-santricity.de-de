@@ -25,6 +25,7 @@ Ein Volume wird beim ersten Erstellen automatisch initialisiert. Möglicherweise
 Sie können den Vorgang nach dem Start nicht mehr abbrechen. Alle Volume-Daten werden gelöscht. Versuchen Sie diese Operation nur, wenn der Recovery Guru Sie dazu rät. Wenden Sie sich vor Beginn dieses Verfahrens an den technischen Support.
 
 ====
+.Über diese Aufgabe
 Bei der Initialisierung eines Volume bleiben die WWN, Host-Zuweisungen, zugewiesene Kapazität und reservierte Kapazität des Volume erhalten. Zudem werden dieselben Data Assurance (da)-Einstellungen und Sicherheitseinstellungen beibehalten.
 
 Die folgenden Typen von Volumes _kann nicht_ initialisiert werden:
@@ -48,6 +49,7 @@ Das Dialogfeld Volumes initialisieren wird angezeigt. In diesem Dialogfeld werde
 . Wählen Sie ein oder mehrere Volumes aus, die Sie initialisieren möchten, und bestätigen Sie, dass Sie den Vorgang durchführen möchten.
 
 
+.Ergebnisse
 System Manager führt die folgenden Aktionen durch:
 
 * Löscht alle Daten aus den Volumes, die initialisiert wurden.

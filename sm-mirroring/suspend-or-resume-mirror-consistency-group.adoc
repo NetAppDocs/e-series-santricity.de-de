@@ -14,6 +14,7 @@ summary: Die Synchronisation der Daten auf allen gespiegelten Paaren innerhalb e
 [role="lead"]
 Die Synchronisation der Daten auf allen gespiegelten Paaren innerhalb einer Spiegelkonsistent-Gruppe kann unterbrochen oder fortgesetzt werden. Dies ist effizienter als das Unterbrechen oder Wiederaufnehmen der Synchronisierung auf einzelnen gespiegelten Paaren.
 
+.Über diese Aufgabe
 Durch das Anhalten und Wiederaufnehmen der Synchronisierung mit Gruppen werden die Auswirkungen auf die Performance der Host-Applikation verringert. Dies kann auftreten, wenn geänderte Daten im lokalen Speicher-Array in das Remote-Speicher-Array kopiert werden.
 
 Der Status der SpiegelungsConsistency Group und die gespiegelten Paare bleiben ausgesetzt, bis Sie die Option Resume verwenden, um die Synchronisationstätigkeit wieder aufzunehmen.
@@ -31,6 +32,7 @@ Das System zeigt eine Bestätigung an.
 . Wählen Sie zur Bestätigung * Ja* aus.
 
 
+.Ergebnisse
 System Manager führt die folgenden Aktionen durch:
 
 * Pausiert oder setzt den Datentransfer zwischen allen gespiegelten Paaren in einer Spiegelkonsistent-Gruppe fort, ohne die Spiegelbeziehung zu entfernen.

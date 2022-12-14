@@ -14,6 +14,7 @@ summary: Sie können die Synchronisierungspriorität und die Resynchronisierungs
 [role="lead"]
 Sie können die Synchronisierungspriorität und die Resynchronisierungsrichtlinie ändern, die das gespiegelte Paar verwendet, um die Neusynchronisierung nach einer Kommunikationsunterbrechung abzuschließen.
 
+.Über diese Aufgabe
 Sie können die Synchronisierungseinstellungen für ein gespiegeltes Paar nur auf dem Speicher-Array bearbeiten, das das primäre Volume enthält.
 
 .Schritte
@@ -28,6 +29,7 @@ Die Synchronisierungspriorität legt fest, wie viele der Systemressourcen verwen
 
 +
 .Mehr zu Synchronisierungsraten
+[%collapsible]
 ====
 Es gibt fünf Prioritätsraten für die Synchronisierung:
 

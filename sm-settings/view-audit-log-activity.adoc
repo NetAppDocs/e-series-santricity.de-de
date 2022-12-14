@@ -14,6 +14,7 @@ summary: Durch die Anzeige von Prüfprotokollen können Benutzer mit Sicherheits
 [role="lead"]
 Durch die Anzeige von Prüfprotokollen können Benutzer mit Sicherheitsadministratorberechtigungen Benutzeraktionen, Authentifizierungsfehler, ungültige Anmeldeversuche und die Lebensdauer der Benutzersitzung überwachen.
 
+.Bevor Sie beginnen
 Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
 
 .Schritte
@@ -35,6 +36,7 @@ Die Aktivität des Überwachungsprotokolls wird im Tabellenformat angezeigt, das
 . Verwenden Sie die Auswahl auf der Seite „Überwachungsprotokoll“, um Ereignisse anzuzeigen und zu verwalten.
 +
 .Auswahldetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

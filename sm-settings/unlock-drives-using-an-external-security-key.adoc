@@ -34,6 +34,7 @@ Detaillierte Anweisungen für die Migration einer Volume-Gruppe finden Sie in ht
 Weitere Informationen zum Serverzertifikat finden Sie in der Dokumentation für Ihren Schlüsselverwaltungsserver.
 
 ====
+.Über diese Aufgabe
 Wenn Sie die externe Schlüsselverwaltung verwenden, wird der Sicherheitsschlüssel extern auf einem Server gespeichert, der zum sicheren Schutz von Sicherheitsschlüsseln entwickelt wurde. Ein Sicherheitsschlüssel ist eine Zeichenkette, die vom Controller und den Laufwerken für Lese-/Schreibzugriff freigegeben wird. Wenn die Laufwerke physisch aus dem Array entfernt und in einem anderen installiert werden, können sie erst betrieben werden, wenn Sie den richtigen Sicherheitsschlüssel angeben.
 
 [NOTE]
@@ -69,8 +70,10 @@ Wenn der Entsperrvorgang erfolgreich ist, wird im Dialogfeld „die zugeordneten
 
 
 
+.Ergebnisse
 Wenn alle Laufwerke gesperrt und dann entsperrt sind, wird jeder Controller im Speicher-Array neu gestartet. Wenn sich jedoch bereits einige nicht freigeschaltete Laufwerke im Ziel-Speicher-Array befinden, werden die Controller nicht neu gestartet.
 
+.Nachdem Sie fertig sind
 Auf dem Ziel-Array (dem Array mit den neu installierten Laufwerken) können Sie nun Volume-Gruppen importieren.
 
 

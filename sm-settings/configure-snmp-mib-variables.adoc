@@ -14,6 +14,7 @@ summary: 'Für SNMP-Warnungen können Sie optional Management Information Base (
 [role="lead"]
 Für SNMP-Warnungen können Sie optional Management Information Base (MIB)-Variablen konfigurieren, die in SNMP-Traps angezeigt werden. Diese Variablen können den Namen des Speicher-Arrays, den Speicherort des Arrays und einen Ansprechpartner zurückgeben.
 
+.Bevor Sie beginnen
 Die MIB-Datei muss kopiert und mit der SNMP-Dienst-Anwendung auf dem Server kompiliert werden.
 
 Wenn Sie keine MIB-Datei haben, können Sie es wie folgt erhalten:
@@ -27,6 +28,7 @@ Wenn Sie keine MIB-Datei haben, können Sie es wie folgt erhalten:
 * Scrollen Sie nach unten, bis Sie die MIB-Datei für Ihren Controller-Typ sehen, und klicken Sie dann auf den Link, um die Datei herunterzuladen.
 
 
+.Über diese Aufgabe
 In dieser Aufgabe wird beschrieben, wie MIB-Variablen für SNMP-Traps definiert werden. Diese Variablen können als Antwort auf SNMP GetRequests folgende Werte zurückgeben:
 
 * `sysName` (Name für das Speicher-Array)
@@ -50,4 +52,5 @@ Das Dialogfeld SNMP-MIB-Variablen konfigurieren wird geöffnet.
 
 
 
+.Ergebnisse
 Diese Werte werden in SNMP-Trap-Meldungen für Storage Array-Warnungen angezeigt.

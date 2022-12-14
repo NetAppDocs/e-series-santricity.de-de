@@ -14,6 +14,7 @@ summary: Sie können die Option „anhalten“ und „Wiederaufnehmen“ verwend
 [role="lead"]
 Sie können die Option „anhalten“ und „Wiederaufnehmen“ verwenden, um zu steuern, wann die Daten auf dem primären Volume und dem sekundären Volume in einem gespiegelten Paar synchronisiert werden sollen.
 
+.Über diese Aufgabe
 Wenn ein gespiegeltes Paar manuell unterbrochen wird, synchronisiert das gespiegelte Paar erst dann, wenn es manuell wieder aufgenommen wird.
 
 .Schritte
@@ -25,6 +26,7 @@ Das System zeigt eine Bestätigung an.
 . Wählen Sie zur Bestätigung * Ja* aus.
 
 
+.Ergebnisse
 System Manager führt die folgenden Aktionen durch:
 
 * Pausiert oder setzt die Datenübertragung zwischen dem gespiegelten Paar ein, ohne die gespiegelte Beziehung zu entfernen.

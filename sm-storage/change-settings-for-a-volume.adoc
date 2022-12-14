@@ -14,6 +14,7 @@ summary: Sie können die Einstellungen eines Volumes ändern, z. B. Name, Host-Z
 [role="lead"]
 Sie können die Einstellungen eines Volume ändern, z. B. Name, Host-Zuweisung, Segmentgröße, Änderungspriorität, Caching, Und so weiter.
 
+.Bevor Sie beginnen
 Das zu änderende Volumen befindet sich im optimalen Status.
 
 .Schritte
@@ -25,6 +26,7 @@ Das Dialogfeld Volume-Einstellungen wird angezeigt. Die Konfigurationseinstellun
 . Wählen Sie die Registerkarte *Basic* aus, um den Namen des Volumes und die Host-Zuweisung zu ändern.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -84,6 +86,7 @@ Zeigt die Kennungen für das ausgewählte Volume an.
 . Wählen Sie die Registerkarte *Erweitert* aus, um zusätzliche Konfigurationseinstellungen für ein Volume in einem Pool oder in einer Volume-Gruppe zu ändern.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -175,4 +178,5 @@ System Manager ändert die Volume-Einstellungen basierend auf Ihrer Auswahl.
 
 
 
+.Nachdem Sie fertig sind
 Wählen Sie MENU:Startseite[Vorgänge in Bearbeitung anzeigen], um den Fortschritt der derzeit für das ausgewählte Volume ausgeführten Änderungsvorgänge anzuzeigen.

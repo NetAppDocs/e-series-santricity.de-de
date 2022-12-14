@@ -44,6 +44,7 @@ Das Dialogfeld Einstellungen bearbeiten wird angezeigt.
 . Akzeptieren oder geben Sie die Einstellungen für das Snapshot-Volumen an, und wählen Sie dann *Fertig*, um das Snapshot-Volumen zu konvertieren.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

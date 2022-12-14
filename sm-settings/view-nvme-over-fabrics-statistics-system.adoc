@@ -14,6 +14,7 @@ summary: Daten über die NVMe over Fabrics-Verbindungen mit Ihrem Storage-Array 
 [role="lead"]
 Daten über die NVMe over Fabrics-Verbindungen mit Ihrem Storage-Array anzeigen lassen,
 
+.Über diese Aufgabe
 System Manager zeigt diese Arten von NVMe over Fabrics Statistiken. Alle Statistiken sind schreibgeschützt und können nicht festgelegt werden.
 
 * *NVMe Subsystem-Statistik* -- zeigt Statistiken für den NVMe-Controller und seine Queue an. Der NVMe Controller stellt einen Zugriffspfad zwischen einem Host und den Namespaces im Storage-Array bereit. Sie können die NVMe-Subsystem-Statistiken für Elemente wie Verbindungsfehler, Zurücksetzen und Herunterfahren überprüfen.

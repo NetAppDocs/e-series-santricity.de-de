@@ -24,6 +24,7 @@ Es wird ein Dialogfeld angezeigt, in dem die aktuellen Hosteinstellungen angezei
 . Ändern Sie die Einstellungen nach Bedarf.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

@@ -14,6 +14,7 @@ summary: Die Seite Hardware enthält Status und Einstellungen für Shelf-Kompone
 [role="lead"]
 Die Seite Hardware enthält Status und Einstellungen für Shelf-Komponenten, einschließlich Netzteile, Lüfter und Batterien.
 
+.Über diese Aufgabe
 Die verfügbaren Komponenten sind vom Shelf-Typ abhängig:
 
 * *Laufwerk-Shelf* -- enthält einen Satz von Laufwerken, Strom-/Lüfterkanistern, ein-/Ausgangsmodulen (IOMs) und anderen unterstützenden Komponenten in einem einzigen Shelf.

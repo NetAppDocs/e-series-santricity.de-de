@@ -24,6 +24,7 @@ Das Dialogfeld Einstellung für Snapshot-Konsistenzgruppen wird angezeigt.
 . Ändern Sie ggf. die Einstellungen für die Snapshot-Konsistenzgruppe.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

@@ -13,8 +13,10 @@ summary: Sie können das Managementzertifikat in den ursprünglichen, werkseitig
 [role="lead"]
 Sie können das Managementzertifikat in den ursprünglichen, werkseitig selbstsignierten Status zurücksetzen.
 
+.Bevor Sie beginnen
 Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.
 
+.Über diese Aufgabe
 Diese Aufgabe löscht das aktuelle Managementzertifikat vom Host-System, auf dem Web Services Proxy und Unified Manager installiert sind. Nach dem Zurücksetzen des Zertifikats wird das Host-System auf das selbstsignierte Zertifikat zurückgesetzt.
 
 .Schritte
@@ -29,4 +31,5 @@ Nach der Aktualisierung Ihres Browsers kann der Browser den Zugriff auf die Ziel
 
 
 
+.Ergebnisse
 Das System setzt auf die Verwendung des selbstsignierten Zertifikats des Servers zurück. Das System fordert Benutzer daher auf, das selbstsignierte Zertifikat für ihre Sitzungen manuell anzunehmen.

@@ -14,6 +14,7 @@ summary: Wenn Sie ein primäres Volume auf einem älteren Storage-Array erstellt
 [role="lead"]
 Wenn Sie ein primäres Volume auf einem älteren Storage-Array erstellt haben, das nicht durch System Manager gemanagt werden kann, können Sie das sekundäre Volume auf diesem Array mit System Manager erstellen.
 
+.Über diese Aufgabe
 Sie können asynchrone Spiegelungen zwischen älteren Arrays durchführen, die eine andere Schnittstelle verwenden, und neuere Arrays, die von System Manager gemanagt werden können.
 
 * Wenn Sie zwischen zwei Speicher-Arrays, die System Manager verwenden, spiegeln, können Sie diese Aufgabe überspringen, da Sie das gespiegelte Paar in der Erstellungsreihenfolge für gespiegelte Paare bereits abgeschlossen haben.
@@ -64,6 +65,7 @@ Die erforderliche Kapazität variiert abhängig von der Häufigkeit und Größe 
 . Wählen Sie *Vollständig*.
 
 
+.Ergebnisse
 System Manager führt die folgenden Aktionen durch:
 
 * Erstellt das sekundäre Volume auf dem Remote-Storage-Array und weist der Remote-Seite des gespiegelten Paars reservierte Kapazität zu.

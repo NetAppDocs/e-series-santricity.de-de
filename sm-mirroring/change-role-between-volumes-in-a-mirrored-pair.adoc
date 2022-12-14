@@ -14,6 +14,7 @@ summary: Sie können eine Rollenumkehr zwischen den beiden Volumes in einem gesp
 [role="lead"]
 Sie können eine Rollenumkehr zwischen den beiden Volumes in einem gespiegelten Paar, das an der synchronen Spiegelung beteiligt ist, durchführen. Diese Aufgabe kann für administrative Zwecke oder im Falle eines Disasters auf dem lokalen Speicher-Array notwendig sein.
 
+.Über diese Aufgabe
 Sie können das primäre Volume entweder auf die sekundäre Rolle zurückstufen oder das sekundäre Volume zur primären Rolle heraufstufen. Alle Hosts, die auf das primäre Volume zugreifen, haben Lese-/Schreibzugriff auf das Volume. Wenn das primäre Volume zum sekundären Volume wird, werden nur durch den primären Controller initiierte Remote-Schreibvorgänge auf das Volume geschrieben.
 
 .Schritte
@@ -31,6 +32,7 @@ Wenn das lokale Speicher-Array nicht mit dem Remote-Speicher-Array kommunizieren
 ====
 
 
+.Ergebnisse
 System Manager führt die folgende Aktion durch:
 
 * Wenn das zugehörige Volume im gespiegelten Paar kontaktiert werden kann, ändern sich die Rollen zwischen den Volumes. System Manager befördert das sekundäre Volume im gespiegelten Paar in die primäre Rolle oder deprisiert das primäre Volume im gespiegelten Paar auf die sekundäre Rolle (je nach Auswahl).

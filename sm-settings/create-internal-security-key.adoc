@@ -24,6 +24,7 @@ Zur Verwendung der Laufwerkssicherheitsfunktion können Sie einen internen Siche
 Wenn sowohl FDE- als auch FIPS-Laufwerke im Storage Array installiert werden, nutzen sie alle denselben Sicherheitsschlüssel.
 
 ====
+.Über diese Aufgabe
 In dieser Aufgabe definieren Sie eine Kennung und eine Passphrase, die dem internen Sicherheitsschlüssel zugeordnet werden sollen.
 
 [NOTE]
@@ -74,6 +75,7 @@ Der Pfad für die heruntergeladene Datei hängt möglicherweise vom Standard-Dow
 . Notieren Sie sich die Schlüsselkennung, den Passphrase und den Speicherort der heruntergeladenen Schlüsseldatei, und klicken Sie dann auf *Schließen*.
 
 
+.Ergebnisse
 Sie können jetzt sichere Volume-Gruppen oder -Pools erstellen oder die Sicherheit bei vorhandenen Volume-Gruppen und -Pools aktivieren.
 
 [NOTE]
@@ -81,4 +83,5 @@ Sie können jetzt sichere Volume-Gruppen oder -Pools erstellen oder die Sicherhe
 Wenn die Stromversorgung der Laufwerke aus- und wieder eingeschaltet wird, wechseln alle sicheren Laufwerke in den Status Sicherheitsverriegelt. In diesem Zustand sind die Daten nicht zugänglich, bis der Controller den korrekten Sicherheitsschlüssel während der Laufwerkinitialisierung anwendet. Wenn ein gesperrtes Laufwerk physisch entfernt und in einem anderen System installiert wird, verhindert der Status „Sicherheitsgesperrt“ unbefugten Zugriff auf seine Daten.
 
 ====
+.Nachdem Sie fertig sind
 Sie sollten den Sicherheitsschlüssel überprüfen, um sicherzustellen, dass die Schlüsseldatei nicht beschädigt ist.

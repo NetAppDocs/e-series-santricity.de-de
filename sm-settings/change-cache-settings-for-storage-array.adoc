@@ -14,6 +14,7 @@ summary: Für alle Volumes im Speicher-Array können Sie die Cache-Speichereinst
 [role="lead"]
 Für alle Volumes im Speicher-Array können Sie die Cache-Speichereinstellungen für die Spülung und die Blockgröße anpassen.
 
+.Über diese Aufgabe
 Cache-Speicher ist ein temporärer flüchtiger Speicher auf dem Controller, der eine schnellere Zugriffszeit als die Datenträger des Laufwerks hat. Um die Cache-Performance zu optimieren, können Sie folgende Einstellungen vornehmen:
 
 [cols="25h,~"]

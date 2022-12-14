@@ -33,6 +33,7 @@ Weitere Informationen zum Serverzertifikat finden Sie in der Dokumentation für 
 ====
 
 
+.Über diese Aufgabe
 In dieser Aufgabe definieren Sie die IP-Adresse des Schlüsselverwaltungsservers und die verwendete Portnummer und laden dann Zertifikate für die externe Schlüsselverwaltung.
 
 .Schritte
@@ -113,6 +114,7 @@ Die Testergebnisse werden im Dialogfeld angezeigt.
 
 
 
+.Ergebnisse
 Wenn das externe Verschlüsselungsmanagement aktiviert ist, können Sie sicher aktivierte Volume-Gruppen oder -Pools erstellen oder die Sicherheit für vorhandene Volume-Gruppen und -Pools aktivieren.
 
 [NOTE]
@@ -120,4 +122,5 @@ Wenn das externe Verschlüsselungsmanagement aktiviert ist, können Sie sicher a
 Wenn die Stromversorgung der Laufwerke aus- und wieder eingeschaltet wird, wechseln alle sicheren Laufwerke in den Status Sicherheitsverriegelt. In diesem Zustand sind die Daten nicht zugänglich, bis der Controller den korrekten Sicherheitsschlüssel während der Laufwerkinitialisierung anwendet. Wenn ein gesperrtes Laufwerk physisch entfernt und in einem anderen System installiert wird, verhindert der Status „Sicherheitsgesperrt“ unbefugten Zugriff auf seine Daten.
 
 ====
+.Nachdem Sie fertig sind
 Sie sollten den Sicherheitsschlüssel überprüfen, um sicherzustellen, dass die Schlüsseldatei nicht beschädigt ist.

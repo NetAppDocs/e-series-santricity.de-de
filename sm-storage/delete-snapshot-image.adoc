@@ -14,6 +14,7 @@ summary: Sie löschen Snapshot Images, um das älteste Snapshot Image aus einer 
 [role="lead"]
 Sie löschen Snapshot Images, um das älteste Snapshot Image aus einer Snapshot-Gruppe oder einer Snapshot-Konsistenzgruppe aufzuräumen.
 
+.Über diese Aufgabe
 Sie können ein einzelnes Snapshot-Image löschen oder Snapshot-Images aus Snapshot-Konsistenzgruppen löschen, die denselben Zeitstempel für die Erstellung haben. Sie können Snapshot-Images auch aus einer Snapshot-Gruppe löschen.
 
 Ein Snapshot Image kann nicht gelöscht werden, wenn es nicht das älteste Snapshot Image des zugehörigen Basis-Volumes oder der Snapshot-Konsistenzgruppe ist.
@@ -28,6 +29,7 @@ Wenn Sie ein Snapshot-Image einer Snapshot-Konsistenzgruppe ausgewählt haben, w
 . Klicken Sie Auf *Löschen*.
 
 
+.Ergebnisse
 System Manager führt die folgenden Aktionen durch:
 
 * Löscht das Snapshot-Image aus dem Speicher-Array.

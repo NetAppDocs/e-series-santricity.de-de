@@ -13,6 +13,7 @@ summary: Sie können ein oder mehrere nicht mehr benötigte Zertifikate löschen
 [role="lead"]
 Sie können ein oder mehrere nicht mehr benötigte Zertifikate löschen, z. B. ein abgelaufenes Zertifikat.
 
+.Bevor Sie beginnen
 Importieren Sie das neue Zertifikat, bevor Sie das alte löschen.
 
 [CAUTION]

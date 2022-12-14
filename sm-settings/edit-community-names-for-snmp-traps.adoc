@@ -14,6 +14,7 @@ summary: Sie können Community-Namen für SNMPv2c-Traps bearbeiten.
 [role="lead"]
 Sie können Community-Namen für SNMPv2c-Traps bearbeiten.
 
+.Bevor Sie beginnen
 Ein Community-Name muss erstellt werden.
 
 .Schritte
@@ -26,4 +27,5 @@ Die Trap-Ziele und Community-Namen werden in der Tabelle angezeigt.
 . Geben Sie den neuen Community-Namen ein und klicken Sie dann auf *Speichern*. Community-Namen können nur aus druckbaren ASCII-Zeichen bestehen.
 
 
+.Ergebnisse
 Auf der Registerkarte SNMP der Seite Meldungen wird der aktualisierte Community-Name angezeigt.

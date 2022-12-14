@@ -13,6 +13,7 @@ summary: Sie können Timeouts für SANtricity Unified Manager konfigurieren, so 
 [role="lead"]
 Sie können Timeouts für Unified Manager konfigurieren, so dass Benutzer inaktive Sitzungen nach einer bestimmten Zeit getrennt werden.
 
+.Über diese Aufgabe
 Standardmäßig beträgt das Sitzungszeitlimit für Unified Manager 30 Minuten. Sie können diese Zeit anpassen oder Sitzungszeitausfälle ganz deaktivieren.
 
 .Schritte

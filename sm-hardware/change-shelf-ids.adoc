@@ -13,6 +13,7 @@ summary: Die Shelf-ID ist eine Nummer, die ein Shelf im Storage Array eindeutig 
 [role="lead"]
 Die Shelf-ID ist eine Nummer, die ein Shelf im Storage Array eindeutig identifiziert. Die Regale werden nacheinander nummeriert, beginnend mit entweder 00 oder 01, oben links von jeder Regalansicht.
 
+.Über diese Aufgabe
 Die Controller-Firmware weist automatisch die Shelf-ID zu. Sie können diese Nummer jedoch ändern, wenn Sie ein anderes Bestellschema erstellen möchten.
 
 .Schritte

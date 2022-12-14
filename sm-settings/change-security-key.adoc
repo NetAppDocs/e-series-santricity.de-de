@@ -58,4 +58,5 @@ Der Pfad für die heruntergeladene Datei hängt möglicherweise vom Standard-Dow
 . Notieren Sie sich die Schlüsselkennung, den Passphrase und den Speicherort der heruntergeladenen Schlüsseldatei, und klicken Sie dann auf *Schließen*.
 
 
+.Nachdem Sie fertig sind
 Sie sollten den Sicherheitsschlüssel überprüfen, um sicherzustellen, dass die Schlüsseldatei nicht beschädigt ist.

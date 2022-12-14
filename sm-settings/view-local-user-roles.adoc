@@ -14,8 +14,10 @@ summary: 'Auf der Registerkarte Lokale Benutzerrollen können Sie die Zuordnunge
 [role="lead"]
 Auf der Registerkarte Lokale Benutzerrollen können Sie die Zuordnungen der Benutzerprofile zu den Standardrollen anzeigen. Diese Zuordnungen sind Teil der RBAC (rollenbasierte Zugriffssteuerung), die im Storage Array durchgesetzt wird.
 
+.Bevor Sie beginnen
 Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
 
+.Über diese Aufgabe
 Die Benutzerprofile und Zuordnungen können nicht geändert werden. Es können nur Passwörter geändert werden.
 
 .Schritte

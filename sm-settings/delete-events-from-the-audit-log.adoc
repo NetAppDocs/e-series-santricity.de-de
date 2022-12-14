@@ -14,6 +14,7 @@ summary: 'Sie können das Audit-Protokoll von alten Ereignissen löschen, wodurc
 [role="lead"]
 Sie können das Audit-Protokoll von alten Ereignissen löschen, wodurch das Suchen durch Ereignisse leichter zu verwalten ist. Sie haben die Möglichkeit, alte Ereignisse beim Löschen in einer CSV-Datei (kommagetrennte Werte) zu speichern.
 
+.Bevor Sie beginnen
 Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
 
 .Schritte

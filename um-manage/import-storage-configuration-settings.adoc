@@ -37,6 +37,7 @@ Sie können die Speicherkonfiguration von einem Speicher-Array in andere Speiche
 
 
 
+.Über diese Aufgabe
 Zu den importierten Einstellungen gehören konfigurierte Volumes (nur Thick- und nicht-Repository-Volumes), Volume-Gruppen, Pools und Hot-Spare-Laufwerkszuordnungen.
 
 .Schritte
@@ -62,4 +63,5 @@ Auf der Seite Operationen werden die Ergebnisse des Importvorgangs angezeigt. We
 
 
 
+.Ergebnisse
 Die Ziel-Storage-Arrays sind nun mit derselben Storage-Konfiguration wie das Quell-Array konfiguriert.

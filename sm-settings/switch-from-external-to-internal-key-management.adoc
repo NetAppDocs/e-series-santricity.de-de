@@ -14,6 +14,7 @@ summary: Sie können die Verwaltungsmethode für die Laufwerksicherheit von eine
 [role="lead"]
 Sie können die Verwaltungsmethode für die Laufwerksicherheit von einem externen Schlüsselserver in die interne Methode ändern, die vom Speicher-Array verwendet wird. Der zuvor für das externe Verschlüsselungsmanagement definierte Sicherheitsschlüssel wird dann für das interne Verschlüsselungsmanagement verwendet.
 
+.Über diese Aufgabe
 In dieser Aufgabe deaktivieren Sie die externe Schlüsselverwaltung und laden eine neue Sicherungskopie auf Ihren lokalen Host herunter. Der vorhandene Schlüssel wird weiterhin für die Laufwerksicherheit verwendet, wird aber intern im Speicher-Array verwaltet.
 
 .Schritte
@@ -42,6 +43,8 @@ Der Backup-Schlüssel wird auf Ihren lokalen Host heruntergeladen.
 . Notieren Sie sich die Schlüsselkennung, den Passphrase und den Speicherort der heruntergeladenen Schlüsseldatei, und klicken Sie dann auf *Schließen*.
 
 
+.Ergebnisse
 Die Laufwerksicherheit wird jetzt intern über das Speicher-Array verwaltet.
 
+.Nachdem Sie fertig sind
 Sie sollten den Sicherheitsschlüssel überprüfen, um sicherzustellen, dass die Schlüsseldatei nicht beschädigt ist.

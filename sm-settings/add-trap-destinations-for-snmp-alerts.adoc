@@ -52,4 +52,5 @@ Das Dialogfeld Trap-Ziele hinzufügen wird geöffnet.
 . Um sicherzustellen, dass ein Trap gültig ist, wählen Sie ein Trap-Ziel aus der Tabelle aus, und klicken Sie dann auf *Trap-Ziel testen*, um einen Test-Trap an die konfigurierte Adresse zu senden.
 
 
+.Ergebnisse
 Der Ereignismonitor sendet SNMP-Traps an den/die Server(s), wenn ein alertable Ereignis auftritt.

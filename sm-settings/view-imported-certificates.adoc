@@ -14,6 +14,7 @@ summary: Auf der Seite Zertifikate können Sie den Zertifikatstyp, die ausstelle
 [role="lead"]
 Auf der Seite Zertifikate können Sie den Zertifikatstyp, die ausstellende Behörde und den gültigen Datumsbereich der Zertifikate für das Speicher-Array anzeigen.
 
+.Bevor Sie beginnen
 Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.
 
 .Schritte

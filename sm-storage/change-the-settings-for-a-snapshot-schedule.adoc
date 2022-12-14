@@ -14,6 +14,7 @@ summary: Für einen Snapshot-Zeitplan können Sie die automatische Erfassungszei
 [role="lead"]
 Für einen Snapshot-Zeitplan können Sie die automatische Erfassungszeit oder die Häufigkeit der Erfassung ändern.
 
+.Über diese Aufgabe
 Sie können Einstellungen aus einem vorhandenen Snapshot-Zeitplan importieren oder Einstellungen nach Bedarf ändern.
 
 Da ein Snapshot Zeitplan einer Snapshot-Gruppe oder einer Snapshot Konsistenzgruppe zugeordnet ist, kann die reservierte Kapazität durch Änderungen an den Zeitplaneinstellungen beeinträchtigt werden.
@@ -31,6 +32,7 @@ Das Dialogfeld Snapshot-Zeitplan bearbeiten wird angezeigt.
 ** *Bearbeiten Sie die Zeitplaneinstellungen* -- Siehe Felddetails weiter unten.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

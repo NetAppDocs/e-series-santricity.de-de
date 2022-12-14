@@ -13,6 +13,7 @@ summary: Sie können grafische Performance-Daten für logische Objekte, physisch
 [role="lead"]
 Sie können grafische Performance-Daten für logische Objekte, physische Objekte, Applikationen und Workloads anzeigen.
 
+.Über diese Aufgabe
 Die Performance-Diagramme zeigen historische Daten sowie Live-Daten, die derzeit erfasst werden. Eine vertikale Linie im Diagramm, die mit Live Update gekennzeichnet ist, unterscheidet historische Daten von Live-Daten.
 
 *Homepage-Ansicht*
@@ -77,6 +78,7 @@ Anzeige Von Applikationen Und Workloads
 . Verwenden Sie die Optionen, um die gewünschten Objekte und Informationen anzuzeigen.
 +
 .Optionen
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -123,6 +125,7 @@ Wählen Sie den Diagrammtitel aus, um das Diagramm auszublenden oder anzuzeigen.
 . Verwenden Sie bei Bedarf die zusätzlichen Optionen zum Anzeigen von Performance-Daten.
 +
 .Weitere Optionen
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

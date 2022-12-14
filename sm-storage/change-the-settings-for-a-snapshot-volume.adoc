@@ -24,6 +24,7 @@ Das Dialogfeld Snapshot-Volume-Einstellungen wird angezeigt.
 . Zeigen Sie die Einstellungen für das Snapshot-Volume an, oder bearbeiten Sie sie entsprechend.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

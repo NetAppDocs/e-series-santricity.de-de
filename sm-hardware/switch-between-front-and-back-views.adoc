@@ -13,6 +13,7 @@ summary: Die Hardware-Seite kann entweder die Vorder- oder die Rückseite des Sh
 [role="lead"]
 Die Hardware-Seite kann entweder die Vorder- oder die Rückseite des Shelfs anzeigen.
 
+.Über diese Aufgabe
 Die Ansicht auf der Rückseite zeigt die Controller/IOMs und die Power-Fan-Kanister. In der Vorderansicht werden die Laufwerke angezeigt.
 
 .Schritte

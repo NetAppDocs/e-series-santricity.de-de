@@ -14,6 +14,7 @@ summary: Sie können ein ausstehendes Snapshot-Image abbrechen, bevor es abgesch
 [role="lead"]
 Sie können ein ausstehendes Snapshot-Image abbrechen, bevor es abgeschlossen wird. Snapshots werden asynchron ausgeführt und der Status des Snapshots steht bis zum Abschluss des Snapshots aus. Das Snapshot-Image wird abgeschlossen, sobald der Synchronisierungsvorgang abgeschlossen ist.
 
+.Über diese Aufgabe
 Ein Snapshot-Image befindet sich aufgrund der folgenden gleichzeitigen Bedingungen im Status „Ausstehend“:
 
 * Das Basis-Volume für eine Snapshot-Gruppe oder ein oder mehrere Mitglied-Volumes einer Konsistenzgruppe, die dieses Snapshot-Image enthält, ist Mitglied einer asynchronen Spiegelgruppe.

@@ -20,6 +20,7 @@ Sie können einer vorhandenen Snapshot-Konsistenzgruppe ein neues Mitgliedsvolum
 * Jedes reservierte Kapazitäts-Volume muss dieselben Data Assurance (da) und Sicherheitseinstellungen haben wie das zugehörige Mitglied-Volume.
 
 
+.Über diese Aufgabe
 Sie können der Snapshot-Konsistenzgruppe Standard-Volumes oder Thin Volumes hinzufügen. Das Basis-Volume kann sich entweder in einem Pool oder in einer Volume-Gruppe befinden.
 
 .Schritte

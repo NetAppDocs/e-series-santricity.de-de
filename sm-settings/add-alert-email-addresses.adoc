@@ -25,4 +25,5 @@ Das Dialogfeld E-Mails hinzufügen wird geöffnet.
 . Klicken Sie Auf *Hinzufügen*.
 
 
+.Ergebnisse
 Auf der Registerkarte „E-Mail“ der Seite „Meldungen“ werden die neuen E-Mail-Adressen angezeigt.

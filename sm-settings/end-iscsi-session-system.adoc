@@ -14,6 +14,7 @@ summary: Sie können eine nicht mehr benötigte iSCSI-Sitzung beenden. ISCSI-Sit
 [role="lead"]
 Sie können eine nicht mehr benötigte iSCSI-Sitzung beenden. ISCSI-Sitzungen können bei Hosts oder Remote-Storage-Arrays in einer asynchronen Spiegelbeziehung durchgeführt werden.
 
+.Über diese Aufgabe
 Aus folgenden Gründen können Sie eine iSCSI-Sitzung beenden:
 
 * *Nicht autorisierter Zugriff* -- Wenn ein iSCSI-Initiator angemeldet ist und keinen Zugriff haben sollte, können Sie die iSCSI-Sitzung beenden, um den iSCSI-Initiator vom Speicher-Array zu erzwingen. Der iSCSI-Initiator konnte angemeldet sein, da die Authentifizierungsmethode „Keine“ verfügbar war.

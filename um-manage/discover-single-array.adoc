@@ -51,6 +51,7 @@ Die Gruppe „Alle“ ist standardmäßig ausgewählt.
 . Geben Sie das Administratorkennwort für das Speicherarray ein, das Sie Ihrer Management-Domäne hinzufügen möchten, und klicken Sie dann auf *OK*.
 
 
+.Nachdem Sie fertig sind
 Das Speicher-Array wird Unified Manager hinzugefügt und, falls angegeben, wird es auch der ausgewählten Gruppe hinzugefügt.
 
 Wenn die automatische Erfassung von Support-Daten aktiviert ist, werden Support-Daten automatisch für ein von Ihnen hinzufügsames Speicher-Array erfasst.

@@ -16,6 +16,7 @@ Das Software-Repository enthält alle Softwaredateien, die dem Web Services Prox
 
 Wenn Sie die Datei nicht sehen, die Sie verwenden möchten, können Sie mithilfe der Option Software-Repository verwalten eine oder mehrere SANtricity-Betriebssystemdateien auf das Hostsystem importieren, auf dem der Webservices-Proxy und Unified Manager ausgeführt werden. Sie können auch festlegen, dass eine oder mehrere SANtricity OS-Dateien gelöscht werden sollen, die im Software-Repository verfügbar sind.
 
+.Bevor Sie beginnen
 Wenn Sie SANtricity OS-Dateien hinzufügen, stellen Sie sicher, dass die Betriebssystemdateien auf Ihrem lokalen System verfügbar sind.
 
 .Schritte
@@ -53,4 +54,5 @@ Löschen
 |===
 
 
+.Ergebnisse
 Wenn Sie den Import ausgewählt haben, werden die Dateien hochgeladen und validiert. Wenn Sie „Löschen“ ausgewählt haben, werden die Dateien aus dem Software-Repository entfernt.

@@ -27,6 +27,7 @@ Auf der Zertifikatsseite können Sie nicht vertrauenswürdige Zertifikate auflö
 
 
 
+.Über diese Aufgabe
 Möglicherweise müssen Sie zusätzliche vertrauenswürdige CA-Zertifikate installieren, wenn eine der folgenden Optionen zutrifft:
 
 * Sie haben kürzlich ein Speicher-Array hinzugefügt.

@@ -14,6 +14,7 @@ summary: Wenn Sie keine Snapshot-Images mehr erstellen möchten, können Sie ein
 [role="lead"]
 Wenn Sie keine Snapshot-Images mehr erstellen möchten, können Sie einen vorhandenen Snapshot-Zeitplan löschen.
 
+.Über diese Aufgabe
 Wenn Sie einen Snapshot-Zeitplan löschen, werden die zugehörigen Snapshot-Images nicht zusammen mit ihm gelöscht. Wenn Sie der Meinung sind, dass die Sammlung von Snapshot-Bildern irgendwann wieder aufgenommen werden könnte, sollten Sie den Snapshot-Zeitplan unterbrechen, anstatt ihn zu löschen.
 
 .Schritte
@@ -22,4 +23,5 @@ Wenn Sie einen Snapshot-Zeitplan löschen, werden die zugehörigen Snapshot-Imag
 . Wählen Sie den Snapshot-Zeitplan aus, den Sie löschen möchten, und bestätigen Sie den Vorgang.
 
 
+.Ergebnisse
 Das System entfernt alle Zeitplanattribute vom Basis-Volume oder der Snapshot-Konsistenzgruppe.

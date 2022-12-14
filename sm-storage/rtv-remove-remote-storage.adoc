@@ -14,8 +14,10 @@ summary: Nach Abschluss des Imports können Sie ein Remote-Speicherobjekt entfer
 [role="lead"]
 Nach Abschluss des Imports können Sie ein Remote-Speicherobjekt entfernen, wenn Sie keine Daten mehr zwischen den lokalen und Remote-Geräten kopieren möchten.
 
+.Bevor Sie beginnen
 Stellen Sie sicher, dass dem Remote-Speicherobjekt, das Sie entfernen möchten, keine Importe zugeordnet sind.
 
+.Über diese Aufgabe
 Wenn Sie ein Remote-Speicherobjekt entfernen, werden Verbindungen zwischen den lokalen und den Remote-Geräten entfernt.
 
 .Schritte

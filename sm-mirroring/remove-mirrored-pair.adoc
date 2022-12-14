@@ -14,6 +14,7 @@ summary: Ein gespiegeltes Paar entfernen Sie die gespiegelte Beziehung vom prim�
 [role="lead"]
 Ein gespiegeltes Paar entfernen Sie die gespiegelte Beziehung vom primären Volume auf dem lokalen Storage Array und dem sekundären Volume im Remote Storage Array.
 
+.Über diese Aufgabe
 Prüfen Sie die folgenden Informationen zu verwaisten gespiegelten Paaren:
 
 * Ein verwaister gespiegeltes Paar ist vorhanden, wenn ein Mitglied-Volume einer Consistency Mirror-Gruppe auf einer Seite entfernt wurde (entweder auf der Seite des lokalen Speicher-Arrays oder auf der Seite des Remote-Speicher-Arrays), jedoch nicht auf der anderen Seite.
@@ -31,6 +32,7 @@ Die Tabelle mit gespiegelten Paaren wird angezeigt und zeigt alle gespiegelten P
 . Bestätigen Sie, dass Sie das gespiegelte Paar entfernen möchten, und klicken Sie dann auf *Entfernen*.
 
 
+.Ergebnisse
 System Manager führt die folgenden Aktionen durch:
 
 * Entfernt die Spiegelbeziehung aus der SpiegelungsConsistency Group auf dem lokalen Speicher-Array und auf dem Remote-Speicher-Array und löscht die reservierte Kapazität.

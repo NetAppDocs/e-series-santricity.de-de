@@ -19,6 +19,7 @@ Sie können die Zertifikate auf den Controllern von der Verwendung von CA-signie
 * CA-signierte Zertifikate müssen bereits importiert werden.
 
 
+.Über diese Aufgabe
 Mit der Funktion Reset werden die aktuellen CA-signierten Zertifikatdateien von jedem Controller gelöscht. Die Controller werden dann mithilfe selbstsignierter Zertifikate wiederhergestellt.
 
 .Schritte
@@ -33,4 +34,5 @@ Nach der Aktualisierung Ihres Browsers kann der Browser den Zugriff auf die Ziel
 
 
 
+.Ergebnisse
 Die Controller werden mithilfe von selbstsignierten Zertifikaten wiederhergestellt. Das System fordert Benutzer daher auf, das selbstsignierte Zertifikat für ihre Sitzungen manuell anzunehmen.

@@ -119,6 +119,7 @@ Sie müssen die Passwörter für die Speicher-Arrays eingeben, die Sie Ihrer Man
 . Klicken Sie Auf *Fertig Stellen*.
 
 
+.Nachdem Sie fertig sind
 Die Speicher-Arrays werden Ihrer Management-Domäne hinzugefügt und der ausgewählten Gruppe zugeordnet (falls angegeben).
 
 [NOTE]

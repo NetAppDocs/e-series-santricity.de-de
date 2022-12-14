@@ -24,6 +24,7 @@ Das Dialogfeld Einstellungen für die reservierte Kapazität des gespiegelten Pa
 . Ändern Sie gegebenenfalls die Einstellungen für die reservierte Kapazität des gespiegelten Paar-Volumes.
 +
 .Felddetails
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

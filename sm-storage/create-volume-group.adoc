@@ -16,6 +16,7 @@ Sie erstellen mithilfe einer Volume-Gruppe ein oder mehrere Volumes, auf die der
 
 Mit Laufwerken mit größerer Kapazität und der Möglichkeit, Volumes über Controller hinweg zu verteilen, bietet das Erstellen von mehr als einem Volume pro Volume-Gruppe eine gute Möglichkeit, die Storage-Kapazität zu nutzen und die Daten zu sichern.
 
+.Bevor Sie beginnen
 Überprüfen Sie diese Richtlinien, bevor Sie eine Volume-Gruppe erstellen:
 
 * Sie benötigen mindestens ein nicht zugewiesenes Laufwerk.
@@ -65,6 +66,7 @@ Die angezeigten Laufwerkeigenschaften hängen davon ab, ob Sie die automatische 
 
 +
 .Antriebseigenschaften der automatischen Methode
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -164,6 +166,7 @@ Zeigt die Blockgrößen an, die für die Volumes in der Gruppe erstellt werden k
 ====
 +
 .Eigenschaften des Antriebs mit manueller Methode
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

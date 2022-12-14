@@ -13,6 +13,7 @@ summary: 'Wenn Sie zugewiesene Laufwerke von einem Speicher-Array in ein anderes
 [role="lead"]
 Wenn Sie zugewiesene Laufwerke von einem Speicher-Array in ein anderes verschieben, müssen Sie die Laufwerke initialisieren (formatieren), bevor sie im neuen Speicher-Array verwendet werden können.
 
+.Über diese Aufgabe
 Durch Initialisieren werden die vorherigen Konfigurationsinformationen von einem Laufwerk entfernt und in den Status „nicht zugewiesen“ zurückgeführt. Das Laufwerk kann dann einem neuen Pool oder einer neuen Volume-Gruppe im neuen Speicher-Array hinzugefügt werden.
 
 Verwenden Sie den Vorgang zum Initialisieren des Laufwerks, wenn Sie ein einzelnes Laufwerk verschieben. Sie müssen Laufwerke nicht initialisieren, wenn Sie eine ganze Volume-Gruppe von einem Speicher-Array in ein anderes verschieben.

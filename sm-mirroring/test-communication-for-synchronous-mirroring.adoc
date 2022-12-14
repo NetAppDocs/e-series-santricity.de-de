@@ -14,6 +14,7 @@ summary: Sie können die Kommunikation zwischen einem lokalen Speicher-Array und
 [role="lead"]
 Sie können die Kommunikation zwischen einem lokalen Speicher-Array und einem Remote-Speicher-Array testen, um mögliche Kommunikationsprobleme für ein gespiegeltes Paar zu diagnostizieren, das an der synchronen Spiegelung beteiligt ist.
 
+.Über diese Aufgabe
 Es werden zwei verschiedene Tests durchgeführt:
 
 * *Kommunikation* -- überprüft, ob die beiden Speicher-Arrays einen Kommunikationspfad haben. Der Kommunikationstest überprüft, ob das lokale Speicher-Array mit dem Remote-Speicher-Array kommunizieren kann und ob das mit dem gespiegelten Paar verbundene sekundäre Volume auf dem Remote-Speicher-Array vorhanden ist.

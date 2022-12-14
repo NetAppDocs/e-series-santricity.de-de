@@ -26,6 +26,7 @@ Das Kontextmenü des Controllers wird angezeigt.
 . Wählen Sie * Online platzieren* aus, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
 
 
+.Ergebnisse
 Die Erkennung eines wiederhergestellten bevorzugten Pfads durch den Multipath-Treiber kann bis zu 10 Minuten dauern.
 
 Alle Volumes, die ursprünglich im Besitz dieses Controllers waren, werden automatisch zurück zum Controller verschoben, sobald I/O-Anfragen für jedes Volume eingegangen sind. In einigen Fällen müssen Sie die Volumes möglicherweise manuell mit dem Befehl *umverteilen Volumes* neu verteilen.

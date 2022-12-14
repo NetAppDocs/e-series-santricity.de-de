@@ -14,6 +14,7 @@ summary: Sie können Workloads für jeden Applikationstyp erstellen.
 [role="lead"]
 Sie können Workloads für jeden Applikationstyp erstellen.
 
+.Über diese Aufgabe
 Ein Workload ist ein Storage-Objekt, das eine Applikation unterstützt. Sie können einen oder mehrere Workloads oder Instanzen pro Applikation definieren. Bei einigen Applikationen konfiguriert das System den Workload so, dass er Volumes mit ähnlichen zugrunde liegenden Volume-Merkmalen enthält. Diese Volume-Merkmale werden basierend auf dem Applikationstyp optimiert, den der Workload unterstützt. Wenn Sie beispielsweise einen Workload erstellen, der eine Microsoft SQL Server Applikation unterstützt und anschließend Volumes für diesen Workload erstellt, werden die zugrunde liegenden Volume-Merkmale zur Unterstützung von Microsoft SQL Server optimiert.
 
 System Manager empfiehlt nur für die folgenden Applikationstypen eine optimierte Volume-Konfiguration:
@@ -40,4 +41,5 @@ Das Dialogfeld Anwendungs-Workload erstellen wird angezeigt.
 . Klicken Sie Auf *Erstellen*.
 
 
+.Nachdem Sie fertig sind
 Sie können dem erstellten Workload Storage-Kapazität hinzufügen. Verwenden Sie die Option *Create Volume*, um ein oder mehrere Volumes für eine Anwendung zu erstellen und jedem Volume bestimmte Mengen an Kapazität zuzuweisen.

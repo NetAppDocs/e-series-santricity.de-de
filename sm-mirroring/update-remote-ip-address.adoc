@@ -14,6 +14,7 @@ summary: Sie können die iSCSI-IP-Adresse für Ihr Remote-Speicher-Array aktuali
 [role="lead"]
 Sie können die iSCSI-IP-Adresse für Ihr Remote-Speicher-Array aktualisieren, um die Verbindung mit dem lokalen Speicher-Array wiederherzustellen.
 
+.Bevor Sie beginnen
 Das lokale Storage-Array und das Remote-Storage-Array müssen für asynchrone Spiegelung über eine iSCSI-Verbindung konfiguriert werden.
 
 .Schritte
@@ -29,4 +30,5 @@ Das Dialogfeld Remote-IP-Adresse aktualisieren wird angezeigt.
 . Wählen Sie *Update*, um die iSCSI-IP-Adresse für Ihr Remote-Speicher-Array zu aktualisieren.
 
 
+.Ergebnisse
 Das System setzt die IP-Adresse des Remote-Speicher-Arrays zurück, um die Verbindung zum lokalen Speicher-Array wiederherzustellen.
