@@ -9917,7 +9917,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-15 17:53:52 +0000">11/15/2022</time>
+    <time datetime="2022-12-15 15:38:39 +0000">12/15/2022</time>
     
   
 
@@ -9933,6 +9933,7 @@
 <p>Sie erstellen Volumes, um einem applikationsspezifischen Workload Storage-Kapazität hinzuzufügen und die erstellten Volumes für einen bestimmten Host oder Host-Cluster sichtbar zu machen. Darüber hinaus bietet die Erstellung eines Volumes Optionen, mit denen jedem zu erstellenden Volume bestimmte Kapazitätsmengen zugewiesen werden können.</p>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>Die meisten Applikationstypen sind standardmäßig auf eine benutzerdefinierte Volume-Konfiguration eingestellt. Bei einigen Anwendungstypen wird bei der Volume-Erstellung eine intelligente Konfiguration angewendet. Wenn Sie beispielsweise Volumes für die Microsoft Exchange Applikation erstellen, werden Sie gefragt, wie viele Mailboxen Sie benötigen, wie viele Mailboxen Ihre durchschnittlichen Anforderungen an die Mailbox-Kapazität sind und wie viele Kopien der Datenbank Sie benötigen. System Manager verwendet diese Informationen, um eine optimale Volume-Konfiguration für Sie zu erstellen, die Sie nach Bedarf bearbeiten können.</p>
 </div>
 <div class="paragraph">
@@ -9961,6 +9962,7 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>Beachten Sie bei der Zuweisung von Volumes die folgenden Richtlinien:</p>
 </div>
 <div class="ulist">
@@ -10012,7 +10014,7 @@
 <p>Wählen Sie aus der Dropdown-Liste einen bestimmten Host oder Host-Cluster aus, dem Sie Volumes zuweisen möchten, oder wählen Sie aus, zu einem späteren Zeitpunkt den Host oder Host-Cluster zuzuweisen.</p>
 </li>
 <li>
-<p>Um die Volume-Erstellungsreihenfolge für den ausgewählten Host oder Host-Cluster fortzusetzen, klicken Sie auf <strong>Weiter</strong> und gehen Sie zu  2: Select a workload for a volume.</p>
+<p>Um die Volume-Erstellungsreihenfolge für den ausgewählten Host oder Host-Cluster fortzusetzen, klicken Sie auf <strong>Weiter</strong> und gehen Sie zu <a href="#schritt-2-wählen-sie-einen-workload-für-ein-volume">Schritt 2: Wählen Sie einen Workload für ein Volume</a>.</p>
 <div class="paragraph">
 <p>Das Dialogfeld „Workload auswählen“ wird angezeigt.</p>
 </div>
@@ -10028,6 +10030,7 @@
 <p>Wählen Sie einen Workload aus, um die Storage-Array-Konfiguration für eine bestimmte Applikation wie Microsoft SQL Server, Microsoft Exchange, Videoüberwachungsanwendungen oder VMware anzupassen. Sie können „andere Anwendung“ auswählen, wenn die Anwendung, die Sie für dieses Speicher-Array verwenden möchten, nicht aufgeführt ist.</p>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>In dieser Aufgabe wird beschrieben, wie Volumes für einen vorhandenen Workload erstellt werden.</p>
 </div>
 <div class="ulist">
@@ -10073,7 +10076,7 @@
 <p>Klicken Sie Auf <strong>Weiter</strong>.</p>
 </li>
 <li>
-<p>Wenn Ihr Workload einem unterstützten Applikationstyp zugewiesen ist, geben Sie die angeforderten Informationen ein. Andernfalls fahren Sie mit fort  3: Add or edit volumes.</p>
+<p>Wenn Ihr Workload einem unterstützten Applikationstyp zugewiesen ist, geben Sie die angeforderten Informationen ein. Andernfalls fahren Sie mit fort <a href="#schritt-3-volumes-hinzufügen-oder-bearbeiten">Schritt 3: Volumes hinzufügen oder bearbeiten</a>.</p>
 </li>
 </ol>
 </div>
@@ -10112,8 +10115,8 @@
 </li>
 <li>
 <p>Um ein für Data Assurance (da) fähiges Volume zu erstellen, muss die Host-Verbindung, die Sie verwenden möchten, da unterstützen.</p>
-<div class="exampleblock">
-<div class="title">Beispiel 1. Auswahl eines sicheren Pools oder einer Volume-Gruppe</div>
+<details>
+<summary class="title">Auswahl eines sicheren Pools oder einer Volume-Gruppe</summary>
 <div class="content">
 <div class="paragraph">
 <p>Wenn Sie ein DA-fähiges Volume erstellen möchten, wählen Sie einen Pool oder eine Volume-Gruppe aus, die für da geeignet ist (suchen Sie in der Tabelle mit den Kandidaten für Pool- und Volume-Gruppen nach <strong>Ja</strong> neben „da“).</p>
@@ -10125,12 +10128,12 @@
 <p>Wenn eine der Host-Verbindungen auf den Controllern im Speicher-Array keine Unterstützung für da bietet, können die zugeordneten Hosts auf da-fähige Volumes keinen Zugriff auf Daten haben.</p>
 </div>
 </div>
-</div>
+</details>
 </li>
 <li>
 <p>Um ein sicheres Volume zu erstellen, muss für das Storage Array ein Sicherheitsschlüssel erstellt werden.</p>
-<div class="exampleblock">
-<div class="title">Beispiel 2. Auswahl eines sicheren Pools oder einer Volume-Gruppe</div>
+<details>
+<summary class="title">Auswahl eines sicheren Pools oder einer Volume-Gruppe</summary>
 <div class="content">
 <div class="paragraph">
 <p>Wenn Sie ein sicheres Volume erstellen möchten, wählen Sie einen Pool oder eine Volume-Gruppe aus, die sicher ist (suchen Sie in der Tabelle mit den Kandidaten für Pool- und Volume-Gruppen nach <strong>Ja</strong> neben „Secure-fähig“).</p>
@@ -10142,7 +10145,7 @@
 <p>Ein Pool oder eine Volume-Gruppe kann sowohl sichere als auch nicht sichere Laufwerke enthalten. Zur Nutzung der Verschlüsselungsfunktionen müssen jedoch alle Laufwerke sicher sein.</p>
 </div>
 </div>
-</div>
+</details>
 </li>
 <li>
 <p>Um ein Volume mit Ressourcenbereitstellung zu erstellen, müssen alle Laufwerke NVMe-Laufwerke mit der dezugewiesenen oder nicht geschriebenen Option Logical Block Error (DULBE) sein.</p>
@@ -10150,6 +10153,7 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>Sie erstellen Volumes aus Pools oder Volume-Gruppen. Das Dialogfeld Volumes hinzufügen/bearbeiten zeigt alle berechtigten Pools und Volume-Gruppen im Speicher-Array an. Für jeden infrage kommenden Pool und jede Volume-Gruppe wird die Anzahl der verfügbaren Laufwerke und die gesamte freie Kapazität angezeigt.</p>
 </div>
 <div class="paragraph">
@@ -10164,8 +10168,8 @@
 <ul>
 <li>
 <p><strong>Other</strong>&#8201;&#8212;&#8201;Klicken Sie <strong>Neues Volume hinzufügen</strong> in jedem Pool oder Volume-Gruppe, die Sie verwenden möchten, um ein oder mehrere Volumes zu erstellen.</p>
-<div class="exampleblock">
-<div class="title">Beispiel 3. Felddetails</div>
+<details>
+<summary class="title">Felddetails</summary>
 <div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -10294,12 +10298,12 @@
 </tbody>
 </table>
 </div>
-</div>
+</details>
 </li>
 <li>
 <p><strong>Anwendungsspezifischer Workload</strong>&#8201;&#8212;&#8201;Klicken Sie entweder auf <strong>Weiter</strong>, um die vom System empfohlenen Volumes und Merkmale für den ausgewählten Workload zu akzeptieren, oder klicken Sie auf <strong>Volumes bearbeiten</strong>, um die vom System empfohlenen Volumes und Merkmale für den ausgewählten Workload zu ändern, hinzuzufügen oder zu löschen.</p>
-<div class="exampleblock">
-<div class="title">Beispiel 4. Felddetails</div>
+<details>
+<summary class="title">Felddetails</summary>
 <div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -10433,13 +10437,13 @@
 </tbody>
 </table>
 </div>
-</div>
+</details>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Um die Sequenz zur Volume-Erstellung für die ausgewählte Anwendung fortzusetzen, klicken Sie auf <strong>Weiter</strong> und gehen Sie zu  4: Review volume configuration.</p>
+<p>Um die Sequenz zur Volume-Erstellung für die ausgewählte Anwendung fortzusetzen, klicken Sie auf <strong>Weiter</strong> und gehen Sie zu <a href="#schritt-4-prüfen-der-volume-konfiguration">Schritt 4: Prüfen der Volume-Konfiguration</a>.</p>
 </li>
 </ol>
 </div>
@@ -10463,6 +10467,7 @@
 </ol>
 </div>
 <div class="paragraph">
+<div class="title">Ergebnisse</div>
 <p>System Manager erstellt die neuen Volumes in den ausgewählten Pools und Volume-Gruppen und zeigt dann die neuen Volumes in der Tabelle Alle Volumes an.</p>
 </div>
 <div class="ulist">

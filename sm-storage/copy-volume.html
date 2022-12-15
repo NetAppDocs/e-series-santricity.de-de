@@ -9917,7 +9917,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-15 17:53:52 +0000">11/15/2022</time>
+    <time datetime="2022-12-15 15:38:39 +0000">12/15/2022</time>
     
   
 
@@ -9945,13 +9945,14 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>Das Quell-Volume ist das Volume, das Host-I/O akzeptiert und Applikationsdaten speichert. Wenn ein Copy Volume gestartet wird, werden Daten aus dem Quell-Volume vollständig in das Ziel-Volume kopiert.</p>
 </div>
 <div class="paragraph">
 <p>Das Ziel-Volume ist ein Standard-Volume, das eine Kopie der Daten vom Quell-Volume beibehält. Nach Abschluss des Kopiervorgangs ist das Ziel-Volume identisch mit dem Quell-Volume. Das Zielvolume muss die gleiche oder größere Kapazität haben wie das Quell-Volume, es kann jedoch ein anderes RAID-Level aufweisen.</p>
 </div>
-<div class="exampleblock">
-<div class="title">Beispiel 1. Mehr zu Online- und Offline-Kopien</div>
+<details>
+<summary class="title">Mehr zu Online- und Offline-Kopien</summary>
 <div class="content">
 <div class="paragraph">
 <p><strong>Online-Kopie</strong></p>
@@ -9966,7 +9967,7 @@
 <p>Eine Offline-Kopie liest Daten vom Quell-Volume und kopiert sie auf ein Ziel-Volume, während gleichzeitig alle Updates für das Quell-Volume unterbrochen werden, während die Kopie gerade läuft. Alle Updates des Quell-Volumes werden ausgesetzt, um zu verhindern, dass chronologische Inkonsistenzen auf dem Ziel-Volume erstellt werden. Die offline Volume Copy-Beziehung besteht zwischen einem Quell-Volume und einem Ziel-Volume.</p>
 </div>
 </div>
-</div>
+</details>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -10004,8 +10005,8 @@
 <div class="paragraph">
 <p>Die Kopierpriorität legt fest, wie viele der Systemressourcen zum Abschluss des Vorgangs „Copy Volume“ im Vergleich zu Service-I/O-Anforderungen verwendet werden.</p>
 </div>
-<div class="exampleblock">
-<div class="title">Beispiel 2. Mehr zu den Prioritätsraten für Kopien</div>
+<details>
+<summary class="title">Mehr zu den Prioritätsraten für Kopien</summary>
 <div class="content">
 <div class="paragraph">
 <p>Es gibt fünf Prioritätsstufen für Kopien:</p>
@@ -10033,7 +10034,7 @@
 <p>Wenn die Kopierpriorität auf die niedrigste Rate eingestellt ist, wird die I/O-Aktivität priorisiert und der Vorgang des Kopiervolumens dauert länger. Wenn die Kopierpriorität auf die höchste Rate eingestellt ist, wird der Kopiervolume-Vorgang priorisiert, aber die I/O-Aktivität für das Speicherarray kann davon betroffen sein.</p>
 </div>
 </div>
-</div>
+</details>
 </li>
 <li>
 <p>Wählen Sie aus, ob Sie eine Online-Kopie oder eine Offline-Kopie erstellen möchten. Um eine Online-Kopie zu erstellen, aktivieren Sie das Kontrollkästchen <strong>Quellvolumen während des Kopiervorgangs online halten</strong>.</p>
@@ -10073,9 +10074,11 @@
 </ol>
 </div>
 <div class="paragraph">
+<div class="title">Ergebnisse</div>
 <p>System Manager kopiert alle Daten vom Quell-Volume auf das Ziel-Volume. Nachdem der Vorgang des Copy-Volume abgeschlossen ist, wird das Ziel-Volume automatisch schreibgeschützt für die Hosts.</p>
 </div>
 <div class="paragraph">
+<div class="title">Nachdem Sie fertig sind</div>
 <p>Wählen Sie MENU:Home[Vorgänge in Bearbeitung anzeigen], um den Fortschritt des Vorgangs „Copy Volume“ anzuzeigen. Dieser Vorgang kann langwierig sein und die System-Performance beeinträchtigen.</p>
 </div>
 

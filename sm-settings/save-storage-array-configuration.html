@@ -9917,7 +9917,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-15 17:53:52 +0000">11/15/2022</time>
+    <time datetime="2022-12-15 15:38:39 +0000">12/15/2022</time>
     
   
 
@@ -9931,9 +9931,11 @@
 <p>Sie können die Konfigurationsinformationen eines Speicherarrays in einer Skriptdatei speichern, um Zeit beim Einrichten zusätzlicher Speicher-Arrays mit der gleichen Konfiguration zu sparen.</p>
 </div>
 <div class="paragraph">
+<div class="title">Bevor Sie beginnen</div>
 <p>Das Speicher-Array darf keinen Vorgang durchlaufen, der seine logischen Konfigurationseinstellungen ändert. Beispiele für diese Vorgänge sind das Erstellen oder Löschen von Volumes, das Herunterladen der Controller-Firmware, das Zuweisen oder Ändern von Hot-Spare-Laufwerken oder das Hinzufügen von Kapazität (Laufwerken) zu einer Volume-Gruppe.</p>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>Das Speichern der Speicherarray-Konfiguration generiert ein CLI-Skript (Command Line Interface), das Storage Array-Einstellungen, Volume-Konfiguration, Host-Konfiguration oder Host-to-Volume-Zuweisungen für ein Storage-Array enthält. Sie können dieses generierte CLI-Skript verwenden, um eine Konfiguration auf einem anderen Speicher-Array mit genau derselben Hardwarekonfiguration zu replizieren.</p>
 </div>
 <div class="paragraph">
@@ -10035,6 +10037,7 @@
 </ol>
 </div>
 <div class="paragraph">
+<div class="title">Nachdem Sie fertig sind</div>
 <p>Um die gespeicherte Speicher-Array-Konfiguration auf ein anderes Speicher-Array zu laden, verwenden Sie die SANtricity-Befehlszeilenschnittstelle (SMcli) mit dem <code>-f</code> Option zum Anwenden des <code>.cfg</code> Datei:</p>
 </div>
 <div class="admonitionblock note">

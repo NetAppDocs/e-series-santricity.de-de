@@ -9917,7 +9917,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-15 17:53:52 +0000">11/15/2022</time>
+    <time datetime="2022-12-15 15:38:39 +0000">12/15/2022</time>
     
   
 
@@ -9936,6 +9936,7 @@
 <p>Mit dieser Gruppe können Sie zur Wahrung der Konsistenz gleichzeitig Snapshot-Images aller Volumes erstellen. Jedes Volume, das zu einer Snapshot Konsistenzgruppe gehört, wird als „<em>Member Volume</em>“ bezeichnet. Wenn Sie einer Snapshot Konsistenzgruppe ein Volume hinzufügen, erstellt das System automatisch eine neue Snapshot-Gruppe, die diesem Mitglied-Volume entspricht.</p>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>Mit der Sequenz zur Erstellung von Snapshot-Konsistenzgruppen können Sie Mitglieder-Volumes für die Gruppe auswählen und den Mitglied-Volumes Kapazität zuweisen.</p>
 </div>
 <div class="paragraph">
@@ -9950,6 +9951,7 @@
 <p>Wählen Sie Mitglieder aus, um eine Sammlung von Volumes anzugeben, die die Snapshot-Konsistenzgruppe enthalten. Alle Aktionen, die Sie auf der Snapshot Konsistenzgruppe durchführen, werden gleichmäßig auf ausgewählte Mitglied-Volumes erweitert.</p>
 </div>
 <div class="paragraph">
+<div class="title">Bevor Sie beginnen</div>
 <p>Die Mitgliedvolumes müssen optimal sein.</p>
 </div>
 <div class="olist arabic">
@@ -9971,7 +9973,7 @@
 <p>Wählen Sie die Volumes aus, die der Snapshot-Konsistenzgruppe als Mitgliedvolumes hinzugefügt werden sollen.</p>
 </li>
 <li>
-<p>Klicken Sie auf <strong>Weiter</strong>, und gehen Sie zu  2: Reserve capacity for snapshot consistency group.</p>
+<p>Klicken Sie auf <strong>Weiter</strong>, und gehen Sie zu <a href="#schritt-2-reservekapazität-für-snapshot-konsistenzgruppe">Schritt 2: Reservekapazität für Snapshot Konsistenzgruppe</a>.</p>
 </li>
 </ol>
 </div>
@@ -9984,6 +9986,7 @@
 <p>Zuweisen der reservierten Kapazität zur Snapshot-Konsistenzgruppe. System Manager legt die Volumes und die Kapazität auf Grundlage der Eigenschaften der Snapshot-Konsistenzgruppe vor. Sie können die empfohlene Konfiguration für reservierte Kapazität akzeptieren oder den zugewiesenen Storage anpassen.</p>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>Im Dialogfeld „Reserve-Kapazität“ werden in der Tabelle „Volume-Kandidaten“ nur die Kandidaten angezeigt, die die angegebene reservierte Kapazität unterstützen. Reservierte Kapazität ist die zugewiesene physische Kapazität, die für jeden Kopierdienst- und Storage-Objekt verwendet wird. Er ist nicht direkt vom Host lesbar.</p>
 </div>
 <div class="olist arabic">
@@ -10022,7 +10025,7 @@
 <p><strong>Optional:</strong> Wenn Sie die Einstellung für reservierte Standardkapazität ändern, klicken Sie auf <strong>Kandidaten aktualisieren</strong> um die Kandidatenliste für die von Ihnen angegebene reservierte Kapazität zu aktualisieren.</p>
 </li>
 <li>
-<p>Klicken Sie auf <strong>Weiter</strong>, und gehen Sie zu  3: Edit settings for snapshot consistency group.</p>
+<p>Klicken Sie auf <strong>Weiter</strong>, und gehen Sie zu <a href="#schritt-3-bearbeiten-sie-die-einstellungen-für-die-snapshot-konsistenzgruppe">Schritt 3: Bearbeiten Sie die Einstellungen für die Snapshot Konsistenzgruppe</a>.</p>
 </li>
 </ol>
 </div>
@@ -10035,6 +10038,7 @@
 <p>Akzeptieren oder wählen Sie die Einstellungen zum automatischen Löschen und die Schwellenwerte für reservierte Kapazitätswarnschwellenwerte für die Snapshot-Konsistenzgruppe aus.</p>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>Mit der Sequenz zur Erstellung von Snapshot-Konsistenzgruppen können Sie Mitglieder-Volumes für die Gruppe auswählen und den Mitglied-Volumes Kapazität zuweisen.</p>
 </div>
 <div class="olist arabic">
@@ -10042,8 +10046,8 @@
 <ol class="arabic">
 <li>
 <p>Übernehmen Sie die Standardeinstellungen für die Snapshot-Konsistenzgruppe oder ändern Sie diese je nach Bedarf.</p>
-<div class="exampleblock">
-<div class="title">Beispiel 1. Felddetails</div>
+<details>
+<summary class="title">Felddetails</summary>
 <div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -10113,7 +10117,7 @@
 </tbody>
 </table>
 </div>
-</div>
+</details>
 </li>
 <li>
 <p>Klicken Sie nach der Konfiguration Ihrer Snapshot Consistency Group auf <strong>Finish</strong>.</p>

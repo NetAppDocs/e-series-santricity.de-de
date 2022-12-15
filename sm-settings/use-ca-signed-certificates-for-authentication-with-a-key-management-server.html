@@ -9917,7 +9917,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-15 17:53:52 +0000">11/15/2022</time>
+    <time datetime="2022-12-15 15:38:39 +0000">12/15/2022</time>
     
   
 
@@ -9933,9 +9933,11 @@
 <p>Für die sichere Kommunikation zwischen einem Schlüsselverwaltungsserver und den Speicher-Array-Controllern müssen Sie die entsprechenden Zertifikatssätze konfigurieren.</p>
 </div>
 <div class="paragraph">
+<div class="title">Bevor Sie beginnen</div>
 <p>Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.</p>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>Die Authentifizierung zwischen den Controllern und einem Schlüsselverwaltungsserver ist ein zweistufiges Verfahren.</p>
 </div>
 </div>
@@ -9990,7 +9992,7 @@
 <p>Fordern Sie ein signiertes Clientzertifikat von einer Zertifizierungsstelle an, die vom Schlüsselverwaltungsserver vertrauenswürdig ist.</p>
 </li>
 <li>
-<p>Wenn Sie ein Clientzertifikat besitzen, gehen Sie zu  2: Import certificates for the key management server.</p>
+<p>Wenn Sie ein Clientzertifikat besitzen, gehen Sie zu <a href="#schritt-2-importieren-sie-zertifikate-für-den-schlüsselverwaltungsserver">Schritt 2: Importieren Sie Zertifikate für den Schlüsselverwaltungsserver</a>.</p>
 </li>
 </ol>
 </div>
@@ -10006,7 +10008,7 @@
 <div class="title">Bevor Sie beginnen</div>
 <ul>
 <li>
-<p>Sie haben eine signierte Client-Zertifikatdatei (siehe  1: Complete and submit CSR for authentication with a key management server), und Sie haben diese Datei auf den Host kopiert, auf den Sie auf System Manager zugreifen. Ein Client-Zertifikat validiert die Controller des Storage-Arrays, damit der wichtige Management-Server seine KMIP-Anforderungen (Key Management Interoperability Protocol) anvertrauen kann.</p>
+<p>Sie haben eine signierte Client-Zertifikatdatei (siehe <a href="#schritt-1-csr-für-die-authentifizierung-mit-einem-schlüsselverwaltungsserver-abschließen-und-einreichen">Schritt 1: CSR für die Authentifizierung mit einem Schlüsselverwaltungsserver abschließen und einreichen</a>), und Sie haben diese Datei auf den Host kopiert, auf den Sie auf System Manager zugreifen. Ein Client-Zertifikat validiert die Controller des Storage-Arrays, damit der wichtige Management-Server seine KMIP-Anforderungen (Key Management Interoperability Protocol) anvertrauen kann.</p>
 </li>
 <li>
 <p>Sie müssen eine Zertifikatdatei vom Schlüsselverwaltungsserver abrufen und diese Datei anschließend auf den Host kopieren, auf den Sie auf System Manager zugreifen. Ein Zertifikat für den Schlüsselmanagementserver validiert den Schlüsselmanagementserver, damit das Storage-Array seiner IP-Adresse vertrauen kann. Sie können für den Schlüsselverwaltungsserver ein Root-, Intermediate- oder Serverzertifikat verwenden.</p>
