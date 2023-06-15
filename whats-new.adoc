@@ -16,6 +16,12 @@ Die folgende Tabelle beschreibt die neuen Funktionen in SANtricity System Manage
 
 
 
+== Neue Funktionen in Version 11.75
+
+Systeme müssen mit 11.70.5 ausgeführt werden, um auf 11.80.x oder höher zu aktualisieren.
+
+
+
 == Neue Funktionen in Version 11.74
 
 [cols="35h,~"]
