@@ -8681,7 +8681,6 @@
   <block id="25e21eea77a06faadbc2ce2007dfd8fa" category="paragraph">Achten Sie darauf, dass Sie Ihre Berechtigungen nicht entfernen, während SAML aktiviert ist, sonst verlieren Sie den Zugriff auf Unified Manager.</block>
   <block id="bdf60d91552728cd5d2f943df141631b" category="paragraph">Klicken Sie in das Feld, und wählen Sie eine der Rollen des Speicherarrays aus, die dem Attribut zugeordnet werden sollen. Sie müssen jede Rolle, die Sie für diese Gruppe aufnehmen möchten, einzeln auswählen. Die Rolle Monitor ist zusammen mit den anderen Rollen für die Anmeldung bei Unified Manager erforderlich. Eine Sicherheitsadministratorrolle muss mindestens einer Gruppe zugewiesen werden. Die zugeordneten Rollen umfassen die folgenden Berechtigungen:</block>
   <block id="84f60aaee7374184081d849821cae03b" category="doc">Neuerungen bei SANtricity OS 11.80</block>
-  <block id="ee178cd31372157b6b4ef199f32f28e6" category="paragraph">In der folgenden Tabelle werden die neuen Funktionen von SANtricity System Manager 11.8x beschrieben.</block>
   <block id="b88fbe45e9e75bdd6c5127ce8a22abe1" category="section-title">Neue Funktionen in Version 11.80</block>
   <block id="8f407366493ebfbb4a6dec746e7c89f5" category="paragraph">Verbesserter Volume Parity Scan</block>
   <block id="07c3c6708618172f589685373ed71a5d" category="paragraph">Der Volume-Paritäts-Scan kann nun als Hintergrundprozess entweder über die REST API oder über die CLI gestartet werden. Der daraus resultierende Paritäts-Scan wird im Hintergrund ausgeführt, solange er für den Abschluss des Scanvorgangs erforderlich ist. Scanvorgänge können den Neustart des Controllers und Failover-Vorgänge überdauern.</block>
@@ -8716,7 +8715,6 @@
   <block id="1c0cc3436484a2d69e30cbe7f637d3ed" category="paragraph">Port-ID</block>
   <block id="f3623da9f6be936979297f1fa268895c" category="paragraph">Der Ereignismonitor sendet bei jedem Ereignis, das in einem Alarmtabellen stattfindet, Warnmeldungen an den Syslog-Server. Weitere Informationen zum Konfigurieren der Syslog-Einstellungen für Audit-Protokolle finden Sie unter<block ref="8ff4ea61d8cfa4d348011e356d65d49a" category="inline-link-rx"></block>.</block>
   <block id="30af9425adf237457aaff58f7cb21bc9" category="paragraph">Nach der Konfiguration werden alle neuen Audit-Protokolle an den Syslog-Server gesendet. Frühere Protokolle werden nicht übertragen. Weitere Informationen zur Konfiguration von Syslog-Einstellungen für Warnmeldungen finden Sie unter<block ref="7b44e3078f5548e67f8cbe8894b93e12" category="inline-link-rx"></block>.</block>
-  <block id="4bc4384815b2cb7cd1edee10550e5472" category="list-text">_TBD for 11.80 Release Notes_</block>
   <block id="c76b2a182c36f1230239bad4c28112a3" category="doc">SANtricity Software-Dokumentation 11.80</block>
   <block id="3260e793a72a8ad4c6f8b10665ca25ac" category="doc">Management mehrerer Arrays mit Unified Manager 6</block>
   <block id="8067406a66fe34c09bf78be3e6ae6fc1" category="list-text">System Manager – eine webbasierte Schnittstelle zur Verwaltung eines einzelnen Speicher-Arrays in Ihrem Netzwerk.</block>
@@ -8725,4 +8723,7 @@
   <block id="f3e5a6d7f7194a35f77d2084efb9ef4f" category="paragraph">Ansichten von Laufwerken, Controllern und Komponenten</block>
   <block id="3354319c9dafbfd43c07abbfb0de1326" category="paragraph">Um zwischen Vorder- und Rückansicht zu wechseln, wählen Sie ganz rechts entweder *Laufwerke* oder *Controller &amp; Komponenten* aus (der Link, der angezeigt wird, hängt von der aktuellen Ansicht ab). Die Ansicht *Laufwerke* zeigt Laufwerke und alle leeren Laufwerksschächte an. Die Ansicht *Controller &amp; Komponenten* zeigt die Controller und alle EAM-Module (ESM), Strom-/Lüftereinschübe oder leeren Controller-Einschübe. Unten auf der Seite können Sie auch *Alle Laufwerke anzeigen* auswählen.</block>
   <block id="a26b62aaf12a1354ed2f5726f1a44f96" category="sidebar">SANtricity 11.8-Dokumentation</block>
+  <block id="d10baea6d3a0d4c1b494ce57d94cdadb" category="paragraph">In der folgenden Tabelle werden die neuen Funktionen von SANtricity System Manager 11.8 beschrieben.</block>
+  <block id="3effdbd16c4bb389ee66095c1d8d2ee9" category="inline-link">11.80 Versionshinweise</block>
+  <block id="b1aa5c2649b826498df008931f57355f" category="list-text"><block ref="b1aa5c2649b826498df008931f57355f" category="inline-link-rx"></block></block>
 </blocks>
