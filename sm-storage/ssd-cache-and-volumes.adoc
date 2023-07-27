@@ -13,11 +13,6 @@ summary: 'Sie können ein Volume zu SSD Cache hinzufügen, um die Leseleistung z
 [role="lead"]
 Sie können ein Volume zu SSD Cache hinzufügen, um die Leseleistung zu verbessern. SSD-Cache besteht aus einer Reihe von Solid-State Disk-Laufwerken (SSD), die Sie in Ihrem Storage-Array logisch gruppieren.
 
-[NOTE]
-====
-Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
-
-====
 
 
 == Volumes

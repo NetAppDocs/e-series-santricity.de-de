@@ -20,8 +20,8 @@ Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministrat
 Diese Aufgabe löscht das aktuelle Managementzertifikat vom Host-System, auf dem Web Services Proxy und Unified Manager installiert sind. Nach dem Zurücksetzen des Zertifikats wird das Host-System auf das selbstsignierte Zertifikat zurückgesetzt.
 
 .Schritte
-. Wählen Sie *Zertifikatverwaltung*.
-. Wählen Sie auf der Registerkarte Verwaltung die Option *Zurücksetzen*.
+. Wählen Sie *Einstellungen > Zertifikate*.
+. Wählen Sie die Registerkarte *Array Management* und dann *Reset*.
 +
 Das Dialogfeld „Zertifikat zurücksetzen bestätigen“ wird geöffnet.
 

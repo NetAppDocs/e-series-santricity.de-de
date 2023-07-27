@@ -13,11 +13,6 @@ summary: Sie können die Rolle zwischen gespiegelten Paaren in einer gespiegelte
 [role="lead"]
 Sie können die Rolle zwischen gespiegelten Paaren in einer gespiegelten Consistency Group ändern. Hierzu können Sie die Konsistenzgruppe der primären Spiegelung auf die sekundäre Rolle zurückstufen oder die Konsistenzgruppe für die sekundäre Spiegelung in die primäre Rolle heraufstufen.
 
-[NOTE]
-====
-Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
-
-====
 Überprüfen Sie die folgenden Informationen über den Rollenänderungsvorgang:
 
 * Die Rollenänderung betrifft alle gespiegelten Paare innerhalb der ausgewählten SpiegelConsistency Group.

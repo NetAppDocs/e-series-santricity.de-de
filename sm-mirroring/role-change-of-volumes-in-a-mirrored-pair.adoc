@@ -15,7 +15,7 @@ Sie können die Rolle zwischen Volumes in einem gespiegelten Paar ändern. Dazu 
 
 [NOTE]
 ====
-Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+Synchrones Spiegeln ist auf dem EF600 oder EF300 Storage-System nicht verfügbar.
 
 ====
 Überprüfen Sie die folgenden Informationen über den Rollenänderungsvorgang:

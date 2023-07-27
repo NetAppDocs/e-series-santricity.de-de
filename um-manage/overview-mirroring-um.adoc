@@ -15,7 +15,7 @@ Mithilfe der Spiegelungsfunktionen können Daten entweder asynchron oder synchro
 
 [NOTE]
 ====
-Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+Synchrones Spiegeln ist auf dem EF600 oder EF300 Storage-System nicht verfügbar.
 
 ====
 

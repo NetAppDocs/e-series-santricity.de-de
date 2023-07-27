@@ -61,6 +61,13 @@ Die rollenbasierte Zugriffssteuerung (Role Based Access Control, RBAC) ist eine 
 
 
  a| 
+SAML
+ a| 
+Security Assertion Markup Language (SAML) ist ein XML-basierter Standard für die Authentifizierung und Autorisierung zwischen zwei Einheiten. SAML ermöglicht Multi-Faktor-Authentifizierung, bei der Benutzer zwei oder mehr Elemente zur Identitätsnachweise bereitstellen müssen (z. B. ein Passwort und ein Fingerabdruck). Die in das Storage Array integrierte SAML-Funktion ist mit SAML2.0 zur Identitätsprüfung, Authentifizierung und Autorisierung kompatibel.
+
+
+
+ a| 
 SSO
  a| 
 Bei Single Sign On (SSO) handelt es sich um einen Authentifizierungsservice, mit dem ein Satz an Anmeldeinformationen auf mehrere Anwendungen zugreifen kann.

@@ -29,7 +29,7 @@ Wenn Sie die Spiegelung konfigurieren möchten, beachten Sie die folgenden Anfor
 
 [NOTE]
 ====
-Eine Spiegelung ist nicht auf dem EF600 oder EF300-Speicher-Array verfügbar.
+Synchrones Spiegeln ist auf dem EF600 oder EF300 Storage-Array nicht verfügbar.
 
 ====
 * Sie müssen über zwei Storage-Arrays verfügen.
@@ -77,6 +77,10 @@ Die iSCSI-Intercontroller-Kommunikation muss einen Host-Connect-Port und nicht d
 == Kandidaten für gespiegelte Volumes
 
 * RAID-Level, Caching-Parameter und Segmentgröße können auf den primären und sekundären Volumes eines gespiegelten Paars unterschiedlich sein.
++
+
+NOTE: Bei EF600- und EF300-Controllern müssen die primären und sekundären Volumes eines asynchronen gespiegelten Paares dasselbe Protokoll, Tray-Level, Segmentgröße, Sicherheitstyp und RAID-Level erfüllen. Nicht geeignete asynchrone gespiegelte Paare werden nicht in der Liste der verfügbaren Volumes angezeigt.
+
 * Das sekundäre Volume muss mindestens so groß sein wie das primäre Volume.
 * Ein Volume kann nur an einer Spiegelbeziehung beteiligt sein.
 * Für ein synchrones gespiegeltes Paar müssen die primären und sekundären Volumes Standard-Volumes sein. Es können keine dünnen Volumes oder Snapshot Volumes sein.

@@ -15,7 +15,7 @@ Bei der synchronen Spiegelung werden Daten-Volumes in Echtzeit repliziert, um ei
 
 [NOTE]
 ====
-Eine Spiegelung ist nicht auf dem EF600 oder EF300-Speicher-Array verfügbar.
+Synchrones Spiegeln ist auf dem EF600 oder EF300 Storage-Array nicht verfügbar.
 
 ====
 Beim synchronen Spiegeln wird ein Recovery Point Objective (RPO) von null verloren gegangene Daten erreicht, da eine Kopie wichtiger Daten verfügbar ist, falls auf einem der beiden Storage Arrays ein Ausfall auftritt. Die Kopie ist zu jedem Zeitpunkt identisch mit den Produktionsdaten. Jedes Mal, wenn ein Schreibvorgang auf dem primären Volume ausgeführt wird, wird auf dem sekundären Volume ein Schreibvorgang vorgenommen. Der Host erhält keine Bestätigung, dass der Schreibvorgang erfolgreich war, bis das sekundäre Volume mit den Änderungen auf dem primären Volume erfolgreich aktualisiert wurde.

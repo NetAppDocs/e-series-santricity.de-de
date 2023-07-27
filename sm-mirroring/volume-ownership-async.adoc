@@ -13,11 +13,6 @@ summary: Sie können den bevorzugten Controller-Eigentümer in einem gespiegelte
 [role="lead"]
 Sie können den bevorzugten Controller-Eigentümer in einem gespiegelten Paar ändern.
 
-[NOTE]
-====
-Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
-
-====
 Wenn das primäre Volume des gespiegelten Paars Eigentum von Controller A ist, dann befindet sich das sekundäre Volume auch im Besitz von Controller A des Remote Storage Array. Wenn Sie den Eigentümer des primären Volume ändern, wird automatisch der Eigentümer des sekundären Volumes geändert, um sicherzustellen, dass beide Volumes Eigentum des gleichen Controllers sind. Aktuelle Eigentumsänderungen auf der primären Seite werden automatisch an die entsprechenden aktuellen Eigentumsänderungen auf der sekundären Seite übernommen.
 
 Beispielsweise befindet sich ein primäres Volume im Besitz von Controller A, und dann ändern Sie den Controller-Inhaber in Controller B. In diesem Fall ändert der nächste Remote-Schreibvorgang den Controller-Eigentümer des sekundären Volumes von Controller A zu B. Da Änderungen an der Eigentumsrechte am Controller auf der sekundären Seite vom primären Standort gesteuert werden, sind keine besonderen Eingriffe durch den Storage-Administrator erforderlich.

@@ -14,11 +14,6 @@ summary: Zum Konfigurieren der asynchronen Spiegelung erstellen Sie ein gespiege
 [role="lead"]
 Zum Konfigurieren der asynchronen Spiegelung erstellen Sie ein gespiegeltes Paar, das ein primäres Volume auf dem lokalen Array und ein sekundäres Volume des Remote-Arrays umfasst.
 
-[NOTE]
-====
-Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
-
-====
 .Bevor Sie beginnen
 Bevor Sie ein gespiegeltes Paar erstellen, erfüllen Sie die folgenden Anforderungen für Unified Manager:
 

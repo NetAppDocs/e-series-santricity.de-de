@@ -14,11 +14,6 @@ summary: Sie können den Namen des SSD-Caches bearbeiten und seinen Status, die 
 [role="lead"]
 Sie können den Namen des SSD-Caches bearbeiten und seinen Status, die maximale und aktuelle Kapazität, den Status der Laufwerksicherheit und Data Assurance sowie die zugehörigen Volumes und Laufwerke anzeigen.
 
-[NOTE]
-====
-Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
-
-====
 .Schritte
 . Wählen Sie Menü:Speicher[Pools & Volume Groups].
 . Wählen Sie den SSD-Cache aus, den Sie bearbeiten möchten, und klicken Sie dann auf *Einstellungen anzeigen/bearbeiten*.

@@ -13,11 +13,6 @@ summary: Der Status der Spiegelung definiert den Status von Konsistenzgruppen un
 [role="lead"]
 Der Status der Spiegelung definiert den Status von Konsistenzgruppen und gespiegelten Volume-Paaren.
 
-[NOTE]
-====
-Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
-
-====
 
 
 == Der Status von Spiegelungskonsistency Groups

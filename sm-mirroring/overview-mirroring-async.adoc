@@ -13,11 +13,6 @@ summary: Die Funktion zur asynchronen Spiegelung bietet einen auf Firmware basie
 [role="lead"]
 Die Funktion zur asynchronen Spiegelung bietet einen auf Firmware basierenden Mechanismus auf Controller-Ebene zur Datenreplizierung zwischen einem lokalen Storage-Array und einem Remote Storage Array.
 
-[NOTE]
-====
-Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
-
-====
 
 
 == Was ist asynchrones Spiegeln?

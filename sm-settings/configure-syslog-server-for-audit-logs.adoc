@@ -48,4 +48,4 @@ Wenn das Zertifikat später ungültig wird, schlägt der TLS-Handshake fehl. Als
 
 
 .Ergebnisse
-Nach der Konfiguration werden alle neuen Audit-Protokolle an den Syslog-Server gesendet. Frühere Protokolle werden nicht übertragen.
+Nach der Konfiguration werden alle neuen Audit-Protokolle an den Syslog-Server gesendet. Frühere Protokolle werden nicht übertragen. Weitere Informationen zur Konfiguration von Syslog-Einstellungen für Warnmeldungen finden Sie unter https://docs.netapp.com/us-en/e-series-santricity/sm-settings/configure-syslog-server-for-alerts.html["Konfigurieren Sie den Syslog-Server für Warnmeldungen"].

@@ -15,7 +15,7 @@ Die Spiegelung ist in der Unified Manager-Schnittstelle konfiguriert.
 
 [NOTE]
 ====
-Eine Spiegelung ist nicht auf dem EF600 oder EF300-Speicher-Array verfügbar.
+Synchrones Spiegeln ist auf dem EF600 oder EF300 Storage-Array nicht verfügbar.
 
 ====
 Um die Spiegelung zwischen zwei Arrays zu aktivieren und zu konfigurieren, überprüfen Sie Folgendes:

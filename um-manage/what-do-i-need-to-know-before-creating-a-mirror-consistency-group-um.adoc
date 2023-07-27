@@ -33,6 +33,6 @@ Erfüllen Sie außerdem die folgenden Anforderungen an Storage-Arrays:
 
 [NOTE]
 ====
-Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+Synchrones Spiegeln ist auf dem EF600 oder EF300 Storage-System nicht verfügbar.
 
 ====

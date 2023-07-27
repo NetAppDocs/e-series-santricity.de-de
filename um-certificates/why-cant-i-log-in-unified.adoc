@@ -18,4 +18,5 @@ Aus einem der folgenden Gründe können Anmeldefehler auftreten:
 * Sie haben einen falschen Benutzernamen oder ein falsches Passwort eingegeben.
 * Sie verfügen über unzureichende Berechtigungen.
 * Sie haben mehrmals versucht, sich erfolglos anzumelden, was den Sperrmodus ausgelöst hat. Warten Sie 10 Minuten, bis Sie sich erneut anmelden können.
+* SAML-Authentifizierung ist aktiviert. Aktualisieren Sie Ihren Browser, um sich anzumelden.
 

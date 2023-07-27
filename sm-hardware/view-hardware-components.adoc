@@ -24,9 +24,9 @@ Die Seite Hardware bietet Sortier- und Filterfunktionen, die die Suche nach Komp
 
 
  a| 
-Vorder- und HinterShelf-Ansichten
+Ansichten von Laufwerken, Controllern und Komponenten
  a| 
-Um zwischen Vorder- und RückRegal-Ansichten zu wechseln, wählen Sie aus der rechten Seite *Zurück vom Regal anzeigen* oder *Vorderseite des Regals anzeigen* aus (der Link, der erscheint, hängt von der aktuellen Ansicht ab). In der Vorderansicht werden Laufwerke und leere Laufwerksschächte angezeigt. Die Ansicht auf der Rückseite zeigt die Controller sowie alle EAM-Module (ESM), Strom-/Lüfterbehälter oder leeren Controller-Einschübe. Unten auf der Seite können Sie auch *Alle anzeigen* oder *Alle anzeigen* wählen.
+Um zwischen Vorder- und Rückansicht zu wechseln, wählen Sie ganz rechts entweder *Laufwerke* oder *Controller & Komponenten* aus (der Link, der angezeigt wird, hängt von der aktuellen Ansicht ab). Die Ansicht *Laufwerke* zeigt Laufwerke und alle leeren Laufwerksschächte an. Die Ansicht *Controller & Komponenten* zeigt die Controller und alle EAM-Module (ESM), Strom-/Lüftereinschübe oder leeren Controller-Einschübe. Unten auf der Seite können Sie auch *Alle Laufwerke anzeigen* auswählen.
 
 
 

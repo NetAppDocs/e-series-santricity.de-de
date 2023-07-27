@@ -13,11 +13,6 @@ summary: 'Die SSD Cache Funktion ist eine Controller-basierte Lösung, die am h�
 [role="lead"]
 Die SSD Cache Funktion ist eine Controller-basierte Lösung, die am häufigsten abgerufene Daten („heiße“ Daten) auf latenzarmen Solid State Drives (SSDs) zwischenspeichert und so die System-Performance dynamisch steigert. SSD Cache wird ausschließlich für Host-Lesevorgänge verwendet.
 
-[NOTE]
-====
-Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
-
-====
 
 
 == SSD Cache im Vergleich zum primären Cache
@@ -30,7 +25,7 @@ SSD Cache funktioniert anders als der primäre Cache:
 +
 Im primären Cache werden die Daten nach dem Lesen des Hosts im DRAM gespeichert.
 
-* SSD Cache wird nur verwendet, um die Daten im Cache zu platzieren, um die Gesamt-Performance des Systems zu verbessern.
+* SSD-Cache wird nur verwendet, wenn es von Vorteil ist, die Daten im Cache zu platzieren, um die Systemperformance insgesamt zu verbessern.
 +
 Im SSD Cache werden die Daten aus Volumes kopiert und auf zwei internen RAID-Volumes (eine pro Controller) gespeichert, die bei der Erstellung eines SSD-Caches automatisch erstellt werden.
 

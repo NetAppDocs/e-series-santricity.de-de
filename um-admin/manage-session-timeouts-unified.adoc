@@ -16,6 +16,9 @@ Sie können Timeouts für Unified Manager konfigurieren, so dass Benutzer inakti
 .Über diese Aufgabe
 Standardmäßig beträgt das Sitzungszeitlimit für Unified Manager 30 Minuten. Sie können diese Zeit anpassen oder Sitzungszeitausfälle ganz deaktivieren.
 
+
+NOTE: Wenn Access Management unter Verwendung der in das Array integrierten SAML-Funktionen (Security Assertion Markup Language) konfiguriert wird, kann es zu einer Sitzungszeitüberschreitung kommen, wenn die SSO-Sitzung des Benutzers die maximale Grenze erreicht. Dies kann vor dem Timeout der System Manager-Sitzung auftreten.
+
 .Schritte
 . Wählen Sie in der Menüleiste den Dropdown-Pfeil neben Ihrem Benutzernamen aus.
 . Wählen Sie *Zeitüberschreitung der Sitzung aktivieren/deaktivieren*.

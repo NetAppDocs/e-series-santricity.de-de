@@ -13,11 +13,6 @@ summary: Die asynchrone Spiegelung kopiert Daten-Volumes nach Bedarf oder nach e
 [role="lead"]
 Die asynchrone Spiegelung kopiert Daten-Volumes nach Bedarf oder nach einem Zeitplan. So werden Ausfallzeiten, die auf Datenbeschädigung oder -Verlust zurückzuführen sind, minimiert oder vermieden.
 
-[NOTE]
-====
-Eine Spiegelung ist nicht auf dem EF600 oder EF300-Speicher-Array verfügbar.
-
-====
 Das asynchrone Spiegeln erfasst den Status des primären Volumes zu einem bestimmten Zeitpunkt und kopiert nur die Daten, die sich seit der letzten Bildaufzeichnung geändert haben. Der primäre Standort kann sofort aktualisiert werden, während der sekundäre Standort mit der Bandbreite aktualisiert werden kann. Die Informationen werden im Cache gespeichert und später gesendet, sobald Netzwerkressourcen verfügbar sind.
 
 Diese Art der Spiegelung ist ideal für die Anforderungen an einen unterbrechungsfreien Betrieb und im Allgemeinen für periodische Prozesse wie Backup und Archivierung. Die Gründe für die Verwendung von asynchronem Spiegeln umfassen Folgendes:

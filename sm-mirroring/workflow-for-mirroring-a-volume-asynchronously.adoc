@@ -13,11 +13,6 @@ summary: Sie konfigurieren die asynchrone Spiegelung mithilfe des folgenden Work
 [role="lead"]
 Sie konfigurieren die asynchrone Spiegelung mithilfe des folgenden Workflows.
 
-[NOTE]
-====
-Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
-
-====
 . Die Erstkonfiguration in Unified Manager durchführen:
 +
 .. Wählen Sie das lokale Speicher-Array als Quelle für den Datentransfer aus.

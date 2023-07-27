@@ -15,12 +15,12 @@ Systeme der E-Series enthalten SANtricity Software für die Storage-Provisionier
 
 Auf dieser Site wird die Verwendung der folgenden SANtricity Management-Schnittstellen beschrieben:
 
-* System Manager: Eine webbasierte Schnittstelle zum Verwalten eines Controllers in einem Storage-Array.
+* System Manager – eine webbasierte Schnittstelle zur Verwaltung eines einzelnen Speicher-Arrays in Ihrem Netzwerk.
 * Unified Manager – eine webbasierte Schnittstelle zur Anzeige und zum Management aller Storage-Arrays in Ihrem Netzwerk.
 
 
 
-NOTE: Die EF600 und EF300 Storage-Arrays unterstützen keine Spiegelung, Thin Volumes oder SSD Cache Funktionen.
+NOTE: EF600 und EF300 Storage-Arrays unterstützen keine synchrone Spiegelung oder Thin Volumes.
 
 
 
@@ -92,7 +92,7 @@ Anzeigen von Diagnosedaten, Managen von Upgrades und Konfigurieren von AutoSuppo
 
 == SANtricity Unified Manager
 
-Unified Manager ist eine webbasierte Software, die zur Verwaltung Ihrer gesamten Domain verwendet wird. In der zentralen Ansicht ist der Status aller neueren E-Series und EF-Series Arrays wie E2800, EF280, EF300, E5700, EF570 Und EF600. Sie können auch Batch-Operationen auf ausgewählten Storage-Arrays ausführen.
+Unified Manager ist eine webbasierte Software, die zur Verwaltung Ihrer gesamten Domain verwendet wird. In einer zentralen Ansicht können Sie den Status aller neueren E-Series und EF-Series Arrays wie E2800, EF280, EF300, E5700, EF570 Und EF600: Sie können auch Batch-Operationen auf ausgewählten Storage-Arrays ausführen.
 
 Unified Manager wird auf einem Management-Server und dem Web Services Proxy installiert. Um auf Unified Manager zuzugreifen, öffnen Sie einen Browser und geben die URL ein, die auf den Server zeigt, auf dem der Web Services Proxy installiert ist.
 

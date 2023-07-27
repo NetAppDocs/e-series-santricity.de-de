@@ -16,7 +16,7 @@ Befolgen Sie die folgenden Richtlinien, bevor Sie eine gespiegelte Konsistenzgru
 
 [NOTE]
 ====
-Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+Synchrones Spiegeln ist auf dem EF600 oder EF300 Storage-System nicht verfügbar.
 
 ====
 Sie erstellen eine Konsistenzgruppe in Unified Manager im Assistenten zum Erstellen gespiegelter Paare.

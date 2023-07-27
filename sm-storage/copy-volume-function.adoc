@@ -86,7 +86,7 @@ Ja.
  a| 
 Thin Volume
  a| 
-Ja.
+Ja^1^
  a| 
 Ja.
  a| 
@@ -97,7 +97,7 @@ Nein
  a| 
 Snapshot Volume
  a| 
-Ja^1^
+Ja^2^
  a| 
 Nein
  a| 
@@ -119,13 +119,15 @@ Nein
  a| 
 Primäres Remote-Spiegel-Volume
  a| 
-Ja^2^
+Ja^3^
  a| 
 Nein
  a| 
 Ja.
 
 |===
-^1^ Sie können die Snapshot-Volume-Kopie erst verwenden, nachdem der Online-Kopiervorgang abgeschlossen ist.
+^1^ das Ziel-Volume muss eine Kapazität haben, die der gemeldeten Kapazität des Thin-Volumes entspricht oder größer ist.
 
-^2^ Wenn das Quell-Volume ein primäres Volume ist, muss die Kapazität des Ziel-Volumes der nutzbaren Kapazität des Quell-Volumes entsprechen oder größer sein.
+^2^ Sie können die Snapshot-Volume-Kopie erst verwenden, nachdem der Online-Kopiervorgang abgeschlossen ist.
+
+^3^ Wenn das Quell-Volume ein primäres Volume ist, muss die Kapazität des Ziel-Volumes gleich oder größer sein als die nutzbare Kapazität des Quell-Volumes.

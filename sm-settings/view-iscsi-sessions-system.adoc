@@ -94,7 +94,7 @@ Ein eindeutiger Name für eine Verbindung innerhalb der Sitzung zwischen dem Ini
 
 
  a| 
-Ethernet-Port-ID
+Port-ID
  a| 
 Der der Verbindung zugeordnete Controller-Port.
 

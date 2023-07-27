@@ -163,7 +163,7 @@ Geben Sie den Namen für das Snapshot-Volume an.
  a| 
 Aktivieren Sie SSD-Cache
  a| 
-Wählen Sie diese Option aus, um die schreibgeschützte Cache-Speicherung auf SSDs zu aktivieren. HINWEIS: Diese Funktion steht auf dem EF600 oder EF300 Storage-System nicht zur Verfügung.
+Wählen Sie diese Option aus, um die schreibgeschützte Cache-Speicherung auf SSDs zu aktivieren.
 
 
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 permalink: unified-manager/index.html 
 summary: Mit der Dokumentation der SANtricity Software können Sie Ihr Storage-Array installieren, einrichten und warten. 
 ---
-= Management mehrerer Arrays mit Unified Manager 5.3
+= Management mehrerer Arrays mit Unified Manager 6
 :hardbreaks:
 :allow-uri-read: 
 :linkattrs: 

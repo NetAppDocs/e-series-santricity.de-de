@@ -17,18 +17,14 @@ Zur dynamischen Beschleunigung der System-Performance können Sie die SSD Cache 
 .Bevor Sie beginnen
 Ihr Speicher-Array muss einige SSD-Laufwerke enthalten.
 
-[NOTE]
-====
-SSD-Cache ist auf dem EF600 oder EF300 Storage-System nicht verfügbar.
-
-====
 .Über diese Aufgabe
-Wenn Sie SSD Cache erstellen, können Sie ein oder mehrere Laufwerke verwenden. Da sich der Lese-Cache im Storage Array befindet, wird das Caching von allen Applikationen genutzt, die das Storage Array verwenden. Sie wählen die Volumes aus, die zwischengespeichert werden sollen. Das Caching erfolgt dann automatisch und dynamisch.
+Wenn Sie einen neuen SSD-Cache erstellen, können Sie ein einzelnes Laufwerk oder mehrere Laufwerke verwenden. Da sich der Lese-Cache im Storage Array befindet, wird das Caching von allen Applikationen genutzt, die das Storage Array verwenden. Sie wählen die Volumes aus, die zwischengespeichert werden sollen. Das Caching erfolgt dann automatisch und dynamisch.
 
-Beachten Sie bei der Erstellung von SSD Cache die folgenden Richtlinien.
+Befolgen Sie diese Richtlinien, wenn Sie einen neuen SSD-Cache erstellen.
 
 * Sie können die Sicherheit im SSD-Cache nur aktivieren, wenn Sie sie erstellen, und nicht später.
 * Pro Storage Array wird nur ein SSD-Cache unterstützt.
+* Wenn nur auf einem Volume der SSD-Cache aktiviert ist, wird der gesamte SSD-Cache dem Controller zugewiesen, der dieses Volume besitzt.
 * Die maximale nutzbare SSD-Cache-Kapazität auf einem Storage-Array hängt von der Kapazität des primären Caches des Controllers ab.
 * SSD Cache wird von Snapshot Images nicht unterstützt.
 * Wenn Sie Volumes importieren oder exportieren, die SSD Cache aktiviert oder deaktiviert sind, werden die zwischengespeicherten Daten nicht importiert oder exportiert.

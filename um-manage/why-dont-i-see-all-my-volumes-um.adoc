@@ -20,3 +20,6 @@ Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser List
 * Für das synchrone Spiegeln müssen primäre und sekundäre Volumes eines gespiegelten Paars Standard-Volumes sein. Es können keine dünnen Volumes oder Snapshot Volumes sein.
 * Bei der asynchronen Spiegelung müssen Thin Volumes die automatische Erweiterung aktiviert haben.
 
+
+
+NOTE: Bei EF600- und EF300-Controllern müssen die primären und sekundären Volumes eines asynchronen gespiegelten Paares dasselbe Protokoll, Tray-Level, Segmentgröße, Sicherheitstyp und RAID-Level erfüllen. Nicht geeignete asynchrone gespiegelte Paare werden nicht in der Liste der verfügbaren Volumes angezeigt.

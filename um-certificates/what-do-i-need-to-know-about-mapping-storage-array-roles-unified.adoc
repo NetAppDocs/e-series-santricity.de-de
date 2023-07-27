@@ -31,3 +31,20 @@ Wenn Sie einen LDAP-Server (Lightweight Directory Access Protocol) und Verzeichn
 * Ein Administrator hat im Verzeichnisdienst Benutzergruppen definiert.
 * Sie kennen die Gruppen-Domain-Namen für die LDAP-Benutzergruppen.
 
+
+
+
+== SAML
+
+Wenn Sie die im Speicher-Array integrierten SAML-Funktionen (Security Assertion Markup Language) verwenden, stellen Sie sicher, dass:
+
+* Ein IdP-Administrator (Identity Provider) hat im IdP-System Benutzerattribute und Gruppenmitgliedschaften konfiguriert.
+* Sie kennen die Namen der Gruppenmitgliedschaft.
+* Sie kennen den Attributwert für die zu zugeordnete Gruppe. Reguläre Ausdrücke werden unterstützt. Diese speziellen regulären Ausdruckszeichen müssen mit einem umgekehrten Schrägstrich entgangen werden (`\`) Wenn sie nicht Teil eines regulären Ausdrucksmusters sind:
++
+[listing]
+----
+\.[]{}()<>*+-=!?^$|
+----
+* Die Überwachungsrolle ist für alle Benutzer, einschließlich des Administrators, erforderlich. Unified Manager funktioniert für keinen Benutzer ordnungsgemäß, ohne dass die Überwachungsfunktion vorhanden ist.
+

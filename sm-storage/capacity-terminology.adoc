@@ -160,11 +160,6 @@ Reservierte Kapazität ist die zugewiesene physische Kapazität, die für jeden 
  a| 
 SSD Cache
  a| 
-[NOTE]
-====
-Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
-
-====
 SSD Cache ist eine Gruppe von Solid-State Disk (SSD)-Laufwerken, die Sie logisch in Ihrem Storage-Array zusammenfassen. Die SSD Cache Funktion speichert die am häufigsten verwendeten Daten („heiße“ Daten) im Cache auf SSD-Laufwerken mit niedrigerer Latenz und beschleunigt dadurch Applikations-Workloads dynamisch.
 
 

@@ -17,6 +17,9 @@ Sie können die Einstellungen eines Volume ändern, z. B. Name, Host-Zuweisung, 
 .Bevor Sie beginnen
 Das zu änderende Volumen befindet sich im optimalen Status.
 
+
+NOTE: Einige Vorgänge sind möglicherweise nicht verfügbar, während Änderungen an den Volume-Einstellungen vorgenommen werden
+
 .Schritte
 . Wählen Sie Menü:Storage[Volumes].
 . Wählen Sie das gewünschte Volume aus und wählen Sie dann *Einstellungen anzeigen/bearbeiten*.
@@ -163,9 +166,6 @@ Zeigt die Caching-Einstellung, die Sie ändern können, um die gesamte I/O-Perfo
  a| 
 SSD Cache
  a| 
-
-NOTE: Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
-
 Zeigt die Einstellung für SSD Cache, die Sie auf kompatiblen Volumes aktivieren können, um die schreibgeschützte Performance zu verbessern. Die Volumes sind kompatibel, wenn sie dieselben Funktionen für die Laufwerkssicherheit und Datensicherheit nutzen.
 
 *Die SSD Cache Funktion verwendet eine oder mehrere Solid State Disks (SSDs), um einen Lese-Cache zu implementieren*. Die Applikations-Performance wird durch die schnelleren Lesezeiten für SSDs verbessert. Da sich der Lese-Cache im Storage Array befindet, wird das Caching von allen Applikationen genutzt, die das Storage Array verwenden. Wählen Sie einfach das Volume aus, das Sie zwischenspeichern möchten. Caching erfolgt dann automatisch und dynamisch.

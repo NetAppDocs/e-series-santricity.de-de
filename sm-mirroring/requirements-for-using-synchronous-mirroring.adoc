@@ -31,7 +31,7 @@ Um die Spiegelung zwischen zwei Arrays zu aktivieren und zu konfigurieren, müss
 
 [NOTE]
 ====
-Auf dem EF300- oder EF600-Speicher-Array ist keine Spiegelung verfügbar.
+Die synchrone Spiegelung ist auf dem EF300 oder EF600 Storage-Array nicht verfügbar.
 
 ====
 * Sie müssen über zwei Storage-Arrays verfügen.

@@ -1,0 +1,45 @@
+---
+permalink: um-certificates/export-saml-service-provider-files.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, export, saml, Service Provider, files, 
+summary: 'Bei Bedarf können Sie Service-Provider-Metadaten für das Speicher-Array exportieren und die Datei erneut in das Identity Provider (IdP)-System importieren.' 
+---
+= Exportieren Sie SAML-Dienstanbieter-Dateien
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Bei Bedarf können Sie Service-Provider-Metadaten für das Speicher-Array exportieren und die Datei erneut in das Identity Provider (IdP)-System importieren.
+
+.Bevor Sie beginnen
+* Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
+* SAML wurde konfiguriert und aktiviert.
+
+
+.Über diese Aufgabe
+In dieser Aufgabe exportieren Sie Metadaten vom Controller. Das IdP benötigt diese Metadaten, um eine Vertrauensbeziehung zum Controller herzustellen und Authentifizierungsanforderungen zu verarbeiten. Die Datei enthält Informationen wie den Domänennamen des Controllers oder die IP-Adresse, die das IdP zum Senden von Anforderungen verwenden kann.
+
+.Schritte
+. Wählen Sie Menü:Einstellungen[Zugriffsverwaltung].
+. Wählen Sie die Registerkarte *SAML* aus.
+. Wählen Sie *Export*.
++
+Das Dialogfeld Dateien des Dienstanbieters exportieren wird geöffnet.
+
+. Klicken Sie auf *Export*, um die Metadatendatei auf Ihrem lokalen System zu speichern.
++
+[NOTE]
+====
+Das Feld für den Domänennamen ist schreibgeschützt.
+
+====
++
+Notieren Sie sich, wo die Datei gespeichert ist.
+
+. Suchen Sie vom lokalen System aus die XML-formatierte Service Provider-Metadatendatei, die Sie exportiert haben.
+. Importieren Sie vom IdP-Server die Metadatendatei des Dienstanbieters. Sie können die Datei entweder direkt importieren oder die Controller-Informationen manuell eingeben.
+. Klicken Sie Auf *Schließen*.
+
