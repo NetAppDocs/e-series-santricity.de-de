@@ -27,6 +27,9 @@ Aus folgenden Gründen können Sie sich später aktivieren:
 
 
 
+
+IMPORTANT: Auf Systemen muss SANtricity OS 11.70.5 ausgeführt werden, um ein Upgrade auf 11.80.x oder höher durchzuführen.
+
 .Über diese Aufgabe
 ++++
 
