@@ -8359,7 +8359,6 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Open Source</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">In den Benachrichtigungsdateien finden Sie Informationen zu Urheberrechten und Lizenzen von Drittanbietern, die in der NetApp Software verwendet werden.</block>
   <block id="cc1ba14f8dc9bd7ba20e2aa654cde10b" category="inline-link">Hinweis zum SANtricity OS für die E-Series/EF-Series</block>
-  <block id="589c6e07e079f4086ec279a5e83c238d" category="sidebar">Mit der SANtricity Software erzielen Sie maximale Performance und Auslastung Ihrer E-Series Hybrid-Flash- und EF-Series All-Flash-Arrays für anspruchsvolle Workload-Applikationen, einschließlich Datenanalysen, Videoüberwachung sowie Backup und Recovery.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Los geht's</block>
   <block id="0b008f21f9758b84909b95140b0a532d" category="sidebar">Benutzeroberfläche von System Manager</block>
   <block id="29ac086a960081d77daa677c24463af3" category="sidebar">Unified Manager Schnittstelle</block>
@@ -8612,7 +8611,6 @@
   <block id="bc864bcc140c5518082e93d37b396baf" category="sidebar">Verwenden Sie Management-Host-Zertifikate</block>
   <block id="0e695c0c9242624f235546e43dde2e16" category="sidebar">Verwenden Sie Array-Zertifikate</block>
   <block id="951d3fc54a28f9f46798897467d96a5b" category="sidebar">Verwalten von Zertifikaten</block>
-  <block id="c62c395ffcd8aa3e5d38fe7155d2f510" category="sidebar">SANtricity Software</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Ergebnis</block>
   <block id="70a5ac954926edc08c5f6fc4c248a4a6" category="section-title">SANtricity Version 11.7</block>
   <block id="f7b52729af7c7aa177e09390f0afd194" category="list-text"><block ref="f7b52729af7c7aa177e09390f0afd194" category="inline-link-rx"></block></block>
@@ -8741,4 +8739,5 @@
   <block id="32e0b12538b4abe36e648446dbb8723b" category="paragraph">Verbesserungen Am Laufwerk-Pool</block>
   <block id="82faf4161a36aa8a69bd4c363e6b57cc" category="paragraph">Festplatten-Pools, die mit Controllern erstellt werden, die 11.80 oder höher ausführen, sind _Version 1_ Pools im Gegensatz zu _Version 0_ Pools. Ein Downgrade-Vorgang ist eingeschränkt, wenn ein _Version 1_-Laufwerk-Pool vorhanden ist.</block>
   <block id="45e56b98136f4292dd8c522edf38b3b2" category="paragraph">Die Version eines Laufwerkspools kann im Speicher-Array-Profil identifiziert werden.</block>
+  <block id="e7ad6d421850c5694f6bdc4321ac3507" category="sidebar">Mit der SANtricity 11.80 Software erreichen Sie maximale Performance und Auslastung Ihrer Hybrid-Flash-Storage-Systeme der E-Series und All-Flash-Arrays der EF-Series für workloadintensive Applikationen, beispielsweise Datenanalysen, Videoüberwachung sowie Backup und Recovery.</block>
 </blocks>

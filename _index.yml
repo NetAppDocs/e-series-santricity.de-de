@@ -1,9 +1,13 @@
 ---
 indexpage:
-  lead: Mit der SANtricity Software erzielen Sie maximale Performance und Auslastung
-    Ihrer E-Series Hybrid-Flash- und EF-Series All-Flash-Arrays für anspruchsvolle
-    Workload-Applikationen, einschließlich Datenanalysen, Videoüberwachung sowie Backup
-    und Recovery.
+  title: SANtricity Software-Dokumentation 11.80
+  summary: SANtricity System Manager und Unified Manager
+  keywords: santricity, all-flash arrays, heavy workload applications, video surveillance,
+    data analytics
+  lead: Mit der SANtricity 11.80 Software erreichen Sie maximale Performance und Auslastung
+    Ihrer Hybrid-Flash-Storage-Systeme der E-Series und All-Flash-Arrays der EF-Series
+    für workloadintensive Applikationen, beispielsweise Datenanalysen, Videoüberwachung
+    sowie Backup und Recovery.
   tiles:
   - title: Los geht's
     links:

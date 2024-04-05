@@ -1,5 +1,11 @@
 ---
 indexpage:
+  title: Einheitliches Array Management mit System Manager 11.8
+  summary: Mit der Dokumentation der SANtricity Software können Sie Ihr Storage-Array
+    installieren, einrichten und warten.
+  keywords: santricity, install, setup, maintain, storage array
+  lead: Mit der Dokumentation der SANtricity Software können Sie Ihr Storage-Array
+    installieren, einrichten und warten.
   tiles:
   - title: Richten Sie das Array ein
     links:
