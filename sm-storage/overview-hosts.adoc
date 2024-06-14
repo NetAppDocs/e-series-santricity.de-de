@@ -31,14 +31,13 @@ Weitere Informationen:
 
 == Wie konfiguriere ich Hosts und Host Cluster?
 
-Zum Definieren von Hostverbindungen können Sie entweder zulassen, dass ein Host Context Agent (HCA) die Hosts automatisch erkennt oder Sie können im Menü:Speicher[Hosts] den Host manuell konfigurieren. Wenn mindestens zwei Hosts den Zugriff auf dieselbe Gruppe von Volumes gemeinsam nutzen möchten, können Sie dann einen Cluster definieren und die Volumes diesem Cluster zuweisen.
+Um Host-Verbindungen zu definieren, können Sie im Menü Storage[Hosts] den Host manuell konfigurieren. Wenn mindestens zwei Hosts den Zugriff auf dieselbe Gruppe von Volumes gemeinsam nutzen möchten, können Sie dann einen Cluster definieren und die Volumes diesem Cluster zuweisen.
 
 Weitere Informationen:
 
-* link:automatic-versus-manual-host-creation.html["Automatische statt manueller Host-Erstellung"]
+* link:manual-host-creation.html["Manuelle Hosterstellung"]
 * link:how-volumes-are-assigned-to-hosts-and-host-clusters.html["Wie Volumes Hosts und Host-Clustern zugewiesen werden"]
 * link:workflow-for-creating-hosts-and-assigning-volumes.html["Workflow für Host-Erstellung und Volume-Zuweisung"]
-* link:create-host-automatically.html["Host automatisch erstellen"]
 * link:create-host-manually.html["Host manuell erstellen"]
 * link:create-host-cluster.html["Erstellen Sie den Host-Cluster"]
 * link:assign-volumes.html["Weisen Sie Hosts Volumes zu"]

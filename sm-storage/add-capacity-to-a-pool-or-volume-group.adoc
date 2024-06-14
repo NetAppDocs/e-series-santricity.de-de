@@ -129,12 +129,17 @@ Gibt an, ob das Laufwerk über die Option für dezugewiesene oder nicht geschrie
 Wenn Sie Laufwerke zu einem Pool oder einer Volume-Gruppe hinzufügen, wird ein Bestätigungsdialogfeld angezeigt, wenn Sie ein Laufwerk ausgewählt haben, das dazu führt, dass der Pool oder die Volume-Gruppe nicht mehr über eines oder mehrere der folgenden Attribute verfügt:
 
 +
-** Schutz vor Regalverlust
-** Schutz vor Schubladenverlust
+** Regalschutz ^*^
+** Schubladenschutz ^*^
 ** Vollständige Festplattenverschlüsselung
 ** Data Assurance
 ** DULBE-Fähigkeit
 
+
+
+
+
+NOTE: ^*^ derzeit wird das Bestätigungsdialogfeld nicht angezeigt, wenn Laufwerke zu einem Pool mit Schutz vor Regalverlust oder Schubladenverlust hinzugefügt werden.
 
 . Klicken Sie zum Fortfahren auf *Ja*, oder klicken Sie auf *Abbrechen*.
 

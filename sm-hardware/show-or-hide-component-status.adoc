@@ -17,8 +17,8 @@ Sie können Statusbeschreibungen für Laufwerke, Controller, Lüfter und Netztei
 . Wählen Sie *Hardware*.
 . So sehen Sie die Komponenten auf der Rückseite oder auf der Vorderseite:
 +
-** Wenn Sie die Komponenten des Reglers und des Power/Lüfter-Kanisters sehen möchten, aber die Laufwerke angezeigt werden, klicken Sie auf *Zurück zum Regal anzeigen*.
-** Wenn Sie die Laufwerke sehen möchten, aber die Komponenten des Controllers und des Power/Fan Kanisters werden angezeigt, klicken Sie auf *Vorderseite des Regals anzeigen*.
+** Wenn Sie die Komponenten des Controllers und des Power/Fan-Kanisters sehen möchten, aber die Laufwerke angezeigt werden, klicken Sie auf die Registerkarte *Controller & Komponenten*.
+** Wenn Sie die Laufwerke sehen möchten, aber die Komponenten des Controllers und des Netzstromanzeigebehälters angezeigt werden, klicken Sie auf die Registerkarte *Laufwerke*.
 
 
 . So zeigen Sie Pop-over-Statusbeschreibungen an oder verbergen sie:

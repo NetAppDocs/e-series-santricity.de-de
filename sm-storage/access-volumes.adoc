@@ -13,9 +13,8 @@ summary: 'Ein Zugriffs-Volume ist ein werkseitig konfiguriertes Volume auf dem S
 [role="lead"]
 Ein Zugriffs-Volume ist ein werkseitig konfiguriertes Volume auf dem Storage-Array, das über die Host-I/O-Verbindung für die Kommunikation mit dem Storage-Array und dem Host verwendet wird. Das Zugriffsvolume erfordert eine LUN (Logical Unit Number).
 
-Das Zugriffsvolume wird in zwei Fällen verwendet:
+Das Access Volume wird in der folgenden Instanz verwendet:
 
-* *Automatische Hosterstellung* -- das Zugriffvolume wird vom Dienstprogramm Host Context Agent (HCA) verwendet, um Hostinformationen (Name, Ports, Hosttyp) an den System Manager zu übertragen, um die automatische Hosterstellung zu ermöglichen.
 * *In-Band-Management* -- das Zugriffsvolume wird für eine in-Band-Verbindung zur Verwaltung des Speicher-Arrays verwendet. Dies kann nur geschehen, wenn Sie das Storage Array über die Befehlszeilenschnittstelle (CLI) verwalten.
 +
 [NOTE]

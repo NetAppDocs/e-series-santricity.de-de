@@ -2,7 +2,7 @@
 permalink: sm-storage/how-do-i-know-which-host-operating-system-type-is-correct.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, host operating system, type, 
-summary: 'Das Feld Host-Betriebssystemtyp enthält das Betriebssystem des Hosts. Sie können den empfohlenen Hosttyp aus der Dropdown-Liste auswählen oder dem Host Context Agent (HCA) die Konfiguration des Hosts und des entsprechenden Host-Betriebssystems ermöglichen.' 
+summary: Das Feld Host-Betriebssystemtyp enthält das Betriebssystem des Hosts. Sie können den empfohlenen Hosttyp aus der Dropdown-Liste auswählen. 
 ---
 = Wie kann ich feststellen, welches Host-Betriebssystem richtig ist?
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 'Das Feld Host-Betriebssystemtyp enthält das Betriebssystem des Hosts.
 
 
 [role="lead"]
-Das Feld Host-Betriebssystemtyp enthält das Betriebssystem des Hosts. Sie können den empfohlenen Hosttyp aus der Dropdown-Liste auswählen oder dem Host Context Agent (HCA) die Konfiguration des Hosts und des entsprechenden Host-Betriebssystems ermöglichen.
+Das Feld Host-Betriebssystemtyp enthält das Betriebssystem des Hosts. Sie können den empfohlenen Hosttyp aus der Dropdown-Liste auswählen.
 
 Die Hosttypen, die in der Dropdown-Liste angezeigt werden, hängen vom Speicher-Array-Modell und der Firmware-Version ab. Die neuesten Versionen zeigen zuerst die häufigsten Optionen an, die am wahrscheinlichsten geeignet sind. Die Darstellung in dieser Liste impliziert nicht, dass die Option vollständig unterstützt wird.
 
@@ -117,10 +117,3 @@ Cluster-Fenster (veraltet)
 Wenn Ihr Host-Betriebssystem-Typ auf diesen Wert eingestellt ist, verwenden Sie stattdessen die Windows-Einstellung (Cluster oder nicht-Cluster).
 
 |===
-Nachdem die HCA installiert und der Speicher mit dem Host verbunden ist, sendet die HCA die Hosttopologie über den I/O-Pfad an die Speicher-Controller. Auf der Grundlage der Host-Topologie definieren die Storage Controller automatisch den Host und die zugehörigen Host-Ports und legen anschließend den Host-Typ fest.
-
-[NOTE]
-====
-Wenn der HCA den empfohlenen Hosttyp nicht wählt, müssen Sie den Hosttyp manuell einstellen.
-
-====

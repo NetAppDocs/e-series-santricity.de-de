@@ -24,7 +24,7 @@ Verwenden Sie nicht Port 2 auf beiden Controllern. Port 2 ist dem technischen Su
 ====
 .Schritte
 . Wählen Sie *Hardware*.
-. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf *Zurück zum Regal anzeigen*.
+. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf die Registerkarte *Controller & Komponenten*.
 +
 Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
 

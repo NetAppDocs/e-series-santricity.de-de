@@ -25,7 +25,7 @@ Ein Shelf ist eine Komponente, die die Hardware für das Storage-Array enthält 
 
 Die Einlegeböden sind in drei Größen für Gehäuse mit bis zu 12, 24 oder 60 Laufwerken erhältlich. Jedes Shelf enthält eine ID-Nummer, die von der Controller-Firmware zugewiesen wird. Die ID wird oben links in der Shelf-Ansicht angezeigt.
 
-In der Shelf-Ansicht auf der Seite Hardware werden die Komponenten vorne oder hinten angezeigt. Sie können zwischen den beiden Ansichten wechseln, indem Sie entweder *Rückseite des Regals* oder *Vorderseite des Regals anzeigen* aus der oberen rechten Seite der Regalansicht auswählen. Sie können auch *Alle anzeigen* oder *Alle anzeigen* von unten auf der Seite auswählen. Die Vorder- und Rückseite zeigen Folgendes:
+In der Shelf-Ansicht auf der Seite Hardware werden die Komponenten vorne oder hinten angezeigt. Sie können zwischen den beiden Ansichten wechseln, indem Sie entweder die Registerkarten *Drives* oder *Controller* oben rechts in der Shelf-Ansicht auswählen. Sie können auch *Alle anzeigen* oder *Alle anzeigen* von unten auf der Seite auswählen. Die Vorder- und Rückseite zeigen Folgendes:
 
 * *Front Components* -- Laufwerke und leere Laufwerksschächte.
 * *Back Components* -- Controller und Power/Fan Kanister (für Controller-Shelves) oder die IOMs und Power/Fan Kanister (für Laufwerk-Shelfs).

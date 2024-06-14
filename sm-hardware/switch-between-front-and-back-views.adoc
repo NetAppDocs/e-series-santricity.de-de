@@ -18,11 +18,11 @@ Die Ansicht auf der Rückseite zeigt die Controller/IOMs und die Power-Fan-Kanis
 
 .Schritte
 . Wählen Sie *Hardware*.
-. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf *Zurück zum Regal anzeigen*.
+. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf die Registerkarte *Controller & Komponenten*.
 +
 Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
 
-. Wenn die Grafik die Controller zeigt, klicken Sie auf *Vorderseite des Regals anzeigen*.
+. Wenn die Grafik die Controller anzeigt, klicken Sie auf die Registerkarte *Laufwerke*.
 +
 Die Grafik ändert sich, um die Laufwerke anstelle der Controller anzuzeigen.
 

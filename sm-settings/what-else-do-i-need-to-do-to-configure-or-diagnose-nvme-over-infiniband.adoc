@@ -28,7 +28,7 @@ Die NVMe-over-InfiniBand-Einstellungen sind nur verfügbar, wenn der Controller 
 Konfigurieren Sie NVMe-over-InfiniBand-Ports
  a| 
 . Wählen Sie *Hardware*.
-. Wählen Sie *Rückseite des Regals anzeigen*.
+. Wählen Sie die Registerkarte *Controller & Komponenten* aus.
 . Wählen Sie einen Controller aus.
 . Wählen Sie *NVMe über InfiniBand-Ports konfigurieren* aus.
 

@@ -22,7 +22,7 @@ Bei SANtricity Version 11.74 und höher ist auch die Multi-Faktor-Autorisierung 
 ====
 .Schritte
 . Wählen Sie *Hardware*.
-. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf *Zurück zum Regal anzeigen*.
+. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf die Registerkarte *Controller & Komponenten*.
 +
 Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
 

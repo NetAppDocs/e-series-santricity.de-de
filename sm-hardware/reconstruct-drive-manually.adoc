@@ -20,7 +20,7 @@ Führen Sie diesen Vorgang nur aus, wenn Sie vom technischen Support oder dem Re
 ====
 .Schritte
 . Wählen Sie *Hardware*.
-. Wenn die Grafik die Controller zeigt, klicken Sie auf *Vorderseite des Regals anzeigen*.
+. Wenn die Grafik die Controller anzeigt, klicken Sie auf die Registerkarte *Laufwerke*.
 +
 Die Grafik ändert sich, um die Laufwerke anstelle der Controller anzuzeigen.
 

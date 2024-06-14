@@ -27,7 +27,7 @@ Die Löschfunktion unterstützt einige ältere Laufwerksmodelle nicht. Wenn Sie 
 ====
 .Schritte
 . Wählen Sie *Hardware*.
-. Wenn die Grafik die Controller zeigt, klicken Sie auf *Vorderseite des Regals anzeigen*.
+. Wenn die Grafik die Controller anzeigt, klicken Sie auf die Registerkarte *Laufwerke*.
 +
 Die Grafik ändert sich, um die Laufwerke anstelle der Controller anzuzeigen.
 

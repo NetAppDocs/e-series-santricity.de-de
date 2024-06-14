@@ -41,7 +41,7 @@ ISCSI-Einstellungen verwalten
 Konfigurieren Sie die iSCSI-Ports
  a| 
 . Wählen Sie *Hardware*.
-. Wählen Sie *Rückseite des Regals anzeigen*.
+. Wählen Sie die Registerkarte *Controller & Komponenten* aus.
 . Wählen Sie einen Controller aus.
 . Wählen Sie *iSCSI-Ports konfigurieren*.
 

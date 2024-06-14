@@ -19,7 +19,7 @@ Erfahren Sie mehr über die Einschränkungen bei der Verwendung von SSD Cache in
 
 * Jedes Volume, das der Nutzung des SSD-Caches eines Controllers zugewiesen ist, kann keine automatische Lastverteilung durchführen.
 * Derzeit wird pro Storage-Array nur ein SSD-Cache unterstützt.
-* Die maximale nutzbare SSD-Cache-Kapazität auf einem Speicher-Array beträgt 8 TB.
+* Die maximale nutzbare SSD-Cache-Kapazität auf einem Speicher-Array beträgt 10 TB.
 * SSD Cache wird von Snapshot Images nicht unterstützt.
 * Wenn Sie Volumes importieren oder exportieren, die SSD Cache aktiviert oder deaktiviert sind, werden die zwischengespeicherten Daten nicht importiert oder exportiert.
 * Sie können das letzte Laufwerk in einem SSD-Cache nicht entfernen, ohne zuerst den SSD-Cache zu löschen.

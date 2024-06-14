@@ -34,7 +34,7 @@ Weitere Informationen:
 
 == Wie werden Hardwarekomponenten angezeigt?
 
-Wechseln Sie zur Hardware-Seite, die eine grafische Darstellung der physischen Komponenten des Storage Arrays bietet. Sie können zwischen der Vorder- und Rückseite der Array-Regale wechseln, indem Sie entweder *Rückseite des Regals* oder *Vorderseite des Regals anzeigen* von der oberen rechten Seite der Regalansicht auswählen.
+Wechseln Sie zur Hardware-Seite, die eine grafische Darstellung der physischen Komponenten des Storage Arrays bietet. Sie können zwischen der Vorder- und der Rückansicht der Array-Shelfs wechseln, indem Sie oben rechts in der Shelf-Ansicht die Registerkarte *Laufwerke* oder *Controller* auswählen.
 
 Weitere Informationen:
 

@@ -25,7 +25,7 @@ Wenn Sie einen Controller in den Servicemodus schalten, kann dies die Performanc
 ====
 .Schritte
 . Wählen Sie *Hardware*.
-. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf *Zurück zum Regal anzeigen*.
+. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf die Registerkarte *Controller & Komponenten*.
 +
 Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
 

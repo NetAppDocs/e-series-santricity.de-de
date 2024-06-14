@@ -20,7 +20,7 @@ Sie können einzelne oder mehrere Laufwerke finden, die auf der Seite Hardware a
 . Wählen Sie *Hardware*.
 . Um ein oder mehrere Laufwerke zu finden, führen Sie einen der folgenden Schritte aus:
 +
-** *Einzelantrieb* -- aus der Regalgrafik finden Sie das Laufwerk, das Sie physisch im Array finden möchten. (Wenn die Grafik die Controller zeigt, klicken Sie auf *Vorderseite des Shelfs anzeigen*.) Klicken Sie auf das Laufwerk, um das Kontextmenü anzuzeigen, und wählen Sie dann *Locator einschalten*.
+** *Einzelantrieb* -- aus der Regalgrafik finden Sie das Laufwerk, das Sie physisch im Array finden möchten. (Wenn die Grafik die Controller anzeigt, klicken Sie auf die Registerkarte *Laufwerke*.) Klicken Sie auf das Laufwerk, um das Kontextmenü anzuzeigen, und wählen Sie dann *Locator Light einschalten*.
 +
 Die Positionsanzeige des Laufwerks leuchtet auf. Wenn Sie das Laufwerk physisch gefunden haben, kehren Sie zum Dialog zurück und wählen Sie *Ausschalten*.
 

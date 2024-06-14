@@ -28,7 +28,7 @@ Die NVMe-over-RoCE-Einstellungen sind nur verfügbar, wenn der Controller des St
 Konfigurieren Sie NVMe over RoCE-Ports
  a| 
 . Wählen Sie *Hardware*.
-. Wählen Sie *Rückseite des Regals anzeigen*.
+. Wählen Sie die Registerkarte *Controller & Komponenten* aus.
 . Wählen Sie einen Controller aus.
 . Wählen Sie *NVMe over RoCE Ports konfigurieren* aus.
 

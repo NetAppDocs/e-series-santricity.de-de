@@ -17,8 +17,12 @@ Sie können Daten über die iSCSI-Verbindungen zu Ihrem Speicher-Array anzeigen.
 .Über diese Aufgabe
 System Manager zeigt diese Typen von iSCSI-Statistiken. Alle Statistiken sind schreibgeschützt und können nicht festgelegt werden.
 
+
+NOTE: Die in System Manager angezeigten Statistiktypen basieren auf den für Ihr Speicher-Array verfügbaren Statistiken.
+
 * *Ethernet MAC Statistics* -- stellt Statistiken für die Media Access Control (MAC) bereit. MAC bietet auch einen Adressierungsmechanismus, der als physische Adresse oder MAC-Adresse bezeichnet wird. Die MAC-Adresse ist eine eindeutige Adresse, die jedem Netzwerkadapter zugewiesen wird. Die MAC-Adresse unterstützt die Übertragung von Datenpaketen an ein Ziel innerhalb des Subnetzwerks.
 * *Ethernet TCP/IP-Statistiken* -- liefert Statistiken für das TCP/IP, welches das Transmission Control Protocol (TCP) und das Internet Protocol (IP) für das iSCSI-Gerät ist. Mit TCP können Anwendungen auf vernetzten Hosts Verbindungen miteinander herstellen, über die sie Daten in Paketen austauschen können. Die IP ist ein datenorientiertes Protokoll, das Daten über ein paketgeschaltetes Inter-Netzwerk kommuniziert. Die IPv4-Statistiken und die IPv6-Statistiken werden separat angezeigt.
+* *Ethernet Kernel Statistik* -- liefert Statistiken für die Plattform Kernel Treiber des iSCSI Gerätes. In der Kernelstatistik werden ähnliche Netzwerkdaten wie die TCP/IP-Statistikoption angezeigt. Die Kernelstatistikdaten werden jedoch nicht direkt von der iSCSI-Hardware, sondern von den Plattformkerneltreibern erfasst.
 * *Local Target/Initiator (Protocol) Statistics* -- zeigt Statistiken für das iSCSI-Ziel an, die Zugriff auf seine Speichermedien auf Blockebene ermöglichen, und zeigt die iSCSI-Statistiken für das Speicher-Array an, wenn es als Initiator bei asynchronen Spiegelungsvorgängen verwendet wird.
 * *DCBX Betriebszustände* -- zeigt die Betriebszustände der verschiedenen Funktionen von Data Center Bridging Exchange (DCBX) an.
 * *LLDP-TLV-Statistiken* -- zeigt die Statistiken zum Typ Length Value (TLV) des Link Layer Discovery Protocol (LLDP) an.

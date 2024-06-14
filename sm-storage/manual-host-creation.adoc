@@ -1,0 +1,22 @@
+---
+permalink: sm-storage/manual-host-creation.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, manual, host, 
+summary: Das Erstellen eines Hosts ist einer der Schritte, die erforderlich sind, damit das Storage-Array wissen kann, an welche Hosts angeschlossen sind und um den I/O-Zugriff auf die Volumes zu ermöglichen. Sie können einen Host nur manuell erstellen. 
+---
+= Manuelle Hosterstellung
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Das Erstellen eines Hosts ist einer der Schritte, die erforderlich sind, damit das Storage-Array wissen kann, an welche Hosts angeschlossen sind und um den I/O-Zugriff auf die Volumes zu ermöglichen. Sie können einen Host nur manuell erstellen.
+
+
+
+== Manuelle Erstellung
+
+Durch die manuelle Hosterstellung können Sie sicherstellen, dass die Host-Port-IDs, die von den Speicher-Array-Controllern erkannt wurden, den Hosts korrekt zugeordnet sind.
+
+Bei der manuellen Hosterstellung verknüpfen Sie Host-Port-IDs, indem Sie sie aus einer Liste auswählen oder manuell eingeben. Nachdem Sie einen Host erstellt haben, können Sie ihm Volumes zuweisen oder einem Host Cluster hinzufügen, wenn Sie den Zugriff auf Volumes freigeben möchten.

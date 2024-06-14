@@ -43,3 +43,6 @@ Das Dialogfeld Syslog Server hinzufügen wird geöffnet.
 
 .Ergebnisse
 Der Ereignismonitor sendet bei jedem Ereignis, das in einem Alarmtabellen stattfindet, Warnmeldungen an den Syslog-Server. Weitere Informationen zum Konfigurieren der Syslog-Einstellungen für Audit-Protokolle finden Sie unter https://docs.netapp.com/us-en/e-series-santricity/sm-settings/configure-syslog-server-for-audit-logs.html["Syslog-Server für Audit-Protokolle konfigurieren"].
+
+
+NOTE: Wenn mehrere Syslog-Server konfiguriert sind, erhalten alle konfigurierten Syslog-Server ein Revisionsprotokoll.
