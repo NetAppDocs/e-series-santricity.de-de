@@ -21,6 +21,9 @@ Sie können die gemeldete Kapazität (die gemeldete Kapazität an Hosts) eines V
 * Im Volume werden keine Hot-Spare-Laufwerke verwendet. (Gilt nur für Volumes in Volume-Gruppen.)
 
 
+
+NOTE: Sie können die Volume-Kapazität nur auf bis zu 128 tib gleichzeitig erweitern.
+
 .Über diese Aufgabe
 Bedenken Sie zukünftige Kapazitätsanforderungen für andere Volumes in diesem Pool oder Volume-Gruppe. Stellen Sie sicher, dass ausreichend freie Kapazität zur Erstellung von Snapshot-Images, Snapshot-Volumes oder Remote-Spiegelungen zur Verfügung steht.
 

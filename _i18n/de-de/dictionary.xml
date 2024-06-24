@@ -7570,11 +7570,6 @@
   <block id="3cdebc422ce56a03d6b4ab54c2320f0f" category="list-text">Entfernt beliebige Spiegelungsbeziehungen.</block>
   <block id="14ab600a49776be57a71f0fa17dc5b38" category="list-text">Erhöht die freie Kapazität im Pool bzw. in der Volume-Gruppe.</block>
   <block id="499a0602905ccb67c6d649daa6d57413" category="summary">Sie können Workloads für jeden Applikationstyp erstellen.</block>
-  <block id="ef722b0d3f28d401f565985f472c4438" category="paragraph">System Manager empfiehlt nur für die folgenden Applikationstypen eine optimierte Volume-Konfiguration:</block>
-  <block id="f2087899e2afadc125d10b2957ade872" category="list-text">Videoüberwachung</block>
-  <block id="7cfedcca8ce6dbe00da8fe3e6fe966f8" category="list-text">VMware ESXi ™ (für Volumes, die mit dem File System der Virtual Machine verwendet werden sollen)</block>
-  <block id="d5f2262b63d7e86589dbf70c4e5e35b2" category="list-text">_Bei Verwendung eines applikationsspezifischen Workloads_ empfiehlt das System eine optimierte Volume-Konfiguration, um Konflikte zwischen Applikations-Workload-I/O und anderem Datenverkehr aus Ihrer Applikationsinstanz zu minimieren. Sie können die empfohlene Volume-Konfiguration überprüfen und anschließend über das Dialogfeld Volumes hinzufügen/bearbeiten die vom System empfohlenen Volumes und Merkmale bearbeiten, hinzufügen oder löschen.</block>
-  <block id="bf4bffd53bcd7e30e99315e12ac6f419" category="list-text">_Bei Verwendung anderer Anwendungstypen_ legen Sie die Volume-Konfiguration manuell über das Dialogfeld Volumes hinzufügen/bearbeiten fest.</block>
   <block id="65d1a857de2802d1a9f3295655aaf36f" category="list-text">Wählen Sie Menü:Erstellen[Workload].</block>
   <block id="d8b1db89e135bdbc13b725e8d595018b" category="paragraph">Das Dialogfeld Anwendungs-Workload erstellen wird angezeigt.</block>
   <block id="c587f872ee4cedc5f46714cc4a3af851" category="list-text">Wählen Sie in der Dropdown-Liste den Applikationstyp aus, für den der Workload erstellt werden soll, und geben Sie dann einen Workload-Namen ein.</block>
@@ -8737,4 +8732,7 @@
   <block id="71f3dfbf2b051795606c83f3a9eae5ae" category="list-text">Wenn Sie die Laufwerke sehen möchten, aber die Komponenten des Controllers und des Netzstromanzeigebehälters angezeigt werden, klicken Sie auf die Registerkarte *Laufwerke*.</block>
   <block id="581cfab734318e947b176853c8e56d50" category="paragraph">Wechseln Sie zur Hardware-Seite, die eine grafische Darstellung der physischen Komponenten des Storage Arrays bietet. Sie können zwischen der Vorder- und der Rückansicht der Array-Shelfs wechseln, indem Sie oben rechts in der Shelf-Ansicht die Registerkarte *Laufwerke* oder *Controller* auswählen.</block>
   <block id="c30b45aee772a1884388fa957f41c7d5" category="list-text">*Einzelantrieb* -- aus der Regalgrafik finden Sie das Laufwerk, das Sie physisch im Array finden möchten. (Wenn die Grafik die Controller anzeigt, klicken Sie auf die Registerkarte *Laufwerke*.) Klicken Sie auf das Laufwerk, um das Kontextmenü anzuzeigen, und wählen Sie dann *Locator Light einschalten*.</block>
+  <block id="043a86bd47391543c74c9ed90a2dde13" category="admonition">Sie können die Volume-Kapazität nur auf bis zu 128 tib gleichzeitig erweitern.</block>
+  <block id="82d00f5ad15a08dba27d16e49e8748f1" category="paragraph">Ein Workload ist ein Storage-Objekt, das eine Applikation unterstützt. Sie können einen oder mehrere Workloads oder Instanzen pro Applikation definieren.</block>
+  <block id="056bd960f994268c2245e42ab49c22b9" category="paragraph">Eine Applikation ist Software wie SQL Server oder Exchange. Sie definieren einen oder mehrere Workloads, um jede Applikation zu unterstützen.</block>
 </blocks>
