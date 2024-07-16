@@ -103,6 +103,7 @@ NOTE: Bei EF600- und EF300-Controllern müssen die primären und sekundären Vol
 ** Wenn das primäre Volume keine Laufwerkssicherheit verwendet, darf das sekundäre Volume keine Laufwerkssicherheit verwenden.
 
 
+* Primäre und sekundäre Volumes müssen denselben Laufwerkstyp verwenden. Die Kombination von NVMe und SAS-Laufwerken zwischen primären und sekundären Volumes wird nicht unterstützt.
 
 
 
@@ -111,6 +112,12 @@ NOTE: Bei EF600- und EF300-Controllern müssen die primären und sekundären Vol
 
 * Ein reserviertes Kapazitäts-Volume ist für ein primäres Volume und ein sekundäres Volume in einem gespiegelten Paar für das Protokollieren von Schreibinformationen erforderlich, um nach einem Controller-Reset und anderen temporären Unterbrechungen wiederherzustellen.
 * Da sowohl das primäre Volume als auch das sekundäre Volume in einem gespiegelten Paar zusätzliche reservierte Kapazität benötigen, müssen Sie sicherstellen, dass auf beiden Storage-Arrays in der Spiegelbeziehung freie Kapazität verfügbar ist.
+* Das reservierte Volume mit Kapazität muss denselben Laufwerkstyp wie die zugehörigen Spiegelvolumes verwenden.
++
+** Wenn das reservierte Kapazitäts-Volume auf NVMe-Laufwerken erstellt wird, müssen auch seine Spiegelungs-Volumes auf NVMe-Laufwerken erstellt werden.
+** Wenn das reservierte Kapazitätsvolume auf SAS-Laufwerken erstellt wird, müssen auch seine Spiegelvolumes auf SAS-Laufwerken erstellt werden.
+
+
 
 
 
