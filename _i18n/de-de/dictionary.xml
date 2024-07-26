@@ -8737,4 +8737,7 @@
   <block id="73e974e4615b6eb8c4db3e6a55137a8f" category="list-text">Das reservierte Volume mit Kapazität muss denselben Laufwerkstyp wie die zugehörigen Spiegelvolumes verwenden.</block>
   <block id="bf9f60c11f9080af705719592217436d" category="list-text">Wenn das reservierte Kapazitäts-Volume auf NVMe-Laufwerken erstellt wird, müssen auch seine Spiegelungs-Volumes auf NVMe-Laufwerken erstellt werden.</block>
   <block id="402b0811b7e491a20af6474c5296c733" category="list-text">Wenn das reservierte Kapazitätsvolume auf SAS-Laufwerken erstellt wird, müssen auch seine Spiegelvolumes auf SAS-Laufwerken erstellt werden.</block>
+  <block id="28af2c239fc893bd1a2013f2e8b4b941" category="section-title">Neue Funktionen in Version 11.80.1R1</block>
+  <block id="5769aac2d83733db3bf7507b56dd86e9" category="paragraph">Größere Schlüssellänge für neue selbstsignierte und CA-signierte Managementzertifikate.</block>
+  <block id="8545f755b4f7a99afe330df57699f365" category="paragraph">Die Länge des Schlüssels für Managementzertifikate für SANtricity System Manager und Unified Manager Applikationen wurde von 2048 auf 3072 Bit geändert. Die Änderung gilt für neu generierte selbstsignierte und CA-signierte Zertifikate aus den SANtricity-Anwendungen. Die Schlüssellänge ist festgelegt und wird von den Standardschlüsselgrößendefinitionen in NVSRAM nicht beeinflusst.</block>
 </blocks>
