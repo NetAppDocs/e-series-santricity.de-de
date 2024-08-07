@@ -110,7 +110,7 @@ Snapshot Basis-Volume
  a| 
 Ja.
  a| 
-Nein
+Ja.
  a| 
 Nein
 
@@ -121,9 +121,9 @@ Primäres Remote-Spiegel-Volume
  a| 
 Ja^3^
  a| 
-Nein
- a| 
 Ja.
+ a| 
+Nein
 
 |===
 ^1^ das Ziel-Volume muss eine Kapazität haben, die der gemeldeten Kapazität des Thin-Volumes entspricht oder größer ist.
