@@ -33,6 +33,15 @@ Mit der Option Speicher-Array werden einige zusätzliche Einstellungen gelöscht
 
 
  a| 
+Deaktiviert ARVM
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
 Löscht Pools und Volume-Gruppen
  a| 
 X

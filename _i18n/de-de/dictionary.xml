@@ -8740,4 +8740,5 @@
   <block id="28af2c239fc893bd1a2013f2e8b4b941" category="section-title">Neue Funktionen in Version 11.80.1R1</block>
   <block id="5769aac2d83733db3bf7507b56dd86e9" category="paragraph">Größere Schlüssellänge für neue selbstsignierte und CA-signierte Managementzertifikate.</block>
   <block id="8545f755b4f7a99afe330df57699f365" category="paragraph">Die Länge des Schlüssels für Managementzertifikate für SANtricity System Manager und Unified Manager Applikationen wurde von 2048 auf 3072 Bit geändert. Die Änderung gilt für neu generierte selbstsignierte und CA-signierte Zertifikate aus den SANtricity-Anwendungen. Die Schlüssellänge ist festgelegt und wird von den Standardschlüsselgrößendefinitionen in NVSRAM nicht beeinflusst.</block>
+  <block id="56ef6aeb1657a77ed998f95bff3a67c0" category="paragraph">Deaktiviert ARVM</block>
 </blocks>
