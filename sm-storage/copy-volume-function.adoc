@@ -27,6 +27,14 @@ Bei Änderungen der Storage-Anforderungen an ein Volume können Sie mithilfe der
 * Ändern Sie ein Thin-Volume in ein Thick Volume.
 
 
+Quell- und Ziel-Volumes von Kopien müssen dieselben gemeldeten Host-adressierbaren/logischen Blockgrößen (Sektorgröße) aufweisen.
+
+Gemeldete Blockgrößen von Volumes sind:
+
+* *Native Blockgröße* – die Blockgröße des Volumes entspricht der Blockgröße des Laufwerks, entweder 512 oder 4K.
+* *Emulierte 512 Blockgröße* - Laufwerke sind 4K, aber die gemeldete Blockgröße ist 512.
+
+
 
 
 == Ändern Sie ein Thin-Volume in ein Thick Volume
