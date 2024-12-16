@@ -21,7 +21,7 @@ Physische Hardware wird in logischen Komponenten bereitgestellt, sodass Daten or
 
 Pools und Volume-Gruppen sind die obersten Storage-Einheiten in einem Storage Array: Sie teilen die Kapazität von Laufwerken in einfach zu verwaltende Abteilungen. Innerhalb dieser logischen Unterteilungen sind die einzelnen Volumes oder LUNs, in denen die Daten gespeichert werden. Dieses Konzept wird in der folgenden Abbildung dargestellt.
 
-image::../media/sam1130-dwg-volumes-drive-structure-pools-and-volume-groups.gif[Sam1130 dwg Volumes Drive Structure Pools und Volume-Gruppen]
+image::../media/sam1130-dwg-volumes-drive-structure-pools-and-volume-groups.gif[Struktur von Pools und Volume-Gruppen]
 
 ^1^ Host-LUNs; ^2^ Volumes; ^3^ Volume-Gruppen oder Pools; ^4^ HDD- oder SSD-Laufwerke
 

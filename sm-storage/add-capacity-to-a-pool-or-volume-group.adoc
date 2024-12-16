@@ -25,7 +25,7 @@ Mit der Erweiterung wird zusätzliche freie Kapazität in den Pool bzw. die Volu
 +
 ** 2,048 Volumes (EF600 und E5700 Serie)
 ** 1,024 Volumes (EF300)
-** 512 Volumes (E2800 Serie)
+** 512 Volumes (E4000 und E2800 Serie)
 
 
 * Wenn der Pool oder die Volume-Gruppe alle sicheren Laufwerke enthält, fügen Sie nur Laufwerke hinzu, die sicher sind, damit sie weiterhin die Verschlüsselungsfunktionen der sicheren Laufwerke nutzen können.

@@ -13,4 +13,4 @@ summary: Die folgende Abbildung zeigt die Konfiguration des Hostzugriffs.
 [role="lead"]
 Die folgende Abbildung zeigt die Konfiguration des Hostzugriffs.
 
-image::../media/sam1130-flw-hosts-create-host.gif[Sam1130 flw-Hosts erstellen den Host]
+image::../media/sam1130-flw-hosts-create-host.gif[Konfigurieren Sie den Host-Workflow]

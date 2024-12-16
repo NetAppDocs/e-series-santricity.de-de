@@ -60,7 +60,8 @@ Das Dialogfeld External Security Key erstellen wird geöffnet.
 NOTE: Es wird immer nur ein einziger Schlüsselserver verwendet. Wenn das Speicher-Array den primären Schlüsselserver nicht erreichen kann, kontaktiert das Array den Backup-Schlüsselserver. Beachten Sie, dass die Parität zwischen beiden Servern beibehalten werden muss. Andernfalls kann es zu Fehlern kommen.
 
 ** *Client-Zertifikat auswählen* -- Klicken Sie auf die erste *Durchsuchen*-Schaltfläche, um die Zertifikatdatei für die Speicher-Array-Controller auszuwählen.
-** *Wählen Sie das Serverzertifikat des Schlüsselverwaltungsservers* -- Klicken Sie auf die zweite Schaltfläche *Durchsuchen*, um die Zertifikatdatei für den Schlüsselverwaltungsserver auszuwählen. Sie können für den Schlüsselverwaltungsserver ein Stammzertifikat, ein Zwischenzertifikat oder ein Serverzertifikat auswählen.
+** *Select private key file* -- Klicken Sie bei Bedarf auf die zweite *Browse*-Schaltfläche, um eine private Schlüsseldatei für die Controller des Speicherarrays auszuwählen.
+** *Serverzertifikat des Schlüsselverwaltungsservers auswählen* -- Klicken Sie auf die dritte Schaltfläche *Durchsuchen*, um die Zertifikatdatei für den Schlüsselverwaltungsserver auszuwählen. Sie können für den Schlüsselverwaltungsserver ein Stammzertifikat, ein Zwischenzertifikat oder ein Serverzertifikat auswählen.
 
 
 . Klicken Sie Auf *Weiter*.

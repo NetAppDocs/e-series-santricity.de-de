@@ -25,28 +25,28 @@ System Manager verwendet diese Symbole, um den Status des Speicher-Arrays und se
 
 
  a| 
-image:../media/sam1130-ss-icon-status-success.gif[""]
+image:../media/sam1130-ss-icon-status-success.gif["Optimal"]
  a| 
 Optimal
 
 
 
  a| 
-image:../media/sam1130-ss-icon-status-failure.gif[""]
+image:../media/sam1130-ss-icon-status-failure.gif["Nicht optimal oder fehlgeschlagen"]
  a| 
 Nicht optimal oder fehlgeschlagen
 
 
 
  a| 
-image:../media/sam1130-ss-icon-status-service.gif[""]
+image:../media/sam1130-ss-icon-status-service.gif["Muss aufpassen oder korrigieren"]
  a| 
 Muss aufpassen oder korrigieren
 
 
 
  a| 
-image:../media/sam1130-ss-icon-status-caution.gif[""]
+image:../media/sam1130-ss-icon-status-caution.gif["Achtung"]
  a| 
 Achtung
 

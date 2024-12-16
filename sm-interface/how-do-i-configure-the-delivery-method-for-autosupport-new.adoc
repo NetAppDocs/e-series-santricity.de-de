@@ -14,4 +14,4 @@ summary: Um Konfigurationsaufgaben für AutoSupport-Bereitstellungsmethoden aufz
 [role="lead"]
 Um Konfigurationsaufgaben für AutoSupport-Bereitstellungsmethoden aufzurufen, gehen Sie zu menu:Support[Support Center] und klicken Sie dann auf die Registerkarte *AutoSupport*.
 
-Die folgenden Protokolle werden unterstützt: HTTPS, HTTP und SMTP.
+Die folgenden Protokolle werden unterstützt: HTTPS und SMTP.

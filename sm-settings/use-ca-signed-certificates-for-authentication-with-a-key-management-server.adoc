@@ -26,12 +26,15 @@ Die Authentifizierung zwischen den Controllern und einem Schlüsselverwaltungsse
 
 Sie müssen zuerst eine CSR-Datei (Certificate Signing Request) generieren und dann mithilfe des CSR ein signiertes Clientzertifikat von einer Zertifizierungsstelle (CA) anfordern, die vom Schlüsselverwaltungsserver vertrauenswürdig ist. Sie können auch mithilfe der heruntergeladenen CSR-Datei ein Client-Zertifikat vom Schlüsselverwaltungsserver erstellen und herunterladen. Ein Client-Zertifikat validiert die Controller des Storage-Arrays, damit der wichtige Management-Server seine KMIP-Anforderungen (Key Management Interoperability Protocol) anvertrauen kann.
 
+
+NOTE: CSR-Dateien, die extern über private und öffentliche Schlüsselpaare generiert werden, können über das Dialogfeld „externen Sicherheitsschlüssel erstellen“ importiert werden. Weitere Informationen zum Importieren einer extern generierten CSR-Datei finden Sie unter https://docs.netapp.com/us-en/e-series-santricity/sm-settings/use-ca-signed-certificates-for-authentication-with-a-key-management-server.html#step-2-import-certificates-for-the-key-management-server["Schritt 2: Importieren Sie Zertifikate für den Schlüsselverwaltungsserver"].
+
 .Schritte
 . Wählen Sie Menü:Einstellungen[Zertifikate].
 . Wählen Sie auf der Registerkarte Key Management die Option *Complete CSR* aus.
 . Geben Sie die folgenden Informationen ein:
 +
-** *Allgemeiner Name* -- Ein Name, der diese CSR identifiziert, wie z.B. den Namen des Speicherarrays, der in den Zertifikatdateien angezeigt wird.
+** *Gemeinsamer Name* -- Ein Name, der den Client identifiziert. Es ist gängige Praxis, die im gemeinsamen Namen vorhandenen Anforderungen an die Namenskonventionen für Clientzertifikate mit den Anforderungen des KMS-Servers zu vergleichen. Der gemeinsame Name hilft dem KMS normalerweise, das Clientzertifikat zu identifizieren, wenn es während eines Handshake präsentiert wird.
 ** *Organisation* -- der vollständige, rechtliche Name Ihres Unternehmens oder Ihrer Organisation. Fügen Sie Suffixe wie Inc. Oder Corp. Mit ein
 ** *Organisationseinheit (optional)* -- die Abteilung Ihrer Organisation, die das Zertifikat bearbeitet.
 ** *Stadt/Ort* -- die Stadt oder der Ort, in dem sich Ihre Organisation befindet.
@@ -43,7 +46,11 @@ Sie müssen zuerst eine CSR-Datei (Certificate Signing Request) generieren und d
 +
 Eine CSR-Datei wird auf Ihrem lokalen System gespeichert.
 
-. Fordern Sie ein signiertes Clientzertifikat von einer Zertifizierungsstelle an, die vom Schlüsselverwaltungsserver vertrauenswürdig ist.
+. Fordern Sie ein signiertes Clientzertifikat von der Zertifizierungsstelle an, die vom Schlüsselverwaltungsserver vertrauenswürdig ist.
++
+
+NOTE: Es ist üblich, dass der Schlüsselverwaltungsserver über eine Funktion verfügt, die signierte Zertifikate direkt generiert, da er als eigene Zertifizierungsstelle fungiert.
+
 . Wenn Sie ein Clientzertifikat besitzen, gehen Sie zu <<Schritt 2: Importieren Sie Zertifikate für den Schlüsselverwaltungsserver>>.
 
 
@@ -71,6 +78,10 @@ Weitere Informationen zum Serverzertifikat finden Sie in der Dokumentation für 
 Es wird ein Dialogfeld zum Importieren der Zertifikatdateien geöffnet.
 
 . Klicken Sie neben *Select Client Certificate* auf die Schaltfläche *Browse*, um die Clientzertifikatdatei für die Controller des Speicherarrays auszuwählen.
++
+Der Dateiname wird im Dialogfeld angezeigt.
+
+. Wenn Sie eine Zertifikatdatei extern mit einem privaten und öffentlichen Schlüsselpaar erzeugt haben, klicken Sie auf die Schaltfläche *Durchsuchen* neben *Private Schlüsseldatei auswählen*, um die Zertifikatdatei für die Controller des Speicherarrays auszuwählen.
 +
 Der Dateiname wird im Dialogfeld angezeigt.
 

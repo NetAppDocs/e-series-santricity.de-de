@@ -29,7 +29,7 @@ Weitere Informationen:
 
 == Wie konfiguriere ich signierte Zertifikate?
 
-Sie generieren zuerst eine Signierungsanforderung von System Manager und senden die Datei anschließend an eine CA. Sobald die Zertifizierungsstelle die Zertifikatdateien zurückgibt, importieren Sie diese mit System Manager.
+Sie können eine Signaturanforderung von System Manager oder extern mit einem privaten und öffentlichen Schlüsselpaar generieren. Die Signaturanforderung wird an eine Zertifizierungsstelle gesendet, um die Zertifikatdateien zu generieren. Sobald die Zertifizierungsstelle die Zertifikatdateien zurückgibt, importieren Sie diese mit System Manager.
 
 Weitere Informationen:
 

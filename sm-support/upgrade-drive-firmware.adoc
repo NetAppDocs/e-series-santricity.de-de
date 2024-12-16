@@ -25,13 +25,6 @@ Sie können Ihre Festplatten-Firmware aktualisieren, um sicherzustellen, dass Si
 .Schritte
 . Wählen Sie Menü:Support[Upgrade Center].
 . Laden Sie die neuen Dateien von der Support-Website auf Ihren Management-Client herunter.
-+
-.. Klicken Sie unter Upgrade der Laufwerk-Firmware auf *NetApp Support*.
-.. Klicken Sie auf der NetApp Support Website auf die Registerkarte *Downloads*.
-.. Wählen Sie *Festplatten- Und Firmware-Matrix*.
-.. Befolgen Sie die restlichen Anweisungen.
-
-
 . Klicken Sie unter Laufwerk-Firmware-Upgrade auf *Upgrade starten*.
 +
 Es wird ein Dialogfeld angezeigt, in dem die aktuell verwendeten Laufwerk-Firmware-Dateien aufgelistet werden.

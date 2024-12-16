@@ -23,6 +23,6 @@ Während des Rollback behält die Snapshot-Funktion alle Snapshot-Images in der 
 
 Sobald ein Rollback gestartet wird, wird ein Hintergrundprozess für das Basis-Volume durch die logischen Block-Adressen (LBAs) geleitet und dann werden Copy-on-Write-Daten im Rollback Snapshot Image gefunden, die wiederhergestellt werden sollen. Da auf das Basis-Volume für Lese- und Schreibvorgänge sofort zugegriffen werden kann und alle zuvor geschriebenen Daten sofort zur Verfügung stehen, muss das reservierte Kapazitäts-Volume so groß sein, dass alle Änderungen bei der Verarbeitung des Rollback berücksichtigt werden. Die Datenübertragung wird im Hintergrund fortgesetzt, bis das Rollback abgeschlossen ist.
 
-image::../media/sam1130-dwg-snapshots-rollback-overview.gif[Sam1130 dwg-Snapshots Rollback-Übersicht]
+image::../media/sam1130-dwg-snapshots-rollback-overview.gif[Snapshot Rollback – Übersicht]
 
 ^1^ Basis-Volume; ^2^ Snapshot Objekte in einer Gruppe; ^3^ Snapshot-Gruppe reservierte Kapazität

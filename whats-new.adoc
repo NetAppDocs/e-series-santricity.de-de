@@ -1,37 +1,22 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: whats new, new features, SANtricity 11.80 
+keywords: whats new, new features, SANtricity 11.90 
 summary: Neue Funktionen im SANtricity OS. 
 ---
-= Neuerungen bei SANtricity OS 11.80
+= Neuerungen bei SANtricity OS 11.90
 :allow-uri-read: 
 :experimental: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
-In der folgenden Tabelle werden die neuen Funktionen von SANtricity System Manager 11.8 beschrieben.
+In der folgenden Tabelle werden die neuen Funktionen von SANtricity System Manager 11.9 beschrieben.
 
 
 
-== Neue Funktionen in Version 11.80.1R1
-
-[cols="35h,~"]
-|===
-| Neues Feature | Beschreibung 
-
-
- a| 
-Größere Schlüssellänge für neue selbstsignierte und CA-signierte Managementzertifikate.
- a| 
-Die Länge des Schlüssels für Managementzertifikate für SANtricity System Manager und Unified Manager Applikationen wurde von 2048 auf 3072 Bit geändert. Die Änderung gilt für neu generierte selbstsignierte und CA-signierte Zertifikate aus den SANtricity-Anwendungen. Die Schlüssellänge ist festgelegt und wird von den Standardschlüsselgrößendefinitionen in NVSRAM nicht beeinflusst.
-
-|===
-
-
-== Neue Funktionen in Version 11.80.1
+== Neue Funktionen in Version 11.90
 
 [cols="35h,~"]
 |===
@@ -39,160 +24,36 @@ Die Länge des Schlüssels für Managementzertifikate für SANtricity System Man
 
 
  a| 
-`-identifyDevices` Parameter
+Neues Storage-Systemmodell: E4000
  a| 
-Eine neue `-identifyDevices` Parameter ist jetzt im SMcli verfügbar. Mit diesem neuen Parameter können Sie nach allen SCSI-nativen Blockgeräten suchen, die Ihren Speicher-Arrays zugeordnet sind. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/e-series-cli/get-started/downloadable-smcli-parameters.html#identify-Devices["Herunterladbare SMcli-Befehlszeilenparameter"^].
-
-
-
- a| 
-Ethernet-Kernel-Statistik
- a| 
-Eine neue Option für Ethernet-Kernel-Statistiken ist jetzt auf der Seite iSCSI-Statistikpakete anzeigen in System Manager verfügbar. Mit dieser neuen Option können Sie Statistiken für die Plattformkerneltreiber des iSCSI-Geräts anzeigen. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/e-series-santricity/sm-support/view-iscsi-statistics-packages-support.html["Zeigen Sie iSCSI-Statistikpakete an"^].
+Mit dieser Version wird das kostengünstige Speichersystem E4000 eingeführt. Die E4000 unterstützt 12 und 60 Laufwerke und eine einzelne Host Interface Card (HIC) pro Controller. In der ersten Version werden Host-Schnittstellenkarten wie iSCSI und Fibre Channel unterstützt. E4000 Storage-Systeme und andere E-Series Storage-Systeme können in Unified Manager angezeigt und gemanagt werden.
 
 
 
  a| 
-Zusätzliche Möglichkeit zum Blockieren von IP-Adressen über REST-API-Endpunkt
+Höhere Kapazität für Dynamic Disk Pools
  a| 
-Benutzer können jetzt bestimmte IP-Adressen über den Endpunkt Einstellungen blockieren (`/devmgr/v2/settings`). Nach der Konfiguration über den Endpunkt Einstellungen können nur über eine Whitelist angegebene IP-Adressen mit dem Speichergerät kommunizieren. Diese neue Funktion unterstützt IPv4- und IPv6-Adresslisten.
-
-
-
- a| 
-VCenter Storage Plug-in
- a| 
-Das vCenter Storage Plug-in wurde hinsichtlich der Kompatibilität mit der Version 11.80.1 der E-Series aktualisiert.
+Die Kapazität von Dynamic Disk Pools (DDP) wurde auf 12 PB erhöht, wenn die Kapazität jedes einzelnen Laufwerks innerhalb des Pools größer als 23 TB ist. Wenn die einzelne Laufwerkskapazität weniger als 23 TB beträgt, beträgt die DDP-Kapazität 6 PB.
 
 
 
  a| 
-Web Services Proxy
+Die Standardeinstellungen für den Medienscan wurden erhöht
  a| 
-Der Web Services Proxy wurde auf Version 6.1 aktualisiert, um die Kompatibilität mit der E-Series Version 11.80.1 zu gewährleisten.
-
-|===
-
-
-== Neue Funktionen in Version 11.80
-
-[cols="35h,~"]
-|===
-| Neues Feature | Beschreibung 
-
-
- a| 
-Verbesserter Volume Parity Scan
- a| 
-Der Volume-Paritäts-Scan kann nun als Hintergrundprozess entweder über die REST API oder über die CLI gestartet werden. Der daraus resultierende Paritäts-Scan wird im Hintergrund ausgeführt, solange er für den Abschluss des Scanvorgangs erforderlich ist. Scanvorgänge können den Neustart des Controllers und Failover-Vorgänge überdauern.
+Die Standard-Scanrate für Medien wurde auf 120 Tage erhöht.
 
 
 
  a| 
-SAML-Unterstützung für Unified Manager
+Der private Schlüssel wird jetzt für die externe Schlüsselverwaltung akzeptiert
  a| 
-Unified Manager unterstützt jetzt SAML (Security Assertion Markup Language). Sobald SAML für Unified Manager aktiviert ist, müssen Benutzer eine Multi-Faktor-Authentifizierung für den Identitätsanbieter verwenden, um mit der Benutzeroberfläche zu interagieren. Beachten Sie, dass die REST-API nach der Aktivierung von SAML in Unified Manager nicht verwendet werden kann, ohne über das IdP zu gehen, um Anfragen zu authentifizieren.
-
-
-
- a| 
-Automatische Konfigurationsfunktion
- a| 
-Unterstützt jetzt die Möglichkeit, den Parameter für die Blockgröße des Volumens für die Verwendung mit der Funktion „Automatische Konfiguration“ für die Ersteinrichtung des Arrays festzulegen. Diese Funktion ist in der CLI nur als „blocksize“ Parameter verfügbar.
+CSR-Datei (Certificate Signing Request), die extern über private und öffentliche Schlüsselpaare generiert wird, kann jetzt über System Manager importiert werden.
 
 
 
  a| 
-Kryptografische Signierung Der Controller-Firmware
+Die Anmeldesperre ist jetzt für Web Services verfügbar
  a| 
-Die Controller-Firmware ist kryptografisch signiert. Die Signaturen werden beim ersten Download und beim Booten des Controllers überprüft. Keine Auswirkungen für Endbenutzer zu erwarten. Signaturen werden durch ein von der Zertifizierungsstelle ausgestelltes Extended Validation-Zertifikat gesichert.
-
-
-
- a| 
-Kryptografische Signierung Der Laufwerksfirmware
- a| 
-Die Festplatten-Firmware ist kryptografisch signiert. Die Signaturen werden beim ersten Download überprüft und durch ein von der Zertifizierungsstelle ausgestelltes Extended Validation-Zertifikat gesichert. Der Inhalt der Laufwerksfirmware wird nun als ZIP-Datei geliefert, die sowohl die ältere, nicht signierte Firmware als auch die neu signierte Firmware enthält. Der Benutzer muss die entsprechende Datei basierend auf der Versionsversion des Codes auswählen, der auf dem Zielsystem ausgeführt wird.
-
-
-
- a| 
-Externe Schlüsselserver-Verwaltung - Zertifikatschlüsselgröße
- a| 
-Die neue Standardgröße des Zertifikatschlüssels beträgt 3072 Bit (ab 2048). Schlüsselgrößen bis zu 4096 Bit werden unterstützt. Ein NVSRAM-Bit muss geändert werden, um die nicht standardmäßigen Schlüsselgrößen zu unterstützen.
-
-Die Auswahlwerte für die Schlüsselgröße lauten wie folgt:
-
-* STANDARD = 0
-* LÄNGE 2048 = 1
-* LÄNGE 3072 = 2
-* LÄNGE 4096 = 3
-
-
-So ändern Sie die Schlüsselgröße über SMcli auf 4096:
-
-`set controller[b] globalnvsrambyte[0xc0]=3;`
-`set controller[a] globalnvsrambyte[0xc0]=3;`
-
-Schlüsselgröße abfragen:
-
-`show allcontrollers globalnvsrambyte[0xc0];`
-
-
-
- a| 
-Verbesserungen Am Laufwerk-Pool
- a| 
-Festplatten-Pools, die mit Controllern erstellt werden, die 11.80 oder höher ausführen, sind _Version 1_ Pools im Gegensatz zu _Version 0_ Pools. Ein Downgrade-Vorgang ist eingeschränkt, wenn ein _Version 1_-Laufwerk-Pool vorhanden ist.
-
-Die Version eines Laufwerkspools kann im Speicher-Array-Profil identifiziert werden.
-
-
-
- a| 
-System Manager und Unified Manager werden nur gestartet, wenn die Mindestanforderungen des Browsers erfüllt sind
- a| 
-Bevor System Manager oder Unified Manager gestartet wird, ist eine Mindestversion des Browsers erforderlich. Folgende Versionen werden mindestens unterstützt:
-
-* Firefox Mindestversion 80
-* Chrome Mindestversion 89
-* Edge Mindestversion 90
-* Safari Mindestversion 14
-
-
-
-
- a| 
-Unterstützung für FIPS 140-3 NVMe-SSD-Laufwerke
- a| 
-NetApp-zertifizierte NVMe-SSD-Laufwerke nach FIPS 140-3 werden jetzt unterstützt. Diese werden im Speicher-Array-Profil und im System Manager korrekt identifiziert.
-
-
-
- a| 
-Unterstützung für SSD-Lese-Cache auf EF300 und EF600
- a| 
-SSD-Lese-Cache wird jetzt auf EF300- und EF600-Controllern unterstützt, die HDD mit SAS-Erweiterung verwenden.
-
-
-
- a| 
-Unterstützung für asynchrone Remote-Spiegelung von iSCSI und Fibre Channel auf EF300 und EF600
- a| 
-Asynchrone Remote-Spiegelung (ARVM) wird nun auf EF300- und EF600-Controllern mit NVMe und SAS-basierten Volumes unterstützt.
-
-
-
- a| 
-Unterstützung für EF300 und EF600 ohne Laufwerke im Basifach
- a| 
-EF300- und EF600-Controller-Konfigurationen ohne NVMe-Laufwerke in der Basis-Tray werden jetzt unterstützt.
-
-
-
- a| 
-USB-Anschlüsse für alle Plattformen deaktiviert
- a| 
-USB-Anschlüsse sind jetzt auf allen Plattformen deaktiviert.
+Konfigurierbar nur über die REST-API, eine neue Einstellung für die Anmeldesperre ist jetzt für eingebettete und Proxy-Web-Services verfügbar.
 
 |===

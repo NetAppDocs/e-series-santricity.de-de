@@ -34,7 +34,7 @@ Eine synchrone Spiegelbeziehung besteht aus einem primären Volume und einem sek
 
 Bei der Konfiguration der synchronen Spiegelung müssen Volumes zu Paaren konfiguriert werden. Nachdem Sie ein gespiegeltes Paar erstellt haben, das aus einem primären Volume auf einem Storage Array und einem sekundären Volume auf einem anderen Storage Array besteht, können Sie mit der synchronen Spiegelung beginnen. Die Schritte im synchronen Spiegeln sind unten dargestellt.
 
-image::../media/sam-1130-dwg-sync-mirroring-session.gif[sam 1130 DWG Sync Spiegelungssitzung]
+image::../media/sam-1130-dwg-sync-mirroring-session.gif[Sitzung zur synchronen Spiegelung]
 
 . Ein Schreibvorgang erfolgt vom Host.
 . Der Schreibvorgang wird an das primäre Volume übertragen, an das Remote-System übertragen und anschließend an das sekundäre Volume übertragen.

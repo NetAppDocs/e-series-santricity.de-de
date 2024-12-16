@@ -23,7 +23,7 @@ Wenn Sie Snapshots des Basis-Volumes erstellen möchten, können Sie jederzeit e
 
 Die folgende Abbildung zeigt die Beziehung zwischen Snapshot Objekten und dem Basis-Volume.
 
-image::../media/sam1130-dwg-snapshots-images-overview.gif[Sam1130 dwg Momentaufnahmen Bilder Übersicht]
+image::../media/sam1130-dwg-snapshots-images-overview.gif[Snapshot Objekte und Basis-Volume]
 
 ^1^ Basis-Volume; ^2^ Snapshot Objekte in der Gruppe (Images und reservierte Kapazität); ^3^ reservierte Kapazität für die Snapshot-Gruppe.
 

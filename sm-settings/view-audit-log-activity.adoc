@@ -81,7 +81,7 @@ Wählen Sie *Löschen* aus, um ein Dialogfeld zu öffnen, in dem Sie alte Ereign
  a| 
 Spalten ein-/ausblenden
  a| 
-Klicken Sie auf das Spaltensymbol *ein-/ausblenden* image:../media/sam-1140-ss-access-columns.gif[""] So wählen Sie zusätzliche Spalten aus, die in der Tabelle angezeigt werden sollen. Weitere Spalten sind:
+Klicken Sie auf das Spaltensymbol *ein/Ausblenden*image:../media/sam-1140-ss-access-columns.gif["Spalte ein-/ausblenden"], um zusätzliche Spalten für die Anzeige in der Tabelle auszuwählen. Weitere Spalten sind:
 
 ** *Methode* -- die HTTP-Methode (z. B. POST, GET, DELETE usw.).
 ** *CLI Befehl ausgeführt* -- der CLI-Befehl (Grammatik) ausgeführt für Secure CLI Anfragen.
@@ -99,14 +99,14 @@ Klicken Sie auf das Spaltensymbol *ein-/ausblenden* image:../media/sam-1140-ss-a
  a| 
 Spaltenfilter ein- oder ausschalten
  a| 
-Klicken Sie auf das Symbol *Umschalten* image:../media/sam-1140-ss-access-toggle.gif[""] Zum Öffnen von Filterfeldern für jede Spalte. Geben Sie in ein Spaltenfeld Zeichen ein, um die durch diese Zeichen angezeigten Ereignisse einzuschränken. Klicken Sie erneut auf das Symbol, um die Filterfelder zu schließen.
+Klicken Sie auf das Symbol *Umschalten*image:../media/sam-1140-ss-access-toggle.gif["Umschalten"], um Filterfelder für jede Spalte zu öffnen. Geben Sie in ein Spaltenfeld Zeichen ein, um die durch diese Zeichen angezeigten Ereignisse einzuschränken. Klicken Sie erneut auf das Symbol, um die Filterfelder zu schließen.
 
 
 
  a| 
 Änderungen rückgängig machen
  a| 
-Klicken Sie auf das Symbol *Rückgängig* image:../media/sam-1140-ss-access-undo.gif[""] Um die Tabelle auf die Standardkonfiguration zurückzugeben.
+Klicken Sie auf das Symbol *Rückgängig*image:../media/sam-1140-ss-access-undo.gif["Rückgängig Machen"], um die Tabelle auf die Standardkonfiguration zurückzusenden.
 
 
 

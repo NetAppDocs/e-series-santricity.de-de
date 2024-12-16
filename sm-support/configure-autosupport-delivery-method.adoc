@@ -2,7 +2,7 @@
 permalink: sm-support/configure-autosupport-delivery-method.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, configure, autosupport, ASUP, delivery, method 
-summary: Die AutoSupport-Funktion unterstützt die HTTPS-, HTTP- und SMTP-Protokolle zum Bereitstellen von Patches für den technischen Support. 
+summary: Die AutoSupport-Funktion unterstützt die HTTPS- und SMTP-Protokolle für die Bereitstellung von Dispatches an den technischen Support. 
 ---
 = Konfigurieren der AutoSupport-Bereitstellungsmethode
 :allow-uri-read: 
@@ -12,7 +12,7 @@ summary: Die AutoSupport-Funktion unterstützt die HTTPS-, HTTP- und SMTP-Protok
 
 
 [role="lead"]
-Die AutoSupport-Funktion unterstützt die HTTPS-, HTTP- und SMTP-Protokolle zum Bereitstellen von Patches für den technischen Support.
+Die AutoSupport-Funktion unterstützt die HTTPS- und SMTP-Protokolle für die Bereitstellung von Dispatches an den technischen Support.
 
 .Bevor Sie beginnen
 * Die AutoSupport-Funktion muss aktiviert sein. Sie sehen, ob die Funktion auf der Seite AutoSupport aktiviert ist.
@@ -23,13 +23,12 @@ Die AutoSupport-Funktion unterstützt die HTTPS-, HTTP- und SMTP-Protokolle zum 
 Überprüfen Sie die verschiedenen Protokolle:
 
 * *HTTPS* -- ermöglicht es Ihnen, sich direkt mit dem Ziel-Server des technischen Supports über HTTPS zu verbinden. Wenn Sie AutoSupport OnDemand oder Remote-Diagnose aktivieren möchten, muss die AutoSupport-Bereitstellungsmethode auf HTTPS gesetzt werden.
-* *HTTP* -- ermöglicht Ihnen die direkte Verbindung mit dem Ziel-technischen Support-Server über HTTP.
 * *E-Mail* -- ermöglicht Ihnen, einen E-Mail-Server als Liefermethode für das Senden von AutoSupport-Entsendungen zu verwenden.
 
 
 [NOTE]
 ====
-*Unterschiede zwischen den HTTPS/HTTP- und E-Mail-Methoden*. Die E-Mail-Bereitstellungsmethode, die SMTP verwendet, hat einige wichtige Unterschiede zu den HTTPS- und HTTP-Bereitstellungsmethoden. Erstens ist die Größe der Dispatches für die E-Mail-Methode auf 5 MB begrenzt, was bedeutet, dass einige ASUP Datensammlungen nicht versendet werden. Zweitens ist die Funktion AutoSupport OnDemand nur für HTPP- und HTTPS-Methoden verfügbar.
+*Unterschiede zwischen den Methoden HTTPS und Email*. Die E-Mail-Versandmethode, die SMTP verwendet, weist einige wichtige Unterschiede zur HTTPS-Bereitstellungsmethode auf. Erstens ist die Größe der Dispatches für die E-Mail-Methode auf 5 MB begrenzt, was bedeutet, dass einige ASUP Datensammlungen nicht versendet werden. Zweitens ist die AutoSupport OnDemand-Funktion nur für die HTTPS-Bereitstellungsmethode verfügbar.
 
 ====
 .Schritte
@@ -40,9 +39,9 @@ Es wird ein Dialogfeld angezeigt, in dem die Versandmethoden aufgeführt sind.
 
 . Wählen Sie die gewünschte Liefermethode aus, und wählen Sie dann die Parameter für diese Bereitstellungsmethode aus. Führen Sie einen der folgenden Schritte aus:
 +
-** Wenn Sie HTTPS oder HTTP ausgewählt haben, wählen Sie einen der folgenden Bereitstellungsparameter aus:
+** Wenn Sie HTTPS ausgewählt haben, wählen Sie einen der folgenden Bereitstellungsparameter aus:
 +
-*** *Direkt* -- dieser Lieferparameter ist die Standardauswahl. Wenn Sie diese Option auswählen, können Sie mithilfe des HTTPS- oder HTTP-Protokolls direkt eine Verbindung zum technischen Zielsystem herstellen.
+*** *Direkt* -- dieser Lieferparameter ist die Standardauswahl. Wenn Sie diese Option wählen, können Sie mithilfe des HTTPS-Protokolls eine direkte Verbindung zum technischen Supportsystem des Ziels herstellen.
 *** *Über Proxy Server* -- mit dieser Option können Sie die HTTP Proxy-Serverdetails angeben, die für die Verbindung mit dem technischen Zielunterstützungssystem erforderlich sind. Sie müssen die Host-Adresse und die Portnummer angeben. Sie müssen jedoch nur die Details zur Host-Authentifizierung (Benutzername und Passwort) eingeben, falls erforderlich.
 *** *Über Proxy Auto-Configuration Script (PAC)* -- Geben Sie den Speicherort einer PAC-Skriptdatei (Proxy Auto-Configuration) an. Mit einer PAC-Datei kann das System automatisch den entsprechenden Proxyserver auswählen, um eine Verbindung mit dem technischen Zielunterstützungssystem herzustellen.
 

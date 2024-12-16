@@ -33,7 +33,7 @@ Mehrere Storage-Array-Komponenten enthalten Software oder Hardware, die ein gele
 * *Supervisor Software* -- Supervisor Software ist die virtuelle Maschine auf einem Controller, in dem die Software ausgeführt wird.
 
 
-image::../media/sam1130-dwg-upgrade-firmware-locations.gif[Speicherorte für die Firmware-Aktualisierung von sam1130 DWG]
+image::../media/sam1130-dwg-upgrade-firmware-locations.gif[Speicherorte der Firmware aktualisieren]
 
 ^1^ Controller-Shelf; ^2^ Festplatten-Shelf; ^3^ Software, Controller-Firmware, Controller NVSRAM Supervisor-Software; ^4^ Laufwerk-Firmware; ^5^ IOM-Firmware; ^6^ Laufwerk-Firmware
 

@@ -24,6 +24,9 @@ Verwenden Sie den folgenden Workflow, um die Hardwareverbindungen vorzubereiten.
 
 Diese Schritte finden Sie im Benutzerhandbuch zur Remote-Speicherfunktion, die im E-Series and SANtricity Dokumentationszentrum unter verfügbar ist https://docs.netapp.com/us-en/e-series/remote-storage-volumes/index.html["Remote Storage Volumes: Überblick"^], Und im https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["Technischer Bericht Zu Remote-Storage"^].
 
+
+NOTE: SANtricity-Remote-Speicher-Volumes werden derzeit nicht auf E4000-Systemen unterstützt.
+
 In dem lokalen E-Series Storage-System:
 
 . Stellen Sie sicher, dass jeder Controller über eine iSCSI-Verbindung zum Remote-Speichersystem verfügt. Mit dieser Verbindung fungiert das lokale E-Series System als iSCSI-Initiator, der als Host auf dem Remote-System eingerichtet werden kann.

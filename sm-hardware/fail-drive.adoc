@@ -44,6 +44,6 @@ Die Kopieroption ermöglicht eine schnellere Wiederherstellung des Laufwerks als
 
 . Bestätigen Sie, dass das Laufwerk ausfallen soll.
 +
-Warten Sie nach dem Ausfall des Laufwerks mindestens 30 Sekunden, bevor Sie es entfernen.
+Warten Sie nach dem Ausfall des Laufwerks mindestens 60 Sekunden, bevor Sie es entfernen.
 
 

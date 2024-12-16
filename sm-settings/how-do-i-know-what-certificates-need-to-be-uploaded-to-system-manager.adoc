@@ -13,6 +13,10 @@ summary: Für das externe Verschlüsselungsmanagement importieren Sie zwei Arten
 [role="lead"]
 Für das externe Verschlüsselungsmanagement importieren Sie zwei Arten von Zertifikaten zur Authentifizierung zwischen dem Storage-Array und dem Schlüsselverwaltungsserver, damit sich die beiden Entitäten gegenseitig vertrauen können.
 
-Ein Client-Zertifikat validiert die Controller des Storage-Arrays, damit der wichtige Management-Server seine KMIP-Anforderungen (Key Management Interoperability Protocol) anvertrauen kann. Um ein Client-Zertifikat zu erhalten, verwenden Sie System Manager, um eine CSR für das Speicher-Array abzuschließen. Anschließend können Sie die CSR auf einen Schlüsselverwaltungsserver hochladen und von dort aus ein Clientzertifikat generieren. Wenn Sie über ein Clientzertifikat verfügen, kopieren Sie diese Datei auf den Host, auf den Sie auf System Manager zugreifen.
+Ein Client-Zertifikat validiert die Controller des Storage-Arrays, damit der wichtige Management-Server seine KMIP-Anforderungen (Key Management Interoperability Protocol) anvertrauen kann.
+
+Um ein Client-Zertifikat zu erhalten, verwenden Sie System Manager, um eine CSR für das Speicher-Array abzuschließen. Sie können eine CSR auch extern mit einem privaten und öffentlichen Schlüsselpaar erstellen.
+
+Anschließend können Sie die CSR auf einen Schlüsselverwaltungsserver hochladen und von dort aus ein Clientzertifikat generieren. Wenn Sie über ein Clientzertifikat verfügen, kopieren Sie diese Datei auf den Host, auf den Sie auf System Manager zugreifen.
 
 Ein Zertifikat für den Schlüsselmanagementserver validiert den Schlüsselmanagementserver, damit das Storage-Array seiner IP-Adresse vertrauen kann. Rufen Sie die Serverzertifikatdatei vom Schlüsselverwaltungsserver ab, und kopieren Sie diese Datei dann auf den Host, auf dem Sie auf System Manager zugreifen.

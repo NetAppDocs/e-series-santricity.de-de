@@ -33,6 +33,6 @@ Sie erstellen eine Snapshot-Konsistenzgruppe, wenn Sie sicherstellen möchten, d
 
 Die Volumes, die in einer Snapshot-Konsistenzgruppe enthalten sind, werden als Mitgliedvolumes bezeichnet. Wenn Sie einer Konsistenzgruppe ein Volume hinzufügen, erstellt System Manager automatisch eine neue reservierte Kapazität, die dem entsprechenden Mitglied-Volume entspricht. Sie können einen Zeitplan definieren, in dem automatisch ein Snapshot-Image für jedes Mitgliedsvolume erstellt wird.
 
-image::../media/sam1130-dwg-snapshots-consistency-groups-overview.gif[Sam1130 dwg Snapshots Übersicht Consistency Groups]
+image::../media/sam1130-dwg-snapshots-consistency-groups-overview.gif[Übersicht über Snapshot Konsistenzgruppen]
 
 ^1^ reservierte Kapazität; ^2^ Member Volume; ^3^ Snapshot Images der Konsistenzgruppe

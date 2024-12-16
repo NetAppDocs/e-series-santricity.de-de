@@ -17,6 +17,6 @@ Wenn Sie ein Snapshot-Volume erstellen, können Sie es als __read-onl__y oder _r
 
 Wenn Sie schreibgeschützte Snapshot Volumes erstellen, müssen Sie keine reservierte Kapazität hinzufügen. Wenn Sie Snapshot-Volumes mit Lese- und Schreibvorgängen erstellen, müssen Sie reservierte Kapazität hinzufügen, um Schreibzugriff zu ermöglichen.
 
-image::../media/sam1130-dwg-snapshots-volumes-overview.gif[Sam1130 dwg Momentaufnahmen Volumen Übersicht]
+image::../media/sam1130-dwg-snapshots-volumes-overview.gif[Snapshot Volumes – Übersicht]
 
 ^1^ Basis-Volume; ^2^ Host; ^3^ schreibgeschütztes Snapshot-Volume; ^4^ Snapshot-Volume mit Lese- und Schreibzugriff; ^5^ reservierte Kapazität

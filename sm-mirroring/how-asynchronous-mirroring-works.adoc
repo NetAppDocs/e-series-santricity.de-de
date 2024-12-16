@@ -30,7 +30,7 @@ Das asynchrone Spiegeln erfasst den Status des primären Volumes zu einem bestim
 
 Es gibt vier Hauptschritte in einer aktiven asynchronen Spiegelungssitzung.
 
-image::../media/sam-1130-dwg-async-mirroring-session.gif[sam 1130 DWG asynchrone Spiegelungssitzung]
+image::../media/sam-1130-dwg-async-mirroring-session.gif[Asynchrone Spiegelungssitzung]
 
 . Ein Schreibvorgang erfolgt zuerst auf dem Storage-Array des primären Volumes.
 . Der Status des Vorgangs wird an den Host zurückgegeben.

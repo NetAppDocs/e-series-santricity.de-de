@@ -31,7 +31,7 @@ Quell- und Ziel-Volumes von Kopien müssen dieselben gemeldeten Host-adressierba
 
 Gemeldete Blockgrößen von Volumes sind:
 
-* *Native Blockgröße* – die Blockgröße des Volumes entspricht der Blockgröße des Laufwerks, entweder 512 oder 4K.
+* *Native Blockgröße* – die Blockgröße des Volumes entspricht der Blockgröße des Laufwerks, entweder 512 oder 4 KB.
 * *Emulierte 512 Blockgröße* - Laufwerke sind 4K, aber die gemeldete Blockgröße ist 512.
 
 

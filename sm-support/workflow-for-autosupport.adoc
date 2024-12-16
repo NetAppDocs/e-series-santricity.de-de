@@ -13,4 +13,4 @@ summary: Konfigurieren Sie in SANtricity System Manager die AutoSupport-Funktion
 [role="lead"]
 Sie konfigurieren in System Manager die AutoSupport-Funktion, indem Sie die folgenden Schritte ausführen.
 
-image::../media/sam1130-flw-support-asup-setup.gif[Einstellung der flw-Unterstützung für Sam1130]
+image::../media/sam1130-flw-support-asup-setup.gif[AutoSupport Workflow]

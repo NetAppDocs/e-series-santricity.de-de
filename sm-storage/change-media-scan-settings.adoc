@@ -28,6 +28,9 @@ Wenn die Redundanzprüfung eine Inkonsistenz zwischen Daten und den Redundanzinf
 
 
 
+
+NOTE: Der standardmäßige Medienscan-Zeitraum ist auf 120 Tage festgelegt.
+
 .Über diese Aufgabe
 Medienprüfungen erkennen und reparieren Medienfehler auf Festplattenlaufwerken, die selten von Applikationen gelesen werden. Dadurch wird Datenverlust bei einem Laufwerksausfall verhindert, da die Daten der ausgefallenen Laufwerke durch Redundanzinformationen und die Daten anderer Laufwerke in der Volume-Gruppe oder dem Pool rekonstruiert werden.
 

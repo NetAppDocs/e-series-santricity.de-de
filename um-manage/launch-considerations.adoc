@@ -21,4 +21,4 @@ Um auf System Manager zugreifen zu können, müssen Sie Folgendes haben:
 * Eine Out-of-Band-Verbindung zu einem Netzwerk-Management-Client mit einem Webbrowser.
 
 
-image::../media/single2800.gif[Single2800]
+image::../media/single2800.gif[Bandexterne Verbindung zum Netzwerkverwaltungs-Client mit einem Webbrowser.]

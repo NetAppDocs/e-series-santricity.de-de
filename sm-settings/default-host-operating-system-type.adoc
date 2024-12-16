@@ -27,8 +27,3 @@ Wenn Sie beispielsweise acht verschiedene Hosts mit dem Speicher-Array verbinden
 Wenn Sie beispielsweise acht verschiedene Hosts mit dem Storage-Array verbinden und zwei dieser Hosts ein Windows-Betriebssystem ausführen, werden drei unter einem VMware Betriebssystem ausgeführt. Und weitere drei führen ein Linux-Betriebssystem aus. Sie müssen als Standard-Host-Betriebssystem Factory Default auswählen.
 
 
-
-[]
-====
-
-====

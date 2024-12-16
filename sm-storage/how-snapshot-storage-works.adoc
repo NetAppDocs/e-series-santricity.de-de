@@ -30,7 +30,7 @@ Während Snapshots erstellt werden, speichert die Snapshot Funktion Bilddaten wi
 * Ein erstelltes Snapshot Image entspricht genau dem Basis-Volume. Die Snapshot Funktion verwendet Copy-on-Write-Technologie. Nach der Erstellung eines Snapshots werden bei dem ersten Schreibvorgang eines oder mehrere Blöcke in das Basis-Volume die Originaldaten in die reservierte Kapazität kopiert, bevor die neuen Daten in das Basis-Volume geschrieben werden.
 * Nachfolgende Snapshots enthalten nur geänderte Datenblöcke. Bevor Daten auf dem Basis-Volume überschrieben werden, verwendet die Snapshot-Funktion ihre Copy-on-Write-Technologie, um die erforderlichen Bilder der betroffenen Sektoren auf die Snapshot-reservierte Kapazität zu speichern.
 +
-image::../media/sam1130-dwg-snapshots-cow-overview.gif[Sam1130 dwg Momentaufnahmen Kuhübersicht]
+image::../media/sam1130-dwg-snapshots-cow-overview.gif[Snapshot – Übersicht]
 
 
 

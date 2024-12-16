@@ -17,10 +17,10 @@ In System Manager können Sie Snapshot Images und Snapshot-Volumes erstellen, in
 
 == Workflow zum Erstellen von Snapshot Images
 
-image::../media/sam1130-flw-snapshots-create-ss-images.gif[Sam1130 flw-Snapshots erstellen ss-Bilder]
+image::../media/sam1130-flw-snapshots-create-ss-images.gif[Erstellen Sie einen Workflow für Snapshot-Bilder]
 
 
 
 == Workflow für die Erstellung von Snapshot Volumes
 
-image::../media/sam1130-flw-snapshots-create-ss-volumes.gif[Sam1130 flw-Snapshots erstellen ss-Volumes]
+image::../media/sam1130-flw-snapshots-create-ss-volumes.gif[Erstellen Sie einen Workflow für Snapshot-Volumes]
