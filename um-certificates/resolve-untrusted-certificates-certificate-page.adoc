@@ -12,7 +12,7 @@ summary: Nicht vertrauenswürdige Zertifikate treten auf, wenn ein Speicher-Arra
 
 
 [role="lead"]
-Nicht vertrauenswürdige Zertifikate treten auf, wenn ein Speicher-Array versucht, eine sichere Verbindung zu Unified Manager herzustellen, die Verbindung jedoch nicht als sicher bestätigt werden kann.
+Nicht vertrauenswürdige Zertifikate treten auf, wenn ein Speicher-Array versucht, eine sichere Verbindung zu SANtricity Unified Manager herzustellen, die Verbindung jedoch nicht als sicher bestätigt.
 
 Auf der Zertifikatsseite können Sie nicht vertrauenswürdige Zertifikate auflösen, indem Sie ein selbstsigniertes Zertifikat aus dem Speicher-Array importieren oder ein Zertifikat der Zertifizierungsstelle importieren, das von einem vertrauenswürdigen Dritten ausgestellt wurde.
 

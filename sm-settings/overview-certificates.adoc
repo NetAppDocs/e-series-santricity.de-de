@@ -11,7 +11,7 @@ summary: 'Mit System Manager können Sie Zertifikatsignierungsanforderungen (CSR
 
 
 [role="lead"]
-Mit System Manager können Sie Zertifikatsignierungsanforderungen (CSRs) erstellen, Zertifikate importieren und vorhandene Zertifikate verwalten.
+Sie können SANtricity System Manager verwenden, um Zertifikatsignierungsanforderungen (CSRs) zu erstellen, Zertifikate zu importieren und vorhandene Zertifikate zu verwalten.
 
 
 

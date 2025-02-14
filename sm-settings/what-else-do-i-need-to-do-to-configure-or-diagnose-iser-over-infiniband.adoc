@@ -12,7 +12,7 @@ summary: In der folgenden Tabelle werden die System Manager Funktionen aufgefüh
 
 
 [role="lead"]
-In der folgenden Tabelle werden die System Manager Funktionen aufgeführt, mit denen Sie iSER-over-InfiniBand-Sitzungen konfigurieren und managen können.
+In der folgenden Tabelle sind die Funktionen von SANtricity System Manager aufgeführt, mit denen Sie iSER-over-InfiniBand-Sessions konfigurieren und managen können.
 
 [NOTE]
 ====

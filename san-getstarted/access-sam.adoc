@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access System Manager 
 summary: Um auf die Benutzeroberfläche von System Manager zuzugreifen, zeigen Sie einen Browser auf die IP-Adresse des Controllers. Ein Setup-Assistent hilft Ihnen beim Einstieg in die Systemkonfiguration. 
 ---
-= Greifen Sie Auf System Manager Zu
+= Greifen Sie auf SANtricity System Manager zu
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -12,7 +12,7 @@ summary: Um auf die Benutzeroberfläche von System Manager zuzugreifen, zeigen S
 
 
 [role="lead"]
-Um auf die Benutzeroberfläche von System Manager zuzugreifen, zeigen Sie einen Browser auf die IP-Adresse des Controllers. Ein Setup-Assistent hilft Ihnen beim Einstieg in die Systemkonfiguration.
+Für den Zugriff auf die Benutzeroberfläche von SANtricity System Manager rufen Sie die IP-Adresse des Controllers in einem Browser auf. Ein Setup-Assistent hilft Ihnen beim Einstieg in die Systemkonfiguration.
 
 .Bevor Sie beginnen
 * Installieren und konfigurieren Sie Ihre Hardware, wie in einer der Express-Konfigurationsanleitungen beschrieben:

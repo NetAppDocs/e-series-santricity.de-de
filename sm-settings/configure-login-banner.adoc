@@ -12,7 +12,7 @@ summary: Sie können ein Login-Banner erstellen, das Benutzern angezeigt wird, b
 
 
 [role="lead"]
-Sie können ein Anmeldebanner erstellen, das Benutzern angezeigt wird, bevor Sitzungen in System Manager erstellt werden. Das Banner kann einen Hinweishinweisen und eine Einwilligungsmeldung enthalten.
+Sie können ein Login-Banner erstellen, das Benutzern angezeigt wird, bevor sie Sitzungen in SANtricity System Manager einrichten. Das Banner kann einen Hinweishinweisen und eine Einwilligungsmeldung enthalten.
 
 .Über diese Aufgabe
 Wenn Sie ein Banner erstellen, wird es vor dem Anmeldebildschirm in einem Dialogfeld angezeigt.

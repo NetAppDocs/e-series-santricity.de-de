@@ -12,7 +12,7 @@ summary: 'Die auf dem Storage-Array erzwungenen RBAC-Funktionen (rollenbasierte 
 
 
 [role="lead"]
-Die auf dem Storage-Array erzwungenen RBAC-Funktionen (rollenbasierte Zugriffssteuerung) umfassen vordefinierte Benutzerprofile, die mit einer oder mehreren zugewiesenen Rollen ausgestattet sind. Jede Rolle umfasst Berechtigungen für den Zugriff auf Aufgaben in System Manager.
+Die auf dem Storage-Array erzwungenen RBAC-Funktionen (rollenbasierte Zugriffssteuerung) umfassen vordefinierte Benutzerprofile, die mit einer oder mehreren zugewiesenen Rollen ausgestattet sind. Jede Rolle umfasst Berechtigungen für den Zugriff auf Aufgaben in SANtricity System Manager.
 
 Auf Benutzerprofile und zugeordnete Rollen kann über das Menü:Einstellungen[Zugriffsmanagement > Lokale Benutzerrollen] in der Benutzeroberfläche eines System Managers zugegriffen werden.
 

@@ -12,7 +12,7 @@ summary: Wenn Sie die IP-Adresse für das Speicher-Array geändert haben, möcht
 
 
 [role="lead"]
-Wenn Sie die IP-Adresse für das Speicher-Array geändert haben, möchten Sie möglicherweise die Ansicht des globalen Arrays in Unified Manager aktualisieren.
+Wenn Sie die IP-Adresse für das Speicher-Array geändert haben, möchten Sie möglicherweise die Ansicht des globalen Arrays in SANtricity Unified Manager aktualisieren.
 
 Um die Ansicht des globalen Arrays in Unified Manager zu aktualisieren, öffnen Sie die Schnittstelle und gehen Sie zum Menü:Verwalten[Entdecken].
 

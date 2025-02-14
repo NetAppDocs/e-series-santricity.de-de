@@ -11,7 +11,7 @@ summary: Add-ons sind Funktionen, die nicht in der Standardkonfiguration von Sys
 
 
 [role="lead"]
-Add-ons sind Funktionen, die nicht in der Standardkonfiguration von System Manager enthalten sind und möglicherweise einen Schlüssel zur Aktivierung erfordern. Eine Add-on-Funktion kann entweder eine einzelne Premium-Funktion oder ein im Paket enthaltene Features sein.
+Bei Add-ons handelt es sich um Funktionen, die nicht in der Standardkonfiguration von SANtricity System Manager enthalten sind, und die möglicherweise eine Schlüsselfunktion erfordern. Eine Add-on-Funktion kann entweder eine einzelne Premium-Funktion oder ein im Paket enthaltene Features sein.
 
 Die folgenden Schritte geben einen Überblick über die Aktivierung einer Premium-Funktion oder eines Features-Packs:
 

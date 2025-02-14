@@ -11,7 +11,7 @@ summary: Sie können mit der Tastatur alleine durch den System Manager navigiere
 
 
 [role="lead"]
-Sie können mit der Tastatur alleine durch den System Manager navigieren.
+Sie können in SANtricity System Manager nur über die Tastatur navigieren.
 
 
 

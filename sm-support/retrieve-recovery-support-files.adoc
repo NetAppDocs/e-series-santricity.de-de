@@ -12,7 +12,7 @@ summary: Der technische Support kann Dateien zum Recovery Support verwenden, um 
 
 
 [role="lead"]
-Der technische Support kann Dateien zum Recovery Support verwenden, um Probleme zu beheben. System Manager speichert diese Dateien automatisch.
+Der technische Support kann Dateien zum Recovery Support verwenden, um Probleme zu beheben. Diese Dateien werden von SANtricity System Manager automatisch gespeichert.
 
 .Bevor Sie beginnen
 Der technische Support hat angefordert, dass Sie ihnen zusätzliche Dateien zur Fehlerbehebung senden.

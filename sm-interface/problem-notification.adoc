@@ -11,7 +11,7 @@ summary: System Manager verwendet Symbole und verschiedene andere Methoden, um S
 
 
 [role="lead"]
-System Manager verwendet Symbole und verschiedene andere Methoden, um Sie über Probleme mit dem Speicher-Array zu informieren.
+SANtricity System Manager verwendet Symbole und verschiedene andere Methoden, um Sie über Probleme mit dem Speicher-Array zu informieren.
 
 
 

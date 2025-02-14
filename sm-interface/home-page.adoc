@@ -11,7 +11,7 @@ summary: Die Startseite enthält eine Dashboard-Ansicht für die tägliche Verwa
 
 
 [role="lead"]
-Die Startseite enthält eine Dashboard-Ansicht für die tägliche Verwaltung Ihres Speicherarrays. Wenn Sie sich bei System Manager anmelden, wird die Startseite der erste Bildschirm angezeigt.
+Die Startseite enthält eine Dashboard-Ansicht für die tägliche Verwaltung Ihres Speicherarrays. Wenn Sie sich beim SANtricity System Manager anmelden, wird als erster Bildschirm die Startseite angezeigt.
 
 Die Dashboard-Ansicht enthält vier Übersichtsbereiche mit wichtigen Informationen zu Status und Zustand Ihres Storage-Arrays. Weitere Informationen finden Sie im Übersichtsbereich.
 

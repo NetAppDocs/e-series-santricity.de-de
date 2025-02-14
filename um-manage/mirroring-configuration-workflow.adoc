@@ -11,7 +11,7 @@ summary: Sie konfigurieren asynchrone oder synchrone Spiegelung in Unified Manag
 
 
 [role="lead"]
-Sie konfigurieren asynchrone oder synchrone Spiegelung in Unified Manager und managen dann die Synchronisierung mit System Manager.
+In SANtricity Unified Manager wird die asynchrone oder synchrone Spiegelung konfiguriert und anschließend mit SANtricity System Manager die Synchronisierung verwaltet.
 
 
 

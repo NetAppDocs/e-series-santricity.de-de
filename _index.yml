@@ -11,9 +11,9 @@ indexpage:
   tiles:
   - title: Los geht's
     links:
-    - title: Benutzeroberfläche von System Manager
+    - title: Schnittstelle von SANtricity System Manager
       url: /sm-interface/overview-interface-sam.html"
-    - title: Unified Manager Schnittstelle
+    - title: SANtricity Unified Manager Schnittstelle
       url: "/um-admin/overview-interface-unified.html"
     - title: SANtricity Software-Datenblatt
       url: https://www.netapp.com/pdf.html?item=/media/7676-ds-3891.pdf

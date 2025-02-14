@@ -11,7 +11,7 @@ summary: System Manager legt Grenzen für die Anzahl der Laufwerke fest, die Sie
 
 
 [role="lead"]
-System Manager legt Grenzen für die Anzahl der Laufwerke fest, die Sie aus einem Pool entfernen können.
+SANtricity System Manager legt Grenzwerte für die Anzahl der Laufwerke fest, die aus einem Pool entfernt werden können.
 
 * Sie können die Anzahl der Laufwerke in einem Pool nicht auf weniger als 11 Laufwerke reduzieren.
 * Laufwerke können nicht entfernt werden, wenn nicht genügend freie Kapazität im Pool vorhanden ist, um die Daten von den entfernten Laufwerken zu enthalten, wenn diese Daten auf die übrigen Laufwerke im Pool verteilt werden.

@@ -12,7 +12,7 @@ summary: 'Bei Bedarf können Zertifikate für die Speicher-Arrays importiert wer
 
 
 [role="lead"]
-Bei Bedarf können Zertifikate für die Speicher-Arrays importiert werden, sodass sie sich mit dem System authentifizieren können, das Unified Manager hostet. Zertifikate können von einer Zertifizierungsstelle (CA) signiert oder selbst signiert werden.
+Bei Bedarf können Zertifikate für die Speicher-Arrays importiert werden, sodass sie sich mit dem System authentifizieren können, das SANtricity Unified Manager hostet. Zertifikate können von einer Zertifizierungsstelle (CA) signiert oder selbst signiert werden.
 
 .Bevor Sie beginnen
 * Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.

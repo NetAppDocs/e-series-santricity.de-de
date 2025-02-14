@@ -11,7 +11,7 @@ summary: Die Spiegelung ist in der Unified Manager-Schnittstelle konfiguriert.
 
 
 [role="lead"]
-Die Spiegelung ist in der Unified Manager-Schnittstelle konfiguriert.
+Spiegelung wird in der Schnittstelle des SANtricity Unified Managers konfiguriert.
 
 [NOTE]
 ====

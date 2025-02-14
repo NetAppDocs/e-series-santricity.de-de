@@ -12,7 +12,7 @@ summary: Wenn Sie ein primäres Volume auf einem älteren Storage-Array erstellt
 
 
 [role="lead"]
-Wenn Sie ein primäres Volume auf einem älteren Storage-Array erstellt haben, das nicht durch System Manager gemanagt werden kann, können Sie das sekundäre Volume auf diesem Array mit System Manager erstellen.
+Wenn Sie ein primäres Volume auf einem älteren Storage-Array erstellt haben, das nicht durch SANtricity System Manager gemanagt werden kann, können Sie das sekundäre Volume auf diesem Array mit SANtricity System Manager erstellen.
 
 .Über diese Aufgabe
 Sie können asynchrone Spiegelungen zwischen älteren Arrays durchführen, die eine andere Schnittstelle verwenden, und neuere Arrays, die von System Manager gemanagt werden können.

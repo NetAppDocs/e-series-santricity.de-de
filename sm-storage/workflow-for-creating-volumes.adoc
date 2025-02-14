@@ -11,6 +11,6 @@ summary: In SANtricity System Manager können Sie Volumes erstellen, indem Sie d
 
 
 [role="lead"]
-In System Manager können Sie Volumes erstellen, indem Sie diese Schritte ausführen.
+In SANtricity System Manager können Sie Volumes erstellen, indem Sie diese Schritte ausführen.
 
 image::../media/sam1130-flw-volumes-create.gif[Volumes-Workflow erstellen]

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, host detection 
 summary: Wenn Sie die verbundenen Hosts nicht sehen, ist die automatische Erkennung fehlgeschlagen, die Hosts sind nicht ordnungsgemäß angeschlossen oder es sind derzeit keine Hosts angeschlossen. 
 ---
-= System Manager hat keine Hosts erkannt. Was mache ich?
+= Der SANtricity System Manager hat keine Hosts erkannt. Was mache ich?
 :allow-uri-read: 
 :experimental: 
 :icons: font

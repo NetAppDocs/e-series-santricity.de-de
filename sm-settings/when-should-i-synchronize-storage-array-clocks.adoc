@@ -11,7 +11,7 @@ summary: 'Sie sollten die Controller-Uhren im Speicher-Array manuell synchronisi
 
 
 [role="lead"]
-Sie sollten die Controller-Uhren im Speicher-Array manuell synchronisieren, wenn Sie bemerken, dass die in System Manager angezeigten Zeitstempel nicht mit den im Management-Client angezeigten Zeitstempeln (dem Computer, der über den Browser auf System Manager zugreift) ausgerichtet sind. Diese Aufgabe ist nur erforderlich, wenn das NTP (Network Time Protocol) in System Manager nicht aktiviert ist.
+Sie sollten die Controller-Uhren im Speicher-Array manuell synchronisieren, wenn Sie bemerken, dass die in SANtricity System Manager angezeigten Zeitstempel nicht auf die im Management-Client angezeigten Zeitstempel ausgerichtet sind (der Computer, der über den Browser auf SANtricity System Manager zugreift). Diese Aufgabe ist nur erforderlich, wenn NTP (Network Time Protocol) im SANtricity-System-Manager nicht aktiviert ist.
 
 [NOTE]
 ====

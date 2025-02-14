@@ -12,7 +12,7 @@ summary: 'System Manager kann Kapazitätswerte in Gibibyte (gib) bzw. Tebibyte (
 
 
 [role="lead"]
-System Manager kann Kapazitätswerte in Gibibyte (gib) bzw. Tebibyte (tib) anzeigen.
+SANtricity System Manager kann Kapazitätswerte entweder in Gibibyte (gib) oder Tebibyte (tib) anzeigen.
 
 Einstellungen werden im lokalen Speicher des Browsers gespeichert, so dass alle Benutzer ihre eigenen Einstellungen haben können.
 

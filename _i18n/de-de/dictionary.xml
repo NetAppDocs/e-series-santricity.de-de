@@ -626,7 +626,6 @@
   <block id="f76b720fd7e00e01366f6c9fe226fbba" category="list-text">Bei einem _fortgesetzten_ gespiegelten Paar werden die Daten automatisch auf das sekundäre Volume des gespiegelten Paars geschrieben, wenn die Synchronisierung wieder aufgenommen wird. Eine vollständige Synchronisation ist nicht erforderlich.</block>
   <block id="7f29556c75106b05f3d2b4179dcc2406" category="summary">Wenn Sie ein primäres Volume auf einem älteren Storage-Array erstellt haben, das nicht über den SANtricity System Manager gemanagt werden kann, können Sie das sekundäre Volume auf diesem Array mit System Manager erstellen.</block>
   <block id="87b4e06d5443a380cc83c83c3d590d35" category="doc">Vollständiges gespiegeltes Paar für auf dem alten System erstellte primäre Volumes</block>
-  <block id="abe482b981924f3c0e95f1bdc14f29dc" category="paragraph">Wenn Sie ein primäres Volume auf einem älteren Storage-Array erstellt haben, das nicht durch System Manager gemanagt werden kann, können Sie das sekundäre Volume auf diesem Array mit System Manager erstellen.</block>
   <block id="380f85f6054e74968d72b39236e80732" category="paragraph">Sie können asynchrone Spiegelungen zwischen älteren Arrays durchführen, die eine andere Schnittstelle verwenden, und neuere Arrays, die von System Manager gemanagt werden können.</block>
   <block id="33560e79148fad52472bc34df24ac293" category="list-text">Wenn Sie zwischen zwei Speicher-Arrays, die System Manager verwenden, spiegeln, können Sie diese Aufgabe überspringen, da Sie das gespiegelte Paar in der Erstellungsreihenfolge für gespiegelte Paare bereits abgeschlossen haben.</block>
   <block id="d680891c022a8b76135d7b350bcfef66" category="list-text">Führen Sie diese Aufgabe auf dem Remote-Speicher-Array aus.</block>
@@ -1167,7 +1166,6 @@
   <block id="2d77764408426ef7cc12ec0cb8bab868" category="list-text">Wählen Sie auf der Seite Verwalten die Option MENU:Gruppen verwalten[Speicherarray-Gruppe löschen].</block>
   <block id="df88e1007319fd66fb452b699b950fb9" category="list-text">Wählen Sie eine oder mehrere Speicherarray-Gruppen aus, die Sie löschen möchten.</block>
   <block id="bd5c1b4a761c6f196221f804787289cb" category="summary">Sie können die Option Start verwenden, um den Browser-basierten SANtricity-System-Manager für ein oder mehrere Storage-Arrays zu öffnen, wenn Sie Managementvorgänge ausführen möchten.</block>
-  <block id="8911f9d4a79da70f2e2f26cc33ada8aa" category="paragraph">Sie können die Option Start verwenden, um den Browser-basierten System Manager für ein oder mehrere Speicher-Arrays zu öffnen, wenn Sie Managementvorgänge ausführen möchten.</block>
   <block id="dc81e35ba70439bdea73c9ca731dedc7" category="list-text">Wählen Sie auf der Seite Verwalten ein oder mehrere Storage Arrays aus, die Sie managen möchten.</block>
   <block id="3eab8ee0f45fd9624973c05ec4303d5a" category="list-text">Klicken Sie Auf *Start*.</block>
   <block id="a269bd71b079afa7d2ec900d0f51428d" category="paragraph">Das System öffnet ein neues Fenster und zeigt die Anmeldeseite von System Manager an.</block>
@@ -1187,7 +1185,6 @@
   <block id="05b001e38e62fa7f77ccbc1eb21cec1f" category="list-text">Die Laufwerkskapazität kann zwischen den Quell- und Ziel-Arrays variieren, solange die Volume-Kapazität auf dem Ziel größer ist als die Quelle. (In einem Ziel-Array sind unter Umständen neuere Laufwerke mit höherer Kapazität enthalten, die durch den Replizierungsvorgang nicht vollständig in Volumes konfiguriert wären.)</block>
   <block id="4fe5208fe8ba8110b56b8acc0c96d17e" category="summary">Die Funktion „Importeinstellungen“ ist ein Batch-Vorgang, bei dem Konfigurationen von einem Speicher-Array auf mehrere Speicher-Arrays geladen werden. Die während dieses Vorgangs importierten Einstellungen hängen davon ab, wie das Quell-Speicher-Array in SANtricity System Manager konfiguriert ist.</block>
   <block id="d77d1605f41e6be3f550ae05cfaca17d" category="doc">Welche Einstellungen werden importiert?</block>
-  <block id="c7f22d49f002f26198a719f2496c2e98" category="paragraph">Die Funktion „Importeinstellungen“ ist ein Batch-Vorgang, bei dem Konfigurationen von einem Speicher-Array auf mehrere Speicher-Arrays geladen werden. Die während dieses Vorgangs importierten Einstellungen hängen davon ab, wie das Quell-Speicher-Array in System Manager konfiguriert ist.</block>
   <block id="eb66762bbeb3f99c598499dad7ab6419" category="paragraph">Die folgenden Einstellungen können in mehrere Speicher-Arrays importiert werden:</block>
   <block id="25e8a6fd63ed997760d824ab39cd4591" category="list-text">*E-Mail-Alarme* -- Einstellungen beinhalten eine E-Mail-Server-Adresse und die E-Mail-Adressen der Warnungsempfänger.</block>
   <block id="6dad188816c45ced8208980247910468" category="list-text">*Syslog Alerts* -- Einstellungen beinhalten eine Syslog-Serveradresse und einen UDP-Port.</block>
@@ -1230,7 +1227,6 @@
   <block id="d42c8b73b3ccc12638f610f2623a0c09" category="list-text">Das Speicher-Array ist offline.</block>
   <block id="05693bc32413083ba1ba81023c2fa739" category="list-text">Das System kann nicht mit diesem Array kommunizieren (z. B. verfügt das Array über Zertifikat-, Passwort- oder Netzwerkprobleme).</block>
   <block id="7671664858be05fdbfc7ebd9e330e072" category="summary">Bevor Unified Manager Storage-Ressourcen anzeigen und verwalten kann, muss er die Speicherarrays ermitteln, die Sie im Netzwerk Ihres Unternehmens managen möchten. Sie können mehrere Arrays ermitteln oder ein einziges Array erkennen.</block>
-  <block id="9b4ac681029804460c9ba68ebc344819" category="paragraph">Bevor Unified Manager Storage-Ressourcen anzeigen und verwalten kann, muss er die Storage-Arrays ermitteln, die Sie im Netzwerk Ihres Unternehmens managen möchten. Sie können mehrere Arrays ermitteln oder ein einziges Array erkennen.</block>
   <block id="d316240204769eb0f31faba6852de25e" category="section-title">Erkennung mehrerer Storage-Arrays</block>
   <block id="c1180fcf0651dd21fc1fde9763788bc7" category="paragraph">Wenn Sie mehrere Arrays ermitteln möchten, geben Sie einen Netzwerk-IP-Adressbereich ein, und Unified Manager versucht dann individuelle Verbindungen zu jeder IP-Adresse in diesem Bereich. Jedes erfolgreich erreichte Speicher-Array wird auf der Seite „Entdecken“ angezeigt und kann Ihrer Management-Domäne hinzugefügt werden.</block>
   <block id="429de7c9197491bab6d29f7b2cb5f688" category="section-title">Erkennen eines einzelnen Speicher-Arrays</block>
@@ -1252,7 +1248,6 @@
   <block id="bc2ada3b24f486f7b98ff3159828f426" category="list-text">Sie laden die aktuelle SANtricity OS-Softwaredatei von der Support-Website herunter (ein Link ist im Unified Manager auf der Seite *Support* verfügbar). Speichern Sie die Datei auf dem Management-Host-System (dem Host, auf dem Sie in einem Browser auf Unified Manager zugreifen), und entpacken Sie die Datei anschließend.</block>
   <block id="d18c8b00e80b505406982d1c60493e63" category="summary">Sie können ein oder mehrere Storage Arrays entfernen, wenn Sie es nicht mehr über SANtricity Unified Manager managen möchten.</block>
   <block id="bc54c8923d2e900bc8b88d98dcd843d0" category="doc">Entfernen Sie die Storage-Arrays von SANtricity Unified Manager</block>
-  <block id="0c9f801d60084ecd96df66d961171ed0" category="paragraph">Sie können ein oder mehrere Storage-Arrays entfernen, wenn Sie es nicht mehr über Unified Manager managen möchten.</block>
   <block id="46da89f7644863b59a53669234ecf705" category="paragraph">Sie können nicht auf die von Ihnen entfernenden Speicher-Arrays zugreifen. Sie können jedoch eine Verbindung zu einem der entfernten Speicher-Arrays herstellen, indem Sie einen Browser direkt auf seine IP-Adresse oder den Host-Namen zeigen.</block>
   <block id="928414d532f3a0bd88fe01efa33e49cc" category="paragraph">Das Entfernen eines Speicher-Arrays hat keinerlei Auswirkungen auf das Speicher-Array oder seine Daten. Wenn ein Speicher-Array versehentlich entfernt wird, kann es erneut hinzugefügt werden.</block>
   <block id="c0906399540cc4c4cd2789192cf8a8b0" category="list-text">Wählen Sie die Seite *Verwalten* aus.</block>
@@ -1260,7 +1255,6 @@
   <block id="f0cada94971cea51f1b987d8ea5860cb" category="list-text">Menü wählen:Sonstige Aufgaben[Speicher-Array entfernen].</block>
   <block id="d85754902d559838e6aaf3bf9f4441c7" category="paragraph">Das Storage Array wird aus allen Ansichten in SANtricity Unified Manager entfernt.</block>
   <block id="bcd2040d9a3029641d27c34b32354648" category="summary">Sie wählen ein oder mehrere Speicher-Arrays aus und öffnen SANtricity System Manager mit der Option Start, wenn Sie Speicher-Arrays konfigurieren und verwalten möchten.</block>
-  <block id="625735d117f75d6e7141cef378902859" category="paragraph">Sie wählen ein oder mehrere Speicher-Arrays aus und öffnen System Manager mit der Option Start, wenn Sie Speicher-Arrays konfigurieren und verwalten möchten.</block>
   <block id="e2de2b40f2bec701c57fd2fbde183531" category="paragraph">System Manager ist eine eingebettete Applikation auf den Controllern, die über einen Ethernet-Management-Port mit dem Netzwerk verbunden ist. Es umfasst alle Array-basierten Funktionen.</block>
   <block id="97c771fec542c151941358c9507e1818" category="paragraph">Um auf System Manager zugreifen zu können, müssen Sie Folgendes haben:</block>
   <block id="d2bf6cf91aae10964c05d43904777ddb" category="inline-link-macro">E-Series Hardware im Überblick</block>
@@ -1566,7 +1560,6 @@
   <block id="c9710a8cd583f0f544c65217ac2484fa" category="paragraph">Durch das Festlegen der Baseline wird ein neuer Ausgangspunkt für die Erfassung der Statistiken festgelegt. Dieselbe Baseline wird für alle iSCSI-Statistiken verwendet.</block>
   <block id="53f6e38bfb8737cd78f3afe40356d59e" category="summary">Konfigurieren Sie in SANtricity System Manager die AutoSupport-Funktion, indem Sie die folgenden Schritte ausführen.</block>
   <block id="abcd71b1bdd83d175115a06e7bd6993c" category="doc">Workflow für die AutoSupport Funktion</block>
-  <block id="fa1ad6ca18787ce10b28e8361e9f1ad1" category="paragraph">Sie konfigurieren in System Manager die AutoSupport-Funktion, indem Sie die folgenden Schritte ausführen.</block>
   <block id="443cf1e2c428e934274219aeac369658" category="summary">Sie können die Statistikdatei für den I/O-Pfad speichern und sie dem technischen Support zur Analyse senden.</block>
   <block id="6739422a53818bdb36852797e1f9c3f6" category="doc">Erstellen von Statistiken zu I/O-Pfaden</block>
   <block id="f9ca73be8df98d300caf430674536c26" category="paragraph">Der technische Support verwendet die Statistiken des I/O-Pfads, um die Diagnose von Performance-Problemen zu erleichtern. Probleme mit der Applikations-Performance können durch Arbeitsspeicherauslastung, CPU-Auslastung, Netzwerklatenz, I/O-Latenz oder andere Probleme verursacht werden. Die Statistiken des I/O-Pfads werden während der Support-Datenerfassung automatisch erfasst oder manuell erfasst. Wenn AutoSupport aktiviert ist, werden zudem automatisch die I/O-Pfadstatistiken erfasst und an den technischen Support gesendet.</block>
@@ -2010,7 +2003,6 @@
   <block id="5c9d6da11d2301f575c2befdae75457d" category="paragraph">Zeigen Sie Informationen zu den für einen externen Schlüsselverwaltungsserver importierten CA-signierten Zertifikaten an.</block>
   <block id="ae8f19f0991a75dbac99ee6e45ba300b" category="summary">Sie können Timeouts in SANtricity System Manager konfigurieren, so dass die inaktiven Sitzungen der Benutzer nach einer bestimmten Zeit getrennt werden.</block>
   <block id="d08a3e1e92c08c9907f0557b4e28da7a" category="doc">Verwalten von Sitzungszeitungen</block>
-  <block id="0d08d54101084156343832dde6b77679" category="paragraph">Sie können Timeouts in System Manager konfigurieren, so dass die inaktiven Sitzungen der Benutzer nach einer bestimmten Zeit getrennt werden.</block>
   <block id="7e21334170926970f8d92b45e8391954" category="paragraph">Standardmäßig beträgt die Session-Zeitüberschreitung für System Manager 30 Minuten. Sie können diese Zeit anpassen oder Sitzungszeitausfälle ganz deaktivieren.</block>
   <block id="e535d8be0b5cae9eeaf63966afda7bde" category="paragraph">Wenn Access Management mit den in das Array integrierten SAML-Funktionen (Security Assertion Markup Language) konfiguriert ist, kann es zu einer Sitzungszeitüberschreitung kommen, wenn die SSO-Sitzung des Benutzers ihre maximale Grenze erreicht. Dies kann vor dem Timeout der System Manager-Sitzung auftreten.</block>
   <block id="5303e6808de2e1eb2cd0b535241f849f" category="list-text">Wählen Sie im Abschnitt Allgemein die Option *Session-Timeout aktivieren/deaktivieren*.</block>
@@ -2463,7 +2455,6 @@
   <block id="2c4fb17f56b133b231c685e339581505" category="paragraph">In einer gemeinsamen LAN-Umgebung (Local Area Network) wie Ethernet könnten viele Stationen den Zugang zum Netzwerk zu schaffen haben. Der Zugriff erfolgt in der Reihenfolge der eingehenden Reservierungen. Zwei Stationen versuchen möglicherweise gleichzeitig, auf das Netzwerk zuzugreifen, was dazu führt, dass beide Stationen wieder aus- und abschalten und warten, bevor sie es erneut versuchen. Dieser Vorgang wird bei geswitchten Ethernet minimiert, bei dem nur eine Station mit einem Switch-Port verbunden ist.</block>
   <block id="3c625277723f7e35643a56ecccb51d80" category="summary">Von System Manager können Sie das CLI-Paket (Befehlszeilenschnittstelle) herunterladen.</block>
   <block id="b44398f4857f5ee9b5b3372c0d3a83ac" category="doc">Befehlszeilenschnittstelle (CLI) herunterladen</block>
-  <block id="934757b9623717972adcc349e85d6283" category="paragraph">Von System Manager können Sie das CLI-Paket (Befehlszeilenschnittstelle) herunterladen.</block>
   <block id="f0edcadd28eaa53b81b22a31b44b45b9" category="paragraph">Die CLI bietet eine textbasierte Methode zur Konfiguration und Überwachung von Speicher-Arrays. Es kommuniziert über HTTPS und verwendet dieselbe Syntax wie die CLI, die im extern installierten Managementsoftwarepaket verfügbar ist. Zum Herunterladen der CLI ist kein Schlüssel erforderlich.</block>
   <block id="75842716a65060950b20cba161cbac95" category="paragraph">Eine Java Runtime Environment (JRE), Version 8 und höher, muss auf dem Managementsystem verfügbar sein, auf dem Sie die CLI-Befehle ausführen möchten.</block>
   <block id="bd5b00551ee618ada817137a1272291f" category="list-text">Wählen Sie unter *Add-ons* die Option *Command Line Interface*.</block>
@@ -2895,7 +2886,6 @@
   <block id="8bca22899d68e3e88a277a87b49ddb92" category="list-text">Wenn Sie den Sicherheitsschlüssel immer noch nicht validieren können, ist die Originaldatei möglicherweise beschädigt. Erstellen Sie ein neues Backup des Schlüssels und validieren Sie diese Kopie.</block>
   <block id="4bdba401227da38e05e805640bc07392" category="summary">Die auf dem Storage-Array erzwungenen RBAC-Funktionen (rollenbasierte Zugriffssteuerung) umfassen vordefinierte Benutzerprofile, die mit einer oder mehreren zugewiesenen Rollen ausgestattet sind. Jede Rolle umfasst Berechtigungen für den Zugriff auf Aufgaben in SANtricity System Manager.</block>
   <block id="262eb45cac9556326049423e63e6c21c" category="doc">Berechtigungen für zugeordnete Rollen</block>
-  <block id="2f9b4deb9315aed582af1e2cad742214" category="paragraph">Die auf dem Storage-Array erzwungenen RBAC-Funktionen (rollenbasierte Zugriffssteuerung) umfassen vordefinierte Benutzerprofile, die mit einer oder mehreren zugewiesenen Rollen ausgestattet sind. Jede Rolle umfasst Berechtigungen für den Zugriff auf Aufgaben in System Manager.</block>
   <block id="4af88e993472ad0efbe148c3d71082f9" category="paragraph">Auf Benutzerprofile und zugeordnete Rollen kann über das Menü:Einstellungen[Zugriffsmanagement &gt; Lokale Benutzerrollen] in der Benutzeroberfläche eines System Managers zugegriffen werden.</block>
   <block id="536f38e388f0e686eaac049b4bfaf373" category="paragraph">Die Rollen ermöglichen Benutzern den Zugriff auf Aufgaben wie folgt:</block>
   <block id="730a090cd84a0ce605e346fc4d569c15" category="paragraph">Wenn ein Benutzer über keine Berechtigungen für eine bestimmte Aufgabe verfügt, ist diese Aufgabe entweder ausgegraut oder wird nicht in der Benutzeroberfläche angezeigt.</block>
@@ -2910,7 +2900,6 @@
   <block id="3ac3febbb07afc0d4f4391a215e8c883" category="paragraph">Wählen Sie diese Option aus, und geben Sie dann eine statische Adresse in die Felder ein. (Bei Bedarf können Sie Adressen in die Felder ausschneiden und einfügen.) Geben Sie bei IPv4 die Subnetzmaske und das Gateway des Netzwerks an. Geben Sie für IPv6 die routingfähige IP-Adresse und die Router-IP-Adresse ein. Wenn Sie ein EF600 Speicher-Array mit einer 200-GB-fähigen HIC konfigurieren, werden in diesem Dialogfeld zwei Feldsätze für Netzwerkparameter angezeigt: Eines für einen physischen Port (extern) und eines für einen virtuellen Port (intern). Sie sollten für beide Ports eindeutige Parameter zuweisen. Mit diesen Einstellungen kann der Host einen Pfad zwischen jedem Port und für die HIC einrichten, um eine maximale Performance zu erzielen. Wenn Sie dem virtuellen Port keine IP-Adresse zuweisen, läuft die HIC mit etwa der Hälfte ihrer fähigen Geschwindigkeit.</block>
   <block id="981aaa3b1d8f5d256493b92b6b493e0a" category="summary">Sie können ein Login-Banner erstellen, das Benutzern angezeigt wird, bevor sie Sitzungen in SANtricity System Manager einrichten. Das Banner kann einen Hinweishinweisen und eine Einwilligungsmeldung enthalten.</block>
   <block id="8efb09501bad8ce68b1a1bc93afb135d" category="doc">Anmeldebanner konfigurieren</block>
-  <block id="69bfc5b49cdbb5ecfe1a3226439e05f5" category="paragraph">Sie können ein Anmeldebanner erstellen, das Benutzern angezeigt wird, bevor Sitzungen in System Manager erstellt werden. Das Banner kann einen Hinweishinweisen und eine Einwilligungsmeldung enthalten.</block>
   <block id="7335dfb2a6a5b54076e56c28f64c1b27" category="paragraph">Wenn Sie ein Banner erstellen, wird es vor dem Anmeldebildschirm in einem Dialogfeld angezeigt.</block>
   <block id="715a220c50a620ae5a87b5d1e1719b4e" category="list-text">Wählen Sie im Abschnitt Allgemein die Option *Anmelde-Banner konfigurieren* aus.</block>
   <block id="795b64a6f7aa721a8a5c6f7bcdb2da8b" category="paragraph">Das Dialogfeld Anmelde-Banner konfigurieren wird geöffnet.</block>
@@ -3108,7 +3097,6 @@
   <block id="67df9e4d8fc6a2a01205045d14761593" category="list-text">Wählen Sie unter * Security Key Management* * * Secure Drives entsperren* aus.</block>
   <block id="19380508f9149606321ac832a3c00e8a" category="summary">Die Zugriffsverwaltung ist eine Methode zur Einrichtung der Benutzerauthentifizierung in SANtricity System Manager. Zu den Authentifizierungsmethoden zählen RBAC (rollenbasierte Zugriffssteuerung), Directory Services und Security Assertion Markup Language (SAML) 2.0.</block>
   <block id="8a85e54e2f698ad0de66d093245f2e66" category="doc">Zugriffsmanagement – Überblick</block>
-  <block id="09802636c4ae135257f67339b6132e62" category="paragraph">Access Management ist eine Methode zur Einrichtung der Benutzerauthentifizierung in System Manager.</block>
   <block id="ed5fe7f66e9072ed2fe64e1c8ad6737d" category="section-title">Welche Authentifizierungsmethoden sind verfügbar?</block>
   <block id="1f5e202c614a1661cfc9d511376773ed" category="paragraph">Zu den Authentifizierungsmethoden zählen RBAC (rollenbasierte Zugriffssteuerung), Directory Services und Security Assertion Markup Language (SAML):</block>
   <block id="4b8217cf8d756a89a1dc65298ed13a9a" category="list-text">*RBAC/Lokale Benutzerrollen* -- Authentifizierung wird über im Storage Array erzwungene RBAC-Funktionen gemanagt. Lokale Benutzerrollen umfassen vordefinierte Benutzerprofile und Rollen mit spezifischen Zugriffsberechtigungen.</block>
@@ -3494,7 +3482,6 @@
   <block id="4b0847badf4df2f436372c3f65ecd674" category="paragraph">Der entfernte Server empfängt keine Warnmeldungen mehr von der Ereignisüberwachung.</block>
   <block id="c73b1b4d687800d408f419f0f0df3f39" category="summary">Wenn das Network Time Protocol (NTP) nicht aktiviert ist, können Sie die Uhren auf den Controllern manuell so einstellen, dass sie mit dem Management-Client synchronisiert werden (das System, mit dem der Browser ausgeführt wird, der auf SANtricity System Manager zugreift).</block>
   <block id="98ab351cb9c5d5c191ae7f2acc9960e7" category="doc">Speicherarray-Uhren synchronisieren</block>
-  <block id="3a7965dd150006ce04e7d23d6db0b1a0" category="paragraph">Wenn das Network Time Protocol (NTP) nicht aktiviert ist, können Sie die Uhren auf den Controllern manuell so einstellen, dass sie mit dem Management-Client synchronisiert werden (das System, mit dem der Browser ausgeführt wird, auf den System Manager zugreift).</block>
   <block id="5686e4a1839427d3f101f1242524feeb" category="paragraph">Durch die Synchronisierung wird sichergestellt, dass Ereigniszeitstempel in den Zeitstempeln des Ereignisprotokolls in die Host-Log-Dateien geschrieben werden. Während der Synchronisierung bleiben die Controller verfügbar und betriebsbereit.</block>
   <block id="fdcb6fda8360a631ef2730c06e89ae28" category="paragraph">Wenn NTP in System Manager aktiviert ist, verwenden Sie diese Option nicht, um Uhren zu synchronisieren. Stattdessen synchronisiert NTP die Uhren automatisch mit einem externen Host mithilfe von SNTP (Simple Network Time Protocol).</block>
   <block id="187a2d7806202a5a575270922290f2a4" category="paragraph">Nach der Synchronisierung können Sie feststellen, dass Performance-Statistiken verloren gehen oder verzerrt sind, Zeitpläne betroffen sind (ASUP, Snapshots usw.), und Zeitstempel in den Log-Daten sind verzerrt. Die Verwendung von NTP verhindert dieses Problem.</block>
@@ -3580,7 +3567,6 @@
   <block id="909d8cdc7c100d1834d4de10094f43ca" category="list-text">Klicken Sie Auf *Aktivieren*.</block>
   <block id="b36030520bf6fb6f82f2952d906f0dd4" category="summary">Sie können System Manager für einige allgemeine Array-Einstellungen und Zusatzfunktionen konfigurieren.</block>
   <block id="c7f8006a54ae70968da2a44d61c94f4c" category="doc">Einstellungsübersicht</block>
-  <block id="2161120ac2f277c69a937d29896bb757" category="paragraph">Sie können System Manager für einige allgemeine Array-Einstellungen und Zusatzfunktionen konfigurieren.</block>
   <block id="f01afbc659c3b1d4c71bba9b1a9ce3ea" category="section-title">Welche Einstellungen kann ich konfigurieren?</block>
   <block id="92a98c57d8dff609da2fceddaeac27a4" category="paragraph">Die Array-Einstellungen umfassen:</block>
   <block id="9f6081850e27326c653ce13711fd1f40" category="list-text"><block ref="9f6081850e27326c653ce13711fd1f40" category="inline-link-macro-rx"></block></block>
@@ -3615,7 +3601,6 @@
   <block id="232702c653cde09c07912e338d3eacd8" category="list-text">Legen Sie eine Mindestlänge für Passwörter fest.</block>
   <block id="b19f31a8ba2f57c8e0ce96c8e5fe2bfa" category="list-text">Benutzern erlauben, sich ohne Passwörter anzumelden.</block>
   <block id="e78959343eccc5753e5a6f69aa17e104" category="summary">Für das externe Verschlüsselungsmanagement importieren Sie zwei Arten von Zertifikaten zur Authentifizierung zwischen dem Storage-Array und dem Schlüsselverwaltungsserver, damit sich die beiden Entitäten gegenseitig vertrauen können.</block>
-  <block id="6bb1fc83f2153c8e3dfddfa5b556e792" category="doc">Wie weiß ich, welche Zertifikate zum externen Verschlüsselungsmanagement in System Manager hochgeladen werden müssen?</block>
   <block id="9a4b083823a7c4b7786c0328f4a16e2a" category="paragraph">Ein Zertifikat für den Schlüsselmanagementserver validiert den Schlüsselmanagementserver, damit das Storage-Array seiner IP-Adresse vertrauen kann. Rufen Sie die Serverzertifikatdatei vom Schlüsselverwaltungsserver ab, und kopieren Sie diese Datei dann auf den Host, auf dem Sie auf System Manager zugreifen.</block>
   <block id="fb54e765bb9bb24d7dfc00f7e905e4ac" category="summary">Nach dem Erstellen oder Ändern eines Sicherheitsschlüssels können Sie eine Sicherungskopie der Schlüsseldatei erstellen, falls das Original beschädigt wird.</block>
   <block id="b542bf5590249f6b6b7c894f0e3e359b" category="paragraph">In dieser Aufgabe wird beschrieben, wie Sie einen zuvor erstellten Sicherheitsschlüssel sichern. Während dieses Verfahrens erstellen Sie einen neuen Passphrase für das Backup. Diese Passphrase muss nicht mit der Passphrase übereinstimmen, die bei der Erstellung des ursprünglichen Schlüssels oder der letzten Änderung verwendet wurde. Der Passphrase wird nur auf das Backup angewendet, das Sie erstellen.</block>
@@ -3910,7 +3895,6 @@
   <block id="944a7b1c0168a6d53cf9a53188e63035" category="paragraph">Der Status der prioritätsbasierten Flow Control (PFC) des spezifischen Ports. Der Wert ist entweder aktiviert oder deaktiviert.</block>
   <block id="c8a0ab123e3cad5a7b689f89639753e6" category="admonition">Weitere DCBX TLV Statistiken finden Sie in der State Capture Datei.</block>
   <block id="3d371728a27bfe9492e0557bfd5069d2" category="summary">Wenn Sie die verbundenen Hosts nicht sehen, ist die automatische Erkennung fehlgeschlagen, die Hosts sind nicht ordnungsgemäß angeschlossen oder es sind derzeit keine Hosts angeschlossen.</block>
-  <block id="e5455040d4a9ede58061022a5ec57985" category="doc">System Manager hat keine Hosts erkannt. Was mache ich?</block>
   <block id="f7ff4c91fa7860bce0649b5e3d3793d8" category="list-text">Sie können Hosts manuell erstellen und die entsprechenden Host-Port-IDs zuordnen, indem Sie zu MENU:Storage[Hosts] wechseln. Hosts, die manuell erstellt wurden, werden auch im Assistenten * Initial Setup* angezeigt.</block>
   <block id="50f6912c5df4e3e02e724cdec96987cf" category="list-text">Ziel und Host müssen für den Host-Port-Typ (z. B. iSCSI oder NVMe over RoCE) konfiguriert werden und eine Session für den Storage, der eingerichtet wurde, bevor die automatische Erkennung funktioniert.</block>
   <block id="e8b6fd44336114a9d9ca684f602e6ca0" category="summary">Verwenden Sie die Seite „Vorgänge in Bearbeitung“, um bei lang laufenden Vorgängen Aktionen anzuzeigen und Maßnahmen zu ergreifen.</block>
@@ -4157,8 +4141,6 @@
   <block id="f53bb3610199ab61220a8a29d54748a8" category="doc">Seite „Vorgänge in Bearbeitung“</block>
   <block id="c3008c8558711ff7e85fd87a8cce8608" category="paragraph">Lange laufende Vorgänge können die Systemleistung beeinträchtigen. Bei einigen Vorgängen haben Sie die Möglichkeit, den Vorgang zu beenden oder dessen Priorität zu ändern, damit zuerst mehr wichtige Vorgänge abgeschlossen werden.</block>
   <block id="3412f4f9996db44d85e9a7ddb64f8fc2" category="summary">Sie navigieren in der Hauptschnittstelle, um auf System Manager Funktionen und Aufgaben zuzugreifen.</block>
-  <block id="42ff625aa5c914a15cc639fd05aa3bfb" category="doc">Überblick über die System Manager Schnittstelle</block>
-  <block id="bb62a2f52038b073396f3df591dfc864" category="paragraph">System Manager ist eine webbasierte Schnittstelle, über die Sie ein Storage Array in einer Ansicht managen können.</block>
   <block id="deec4ff19974f12ed781cb9a59064214" category="cell">Werden</block>
   <block id="a274f4d4670213a9045ce258c6c56b80" category="paragraph">Benachrichtigungen</block>
   <block id="9446a98ad14416153cc4d45ab8b531bf" category="paragraph">Leistung</block>
@@ -4270,7 +4252,6 @@
   <block id="ac08423572707ef48cd80c7037a9eb8b" category="list-text">Wählen Sie * rekonstruieren*, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.</block>
   <block id="9a10dfa4820362278c75541e0d1eed8b" category="summary">Hot Spares fungieren als Standby-Laufwerke in RAID 1-, RAID 5- oder RAID 6-Volume-Gruppen für System Manager.</block>
   <block id="276a13903d824739180cb574a8b6063a" category="doc">Übersicht über Hot-Spare-Laufwerke</block>
-  <block id="e4fa5d6edf084bd88f0cdd23e75bb932" category="paragraph">Hot Spares fungieren als Standby-Laufwerke in RAID 1-, RAID 5- oder RAID 6-Volume-Gruppen für System Manager.</block>
   <block id="bb3d0b1d00371907893169044379dc18" category="paragraph">Es handelt sich dabei um voll funktionsfähige Laufwerke, die keine Daten enthalten. Wenn ein Laufwerk in der Volume-Gruppe ausfällt, rekonstruiert der Controller die Daten vom ausgefallenen Laufwerk automatisch auf ein Laufwerk, das als Hot Spare zugewiesen wurde.</block>
   <block id="44fc683d36bd75431aa319eb657eee3d" category="paragraph">Hot Spares sind nicht für bestimmte Volume-Gruppen bestimmt. Sie können für jedes ausgefallene Laufwerk im Speicher-Array verwendet werden, solange das Hot Spare und das Laufwerk diese Attribute teilen:</block>
   <block id="4cb8bf730ded016e3d4d1c1557bceadb" category="list-text">Gleiche Kapazität (oder höhere Kapazität für das Hot Spare)</block>
@@ -4701,7 +4682,6 @@
   <block id="ba39413d2b2c80858315e9691f40ee37" category="list-text">Wenn Sie die Beschreibungen der farbigen Komponenten anzeigen möchten, wählen Sie *Legende*.</block>
   <block id="260143c2df7ae0ce4b9a6b4e5820e5bb" category="summary">Wenn Sie die IP-Adresse für das Speicher-Array geändert haben, möchten Sie möglicherweise die Ansicht des globalen Arrays in SANtricity Unified Manager aktualisieren.</block>
   <block id="cc9d5e6a39247b7ae502a7f1e633c4f7" category="doc">Was soll ich nach dem Konfigurieren der Management-Ports tun?</block>
-  <block id="33be6721ee47ba737121b0b61fc7ccb1" category="paragraph">Wenn Sie die IP-Adresse für das Speicher-Array geändert haben, möchten Sie möglicherweise die Ansicht des globalen Arrays in Unified Manager aktualisieren.</block>
   <block id="67b52d0dd0552f62756981b7d04e334a" category="paragraph">Um die Ansicht des globalen Arrays in Unified Manager zu aktualisieren, öffnen Sie die Schnittstelle und gehen Sie zum Menü:Verwalten[Entdecken].</block>
   <block id="3f79a5cd8daf0ba8a2623f690e8ad45d" category="paragraph">Wenn Sie noch den SANtricity-Speicher-Manager verwenden, gehen Sie zum Enterprise Management-Fenster (EMW), wo Sie die neue IP-Adresse entfernen und erneut hinzufügen müssen.</block>
   <block id="f2e3b5ceb05cb906197674f645c90d1e" category="summary">Sie können ein Hot Spare als Standby-Laufwerk für zusätzlichen Datenschutz in RAID 1-, RAID 5- oder RAID 6-Volume-Gruppen zuweisen. Wenn ein Laufwerk in einer dieser Volume-Gruppen ausfällt, rekonstruiert der Controller Daten vom ausgefallenen Laufwerk auf dem Hot Spare.</block>
@@ -5095,7 +5075,6 @@
   <block id="abae3103c40e315696f9df20cd6e94ee" category="paragraph">Eine Applikation ist Software wie SQL Server oder Exchange. Sie definieren einen oder mehrere Workloads, um jede Applikation zu unterstützen. Für einige Applikationen empfiehlt das System automatisch eine Volume-Konfiguration zur Optimierung des Storage. Merkmale wie I/O-Typ, Segmentgröße, Controller-Eigentümer und Lese- und Schreib-Cache sind in der Volume-Konfiguration enthalten.</block>
   <block id="11922e324623e8ee6795b38fc97026aa" category="summary">In SANtricity System Manager können Sie Volumes erstellen, indem Sie diese Schritte ausführen.</block>
   <block id="fac200cebb0821f041baff659eae74b0" category="doc">Workflow für die Erstellung von Volumes</block>
-  <block id="26eaac99fa3741d6e7305e93cad51def" category="paragraph">In System Manager können Sie Volumes erstellen, indem Sie diese Schritte ausführen.</block>
   <block id="bf14dd0280604e6a034b2010188b827d" category="summary">Überprüfen Sie bei der Erstellung und Verwendung von Snapshots die folgenden Anforderungen und Richtlinien.</block>
   <block id="18a7bcdcdad88277c3bc9fbb32c94192" category="doc">Anforderungen und Richtlinien für Snapshots</block>
   <block id="ad9f9d864463081efefa7e457113d2f2" category="section-title">Snapshot Images und Snapshot Gruppen</block>
@@ -7889,8 +7868,6 @@
   <block id="effd8867201555d9e878c25e6ac1c734" category="inline-link">EMW-HILFE (E2700, E5600/EF560)</block>
   <block id="a0b75c365d2e51a35e74402a2c9667cf" category="list-text"><block ref="a0b75c365d2e51a35e74402a2c9667cf" category="inline-link-rx"></block></block>
   <block id="cdee3f665be88669170bda11b2f06c93" category="summary">Überblick über die Unified Manager Installation</block>
-  <block id="65747c74d7b2e455833a7211d404378f" category="doc">Installation Von Unified Manager</block>
-  <block id="34d9a59f7d7e5ba2b6d37af87522f26b" category="paragraph">Unified Manager ist im Web Services Proxy enthalten. Dabei handelt es sich um einen RESTful API-Server, der separat auf einem Host-System zum Management von NetApp E-Series Storage-Systemen installiert wird.</block>
   <block id="cbdedeba7d21b6ec4e131a86b76662c6" category="paragraph">Informationen zur Installation von Web Services Proxy und Unified Manager finden Sie im Dokumentationszentrum E-Series und SANtricity unter:</block>
   <block id="a18485577a4748889b9322afa1d6eadc" category="inline-link">Installations- und Upgrade-Anforderungen prüfen</block>
   <block id="192c70ae7442b1e297e8288370c5d9a7" category="list-text"><block ref="192c70ae7442b1e297e8288370c5d9a7" category="inline-link-rx"></block></block>
@@ -7970,8 +7947,6 @@
   <block id="d4d6f2044fbcdd351a413cab792d2d9c" category="paragraph">Erstellen Sie Zertifikatssignierungsanforderungen (CSRs), importieren Sie Zertifikate und verwalten Sie vorhandene Zertifikate für mehrere Speicher-Arrays.</block>
   <block id="121cd24338b48712373ab15539868779" category="paragraph">Konfigurieren Sie die Benutzerauthentifizierung, bei der sich Benutzer bei Unified Manager mit zugewiesenen Anmeldedaten anmelden müssen.</block>
   <block id="d424dbef08902607fe74ce66143ded85" category="summary">Zugriff auf Unified Manager und Anmeldung.</block>
-  <block id="935157885838ef2e13b906dc3cfa3504" category="doc">Zugriff Auf Unified Manager</block>
-  <block id="0fe8e078d723310c7a025dbb49b053a2" category="paragraph">Nach der Installation des Web Services Proxy können Sie auf Unified Manager zugreifen, um mehrere Speichersysteme in einer webbasierten Schnittstelle zu verwalten.</block>
   <block id="0a638be7984a916271be0d85fa354c61" category="admonition">Informationen zu unterstützten Browsern finden Sie unter <block ref="0d80156806b92a254389d706e3039498" category="inline-link-macro-rx"></block>.</block>
   <block id="75ac65baa63f90887df8eeedf86752f4" category="list-text">Öffnen Sie einen Browser, und geben Sie die folgende URL ein:</block>
   <block id="848952e64ae8b5ef373a4202f3a57872" category="paragraph"><block ref="3e736674396137d34a8397913ee98822" prefix="" category="inline-code"></block></block>
@@ -7981,14 +7956,12 @@
   <block id="95226cb0501c56de0568ff86c86bcedc" category="paragraph">Das Passwort kann bis zu 30 Zeichen umfassen.</block>
   <block id="c921ab82c25550633b7e359a45a16dda" category="paragraph">Weitere Informationen über Benutzer und Passwörter finden Sie unter <block ref="5c922583ae248325086bab7f2768b014" category="inline-link-macro-rx"></block>.</block>
   <block id="a1f94f83462c2ceebb1aef9832402037" category="summary">Sie können Timeouts für SANtricity Unified Manager konfigurieren, so dass die inaktiven Sitzungen der Benutzer nach einer bestimmten Zeit getrennt werden.</block>
-  <block id="8ad7e04aaecd791134a5e260a985aa04" category="paragraph">Sie können Timeouts für Unified Manager konfigurieren, so dass Benutzer inaktive Sitzungen nach einer bestimmten Zeit getrennt werden.</block>
   <block id="90bc078771cba1fa174144730e743ae1" category="paragraph">Standardmäßig beträgt das Sitzungszeitlimit für Unified Manager 30 Minuten. Sie können diese Zeit anpassen oder Sitzungszeitausfälle ganz deaktivieren.</block>
   <block id="5cdc5e794d92075b65fddab1a4df3b77" category="list-text">Wählen Sie in der Menüleiste den Dropdown-Pfeil neben Ihrem Benutzernamen aus.</block>
   <block id="dc5fab46b780f9174c45cb0a79e538b6" category="list-text">Wählen Sie *Zeitüberschreitung der Sitzung aktivieren/deaktivieren*.</block>
   <block id="b4be680c3d2ca05c238f23cda8f483c5" category="paragraph">Die minimale Zeitüberschreitung, die Sie einstellen können, beträgt 15 Minuten.</block>
   <block id="e9e6b18af35988c38b404cb9db9dab71" category="paragraph">Deaktivieren Sie zum Deaktivieren der Sitzungszeitzeiten das Kontrollkästchen *Zeitdauer festlegen...*.</block>
   <block id="c5140ae7574b7c90722120fd0af36a50" category="summary">Sie müssen SANtricity Unified Manager mit einem Administratorkennwort konfigurieren, um ihn vor unbefugtem Zugriff zu schützen.</block>
-  <block id="eeba445787fc95d90b8233e19693857b" category="paragraph">Sie müssen Unified Manager mit einem Administratorkennwort konfigurieren, um ihn vor unbefugtem Zugriff zu schützen.</block>
   <block id="1115a6e562080201b09b1af0e9c4f13a" category="section-title">Admin-Passwort und Benutzerprofile</block>
   <block id="95bd4ed85be27a910b2d6e09c064718e" category="paragraph">Wenn Sie Unified Manager zum ersten Mal starten, werden Sie aufgefordert, ein Administratorpasswort festzulegen. Jeder Benutzer mit dem Admin-Passwort kann Konfigurationsänderungen an den Speicher-Arrays vornehmen.</block>
   <block id="afcc47cd8fe4141e53312cbc86c96881" category="paragraph">Zusätzlich zum Admin-Passwort enthält die Unified Manager-Schnittstelle vorkonfigurierte Benutzerprofile mit einer oder mehreren Rollen, die ihnen zugeordnet sind. Weitere Informationen finden Sie unter <block ref="5c922583ae248325086bab7f2768b014" category="inline-link-macro-rx"></block>.</block>
@@ -8001,7 +7974,6 @@
   <block id="5135af888623806f0ba890173150ccd3" category="paragraph">Aus Sicherheitsgründen können Sie versuchen, ein Passwort nur fünf Mal einzugeben, bevor die Software den Status „Sperre“ eingibt. In diesem Zustand lehnt die Software nachfolgende Passwortversuche ab. Sie müssen 10 Minuten warten, um den Status „Normal“ zurückzusetzen, bevor Sie erneut versuchen, ein Passwort einzugeben.</block>
   <block id="2f8dca464fb973f09d9647570e912987" category="paragraph">Sie können Sitzungszeitausfälle anpassen oder Sitzungszeitausfälle komplett deaktivieren. Weitere Informationen finden Sie unter <block ref="491ec1fb8cfb51b8b30aff1b660d5fdc" category="inline-link-macro-rx"></block>.</block>
   <block id="c905ab540cd89c88f522731c7c764a87" category="summary">Sie können das Admin-Passwort ändern, das für den Zugriff auf SANtricity Unified Manager verwendet wird.</block>
-  <block id="f33a46d17adbb22063054d82821f25b7" category="paragraph">Sie können das Admin-Passwort ändern, das für den Zugriff auf Unified Manager verwendet wird.</block>
   <block id="bd6118611ef18d79d9e7eedceea12308" category="list-text">Sie müssen das aktuelle Admin-Passwort kennen.</block>
   <block id="f8d9bf7bcc41775eb6d5f8fcaaea7cd5" category="list-text">Nachgestellte Leerzeichen werden nicht aus Kennwörtern entfernt, wenn sie gesetzt sind. Achten Sie darauf, Leerzeichen einzugeben, wenn diese im Passwort enthalten waren.</block>
   <block id="afc11caec8df4bb27d2d12eb2cb8a68e" category="list-text">Wählen Sie den *admin*-Benutzer aus der Tabelle aus.</block>
@@ -8010,7 +7982,6 @@
   <block id="4210c9f98a5dc1ea45fd7d0d2dee8ef2" category="list-text">Geben Sie Ihr lokales Administratorpasswort ein, um diesen Vorgang zu bestätigen, und klicken Sie dann auf *Ändern*.</block>
   <block id="8f2804311a0084d47f6c63f97e6d6ced" category="summary">Sie können die Passwörter aktualisieren, die für die Anzeige und den Zugriff auf Speicher-Arrays in SANtricity Unified Manager verwendet werden.</block>
   <block id="2aebbeed1009439a37c2d8cc2d3c3b8c" category="doc">Ändern Sie die Passwörter für das Speicherarray</block>
-  <block id="56384fe256eff96c1a56aee05a2e3fbb" category="paragraph">Sie können die Passwörter aktualisieren, die für die Anzeige und den Zugriff auf Speicher-Arrays in Unified Manager verwendet werden.</block>
   <block id="3e06700262909cb379674ee849478971" category="list-text">Sie müssen mit einem Benutzerprofil angemeldet sein, das Storage Admin-Berechtigungen enthält.</block>
   <block id="6200b57bba4734c357cfd4a38fa16a12" category="list-text">Sie müssen das aktuelle Passwort für das Speicher-Array kennen, das in System Manager festgelegt ist.</block>
   <block id="5d0efaa3695cc3970597a53c9f03654a" category="paragraph">In dieser Aufgabe geben Sie das aktuelle Passwort für ein Speicher-Array ein, damit Sie in Unified Manager darauf zugreifen können. Dies kann notwendig sein, wenn das Array-Passwort in System Manager geändert wurde und jetzt auch in Unified Manager geändert werden muss.</block>
@@ -8018,7 +7989,6 @@
   <block id="e5d29807b71c6680617647dafa4db722" category="list-text">Menü wählen:Sonstige Aufgaben[Storage Array-Passwörter angeben].</block>
   <block id="b6deb366a7ea029beae2c06ae5edbee7" category="list-text">Geben Sie für jedes Speicherarray das Kennwort oder die Passwörter ein, und klicken Sie dann auf *Speichern*.</block>
   <block id="1b89afe60c3c3728ebb581ee0aac3506" category="summary">Unified Manager ist eine webbasierte Benutzeroberfläche, mit der Sie mehrere Storage Arrays in einer einzelnen Ansicht managen können.</block>
-  <block id="4dce3cdc79e2e44c19e0286c8128e182" category="doc">Übersicht über die Unified Manager Schnittstelle</block>
   <block id="8f8d2783d036ec8dbe4b6b9c1d0fed0d" category="section-title">Hauptseite</block>
   <block id="edab0a6bffc866b3b3e060784eab4d6a" category="paragraph">Wenn Sie sich bei Unified Manager anmelden, öffnet sich die Hauptseite zu *Verwalten - Alle*. Auf dieser Seite können Sie eine Liste der erkannten Speicher-Arrays in Ihrem Netzwerk durchblättern, ihren Status anzeigen und Vorgänge auf einem einzelnen Array oder einer Gruppe von Arrays durchführen.</block>
   <block id="bdb2999f28589aad2b040c21930c86dc" category="section-title">Navigationsleiste rechts in der Seitenleiste</block>
@@ -8039,13 +8009,11 @@
   <block id="dab914db541126686bbe7301f26a031b" category="list-text"><block ref="dab914db541126686bbe7301f26a031b" category="inline-link-macro-rx"></block></block>
   <block id="2e427df5c1b5f1934e9cdd88bb2c3cb2" category="summary">Auf SANtricity Unified Manager kann über verschiedene Browsertypen zugegriffen werden.</block>
   <block id="6d84e3718084e0db779da4ff8791a2f2" category="doc">Unterstützte Browser</block>
-  <block id="6d5a07028844be42740ba8ef0ebc030a" category="paragraph">Auf Unified Manager kann über verschiedene Browsertypen zugegriffen werden.</block>
   <block id="24bfb1beabc66d9a6a219a39706480f0" category="paragraph">Der Web Services Proxy muss installiert und für den Browser verfügbar sein.</block>
   <block id="c681bfc0ac97186ca0275c915355aa03" category="summary">Wenn Sie bei der Anmeldung einen Fehler erhalten, überprüfen Sie diese möglichen Ursachen.</block>
   <block id="99826f77d5097df8851cc5c8415b312e" category="paragraph">Aus einem der folgenden Gründe können Anmeldefehler auftreten:</block>
   <block id="3a28ad1c170234f0d60543085037ee65" category="list-text">Sie haben einen falschen Benutzernamen oder ein falsches Passwort eingegeben.</block>
   <block id="b9cba881bdd58bf9df0da788dc1b2941" category="summary">Auf der Registerkarte Lokale Benutzerrollen können Sie die Zuordnungen der Benutzer zu den Standardrollen anzeigen. Diese Zuordnungen sind Teil der RBAC (rollenbasierte Zugriffssteuerung), die im Web Services Proxy für SANtricity Unified Manager durchgesetzt wird.</block>
-  <block id="a0363d5fd0c0b077d52f4784dbe2bec9" category="paragraph">Auf der Registerkarte Lokale Benutzerrollen können Sie die Zuordnungen der Benutzer zu den Standardrollen anzeigen. Diese Zuordnungen sind Teil der RBAC (rollenbasierte Zugriffssteuerung), die im Web Services Proxy für Unified Manager durchgesetzt wird.</block>
   <block id="73ac0b03481ca2066ed032fc9c2875c2" category="paragraph">Die Benutzer und Zuordnungen können nicht geändert werden. Es können nur Passwörter geändert werden.</block>
   <block id="062bd96c08dfa22823465cc5da09e38b" category="list-text">Wählen Sie *Zugriffsmanagement*.</block>
   <block id="c5c570ddef1c2b01ec882c74deba2a55" category="paragraph">Die Benutzer sind in der Tabelle aufgeführt:</block>
@@ -8079,7 +8047,6 @@
   <block id="1a8f5fefd99ba5427cda707e9fef82f2" category="list-text">*Trusted* -- zeigt Zertifikate an, auf die Unified Manager für Speicher-Arrays und andere Remote-Server, z. B. einen LDAP-Server, zugreifen kann. Die Zertifikate können von einer Zertifizierungsstelle (CA) ausgestellt oder selbst signiert werden.</block>
   <block id="9c6c2f35f874859a647563b0d99e7685" category="list-text">Um weitere Informationen zu einem Zertifikat anzuzeigen, wählen Sie seine Zeile aus, wählen Sie die Ellipsen am Zeilenende aus und klicken Sie dann auf *Ansicht* oder *Export*.</block>
   <block id="061e64cad01b4cd81351026b626d0e7e" category="summary">Administratoren können die in SANtricity Unified Manager erzwungenen RBAC-Funktionen (rollenbasierte Zugriffssteuerung) nutzen. Diese Funktionen werden als lokale Benutzerrollen bezeichnet.</block>
-  <block id="ba501c87876b2abc6f333f2281c9b0d8" category="paragraph">Administratoren können RBAC-Funktionen (rollenbasierte Zugriffssteuerung) nutzen, die in Unified Manager durchgesetzt werden. Diese Funktionen werden als „lokale Benutzerrollen“ bezeichnet.</block>
   <block id="8605565fad22723762c246b949a49067" category="paragraph">Lokale Benutzerrollen sind im System vorkonfiguriert. Um lokale Benutzerrollen für die Authentifizierung zu verwenden, können Administratoren Folgendes tun:</block>
   <block id="80cebe0082fb9e9d2629ddbf03a45e94" category="list-text">Ein Administrator meldet sich bei Unified Manager mit einem Benutzerprofil an, das die Berechtigungen für Sicherheitsadministratoren enthält.</block>
   <block id="ecf13c865ce7d9b4da8c815afc30fc88" category="summary">Sie können ein Zertifikat exportieren, um die vollständigen Details anzuzeigen.</block>
@@ -8089,7 +8056,6 @@
   <block id="5df555ad8a5d58c2d2be3f9893464acb" category="list-text">Klicken Sie auf *Exportieren* und speichern Sie dann die Zertifikatdatei.</block>
   <block id="818d28e7b7b11b8d0de393cdf2bad961" category="list-text">Öffnen Sie die Datei in Ihrer Zertifikatanzeige-Anwendung.</block>
   <block id="8e2a365bae244df40d20169523b4c250" category="summary">Bei Bedarf können Zertifikate für die Speicher-Arrays importiert werden, sodass sie sich mit dem System authentifizieren können, das SANtricity Unified Manager hostet. Zertifikate können von einer Zertifizierungsstelle (CA) signiert oder selbst signiert werden.</block>
-  <block id="e6170c93eb142fb01923e9f9b0ef39f7" category="paragraph">Bei Bedarf können Zertifikate für die Speicher-Arrays importiert werden, sodass sie sich mit dem System authentifizieren können, das Unified Manager hostet. Zertifikate können von einer Zertifizierungsstelle (CA) signiert oder selbst signiert werden.</block>
   <block id="35bc59ae8725a73f71e22d5b7e2eda45" category="list-text">Wenn Sie vertrauenswürdige Zertifikate importieren, müssen die Zertifikate für die Speicher-Array-Controller mit System Manager importiert werden.</block>
   <block id="2e55526b44721ea9359f246eaaf629e3" category="paragraph">Auf dieser Seite werden alle Zertifikate angezeigt, die für die Speicher-Arrays gemeldet wurden.</block>
   <block id="2f3bb55cd5666e46843ed94b99f1cc9c" category="list-text">Wählen Sie entweder Menü:Import[Certificates], um ein CA-Zertifikat oder Menü zu importieren:Importieren[Self-signierte Speicher-Array-Zertifikate], um ein selbstsigniertes Zertifikat zu importieren.</block>
@@ -8115,7 +8081,6 @@
   <block id="cf93328a82ffe3d054899b90fbfeed65" category="paragraph">Ein Truststore ist ein Repository, das Zertifikate von vertrauenswürdigen Drittanbietern, wie z. B. CAS, enthält.</block>
   <block id="6537b14ab86690459051b15913eed344" category="summary">Nicht vertrauenswürdige Zertifikate treten auf, wenn ein Speicher-Array versucht, eine sichere Verbindung zu SANtricity Unified Manager herzustellen, die Verbindung jedoch nicht als sicher bestätigt.</block>
   <block id="57978b55e3a3b1f8e477379b56230f8e" category="doc">Lösen Sie nicht vertrauenswürdige Zertifikate</block>
-  <block id="06ae56054017bbf48392ef1bea4dfe7b" category="paragraph">Nicht vertrauenswürdige Zertifikate treten auf, wenn ein Speicher-Array versucht, eine sichere Verbindung zu Unified Manager herzustellen, die Verbindung jedoch nicht als sicher bestätigt werden kann.</block>
   <block id="235d7e3807db91d7961342f6d13f3e3b" category="paragraph">Auf der Zertifikatsseite können Sie nicht vertrauenswürdige Zertifikate auflösen, indem Sie ein selbstsigniertes Zertifikat aus dem Speicher-Array importieren oder ein Zertifikat der Zertifizierungsstelle importieren, das von einem vertrauenswürdigen Dritten ausgestellt wurde.</block>
   <block id="951e2883c6a23f655f16e49f82ab2244" category="list-text">Wenn Sie ein von einer Zertifizierungsstelle signiertes Zertifikat importieren möchten:</block>
   <block id="f1260c6add938f658d4fa1c233c69f76" category="list-text">Sie haben für jeden Controller im Speicher-Array eine Zertifikatsignierungsanforderung (.CSR-Datei) generiert und an die CA gesendet.</block>
@@ -8130,13 +8095,11 @@
   <block id="d0537632c3c29dcf80a07258a5f4ccc7" category="list-text">Nachdem die Serververbindung hergestellt wurde, ordnet der Administrator die Benutzergruppen den lokalen Benutzerrollen zu. Diese Rollen sind vordefiniert und können nicht geändert werden.</block>
   <block id="d244d933aee9dd35323eb0cf53551ae4" category="list-text">Der Administrator testet die Verbindung zwischen dem LDAP-Server und dem Web Services Proxy.</block>
   <block id="7f5fc7f5a6cfd2d629daa43027091634" category="summary">Die RBAC-Funktionen (rollenbasierte Zugriffssteuerung) umfassen vordefinierte Benutzer, wobei eine oder mehrere Rollen zugewiesen sind. Jede Rolle umfasst Berechtigungen für den Zugriff auf Aufgaben in SANtricity Unified Manager.</block>
-  <block id="b6d27003498a8efabd89c3632f305a38" category="paragraph">Die RBAC-Funktionen (rollenbasierte Zugriffssteuerung) umfassen vordefinierte Benutzer, wobei eine oder mehrere Rollen zugewiesen sind. Jede Rolle umfasst Berechtigungen für den Zugriff auf Aufgaben in Unified Manager.</block>
   <block id="c682da937c01c9699a2f1fe4314bb7a1" category="list-text">*Storage Admin* -- Vollständiger Lese-/Schreibzugriff auf Speicherobjekte auf den Arrays, aber kein Zugriff auf die Sicherheitskonfiguration.</block>
   <block id="f3edf224e12ff35c9cb445ef9d83558b" category="list-text">*Security Admin* -- Zugriff auf die Sicherheitskonfiguration in Access Management und Certificate Management.</block>
   <block id="234ddbea649d949999879f5aca917583" category="list-text">*Support Admin* -- Zugriff auf alle Hardware-Ressourcen auf Speicher-Arrays, Ausfalldaten und MEL-Ereignisse. Kein Zugriff auf Speicherobjekte oder die Sicherheitskonfiguration.</block>
   <block id="ff3d7efd683a99e8ca518db8c7f93585" category="paragraph">Wenn ein Benutzer über keine Berechtigungen für eine bestimmte Funktion verfügt, ist diese Funktion entweder zur Auswahl nicht verfügbar oder wird nicht in der Benutzeroberfläche angezeigt.</block>
   <block id="8a26f9c1af451d8775363a647445ae49" category="summary">Die Zugriffsverwaltung ist eine Methode zur Konfiguration der Benutzerauthentifizierung in SANtricity Unified Manager.</block>
-  <block id="d1cc45589c0084f17d53b1764541acde" category="paragraph">Bei Access Management handelt es sich um eine Methode zur Konfiguration der Benutzerauthentifizierung in Unified Manager.</block>
   <block id="41315c44be734de1ba40d7ac966572b8" category="paragraph">Folgende Authentifizierungsmethoden sind verfügbar:</block>
   <block id="d49c4941abd4cbf48ddd6db7bbbb59b9" category="list-text">*Lokale Benutzerrollen* -- Authentifizierung wird über RBAC-Funktionen (rollenbasierte Zugriffssteuerung) verwaltet. Lokale Benutzerrollen umfassen vordefinierte Benutzerprofile und Rollen mit spezifischen Zugriffsberechtigungen.</block>
   <block id="aad50f908f47b2bf0ef42647f8e94a63" category="list-text">*Directory Services* -- die Authentifizierung wird über einen LDAP-Server (Lightweight Directory Access Protocol) und einen Verzeichnisdienst verwaltet, z. B. über Microsoft Active Directory.</block>
@@ -8202,7 +8165,6 @@
   <block id="a1bf9af425026f78afaf5c95d68e7f7d" category="paragraph">Die Dateinamen werden im Dialogfeld angezeigt.</block>
   <block id="b0bb92fee06d1badcc06e51e91665db6" category="paragraph">Die Dateien werden hochgeladen und validiert. Die Zertifikatinformationen werden auf der Seite Zertifikatverwaltung angezeigt.</block>
   <block id="5d5b10ce79f5c0dc539334629d62d864" category="summary">Verwenden Sie die Zugriffsverwaltung, um die Benutzerauthentifizierung in SANtricity Unified Manager einzurichten.</block>
-  <block id="44e7f9b14d94f37d603139d60643ff98" category="paragraph">Verwenden Sie Access Management, um die Benutzerauthentifizierung in Unified Manager einzurichten.</block>
   <block id="f40760940eef8069f0bcacc614829c32" category="paragraph">Die Zugriffsmanagement-Konfiguration funktioniert wie folgt:</block>
   <block id="2ff565b6d3ae8906f3c4fac50daf31d4" category="paragraph">Bei der ersten Anmeldung wird der Benutzername verwendet<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> Wird automatisch angezeigt und kann nicht geändert werden. Der<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> Der Benutzer hat vollen Zugriff auf alle Funktionen im System. Das Passwort muss bei der ersten Anmeldung festgelegt werden.</block>
   <block id="d402cdda742b7a0b61f66dd16fa4634e" category="list-text">Der Administrator navigiert zur Zugriffsverwaltung in der Benutzeroberfläche, die vorkonfigurierte lokale Benutzerrollen enthält. Diese Rollen sind eine Implementierung von RBAC-Funktionen (rollenbasierte Zugriffssteuerung).</block>
@@ -8219,13 +8181,11 @@
   <block id="dceb126196665ba4ce763790621e5b43" category="list-text">Wenn für lokale Benutzerpasswörter keine Mindestkennwortlänge festgelegt ist, können Sie das Kontrollkästchen aktivieren, damit der Benutzer ein Passwort für den Zugriff auf das System eingeben muss.</block>
   <block id="60a610051a0ea44e4970777b77bdffb3" category="list-text">Geben Sie das neue Kennwort für den ausgewählten Benutzer in die beiden Felder ein.</block>
   <block id="e1b68ee4aa4066c82dae8c2b6a7bd2c7" category="summary">Erfahren Sie, wie die Bedingungen für das Zugriffsmanagement für SANtricity Unified Manager gelten.</block>
-  <block id="64aa268315e67fd45e17bcf91ff30bab" category="paragraph">Erfahren Sie, wie die Bedingungen für das Zugriffsmanagement für Unified Manager gelten.</block>
   <block id="86492ff57bfb48a1cfe6863d646e4e37" category="paragraph">Die rollenbasierte Zugriffssteuerung (Role Based Access Control, RBAC) ist eine Methode zur Regulierung des Zugriffs auf Computer- oder Netzwerkressourcen, basierend auf den Rollen einzelner Benutzer. Unified Manager enthält vordefinierte Rollen.</block>
   <block id="e536634a787591dd23dbc618cd207ba6" category="paragraph">Web Services Proxy</block>
   <block id="431e34c6a97c9d5d28df130a10fa0c0a" category="paragraph">Der Web Services Proxy, der Zugriff über HTTPS-Standardmechanismen bereitstellt, ermöglicht Administratoren die Konfiguration von Managementservices für Speicher-Arrays. Der Proxy kann auf Windows- oder Linux-Hosts installiert werden. Die Unified Manager-Schnittstelle ist mit dem Web Services Proxy verfügbar.</block>
   <block id="34919a9493354af06c60b6a7efe26f66" category="summary">Um die Authentifizierung für die Zugriffsverwaltung zu konfigurieren, stellen Sie eine Kommunikation zwischen einem LDAP-Server und dem Host her, auf dem der Web Services Proxy für SANtricity Unified Manager ausgeführt wird. Anschließend ordnen Sie die LDAP-Benutzergruppen den lokalen Benutzerrollen zu.</block>
   <block id="b828924e6cb61c82f7d84db873261628" category="doc">Verzeichnisserver hinzufügen</block>
-  <block id="4414343c3416e84cd36e3cad4675e6cf" category="paragraph">Um die Authentifizierung für die Zugriffsverwaltung zu konfigurieren, stellen Sie eine Kommunikation zwischen einem LDAP-Server und dem Host her, auf dem der Web Services Proxy für Unified Manager ausgeführt wird. Anschließend ordnen Sie die LDAP-Benutzergruppen den lokalen Benutzerrollen zu.</block>
   <block id="b53df6d7d04b2e16a801c386e5491e43" category="paragraph">Das Hinzufügen eines Verzeichnisservers ist ein zweistufiger Prozess. Geben Sie zuerst den Domain-Namen und die URL ein. Wenn Ihr Server ein sicheres Protokoll verwendet, müssen Sie auch ein CA-Zertifikat zur Authentifizierung hochladen, wenn es von einer nicht standardmäßigen Signierungsbehörde signiert ist. Wenn Sie über Anmeldedaten für ein Bindekonto verfügen, können Sie auch Ihren Benutzernamen und Ihr Kennwort eingeben. Als Nächstes werden die Benutzergruppen des LDAP-Servers lokalen Benutzerrollen zugeordnet.</block>
   <block id="983f7148d2276d9ec50cb88b8a839197" category="list-text">Wählen Sie auf der Registerkarte *Directory Services* die Option *Add Directory Server* aus.</block>
   <block id="60663c300fc50a2b09201085bb18ed81" category="list-text">Geben Sie auf der Registerkarte *Server-Einstellungen* die Anmeldeinformationen für den LDAP-Server ein.</block>
@@ -8297,8 +8257,6 @@
   <block id="483a5da192f46e3cfe8391d3ef234fc4" category="sidebar">FAQs</block>
   <block id="3023481996e16c0dd27c1aeeab45a6c4" category="sidebar">Was, wenn ich nicht alle meine Hardware-Komponenten sehen?</block>
   <block id="4f77fb4cfa40635f17d21979b6692c01" category="sidebar">Was, wenn ich nicht alle meine Gastgeber sehen?</block>
-  <block id="009fd64f93ff18102999ecfeee8b7573" category="sidebar">Einrichtung von Unified Manager</block>
-  <block id="26ed02718973e705cd69ee6e109400e0" category="sidebar">System Manager</block>
   <block id="93af28c8ab635f0e7d402547ab0c929d" category="sidebar">Hauptschnittstelle</block>
   <block id="fc78fae55edd9650c6455e58681d3aae" category="sidebar">Anzeigen von Performance-Daten</block>
   <block id="76cf11d4db12b1a45f4d62797b620d5e" category="sidebar">Verwalten von Schnittstelleneinstellungen</block>
@@ -8464,7 +8422,6 @@
   <block id="045d1e9a94278a8386d71e58e81fd7a1" category="sidebar">Management von Upgrades</block>
   <block id="8d94d37b5905d67ccf22b375e3bf5c6e" category="sidebar">Aktualisieren von Software und Firmware</block>
   <block id="f446e3c0eca28983e35e282214782584" category="sidebar">Anzeigen des Array-Status</block>
-  <block id="835b7ac0eaf285552b7ec179de33d014" category="sidebar">Starten Sie System Manager</block>
   <block id="8ebeac47d02da19c4d1cd88ab9d7cca8" category="sidebar">Array-Passwörter ändern</block>
   <block id="a0a3f20685c328a00474bb00b7d35fd5" category="sidebar">Entfernen Sie Arrays aus der Ansicht</block>
   <block id="15fc53829e4c837f62e15647e031089c" category="sidebar">Einstellungen werden importiert</block>
@@ -8694,14 +8651,10 @@
   <block id="45dc1f6fb3b875c733e188121fcc647a" category="paragraph">CSR-Datei (Certificate Signing Request), die extern über private und öffentliche Schlüsselpaare generiert wird, kann jetzt über System Manager importiert werden.</block>
   <block id="c0f4196deec20490ebf6989158642c34" category="paragraph">Die Anmeldesperre ist jetzt für Web Services verfügbar</block>
   <block id="a30347233ec617731633ca56f8f1b923" category="paragraph">Konfigurierbar nur über die REST-API, eine neue Einstellung für die Anmeldesperre ist jetzt für eingebettete und Proxy-Web-Services verfügbar.</block>
-  <block id="877f007e3f321618e24a9962b07e63fa" category="sidebar">Einheitliches Array Management mit System Manager 11.9</block>
-  <block id="9c2cbf0c1a7244ea333628422695d560" category="sidebar">Management mehrerer Arrays mit Unified Manager 7</block>
   <block id="12256f91aad97dd547dda71e221d63ce" category="sidebar">SANtricity 11.9-Dokumentation</block>
   <block id="320344fc6d13f7639d2b2c90f55506fa" category="sidebar">Mit der SANtricity 11.90 Software erreichen Sie maximale Performance und Auslastung Ihrer Hybrid-Flash-Storage-Systeme der E-Series und All-Flash-Arrays der EF-Series für workloadintensive Applikationen, beispielsweise Datenanalysen, Videoüberwachung sowie Backup und Recovery.</block>
   <block id="b26c3f1c1c8d9eb65323b2750c4c349d" category="sidebar">SANtricity Software-Dokumentation 11.90</block>
   <block id="90e8ac6688c66ac3fc81de93ba27235a" category="sidebar">SANtricity System Manager und Unified Manager</block>
-  <block id="0b008f21f9758b84909b95140b0a532d" category="sidebar">Benutzeroberfläche von System Manager</block>
-  <block id="29ac086a960081d77daa677c24463af3" category="sidebar">Unified Manager Schnittstelle</block>
   <block id="e95315401141b931451e32ea694b6d92" category="sidebar">SANtricity Software-Datenblatt</block>
   <block id="421eeeca306bdf1873654f04f6d8e61e" category="sidebar">E-Series Dokumentation</block>
   <block id="b00771a05354ff5b2df1b388cfb6c874" category="sidebar">E-Series Systemdokumentation</block>
@@ -8722,4 +8675,71 @@
   <block id="974ad78dc53c253ebfe5b2b8b376f353" category="sidebar">Tools und Support</block>
   <block id="2bae42f280067110dfd52cc69a468364" category="sidebar">Active IQ (Anmeldung erforderlich)</block>
   <block id="54708ac788109e3332a896f8d957e38f" category="sidebar">E-Series/SANtricity Downloads (Anmeldung erforderlich)</block>
+  <block id="511bc26995332ccd1bc373f2533ac9e7" category="doc">Greifen Sie auf SANtricity System Manager zu</block>
+  <block id="d5eb7087909dec2e661624440883bfe3" category="paragraph">Für den Zugriff auf die Benutzeroberfläche von SANtricity System Manager rufen Sie die IP-Adresse des Controllers in einem Browser auf. Ein Setup-Assistent hilft Ihnen beim Einstieg in die Systemkonfiguration.</block>
+  <block id="df45899b1d870d205c92f531b2f9cbca" category="doc">Installation von SANtricity Unified Manager</block>
+  <block id="c37a83a89674fde8ffeaf12ba00d2af5" category="paragraph">SANtricity Unified Manager ist Bestandteil des Web Services Proxy. Hierbei handelt es sich um einen separat auf einem Host-System installierten RESTful API Server zum Management von NetApp Storage-Systemen der E-Serie.</block>
+  <block id="0a9898b156851883b0c35a15776338c8" category="doc">Zugriff auf SANtricity Unified Manager</block>
+  <block id="6def903cf56aa77e14dd50ebb8fe2719" category="paragraph">Nach der Installation des Webdienstproxys können Sie auf den SANtricity Unified Manager zugreifen, um mehrere Speichersysteme über eine webbasierte Schnittstelle zu verwalten.</block>
+  <block id="ef256c4d218c47a2c04a18d10165ac0f" category="paragraph">SANtricity System Manager meldet verschiedene Status für Laufwerke.</block>
+  <block id="00cffad3ca607922a6c706858259b403" category="paragraph">Hot Spares fungieren als Standby-Laufwerke in RAID 1-, RAID 5- oder RAID 6-Volume-Gruppen für SANtricity System Manager.</block>
+  <block id="f1a4437045c85126e53d06d8e40fd021" category="paragraph">Ein Speichersystem im nicht optimalen Modus ist auf einen ungültigen Konfigurationsstatus des Systems zurückzuführen. Trotz dieses Status wird der normale I/O-Zugriff auf vorhandene Volumes vollständig unterstützt, der SANtricity System Manager untersagt jedoch einige Vorgänge.</block>
+  <block id="4c1548b517bea01f9959a884be8575f3" category="paragraph">Die Startseite enthält eine Dashboard-Ansicht für die tägliche Verwaltung Ihres Speicherarrays. Wenn Sie sich beim SANtricity System Manager anmelden, wird als erster Bildschirm die Startseite angezeigt.</block>
+  <block id="23d5a32d5d5e34af0ae01167c84aee80" category="paragraph">Wenn Sie Applikationen identifizieren, empfiehlt SANtricity System Manager automatisch eine Volume-Konfiguration, die den Storage basierend auf dem Applikationstyp optimiert.</block>
+  <block id="37ab8a55610b93d738f7d12e13b2cbe8" category="paragraph">SANtricity System Manager ist eine webbasierte Schnittstelle, über die Sie Storage Array in einer einzigen Ansicht verwalten können.</block>
+  <block id="533d0451d27fab44f457ddccee791402" category="doc">SANtricity System Manager – Überblick über die Benutzeroberfläche</block>
+  <block id="1d4af631b6959ddfabcf268d07e5d112" category="paragraph">SANtricity System Manager verwendet Symbole und verschiedene andere Methoden, um Sie über Probleme mit dem Speicher-Array zu informieren.</block>
+  <block id="eca296c53d8021e175c9233b22d536a5" category="paragraph">Der Recovery Guru ist eine Komponente des SANtricity System Managers, der die Probleme der Storage Arrays diagnostiziert und Recovery-Verfahren empfiehlt, mit denen die Probleme behoben werden können.</block>
+  <block id="1eccb12b6beaa3afa33d88e6dbe96f3e" category="paragraph">SANtricity System Manager kann Kapazitätswerte entweder in Gibibyte (gib) oder Tebibyte (tib) anzeigen.</block>
+  <block id="a9eafd95e4debe4d6c9e953b2123621f" category="doc">Der SANtricity System Manager hat keine Hosts erkannt. Was mache ich?</block>
+  <block id="784bf5e8aec03bc0a910429232366bbb" category="paragraph">Sie können in SANtricity System Manager nur über die Tastatur navigieren.</block>
+  <block id="31c67a5a03f932bcfb7ec2e8acde1918" category="paragraph">SANtricity System Manager unterstützt die folgenden Browser-Versionen.</block>
+  <block id="06c1a3efc270606698185f701855e68d" category="paragraph">Sie konfigurieren gespiegelte Paare in der Oberfläche von SANtricity Unified Manager und verwalten dann die Paare in SANtricity System Manager.</block>
+  <block id="74b085142e307db471b1f86d42eaa7f6" category="paragraph">Sie können die Einstellungen für ein Volume mit gespiegelten Paaren ändern, um den Prozentpunkt anzupassen, an dem SANtricity System Manager eine Warnmeldung sendet, wenn die reservierte Kapazität für ein Volume mit gespiegelten Paaren fast voll ist.</block>
+  <block id="f16e62f612f383ccc4993fccf8164eb5" category="paragraph">Wenn Sie ein primäres Volume auf einem älteren Storage-Array erstellt haben, das nicht durch SANtricity System Manager gemanagt werden kann, können Sie das sekundäre Volume auf diesem Array mit SANtricity System Manager erstellen.</block>
+  <block id="e8335355b809680a7a07946df0f22a21" category="paragraph">Spiegelung wird in der Schnittstelle des SANtricity Unified Managers konfiguriert.</block>
+  <block id="3e8940a07dc6e6fcfaeb8f76e0e95d98" category="paragraph">Sie können das Paket für die Befehlszeilenschnittstelle (CLI) von SANtricity System Manager herunterladen.</block>
+  <block id="e3c6215a209a5d287059d476946fe408" category="paragraph">Bei Add-ons handelt es sich um Funktionen, die nicht in der Standardkonfiguration von SANtricity System Manager enthalten sind, und die möglicherweise eine Schlüsselfunktion erfordern. Eine Add-on-Funktion kann entweder eine einzelne Premium-Funktion oder ein im Paket enthaltene Features sein.</block>
+  <block id="97d42caaa63b71f8c24b9a49d4dd3cad" category="doc">Wie weiß ich, welche Zertifikate zum externen Schlüsselmanagement in den SANtricity System Manager hochgeladen werden müssen?</block>
+  <block id="2808e7b4862302de005363e8d7a9298b" category="paragraph">Sie können SANtricity System Manager für einige allgemeine Array-Einstellungen und Zusatzfunktionen konfigurieren.</block>
+  <block id="ed6a026f78a1a9d6f206a0aac76aae36" category="paragraph">Sie können Timeouts in SANtricity System Manager konfigurieren, so dass die inaktiven Sitzungen der Benutzer nach einer bestimmten Zeit getrennt werden.</block>
+  <block id="7b5a3ab486c3b4b2ccfc9a760315a3ea" category="paragraph">Sie können SANtricity System Manager so konfigurieren, dass Speicher-Array-Warnmeldungen per E-Mail, SNMP-Traps und Syslog-Meldungen gesendet werden.</block>
+  <block id="04dfac63eb6f5f22800fa898350089ee" category="paragraph">Sie können SANtricity System Manager verwenden, um Zertifikatsignierungsanforderungen (CSRs) zu erstellen, Zertifikate zu importieren und vorhandene Zertifikate zu verwalten.</block>
+  <block id="37292b1d6269336dad0fc27c14cc50e6" category="paragraph">Die Funktion Automatic Load Balancing stellt sicher, dass eingehender I/O-Datenverkehr von den Hosts dynamisch verwaltet und auf beiden Controllern ausgeglichen wird. Diese Funktion ist standardmäßig aktiviert, Sie können sie jedoch aus dem SANtricity System Manager deaktivieren.</block>
+  <block id="d446eaf3c37a2d1b64761e41e0d4c396" category="paragraph">Sie können von einer Zertifizierungsstelle signierte Zertifikate für die sichere Kommunikation zwischen den Controllern und dem für den Zugriff auf SANtricity System Manager verwendeten Browser erhalten.</block>
+  <block id="71922c71c5f29b0c629529ba400ef998" category="paragraph">Mit SANtricity System Manager können Sie mithilfe eines OCSP-Servers (Online Certificate Status Protocol) nach gesperrten Zertifikaten suchen, anstatt Zertifikatsperrlisten (Certificate Revocation Lists, CRLs) hochzuladen.</block>
+  <block id="d901918c71190564252df1392b4512b5" category="paragraph">In der folgenden Tabelle sind die Funktionen von SANtricity System Manager aufgeführt, mit denen Sie iSER-over-InfiniBand-Sessions konfigurieren und managen können.</block>
+  <block id="97eb7f10d621b518571460a8d1bccf8b" category="paragraph">In der folgenden Tabelle sind die Funktionen von SANtricity System Manager aufgeführt, mit denen Sie NVMe over InfiniBand-Sessions konfigurieren und managen können.</block>
+  <block id="09cab99fec7e2be20fb90f16f896325b" category="paragraph">Sie sollten die Controller-Uhren im Speicher-Array manuell synchronisieren, wenn Sie bemerken, dass die in SANtricity System Manager angezeigten Zeitstempel nicht auf die im Management-Client angezeigten Zeitstempel ausgerichtet sind (der Computer, der über den Browser auf SANtricity System Manager zugreift). Diese Aufgabe ist nur erforderlich, wenn NTP (Network Time Protocol) im SANtricity-System-Manager nicht aktiviert ist.</block>
+  <block id="a96d9e965e10c639f6190acfe6a05114" category="paragraph">Wenn Sie bestimmte Änderungen in SANtricity System Manager vornehmen, wie z. B. das Wechseln der Managementoberfläche oder die Verwendung von SAML für eine Authentifizierungsmethode, sind die Verwendung einiger externer Tools und Funktionen möglicherweise eingeschränkt.</block>
+  <block id="e89611f534bae4fdefd815eda302ac53" category="paragraph">Wenn bei der Anmeldung bei SANtricity System Manager ein Fehler angezeigt wird, prüfen Sie die folgenden möglichen Ursachen.</block>
+  <block id="e07e1a01ada9b7dffd6f47c6fec15822" category="paragraph">Sie können die Einstellungen für ein Mitglied-Volume einer Konsistenzgruppe ändern, um den Prozentpunkt anzupassen, an dem SANtricity System Manager eine Benachrichtigung sendet, wenn die reservierte Kapazität eines Mitglieds-Volumes nahezu voll ist, und um die Richtlinie zu ändern, die verwendet wird, wenn die reservierte Kapazität den maximal definierten Prozentsatz erreicht.</block>
+  <block id="5565955fb75572cd15d1180cd1e84891" category="paragraph">Sie können die Einstellungen für eine Snapshot-Gruppe so ändern, dass ihr Name, die Einstellungen für das automatische Löschen, die maximale Anzahl zulässiger Snapshot-Images, der Prozentpunkt, an dem SANtricity System Manager eine Warnmeldung über reservierte Kapazität sendet, oder die Richtlinie, die verwendet wird, wenn die reservierte Kapazität ihren maximal definierten Prozentsatz erreicht.</block>
+  <block id="f387ebe48cc5271f2c7b7a6d62f5e151" category="paragraph">Die Poolerstellung wird automatisch gestartet, wenn SANtricity System Manager nicht zugewiesene Laufwerke im Speicher-Array erkennt. Mithilfe der automatischen Pool-Erstellung können alle nicht zugewiesenen Laufwerke im Speicher-Array in einem Pool konfiguriert und Laufwerke zu vorhandenen Pools hinzugefügt werden.</block>
+  <block id="167c625a6715ae3c7e8f536806a65484" category="paragraph">SANtricity System Manager legt Grenzwerte für die Anzahl der Laufwerke fest, die aus einem Pool entfernt werden können.</block>
+  <block id="c37cb57fbf471d09e0a0c473b1af4395" category="paragraph">Kapazitätswarnungen geben an, wann Laufwerke zu einem Pool hinzugefügt werden sollen. Ein Pool benötigt ausreichend freie Kapazität, um Storage-Array-Vorgänge erfolgreich durchzuführen. Vermeiden Sie Unterbrechungen dieser Vorgänge, indem Sie SANtricity System Manager so konfigurieren, dass Warnmeldungen gesendet werden, wenn die freie Kapazität eines Pools einen bestimmten Prozentsatz erreicht oder überschreitet.</block>
+  <block id="c3ef549f921f9931ee4e54e5a9176597" category="paragraph">In SANtricity System Manager können Sie Snapshot-Images und Snapshot-Volumes erstellen, indem Sie die folgenden Schritte ausführen.</block>
+  <block id="e96cf8b7e66ac097facaf28c82d66aa1" category="paragraph">Der technische Support kann Dateien zum Recovery Support verwenden, um Probleme zu beheben. Diese Dateien werden von SANtricity System Manager automatisch gespeichert.</block>
+  <block id="fcaba1806566990b101abb2ccb59a73f" category="paragraph">SANtricity System Manager erstellt automatisch einen Standardzeitplan für AutoSupport-Entsendungen. Wenn Sie es bevorzugen, können Sie Ihren eigenen Zeitplan angeben.</block>
+  <block id="d8d7d1838ede45a15d34d278b1c7dc22" category="paragraph">Mit SANtricity System Manager können Sie AutoSupport Entsendungen an den technischen Support senden, ohne auf einen geplanten Versand warten zu müssen.</block>
+  <block id="da1743923a3a0458c608ee2a3312d293" category="paragraph">ISCSI-Sitzungen können bei Hosts oder Remote-Storage-Arrays in einer asynchronen Spiegelbeziehung durchgeführt werden. In den folgenden Tabellen sind die Funktionen von SANtricity System Manager aufgeführt, mit denen Sie diese iSCSI-Sitzungen konfigurieren und verwalten können.</block>
+  <block id="3ec40952f7ff71ab9d51f1f50e2e10a2" category="paragraph">SANtricity Unified Manager ist eine webbasierte Schnittstelle, mit der Sie mehrere Storage Arrays in einer Ansicht managen können.</block>
+  <block id="5f7016e066403d9d218a874cedc63541" category="paragraph">Sie können Timeouts für SANtricity Unified Manager konfigurieren, sodass Benutzer inaktive Sitzungen nach einer bestimmten Zeit getrennt werden.</block>
+  <block id="82a77b13aa8d00eca6e71aa5af7098d6" category="doc">Übersicht über die SANtricity Unified Manager Schnittstelle</block>
+  <block id="553b07cb69b9906d0f4d1c0b2c97bdae" category="paragraph">Administratoren können die in SANtricity Unified Manager erzwungenen RBAC-Funktionen (rollenbasierte Zugriffssteuerung) nutzen. Diese Funktionen werden als „lokale Benutzerrollen“ bezeichnet.</block>
+  <block id="f0254fcd04a8e1df1dc8c778e6189b01" category="paragraph">Sie können CA-signierte Zertifikate für sicheren Zugriff auf das Managementsystem, das SANtricity Unified Manager hostet, erhalten und importieren.</block>
+  <block id="c5f9375676cadbc97263ea339c65e0df" category="paragraph">Bevor SANtricity Unified Manager Storage-Ressourcen anzeigen und verwalten kann, muss er die Storage-Arrays ermitteln, die Sie im Netzwerk Ihres Unternehmens managen möchten. Sie können mehrere Arrays ermitteln oder ein einziges Array erkennen.</block>
+  <block id="8205965c706fda540f0df394d1fd7df5" category="paragraph">Mit SANtricity Unified Manager können Sie Einstellungen von einem Storage-Array in mehrere Storage-Arrays importieren. Die Funktion „Importeinstellungen“ ist ein Batch-Vorgang, der Zeit spart, wenn Sie mehrere Arrays im Netzwerk konfigurieren müssen.</block>
+  <block id="2b8e903f9231328c5dd4ac194fe0ed99" category="paragraph">Sie können mit SANtricity Unified Manager die SANtricity OS Software auf mehreren Storage Arrays desselben Typs auf eine neuere Version aktualisieren.</block>
+  <block id="c5cdef1d414ec599aa9b2d1f28c67d4b" category="doc">Überlegungen für den Zugriff auf SANtricity System Manager</block>
+  <block id="cdaae564ece8b6f3561a5e657337c464" category="paragraph">In SANtricity Unified Manager wird die asynchrone oder synchrone Spiegelung konfiguriert und anschließend mit SANtricity System Manager die Synchronisierung verwaltet.</block>
+  <block id="69ffe5f70c823700a785fa58e3fbca15" category="paragraph">SANtricity Unified Manager enthält Konfigurationsoptionen für die SANtricity-Spiegelungsfunktionen, mit denen Administratoren Daten zur Datensicherung zwischen zwei Storage Arrays replizieren können.</block>
+  <block id="bf29ed0b212c99188f3c0d2b5992aeee" category="paragraph">SANtricity Unified Manager zeigt den Status jedes erkannten Speicher-Arrays an.</block>
+  <block id="99e207225cad4e6c8aa147bb693de2fe" category="paragraph">Bevor Sie SANtricity Unified Manager für das Upgrade mehrerer Storage-Arrays verwenden, sollten Sie die wichtigsten Überlegungen in Ihrer Planung durchgehen.</block>
+  <block id="48003406c3332bb90497a98f2d79b26a" category="sidebar">Schnittstelle von SANtricity System Manager</block>
+  <block id="b4baa7fdabc903993aebeaaa5980c455" category="sidebar">SANtricity Unified Manager Schnittstelle</block>
+  <block id="447d926e847ba6e7316f7c54ac601bab" category="sidebar">Einheitliches Array Management mit SANtricity System Manager 11.9</block>
+  <block id="4895fd90ba99a1644bbfaaa77bf80a43" category="sidebar">Management mehrerer Arrays mit SANtricity Unified Manager 7</block>
+  <block id="3089984c7abf64387bdc035943beae57" category="sidebar">Einrichtung von SANtricity System Manager</block>
+  <block id="61ed698df3699989d8d782fe430d2755" category="sidebar">Einrichtung von SANtricity Unified Manager</block>
 </blocks>

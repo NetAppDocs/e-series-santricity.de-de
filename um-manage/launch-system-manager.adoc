@@ -11,7 +11,7 @@ summary: Sie können die Option Start verwenden, um den Browser-basierten SANtri
 
 
 [role="lead"]
-Sie können die Option Start verwenden, um den Browser-basierten System Manager für ein oder mehrere Speicher-Arrays zu öffnen, wenn Sie Managementvorgänge ausführen möchten.
+Sie können die Option Start verwenden, um den Browser-basierten SANtricity-System-Manager für ein oder mehrere Storage-Arrays zu öffnen, wenn Sie Managementvorgänge ausführen möchten.
 
 .Schritte
 . Wählen Sie auf der Seite Verwalten ein oder mehrere Storage Arrays aus, die Sie managen möchten.

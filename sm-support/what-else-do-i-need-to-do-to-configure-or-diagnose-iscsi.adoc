@@ -12,7 +12,7 @@ summary: ISCSI-Sitzungen können bei Hosts oder Remote-Storage-Arrays in einer a
 
 
 [role="lead"]
-ISCSI-Sitzungen können bei Hosts oder Remote-Storage-Arrays in einer asynchronen Spiegelbeziehung durchgeführt werden. In der folgenden Tabelle sind die System Manager-Funktionen aufgeführt, mit denen Sie diese iSCSI-Sitzungen konfigurieren und verwalten können.
+ISCSI-Sitzungen können bei Hosts oder Remote-Storage-Arrays in einer asynchronen Spiegelbeziehung durchgeführt werden. In den folgenden Tabellen sind die Funktionen von SANtricity System Manager aufgeführt, mit denen Sie diese iSCSI-Sitzungen konfigurieren und verwalten können.
 
 [NOTE]
 ====

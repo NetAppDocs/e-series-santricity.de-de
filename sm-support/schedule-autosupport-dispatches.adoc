@@ -12,7 +12,7 @@ summary: System Manager erstellt automatisch einen Standardzeitplan für den Aut
 
 
 [role="lead"]
-System Manager erstellt automatisch einen Standardzeitplan für den AutoSupport-Entsendungen. Wenn Sie es bevorzugen, können Sie Ihren eigenen Zeitplan angeben.
+SANtricity System Manager erstellt automatisch einen Standardzeitplan für AutoSupport-Entsendungen. Wenn Sie es bevorzugen, können Sie Ihren eigenen Zeitplan angeben.
 
 .Bevor Sie beginnen
 Die AutoSupport-Funktion muss aktiviert sein. Sie sehen, ob die Funktion auf der Seite AutoSupport aktiviert ist.

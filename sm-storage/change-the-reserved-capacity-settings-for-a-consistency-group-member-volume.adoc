@@ -12,7 +12,7 @@ summary: Sie können die Einstellungen für ein Mitglied-Volume einer Konsistenz
 
 
 [role="lead"]
-Sie können die Einstellungen für ein Mitglied-Volume einer Konsistenzgruppe ändern, um den Prozentpunkt anzupassen, an dem System Manager eine Benachrichtigung sendet, wenn die reservierte Kapazität für ein Mitglied-Volume sich dem vollen Umfang nähert, und die Richtlinie ändern, die verwendet wird, wenn die reservierte Kapazität den festgelegten Maximalwert erreicht Prozentsatz.
+Sie können die Einstellungen für ein Mitglied-Volume einer Konsistenzgruppe ändern, um den Prozentpunkt anzupassen, an dem SANtricity System Manager eine Benachrichtigung sendet, wenn die reservierte Kapazität eines Mitglieds-Volumes nahezu voll ist, und um die Richtlinie zu ändern, die verwendet wird, wenn die reservierte Kapazität den maximal definierten Prozentsatz erreicht.
 
 .Über diese Aufgabe
 Durch Ändern der Einstellungen für die reservierte Kapazität eines einzelnen Member Volumes werden auch die reservierten Kapazitätseinstellungen für alle Mitglied-Volumes geändert, die einer Konsistenzgruppe zugeordnet sind.

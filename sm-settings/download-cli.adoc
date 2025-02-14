@@ -12,7 +12,7 @@ summary: 'Von System Manager können Sie das CLI-Paket (Befehlszeilenschnittstel
 
 
 [role="lead"]
-Von System Manager können Sie das CLI-Paket (Befehlszeilenschnittstelle) herunterladen.
+Sie können das Paket für die Befehlszeilenschnittstelle (CLI) von SANtricity System Manager herunterladen.
 
 Die CLI bietet eine textbasierte Methode zur Konfiguration und Überwachung von Speicher-Arrays. Es kommuniziert über HTTPS und verwendet dieselbe Syntax wie die CLI, die im extern installierten Managementsoftwarepaket verfügbar ist. Zum Herunterladen der CLI ist kein Schlüssel erforderlich.
 

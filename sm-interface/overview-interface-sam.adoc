@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, 
 summary: Sie navigieren in der Hauptschnittstelle, um auf System Manager Funktionen und Aufgaben zuzugreifen. 
 ---
-= Überblick über die System Manager Schnittstelle
+= SANtricity System Manager – Überblick über die Benutzeroberfläche
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-System Manager ist eine webbasierte Schnittstelle, über die Sie ein Storage Array in einer Ansicht managen können.
+SANtricity System Manager ist eine webbasierte Schnittstelle, über die Sie Storage Array in einer einzigen Ansicht verwalten können.
 
 
 

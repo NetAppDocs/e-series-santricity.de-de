@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, considerations, access system manager 
 summary: Sie wählen ein oder mehrere Speicher-Arrays aus und öffnen SANtricity System Manager mit der Option Start, wenn Sie Speicher-Arrays konfigurieren und verwalten möchten. 
 ---
-= Überlegungen für den Zugriff auf System Manager
+= Überlegungen für den Zugriff auf SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Sie wählen ein oder mehrere Speicher-Arrays aus und öffnen System Manager mit der Option Start, wenn Sie Speicher-Arrays konfigurieren und verwalten möchten.
+Sie wählen ein oder mehrere Speicher-Arrays aus und öffnen SANtricity System Manager mit der Option Start, wenn Sie Speicher-Arrays konfigurieren und verwalten möchten.
 
 System Manager ist eine eingebettete Applikation auf den Controllern, die über einen Ethernet-Management-Port mit dem Netzwerk verbunden ist. Es umfasst alle Array-basierten Funktionen.
 

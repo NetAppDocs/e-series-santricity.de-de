@@ -11,7 +11,7 @@ summary: Die Zugriffsverwaltung ist eine Methode zur Konfiguration der Benutzera
 
 
 [role="lead"]
-Bei Access Management handelt es sich um eine Methode zur Konfiguration der Benutzerauthentifizierung in Unified Manager.
+Die Zugriffsverwaltung ist eine Methode zur Konfiguration der Benutzerauthentifizierung in SANtricity Unified Manager.
 
 
 

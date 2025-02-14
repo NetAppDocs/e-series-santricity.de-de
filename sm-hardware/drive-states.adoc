@@ -11,7 +11,7 @@ summary: System Manager meldet verschiedene Status für Laufwerke.
 
 
 [role="lead"]
-System Manager meldet verschiedene Status für Laufwerke.
+SANtricity System Manager meldet verschiedene Status für Laufwerke.
 
 
 

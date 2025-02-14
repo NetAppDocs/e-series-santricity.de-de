@@ -11,7 +11,7 @@ summary: Unified Manager zeigt den Status jedes erkannten Storage-Arrays an.
 
 
 [role="lead"]
-Unified Manager zeigt den Status jedes erkannten Storage-Arrays an.
+SANtricity Unified Manager zeigt den Status jedes erkannten Speicher-Arrays an.
 
 Gehen Sie zur Seite *Verwalten - Alle*. Auf dieser Seite können Sie den Status der Verbindung zwischen dem Web Services Proxy und diesem Speicher-Array anzeigen.
 

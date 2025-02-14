@@ -11,7 +11,7 @@ summary: Sie konfigurieren gespiegelte Paare in der Benutzeroberfläche von Unif
 
 
 [role="lead"]
-Sie konfigurieren gespiegelte Paare in der Benutzeroberfläche von Unified Manager und managen dann die Paare in System Manager.
+Sie konfigurieren gespiegelte Paare in der Oberfläche von SANtricity Unified Manager und verwalten dann die Paare in SANtricity System Manager.
 
 Befolgen Sie vor dem Erstellen eines gespiegelten Paares diese Richtlinien.
 

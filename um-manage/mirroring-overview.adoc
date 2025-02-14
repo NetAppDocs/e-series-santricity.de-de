@@ -11,7 +11,7 @@ summary: Unified Manager enthält Konfigurationsoptionen für die SANtricity-Spi
 
 
 [role="lead"]
-Unified Manager enthält Konfigurationsoptionen für die SANtricity-Spiegelungsfunktionen, mit denen Administratoren Daten zur Datensicherung zwischen zwei Storage-Arrays replizieren können.
+SANtricity Unified Manager enthält Konfigurationsoptionen für die SANtricity-Spiegelungsfunktionen, mit denen Administratoren Daten zur Datensicherung zwischen zwei Storage Arrays replizieren können.
 
 [NOTE]
 ====

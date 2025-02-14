@@ -11,7 +11,7 @@ summary: Erfahren Sie, wie die Bedingungen für das Zugriffsmanagement für SANt
 
 
 [role="lead"]
-Erfahren Sie, wie die Bedingungen für das Zugriffsmanagement für Unified Manager gelten.
+Erfahren Sie, wie die Bedingungen für das Zugriffsmanagement für SANtricity Unified Manager gelten.
 
 [cols="25h,~"]
 |===

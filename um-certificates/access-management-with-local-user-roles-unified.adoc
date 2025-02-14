@@ -11,7 +11,7 @@ summary: 'Administratoren können die in SANtricity Unified Manager erzwungenen 
 
 
 [role="lead"]
-Administratoren können RBAC-Funktionen (rollenbasierte Zugriffssteuerung) nutzen, die in Unified Manager durchgesetzt werden. Diese Funktionen werden als „lokale Benutzerrollen“ bezeichnet.
+Administratoren können die in SANtricity Unified Manager erzwungenen RBAC-Funktionen (rollenbasierte Zugriffssteuerung) nutzen. Diese Funktionen werden als „lokale Benutzerrollen“ bezeichnet.
 
 
 

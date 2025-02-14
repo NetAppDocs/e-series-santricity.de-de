@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: Management mehrerer Arrays mit Unified Manager 7
+  title: Management mehrerer Arrays mit SANtricity Unified Manager 7
   summary: Mit der Dokumentation der SANtricity Software können Sie Ihr Storage-Array
     installieren, einrichten und warten.
   keywords: santricity, install, setup, maintain, storage array
@@ -9,7 +9,7 @@ indexpage:
   tiles:
   - title: Einrichtung
     links:
-    - title: Übersicht über die Unified Manager Schnittstelle
+    - title: Übersicht über die SANtricity Unified Manager Schnittstelle
       url: "../um-admin/overview-interface-unified.html"
     - title: Legen Sie das Admin-Passwort fest
       url: "../um-admin/administrator-password-protection-unified.html"

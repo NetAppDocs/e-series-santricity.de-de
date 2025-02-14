@@ -11,7 +11,7 @@ summary: Wenn Sie beim Versuch, sich bei System Manager anzumelden, einen Fehler
 
 
 [role="lead"]
-Wenn Sie beim Versuch, sich bei System Manager anzumelden, einen Fehler erhalten, überprüfen Sie die möglichen Ursachen.
+Wenn bei der Anmeldung bei SANtricity System Manager ein Fehler angezeigt wird, prüfen Sie die folgenden möglichen Ursachen.
 
 Fehler beim Anmelden bei System Manager können aus einem der folgenden Gründe auftreten:
 

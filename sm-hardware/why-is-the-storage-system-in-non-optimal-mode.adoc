@@ -11,7 +11,7 @@ summary: Ein Speichersystem im nicht optimalen Modus ist auf einen ungültigen K
 
 
 [role="lead"]
-Ein Speichersystem im nicht optimalen Modus ist auf einen ungültigen Konfigurationsstatus des Systems zurückzuführen. Trotz dieses Status wird ein normaler I/O-Zugriff auf vorhandene Volumes vollständig unterstützt. System Manager untersagt jedoch einige Operationen.
+Ein Speichersystem im nicht optimalen Modus ist auf einen ungültigen Konfigurationsstatus des Systems zurückzuführen. Trotz dieses Status wird der normale I/O-Zugriff auf vorhandene Volumes vollständig unterstützt, der SANtricity System Manager untersagt jedoch einige Vorgänge.
 
 Ein Storage-System könnte aus einem der folgenden Gründe auf eine ungültige Systemkonfiguration überführen:
 

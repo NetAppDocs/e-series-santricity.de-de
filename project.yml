@@ -31,9 +31,9 @@ sidebar:
       url: "/san-getstarted/santricity-overview.html"
     - title: Unterstützte Browser und Betriebssysteme
       url: "/san-getstarted/supported-browsers-os.html"
-    - title: Einrichtung von System Manager
+    - title: Einrichtung von SANtricity System Manager
       entries:
-      - title: Greifen Sie Auf System Manager Zu
+      - title: Greifen Sie auf SANtricity System Manager zu
         url: "/san-getstarted/access-sam.html"
       - title: Übersicht über den Setup-Assistenten
         url: "/sm-interface/setup-wizard-overview.html"
@@ -53,20 +53,21 @@ sidebar:
         - title: Woher weiß ich, ob ich die empfohlene Pool-Konfiguration akzeptieren
             sollte?
           url: "/sm-interface/how-do-i-know-if-i-should-accept-the-recommended-pool-configuration.html"
-        - title: System Manager hat keine Hosts erkannt. Was mache ich?
+        - title: Der SANtricity System Manager hat keine Hosts erkannt. Was mache
+            ich?
           url: "/sm-interface/system-manager-has-not-detected-any-hosts-what-do-i-do.html"
-    - title: Einrichtung von Unified Manager
+    - title: Einrichtung von SANtricity Unified Manager
       entries:
-      - title: Installation Von Unified Manager
+      - title: Installation von SANtricity Unified Manager
         url: "/san-getstarted/install-um.html"
-      - title: Zugriff Auf Unified Manager
+      - title: Zugriff auf SANtricity Unified Manager
         url: "/san-getstarted/login-um.html"
-  - title: System Manager
+  - title: SANtricity System Manager
     url: "/system-manager/index.html"
     entries:
     - title: Hauptschnittstelle
       entries:
-      - title: Überblick über die System Manager Schnittstelle
+      - title: SANtricity System Manager – Überblick über die Benutzeroberfläche
         url: "/sm-interface/overview-interface-sam.html"
       - title: Anzeigen von Performance-Daten
         entries:
@@ -1174,8 +1175,8 @@ sidebar:
         - title: Warum wird das Dialogfeld „Zugriff auf anderen Controller nicht möglich“
             angezeigt?
           url: "/sm-settings/why-does-the-cannot-access-other-controller-dialog-appear.html"
-        - title: Wie weiß ich, welche Zertifikate zum externen Verschlüsselungsmanagement
-            in System Manager hochgeladen werden müssen?
+        - title: Wie weiß ich, welche Zertifikate zum externen Schlüsselmanagement
+            in den SANtricity System Manager hochgeladen werden müssen?
           url: "/sm-settings/how-do-i-know-what-certificates-need-to-be-uploaded-to-system-manager.html"
         - title: Was muss ich über die Überprüfung des Annullierung von Zertifikaten
             wissen?
@@ -1281,12 +1282,12 @@ sidebar:
           url: "/sm-support/what-do-i-need-to-know-before-upgrading-drive-firmware.html"
         - title: Wie wähle ich die Art des Upgrades aus?
           url: "/sm-support/how-do-i-choose-which-type-of-upgrade-to-perform.html"
-  - title: Unified Manager
+  - title: SANtricity Unified Manager
     url: "/unified-manager/index.html"
     entries:
     - title: Hauptschnittstelle
       entries:
-      - title: Übersicht über die Unified Manager Schnittstelle
+      - title: Übersicht über die SANtricity Unified Manager Schnittstelle
         url: "/um-admin/overview-interface-unified.html"
       - title: Unterstützte Browser
         url: "/um-admin/supported-browsers-unified.html"
@@ -1304,7 +1305,7 @@ sidebar:
         entries:
         - title: Überlegungen bei der Array-Ermittlung
           url: "/um-manage/considerations-for-discovering-arrays.html"
-        - title: Überlegungen für den Zugriff auf System Manager
+        - title: Überlegungen für den Zugriff auf SANtricity System Manager
           url: "/um-manage/launch-considerations.html"
       - title: Arrays erkennen
         entries:
@@ -1316,7 +1317,7 @@ sidebar:
         entries:
         - title: Anzeigen des Array-Status
           url: "/um-manage/storage-array-status.html"
-        - title: Starten Sie System Manager
+        - title: Management eines individuellen Storage Arrays
           url: "/um-manage/launch-system-manager.html"
         - title: Array-Passwörter ändern
           url: "/um-admin/change-storage-array-passwords.html"

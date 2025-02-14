@@ -11,7 +11,7 @@ summary: 'Die RBAC-Funktionen (rollenbasierte Zugriffssteuerung) umfassen vordef
 
 
 [role="lead"]
-Die RBAC-Funktionen (rollenbasierte Zugriffssteuerung) umfassen vordefinierte Benutzer, wobei eine oder mehrere Rollen zugewiesen sind. Jede Rolle umfasst Berechtigungen für den Zugriff auf Aufgaben in Unified Manager.
+Die RBAC-Funktionen (rollenbasierte Zugriffssteuerung) umfassen vordefinierte Benutzer, wobei eine oder mehrere Rollen zugewiesen sind. Jede Rolle umfasst Berechtigungen für den Zugriff auf Aufgaben in SANtricity Unified Manager.
 
 Die Rollen ermöglichen Benutzern den Zugriff auf Aufgaben wie folgt:
 

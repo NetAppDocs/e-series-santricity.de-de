@@ -12,7 +12,7 @@ summary: Sie können Zertifikate von CA-signierte für die sichere Kommunikation
 
 
 [role="lead"]
-Sie können Zertifikate von CA-signierte für die sichere Kommunikation zwischen den Controllern und dem Browser erhalten, der für den Zugriff auf System Manager verwendet wird.
+Sie können von einer Zertifizierungsstelle signierte Zertifikate für die sichere Kommunikation zwischen den Controllern und dem für den Zugriff auf SANtricity System Manager verwendeten Browser erhalten.
 
 .Bevor Sie beginnen
 * Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.

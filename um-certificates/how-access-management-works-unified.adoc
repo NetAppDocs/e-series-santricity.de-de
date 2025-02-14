@@ -11,7 +11,7 @@ summary: Verwenden Sie die Zugriffsverwaltung, um die Benutzerauthentifizierung 
 
 
 [role="lead"]
-Verwenden Sie Access Management, um die Benutzerauthentifizierung in Unified Manager einzurichten.
+Verwenden Sie die Zugriffsverwaltung, um die Benutzerauthentifizierung in SANtricity Unified Manager einzurichten.
 
 
 

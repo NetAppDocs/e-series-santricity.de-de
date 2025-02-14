@@ -11,7 +11,7 @@ summary: Hot Spares fungieren als Standby-Laufwerke in RAID 1-, RAID 5- oder RAI
 
 
 [role="lead"]
-Hot Spares fungieren als Standby-Laufwerke in RAID 1-, RAID 5- oder RAID 6-Volume-Gruppen für System Manager.
+Hot Spares fungieren als Standby-Laufwerke in RAID 1-, RAID 5- oder RAID 6-Volume-Gruppen für SANtricity System Manager.
 
 Es handelt sich dabei um voll funktionsfähige Laufwerke, die keine Daten enthalten. Wenn ein Laufwerk in der Volume-Gruppe ausfällt, rekonstruiert der Controller die Daten vom ausgefallenen Laufwerk automatisch auf ein Laufwerk, das als Hot Spare zugewiesen wurde.
 

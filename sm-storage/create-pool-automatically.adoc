@@ -12,7 +12,7 @@ summary: Die Erstellung des Pools wird automatisch initiiert, wenn System Manage
 
 
 [role="lead"]
-Die Erstellung des Pools wird automatisch initiiert, wenn System Manager nicht zugewiesene Laufwerke im Speicher-Array erkennt. Mithilfe der automatischen Pool-Erstellung können alle nicht zugewiesenen Laufwerke im Speicher-Array in einem Pool konfiguriert und Laufwerke zu vorhandenen Pools hinzugefügt werden.
+Die Poolerstellung wird automatisch gestartet, wenn SANtricity System Manager nicht zugewiesene Laufwerke im Speicher-Array erkennt. Mithilfe der automatischen Pool-Erstellung können alle nicht zugewiesenen Laufwerke im Speicher-Array in einem Pool konfiguriert und Laufwerke zu vorhandenen Pools hinzugefügt werden.
 
 .Bevor Sie beginnen
 Sie können das Dialogfeld „automatische Konfiguration des Pools“ starten, wenn eine der folgenden Bedingungen zutrifft:

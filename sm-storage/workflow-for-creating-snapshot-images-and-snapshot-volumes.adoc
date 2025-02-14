@@ -11,7 +11,7 @@ summary: In System Manager können Sie Snapshot Images und Snapshot-Volumes erst
 
 
 [role="lead"]
-In System Manager können Sie Snapshot Images und Snapshot-Volumes erstellen, indem Sie diese Schritte ausführen.
+In SANtricity System Manager können Sie Snapshot-Images und Snapshot-Volumes erstellen, indem Sie die folgenden Schritte ausführen.
 
 
 

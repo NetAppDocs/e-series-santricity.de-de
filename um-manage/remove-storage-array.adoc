@@ -12,7 +12,7 @@ summary: Sie können ein oder mehrere Storage Arrays entfernen, wenn Sie es nich
 
 
 [role="lead"]
-Sie können ein oder mehrere Storage-Arrays entfernen, wenn Sie es nicht mehr über Unified Manager managen möchten.
+Sie können ein oder mehrere Storage Arrays entfernen, wenn Sie es nicht mehr über SANtricity Unified Manager managen möchten.
 
 .Über diese Aufgabe
 Sie können nicht auf die von Ihnen entfernenden Speicher-Arrays zugreifen. Sie können jedoch eine Verbindung zu einem der entfernten Speicher-Arrays herstellen, indem Sie einen Browser direkt auf seine IP-Adresse oder den Host-Namen zeigen.

@@ -12,7 +12,7 @@ summary: Kapazitätswarnungen geben an, wann Laufwerke zu einem Pool hinzugefüg
 
 
 [role="lead"]
-Kapazitätswarnungen geben an, wann Laufwerke zu einem Pool hinzugefügt werden sollen. Ein Pool benötigt ausreichend freie Kapazität, um Storage-Array-Vorgänge erfolgreich durchzuführen. Um diese Vorgänge zu unterbrechen, können Sie System Manager so konfigurieren, dass Warnungen gesendet werden, wenn die freie Kapazität eines Pools einen bestimmten Prozentsatz erreicht oder überschreitet.
+Kapazitätswarnungen geben an, wann Laufwerke zu einem Pool hinzugefügt werden sollen. Ein Pool benötigt ausreichend freie Kapazität, um Storage-Array-Vorgänge erfolgreich durchzuführen. Vermeiden Sie Unterbrechungen dieser Vorgänge, indem Sie SANtricity System Manager so konfigurieren, dass Warnmeldungen gesendet werden, wenn die freie Kapazität eines Pools einen bestimmten Prozentsatz erreicht oder überschreitet.
 
 Sie legen diesen Prozentsatz fest, wenn Sie einen Pool mit der Option *Pool Auto-Configuration* oder mit der Option *Pool erstellen* erstellen. Wenn Sie die Option automatisch wählen, bestimmen die Standardeinstellungen automatisch, wann Sie Benachrichtigungen erhalten. Wenn Sie den Pool manuell erstellen möchten, können Sie die Benachrichtigungseinstellungen festlegen oder die Standardeinstellungen übernehmen. Sie können diese Einstellungen später im Menü:Einstellungen[Warnungen] anpassen.
 

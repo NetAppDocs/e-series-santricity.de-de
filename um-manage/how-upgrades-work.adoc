@@ -12,7 +12,7 @@ summary: Sie können Unified Manager verwenden, um ein Upgrade der SANtricity OS
 
 
 [role="lead"]
-Sie können Unified Manager verwenden, um ein Upgrade der SANtricity OS Software auf mehreren Storage Arrays desselben Typs auf eine neuere Version durchzuführen.
+Sie können mit SANtricity Unified Manager die SANtricity OS Software auf mehreren Storage Arrays desselben Typs auf eine neuere Version aktualisieren.
 
 
 

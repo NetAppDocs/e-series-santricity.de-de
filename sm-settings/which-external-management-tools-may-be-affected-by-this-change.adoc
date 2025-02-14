@@ -11,7 +11,7 @@ summary: Wenn Sie bestimmte Änderungen in System Manager vornehmen, z. B. das W
 
 
 [role="lead"]
-Wenn Sie bestimmte Änderungen in System Manager vornehmen, z. B. das Wechseln der Managementoberfläche oder die Verwendung von SAML für eine Authentifizierungsmethode, sind einige externe Tools und Funktionen möglicherweise von der Verwendung eingeschränkt.
+Wenn Sie bestimmte Änderungen in SANtricity System Manager vornehmen, wie z. B. das Wechseln der Managementoberfläche oder die Verwendung von SAML für eine Authentifizierungsmethode, sind die Verwendung einiger externer Tools und Funktionen möglicherweise eingeschränkt.
 
 
 

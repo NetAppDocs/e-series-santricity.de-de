@@ -11,7 +11,7 @@ summary: 'Mit System Manager können Sie mithilfe eines OCSP-Servers (Online Cer
 
 
 [role="lead"]
-Mit System Manager können Sie mithilfe eines OCSP-Servers (Online Certificate Status Protocol) nach widerrufenen Zertifikaten suchen, anstatt Zertifikatsperrlisten (Certificate Revocation Lists, CRLs) hochzuladen.
+Mit SANtricity System Manager können Sie mithilfe eines OCSP-Servers (Online Certificate Status Protocol) nach gesperrten Zertifikaten suchen, anstatt Zertifikatsperrlisten (Certificate Revocation Lists, CRLs) hochzuladen.
 
 Zurückwiderrufen Zertifikate sollten nicht mehr vertrauenswürdig sein. Ein Zertifikat kann aus mehreren Gründen widerrufen werden; beispielsweise wenn die Zertifizierungsstelle (CA) das Zertifikat nicht ordnungsgemäß ausgestellt hat, ein privater Schlüssel kompromittiert wurde oder die identifizierte Entität nicht den Richtlinienanforderungen entspricht.
 

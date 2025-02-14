@@ -12,7 +12,7 @@ summary: Sie können System Manager so konfigurieren, dass Storage-Array-Warnmel
 
 
 [role="lead"]
-Sie können System Manager so konfigurieren, dass Storage-Array-Warnmeldungen per E-Mail, SNMP-Traps und Syslog-Meldungen gesendet werden.
+Sie können SANtricity System Manager so konfigurieren, dass Speicher-Array-Warnmeldungen per E-Mail, SNMP-Traps und Syslog-Meldungen gesendet werden.
 
 
 

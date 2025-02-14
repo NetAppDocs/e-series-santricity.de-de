@@ -12,7 +12,7 @@ summary: Sie können die Einstellungen für ein gespiegeltes Paar-Volume ändern
 
 
 [role="lead"]
-Sie können die Einstellungen für ein gespiegeltes Paar-Volume ändern, um den Prozentpunkt anzupassen, an dem System Manager eine Benachrichtigung sendet, wenn die reservierte Kapazität eines gespiegelten Paar-Volumes voll ist.
+Sie können die Einstellungen für ein Volume mit gespiegelten Paaren ändern, um den Prozentpunkt anzupassen, an dem SANtricity System Manager eine Warnmeldung sendet, wenn die reservierte Kapazität für ein Volume mit gespiegelten Paaren fast voll ist.
 
 .Schritte
 . Wählen Sie Menü:Speicher[Pools & Volume Groups].

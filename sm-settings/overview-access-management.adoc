@@ -12,7 +12,7 @@ summary: 'Die Zugriffsverwaltung ist eine Methode zur Einrichtung der Benutzerau
 
 
 [role="lead"]
-Access Management ist eine Methode zur Einrichtung der Benutzerauthentifizierung in System Manager.
+Die Zugriffsverwaltung ist eine Methode zur Einrichtung der Benutzerauthentifizierung in SANtricity System Manager.
 
 
 

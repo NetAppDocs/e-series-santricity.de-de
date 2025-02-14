@@ -12,7 +12,7 @@ summary: 'Wenn das Network Time Protocol (NTP) nicht aktiviert ist, können Sie 
 
 
 [role="lead"]
-Wenn das Network Time Protocol (NTP) nicht aktiviert ist, können Sie die Uhren auf den Controllern manuell so einstellen, dass sie mit dem Management-Client synchronisiert werden (das System, mit dem der Browser ausgeführt wird, auf den System Manager zugreift).
+Wenn das Network Time Protocol (NTP) nicht aktiviert ist, können Sie die Uhren auf den Controllern manuell so einstellen, dass sie mit dem Management-Client synchronisiert werden (das System, mit dem der Browser ausgeführt wird, der auf SANtricity System Manager zugreift).
 
 .Über diese Aufgabe
 Durch die Synchronisierung wird sichergestellt, dass Ereigniszeitstempel in den Zeitstempeln des Ereignisprotokolls in die Host-Log-Dateien geschrieben werden. Während der Synchronisierung bleiben die Controller verfügbar und betriebsbereit.

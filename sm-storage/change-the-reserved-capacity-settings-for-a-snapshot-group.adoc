@@ -12,7 +12,7 @@ summary: Sie können die Einstellungen für eine Snapshot-Gruppe ändern, um ihr
 
 
 [role="lead"]
-Sie können die Einstellungen für eine Snapshot-Gruppe ändern, um ihren Namen zu ändern, die Einstellungen für das automatische Löschen, die maximale Anzahl zulässiger Snapshot-Images, den Prozentpunkt, an dem System Manager eine Benachrichtigung über reservierte Kapazität sendet, oder die Richtlinie, die verwendet werden soll, wenn die reservierte Kapazität den maximal definierten Prozentsatz erreicht.
+Sie können die Einstellungen für eine Snapshot-Gruppe so ändern, dass ihr Name, die Einstellungen für das automatische Löschen, die maximale Anzahl zulässiger Snapshot-Images, der Prozentpunkt, an dem SANtricity System Manager eine Warnmeldung über reservierte Kapazität sendet, oder die Richtlinie, die verwendet wird, wenn die reservierte Kapazität ihren maximal definierten Prozentsatz erreicht.
 
 Während der Erstellung einer Snapshot-Gruppe wird reservierte Kapazität erstellt, um die Daten aller Snapshot-Images der Gruppe zu speichern.
 

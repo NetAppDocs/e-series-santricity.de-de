@@ -11,7 +11,7 @@ summary: Auf SANtricity Unified Manager kann über verschiedene Browsertypen zug
 
 
 [role="lead"]
-Auf Unified Manager kann über verschiedene Browsertypen zugegriffen werden.
+Auf SANtricity Unified Manager kann über verschiedene Browsertypen zugegriffen werden.
 
 Die folgenden Browser und Versionen werden unterstützt.
 

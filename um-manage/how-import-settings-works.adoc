@@ -11,7 +11,7 @@ summary: Mit Unified Manager können Sie Einstellungen von einem Speicher-Array 
 
 
 [role="lead"]
-Mit Unified Manager können Sie Einstellungen von einem Speicher-Array in mehrere Speicher-Arrays importieren. Die Funktion „Importeinstellungen“ ist ein Batch-Vorgang, der Zeit spart, wenn Sie mehrere Arrays im Netzwerk konfigurieren müssen.
+Mit SANtricity Unified Manager können Sie Einstellungen von einem Storage-Array in mehrere Storage-Arrays importieren. Die Funktion „Importeinstellungen“ ist ein Batch-Vorgang, der Zeit spart, wenn Sie mehrere Arrays im Netzwerk konfigurieren müssen.
 
 
 

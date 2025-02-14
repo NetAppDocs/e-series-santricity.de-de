@@ -12,7 +12,7 @@ summary: Mit System Manager können Sie AutoSupport-Patches an den technischen S
 
 
 [role="lead"]
-Mit System Manager können Sie AutoSupport-Patches an den technischen Support senden, ohne auf einen geplanten Versand warten zu müssen.
+Mit SANtricity System Manager können Sie AutoSupport Entsendungen an den technischen Support senden, ohne auf einen geplanten Versand warten zu müssen.
 
 .Bevor Sie beginnen
 Die AutoSupport-Funktion muss aktiviert sein. Sie sehen, ob die Funktion auf der Seite AutoSupport aktiviert ist.

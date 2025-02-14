@@ -11,7 +11,7 @@ summary: 'Auf der Registerkarte Lokale Benutzerrollen können Sie die Zuordnunge
 
 
 [role="lead"]
-Auf der Registerkarte Lokale Benutzerrollen können Sie die Zuordnungen der Benutzer zu den Standardrollen anzeigen. Diese Zuordnungen sind Teil der RBAC (rollenbasierte Zugriffssteuerung), die im Web Services Proxy für Unified Manager durchgesetzt wird.
+Auf der Registerkarte Lokale Benutzerrollen können Sie die Zuordnungen der Benutzer zu den Standardrollen anzeigen. Diese Zuordnungen sind Teil der RBAC (rollenbasierte Zugriffssteuerung), die im Web Services Proxy für SANtricity Unified Manager durchgesetzt wird.
 
 .Bevor Sie beginnen
 Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.

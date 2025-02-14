@@ -11,7 +11,7 @@ summary: Bevor Sie Unified Manager für das Upgrade mehrerer Storage-Arrays verw
 
 
 [role="lead"]
-Bevor Sie Unified Manager für das Upgrade mehrerer Storage-Arrays verwenden, sollten Sie die wichtigsten Überlegungen bei der Planung beachten.
+Bevor Sie SANtricity Unified Manager für das Upgrade mehrerer Storage-Arrays verwenden, sollten Sie die wichtigsten Überlegungen in Ihrer Planung durchgehen.
 
 
 

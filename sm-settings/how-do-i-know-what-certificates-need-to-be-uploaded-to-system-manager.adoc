@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, certificates, external, key, management, 
 summary: Für das externe Verschlüsselungsmanagement importieren Sie zwei Arten von Zertifikaten zur Authentifizierung zwischen dem Storage-Array und dem Schlüsselverwaltungsserver, damit sich die beiden Entitäten gegenseitig vertrauen können. 
 ---
-= Wie weiß ich, welche Zertifikate zum externen Verschlüsselungsmanagement in System Manager hochgeladen werden müssen?
+= Wie weiß ich, welche Zertifikate zum externen Schlüsselmanagement in den SANtricity System Manager hochgeladen werden müssen?
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

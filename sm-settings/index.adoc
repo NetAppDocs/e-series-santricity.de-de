@@ -11,4 +11,4 @@ summary:
 
 
 [role="lead"]
-Sie können System Manager für einige allgemeine Array-Einstellungen und Zusatzfunktionen konfigurieren.
+Sie können SANtricity System Manager für einige allgemeine Array-Einstellungen und Zusatzfunktionen konfigurieren.

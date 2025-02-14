@@ -11,7 +11,7 @@ summary: Die Funktion „Importeinstellungen“ ist ein Batch-Vorgang, bei dem K
 
 
 [role="lead"]
-Die Funktion „Importeinstellungen“ ist ein Batch-Vorgang, bei dem Konfigurationen von einem Speicher-Array auf mehrere Speicher-Arrays geladen werden. Die während dieses Vorgangs importierten Einstellungen hängen davon ab, wie das Quell-Speicher-Array in System Manager konfiguriert ist.
+Die Funktion „Importeinstellungen“ ist ein Batch-Vorgang, bei dem Konfigurationen von einem Speicher-Array auf mehrere Speicher-Arrays geladen werden. Die während dieses Vorgangs importierten Einstellungen hängen davon ab, wie das Quell-Speicher-Array in SANtricity System Manager konfiguriert ist.
 
 Die folgenden Einstellungen können in mehrere Speicher-Arrays importiert werden:
 
