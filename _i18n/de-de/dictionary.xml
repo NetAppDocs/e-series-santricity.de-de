@@ -58,7 +58,6 @@
   <block id="09b06cd0cdc29a9d4e00776a6acd426b" category="paragraph">Wenn nicht synchronisierte Daten vorhanden sind, spiegeln die Tabellenwerte dies wider. In der Spalte Datenbetrag wird der nicht synchronisierte Datenbetrag in MiB aufgelistet.</block>
   <block id="82d169a1cf1561c3cb857672c5ab5869" category="summary">Sie können den bevorzugten Controller-Eigentümer in einem gespiegelten Paar ändern.</block>
   <block id="31198b05ef5db885cfa2a353861891e0" category="doc">Volume-Eigentum</block>
-  <block id="04bbd2c132c1093db28e447b3653bb4f" category="paragraph">Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.</block>
   <block id="ec3ce7409f7eff6aca10ae47bae1a411" category="paragraph">Wenn das primäre Volume des gespiegelten Paars Eigentum von Controller A ist, dann befindet sich das sekundäre Volume auch im Besitz von Controller A des Remote Storage Array. Wenn Sie den Eigentümer des primären Volume ändern, wird automatisch der Eigentümer des sekundären Volumes geändert, um sicherzustellen, dass beide Volumes Eigentum des gleichen Controllers sind. Aktuelle Eigentumsänderungen auf der primären Seite werden automatisch an die entsprechenden aktuellen Eigentumsänderungen auf der sekundären Seite übernommen.</block>
   <block id="3e4c8269db2cbe77fd1a60ce212e7997" category="paragraph">Beispielsweise befindet sich ein primäres Volume im Besitz von Controller A, und dann ändern Sie den Controller-Inhaber in Controller B. In diesem Fall ändert der nächste Remote-Schreibvorgang den Controller-Eigentümer des sekundären Volumes von Controller A zu B. Da Änderungen an der Eigentumsrechte am Controller auf der sekundären Seite vom primären Standort gesteuert werden, sind keine besonderen Eingriffe durch den Storage-Administrator erforderlich.</block>
   <block id="7ca86d09980b4b09caca945ea3feb352" category="section-title">Controller wird zurückgesetzt</block>
@@ -2259,8 +2258,6 @@
   <block id="2ab0aa4e6f963bdda6156f57930e7a34" category="list-text">Suchen Sie in System Manager die Seriennummer des Chassis und notieren Sie sie. Sie können sich diese Seriennummer anzeigen lassen, indem Sie den Mauszeiger über die Kachel Support Center bewegen.</block>
   <block id="d8ab4f4f4bd758e305ce24ae089739e7" category="list-text">Suchen Sie in System Manager nach der Feature Enable Identifier. Gehen Sie zum Menü:Einstellungen[System], und scrollen Sie dann nach unten zu *Add-ons*. Suchen Sie nach der *Feature Enable Identifier*. Notieren Sie die Nummer für den Kennzeichner der Feature Enable.</block>
   <block id="1e892535381bacc3eae14862eb515b1a" category="list-text">Suchen und notieren Sie den Code für die Aktivierung der Funktion. Für Features Packs wird dieser Code in den entsprechenden Anweisungen zur Durchführung der Konvertierung angegeben.</block>
-  <block id="b7c76db9b2472e615129452598c32a70" category="inline-link">NetApp E-Series Systems Documentation Center</block>
-  <block id="19c1dae7ed1abf9eb3b6c5146df9b1d5" category="paragraph">Anweisungen von NetApp finden Sie unter<block ref="da76044833cc021823434c8291982304" category="inline-link-rx"></block>.</block>
   <block id="ead7d7ce373cd886b6b7a1a60db53284" category="paragraph">Bei Premium-Funktionen können Sie über die Support-Website auf den Aktivierungscode zugreifen:</block>
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link">NetApp Support</block>
   <block id="e7626dadbaccf1c6de0466c8e9271bce" category="list-text">Melden Sie sich bei an<block ref="9a6f401ca1e7e89d8a0c29fb0cbe81b7" category="inline-link-rx"></block>.</block>
@@ -5828,7 +5825,6 @@
   <block id="bb843563215e1e19d1c820735e915044" category="paragraph">Schreib-Caching ohne Batterien</block>
   <block id="901f00917afed48ea6cd5a55b29f43b6" category="section-title">Spezifisch für Thin Volumes</block>
   <block id="14a290a2c56d62911cb002f430084213" category="paragraph">System Manager bietet keine Option zum Erstellen von Thin Volumes. Wenn Sie Thin Volumes erstellen möchten, verwenden Sie die Befehlszeilenschnittstelle (CLI).</block>
-  <block id="5b48e77fd7668c15e4d278280b54ae19" category="paragraph">Thin Volumes sind auf dem EF600 oder EF300 Storage-System nicht verfügbar.</block>
   <block id="43e3431986de624324e3d216e92456a6" category="paragraph">Zugewiesene Kapazitätsgrenze</block>
   <block id="e0447c3c14a20fec577b74a85083321f" category="paragraph">Die zugewiesene Kapazitätsgrenze ist die Obergrenze für die Größe der zugewiesenen physischen Kapazität für ein Thin Volume.</block>
   <block id="88f63bb52f2f1ecc9c62a78ea1706377" category="paragraph">Warnschwellenwert</block>
@@ -5846,7 +5842,6 @@
   <block id="23509c39f2453599ca0877d32956ae09" category="list-text">Die Kapazität für ein Thick Volume wird bei der Erstellung des Volume zugewiesen.</block>
   <block id="5310bc5e64d1f64e025eb1c642e2bba8" category="list-text">Die Kapazität eines Thin Volume wird beim Schreiben auf das Volume als Daten zugewiesen.</block>
   <block id="059801af7cde1a87cf3c098887a187f9" category="paragraph">Thin Provisioning vermeidet ungenutzte Kapazität und kann Unternehmen im Vorfeld Kosten für Storage einsparen. Bei Full Provisioning profitieren Sie jedoch von weniger Latenz, da der gesamte Storage gleichzeitig zugewiesen wird, wenn Thick Volumes erstellt werden.</block>
-  <block id="e2b8fbf01b4ff47fbb96c92ac379ea78" category="paragraph">Die EF600 und EF300 Storage-Systeme unterstützen kein Thin Provisioning.</block>
   <block id="089e479d3dc64139ab1266d151b32d32" category="section-title">Eigenschaften der Volumes</block>
   <block id="796dfd432b6f644d61e91352515bb6d2" category="paragraph">Jedes Volume in einem Pool oder Volume-Gruppe kann je nach Art der Daten seine eigenen, individuellen Eigenschaften aufweisen. Einige dieser Eigenschaften sind:</block>
   <block id="7c1d052253e33c65465a5eb406bb3dc2" category="list-text">*Segmentgröße* -- Ein Segment ist die Datenmenge in Kilobyte (KiB), die auf einem Laufwerk gespeichert ist, bevor das Speicherarray zum nächsten Laufwerk im Stripe (RAID-Gruppe) wechselt. Die Segmentgröße ist gleich oder kleiner als die Kapazität der Volume-Gruppe. Die Segmentgröße ist festgelegt und kann für Pools nicht geändert werden.</block>
@@ -6833,7 +6828,6 @@
   <block id="b9b2d068ee29b7338b3b4084ad2c7009" category="paragraph">Die geänderten Verbindungseinstellungen werden auf das Remote-Speicherobjekt angewendet.</block>
   <block id="8a815b2a47535f1623438fab12c61953" category="summary">Ein Zugriffs-Volume ist ein werkseitig konfiguriertes Volume auf dem Storage-Array, das über die Host-I/O-Verbindung für die Kommunikation mit dem Storage-Array und dem Host verwendet wird. Das Zugriffsvolume erfordert eine LUN (Logical Unit Number).</block>
   <block id="da5b269ce13f310ea60da5646f66f4df" category="list-text">*In-Band-Management* -- das Zugriffsvolume wird für eine in-Band-Verbindung zur Verwaltung des Speicher-Arrays verwendet. Dies kann nur geschehen, wenn Sie das Storage Array über die Befehlszeilenschnittstelle (CLI) verwalten.</block>
-  <block id="b07f190bd057ec5ae997cb6fe0661683" category="paragraph">Für EF600 oder EF300 Storage-Systeme ist kein in-Band-Management verfügbar.</block>
   <block id="c77cfe09f0da7405a83c73fb323b653d" category="paragraph">Beim ersten Zuweisen eines Volumes zu einem Host wird automatisch ein Zugriffsvolume erstellt. Wenn Sie beispielsweise Volume_1 und Volume_2 einem Host zuweisen, werden beim Anzeigen der Ergebnisse dieser Zuweisung drei Volumes angezeigt (Volume_1, Volume_2 und Access).</block>
   <block id="1f7334c99cc83f3bab939dd30e1ec973" category="paragraph">Wenn Sie nicht automatisch Hosts erstellen oder ein Speicher-Array in-Band mit der CLI verwalten, brauchen Sie nicht das Zugriffs-Volume, und Sie können die LUN freigeben, indem Sie das Zugriffs-Volume löschen. Durch diese Aktion werden die Zuweisung von Volume zu LUN sowie alle bandinternen Managementverbindungen zum Host entfernt.</block>
   <block id="380cbfd4d1cf37c4bcab258a95fa8770" category="summary">Sie können die Einstellungen für eine Snapshot-Gruppe ändern, um ihren Namen zu ändern, die Einstellungen für das automatische Löschen, die maximale Anzahl zulässiger Snapshot-Images, den Prozentpunkt, an dem System Manager eine Benachrichtigung über reservierte Kapazität sendet, oder die Richtlinie, die verwendet werden soll, wenn die reservierte Kapazität den maximal definierten Prozentsatz erreicht.</block>
@@ -7815,7 +7809,6 @@
   <block id="638b5ec826787200f55db76541b5b778" category="paragraph">Eine Volume-Gruppe kann Laufwerke enthalten, die für da-fähig sind oder nicht für da-fähig sind, aber alle Laufwerke müssen für die Verwendung dieser Funktion als da-fähig sein.</block>
   <block id="67f499ebbd7fdad55cde14381c77d246" category="paragraph">Zeigt an, ob Ressourcen-Provisioning für diese Gruppe verfügbar ist. Resource Provisioning ist eine Funktion, die in den EF300- und EF600-Speicher-Arrays zur Verfügung steht und die es ermöglicht, Volumes ohne Hintergrundinitialisierung sofort in Betrieb zu nehmen.</block>
   <block id="583c0f2e390971cb9f4ba4ce9747868e" category="paragraph">Zeigt an, ob Regalverlustschutz verfügbar ist. Shelf-Schutz garantiert den Zugriff auf die Daten auf den Volumes in einer Volume-Gruppe, wenn ein vollständiger Verlust der Kommunikation zu einem Shelf auftritt.</block>
-  <block id="fd12b513859f856de91f86c6941047de" category="paragraph">Zeigt an, ob ein Schubladenschutz verfügbar ist, der nur zur Verfügung steht, wenn Sie ein Laufwerk-Shelf mit Schubladen verwenden. Der Schutz vor Schubladenverlust garantiert den Zugriff auf die Daten auf den Volumes in einer Volume-Gruppe, wenn ein vollständiger Verlust der Kommunikation mit einer einzelnen Schublade in einem Festplatten-Shelf auftritt.</block>
   <block id="145bb60ec8160f7c202bcdea28c6a17a" category="paragraph">Zeigt die Blockgrößen an, die für die Volumes in der Gruppe erstellt werden können:</block>
   <block id="f94466cc14329c7744e6e57db10ed742" category="example-title">Eigenschaften des Antriebs mit manueller Methode</block>
   <block id="5ca219b54399500b176823f866ee1383" category="paragraph">Medientyp</block>
@@ -8448,11 +8441,7 @@
   <block id="aab3238922bcc25a6f606eb525ffdc56" category="paragraph">14</block>
   <block id="8613985ec49eb8f757ae6439e879bb2a" category="paragraph">90</block>
   <block id="d1b1ed9561d588b34b9b60028f6966b9" category="admonition">Wenn Access Management unter Verwendung der in das Array integrierten SAML-Funktionen (Security Assertion Markup Language) konfiguriert wird, kann es zu einer Sitzungszeitüberschreitung kommen, wenn die SSO-Sitzung des Benutzers die maximale Grenze erreicht. Dies kann vor dem Timeout der System Manager-Sitzung auftreten.</block>
-  <block id="cd038504338f9921b8afe6d5ed6c6232" category="paragraph">Synchrones Spiegeln ist auf dem EF600 oder EF300 Storage-System nicht verfügbar.</block>
-  <block id="b84bb83d3d8cd48ddc066fe0c6d41ead" category="paragraph">Synchrones Spiegeln ist auf dem EF600 oder EF300 Storage-Array nicht verfügbar.</block>
   <block id="56bdcfc544aad0bd6521d9f11a6f56dd" category="admonition">Bei EF600- und EF300-Controllern müssen die primären und sekundären Volumes eines asynchronen gespiegelten Paares dasselbe Protokoll, Tray-Level, Segmentgröße, Sicherheitstyp und RAID-Level erfüllen. Nicht geeignete asynchrone gespiegelte Paare werden nicht in der Liste der verfügbaren Volumes angezeigt.</block>
-  <block id="2df1194323f38bb1b30fdb6a9b3d4da3" category="paragraph">Diese Funktion ist für das synchrone Spiegeln auf dem EF600- oder EF300-Storage-System nicht verfügbar.</block>
-  <block id="ada2454c6d83cd46018f8d1e49aa4123" category="paragraph">Die synchrone Spiegelung ist auf dem EF300 oder EF600 Storage-Array nicht verfügbar.</block>
   <block id="ecd6161dde3044403e9aa37dc3bc6ee3" category="paragraph">Ja^3^</block>
   <block id="770594fef329f8bc4364a508f0a7d73a" category="paragraph">^1^ das Ziel-Volume muss eine Kapazität haben, die der gemeldeten Kapazität des Thin-Volumes entspricht oder größer ist.</block>
   <block id="b7c484278db16efdf320efb752c9d501" category="paragraph">^2^ Sie können die Snapshot-Volume-Kopie erst verwenden, nachdem der Online-Kopiervorgang abgeschlossen ist.</block>
@@ -8501,7 +8490,6 @@
   <block id="f3623da9f6be936979297f1fa268895c" category="paragraph">Der Ereignismonitor sendet bei jedem Ereignis, das in einem Alarmtabellen stattfindet, Warnmeldungen an den Syslog-Server. Weitere Informationen zum Konfigurieren der Syslog-Einstellungen für Audit-Protokolle finden Sie unter<block ref="8ff4ea61d8cfa4d348011e356d65d49a" category="inline-link-rx"></block>.</block>
   <block id="30af9425adf237457aaff58f7cb21bc9" category="paragraph">Nach der Konfiguration werden alle neuen Audit-Protokolle an den Syslog-Server gesendet. Frühere Protokolle werden nicht übertragen. Weitere Informationen zur Konfiguration von Syslog-Einstellungen für Warnmeldungen finden Sie unter<block ref="7b44e3078f5548e67f8cbe8894b93e12" category="inline-link-rx"></block>.</block>
   <block id="8067406a66fe34c09bf78be3e6ae6fc1" category="list-text">System Manager – eine webbasierte Schnittstelle zur Verwaltung eines einzelnen Speicher-Arrays in Ihrem Netzwerk.</block>
-  <block id="9cd5d105b8b19ef4ba01cc21ecc14cdc" category="admonition">EF600 und EF300 Storage-Arrays unterstützen keine synchrone Spiegelung oder Thin Volumes.</block>
   <block id="f3e5a6d7f7194a35f77d2084efb9ef4f" category="paragraph">Ansichten von Laufwerken, Controllern und Komponenten</block>
   <block id="3354319c9dafbfd43c07abbfb0de1326" category="paragraph">Um zwischen Vorder- und Rückansicht zu wechseln, wählen Sie ganz rechts entweder *Laufwerke* oder *Controller &amp; Komponenten* aus (der Link, der angezeigt wird, hängt von der aktuellen Ansicht ab). Die Ansicht *Laufwerke* zeigt Laufwerke und alle leeren Laufwerksschächte an. Die Ansicht *Controller &amp; Komponenten* zeigt die Controller und alle EAM-Module (ESM), Strom-/Lüftereinschübe oder leeren Controller-Einschübe. Unten auf der Seite können Sie auch *Alle Laufwerke anzeigen* auswählen.</block>
   <block id="3effdbd16c4bb389ee66095c1d8d2ee9" category="inline-link">11.80 Versionshinweise</block>
@@ -8570,7 +8558,6 @@
   <block id="e4709a73a287a5f033f5b1b5142cb74d" category="inline-image-macro">Systemeinstellungen</block>
   <block id="de8011abde4e4344c82af51912b3ce19" category="paragraph"><block ref="2bce2265bb1e82bb0d0858adf2dafedf" category="inline-image-macro-rx" type="image"></block> *Systemeinstellungen*</block>
   <block id="9dcfdd4141be874fb7eb13880a5fd525" category="paragraph"><block ref="1cb7eabea009b4b9cfe98093989eadbf" category="inline-image-macro-rx" type="image"></block> *Unterstützung*</block>
-  <block id="a06a26693ca66f654ff2c2dcecc3e13f" category="paragraph">Unified Manager ist eine webbasierte Software, die zur Verwaltung Ihrer gesamten Domain verwendet wird. In einer zentralen Ansicht zeigt sich der Status aller neueren E-Series und EF-Series Arrays wie E4000, E2800, EF280, EF300, E5700, EF570 und EF600. Sie können auch Batch-Operationen auf ausgewählten Storage-Arrays ausführen.</block>
   <block id="bb426997d075117a34b0e82e716e9988" category="inline-image-macro">Storage-Array erkennen</block>
   <block id="49e4791fdcd34bdf6b59ed172268d67f" category="paragraph"><block ref="9ff56b9b0514866913bcdc835ac16829" category="inline-image-macro-rx" type="image"></block> *Speicher-Arrays entdecken*</block>
   <block id="9506f0fd0f7f1b07960b15b4c9e68d1a" category="inline-image-macro">Start</block>
@@ -8615,7 +8602,6 @@
   <block id="f1683bd5111055cff52f3434b437bc43" category="admonition">Der standardmäßige Medienscan-Zeitraum ist auf 120 Tage festgelegt.</block>
   <block id="630fb851299f40643b158fbf236a2e8c" category="list-text">*Native Blockgröße* – die Blockgröße des Volumes entspricht der Blockgröße des Laufwerks, entweder 512 oder 4 KB.</block>
   <block id="f6c667584c393a129ba0a1a453306311" category="list-text">*Emulierte 512 Blockgröße* - Laufwerke sind 4K, aber die gemeldete Blockgröße ist 512.</block>
-  <block id="478ac1c2fc93cbde8a7f38011e1743e9" category="paragraph">Die SMcli ist direkt über den SANtricity System Manager erhältlich. Diese Version kann von den SMcli heruntergeladen werden und ist für die Controller E4000, EF600, EF300, E5700, EF570, E2800 und EF280 erhältlich. Um den SMcli im SANtricity System Manager herunterzuladen, wählen Sie *Einstellungen* &gt; *System* und *Add-ons* &gt; *Befehlszeilenschnittstelle*.</block>
   <block id="8372cda02b92707718d83873eed70eff" category="image-alt">Struktur von Pools und Volume-Gruppen</block>
   <block id="861b7c78b853932749bb7fa53551562a" category="image-alt">Snapshot – Übersicht</block>
   <block id="454b39575eef78952a66832d854eb9a8" category="paragraph">Sie können den System-Storage über den SANtricity System Manager managen.</block>
@@ -8742,4 +8728,25 @@
   <block id="3ff0cf51d8c2e66a61c1a36c2258ffb7" category="sidebar">Mit der SANtricity Software 11.9 erreichen Sie maximale Performance und Auslastung Ihrer Hybrid-Flash-Storage-Systeme der E-Series und All-Flash-Arrays der EF-Series für workloadintensive Applikationen, beispielsweise Datenanalysen, Videoüberwachung sowie Backup und Recovery.</block>
   <block id="18ca0e475e67b79b5c1367dc3fece234" category="sidebar">SANtricity Software 11.9 Dokumentation</block>
   <block id="1bde2299408b1369159daef73cb92e8b" category="sidebar">SANtricity Software 11.9-Dokumentation</block>
+  <block id="bea9b4f39c26a537662fed44c4b4ab7e" category="admonition">EF600/EF600C und EF300/EF300C Storage-Arrays unterstützen weder synchrones Spiegeln noch Thin Volumes.</block>
+  <block id="07ceb34078b6425ead2bdf25c28b4765" category="paragraph">Unified Manager ist eine webbasierte Software, die zur Verwaltung Ihrer gesamten Domain verwendet wird. In einer zentralen Ansicht zeigt sich der Status aller neueren E-Series und EF-Series Arrays wie E4000, E2800, EF280, EF300, E5700, EF570, EF600, EF300C und EF600C. Sie können auch Batch-Operationen auf ausgewählten Storage-Arrays ausführen.</block>
+  <block id="a8d536a226bc5040b931337a7644185d" category="paragraph">Synchrones Spiegeln ist für das EF600/EF600C oder EF300/EF300C Storage-Array nicht verfügbar.</block>
+  <block id="68d28abd2b869bd5795d298dfa9e846e" category="paragraph">Diese Funktion ist für das Speichersystem EF600/EF600C oder EF300/EF300C nicht verfügbar.</block>
+  <block id="465143b73392c408d4e639ff6ed7cf18" category="paragraph">Synchrones Spiegeln ist für das Storage-Array EF300/EF300C oder EF600/EF600C nicht verfügbar.</block>
+  <block id="c1ef781eafa3554e3ab8e8623b4e5a71" category="paragraph">Synchrones Spiegeln ist auf dem Storage-System EF600/EF600C oder EF300/EF300C nicht verfügbar.</block>
+  <block id="5a7b6df104eae510976ebef6d294bbc2" category="paragraph">Diese Funktion ist für die synchrone Spiegelung auf dem Storage-System EF600/EF600C oder EF300/EF300C nicht verfügbar.</block>
+  <block id="b9e88ad6836c4f5d794f382de8f1f2c9" category="admonition">DULBE wird derzeit nicht auf EF300C- oder EF600C-Speicherarrays unterstützt.</block>
+  <block id="4b8add2dc8ff6506b02ecbd9ce368929" category="summary">Die Ressourcenbereitstellung ist eine Funktion, die in den Speicherarrays EF300, EF300C, EF600 und EF600C verfügbar ist. Damit können Volumes sofort ohne Hintergrundinitialisierung verwendet werden.</block>
+  <block id="90992e53bcf79cefee988e4147be01b6" category="paragraph">Für E4000-, EF600-/EF600C- oder EF300/EF300C-Speichersysteme ist das bandinterne Management mit dem Access Volume nicht verfügbar.</block>
+  <block id="16ebf1283fdb23275c2211d15a82e2cd" category="list-text">Thin Volumes sind für das EF600/EF600C oder EF300/EF300C Storage-System nicht verfügbar.</block>
+  <block id="1ac9fe85275ed11ba0a95e5559f5af80" category="paragraph">Zeigt an, ob ein Schubladenschutz verfügbar ist, der nur zur Verfügung steht, wenn Sie ein Laufwerk-Shelf mit Schubladen verwenden. Der Schutz vor Schubladenverlust garantiert den Zugriff auf die Daten auf den Volumes in einer Volume-Gruppe, wenn ein vollständiger Verlust der Kommunikation mit einer einzelnen Schublade in einem Festplatten-Shelf auftritt.</block>
+  <block id="d1395fc90f77b84babf353a6d9d715db" category="list-text">2,048 Volumes (EF600, EF600C und E5700 Series)</block>
+  <block id="896a61fe313f0f38c6a4575f53d2958d" category="list-text">1,024 Volumes (EF300 und EF300C)</block>
+  <block id="61c9873f4f28e9fd9310c86bf6f0e33f" category="paragraph">Die SMcli ist direkt über den SANtricity System Manager erhältlich. Diese Version kann von den SMcli heruntergeladen werden und ist für die Controller E4000, EF600, EF600C, EF300, EF300C, E5700, EF570, E2800 und EF280 erhältlich. Um den SMcli im SANtricity System Manager herunterzuladen, wählen Sie *Einstellungen* &gt; *System* und *Add-ons* &gt; *Befehlszeilenschnittstelle*.</block>
+  <block id="4f0494c1ee4d34a0be2e413265889dcb" category="paragraph">Die EF600/EF600C und EF300/EF300C Storage-Systeme unterstützen Thin Provisioning nicht.</block>
+  <block id="baee5b8c18b240b4edfcc1ae3fe154f0" category="section-title">Neue Funktionen in Version 11.90R1</block>
+  <block id="efe2c9d7be92af10ac48d790dd8ccfed" category="paragraph">Neue Speichersystemmodelle – EF300C und EF600C</block>
+  <block id="0b2fb9383075b5994701c94b27e4b6ee" category="paragraph">In dieser Version werden die All-Flash-NVMe-Storage-Systeme EF300C und EF600C vorgestellt. Bei den EF300C und EF600C handelt es sich um Flash-Versionen mit hoher Kapazität der vorhandenen EF300 und EF600 Storage-Systeme. NVMe-SSD-Laufwerke mit einer hohen Kapazität von 30 TB oder 60 TB werden von EF300C und EF600C unterstützt. Der EF300C/EF600C ist nur für die Verwendung von Dynamic Disk Pools ohne Legacy-RAID-Unterstützung kompatibel.</block>
+  <block id="c4c050a1cbe127eb24c705844a070872" category="paragraph">Unterstützung von 12-GB-SAS-Schnittstellen auf EF4000</block>
+  <block id="e8b3561f4b15fa164cdd5717ae511188" category="paragraph">Der E4000 Controller unterstützt jetzt 12 GB SAS-Host-Schnittstellenkarten.</block>
 </blocks>

@@ -29,7 +29,7 @@ Wenn Sie die Spiegelung konfigurieren möchten, beachten Sie die folgenden Anfor
 
 [NOTE]
 ====
-Synchrones Spiegeln ist auf dem EF600 oder EF300 Storage-Array nicht verfügbar.
+Synchrones Spiegeln ist für das EF600/EF600C oder EF300/EF300C Storage-Array nicht verfügbar.
 
 ====
 * Sie müssen über zwei Storage-Arrays verfügen.

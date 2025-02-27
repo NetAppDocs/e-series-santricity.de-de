@@ -40,7 +40,7 @@ Thin Volumes
  a| 
 * Thin Volumes werden nur aus einem Pool und nicht aus einer Volume-Gruppe erstellt.
 * Thin Volumes müssen RAID 6 sein.
-* Thin Volumes sind auf dem EF600 oder EF300 Storage-System nicht verfügbar.
+* Thin Volumes sind für das EF600/EF600C oder EF300/EF300C Storage-System nicht verfügbar.
 * Sie müssen die CLI zum Erstellen von Thin Volumes verwenden.
 * Im Gegensatz zu dicken Volumes wird der für das Thin Volume erforderliche Speicherplatz nicht während der Erstellung zugewiesen, sondern zu einem späteren Zeitpunkt nach Bedarf bereitgestellt.
 * Dank eines Thin Volume können Sie seine Größe überdimensionieren. Das heißt, Sie können eine LUN-Größe zuweisen, die größer ist als das Volume. Sie können das Volume dann nach Bedarf erweitern (falls nötig weitere Laufwerke hinzufügen), ohne die Größe der LUN zu erweitern und müssen daher die Benutzer nicht trennen.

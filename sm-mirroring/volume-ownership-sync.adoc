@@ -15,7 +15,7 @@ Sie können den bevorzugten Controller-Eigentümer in einem gespiegelten Paar ä
 
 [NOTE]
 ====
-Diese Funktion ist für das synchrone Spiegeln auf dem EF600- oder EF300-Storage-System nicht verfügbar.
+Diese Funktion ist für die synchrone Spiegelung auf dem Storage-System EF600/EF600C oder EF300/EF300C nicht verfügbar.
 
 ====
 Wenn das primäre Volume des gespiegelten Paars Eigentum von Controller A ist, dann befindet sich das sekundäre Volume auch im Besitz von Controller A des Remote Storage Array. Wenn Sie den Eigentümer des primären Volume ändern, wird automatisch der Eigentümer des sekundären Volumes geändert, um sicherzustellen, dass beide Volumes Eigentum des gleichen Controllers sind. Aktuelle Eigentumsänderungen auf der primären Seite werden automatisch an die entsprechenden aktuellen Eigentumsänderungen auf der sekundären Seite übernommen.

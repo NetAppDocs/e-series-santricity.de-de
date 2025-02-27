@@ -20,6 +20,10 @@ Standardmäßig ist die Ressourcenbereitstellung auf Systemen aktiviert, auf den
 
 .Bevor Sie beginnen
 * Sie benötigen ein EF300- oder EF600-Storage-Array.
++
+
+NOTE: DULBE wird derzeit nicht auf EF300C- oder EF600C-Speicherarrays unterstützt.
+
 * Sie müssen SSD-Volume-Gruppen oder -Pools haben, wobei alle Laufwerke die Funktion zur Wiederherstellung von dezugewiesenen oder nicht geschriebenen logischen Blockfehlern (DULBE) unterstützen. Andernfalls ist die Option zur Ressourcenbereitstellung nicht verfügbar.
 
 

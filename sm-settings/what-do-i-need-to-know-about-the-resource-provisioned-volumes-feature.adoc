@@ -2,7 +2,7 @@
 permalink: sm-settings/what-do-i-need-to-know-about-the-resource-provisioned-volumes-feature.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, resource-provisioned, volumes, feature, 
-summary: Resource Provisioning ist eine Funktion, die in den EF300- und EF600-Speicher-Arrays zur Verfügung steht und die es ermöglicht, Volumes ohne Hintergrundinitialisierung sofort in Betrieb zu nehmen. 
+summary: Die Ressourcenbereitstellung ist eine Funktion, die in den Speicherarrays EF300, EF300C, EF600 und EF600C verfügbar ist. Damit können Volumes sofort ohne Hintergrundinitialisierung verwendet werden. 
 ---
 = Was muss ich über die Funktion der Ressourcen-bereitgestellten Volumes wissen?
 :allow-uri-read: 
@@ -19,3 +19,6 @@ Ein vom Ressourcen bereitgestelltes Volume ist ein Thick Volume in einer SSD-Vol
 Über Ressourcen bereitgestellte Volumes werden nur auf SSD-Volume-Gruppen und -Pools unterstützt, wobei alle Laufwerke in der Gruppe oder dem Pool die nicht zugewiesene oder nicht geschriebene DULBE-Fehlerwiederherstellungsfunktion (Logical Block Error Enable) unterstützen. Bei der Erstellung eines Volume mit Ressourcenbereitstellung werden alle dem Volume zugewiesenen Festplattenblöcke wieder zugewiesen (Zuordnung). Zusätzlich können Hosts logische Blöcke im Volume mithilfe des Befehls NVMe Dataset Management oder des Befehls SCSI Unmap ausfindig machen. Die Deallokung von Blöcken kann die SSD-Abnutzung verbessern und die maximale Schreib-Performance erhöhen. Die Verbesserung variiert je nach Modell und Kapazität der Laufwerke.
 
 Die Ressourcenbereitstellung ist standardmäßig auf Systemen aktiviert, auf denen die Laufwerke DULBE unterstützen. Sie können diese Standardeinstellung über *Pools & Volume Groups* deaktivieren.
+
+
+NOTE: DULBE wird derzeit nicht auf EF300C- oder EF600C-Speicherarrays unterstützt.

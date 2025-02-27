@@ -25,6 +25,6 @@ Befolgen Sie vor dem Erstellen eines gespiegelten Paares diese Richtlinien.
 
 [NOTE]
 ====
-Synchrones Spiegeln ist auf dem EF600 oder EF300 Storage-System nicht verfügbar.
+Synchrones Spiegeln ist auf dem Storage-System EF600/EF600C oder EF300/EF300C nicht verfügbar.
 
 ====

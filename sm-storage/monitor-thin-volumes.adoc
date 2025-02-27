@@ -15,7 +15,7 @@ Sie können Thin Volumes auf Speicherplatz überwachen und entsprechende Warnmel
 
 [NOTE]
 ====
-Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+Diese Funktion ist für das Speichersystem EF600/EF600C oder EF300/EF300C nicht verfügbar.
 
 ====
 [NOTE]

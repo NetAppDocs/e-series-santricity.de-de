@@ -27,9 +27,6 @@ In dieser Aufgabe wird beschrieben, wie die erforderlichen Informationen für di
 . Suchen Sie in System Manager nach der Feature Enable Identifier. Gehen Sie zum Menü:Einstellungen[System], und scrollen Sie dann nach unten zu *Add-ons*. Suchen Sie nach der *Feature Enable Identifier*. Notieren Sie die Nummer für den Kennzeichner der Feature Enable.
 . Suchen und notieren Sie den Code für die Aktivierung der Funktion. Für Features Packs wird dieser Code in den entsprechenden Anweisungen zur Durchführung der Konvertierung angegeben.
 +
-Anweisungen von NetApp finden Sie unter https://www.netapp.com/support-and-training/documentation/eseries-santricity/["NetApp E-Series Systems Documentation Center"^].
-
-+
 Bei Premium-Funktionen können Sie über die Support-Website auf den Aktivierungscode zugreifen:
 
 +

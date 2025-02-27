@@ -19,7 +19,7 @@ Das Access Volume wird in der folgenden Instanz verwendet:
 +
 [NOTE]
 ====
-Für EF600 oder EF300 Storage-Systeme ist kein in-Band-Management verfügbar.
+Für E4000-, EF600-/EF600C- oder EF300/EF300C-Speichersysteme ist das bandinterne Management mit dem Access Volume nicht verfügbar.
 
 ====
 

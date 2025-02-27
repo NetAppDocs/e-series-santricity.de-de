@@ -18,7 +18,7 @@ Sie können auch den Prozentpunkt ändern, an dem eine Warnung (Warnungsschwelle
 
 [NOTE]
 ====
-Diese Funktion steht nicht auf dem EF600 oder EF300-Storage-System zur Verfügung.
+Diese Funktion ist für das Speichersystem EF600/EF600C oder EF300/EF300C nicht verfügbar.
 
 ====
 Basierend auf der zugewiesenen Kapazitätsgrenze erweitert das System die zugewiesene Kapazität automatisch. Die zugewiesene Kapazitätsgrenze ermöglicht es Ihnen, das automatische Wachstum des Thin Volumes unter der gemeldeten Kapazität zu begrenzen. Wenn die geschriebene Datenmenge sich in der Nähe der zugewiesenen Kapazität befindet, können Sie das zugewiesene Kapazitätslimit ändern.
