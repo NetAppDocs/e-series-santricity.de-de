@@ -1241,10 +1241,6 @@
   <block id="f20f6d487c692f545d0e34b3f99face7" category="list-text">*Selbstsignierte Zertifikate*</block>
   <block id="f052a72434f6bc613c169fc96093903a" category="paragraph">Es können auch selbstsignierte Zertifikate verwendet werden. Wenn der Administrator versucht, Arrays zu ermitteln, ohne signierte Zertifikate zu importieren, zeigt Unified Manager ein Fehlerdialogfeld an, in dem der Administrator das selbstsignierte Zertifikat akzeptieren kann. Das selbstsignierte Zertifikat des Speicher-Arrays wird als vertrauenswürdig gekennzeichnet und das Speicher-Array wird Unified Manager hinzugefügt.</block>
   <block id="5e83f689355fdec866c155c6fe9b323e" category="paragraph">Wenn Sie den Verbindungen zum Speicher-Array nicht vertrauen, wählen Sie *Abbrechen* und validieren Sie die Sicherheitszertifikatstrategie des Speicher-Arrays, bevor Sie das Speicher-Array zu Unified Manager hinzufügen.</block>
-  <block id="7d63fa7b66beb048adb4cb5412f78f29" category="summary">Sie können Unified Manager verwenden, um ein Upgrade der SANtricity OS Software auf mehreren Storage Arrays desselben Typs auf eine neuere Version durchzuführen.</block>
-  <block id="35a02fabedaff63c9eea49354c0479c7" category="doc">Wie Upgrades funktionieren</block>
-  <block id="37e1222cab25890a0cd0d01b19f4489d" category="paragraph">Die folgenden Schritte bieten einen grundlegenden Workflow zur Durchführung von Software-Upgrades:</block>
-  <block id="bc2ada3b24f486f7b98ff3159828f426" category="list-text">Sie laden die aktuelle SANtricity OS-Softwaredatei von der Support-Website herunter (ein Link ist im Unified Manager auf der Seite *Support* verfügbar). Speichern Sie die Datei auf dem Management-Host-System (dem Host, auf dem Sie in einem Browser auf Unified Manager zugreifen), und entpacken Sie die Datei anschließend.</block>
   <block id="d18c8b00e80b505406982d1c60493e63" category="summary">Sie können ein oder mehrere Storage Arrays entfernen, wenn Sie es nicht mehr über SANtricity Unified Manager managen möchten.</block>
   <block id="bc54c8923d2e900bc8b88d98dcd843d0" category="doc">Entfernen Sie die Storage-Arrays von SANtricity Unified Manager</block>
   <block id="46da89f7644863b59a53669234ecf705" category="paragraph">Sie können nicht auf die von Ihnen entfernenden Speicher-Arrays zugreifen. Sie können jedoch eine Verbindung zu einem der entfernten Speicher-Arrays herstellen, indem Sie einen Browser direkt auf seine IP-Adresse oder den Host-Namen zeigen.</block>
@@ -1593,8 +1589,6 @@
   <block id="9bff0a52d07123acc65d79466ad99166" category="summary">Sie können Maßnahmen zum Status Ihres aktuellen Speicherarrays ergreifen, indem Sie das unlesbare Sektoren-Protokoll überprüfen, die Laufwerkanschlüsse wieder aktivieren und den Wiederherstellungsmodus deaktivieren.</block>
   <block id="7ca3e291db0767443f0a1deecc6e4357" category="doc">Führen Sie Recovery-Aktionen im Status des Storage-Arrays durch</block>
   <block id="47c365409e53a20cd64997e83455ba87" category="paragraph">Sie können Maßnahmen zum Status Ihres aktuellen Speicherarrays ergreifen, indem Sie das Protokoll „unlesbare Sektoren“ überprüfen, die Laufwerkanschlüsse wieder aktivieren und den Wiederherstellungsmodus deaktivieren.</block>
-  <block id="0053cb3da5cd9357da42c9285388e7c5" category="summary">In SANtricity System Manager können Sie die Controller-Software und -Firmware aktualisieren, indem Sie die folgenden Schritte durchführen.</block>
-  <block id="638e87c9a312fe766009341e23b4dbd4" category="doc">Workflow für Upgrades von Controller-Software und Firmware</block>
   <block id="96a401a06cef5a915fce2a865f398ff3" category="summary">Der technische Support kann Dateien zum Recovery Support verwenden, um Probleme zu beheben. System Manager speichert diese Dateien automatisch.</block>
   <block id="826797a3791c77da7755188cc4e4f541" category="doc">Rufen Sie Recovery Support-Dateien</block>
   <block id="b05b836d4b850a9b5974a8ca6dd2f03a" category="paragraph">Der technische Support hat angefordert, dass Sie ihnen zusätzliche Dateien zur Fehlerbehebung senden.</block>
@@ -8620,7 +8614,6 @@
   <block id="22ec79b8668bcaf4a33eed694079e8b1" category="summary">Die AutoSupport-Funktion unterstützt die Protokolle HTTPS und SMTP zur Bereitstellung von AutoSupport-Dispatches an den technischen Support.</block>
   <block id="dd0ab6e042458857b9d76ede295a637e" category="image-alt">Speicherorte der Firmware aktualisieren</block>
   <block id="da31bdea5b9fdfa2bf077a70c49a1d66" category="image-alt">AutoSupport Workflow</block>
-  <block id="0ceabfdc68af97f8a0c7393faf135de8" category="image-alt">Workflow für Controller-Software und Firmware-Upgrades</block>
   <block id="ece14770330886bc2d41238acbfe48aa" category="summary">SANtricity Unified Manager 7</block>
   <block id="3cd6f83d0a9a8330c077dfc98649ab8a" category="paragraph">Sie können die Einstellungen, die über den SANtricity Unified Manager verwendet werden, konfigurieren.</block>
   <block id="0be150145c60047c6667d2bfbc4085d9" category="image-alt">Bandexterne Verbindung zum Netzwerkverwaltungs-Client mit einem Webbrowser.</block>
@@ -8713,7 +8706,6 @@
   <block id="f0254fcd04a8e1df1dc8c778e6189b01" category="paragraph">Sie können CA-signierte Zertifikate für sicheren Zugriff auf das Managementsystem, das SANtricity Unified Manager hostet, erhalten und importieren.</block>
   <block id="c5f9375676cadbc97263ea339c65e0df" category="paragraph">Bevor SANtricity Unified Manager Storage-Ressourcen anzeigen und verwalten kann, muss er die Storage-Arrays ermitteln, die Sie im Netzwerk Ihres Unternehmens managen möchten. Sie können mehrere Arrays ermitteln oder ein einziges Array erkennen.</block>
   <block id="8205965c706fda540f0df394d1fd7df5" category="paragraph">Mit SANtricity Unified Manager können Sie Einstellungen von einem Storage-Array in mehrere Storage-Arrays importieren. Die Funktion „Importeinstellungen“ ist ein Batch-Vorgang, der Zeit spart, wenn Sie mehrere Arrays im Netzwerk konfigurieren müssen.</block>
-  <block id="2b8e903f9231328c5dd4ac194fe0ed99" category="paragraph">Sie können mit SANtricity Unified Manager die SANtricity OS Software auf mehreren Storage Arrays desselben Typs auf eine neuere Version aktualisieren.</block>
   <block id="c5cdef1d414ec599aa9b2d1f28c67d4b" category="doc">Überlegungen für den Zugriff auf SANtricity System Manager</block>
   <block id="cdaae564ece8b6f3561a5e657337c464" category="paragraph">In SANtricity Unified Manager wird die asynchrone oder synchrone Spiegelung konfiguriert und anschließend mit SANtricity System Manager die Synchronisierung verwaltet.</block>
   <block id="69ffe5f70c823700a785fa58e3fbca15" category="paragraph">SANtricity Unified Manager enthält Konfigurationsoptionen für die SANtricity-Spiegelungsfunktionen, mit denen Administratoren Daten zur Datensicherung zwischen zwei Storage Arrays replizieren können.</block>
@@ -8749,4 +8741,7 @@
   <block id="0b2fb9383075b5994701c94b27e4b6ee" category="paragraph">In dieser Version werden die All-Flash-NVMe-Storage-Systeme EF300C und EF600C vorgestellt. Bei den EF300C und EF600C handelt es sich um Flash-Versionen mit hoher Kapazität der vorhandenen EF300 und EF600 Storage-Systeme. NVMe-SSD-Laufwerke mit einer hohen Kapazität von 30 TB oder 60 TB werden von EF300C und EF600C unterstützt. Der EF300C/EF600C ist nur für die Verwendung von Dynamic Disk Pools ohne Legacy-RAID-Unterstützung kompatibel.</block>
   <block id="c4c050a1cbe127eb24c705844a070872" category="paragraph">Unterstützung von 12-GB-SAS-Schnittstellen auf EF4000</block>
   <block id="e8b3561f4b15fa164cdd5717ae511188" category="paragraph">Der E4000 Controller unterstützt jetzt 12 GB SAS-Host-Schnittstellenkarten.</block>
+  <block id="bd720a6ead0034815d9206b7292e06e5" category="section-title">Neue Funktionen in Version 11.90R2</block>
+  <block id="15829e6cc8b585193d8f6910a672107c" category="inline-link">Versionshinweise zu E-Series 11.90</block>
+  <block id="a4c34f83987821dd1d99ef73febdd962" category="paragraph">Diese Version enthält nur geringfügige Änderungen und keine neuen Funktionen. Weitere Informationen zu den Änderungen in dieser Version finden Sie im<block ref="1f7d7124974a1c2e3017c1729625e686" category="inline-link-rx"></block>.</block>
 </blocks>
