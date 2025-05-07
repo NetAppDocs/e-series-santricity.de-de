@@ -66,9 +66,17 @@ Wenn SAML aktiviert ist, können Benutzer Speicher für dieses Array nicht über
 Außerdem können die folgenden Clients nicht auf Services und Ressourcen des Speicherarrays zugreifen:
 
 * Enterprise Management-Fenster (EMW)
-* Befehlszeilenschnittstelle (CLI)
 * Software Developer Kits (SDK)-Clients
 * In-Band-Clients
-* REST-API-Clients für die HTTP-Standardauthentifizierung
 * Melden Sie sich mithilfe des standardmäßigen REST-API-Endpunkts an
+
+
+
+
+=== Eingeschränkte Konnektivität bei aktivierter SAML-Funktion
+
+Die folgenden Speicher-Array-Funktionen verfügen nur über eine begrenzte Konnektivität mit der JSON-Web-Token-Authentifizierung, wenn SAML aktiviert ist.
+
+* Befehlszeilenschnittstelle (CLI)
+* REST-API-Clients für die HTTP-Standardauthentifizierung
 
