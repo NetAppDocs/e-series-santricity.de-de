@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, host, host cluster 
 summary: Sie können einen Host oder Host-Cluster löschen. 
 ---
-= Host oder Host-Cluster löschen
+= Löschen eines Hosts oder Hostclusters im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

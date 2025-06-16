@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volumes 
 summary: Sie können ein Volume als Container erstellen, in dem Applikationen, Datenbanken und Filesysteme Daten speichern. Bei der Erstellung eines Volumes wählen Sie auch einen Workload aus, um die Storage-Array-Konfiguration für eine bestimmte Applikation anzupassen. 
 ---
-= Volumes und Workloads – Überblick
+= Erfahren Sie mehr über Volumes und Workloads im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

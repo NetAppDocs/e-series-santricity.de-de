@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, clear, staged, os, software 
 summary: Sie können die stufenweise Betriebssystemsoftware entfernen, um sicherzustellen, dass eine ausstehende Version zu einem späteren Zeitpunkt nicht versehentlich aktiviert wird. Das Entfernen der stufenweisen Betriebssystemsoftware hat keine Auswirkungen auf die aktuelle Version, die auf den Speicher-Arrays ausgeführt wird. 
 ---
-= Software für das überstaltete Betriebssystem löschen
+= Löschen Sie die bereitgestellte Betriebssystemsoftware im SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

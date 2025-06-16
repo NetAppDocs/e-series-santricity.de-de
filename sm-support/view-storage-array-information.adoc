@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, storage, array, 
 summary: Sie können das Profil des Speicher-Arrays und die Firmware-Versionen für jede Komponente im Speicher-Array anzeigen. 
 ---
-= Anzeigen von Speicher-Array-Informationen
+= Informationen zu einem Speicher-Array im SANtricity System Manager anzeigen
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

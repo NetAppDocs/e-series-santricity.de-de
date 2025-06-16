@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, asynchronous, mirroring, 
 summary: Die asynchrone Spiegelung kopiert Daten-Volumes nach Bedarf oder nach einem Zeitplan. So werden Ausfallzeiten, die auf Datenbeschädigung oder -Verlust zurückzuführen sind, minimiert oder vermieden. 
 ---
-= Funktionsweise der asynchronen Spiegelung
+= So funktioniert die asynchrone Spiegelung im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

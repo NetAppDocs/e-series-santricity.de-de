@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, replace, drive, logically, 
 summary: Wenn ein Laufwerk ausfällt oder Sie es aus einem anderen Grund ersetzen möchten und ein nicht zugewiesenes Laufwerk im Speicher-Array vorhanden ist, können Sie das ausgefallene Laufwerk logisch durch das nicht zugewiesene Laufwerk ersetzen. Wenn Sie kein nicht zugewiesenes Laufwerk haben, können Sie stattdessen das Laufwerk physisch ersetzen. 
 ---
-= Laufwerk logisch ersetzen
+= Logisches Ersetzen eines Laufwerks im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

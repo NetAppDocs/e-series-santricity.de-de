@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshot schedule 
 summary: Sie können die geplante Sammlung von Snapshot-Images vorübergehend unterbrechen, wenn Sie Speicherplatz sparen müssen. Diese Methode ist effizienter als das Löschen und das spätere Erstellen des Snapshot-Zeitplans. 
 ---
-= Aktivieren und Anhalten des Snapshot-Zeitplans
+= Aktivieren und Aussetzen eines Snapshot-Zeitplans im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, certificates, arrays 
 summary: 'Bei Bedarf können Zertifikate für die Speicher-Arrays importiert werden, sodass sie sich mit dem System authentifizieren können, das SANtricity Unified Manager hostet. Zertifikate können von einer Zertifizierungsstelle (CA) signiert oder selbst signiert werden.' 
 ---
-= Importieren Sie Zertifikate für Arrays
+= Zertifikate für Arrays in SANtricity Unified Manager importieren
 :allow-uri-read: 
 :experimental: 
 :icons: font

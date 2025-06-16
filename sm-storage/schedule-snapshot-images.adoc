@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, schedule, snapshot, images 
 summary: Sie erstellen einen Snapshot-Zeitplan, um die Recovery bei Problemen mit dem Basis-Volume zu ermöglichen und geplante Backups durchzuführen. Snapshots von Basis-Volumes oder Snapshot-Konsistenzgruppen können täglich, wöchentlich oder monatlich erstellt werden, zu jeder Tageszeit. 
 ---
-= Planen von Snapshot Images
+= Planen Sie Snapshot-Bilder im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

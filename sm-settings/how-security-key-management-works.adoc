@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, security, key, management, 
 summary: 'Bei der Implementierung der Laufwerkssicherheitsfunktion benötigen die sicheren Laufwerke (FIPS oder FDE) einen Sicherheitsschlüssel für den Datenzugriff. Ein Sicherheitsschlüssel ist eine Zeichenkette, die zwischen diesen Laufwerkstypen und den Controllern in einem Speicher-Array gemeinsam verwendet wird.' 
 ---
-= Funktionsweise von Sicherheitsschlüsselmanagement
+= So funktioniert die Sicherheitsschlüsselverwaltung im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

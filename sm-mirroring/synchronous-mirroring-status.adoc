@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, status, 
 summary: Der Status eines synchronen gespiegelten Paares gibt an, ob die Daten auf dem primären Volume und auf dem sekundären Volume synchronisiert werden. Ein Spiegelstatus ist unabhängig vom Komponentenstatus der Volumes im gespiegelten Paar. 
 ---
-= Status der synchronen Spiegelung
+= Erfahren Sie mehr über den Status der synchronen Spiegelung im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

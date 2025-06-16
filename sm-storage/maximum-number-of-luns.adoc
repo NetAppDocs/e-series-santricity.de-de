@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, maximum, luns 
 summary: 'Das Speicher-Array verfügt über eine maximale Anzahl an LUNs (Logical Unit Numbers), die für jeden Host verwendet werden können.' 
 ---
-= Maximale Anzahl an LUNs
+= Erfahren Sie mehr über die maximale Anzahl von LUNs in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, disable, snapshot, volume 
 summary: Sie können ein Snapshot-Volume oder ein Snapshot-Volume in einer Snapshot-Konsistenzgruppe deaktivieren, wenn Sie es nicht mehr benötigen oder vorübergehend nicht verwenden möchten. 
 ---
-= Deaktivieren Sie das Snapshot-Volumen
+= Deaktivieren eines Snapshot-Volumes im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

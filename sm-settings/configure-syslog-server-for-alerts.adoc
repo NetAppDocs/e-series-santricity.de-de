@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, syslog, server, alerts, 
 summary: Um Syslog-Warnmeldungen zu konfigurieren, müssen Sie eine Syslog-Serveradresse und einen UDP-Port eingeben. Es sind bis zu fünf Syslog-Server zulässig. 
 ---
-= Konfigurieren Sie den Syslog-Server für Warnmeldungen
+= Syslog-Server für Warnungen im SANtricity System Manager konfigurieren
 :allow-uri-read: 
 :experimental: 
 :icons: font

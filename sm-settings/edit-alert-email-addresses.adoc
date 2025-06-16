@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, email, addresses, alerts, 
 summary: Sie können die E-Mail-Adressen der Empfänger, die E-Mail-Benachrichtigungen erhalten, ändern. 
 ---
-= E-Mail-Adressen für Warnmeldungen bearbeiten
+= E-Mail-Adressen für Warnmeldungen im SANtricity System Manager bearbeiten
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, settings, snapshot, consistency group 
 summary: Ändern Sie die Einstellungen für eine Snapshot Konsistenzgruppe, wenn Sie ihren Namen, die Einstellungen zum automatischen Löschen oder die maximale Anzahl von Snapshot Images ändern möchten. 
 ---
-= Ändern Sie die Einstellungen für eine Snapshot Konsistenzgruppe
+= Ändern der Einstellungen für eine Snapshot-Konsistenzgruppe im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

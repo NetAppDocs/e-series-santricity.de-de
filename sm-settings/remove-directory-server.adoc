@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, directory, server, 
 summary: Um die Verbindung zwischen einem Verzeichnisserver und dem Speicher-Array zu unterbrechen, können Sie die Serverinformationen von der Seite Zugriffsverwaltung entfernen. Sie möchten diese Aufgabe möglicherweise ausführen, wenn Sie einen neuen Server konfiguriert haben und den alten dann entfernen möchten. 
 ---
-= Verzeichnisserver entfernen
+= Verzeichnisserver im SANtricity System Manager entfernen
 :allow-uri-read: 
 :experimental: 
 :icons: font

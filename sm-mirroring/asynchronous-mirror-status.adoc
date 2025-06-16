@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, asynchronous, mirror, status, consistency, group, 
 summary: Der Status der Spiegelung definiert den Status von Konsistenzgruppen und gespiegelten Volume-Paaren. 
 ---
-= Status der asynchronen Spiegelung
+= Anzeigen des asynchronen Spiegelstatus im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

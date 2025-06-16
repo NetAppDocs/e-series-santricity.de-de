@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, pools, volume group, 
 summary: 'Um Speicher bereitzustellen, erstellen Sie entweder einen Pool oder eine Volume-Gruppe, die die Festplatten (HDD) oder Solid State Disk (SSD) Laufwerke enthalten, die Sie in Ihrem Speicher-Array verwenden möchten.' 
 ---
-= Funktionsweise von Pools und Volume-Gruppen
+= Funktionsweise von Pools und Volume-Gruppen in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

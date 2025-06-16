@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, initialize, format, drive, 
 summary: 'Wenn Sie zugewiesene Laufwerke von einem Speicher-Array in ein anderes verschieben, müssen Sie die Laufwerke initialisieren (formatieren), bevor sie im neuen Speicher-Array verwendet werden können.' 
 ---
-= Initialisieren (Formatieren) des Laufwerks
+= Laufwerke im SANtricity System Manager initialisieren (formatieren)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

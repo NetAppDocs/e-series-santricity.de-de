@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, define, audit, log, policies, 
 summary: Sie können die Überschreibungsrichtlinie und die im Audit-Protokoll aufgezeichneten Ereignistypen ändern. 
 ---
-= Richtlinien für Prüfprotokolle definieren
+= Definieren Sie Audit-Log-Richtlinien im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

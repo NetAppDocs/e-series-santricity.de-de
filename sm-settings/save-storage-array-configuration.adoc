@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, save, storage array, configuration, 
 summary: Sie können die Konfigurationsinformationen eines Speicher-Arrays in einer Skript-Datei speichern, um Zeit beim Einrichten zusätzlicher Speicher-Arrays mit der gleichen Konfiguration zu sparen. 
 ---
-= Speicherarray-Konfiguration speichern
+= Speichern der Speicherarray-Konfiguration im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

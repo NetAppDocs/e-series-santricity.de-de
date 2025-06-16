@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, iscsi, statistics, packages, 
 summary: Sie können Daten über die iSCSI-Verbindungen zu Ihrem Speicher-Array anzeigen. 
 ---
-= Anzeigen von iSCSI-Statistikpaketen
+= iSCSI-Statistikpakete im SANtricity System Manager anzeigen
 :allow-uri-read: 
 :experimental: 
 :icons: font

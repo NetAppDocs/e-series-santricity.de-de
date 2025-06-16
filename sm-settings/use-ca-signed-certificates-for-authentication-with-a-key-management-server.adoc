@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, ca-signed, certificates, authentication, key, management, server, 
 summary: Für die sichere Kommunikation zwischen einem Schlüsselverwaltungsserver und den Speicher-Array-Controllern müssen Sie die entsprechenden Zertifikatssätze konfigurieren. 
 ---
-= Verwenden Sie CA-signierte Zertifikate zur Authentifizierung mit einem Schlüsselverwaltungsserver
+= Verwenden Sie CA-signierte Zertifikate zur Authentifizierung mit einem Schlüsselverwaltungsserver im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

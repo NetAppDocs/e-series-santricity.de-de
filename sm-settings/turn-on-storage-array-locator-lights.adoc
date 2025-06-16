@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, locator, lights, 
 summary: 'Um den physischen Standort eines Speicherarrays in einem Schrank zu finden, können Sie seine Locator-Leuchten (LED) einschalten.' 
 ---
-= Schalten Sie die Speicher-Array Locator-Leuchten ein
+= Schalten Sie die Speicherarray-Ortungsleuchten im SANtricity System Manager ein
 :allow-uri-read: 
 :experimental: 
 :icons: font

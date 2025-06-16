@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, export, certificates 
 summary: Sie können ein Zertifikat exportieren, um die vollständigen Details anzuzeigen. 
 ---
-= Exportieren von Zertifikaten
+= Zertifikate im SANtricity Unified Manager exportieren
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, disable, autosupport, 
 summary: Sie aktivieren die AutoSupport-Funktion und die einzelnen AutoSupport-Funktionen während der Ersteinrichtung oder Sie können sie später aktivieren oder deaktivieren. 
 ---
-= Aktivieren oder Deaktivieren von AutoSupport Funktionen
+= Aktivieren oder deaktivieren Sie AutoSupport-Funktionen im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

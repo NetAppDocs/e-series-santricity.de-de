@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, user, settings, snmpv3, traps, 
 summary: Sie können Benutzerdefinitionen für SNMPv3-Traps bearbeiten. 
 ---
-= Benutzereinstellungen für SNMPv3-Traps bearbeiten
+= Benutzereinstellungen für SNMPv3-Traps im SANtricity System Manager bearbeiten
 :allow-uri-read: 
 :experimental: 
 :icons: font

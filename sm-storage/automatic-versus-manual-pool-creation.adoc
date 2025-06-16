@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, automatic, manual, pool 
 summary: Sie erstellen Pools automatisch oder manuell, um eine Gruppierung des physischen Speichers zu ermöglichen und dann dynamisch nach Bedarf zuweisen zu können. Wenn ein Pool erstellt wird, können Sie physische Laufwerke hinzufügen. 
 ---
-= Automatische Erstellung von Pools gegenüber manueller Poolanlage
+= Erfahren Sie mehr über die automatische und manuelle Poolerstellung im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

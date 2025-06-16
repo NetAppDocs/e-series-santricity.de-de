@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, view, order, shelves 
 summary: Sie können die Reihenfolge der auf der Seite Hardware angezeigten Shelfs ändern, um sie der physischen Reihenfolge der Regale in einem Schrank anzupassen. 
 ---
-= Ansichtsreihenfolge der Shelfs ändern
+= Ändern der Ansichtsreihenfolge der Regale im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

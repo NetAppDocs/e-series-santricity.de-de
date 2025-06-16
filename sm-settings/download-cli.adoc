@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, download, command line interface, CLI, 
 summary: 'Von System Manager können Sie das CLI-Paket (Befehlszeilenschnittstelle) herunterladen.' 
 ---
-= Befehlszeilenschnittstelle (CLI) herunterladen
+= Laden Sie die SANtricity-Befehlszeilenschnittstelle (CLI) herunter
 :allow-uri-read: 
 :experimental: 
 :icons: font

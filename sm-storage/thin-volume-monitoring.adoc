@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, thin, volume, monitoring 
 summary: Sie können Thin Volumes auf Speicherplatz überwachen und entsprechende Warnmeldungen generieren, um Kapazitätsüberkapazitäten zu vermeiden. 
 ---
-= Thin Volume-Monitoring
+= Erfahren Sie mehr über Thin Volume Monitoring in der SANtricity-Software
 :allow-uri-read: 
 :experimental: 
 :icons: font

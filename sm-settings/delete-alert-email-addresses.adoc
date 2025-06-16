@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, mail, server, email, addresses, alerts, 
 summary: Sie können den zuvor definierten Mail-Server so entfernen, dass Warnmeldungen nicht mehr an die E-Mail-Adressen gesendet werden, oder Sie können einzelne E-Mail-Adressen entfernen. 
 ---
-= Löschen Sie E-Mail-Server oder E-Mail-Adressen für Warnmeldungen
+= Mailserver oder E-Mail-Adressen für Alarme im SANtricity System Manager löschen
 :allow-uri-read: 
 :experimental: 
 :icons: font

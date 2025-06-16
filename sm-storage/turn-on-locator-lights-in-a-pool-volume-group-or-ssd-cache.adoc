@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, lights, LEDs 
 summary: Nach Laufwerken können Sie alle Laufwerke physisch identifizieren, die einen ausgewählten Pool, eine Volume-Gruppe oder SSD Cache umfassen. An jedem Laufwerk im ausgewählten Pool, der Volume-Gruppe oder dem SSD-Cache leuchtet eine LED-Anzeige auf. 
 ---
-= Aktivieren Sie Locator Lights in einem Pool, einer Volume-Gruppe oder einem SSD-Cache
+= Aktivieren Sie die Ortungslichter in einem Pool, einer Volume-Gruppe oder einem SSD-Cache im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

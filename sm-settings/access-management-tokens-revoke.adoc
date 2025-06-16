@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, revoke tokens 
 summary: Sie können alle Zugriffstoken aufheben, wenn Sie feststellen, dass ein Token kompromittiert wurde. 
 ---
-= Access Token widerrufen
+= Zugriffstoken im SANtricity System Manager widerrufen
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, authentication, users, roles, access management 
 summary: Verwenden Sie die Zugriffsverwaltung, um die Benutzerauthentifizierung in SANtricity Unified Manager einzurichten. 
 ---
-= Funktionsweise von Access Management
+= So funktioniert das Zugriffsmanagement im SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

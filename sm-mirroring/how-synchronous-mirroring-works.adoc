@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, 
 summary: Bei der synchronen Spiegelung werden Daten-Volumes in Echtzeit repliziert, um eine kontinuierliche Verfügbarkeit zu gewährleisten. 
 ---
-= Funktionsweise der synchronen Spiegelung
+= So funktioniert die synchrone Spiegelung im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, update, remote, ip, address, connection, 
 summary: Sie können die iSCSI-IP-Adresse für Ihr Remote-Speicher-Array aktualisieren, um die Verbindung mit dem lokalen Speicher-Array wiederherzustellen. 
 ---
-= Remote-IP-Adresse aktualisieren
+= Aktualisieren Sie die IP-Adressen des Remote-Speicherarrays im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

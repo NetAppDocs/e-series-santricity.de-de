@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, discover, multiple, storage, arrays 
 summary: Sie erkennen mehrere Arrays, um alle Speicher-Arrays im Subnetz zu erkennen, in dem sich der Verwaltungsserver befindet, und um automatisch die ermittelten Arrays zu Ihrer Verwaltungsdomäne hinzuzufügen. 
 ---
-= Erkennung mehrerer Storage-Arrays
+= Entdecken Sie mehrere Speicher-Arrays im SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

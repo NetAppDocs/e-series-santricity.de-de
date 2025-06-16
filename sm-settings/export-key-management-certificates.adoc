@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, export, key, management, server, certificates, 
 summary: Sie können ein Zertifikat für einen Schlüsselverwaltungsserver auf Ihrem lokalen Computer speichern. 
 ---
-= Export von Zertifikaten für den Schlüsselverwaltungsserver
+= Exportieren von Schlüsselverwaltungsserver-Zertifikaten im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add, directory, server, 
 summary: Um die Authentifizierung für die Zugriffsverwaltung zu konfigurieren, können Sie die Kommunikation zwischen dem Speicher-Array und einem LDAP-Server herstellen und die LDAP-Benutzergruppen den vordefinierten Rollen des Arrays zuordnen. 
 ---
-= Fügen Sie einen LDAP-Verzeichnisserver hinzu
+= Hinzufügen eines LDAP-Verzeichnisservers im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

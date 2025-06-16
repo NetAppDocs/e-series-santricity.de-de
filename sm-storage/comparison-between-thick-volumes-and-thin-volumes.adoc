@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, comparison, thick volumes, thin volumes 
 summary: Ein Thick Volume ist immer vollständig bereitgestellt, was bedeutet, dass bei der Erstellung des Volume alle Kapazitäten zugewiesen werden. Ein Thin Volume wird immer über Thin Provisioning bereitgestellt. Das heißt, die Kapazität wird beim Schreiben der Daten auf das Volume zugewiesen. 
 ---
-= Vergleich von Thick Volumes und Thin Volumes
+= Erfahren Sie mehr über dicke und dünne Volumes in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, role, change, mirror, consistency, group, secondary, mirror, consistency, group, 
 summary: Sie können die Rolle zwischen gespiegelten Paaren in einer gespiegelten Consistency Group ändern. Hierzu können Sie die Konsistenzgruppe der primären Spiegelung auf die sekundäre Rolle zurückstufen oder die Konsistenzgruppe für die sekundäre Spiegelung in die primäre Rolle heraufstufen. 
 ---
-= Rollenwechsel einer SpiegelungsConsistency Group
+= Ändern der Spiegelkonsistenzgruppenrollen in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

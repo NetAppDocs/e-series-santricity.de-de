@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, manage, software, repository 
 summary: Das Software-Repository enthält alle Softwaredateien, die dem Web Services Proxy zugeordnet sind. 
 ---
-= Software-Repository managen
+= Verwalten Sie das SANtricity-Software-Repository im Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

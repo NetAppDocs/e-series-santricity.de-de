@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, snapshot, volume 
 summary: Sie können ein Snapshot-Volume oder ein Snapshot-Snapshot-Snapshot-Snapshot-Volume löschen, das nicht mehr für Backup- oder Softwareanwendungen-Tests benötigt wird. 
 ---
-= Snapshot Volume löschen
+= Löschen eines Snapshot-Volumes im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

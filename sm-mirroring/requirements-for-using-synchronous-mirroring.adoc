@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, requirements, synchronous, mirroring, 
 summary: Wenn Sie die synchrone Spiegelung verwenden möchten, beachten Sie die folgenden Anforderungen. 
 ---
-= Anforderungen für die Nutzung von synchroner Spiegelung
+= Voraussetzungen für die Verwendung der synchronen Spiegelung in der SANtricity-Software
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, unlock, drives, external, key, management, 
 summary: Wenn Sie die externe Schlüsselverwaltung konfiguriert haben und später sichere Laufwerke von einem Speicher-Array auf ein anderes verschieben, müssen Sie den Sicherheitsschlüssel dem neuen Speicher-Array neu zuweisen, um Zugriff auf die verschlüsselten Daten auf den Laufwerken zu erhalten. 
 ---
-= Entsperren von Laufwerken bei Verwendung von externer Schlüsselverwaltung
+= Entsperren Sie Laufwerke bei Verwendung der externen Schlüsselverwaltung im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

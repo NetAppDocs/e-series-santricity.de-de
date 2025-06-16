@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, authentication, users, roles, access, Management, 
 summary: Die Zugriffsverwaltung ist eine Methode zur Einrichtung der Benutzerauthentifizierung in SANtricity System Manager. 
 ---
-= Funktionsweise von Access Management
+= So funktioniert das Zugriffsmanagement im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

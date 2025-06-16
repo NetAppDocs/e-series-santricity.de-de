@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, backup, security, key, 
 summary: Nach dem Erstellen oder Ändern eines Sicherheitsschlüssels können Sie eine Sicherungskopie der Schlüsseldatei erstellen, falls das Original beschädigt wird. 
 ---
-= Sicherheitsschlüssel sichern
+= Sicherheitsschlüssel im SANtricity System Manager sichern
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, requirements, guidelines, snapshots 
 summary: Überprüfen Sie bei der Erstellung und Verwendung von Snapshots die folgenden Anforderungen und Richtlinien. 
 ---
-= Anforderungen und Richtlinien für Snapshots
+= Anforderungen und Richtlinien für Snapshots im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

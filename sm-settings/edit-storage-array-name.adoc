@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, storage array, name, 
 summary: Sie können den Namen des Speicher-Arrays ändern, der in der Titelleiste des SANtricity-Systems Managers angezeigt wird. 
 ---
-= Name des Speicher-Arrays bearbeiten
+= Bearbeiten Sie den Namen des Speicherarrays im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

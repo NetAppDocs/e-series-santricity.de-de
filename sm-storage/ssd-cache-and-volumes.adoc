@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, ssd, cache, volumes 
 summary: 'Sie können ein Volume zu SSD Cache hinzufügen, um die Leseleistung zu verbessern. SSD-Cache besteht aus einer Reihe von Solid-State Disk-Laufwerken (SSD), die Sie in Ihrem Storage-Array logisch gruppieren.' 
 ---
-= SSD Cache und Volumes
+= Erfahren Sie mehr über SSD-Cache und Volumes in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

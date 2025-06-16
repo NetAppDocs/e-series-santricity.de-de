@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, test, communication, mirror, consistency, groups, 
 summary: Sie können den Kommunikationslink testen, um mögliche Kommunikationsprobleme zwischen dem lokalen Speicher-Array und dem Remote-Speicher-Array zu diagnostizieren, das mit einer SpiegelKonsistenzgruppe verknüpft ist. 
 ---
-= Testen Sie die Kommunikation für Spiegelkonsistency Groups
+= Testen Sie die Kommunikation für Mirror Consistency Groups im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

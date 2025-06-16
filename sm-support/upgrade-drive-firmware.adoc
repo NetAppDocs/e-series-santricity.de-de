@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, upgrade, drive, firmware 
 summary: Sie können Ihre Laufwerke Firmware aktualisieren, um sicherzustellen, dass Sie alle neuesten Funktionen und Bugfixes haben. 
 ---
-= Aktualisieren Sie die Laufwerk-Firmware
+= Aktualisieren Sie die Laufwerksfirmware im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

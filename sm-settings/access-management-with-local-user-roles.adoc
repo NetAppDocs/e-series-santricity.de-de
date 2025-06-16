@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, local, user, roles, 
 summary: 'Administratoren können für das Zugriffsmanagement die im Storage Array erzwungenen RBAC-Funktionen (rollenbasierte Zugriffssteuerung) nutzen. Diese Funktionen werden als lokale Benutzerrollen bezeichnet.' 
 ---
-= Zugriffsverwaltung mit lokalen Benutzerrollen
+= Konfigurieren Sie die Zugriffsverwaltung mit lokalen Benutzerrollen im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

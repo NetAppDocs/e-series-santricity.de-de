@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, operations in progress 
 summary: Auf der Seite „Vorgänge in Bearbeitung“ können Sie eine Liste von lang laufenden Vorgängen anzeigen, die derzeit ausgeführt werden oder sich in einem Status „ausgesetzt“, „angehalten“ oder „fehlgeschlagen“ befinden. Sie können bei bestimmten Arten von Operationen Maßnahmen ergreifen. 
 ---
-= Seite „Vorgänge in Bearbeitung“
+= Erfahren Sie mehr über die Seite „Laufende Vorgänge“ des SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

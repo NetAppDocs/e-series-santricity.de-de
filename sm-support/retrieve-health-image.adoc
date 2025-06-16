@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, retrieve, health, image 
 summary: Sie können ein Zustandsabbild für den Controller überprüfen. Ein Health-Image ist ein RAW-Daten-Dump des Prozessorspeichers des Controllers, den der technische Support zur Diagnose eines Problems mit einem Controller verwenden kann. 
 ---
-= Abrufen des Integritätsabbilds
+= Gesundheitsbild im SANtricity System Manager abrufen
 :allow-uri-read: 
 :experimental: 
 :icons: font

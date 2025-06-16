@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, upgrade, software, firmware 
 summary: 'Sie können die Software Ihres Speicherarrays und optional die IOM-Firmware und den nichtflüchtigen statischen RAM-Speicher (NVSRAM) aktualisieren, um sicherzustellen, dass Sie über alle neuesten Funktionen und Fehlerbehebungen verfügen.' 
 ---
-= Upgrades von Controller-Software und Firmware
+= Aktualisieren Sie die Controller-Software und -Firmware im SANtricity System Manager
 :allow-uri-read: 
 
 

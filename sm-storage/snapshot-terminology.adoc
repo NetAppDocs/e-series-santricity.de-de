@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshot, terms 
 summary: Erfahren Sie, wie die Snapshot-Bedingungen auf Ihr Storage Array angewendet werden. 
 ---
-= Snapshot Terminologie
+= Erfahren Sie mehr über die Snapshot-Terminologie in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

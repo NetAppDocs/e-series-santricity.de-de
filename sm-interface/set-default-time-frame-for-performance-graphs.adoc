@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, time, graphs 
 summary: Sie können den Standardzeitrahmen ändern, der von den Performance-Diagrammen angezeigt wird. 
 ---
-= Legen Sie den Standardzeitrahmen für Performance-Diagramme fest
+= Legen Sie den Standardzeitrahmen für Leistungsdiagramme im SANtricity System Manager fest
 :allow-uri-read: 
 :experimental: 
 :icons: font

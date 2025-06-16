@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, settings, volume 
 summary: Sie können die Einstellungen eines Volumes ändern, z. B. Name, Host-Zuweisung, Segmentgröße, Änderungspriorität, Cache-Speicherung, Und so weiter. 
 ---
-= Ändern Sie die Einstellungen für ein Volume
+= Ändern Sie die Einstellungen für ein Volume im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

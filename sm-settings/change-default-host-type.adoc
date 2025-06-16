@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, default, host, type, 
 summary: Verwenden Sie die Einstellung Standardbetriebssystem ändern, um den Standardhosttyp auf Speicherarray-Ebene zu ändern. Im Allgemeinen ändern Sie den Standard-Hosttyp, bevor Sie Hosts mit dem Speicher-Array verbinden oder wenn Sie zusätzliche Hosts verbinden. 
 ---
-= Ändern des Standard-Hosttyps
+= Standard-Hosttyp im SANtricity System Manager ändern
 :allow-uri-read: 
 :experimental: 
 :icons: font

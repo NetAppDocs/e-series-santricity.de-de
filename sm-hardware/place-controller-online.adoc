@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, place, controller, online 
 summary: Wenn ein Controller sich im Offlinezustand oder im Servicemodus befindet, können Sie ihn wieder online schalten. 
 ---
-= Platzieren Sie den Controller in den Online-Modus
+= Einen Controller im SANtricity System Manager online schalten
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, media scan settings, volume 
 summary: Ein Medien-Scan ist ein Hintergrundvorgang, der alle Daten und Redundanzinformationen auf dem Volume scannt. Verwenden Sie diese Option, um die Einstellungen für den Medienscan für ein oder mehrere Volumes zu aktivieren oder zu deaktivieren oder die Scandauer zu ändern. 
 ---
-= Ändern Sie die Einstellungen für die Mediensuche für ein Volume
+= Ändern Sie die Medienscaneinstellungen für ein Volume im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

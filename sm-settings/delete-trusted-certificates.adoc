@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, trusted, certificates, 
 summary: Sie können die vom Benutzer installierten Zertifikate löschen, die zuvor über die Registerkarte „Vertrauenswürdig“ importiert wurden. 
 ---
-= Vertrauenswürdige Zertifikate löschen
+= Vertrauenswürdige Zertifikate im SANtricity System Manager löschen
 :allow-uri-read: 
 :experimental: 
 :icons: font

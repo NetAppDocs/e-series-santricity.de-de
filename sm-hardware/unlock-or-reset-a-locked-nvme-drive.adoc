@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, unlock, reset, locked, fips, nvme, drives, 
 summary: 'Wenn Sie ein oder mehrere gesperrte NVMe- oder FIPS-Laufwerke in ein Storage-Array einfügen, können die Laufwerkdaten entsperrt werden, indem Sie die Sicherheitsschlüsseldatei hinzufügen, die den Laufwerken zugeordnet ist. Wenn Sie keinen Sicherheitsschlüssel haben, können Sie auf jedem gesperrten Laufwerk einen Reset durchführen, indem Sie seine physische Sicherheits-ID (PSID) eingeben, um seine Sicherheitsattribute zurückzusetzen und die Laufwerkdaten zu löschen.' 
 ---
-= Locked NVMe- oder FIPS-Laufwerke entsperren oder zurücksetzen
+= Entsperren oder Zurücksetzen gesperrter NVMe- oder FIPS-Laufwerke im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

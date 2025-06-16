@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, asynchronous, mirror, relationship, 
 summary: Ein gespiegeltes Paar entfernen Sie die gespiegelte Beziehung vom primären Volume auf dem lokalen Storage Array und dem sekundären Volume im Remote Storage Array. 
 ---
-= Entfernen Sie die asynchrone Spiegelbeziehung
+= Entfernen asynchroner Spiegelbeziehungen im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

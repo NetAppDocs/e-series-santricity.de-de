@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, requirements, asynchronous, mirroring, 
 summary: Wenn Sie asynchrone Spiegelung verwenden möchten, beachten Sie die folgenden Anforderungen. 
 ---
-= Anforderungen für die Verwendung von asynchronem Spiegeln
+= Voraussetzungen für die Verwendung der asynchronen Spiegelung in der SANtricity-Software
 :allow-uri-read: 
 :experimental: 
 :icons: font

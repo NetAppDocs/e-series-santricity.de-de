@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, remote, storage, 
 summary: Nach Abschluss des Imports können Sie ein Remote-Speicherobjekt entfernen, wenn Sie keine Daten mehr zwischen den lokalen und Remote-Geräten kopieren möchten. 
 ---
-= Remote-Storage-Objekt entfernen
+= Entfernen eines Remote-Speicherobjekts im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

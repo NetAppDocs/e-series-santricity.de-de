@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, storage, array, profile 
 summary: Das Speicherarrayprofil enthält eine Beschreibung aller Komponenten und Eigenschaften des Speicherarrays. 
 ---
-= Anzeigen des Speicher-Array-Profils
+= Anzeigen des Profils eines Speicherarrays im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

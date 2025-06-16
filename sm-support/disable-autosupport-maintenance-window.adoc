@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, disable, autosupport, ASUP, maintenance window 
 summary: Deaktivieren Sie das AutoSupport-Wartungsfenster, um die automatische Erstellung von Tickets bei Fehlerereignissen zu ermöglichen. Wenn das AutoSupport-Wartungsfenster deaktiviert ist, öffnet das Storage-Array AutoSupport im Falle eines Problems einen Support-Fall. 
 ---
-= Deaktivieren Sie das AutoSupport-Wartungsfenster
+= Deaktivieren Sie das AutoSupport-Wartungsfenster im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, role, volumes, mirrored, pair, 
 summary: Sie können eine Rollenumkehr zwischen den beiden Volumes in einem gespiegelten Paar durchführen, die an synchroner Spiegelung für administrative Zwecke beteiligt sind oder bei einer Katastrophe im lokalen Storage Array auftritt. 
 ---
-= Ändern Sie die Rolle zwischen Volumes in einem gespiegelten Paar
+= Ändern Sie die Rolle zwischen Volumes in einem gespiegelten Paar im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

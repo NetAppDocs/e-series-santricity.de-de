@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, syslog, server, settings, audit, log, records, 
 summary: 'Sie können die Einstellungen für den Syslog-Server ändern, der für die Archivierung von Audit-Protokollen verwendet wird, und auch ein neues Zertifikat für die Zertifizierungsstelle (Certificate Authority, CA) für den Server hochladen.' 
 ---
-= Bearbeiten Sie die Syslog-Servereinstellungen für Audit-Protokolldatensätze
+= Bearbeiten Sie die Syslog-Servereinstellungen für Audit-Protokolldatensätze im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

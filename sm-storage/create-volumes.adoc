@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, volumes 
 summary: Sie erstellen Volumes, um einem applikationsspezifischen Workload Storage-Kapazität hinzuzufügen und die erstellten Volumes für einen bestimmten Host oder Host-Cluster sichtbar zu machen. Darüber hinaus bietet die Erstellung eines Volumes Optionen, mit denen jedem zu erstellenden Volume bestimmte Kapazitätsmengen zugewiesen werden können. 
 ---
-= Volumes erstellen
+= Erstellen Sie Volumes im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

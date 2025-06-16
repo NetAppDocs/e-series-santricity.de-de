@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, deactivate, synchronous, mirroring, adapter, host, bus, 
 summary: 'Sie können die Funktion Synchronous Mirroring auf einem Speicher-Array deaktivieren, um die normale Nutzung des Host Bus Adapters (HBA) Host-Ports 4, der für die Datenübertragung an der Spiegelung reserviert war, wiederherzustellen.' 
 ---
-= Deaktivieren Sie die synchrone Spiegelung
+= Synchrone Spiegelung im SANtricity System Manager deaktivieren
 :allow-uri-read: 
 :experimental: 
 :icons: font

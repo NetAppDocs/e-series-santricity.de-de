@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, storage, configuration, settings 
 summary: Sie können die Speicherkonfiguration von einem Speicher-Array in andere Speicher-Arrays importieren. Dieser Batch-Betrieb spart Zeit, wenn Sie mehrere Arrays im Netzwerk konfigurieren müssen. 
 ---
-= Importieren der Speicherkonfigurationseinstellungen
+= Importieren Sie Speicherkonfigurationseinstellungen in SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

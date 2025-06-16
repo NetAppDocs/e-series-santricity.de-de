@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, manage, groups 
 summary: Auf der Seite „Gruppen managen“ können Sie eine Reihe von Speicher-Array-Gruppen erstellen, um die Verwaltung zu erleichtern. 
 ---
-= Gruppenübersicht
+= Erfahren Sie mehr über die Gruppenübersicht im SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

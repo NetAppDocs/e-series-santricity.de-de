@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access volumes 
 summary: 'Ein Zugriffs-Volume ist ein werkseitig konfiguriertes Volume auf dem Storage-Array, das über die Host-I/O-Verbindung für die Kommunikation mit dem Storage-Array und dem Host verwendet wird. Das Zugriffsvolume erfordert eine LUN (Logical Unit Number).' 
 ---
-= Zugriff auf Volumes
+= Zugriffsvolumes im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

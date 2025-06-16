@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, saml, role, mappings, 
 summary: Wenn Sie zuvor SAML für Access Management konfiguriert haben, können Sie die Rollenzuordnungen zwischen den IdP-Gruppen und den vordefinierten Rollen des Speicherarrays ändern. 
 ---
-= SAML-Rollenzuordnungen ändern
+= SAML-Rollenzuordnungen im SANtricity System Manager ändern
 :allow-uri-read: 
 :experimental: 
 :icons: font

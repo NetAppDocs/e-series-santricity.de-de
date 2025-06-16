@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, convert, snapshot, volume, read-write mode 
 summary: Sie können bei Bedarf ein schreibgeschütztes Snapshot Volume oder ein Snapshot Consistency Group Snapshot Volume in den Lese-/Schreibmodus konvertieren. 
 ---
-= Konvertieren des Snapshot-Volumes in den Lese-/Schreibmodus
+= Snapshot-Volume im SANtricity System Manager in den Lese-/Schreibmodus konvertieren
 :allow-uri-read: 
 :experimental: 
 :icons: font

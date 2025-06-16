@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, certificate, revocation checking, 
 summary: 'Sie können automatische Überprüfungen auf widerrief Zertifikate aktivieren, sodass ein OCSP-Server (Online Certificate Status Protocol) Benutzer daran blockiert, nicht sichere Verbindungen zu machen.' 
 ---
-= Überprüfung des Zertifikatsannuls aktivieren
+= Aktivieren Sie die Zertifikatssperrprüfung im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

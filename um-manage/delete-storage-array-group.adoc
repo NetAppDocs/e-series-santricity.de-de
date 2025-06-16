@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, delete, storage, array, group 
 summary: Sie können eine oder mehrere Speicherarraygruppen entfernen, die nicht mehr benötigt werden. 
 ---
-= Speicherarray-Gruppe löschen
+= Löschen einer Speicherarraygruppe im SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

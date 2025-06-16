@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, imported, certificate, information, 
 summary: Auf der Seite Zertifikate können Sie den Zertifikatstyp, die ausstellende Behörde und den gültigen Datumsbereich der Zertifikate für das Speicher-Array anzeigen. 
 ---
-= Anzeigen importierter Zertifikatinformationen
+= Importierte Zertifikatsinformationen im SANtricity System Manager anzeigen
 :allow-uri-read: 
 :experimental: 
 :icons: font

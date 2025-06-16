@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, requirements, replicating, storage, configurations 
 summary: Bevor Sie eine Speicherkonfiguration von einem Speicher-Array in ein anderes importieren, überprüfen Sie die Anforderungen und Richtlinien. 
 ---
-= Anforderungen für die Replizierung von Storage-Konfigurationen
+= Voraussetzungen für die Replikation von Speicherarray-Konfigurationen im SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, remove, storage, arrays, group 
 summary: Sie können ein oder mehrere verwaltete Speicher-Arrays aus einer Gruppe entfernen, wenn Sie sie nicht mehr aus einer bestimmten Speichergruppe verwalten möchten. 
 ---
-= Entfernen Sie Speicher-Arrays aus der Gruppe
+= Entfernen Sie Speicher-Arrays aus einer Gruppe im SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

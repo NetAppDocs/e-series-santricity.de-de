@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, feature, pack, 
 summary: 'Ein Funktionspaket ist ein Bundle, das Attribute für Storage Arrays ändert (zum Beispiel Ändern des Protokolls von Fibre Channel auf iSCSI). Funktionspakete erfordern einen speziellen Schlüssel für die Unterstützung.' 
 ---
-= Funktionspaket aktivieren
+= Feature Pack im SANtricity System Manager aktivieren
 :allow-uri-read: 
 :experimental: 
 :icons: font

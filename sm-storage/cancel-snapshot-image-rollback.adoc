@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, cancel, snapshot, image, rollback 
 summary: 'Sie können ein aktives Rollback abbrechen, das gerade läuft (Daten aktiv kopieren), ein ausstehendes Rollback (in einer Warteschlange, in der auf den Start warten) oder ein Rollback, das aufgrund eines Fehlers angehalten wurde.' 
 ---
-= Abbrechen des Zurücksetzvorgangs von Snapshot-Bildern
+= Abbrechen des Snapshot-Image-Rollbacks im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

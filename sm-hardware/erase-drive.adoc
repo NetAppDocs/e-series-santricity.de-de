@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, erase, drives, removal, 
 summary: Sie können die Option Löschen verwenden, um ein nicht zugewiesenes Laufwerk zum Entfernen aus dem System vorzubereiten. Durch dieses Verfahren werden die Daten endgültig entfernt, sodass die Daten nicht erneut gelesen werden können. 
 ---
-= Laufwerke löschen
+= Laufwerke im SANtricity System Manager löschen
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, home page 
 summary: Die Startseite enthält eine Dashboard-Ansicht für die tägliche Verwaltung Ihres Speicherarrays. Wenn Sie sich bei System Manager anmelden, wird die Startseite der erste Bildschirm angezeigt. 
 ---
-= Homepage
+= Erfahren Sie mehr über die Homepage des SANtricity System Managers
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

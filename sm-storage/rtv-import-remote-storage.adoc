@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, import, remote, storage 
 summary: Verwenden Sie den Assistenten zum Importieren von Remote Storage, um einen Storage-Import von einem Remote-System auf ein lokales E-Series Storage-System zu initiieren. 
 ---
-= Remote-Speicher importieren
+= Remote-Speicher in SANtricity System Manager importieren
 :allow-uri-read: 
 :experimental: 
 :icons: font

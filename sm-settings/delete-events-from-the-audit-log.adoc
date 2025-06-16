@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, events, audit, log, 
 summary: 'Sie können das Audit-Protokoll von alten Ereignissen löschen, wodurch das Suchen durch Ereignisse leichter zu verwalten ist. Sie haben die Möglichkeit, alte Ereignisse beim Löschen in einer CSV-Datei (kommagetrennte Werte) zu speichern.' 
 ---
-= Löschen von Ereignissen aus dem Auditprotokoll
+= Ereignisse aus dem Audit-Log im SANtricity System Manager löschen
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronize, storage, array, clocks, 
 summary: 'Wenn das Network Time Protocol (NTP) nicht aktiviert ist, können Sie die Uhren auf den Controllern manuell so einstellen, dass sie mit dem Management-Client synchronisiert werden (das System, mit dem der Browser ausgeführt wird, der auf SANtricity System Manager zugreift).' 
 ---
-= Speicherarray-Uhren synchronisieren
+= Synchronisieren Sie die Uhren der Speicherarrays im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

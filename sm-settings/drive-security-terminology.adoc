@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, drive, security, terms, 
 summary: Erfahren Sie, wie die Bedingungen für die Laufwerksicherheit auf Ihr Speicherarray angewendet werden. 
 ---
-= Terminologie der Laufwerksicherheit
+= Erfahren Sie mehr über die Terminologie der Laufwerkssicherheit in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

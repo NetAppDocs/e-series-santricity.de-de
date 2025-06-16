@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, cancel, pending, snapshot, image 
 summary: Sie können ein ausstehendes Snapshot-Image abbrechen, bevor es abgeschlossen wird. Snapshots werden asynchron ausgeführt und der Status des Snapshots steht bis zum Abschluss des Snapshots aus. Das Snapshot-Image wird abgeschlossen, sobald der Synchronisierungsvorgang abgeschlossen ist. 
 ---
-= Abbrechen des ausstehenden Snapshot-Images
+= Abbrechen eines ausstehenden Snapshot-Images im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

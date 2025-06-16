@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, autosupport, ASUP, delivery, method 
 summary: Die AutoSupport-Funktion unterstützt die HTTPS- und SMTP-Protokolle für die Bereitstellung von Dispatches an den technischen Support. 
 ---
-= Konfigurieren der AutoSupport-Bereitstellungsmethode
+= Konfigurieren Sie die AutoSupport-Liefermethode im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

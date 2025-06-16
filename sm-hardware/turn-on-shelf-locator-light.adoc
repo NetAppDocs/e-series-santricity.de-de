@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, shelf, locator, light, LED 
 summary: Um die physische Position eines Regals zu finden, das auf der Hardware-Seite angezeigt wird, können Sie die Positionsleuchte des Regals einschalten. 
 ---
-= Die Positionsleuchte für den Regal einschalten
+= Schalten Sie im SANtricity System Manager ein Regallokalisierungslicht ein
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

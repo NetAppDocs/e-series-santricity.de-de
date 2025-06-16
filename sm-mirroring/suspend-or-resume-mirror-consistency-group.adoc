@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, suspend, resume, synchronization, mirror, consistency, group, 
 summary: Die Synchronisation der Daten auf allen gespiegelten Paaren innerhalb einer Spiegelkonsistent-Gruppe kann unterbrochen oder fortgesetzt werden. Dies ist effizienter als das Unterbrechen oder Wiederaufnehmen der Synchronisierung auf einzelnen gespiegelten Paaren. 
 ---
-= Unterbrechen oder Fortsetzen der Synchronisierung für die SpiegelungsConsistency Group
+= Synchronisierung für Spiegelkonsistenzgruppen im SANtricity System Manager aussetzen oder fortsetzen
 :allow-uri-read: 
 :experimental: 
 :icons: font

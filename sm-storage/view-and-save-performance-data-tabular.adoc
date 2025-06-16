@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, save, tabular, performance, 
 summary: Sie können Performance-Diagrammdaten im Tabellenformat anzeigen und speichern. So können Sie die anzuzeigenden Daten filtern. 
 ---
-= Anzeigen und Speichern von Leistungsdaten in Tabellenform
+= Anzeigen und Speichern tabellarischer Leistungsdaten im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

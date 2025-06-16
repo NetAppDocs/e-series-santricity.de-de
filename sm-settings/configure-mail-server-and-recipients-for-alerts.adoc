@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, mail, server, recipients, alerts, 
 summary: Um E-Mail-Benachrichtigungen zu konfigurieren, müssen Sie eine E-Mail-Serveradresse und die E-Mail-Adressen der Warnungsempfänger angeben. Es sind bis zu 20 E-Mail-Adressen zulässig. 
 ---
-= Konfigurieren Sie E-Mail-Server und Empfänger für Warnmeldungen
+= Mailserver und Alarmempfänger im SANtricity System Manager konfigurieren
 :allow-uri-read: 
 :experimental: 
 :icons: font

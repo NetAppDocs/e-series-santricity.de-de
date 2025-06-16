@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, event, log 
 summary: Verwenden Sie das Ereignisprotokoll, um einen historischen Datensatz mit Änderungen und Ereignissen anzuzeigen, die auf dem Speicher-Array stattgefunden haben. 
 ---
-= Übersicht über das Ereignisprotokoll
+= Erfahren Sie mehr über das Ereignisprotokoll in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

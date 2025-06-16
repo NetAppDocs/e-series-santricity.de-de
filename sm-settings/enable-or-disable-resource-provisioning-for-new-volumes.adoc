@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, disable, resource, provisioning, 
 summary: Wenn Sie die Standardfunktion für die Ressourcenbereitstellung zuvor deaktiviert haben, können Sie die Einstellungen aufrufen und sie für alle neuen von Ihnen erstellten SSD-Volume-Gruppen oder -Pools erneut aktivieren. Sie können die Einstellung auch wieder deaktivieren. 
 ---
-= Aktivieren oder Deaktivieren der Ressourcenbereitstellung für neue Volume-Gruppen oder -Pools
+= Aktivieren oder deaktivieren Sie die Ressourcenbereitstellung für neue Volume-Gruppen oder Pools im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

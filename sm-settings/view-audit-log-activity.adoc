@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, audit, log, activity, 
 summary: Durch die Anzeige von Prüfprotokollen können Benutzer mit Sicherheitsadministratorberechtigungen Benutzeraktionen, Authentifizierungsfehler, ungültige Anmeldeversuche und die Lebensdauer der Benutzersitzung überwachen. 
 ---
-= Zeigen Sie die Aktivität des Prüfprotokolls an
+= Anzeigen der Überwachungsprotokollaktivität im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

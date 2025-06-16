@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, set, host, connectivity, reporting, 
 summary: Sie können die Berichterstellung für die Host-Konnektivität aktivieren, damit das Storage-Array die Verbindung zwischen den Controllern und den konfigurierten Hosts fortlaufend überwacht. Anschließend werden Sie benachrichtigt, wenn die Verbindung unterbrochen wird. Diese Funktion ist standardmäßig aktiviert. 
 ---
-= Legen Sie die Berichterstellung für Host-Konnektivität fest
+= Host-Konnektivitätsberichte im SANtricity System Manager einrichten
 :allow-uri-read: 
 :experimental: 
 :icons: font

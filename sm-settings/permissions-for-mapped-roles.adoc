@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, permissions, mapped, roles, 
 summary: 'Die auf dem Storage-Array erzwungenen RBAC-Funktionen (rollenbasierte Zugriffssteuerung) umfassen vordefinierte Benutzerprofile, die mit einer oder mehreren zugewiesenen Rollen ausgestattet sind. Jede Rolle umfasst Berechtigungen für den Zugriff auf Aufgaben in SANtricity System Manager.' 
 ---
-= Berechtigungen für zugeordnete Rollen
+= Erfahren Sie mehr über Berechtigungen für zugeordnete Rollen im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

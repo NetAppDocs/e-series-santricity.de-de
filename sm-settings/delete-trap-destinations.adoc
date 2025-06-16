@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, trap, destinations, 
 summary: Sie können eine Trap-Zieladresse löschen, so dass der Event-Monitor des Speicherarrays keine SNMP-Traps mehr an diese Adresse sendet. 
 ---
-= Löschen von Trap-Zielen
+= Löschen von Trap-Zielen im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, collect, i/o path, statistics 
 summary: Sie können die Statistikdatei für den I/O-Pfad speichern und sie dem technischen Support zur Analyse senden. 
 ---
-= Erstellen von Statistiken zu I/O-Pfaden
+= Sammeln Sie E/A-Pfadstatistiken im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, clear, storage, array, configuration, 
 summary: Verwenden Sie den Vorgang Konfiguration löschen, wenn Sie alle Pools, Volume-Gruppen, Volumes, Host-Definitionen und Host-Zuweisungen aus dem Speicher-Array löschen möchten. 
 ---
-= Löschen Sie die Konfiguration des Speicherarrays
+= Speicherarray-Konfiguration im SANtricity System Manager löschen
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -108,4 +108,8 @@ X
 .Ergebnisse
 * Die aktuelle Konfiguration wird gelöscht und alle vorhandenen Daten auf dem Speicher-Array zerstört.
 * Zuweisung aller Laufwerke aufgehoben.
++
+
+NOTE: Das Speicher-Array wird im Wiederherstellungsmodus gestartet. Sie müssen den Wiederherstellungsmodus deaktivieren, bevor Sie das Speicher-Array verwenden. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/e-series-santricity/sm-support/clear-recovery-mode.html["Löschen Sie den Wiederherstellungsmodus"^] .
+
 

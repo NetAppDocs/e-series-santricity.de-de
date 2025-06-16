@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, internal, security, key, 
 summary: Zur Verwendung der Laufwerkssicherheitsfunktion können Sie einen internen Sicherheitsschlüssel erstellen, der von den Controllern und sicheren Laufwerken im Speicher-Array gemeinsam genutzt wird. Interne Schlüssel werden im persistenten Speicher des Controllers aufbewahrt. 
 ---
-= Interner Sicherheitsschlüssel erstellen
+= Erstellen Sie einen internen Sicherheitsschlüssel im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

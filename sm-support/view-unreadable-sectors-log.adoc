@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, unreadable, sectors, log 
 summary: Sie können das unlesbare Sektoren-Log speichern und die Datei zur Analyse an den technischen Support senden. 
 ---
-= Unlesbare Sektoren-Log anzeigen
+= Zeigen Sie das Protokoll der nicht lesbaren Sektoren im SANtricity System Manager an
 :allow-uri-read: 
 :experimental: 
 :icons: font

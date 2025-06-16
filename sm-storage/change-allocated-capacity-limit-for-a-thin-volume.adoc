@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, allocated capacity, thin volume 
 summary: Für Thin Volumes, die Speicherplatz nach Bedarf zuweisen können, können Sie das Limit ändern, das die zugewiesene Kapazität einschränkt, auf der ein Thin Volume automatisch erweitert werden kann. 
 ---
-= Ändern Sie die zugewiesene Kapazitätsgrenze für ein Thin Volume
+= Ändern Sie das zugewiesene Kapazitätslimit für ein Thin Volume im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

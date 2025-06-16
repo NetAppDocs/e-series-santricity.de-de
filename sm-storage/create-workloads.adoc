@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, workloads 
 summary: Sie können Workloads für jeden Applikationstyp erstellen. 
 ---
-= Workloads erstellen
+= Erstellen von Workloads im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, clear, recovery, mode 
 summary: Verwenden Sie nach dem Wiederherstellen einer Speicherarray-Konfiguration den Vorgang „Clear Recovery Mode“, um die I/O-Vorgänge auf dem Speicher-Array fortzusetzen und in den normalen Betrieb zurückzukehren. 
 ---
-= Löschen Sie den Wiederherstellungsmodus
+= Wiederherstellungsmodus in der SANtricity-Software löschen
 :allow-uri-read: 
 :experimental: 
 :icons: font

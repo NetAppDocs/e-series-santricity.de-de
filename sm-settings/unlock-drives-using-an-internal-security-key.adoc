@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, unlock, drives, internal, key, management, 
 summary: Wenn Sie das interne Verschlüsselungsmanagement konfiguriert haben und später sichere Laufwerke von einem Speicher-Array auf ein anderes verschieben, müssen Sie den Sicherheitsschlüssel dem neuen Speicher-Array neu zuweisen, um Zugriff auf die verschlüsselten Daten auf den Laufwerken zu erhalten. 
 ---
-= Entsperren Sie Laufwerke bei Nutzung des internen Verschlüsselungsmanagements
+= Entsperren Sie Laufwerke, wenn Sie die interne Schlüsselverwaltung im SANtricity System Manager verwenden
 :allow-uri-read: 
 :experimental: 
 :icons: font

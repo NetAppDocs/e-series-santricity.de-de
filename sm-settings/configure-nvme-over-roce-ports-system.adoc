@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, nvme, roce, ports, 
 summary: 'Wenn der Controller eine Verbindung für NVMe over RoCE (RDMA over Converged Ethernet) enthält, können Sie die NVMe-Port-Einstellungen auf der System-Seite konfigurieren.' 
 ---
-= Konfigurieren Sie NVMe over RoCE-Ports
+= Konfigurieren Sie NVMe über RoCE-Ports im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

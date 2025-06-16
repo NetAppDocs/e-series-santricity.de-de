@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, redistribute, volumes 
 summary: Sie verteilen Volumes neu, um Volumes zurück zu ihren bevorzugten Controller-Besitzern zu verschieben. In der Regel verschieben Multipath-Treiber Volumes vom bevorzugten Controller-Eigentümer, wenn entlang des Datenpfads zwischen dem Host und dem Storage Array ein Problem auftritt. 
 ---
-= Neuverteilung von Volumes
+= Volumes im SANtricity System Manager neu verteilen
 :allow-uri-read: 
 :experimental: 
 :icons: font

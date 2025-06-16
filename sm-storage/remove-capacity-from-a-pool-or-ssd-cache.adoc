@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, capacity, pool, ssd cache 
 summary: Sie können Laufwerke entfernen, um die Kapazität eines vorhandenen Pools oder SSD-Caches zu reduzieren. 
 ---
-= Entfernen Sie die Kapazität aus einem Pool oder SSD-Cache
+= Kapazität aus einem Pool oder SSD-Cache im SANtricity System Manager entfernen
 :allow-uri-read: 
 :experimental: 
 :icons: font

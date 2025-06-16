@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, mirroring 
 summary: Mithilfe der Spiegelungsfunktionen können Daten entweder asynchron oder synchron zwischen einem lokalen Storage-Array und einem Remote-Storage-Array repliziert werden. 
 ---
-= Spiegelung – Übersicht
+= Erfahren Sie mehr über die Spiegelung im SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, copy, snapshot, volume 
 summary: Sie können einen Prozess zum Kopieren von Volumes auf einem Snapshot-Volume oder einem Snapshot-Snapshot-Volume der Konsistenzgruppe durchführen. 
 ---
-= Snapshot Volume kopieren
+= Kopieren eines Snapshot-Volumes im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

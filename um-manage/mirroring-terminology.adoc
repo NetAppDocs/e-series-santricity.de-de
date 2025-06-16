@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, mirroring, terminology 
 summary: Erfahren Sie, wie die Spiegelungsbedingungen auf Ihr Storage-Array angewendet werden. 
 ---
-= Terminologie wird gespiegelt
+= Erfahren Sie mehr über die Spiegelungsterminologie im SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

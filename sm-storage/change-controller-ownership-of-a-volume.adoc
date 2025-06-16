@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, controller ownership, volume 
 summary: Sie können den bevorzugten Controller-Besitz eines Volumes ändern, sodass die I/O-Vorgänge für Host-Applikationen durch den neuen Pfad geleitet werden. 
 ---
-= Ändern Sie den Controller-Eigentum eines Volumes
+= Ändern Sie den Controller-Besitz eines Volumes im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

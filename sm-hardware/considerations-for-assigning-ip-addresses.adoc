@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, considerations, assigning, ip, addresses 
 summary: Standardmäßig werden Controller bei beiden Netzwerk-Ports mit aktiviertem DHCP ausgeliefert. Sie können statische IP-Adressen zuweisen, die statischen Standardadressen verwenden oder DHCP-zugewiesene IP-Adressen verwenden. Sie können auch eine statusfreie IPv6-Konfiguration verwenden. 
 ---
-= Überlegungen beim Zuweisen von IP-Adressen
+= Erfahren Sie mehr über die IP-Adresszuweisung für E-Serie-Controller
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

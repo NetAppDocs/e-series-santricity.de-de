@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, unsynchronized, data, mirror, consistency, groups, 
 summary: Sie können die Menge der nicht synchronisierten Daten zwischen den Spiegelungskonsistenzgruppen im lokalen Speicher-Array und auf dem Remote-Speicher-Array anzeigen. Während sich die Konsistenzgruppe der Spiegelung in einem nicht synchronisierten Status befindet, erfolgt keine Spiegelungsaktivität. 
 ---
-= Zeigen Sie die nicht synchronisierte Datenmenge zwischen gespiegelten Konsistenzgruppen an
+= Nicht synchronisierte Datenmenge zwischen Spiegelkonsistenzgruppen im SANtricity System Manager anzeigen
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, performance, 
 summary: Die Seite Performance enthält Diagramme und Tabellen von Daten, mit denen Sie die Performance des Speicher-Arrays in verschiedenen wichtigen Bereichen bewerten können. 
 ---
-= Performance-Diagramme und Richtlinien
+= Erfahren Sie mehr über Leistungsdiagramme und Richtlinien im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

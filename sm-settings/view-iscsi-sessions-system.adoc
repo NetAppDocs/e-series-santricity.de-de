@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, iscsi, sessions, 
 summary: Sie können detaillierte Informationen über die iSCSI-Verbindungen zu Ihrem Speicher-Array anzeigen. ISCSI-Sitzungen können bei Hosts oder Remote-Storage-Arrays in einer asynchronen Spiegelbeziehung durchgeführt werden. 
 ---
-= Anzeigen von iSCSI-Sitzungen
+= iSCSI-Sitzungen im SANtricity System Manager anzeigen
 :allow-uri-read: 
 :experimental: 
 :icons: font

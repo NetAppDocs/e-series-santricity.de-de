@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, deactivate, asynchronous, mirroring, remote, 
 summary: Sie können die asynchrone Spiegelung auf den lokalen und Remote-Speicher-Arrays deaktivieren, um die normale Nutzung dedizierter Ports auf den Speicher-Arrays wiederherzustellen. 
 ---
-= Deaktivieren Sie die asynchrone Spiegelung
+= Asynchrone Spiegelung im SANtricity System Manager deaktivieren
 :allow-uri-read: 
 :experimental: 
 :icons: font

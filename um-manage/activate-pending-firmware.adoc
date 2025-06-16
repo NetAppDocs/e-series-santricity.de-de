@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, activate, staged, os, software 
 summary: Sie können die Software-Datei sofort aktivieren oder bis zu einem angenehmeren Zeitpunkt warten. Bei diesem Verfahren wird davon ausgegangen, dass Sie die Softwaredatei zu einem späteren Zeitpunkt aktivieren. 
 ---
-= Aktivieren Sie die stufenweise Betriebssystemsoftware
+= Aktivieren Sie die bereitgestellte Betriebssystemsoftware im SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

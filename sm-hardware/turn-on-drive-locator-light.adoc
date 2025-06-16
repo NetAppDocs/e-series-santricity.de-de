@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, turn, drive, locator, light, LEDs 
 summary: Auf der Seite Hardware können Sie die Locator-LED einschalten, um den physischen Standort eines Laufwerks im Speicher-Array zu finden. 
 ---
-= Schalten Sie die Anzeige der Laufwerksuchhilfe ein
+= Schalten Sie im SANtricity System Manager eine Laufwerkssuchleuchte ein
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, capacity, volumes, 
 summary: Die Laufwerke in Ihrem Speicher-Array stellen die physische Speicherkapazität für Ihre Daten bereit. Bevor Sie mit dem Speichern von Daten beginnen können, müssen Sie die zugewiesene Kapazität in logischen Komponenten – Pools oder Volume-Gruppen – konfigurieren. Mithilfe dieser Speicherobjekte lassen sich Daten auf dem Speicher-Array konfigurieren, speichern, verwalten und erhalten. 
 ---
-= Zuweisung von Kapazität für Volumes
+= So wird die Kapazität für Volumes im SANtricity System Manager zugewiesen
 :allow-uri-read: 
 :experimental: 
 :icons: font

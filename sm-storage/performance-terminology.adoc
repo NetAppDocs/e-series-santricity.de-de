@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, performance, terms 
 summary: Erfahren Sie, welche Performance-Bedingungen auf Ihr Storage Array angewendet werden. 
 ---
-= Performante Terminologie
+= Erfahren Sie mehr über die Leistungsterminologie in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

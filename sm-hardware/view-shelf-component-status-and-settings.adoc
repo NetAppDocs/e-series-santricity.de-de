@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, shelf, component, status, settings, 
 summary: Die Seite Hardware enthält Status und Einstellungen für Shelf-Komponenten, einschließlich Netzteile, Lüfter und Batterien. 
 ---
-= Zeigt den Status und die Einstellungen von Shelf-Komponenten an
+= Status und Einstellungen der Regalkomponenten im SANtricity System Manager anzeigen
 :allow-uri-read: 
 :experimental: 
 :icons: font

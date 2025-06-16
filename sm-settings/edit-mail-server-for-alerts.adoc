@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, mail, server, alerts, 
 summary: Sie können die E-Mail-Server-Adresse und die E-Mail-Absenderadresse ändern, die für E-Mail-Benachrichtigungen verwendet werden. 
 ---
-= E-Mail-Server für Warnmeldungen bearbeiten
+= Mailserver für Alarme im SANtricity System Manager bearbeiten
 :allow-uri-read: 
 :experimental: 
 :icons: font

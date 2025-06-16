@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, drive, status, settings, media, 
 summary: Sie können Status und Einstellungen für die Laufwerke anzeigen, z. B. Medientyp, Schnittstellentyp und Kapazität. 
 ---
-= Zeigen Sie den Laufwerkstatus und die Einstellungen an
+= Laufwerksstatus und Einstellungen im SANtricity System Manager anzeigen
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

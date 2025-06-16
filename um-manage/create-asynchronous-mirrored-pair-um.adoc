@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, create, asynchronous, mirrored, pair 
 summary: Zum Konfigurieren der asynchronen Spiegelung erstellen Sie ein gespiegeltes Paar, das ein primäres Volume auf dem lokalen Array und ein sekundäres Volume des Remote-Arrays umfasst. 
 ---
-= Erstellen eines asynchronen gespiegelten Paares
+= Erstellen Sie ein asynchrones gespiegeltes Paar im SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

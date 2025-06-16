@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, unassign, volumes 
 summary: Heben Sie die Zuweisung von Volumes von Hosts oder Host Clustern auf, wenn Sie keinen I/O-Zugriff mehr vom Host oder Host-Cluster auf dieses Volume benötigen. 
 ---
-= Zuweisung von Volumes aufheben
+= Aufheben der Volumezuweisung im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

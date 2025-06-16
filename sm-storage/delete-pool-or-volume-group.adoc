@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, pool, volume, group 
 summary: Sie können einen Pool oder eine Volume-Gruppe löschen, um mehr nicht zugewiesene Kapazität zu erstellen. Diese können Sie neu konfigurieren, um die Storage-Anforderungen Ihrer Applikation zu erfüllen. 
 ---
-= Pool oder Volume-Gruppe löschen
+= Löschen eines Pools oder einer Volume-Gruppe im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

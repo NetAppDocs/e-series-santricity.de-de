@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, controller, states, 
 summary: 'Ein Controller kann in drei verschiedene Zustände versetzt werden: „Online“, „Offline“ und „Service“.' 
 ---
-= Controller-Status
+= Erfahren Sie mehr über Controllerzustände im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

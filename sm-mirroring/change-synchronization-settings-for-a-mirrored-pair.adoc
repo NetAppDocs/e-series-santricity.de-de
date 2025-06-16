@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, synchronization, settings, mirrored, pair, 
 summary: Sie können die Synchronisierungspriorität und die Resynchronisierungsrichtlinie ändern, die das gespiegelte Paar verwendet, um die Neusynchronisierung nach einer Kommunikationsunterbrechung abzuschließen. 
 ---
-= Ändern Sie die Synchronisierungseinstellungen für ein gespiegeltes Paar
+= Synchronisierungseinstellungen für ein gespiegeltes Paar im SANtricity System Manager ändern
 :allow-uri-read: 
 :experimental: 
 :icons: font

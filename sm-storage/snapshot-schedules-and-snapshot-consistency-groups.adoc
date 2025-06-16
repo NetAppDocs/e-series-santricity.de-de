@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshot, schedules, snapshot, consistency groups 
 summary: Nutzen Sie Zeitpläne für die Erfassung von Snapshot Images und managen Sie mithilfe von Snapshot Konsistenzgruppen mehrere Basis-Volumes. 
 ---
-= Snapshot Zeitpläne und Snapshot Konsistenzgruppen
+= Erfahren Sie mehr über Snapshot-Zeitpläne und Snapshot-Konsistenzgruppen im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

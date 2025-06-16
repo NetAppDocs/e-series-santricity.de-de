@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, support, center 
 summary: Nutzen Sie das Support Center, um Diagnose-, Recovery- und Informationserfassung durchzuführen, die vom technischen Support möglicherweise angefordert werden. 
 ---
-= Support-Übersicht
+= Erhalten Sie Unterstützung im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, hardware, terms 
 summary: Erfahren Sie, wie die Hardwarebedingungen auf Ihr Storage Array angewendet werden. 
 ---
-= Terminologie der Hardware
+= Erfahren Sie mehr über die Hardware-Terminologie der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

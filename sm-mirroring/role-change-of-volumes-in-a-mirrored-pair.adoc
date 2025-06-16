@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, role, change, between, volume, mirrored, pair, 
 summary: Sie können die Rolle zwischen Volumes in einem gespiegelten Paar ändern. Dazu wird das primäre Volume auf die sekundäre Rolle herabstufen oder das sekundäre Volume auf die primäre Rolle heraufstufen. 
 ---
-= Rollenänderung zwischen Volumes in einem gespiegelten Paar
+= Erfahren Sie mehr über Volume-Rollenänderungen in einem gespiegelten Paar in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

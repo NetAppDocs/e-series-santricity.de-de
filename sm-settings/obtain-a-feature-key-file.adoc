@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, obtain, feature, key, file, 
 summary: Um ein Premium Feature oder Feature Pack auf Ihrem Speicher-Array zu aktivieren, müssen Sie zuerst eine Feature Key-Datei erhalten. Ein Schlüssel ist nur einem Storage-Array zugeordnet. 
 ---
-= Abrufen einer Feature-Schlüsseldatei
+= Erhalten Sie eine Feature-Key-Datei im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

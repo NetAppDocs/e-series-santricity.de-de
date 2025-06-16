@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, disable, resource provisioning, 
 summary: Sie können die Ressourcenbereitstellung in einem vorhandenen Pool oder einer Volume-Gruppe aktivieren oder deaktivieren. 
 ---
-= Aktivieren oder deaktivieren Sie die Ressourcenbereitstellung in vorhandenen Volume-Gruppen und -Pools
+= Aktivieren oder deaktivieren Sie die Ressourcenbereitstellung für vorhandene Volumegruppen und Pools im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

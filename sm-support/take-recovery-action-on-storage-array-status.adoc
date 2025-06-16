@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, take, recovery, action, storage, array, status 
 summary: Sie können Maßnahmen zum Status Ihres aktuellen Speicherarrays ergreifen, indem Sie das unlesbare Sektoren-Protokoll überprüfen, die Laufwerkanschlüsse wieder aktivieren und den Wiederherstellungsmodus deaktivieren. 
 ---
-= Führen Sie Recovery-Aktionen im Status des Storage-Arrays durch
+= Führen Sie Wiederherstellungsmaßnahmen für den Speicherarray-Status im SANtricity System Manager durch
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

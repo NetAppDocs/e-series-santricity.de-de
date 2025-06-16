@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, import, certificates, 
 summary: 'Wenn der Controller eine Verbindung zurückweist, weil er die Vertrauenskette für einen Netzwerkserver nicht validieren kann, können Sie ein Zertifikat über die Registerkarte „Trusted“ importieren, auf der der Controller (als Client agiert) die Kommunikation von diesem Server akzeptieren kann.' 
 ---
-= Importieren Sie Zertifikate für Controller, wenn Sie als Clients fungieren
+= Importieren Sie Zertifikate für Controller, wenn Sie als Clients im SANtricity System Manager fungieren
 :allow-uri-read: 
 :experimental: 
 :icons: font

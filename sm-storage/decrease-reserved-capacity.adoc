@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, decrease, reserved, capacity 
 summary: 'Mit der Option Kapazität verringern können Sie die reservierte Kapazität für die folgenden Speicherobjekte verringern: Snapshot-Gruppe, Snapshot-Volume und das Volumen der Mitglied der Konsistenzgruppe. Die reservierte Kapazität kann nur um den/die Menge(en) verringert werden, den Sie zur Steigerung verwendet haben.' 
 ---
-= Reservierte Kapazität verringern
+= Reduzieren Sie die reservierte Kapazität im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

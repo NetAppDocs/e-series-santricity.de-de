@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, volume 
 summary: Normalerweise löschen Sie Volumes, wenn die Volumes mit falschen Parametern oder Kapazität erstellt wurden, die Storage-Konfigurationsanforderungen nicht mehr erfüllen oder Snapshot Images sind, die nicht mehr für Backup oder Applikationstests erforderlich sind. 
 ---
-= Volume löschen
+= Löschen eines Volumes im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

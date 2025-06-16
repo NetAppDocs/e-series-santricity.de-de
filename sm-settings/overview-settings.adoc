@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, system settings 
 summary: Sie können System Manager für einige allgemeine Array-Einstellungen und Zusatzfunktionen konfigurieren. 
 ---
-= Einstellungsübersicht
+= Erfahren Sie mehr über die Einstellungsübersicht im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

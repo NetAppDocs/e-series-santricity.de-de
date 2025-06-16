@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add, capacity, pool, volume, group 
 summary: Sie können Laufwerke hinzufügen, um die freie Kapazität in einem vorhandenen Pool oder einer vorhandenen Volume-Gruppe zu erweitern. 
 ---
-= Hinzufügen von Kapazität zu einem Pool oder einer Volume-Gruppe
+= Kapazität zu einem Pool oder einer Volume-Gruppe im SANtricity System Manager hinzufügen
 :allow-uri-read: 
 :experimental: 
 :icons: font

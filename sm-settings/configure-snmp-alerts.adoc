@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, snmp, alerts, 
 summary: 'Um SNMP-Warnungen (Simple Network Management Protocol) zu konfigurieren, müssen Sie mindestens einen Server identifizieren, auf dem der Ereignismonitor des Speicherarrays SNMP-Traps senden kann. Die Konfiguration erfordert einen Community-Namen oder Benutzernamen und eine IP-Adresse für den Server.' 
 ---
-= Konfigurieren von SNMP-Warnmeldungen
+= Konfigurieren Sie SNMP-Warnmeldungen im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

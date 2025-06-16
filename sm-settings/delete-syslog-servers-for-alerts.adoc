@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, syslog, servers, alerts, 
 summary: Sie können einen Syslog-Server löschen, damit er keine Warnungen mehr erhält. 
 ---
-= Löschen von Syslog-Servern für Warnmeldungen
+= Syslog-Server für Warnungen im SANtricity System Manager löschen
 :allow-uri-read: 
 :experimental: 
 :icons: font

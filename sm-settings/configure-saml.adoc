@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, saml, 
 summary: 'Zum Konfigurieren der Authentifizierung für das Zugriffsmanagement können Sie die im Speicher-Array integrierten SAML-Funktionen (Security Assertion Markup Language) verwenden. Mit dieser Konfiguration wird eine Verbindung zwischen einem Identitätsanbieter und dem Speicheranbieter hergestellt.' 
 ---
-= Konfigurieren Sie SAML
+= SAML im SANtricity System Manager konfigurieren
 :allow-uri-read: 
 :experimental: 
 :icons: font

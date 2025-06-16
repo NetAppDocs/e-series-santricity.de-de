@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, create, storage, array, group 
 summary: Sie erstellen Speichergruppen und fügen dann Speicher-Arrays zu den Gruppen hinzu. Die Speichergruppe definiert, welche Laufwerke den Speicher bereitstellen, aus dem das Volume besteht. 
 ---
-= Speicherarray-Gruppe konfigurieren
+= Konfigurieren einer Speicherarraygruppe im SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

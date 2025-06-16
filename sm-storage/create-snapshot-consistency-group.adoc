@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, snapshot, consistency group 
 summary: Um sicherzustellen, dass Sie über konsistente Kopien verfügen, können Sie einen Satz von mehreren Volumes erstellen, die als Snapshot-Konsistenzgruppe bezeichnet werden. 
 ---
-= Erstellen der Snapshot Konsistenzgruppe
+= Erstellen Sie eine Snapshot-Konsistenzgruppe im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

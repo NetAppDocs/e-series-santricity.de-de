@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, manage, session, timeouts 
 summary: Sie können Timeouts für SANtricity Unified Manager konfigurieren, so dass die inaktiven Sitzungen der Benutzer nach einer bestimmten Zeit getrennt werden. 
 ---
-= Verwalten von Sitzungszeitungen
+= Verwalten von Sitzungstimeouts im SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

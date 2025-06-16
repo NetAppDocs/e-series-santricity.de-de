@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, snapshot, consistency, group 
 summary: Sie können Snapshot-Konsistenzgruppen löschen, die nicht mehr benötigt werden. 
 ---
-= Löschen der Snapshot Konsistenzgruppe
+= Löschen einer Snapshot-Konsistenzgruppe im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

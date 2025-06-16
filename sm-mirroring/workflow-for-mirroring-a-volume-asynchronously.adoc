@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, workflow, mirroring, asynchronously, 
 summary: Sie konfigurieren die asynchrone Spiegelung mithilfe des folgenden Workflows. 
 ---
-= Workflow für die asynchrone Spiegelung eines Volumes
+= Asynchrones Spiegeln eines Volumes in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

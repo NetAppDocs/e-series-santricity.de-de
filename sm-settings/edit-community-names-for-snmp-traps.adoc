@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, communities, smpv2c, traps, 
 summary: Sie können Community-Namen für SNMPv2c-Traps bearbeiten. 
 ---
-= Communities für SNMPv2c-Traps bearbeiten
+= Communities für SNMPv2c-Traps im SANtricity System Manager bearbeiten
 :allow-uri-read: 
 :experimental: 
 :icons: font

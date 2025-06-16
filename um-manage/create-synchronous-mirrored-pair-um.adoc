@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, create, synchronous, mirrored, pair 
 summary: Zur Konfiguration der synchronen Spiegelung erstellen Sie ein gespiegeltes Paar, das ein primäres Volume auf dem lokalen Array und ein sekundäres Volume des Remote-Arrays umfasst. 
 ---
-= Erstellen eines synchronen gespiegelten Paares
+= Erstellen Sie ein synchrones gespiegeltes Paar im SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

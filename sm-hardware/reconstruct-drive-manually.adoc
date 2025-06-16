@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reconstruct, drive, manually, 
 summary: Die Laufwerksrekonstruktion wird normalerweise automatisch gestartet, nachdem Sie ein Laufwerk ersetzt haben. Wenn die Datenrekonstruktion nicht automatisch gestartet wird, können Sie die Rekonstruktion manuell starten. 
 ---
-= Manuelles Rekonstruieren des Laufwerks
+= Manuelles Rekonstruieren eines Laufwerks im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

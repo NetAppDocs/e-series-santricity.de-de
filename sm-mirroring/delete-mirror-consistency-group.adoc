@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, mirror, consistency, group, 
 summary: Sie können gespiegelte Konsistenzgruppen löschen, die nicht mehr im lokalen Storage Array und im Remote-Storage Array benötigt werden. 
 ---
-= Löschen der gespiegelten Konsistenzgruppe
+= Löschen einer Spiegelkonsistenzgruppe im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

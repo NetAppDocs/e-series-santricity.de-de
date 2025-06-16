@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, certificates, 
 summary: 'Mit System Manager können Sie Zertifikatsignierungsanforderungen (CSRs) erstellen, Zertifikate importieren und vorhandene Zertifikate verwalten.' 
 ---
-= Zertifikatübersicht
+= Erfahren Sie mehr über Zertifikate im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

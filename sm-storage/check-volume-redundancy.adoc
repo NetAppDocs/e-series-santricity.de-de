@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, check, volume, redundancy 
 summary: Mithilfe des technischen Supports oder der Anleitung durch den Recovery Guru können Sie die Redundanz auf einem Volume in einem Pool oder einer Volume-Gruppe überprüfen, um zu ermitteln, ob die Daten auf diesem Volume konsistent sind. Redundanzdaten dienen der schnellen Rekonstruktion von Informationen über das Ersatzlaufwerk, wenn eines der Laufwerke im Pool oder der Volume-Gruppe ausfällt. 
 ---
-= Volume-Redundanz prüfen
+= Überprüfen Sie die Volume-Redundanz im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

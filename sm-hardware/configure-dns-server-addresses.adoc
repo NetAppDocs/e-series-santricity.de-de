@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, dns, server, addresses, 
 summary: 'Mit dem Domain Name System (DNS) werden vollständig qualifizierte Domain-Namen für die Controller und ein NTP-Server (Network Time Protocol) aufgelöst. Die Management-Ports auf dem Speicher-Array können IPv4- oder IPv6-Protokolle gleichzeitig unterstützen.' 
 ---
-= Konfigurieren Sie DNS-Serveradressen
+= Konfigurieren Sie DNS-Serveradressen im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, security, key, 
 summary: Sie können jederzeit einen Sicherheitsschlüssel durch einen neuen Schlüssel ersetzen. Möglicherweise müssen Sie einen Sicherheitsschlüssel ändern, wenn Sie eine potenzielle Sicherheitsverletzung in Ihrem Unternehmen haben und sicherstellen möchten, dass nicht autorisierte Mitarbeiter nicht auf die Daten der Laufwerke zugreifen können. 
 ---
-= Sicherheitsschlüssel ändern
+= Ändern eines Sicherheitsschlüssels im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

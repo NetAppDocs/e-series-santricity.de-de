@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add-on, features, 
 summary: Add-ons sind Funktionen, die nicht in der Standardkonfiguration von System Manager enthalten sind und möglicherweise einen Schlüssel zur Aktivierung erfordern. Eine Add-on-Funktion kann entweder eine einzelne Premium-Funktion oder ein im Paket enthaltene Features sein. 
 ---
-= Funktionsweise der Add-on-Funktionen
+= So funktionieren Zusatzfunktionen im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

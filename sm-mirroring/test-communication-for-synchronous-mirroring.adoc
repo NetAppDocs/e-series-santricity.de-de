@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, test, communication, synchronous, mirroring, 
 summary: Sie können die Kommunikation zwischen einem lokalen Speicher-Array und einem Remote-Speicher-Array testen, um mögliche Kommunikationsprobleme für ein gespiegeltes Paar zu diagnostizieren, das an der synchronen Spiegelung beteiligt ist. 
 ---
-= Testen Sie die Kommunikation zur synchronen Spiegelung
+= Testkommunikation für synchrone Spiegelung im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

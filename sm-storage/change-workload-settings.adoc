@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, workload, settings 
 summary: Sie können den Namen für einen Workload ändern und den zugehörigen Applikationstyp anzeigen. Ändern Sie den Namen eines Workloads, wenn der aktuelle Name nicht mehr aussagekräftig oder anwendbar ist. 
 ---
-= Workload-Einstellungen ändern
+= Arbeitslasteinstellungen im SANtricity System Manager ändern
 :allow-uri-read: 
 :experimental: 
 :icons: font

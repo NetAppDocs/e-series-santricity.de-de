@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, copy, volume, 
 summary: Sie können einen Kopiervolume-Vorgang in Bearbeitung anzeigen und beenden, Priorität ändern, neu kopieren oder einen Kopiervorgang löschen. 
 ---
-= Führen Sie Maßnahmen bei einem Kopiervolume durch
+= Führen Sie Aktionen bei einem Kopiervorgang für Volumes im SANtricity System Manager durch
 :allow-uri-read: 
 :experimental: 
 :icons: font

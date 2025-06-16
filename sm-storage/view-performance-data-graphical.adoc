@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, graphical, performance, 
 summary: Sie können grafische Performance-Daten für logische Objekte, physische Objekte, Applikationen und Workloads anzeigen. 
 ---
-= Anzeigen grafischer Performance-Daten
+= Grafische Leistungsdaten im SANtricity System Manager anzeigen
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

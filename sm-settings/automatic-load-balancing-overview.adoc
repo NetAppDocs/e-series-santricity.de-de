@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, automatic, load, balancing, 
 summary: Der automatische Lastausgleich ermöglicht ein verbessertes I/O-Ressourcenmanagement, das dynamisch auf Laständerungen im Laufe der Zeit reagiert und die Eigentümerschaft der Volume-Controller automatisch angepasst wird, um Lastwucht-Ungleichgewicht zu beheben, wenn die Workloads zwischen den Controllern verschoben werden. 
 ---
-= Automatischer Lastausgleich – Übersicht
+= Erfahren Sie mehr über den automatischen Lastenausgleich in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

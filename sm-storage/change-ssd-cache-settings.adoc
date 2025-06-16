@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, ssd, cache, settings 
 summary: Sie können den Namen des SSD-Caches bearbeiten und seinen Status, die maximale und aktuelle Kapazität, den Status der Laufwerksicherheit und Data Assurance sowie die zugehörigen Volumes und Laufwerke anzeigen. 
 ---
-= Ändern Sie die SSD-Cache-Einstellungen
+= Ändern Sie die SSD-Cache-Einstellungen im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

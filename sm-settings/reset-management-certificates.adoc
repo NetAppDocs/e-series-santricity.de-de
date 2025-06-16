@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reset, management, certificates, 
 summary: Sie können die Zertifikate auf den Controllern von der Verwendung von CA-signierten Zertifikaten zurück auf die werkseitig eingestellten, selbstsignierten Zertifikate zurücksetzen. 
 ---
-= Managementzertifikate zurücksetzen
+= Verwaltungszertifikate im SANtricity System Manager zurücksetzen
 :allow-uri-read: 
 :experimental: 
 :icons: font

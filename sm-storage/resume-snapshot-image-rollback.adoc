@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, resume, snapshot, image, rollback 
 summary: Wenn während eines Rollback-Vorgangs eines Snapshot-Images ein Fehler auftritt, wird der Vorgang automatisch angehalten. Sie können einen Rollback-Vorgang fortsetzen, der sich im Status „Pause“ befindet. 
 ---
-= Setzen Sie das Rollback von Snapshot-Bildern fort
+= Fortsetzen eines Snapshot-Image-Rollbacks im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

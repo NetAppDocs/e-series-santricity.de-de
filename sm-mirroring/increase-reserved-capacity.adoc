@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, increase, reserved, capacity 
 summary: Sie können die reservierte Kapazität erhöhen, die die physisch zugewiesene Kapazität, die für jeden Kopiervorgang auf einem Storage-Objekt genutzt wird. 
 ---
-= Reservierte Kapazität wird erhöht
+= Erhöhen Sie die reservierte Kapazität im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

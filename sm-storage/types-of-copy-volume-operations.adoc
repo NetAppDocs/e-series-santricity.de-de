@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, copy, volume, 
 summary: Sie können entweder einen Offline-Kopiervorgang oder einen Online-Kopiervolume-Vorgang durchführen. Ein Offline-Vorgang liest Daten von einem Quell-Volume und kopiert sie auf ein Ziel-Volume. Ein Online-Vorgang verwendet ein Snapshot Volume als Quelle und kopiert seine Daten auf ein Ziel-Volume. 
 ---
-= Typen von Kopiervolumes
+= Erfahren Sie mehr über die Arten von Kopiervolumenvorgängen in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

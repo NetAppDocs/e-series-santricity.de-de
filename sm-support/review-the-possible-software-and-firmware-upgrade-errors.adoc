@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, software, firmware, upgrade, errors 
 summary: Fehler können während des Upgrades der Controller-Software oder der Aktualisierung der Laufwerk-Firmware auftreten. 
 ---
-= Überprüfen Sie die möglichen Software- und Firmware-Upgrade-Fehler
+= Erfahren Sie mehr über SANtricity Software- und Firmware-Upgrade-Fehler
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

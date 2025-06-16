@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, login, banner, 
 summary: Sie können ein Login-Banner erstellen, das Benutzern angezeigt wird, bevor sie Sitzungen in SANtricity System Manager einrichten. Das Banner kann einen Hinweishinweisen und eine Einwilligungsmeldung enthalten. 
 ---
-= Anmeldebanner konfigurieren
+= Login-Banner im SANtricity System Manager konfigurieren
 :allow-uri-read: 
 :experimental: 
 :icons: font

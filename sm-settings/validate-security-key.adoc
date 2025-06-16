@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity,System Manager, E-Series, validate, security, key, 
 summary: Sie können den Sicherheitsschlüssel überprüfen, um sicherzustellen, dass er nicht beschädigt wurde, und um sicherzustellen, dass Sie über einen korrekten Passphrase verfügen. 
 ---
-= Validierung des Sicherheitsschlüssels
+= Sicherheitsschlüssel im SANtricity System Manager validieren
 :allow-uri-read: 
 :experimental: 
 :icons: font

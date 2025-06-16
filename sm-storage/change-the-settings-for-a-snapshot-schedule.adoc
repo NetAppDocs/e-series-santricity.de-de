@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, settings, snapshot, schedule 
 summary: Für einen Snapshot-Zeitplan können Sie die automatische Erfassungszeit oder die Häufigkeit der Erfassung ändern. 
 ---
-= Ändern Sie die Einstellungen für einen Snapshot-Zeitplan
+= Ändern Sie die Einstellungen für einen Snapshot-Zeitplan im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

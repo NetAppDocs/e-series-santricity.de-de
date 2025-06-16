@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, 
 summary: Sie navigieren in der Hauptschnittstelle, um auf System Manager Funktionen und Aufgaben zuzugreifen. 
 ---
-= SANtricity System Manager – Überblick über die Benutzeroberfläche
+= Erfahren Sie mehr über die SANtricity System Manager-Schnittstelle
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

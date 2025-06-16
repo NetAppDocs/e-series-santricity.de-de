@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, export, saml, Service Provider, files, 
 summary: 'Bei Bedarf können Sie Service-Provider-Metadaten für das Speicher-Array exportieren und die Datei erneut in das Identity Provider (IdP)-System importieren.' 
 ---
-= Exportieren Sie SAML-Dienstanbieter-Dateien
+= Exportieren Sie SAML-Service-Provider-Dateien im SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

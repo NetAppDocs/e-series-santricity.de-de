@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, solid, state, disk, SSD 
 summary: 'Solid State Disks (SSDs) sind Daten-Storage-Geräte, die Solid State Memory (Flash) verwenden, um Daten dauerhaft zu speichern. SSDs bieten herkömmliche Festplatten an und sind mit denselben Schnittstellen verfügbar wie die Festplatten.' 
 ---
-= Solid State Disks (SSDs)
+= Erfahren Sie mehr über Solid State Disks (SSDs) im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

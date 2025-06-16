@@ -84,13 +84,6 @@ Unterstützt Windows-Betriebssysteme mit einem Multipathing-Treiber ATTO Technol
 
 
  a| 
-FlexArray (ALUA)
- a| 
-Unterstützt ein NetApp FlexArray-System mit ALUA für Multipathing.
-
-
-
- a| 
 IBM SVC
  a| 
 Unterstützt eine IBM SAN Volume Controller-Konfiguration.

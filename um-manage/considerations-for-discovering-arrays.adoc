@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, considerations, discovering, arrays 
 summary: Bevor Unified Manager Storage-Ressourcen anzeigen und verwalten kann, muss er die Speicherarrays ermitteln, die Sie im Netzwerk Ihres Unternehmens managen möchten. Sie können mehrere Arrays ermitteln oder ein einziges Array erkennen. 
 ---
-= Überlegungen bei der Array-Ermittlung
+= Erfahren Sie mehr über die Erkennung von Speicher-Arrays im SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

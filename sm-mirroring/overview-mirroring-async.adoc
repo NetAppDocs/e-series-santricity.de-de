@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, ARVM, asynchronous, mirroring, firmware, 
 summary: Die Funktion zur asynchronen Spiegelung bietet einen auf Firmware basierenden Mechanismus auf Controller-Ebene zur Datenreplizierung zwischen einem lokalen Storage-Array und einem Remote Storage Array. 
 ---
-= Übersicht über asynchrones Spiegeln
+= Erfahren Sie mehr über asynchrone Spiegelung in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

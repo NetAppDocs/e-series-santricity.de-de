@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, settings, host 
 summary: Sie können den Namen, den Host-Betriebssystemtyp und die zugehörigen Host-Cluster für einen Host ändern. 
 ---
-= Ändern Sie die Einstellungen für einen Host
+= Ändern der Einstellungen für einen Host im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

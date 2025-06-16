@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, place, controller, offline, 
 summary: Wenn Sie dazu aufgefordert werden, können Sie einen Controller in den Offline-Modus versetzen. 
 ---
-= Platzieren Sie den Controller in den Offline-Modus
+= Einen Controller im SANtricity System Manager offline schalten
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

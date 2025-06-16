@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, default, host, operating, system, 
 summary: Der standardmäßige Hosttyp wird vom Speicher-Array verwendet, wenn Hosts zunächst verbunden sind. Es definiert, wie die Controller im Speicher-Array mit dem Betriebssystem des Hosts arbeiten, wenn Volumes aufgerufen werden. 
 ---
-= Standard-Host-Betriebssystem
+= Erfahren Sie mehr über den Standard-Host-Betriebssystemtyp in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

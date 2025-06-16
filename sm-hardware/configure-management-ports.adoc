@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, management, port, 
 summary: Der Controller enthält einen für das Systemmanagement verwendeten Ethernet-Port. Bei Bedarf können Sie die Übertragungsparameter und IP-Adressen ändern. 
 ---
-= Konfigurieren Sie den Managementport
+= Konfigurieren Sie den Verwaltungsport im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

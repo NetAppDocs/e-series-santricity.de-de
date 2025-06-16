@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, individual, storage, array 
 summary: Sie können die Option Start verwenden, um den Browser-basierten SANtricity-System-Manager für ein oder mehrere Storage-Arrays zu öffnen, wenn Sie Managementvorgänge ausführen möchten. 
 ---
-= Management eines individuellen Storage Arrays
+= Verwalten Sie ein einzelnes Speicherarray im SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

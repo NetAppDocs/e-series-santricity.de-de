@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, start, snapshot, image, rollback, base, volume 
 summary: Sie können einen Rollback-Vorgang durchführen, um den Inhalt eines Basisvolumes an den Inhalt eines Snapshot-Bilds anzupassen. Durch den Rollback-Vorgang wird der Inhalt der Snapshot-Images, die mit dem Basisvolumen verknüpft sind, nicht geändert. 
 ---
-= Starten Sie das Rollback von Snapshot Images für ein Basisvolumen
+= Starten Sie das Snapshot-Image-Rollback für ein Basisvolume im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

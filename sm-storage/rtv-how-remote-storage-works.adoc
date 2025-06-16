@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, storage 
 summary: Mit der Remote Storage-Funktion können Sie Daten von einem Remote Storage-System auf ein lokales E-Series Storage-System importieren. Diese Funktion ist hilfreich, wenn Sie die Datenmigration mit minimalen Ausfallzeiten, z. B. bei Geräte-Upgrades, rationalisieren möchten. 
 ---
-= Funktionsweise von Remote Storage
+= So funktioniert Remote Storage in der SANtricity-Software
 :allow-uri-read: 
 :experimental: 
 :icons: font

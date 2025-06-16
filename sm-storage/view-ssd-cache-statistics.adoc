@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, ssd cache, statistics 
 summary: Sie können Statistiken für den SSD-Cache anzeigen, z. B. Lese-, Schreib-, Cache-Treffer, Cache-Zuweisung in Prozent, Und Cache-Auslastung in Prozent. 
 ---
-= Anzeigen von SSD-Cache-Statistiken
+= SSD-Cache-Statistiken im SANtricity System Manager anzeigen
 :allow-uri-read: 
 :experimental: 
 :icons: font

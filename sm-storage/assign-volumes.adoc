@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, assign volumes 
 summary: Sie müssen ein Volume einem Host oder Host-Cluster zuweisen, damit es für I/O-Vorgänge verwendet werden kann. Diese Zuweisung gewährt einem Host oder Host-Cluster Zugriff auf ein oder mehrere Volumes in einem Storage-Array. 
 ---
-= Weisen Sie Hosts Volumes zu
+= Zuweisen von Volumes zu Hosts im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

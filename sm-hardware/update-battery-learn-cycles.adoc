@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, update, battery, learn, cycles 
 summary: 'Ein Lernzyklus ist ein automatischer Zyklus zum Kalibrieren der intelligenten Akkuanzeige. Die Zyklen werden in 8-Wochen-Intervallen (pro Controller) automatisch, am selben Tag und zur gleichen Zeit, gestartet. Wenn Sie einen anderen Zeitplan festlegen möchten, können Sie die Lernzyklen anpassen.' 
 ---
-= Aktualisieren Sie die Lernzyklen der Batterie
+= Aktualisieren Sie die Batterie-Lernzyklen im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

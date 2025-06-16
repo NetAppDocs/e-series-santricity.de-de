@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, snapshot, schedule 
 summary: Wenn Sie keine Snapshot-Images mehr erstellen möchten, können Sie einen vorhandenen Snapshot-Zeitplan löschen. 
 ---
-= Löschen Sie den Snapshot Zeitplan
+= Löschen eines Snapshot-Zeitplans im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

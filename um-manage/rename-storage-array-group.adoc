@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, rename, storage, array, group 
 summary: Sie können den Namen einer Speicherarraygruppe ändern, wenn der aktuelle Name nicht mehr aussagekräftig oder zutreffend ist. 
 ---
-= Benennen Sie die Speicherarray-Gruppe um
+= Umbenennen einer Speicherarraygruppe im SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

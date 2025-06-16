@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, storage, array, groups 
 summary: Sie können Ihre physische und virtualisierte Infrastruktur managen, indem Sie eine Reihe von Storage-Arrays gruppieren. Möglicherweise möchten Sie Storage-Arrays gruppieren, um die Ausführung von Überwachungs- oder Reporting-Aufgaben zu erleichtern. 
 ---
-= Storage-Array-Gruppen
+= Erfahren Sie mehr über Speicher-Array-Gruppen im SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

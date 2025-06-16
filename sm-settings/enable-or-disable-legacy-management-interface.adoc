@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, disable, legacy, management, interface, 
 summary: 'Sie können die Legacy-Managementoberfläche (Symbol) aktivieren oder deaktivieren, eine Kommunikationsmethode zwischen dem Storage-Array und dem Management-Client.' 
 ---
-= Aktivieren oder deaktivieren Sie die veraltete Managementoberfläche
+= Aktivieren oder Deaktivieren der Legacy-Verwaltungsschnittstelle im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

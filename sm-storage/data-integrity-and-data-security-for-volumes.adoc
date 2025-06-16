@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, data, integrity, security, volumes 
 summary: 'Sie können Volumes für die Verwendung der Data Assurance (da)-Funktion und der Laufwerkssicherheitsfunktion aktivieren. Diese Funktionen werden auf Pool- und Volume-Gruppenebene präsentiert.' 
 ---
-= Datenintegrität und Datensicherheit für Volumes
+= Erfahren Sie mehr über Datenintegrität und Datensicherheit für Volumes in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, upgrade, considerations 
 summary: Bevor Sie Unified Manager für das Upgrade mehrerer Storage-Arrays verwenden, sollten Sie die wichtigsten Überlegungen bei der Planung beachten. 
 ---
-= Upgrade-Überlegungen
+= Erfahren Sie mehr über das Upgrade mehrerer Speicher-Arrays mit SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

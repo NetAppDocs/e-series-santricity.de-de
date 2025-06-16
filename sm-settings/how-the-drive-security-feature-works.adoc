@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, Drive Security, 
 summary: 'Laufwerkssicherheit ist eine Funktion des Storage Arrays, die eine zusätzliche Sicherheitsschicht bietet – entweder mit vollständigen Festplatten-Verschlüsselung (FDE) oder FIPS-Laufwerken (Federal Information Processing Standard).' 
 ---
-= Funktionsweise der Laufwerkssicherheitsfunktion
+= So funktioniert die Drive Security-Funktion im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

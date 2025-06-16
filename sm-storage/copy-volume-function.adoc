@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, copy, volume, 
 summary: 'Mit der Funktion Copy Volume können Sie eine zeitpunktgenaue Kopie eines Volumes erstellen, indem Sie auf demselben Storage-Array zwei separate Volumes erstellen: Das Quell-Volume und das Ziel-Volume.' 
 ---
-= Volume-Übersicht kopieren
+= Erfahren Sie mehr über Copy Volume im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access, management, 
 summary: 'Die Zugriffsverwaltung ist eine Methode zur Einrichtung der Benutzerauthentifizierung in SANtricity System Manager. Zu den Authentifizierungsmethoden zählen RBAC (rollenbasierte Zugriffssteuerung), Directory Services und Security Assertion Markup Language (SAML) 2.0.' 
 ---
-= Zugriffsmanagement – Überblick
+= Erfahren Sie mehr über die Zugriffsverwaltung im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

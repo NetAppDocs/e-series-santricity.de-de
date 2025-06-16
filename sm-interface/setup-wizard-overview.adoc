@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, setup wizard 
 summary: Mit dem Setup-Assistenten können Sie Ihr Storage-Array konfigurieren, einschließlich Hardware, Hosts, Applikationen, Workloads Pools, Warnmeldungen und AutoSupport. 
 ---
-= Übersicht über den Setup-Assistenten
+= Erfahren Sie mehr über den SANtricity System Manager Setup-Assistenten
 :allow-uri-read: 
 :experimental: 
 :icons: font

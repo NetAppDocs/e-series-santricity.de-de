@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, pools, volume groups 
 summary: Sie können logische Speicherkapazität von einer Untermenge nicht zugewiesener Laufwerke in Ihrem Speicher-Array erstellen. Diese logische Kapazität kann je nach den Anforderungen Ihrer Umgebung in Form eines Pools oder einer Volume-Gruppe erfolgen. 
 ---
-= Pools und Volume-Gruppen im Überblick
+= Erfahren Sie mehr über Pools und Volume-Gruppen im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshot, rollback 
 summary: Ein Rollback-Vorgang gibt ein Basisvolumen in einen vorherigen Zustand zurück, der vom ausgewählten Snapshot bestimmt wird. 
 ---
-= Snapshot Rollback
+= Erfahren Sie mehr über Snapshot-Rollback in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

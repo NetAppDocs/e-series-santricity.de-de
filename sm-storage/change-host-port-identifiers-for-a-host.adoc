@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, host port, identifiers, host 
 summary: Ändern Sie die Host-Port-IDs Wenn Sie die Benutzerbezeichnung auf einer Host-Port-ID ändern möchten, fügen Sie dem Host eine neue Host-Port-ID hinzu oder löschen Sie eine Host-Port-ID vom Host. 
 ---
-= Ändern der Host-Port-IDs für einen Host
+= Ändern der Host-Port-Kennungen für einen Host im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

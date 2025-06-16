@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, consolidate, free capacity, volume group 
 summary: Verwenden Sie die Option freie Kapazität konsolidieren, um vorhandene freie Erweiterungen auf einer ausgewählten Volume-Gruppe zu konsolidieren. Durch diese Aktion können Sie aus der maximalen freien Kapazität in einer Volume-Gruppe zusätzliche Volumes erstellen. 
 ---
-= Konsolidieren Sie freie Kapazitäten für eine Volume-Gruppe
+= Konsolidieren Sie freie Kapazität für eine Volume-Gruppe im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

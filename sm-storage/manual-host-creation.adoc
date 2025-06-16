@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, manual, host, 
 summary: Das Erstellen eines Hosts ist einer der Schritte, die erforderlich sind, damit das Storage-Array wissen kann, an welche Hosts angeschlossen sind und um den I/O-Zugriff auf die Volumes zu ermöglichen. Sie können einen Host nur manuell erstellen. 
 ---
-= Manuelle Hosterstellung
+= Erfahren Sie mehr über die manuelle Hosterstellung im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

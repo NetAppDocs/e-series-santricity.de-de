@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, considerations, access system manager 
 summary: Sie wählen ein oder mehrere Speicher-Arrays aus und öffnen SANtricity System Manager mit der Option Start, wenn Sie Speicher-Arrays konfigurieren und verwalten möchten. 
 ---
-= Überlegungen für den Zugriff auf SANtricity System Manager
+= Erfahren Sie mehr über den Zugriff auf SANtricity System Manager vom Unified Manager aus
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

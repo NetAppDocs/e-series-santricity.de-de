@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, cache, settings, 
 summary: Für alle Volumes im Speicher-Array können Sie die Cache-Speichereinstellungen für die Spülung und die Blockgröße anpassen. 
 ---
-= Ändern Sie die Cache-Einstellungen für das Speicher-Array
+= Ändern Sie die Cache-Einstellungen des Speicherarrays im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

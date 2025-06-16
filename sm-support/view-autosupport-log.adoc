@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, autosupport, log 
 summary: Das AutoSupport-Protokoll enthält Informationen zum Status, zum Versandverlauf und zu Fehlern, die bei der Lieferung von AutoSupport-Entsendungen auftreten. 
 ---
-= Zeigen Sie das AutoSupport-Protokoll an
+= AutoSupport-Protokoll im SANtricity System Manager anzeigen
 :allow-uri-read: 
 :experimental: 
 :icons: font

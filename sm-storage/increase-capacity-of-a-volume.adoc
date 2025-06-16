@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, increase, capacity, volume 
 summary: 'Sie können die gemeldete Kapazität (die gemeldete Kapazität an Hosts) eines Volumes erhöhen, indem Sie die freie Kapazität nutzen, die in dem Pool bzw. der Volume-Gruppe verfügbar ist.' 
 ---
-= Erhöhte Kapazität eines Volumes
+= Erhöhen Sie die Kapazität eines Volumes im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

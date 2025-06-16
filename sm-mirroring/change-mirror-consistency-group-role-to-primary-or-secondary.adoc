@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, mirror, consistency group, primary, secondary 
 summary: Sie können die Rolle zwischen gespiegelten Konsistenzgruppen für administrative Zwecke oder im Falle einer Störung im lokalen Speicher-Array ändern. 
 ---
-= Ändern Sie die Rolle der gespiegelten Consistency Group auf primär oder sekundär
+= Ändern Sie die Rolle der Spiegelkonsistenzgruppe im SANtricity System Manager in primär oder sekundär
 :allow-uri-read: 
 :experimental: 
 :icons: font

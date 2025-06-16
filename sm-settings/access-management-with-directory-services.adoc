@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, directory services, 
 summary: 'Für die Zugriffsverwaltung können Administratoren einen LDAP-Server (Lightweight Directory Access Protocol) und einen Verzeichnisdienst wie das Microsoft Active Directory verwenden.' 
 ---
-= Zugriffsmanagement mit Verzeichnisdiensten
+= Zugriffsverwaltung mit Verzeichnisdiensten im SANtricity System Manager konfigurieren
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

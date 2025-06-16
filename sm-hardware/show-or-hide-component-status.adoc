@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, show, hide, component, status, 
 summary: Sie können Statusbeschreibungen für Laufwerke, Controller, Lüfter und Netzteile anzeigen. 
 ---
-= Komponentenstatus ein- oder ausblenden
+= Komponentenstatus im SANtricity System Manager anzeigen oder ausblenden
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

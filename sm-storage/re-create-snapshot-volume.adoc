@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, re-create, snapshot, volume 
 summary: Sie können ein Snapshot-Volumen oder ein Snapshot-Snapshot-Volumen, das Sie zuvor deaktiviert haben, neu erstellen. Das erneute Erstellen eines Snapshot Volumes dauert weniger Zeit als das Erstellen eines neuen. 
 ---
-= Snapshot Volumen neu erstellen
+= Erstellen Sie ein Snapshot-Volume im SANtricity System Manager neu
 :allow-uri-read: 
 :experimental: 
 :icons: font

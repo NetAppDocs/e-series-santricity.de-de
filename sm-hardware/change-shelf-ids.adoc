@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, shelf, ids, 
 summary: Die Shelf-ID ist eine Nummer, die ein Shelf im Storage Array eindeutig identifiziert. Die Regale werden nacheinander nummeriert, beginnend mit entweder 00 oder 01, oben links von jeder Regalansicht. 
 ---
-= Ändern Sie Shelf-IDs
+= Regal-IDs im SANtricity System Manager ändern
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

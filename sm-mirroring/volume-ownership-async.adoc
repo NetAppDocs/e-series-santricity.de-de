@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volume, ownership, async, change, preferred, controller, owner, mirrored, pair, 
 summary: Sie können den bevorzugten Controller-Eigentümer in einem gespiegelten Paar ändern. 
 ---
-= Volume-Eigentum
+= Erfahren Sie mehr über den Volume-Besitz bei der asynchronen Spiegelung in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

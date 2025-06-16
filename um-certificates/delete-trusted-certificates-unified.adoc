@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, delete, trusted, certificates 
 summary: Sie können ein oder mehrere nicht mehr benötigte Zertifikate löschen, z. B. ein abgelaufenes Zertifikat. 
 ---
-= Vertrauenswürdige Zertifikate löschen
+= Löschen Sie vertrauenswürdige Zertifikate im SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

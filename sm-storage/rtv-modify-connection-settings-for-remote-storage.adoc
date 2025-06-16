@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, modify, connection, settings, remote, storage 
 summary: Über die Option „Einstellungen anzeigen/bearbeiten“ können Sie Verbindungseinstellungen für eine beliebige Remote-Speicherkonfiguration bearbeiten, hinzufügen oder löschen. 
 ---
-= Verbindungseinstellungen für Remote-Speicher ändern
+= Verbindungseinstellungen für Remote-Speicher im SANtricity System Manager ändern
 :allow-uri-read: 
 :experimental: 
 :icons: font

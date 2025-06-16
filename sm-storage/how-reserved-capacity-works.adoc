@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reserved, capacity, 
 summary: Reservierte Kapazität wird automatisch erstellt, wenn Kopierservice-Vorgänge wie Snapshots oder asynchrone Spiegelungsvorgänge für Ihre Volumes bereitgestellt werden. 
 ---
-= Funktionsweise von reservierter Kapazität
+= So funktioniert reservierte Kapazität in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

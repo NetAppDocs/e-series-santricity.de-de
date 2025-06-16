@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, notifications 
 summary: System Manager verwendet Symbole und verschiedene andere Methoden, um Sie über Probleme mit dem Speicher-Array zu informieren. 
 ---
-= Problembenachrichtigungen – Übersicht
+= Erfahren Sie mehr über die Problembenachrichtigungen des SANtricity System Managers
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

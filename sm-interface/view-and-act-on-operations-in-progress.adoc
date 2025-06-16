@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, act, operations, progress, 
 summary: Verwenden Sie die Seite „Vorgänge in Bearbeitung“, um bei lang laufenden Vorgängen Aktionen anzuzeigen und Maßnahmen zu ergreifen. 
 ---
-= Vorgänge in Bearbeitung anzeigen und umsetzen
+= Laufende Vorgänge im SANtricity System Manager anzeigen und bearbeiten
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

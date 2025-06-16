@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, iscsi, discovery, settings, 
 summary: Sie können Einstellungen für die Ermittlung von Speichergeräten in einem iSCSI-Netzwerk aktivieren. 
 ---
-= Aktivieren Sie die iSCSI-Erkennungseinstellungen
+= Aktivieren Sie die iSCSI-Erkennungseinstellungen im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

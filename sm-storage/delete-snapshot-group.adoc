@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, snapshot, group 
 summary: Sie löschen eine Snapshot-Gruppe, wenn Sie ihre Daten dauerhaft löschen und aus dem System entfernen möchten. Durch das Löschen einer Snapshot-Gruppe wird die reservierte Kapazität zur Wiederverwendung im Pool oder der Volume-Gruppe wieder beansprucht. 
 ---
-= Snapshot-Gruppe löschen
+= Löschen einer Snapshot-Gruppe im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

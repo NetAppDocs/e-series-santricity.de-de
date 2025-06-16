@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volumes 
 summary: 'Sie können eine Reihe verschiedener Aktionen auf einem Volume durchführen: Die Kapazität erhöhen, löschen, kopieren, initialisieren, neu verteilen, Ändern der Eigentümerschaft, Ändern der Cache-Einstellungen und Ändern der Einstellungen für die Medienüberprüfung' 
 ---
-= Aktionen, die Sie auf Volumes durchführen können
+= Aktionen, die Sie auf Volumes im SANtricity System Manager ausführen können
 :allow-uri-read: 
 :experimental: 
 :icons: font

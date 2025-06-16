@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, settings 
 summary: Sie können Einstellungen von einem Storage-Array in ein anderes importieren, einschließlich Warnungen, AutoSupport und Verzeichnisdienste. 
 ---
-= Einstellungen Importübersicht
+= Erfahren Sie mehr über den Import von Speicher-Array-Einstellungen in SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

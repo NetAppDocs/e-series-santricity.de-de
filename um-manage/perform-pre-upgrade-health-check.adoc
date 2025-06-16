@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, perform, pre-upgrade, health, check 
 summary: Eine Zustandsprüfung wird im Rahmen des Upgrade-Prozesses ausgeführt, doch vor Beginn kann zusätzlich ein Systemcheck separat durchgeführt werden. Bei der Integritätsprüfung werden Komponenten des Storage-Arrays bewertet, um sicherzustellen, dass das Upgrade fortgesetzt werden kann. 
 ---
-= Führen Sie eine Integritätsprüfung vor dem Upgrade durch
+= Führen Sie vor dem Upgrade eine Integritätsprüfung im SANtricity Unified Manager durch
 :allow-uri-read: 
 :experimental: 
 :icons: font

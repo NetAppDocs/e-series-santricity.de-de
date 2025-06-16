@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, host, cluster 
 summary: Sie erstellen ein Host-Cluster, wenn zwei oder mehr Hosts I/O-Zugriff auf dieselben Volumes benötigen. 
 ---
-= Erstellen Sie den Host-Cluster
+= Erstellen Sie einen Hostcluster im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

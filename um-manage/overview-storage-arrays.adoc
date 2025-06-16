@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, discover, storage, arrays 
 summary: Zum Managen von Storage-Ressourcen müssen Sie zuerst die Storage-Arrays im Netzwerk erkennen. 
 ---
-= Übersicht über die Bestandsaufnahme
+= Erfahren Sie mehr über die Erkennung im SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

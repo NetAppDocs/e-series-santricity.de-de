@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, volume, group 
 summary: Sie erstellen mithilfe einer Volume-Gruppe ein oder mehrere Volumes, auf die der Host zugreifen kann. Eine Volume-Gruppe ist ein Container für Volumes mit gemeinsam genutzten Merkmalen wie RAID-Level und Kapazität. 
 ---
-= Erstellen einer Volume-Gruppe
+= Erstellen Sie eine Volume-Gruppe im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

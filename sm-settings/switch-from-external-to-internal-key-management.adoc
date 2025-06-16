@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, switch, external, internal, key, management, 
 summary: Sie können die Verwaltungsmethode für die Laufwerksicherheit von einem externen Schlüsselserver in die interne Methode ändern, die vom Speicher-Array verwendet wird. Der zuvor für das externe Verschlüsselungsmanagement definierte Sicherheitsschlüssel wird dann für das interne Verschlüsselungsmanagement verwendet. 
 ---
-= Wechsel von externem zu internem Verschlüsselungsmanagement
+= Umstellung von externer auf interne Schlüsselverwaltung im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

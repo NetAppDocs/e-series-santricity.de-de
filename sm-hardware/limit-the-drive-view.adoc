@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, limit, drive, view, 
 summary: Wenn das Speicher-Array Laufwerke mit unterschiedlichen physischen und logischen Attributen enthält, bietet die Seite Hardware Filterfelder, die Ihnen helfen, die Laufwerkansicht zu begrenzen und bestimmte Laufwerke zu finden. 
 ---
-= Begrenzen Sie die Laufwerkansicht
+= Filtern Sie die Laufwerksansicht im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

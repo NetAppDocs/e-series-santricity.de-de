@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, start, snapshot, image, rollback, snapshot, consistency, group, member, volumes 
 summary: Sie können einen Rollback-Vorgang durchführen, um den Inhalt der Snapshot Consistency Group Member Volumes an den Inhalt anzupassen, der in einem Snapshot-Image gespeichert ist. 
 ---
-= Starten Sie das Rollback von Snapshot Image für Volumes von Mitgliedern der Snapshot Consistency Group
+= Starten Sie das Rollback des Snapshot-Images für die Mitgliedsvolumes der Snapshot-Konsistenzgruppe im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

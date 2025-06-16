@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reserved capacity, settings, mirrored pair volume 
 summary: Sie können die Einstellungen für ein gespiegeltes Paar-Volume ändern, um den Prozentpunkt anzupassen, an dem System Manager eine Benachrichtigung sendet, wenn die reservierte Kapazität eines gespiegelten Paar-Volumes voll ist. 
 ---
-= Ändern Sie die Einstellungen für die reservierte Kapazität eines gespiegelten Paar-Volumes
+= Ändern Sie die Einstellungen für die reservierte Kapazität für ein gespiegeltes Paarvolumen im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

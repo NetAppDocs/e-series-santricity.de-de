@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, syslog, server, audit, logs, 
 summary: Wenn Sie Auditprotokolle auf einem externen Syslog-Server archivieren möchten, können Sie die Kommunikation zwischen diesem Server und dem Speicher-Array konfigurieren. Nach der Verbindungsherstellung werden Audit-Protokolle automatisch auf dem Syslog-Server gespeichert. 
 ---
-= Syslog-Server für Audit-Protokolle konfigurieren
+= Syslog-Server für Audit-Protokolle im SANtricity System Manager konfigurieren
 :allow-uri-read: 
 :experimental: 
 :icons: font

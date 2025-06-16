@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, manage, session, timeouts, 
 summary: Sie können Timeouts in SANtricity System Manager konfigurieren, so dass die inaktiven Sitzungen der Benutzer nach einer bestimmten Zeit getrennt werden. 
 ---
-= Verwalten von Sitzungszeitungen
+= Verwalten von Sitzungstimeouts im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

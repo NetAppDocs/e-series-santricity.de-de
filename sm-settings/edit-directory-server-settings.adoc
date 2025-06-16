@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, directory, server, settings, role, mappings, 
 summary: Wenn Sie zuvor einen Verzeichnisserver in der Zugriffsverwaltung konfiguriert haben, können Sie dessen Einstellungen jederzeit ändern. Zu den Einstellungen gehören die Informationen zur Serververbindung und die Zuordnungen von Gruppen zu Rollen. 
 ---
-= Bearbeiten Sie die Einstellungen des Verzeichnisservers und die Rollenzuordnungen
+= Bearbeiten Sie Verzeichnisservereinstellungen und Rollenzuordnungen im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, storage hierarchy 
 summary: Die Speicherhierarchie auf der Hauptschnittstelle bietet eine organisierte Ansicht der verschiedenen Hardwarekomponenten und Speicherobjekte, die von Ihrem Speicher-Array verwaltet werden. 
 ---
-= Speicherhierarchie anzeigen
+= Speicherhierarchie im SANtricity System Manager anzeigen
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

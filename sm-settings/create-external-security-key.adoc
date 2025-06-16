@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, external, security, key, 
 summary: Um die Laufwerkssicherheitsfunktion mit einem Schlüsselverwaltungsserver verwenden zu können, müssen Sie einen externen Schlüssel erstellen, der vom Schlüsselverwaltungsserver und den sicheren Laufwerken im Speicher-Array gemeinsam genutzt wird. 
 ---
-= Externen Sicherheitsschlüssel erstellen
+= Erstellen Sie einen externen Sicherheitsschlüssel im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

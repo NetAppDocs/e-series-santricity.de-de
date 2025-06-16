@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, schedule, autosupport, dispatches 
 summary: System Manager erstellt automatisch einen Standardzeitplan für den AutoSupport-Entsendungen. Wenn Sie es bevorzugen, können Sie Ihren eigenen Zeitplan angeben. 
 ---
-= Planen Sie AutoSupport-Entsendungen
+= Planen Sie AutoSupport-Einsätze im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

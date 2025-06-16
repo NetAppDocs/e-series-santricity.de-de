@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, storage, requirements 
 summary: Überprüfen Sie vor der Verwendung der Remote-Speicherfunktion die folgenden Anforderungen und Einschränkungen. 
 ---
-= Anforderungen für Remote Storage-Funktionen
+= Erfahren Sie mehr über die Anforderungen an die Remote-Storage-Funktion in der SANtricity-Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

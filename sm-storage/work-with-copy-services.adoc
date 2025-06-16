@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, copy, services 
 summary: Sie können Copy-Services verwenden, um Volumes zu kopieren und andere Aktionen für Volumes durchzuführen. 
 ---
-= Arbeiten Sie mit Kopierdiensten
+= Arbeiten mit Kopierdiensten im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, software, firmware, inventory 
 summary: Im Software- und Firmwarebestand sind die Firmware-Versionen für jede Komponente im Speicher-Array aufgeführt. 
 ---
-= Anzeige des Software- und Firmware-Inventars
+= Software- und Firmware-Inventar im SANtricity System Manager anzeigen
 :allow-uri-read: 
 :experimental: 
 :icons: font

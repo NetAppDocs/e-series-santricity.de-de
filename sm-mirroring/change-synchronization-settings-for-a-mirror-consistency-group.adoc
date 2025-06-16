@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, synchronization, settings, mirror, consistency, group, 
 summary: Sie können die Synchronisierungseinstellungen und die Warnschwellenwerte ändern, die von der Spiegelkonsistent-Gruppe im lokalen Speicher-Array verwendet werden, wenn Daten zu Beginn synchronisiert werden oder wenn Daten während der asynchronen Spiegelung neu synchronisiert werden. 
 ---
-= Ändern Sie die Synchronisierungseinstellungen für eine gespiegelte Konsistenzgruppe
+= Synchronisierungseinstellungen für eine Spiegelkonsistenzgruppe im SANtricity System Manager ändern
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, access management, local, user, roles 
 summary: 'Administratoren können die in SANtricity Unified Manager erzwungenen RBAC-Funktionen (rollenbasierte Zugriffssteuerung) nutzen. Diese Funktionen werden als lokale Benutzerrollen bezeichnet.' 
 ---
-= Zugriffsverwaltung mit lokalen Benutzerrollen
+= Zugriffsverwaltung mit lokalen Benutzerrollen im SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

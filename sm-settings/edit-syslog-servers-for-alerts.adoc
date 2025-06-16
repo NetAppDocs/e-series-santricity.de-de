@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, syslog, servers, alerts, 
 summary: Sie können die Serveradresse bearbeiten, die für den Empfang von Syslog-Warnungen verwendet wird. 
 ---
-= Bearbeiten Sie Syslog-Server für Warnmeldungen
+= Syslog-Server für Warnungen im SANtricity System Manager bearbeiten
 :allow-uri-read: 
 :experimental: 
 :icons: font

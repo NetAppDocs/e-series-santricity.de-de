@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, assign, hot, spares, raid, 
 summary: Sie können ein Hot Spare als Standby-Laufwerk für zusätzlichen Datenschutz in RAID 1-, RAID 5- oder RAID 6-Volume-Gruppen zuweisen. Wenn ein Laufwerk in einer dieser Volume-Gruppen ausfällt, rekonstruiert der Controller Daten vom ausgefallenen Laufwerk auf dem Hot Spare. 
 ---
-= Weisen Sie Hot Spares zu
+= Hotspares im SANtricity System Manager zuweisen
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

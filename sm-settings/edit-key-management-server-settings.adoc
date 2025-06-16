@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, key, management, server, settings, 
 summary: Wenn Sie die externe Schlüsselverwaltung konfiguriert haben, können Sie die Einstellungen des Verschlüsselungsmanagementservers jederzeit anzeigen und bearbeiten. 
 ---
-= Bearbeiten der Einstellungen des Verschlüsselungsmanagementservers
+= Bearbeiten Sie die Einstellungen des Schlüsselverwaltungsservers im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font
