@@ -1,0 +1,315 @@
+---
+permalink: sm-mirroring/faq-async-mirroring.html 
+sidebar: sidebar 
+keywords:  
+summary: Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine Frage suchen. 
+---
+= FAQ zur asynchronen Spiegelung für SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine Frage suchen.
+
+
+
+== Wie unterscheidet sich die asynchrone Spiegelung von der synchronen Spiegelung?
+
+Die asynchrone Spiegelung unterscheidet sich grundlegend von der Funktion zum synchronen Spiegeln: Sie erfasst den Status des Quell-Volumes zu einem bestimmten Zeitpunkt und kopiert nur die Daten, die sich seit der letzten Bildaufzeichnung geändert haben.
+
+Bei der synchronen Spiegelung wird der Status des primären Volume nicht zu einem bestimmten Zeitpunkt erfasst, sondern gibt alle Änderungen wieder, die am primären Volume auf das sekundäre Volume vorgenommen wurden. Das sekundäre Volume ist zu jedem Zeitpunkt mit dem primären Volume identisch, da bei dieser Art von Spiegelung jedes Mal, wenn ein Schreibvorgang auf dem primären Volume ausgeführt wird, ein Schreibvorgang auf das sekundäre Volume vorgenommen wird. Der Host erhält keine Bestätigung, dass der Schreibvorgang erfolgreich war, bis das sekundäre Volume mit den Änderungen auf dem primären Volume erfolgreich aktualisiert wurde.
+
+Bei der asynchronen Spiegelung ist das Remote-Storage-Array nicht vollständig mit dem lokalen Storage-Array synchronisiert. Falls die Applikation aufgrund eines Verlusts des lokalen Storage-Arrays zum Remote Storage-Array wechseln muss, können einige Transaktionen verloren gehen.
+
+Vergleich der Spiegelungsfunktionen:
+
+[cols="1a,1a"]
+|===
+| Asynchrones Spiegeln | Synchrones Spiegeln 
+
+
+ a| 
+*Replikationsmethode*
+
+
+
+ a| 
+* *Point-in-Time*
++
+Die Spiegelung erfolgt nach Bedarf oder automatisch gemäß einem benutzerdefinierten Zeitplan. Zeitpläne können mit der Granularität von Minuten definiert werden. Die Mindestzeit zwischen den Synchronisierungen beträgt 10 Minuten.
+
+
+ a| 
+* * Kontinuierlich*
++
+Die Spiegelung wird kontinuierlich ausgeführt und kopiert Daten von jedem Host-Schreibvorgang.
+
+
+
+
+
+ a| 
+*Reservierte Kapazität*
+
+
+
+ a| 
+* *Mehrfach*
++
+Für jedes gespiegelte Paar ist ein reserviertes Kapazitäts-Volume erforderlich.
+
+
+ a| 
+* *Single*
++
+Für alle gespiegelten Volumes ist ein einzelnes reserviertes Kapazitäts-Volume erforderlich.
+
+
+
+
+
+ a| 
+*Kommunikation*
+
+
+
+ a| 
+* *ISCSI und Fibre Channel*
++
+Unterstützt iSCSI- und Fibre Channel-Schnittstellen zwischen Storage Arrays.
+
+
+ a| 
+* * Fibre Channel*
++
+Unterstützt nur Fibre Channel-Schnittstellen zwischen Storage Arrays.
+
+
+
+
+
+ a| 
+*Entfernung*
+
+
+
+ a| 
+* *Unlimited*
++
+Unterstützung nahezu unbegrenzter Entfernungen zwischen dem lokalen Speicher-Array und dem Remote-Speicher-Array, wobei die Entfernung in der Regel nur durch die Fähigkeiten des Netzwerks und der Channel-Erweiterungstechnologie begrenzt wird.
+
+
+ a| 
+* *Eingeschränkt*
++
+Normalerweise muss das lokale Storage-Array innerhalb von etwa 10 km Entfernung (6.2 Meilen) liegen, um die Anforderungen an Latenz und Applikations-Performance zu erfüllen.
+
+
+
+|===
+
+
+== Warum kann ich nicht auf die von mir gewählte Spiegelungsfunktion zugreifen?
+
+Spiegelung wird in der Schnittstelle des SANtricity Unified Managers konfiguriert.
+
+[NOTE]
+====
+Synchrones Spiegeln ist für das EF600/EF600C oder EF300/EF300C Storage-Array nicht verfügbar.
+
+====
+Um die Spiegelung zwischen zwei Arrays zu aktivieren und zu konfigurieren, überprüfen Sie Folgendes:
+
+* Der Web Services Proxy-Dienst muss ausgeführt werden. (Unified Manager wird auf einem Host-System zusammen mit dem Web Services Proxy installiert.)
+* Unified Manager muss auf Ihrem lokalen Host über eine HTTPS-Verbindung ausgeführt werden.
+* Die beiden Storage Arrays, die Sie für die Spiegelung verwenden möchten, müssen in Unified Manager erkannt werden.
+* Unified Manager muss über gültige SSL-Zertifikate für die Speicher-Arrays verfügen. Sie können ein selbstsigniertes Zertifikat akzeptieren oder CA-signierte Zertifikate von Unified Manager installieren.
+
+
+Anweisungen zur Konfiguration finden Sie im folgenden Abschnitt:
+
+* link:../um-manage/create-asynchronous-mirrored-pair-um.html["Asynchrones gespiegeltes Paar erstellen (in Unified Manager)"]
+* link:../um-manage/create-synchronous-mirrored-pair-um.html["Synchrones gespiegeltes Paar erstellen (in Unified Manager)"]
+
+
+
+
+== Was muss ich wissen, bevor ich eine gespiegelte Konsistenzgruppe erstellt?
+
+Befolgen Sie die folgenden Richtlinien, bevor Sie eine gespiegelte Konsistenzgruppe erstellen.
+
+[NOTE]
+====
+Synchrones Spiegeln ist auf dem Storage-System EF600/EF600C oder EF300/EF300C nicht verfügbar.
+
+====
+Sie erstellen eine Konsistenzgruppe in Unified Manager im Assistenten zum Erstellen gespiegelter Paare.
+
+Erfüllen Sie die folgenden Anforderungen für Unified Manager:
+
+* Der Web Services Proxy-Dienst muss ausgeführt werden.
+* Unified Manager muss auf Ihrem lokalen Host über eine HTTPS-Verbindung ausgeführt werden.
+* Unified Manager muss gültige SSL-Zertifikate für das Speicher-Array anzeigen. Sie können ein selbstsigniertes Zertifikat akzeptieren oder Ihr eigenes Sicherheitszertifikat mit Unified Manager installieren und zum Menü:Zertifikat[Zertifikatverwaltung] navigieren.
+
+
+Erfüllen Sie außerdem die folgenden Anforderungen an Storage-Arrays:
+
+* Die beiden Storage Arrays müssen in Unified Manager erkannt werden.
+* Jedes Speicher-Array muss zwei Controller haben.
+* Jeder Controller im primären Array und im sekundären Array muss über einen konfigurierten Ethernet-Managementport verfügen und mit dem Netzwerk verbunden sein.
+* Die Speicher-Arrays verfügen über eine Firmware-Version von mindestens 7.84. (Beide können unterschiedliche OS-Versionen ausführen.)
+* Sie müssen das Passwort für die lokalen und Remote-Speicher-Arrays kennen.
+* Ihre lokalen und Remote-Speicher-Arrays sind über eine Fibre Channel Fabric- oder iSCSI-Schnittstelle verbunden.
+
+
+
+
+== Asynchrones Spiegeln - Was muss ich wissen, bevor ich ein gespiegeltes Paar erstellt habe?
+
+Sie konfigurieren gespiegelte Paare in der Oberfläche von SANtricity Unified Manager und verwalten dann die Paare in SANtricity System Manager.
+
+Befolgen Sie vor dem Erstellen eines gespiegelten Paares diese Richtlinien.
+
+* Sie müssen über zwei Storage-Arrays verfügen.
+* Jedes Speicher-Array muss zwei Controller haben.
+* Jeder Controller im primären Array und im sekundären Array muss über einen konfigurierten Ethernet-Managementport verfügen und mit dem Netzwerk verbunden sein.
+* Ihre lokalen und Remote-Speicher-Arrays sind über eine Fibre Channel Fabric- oder iSCSI-Schnittstelle verbunden.
+* Die Speicher-Arrays verfügen über eine Firmware-Version von mindestens 7.84. (Beide können unterschiedliche OS-Versionen ausführen.)
+* Sie müssen das Passwort für die lokalen und Remote-Speicher-Arrays kennen.
+* Sie benötigen genügend freie Kapazität auf dem Remote-Speicher-Array, um ein sekundäres Volume zu erstellen, das dem primären Volume entspricht oder dessen Größe Sie spiegeln möchten.
+* Sie haben Web Services Proxy und Unified Manager installiert. Gespiegelte Paare werden in der Unified Manager Schnittstelle konfiguriert.
+* Die beiden Storage Arrays werden in Unified Manager erkannt.
+* Ihr Speicher-Array muss mindestens eine gespiegelte Konsistenzgruppe enthalten. Sie erstellen eine Konsistenzgruppe in Unified Manager im Assistenten zum Erstellen gespiegelter Paare.
+
+
+
+
+== Was muss ich wissen, bevor ich meine reservierte Kapazität auf einem gespiegelten Paar-Volume erhöhen kann?
+
+Normalerweise sollten Sie die reservierte Kapazität erhöhen, wenn Sie eine Warnung erhalten, dass die reservierte Kapazität eines gespiegelten Paares voll wird. Sie können die reservierte Kapazität nur in Schritten von 8 gib erhöhen.
+
+Bei asynchronen Spiegelungsvorgängen beträgt die reservierte Kapazität normalerweise 20 Prozent des Basis-Volumes. Wählen Sie eine größere Kapazität für reservierte Kapazität, wenn eine oder beide Bedingungen vorliegen:
+
+* Sie beabsichtigen, das gespiegelte Paar für einen langen Zeitraum zu halten.
+* Ein großer Prozentsatz an Datenblöcken ändert sich auf dem primären Volume aufgrund von hoher I/O-Aktivität. Mithilfe von historischen Performance-Daten oder anderen Betriebssystem-Utilities können Sie typische I/O-Aktivitäten für das primäre Volume ermitteln.
+
+
+Sie können die reservierte Kapazität für ein gespiegeltes Paar erhöhen, indem Sie eine der folgenden Aktionen durchführen:
+
+* Passen Sie den Kapazitätsprozentsatz für ein gespiegeltes Paar-Volumen an, indem Sie Menü:Speicher[Pools und Volumes Groups] auswählen und dann auf die Registerkarte *Reservierte Kapazität* klicken.
+* Erstellen Sie ein neues Volume mithilfe von freier Kapazität, die in einem Pool oder einer Volume-Gruppe verfügbar ist.
++
+Wenn in einem Pool oder einer Volume-Gruppe keine freie Kapazität vorhanden ist, können Sie nicht konfigurierte Kapazität in Form von nicht verwendeten Laufwerken zu einem Pool oder einer Volume-Gruppe hinzufügen.
+
+
+
+
+
+== Warum kann ich die reservierte Kapazität nicht um die von mir angeforderte Menge erhöhen?
+
+Sie können die reservierte Kapazität nur in Schritten von 4 gib erhöhen.
+
+Lesen Sie sich die folgenden Richtlinien durch:
+
+* Sie müssen über ausreichende freie Kapazitäten im Pool oder Volume-Gruppe verfügen, damit diese bei Bedarf erweitert werden kann.
++
+Wenn auf einem Pool oder Volume-Gruppen keine freie Kapazität vorhanden ist, können Sie einem Pool oder einer Volume-Gruppe nicht zugewiesene Kapazität in Form nicht verwendeter Laufwerke hinzufügen.
+
+* Das Volume im Pool oder in der Volume-Gruppe muss den optimalen Status aufweisen und darf sich nicht in einem bestimmten Zustand befinden.
+* Freie Kapazität muss im Pool bzw. in der Volume-Gruppe vorhanden sein, mit der die Kapazität erhöht werden soll.
+
+
+Bei asynchronen Spiegelungsvorgängen beträgt die reservierte Kapazität in der Regel 20 Prozent des Basis-Volumes. Verwenden Sie einen höheren Prozentsatz, wenn Sie glauben, dass das Basis-Volume viele Änderungen durchlaufen wird oder wenn die geschätzte Lebensdauer des Kopierservice eines Storage-Objekts sehr lang sein wird.
+
+
+
+== Warum sollte ich diesen Prozentsatz ändern?
+
+Die reservierte Kapazität beträgt normalerweise 40 % des Basis-Volumes für Snapshot-Vorgänge und 20 % des Basis-Volumes für asynchrone Spiegelungsvorgänge.
+
+In der Regel ist diese Kapazität ausreichend. Die benötigte Kapazität ist abhängig von Häufigkeit und Größe der I/O-Schreibvorgänge auf dem Basis-Volume und wie lange Sie den Kopierdienst des Storage-Objekts verwenden möchten.
+
+Im Allgemeinen wählen Sie einen größeren Prozentsatz für die reservierte Kapazität aus, wenn eine oder beide Bedingungen vorhanden sind:
+
+* Wenn sich der Kopierdienst eines bestimmten Storage-Objekts sehr lange Lebensdauer hat.
+* Wenn sich ein großer Prozentsatz an Datenblöcken auf dem Basis-Volume aufgrund von hoher I/O-Aktivität ändert. Mithilfe von historischen Performance-Daten oder anderen Betriebssystem-Dienstprogrammen können Sie die typischen I/O-Aktivitäten für das Basis-Volume ermitteln.
+
+
+
+
+== Warum kann ich mehr als einen Kandidaten für reservierte Kapazität sehen?
+
+Wenn sich mehrere Volumes in einem Pool oder einer Volume-Gruppe befinden, die dem für das Storage-Objekt ausgewählten Kapazitätsprozentsatz entsprechen, werden mehrere Kandidaten angezeigt.
+
+Sie können die Liste der empfohlenen Kandidaten aktualisieren, indem Sie den Prozentsatz des physischen Speicherplatzes ändern, den Sie im Basis-Volume für Kopierdienste reservieren möchten. Die besten Kandidaten werden basierend auf Ihrer Auswahl angezeigt.
+
+
+
+== Warum werden in der Tabelle keine verfügbaren Werte angezeigt?
+
+In der Tabelle sind die Werte aufgeführt, die nicht verfügbar sind, wenn die Daten im Remote-Speicher-Array nicht angezeigt werden können.
+
+Um die Daten des Remote-Speicher-Arrays anzuzeigen, starten Sie System Manager von Unified Manager.
+
+
+
+== Warum werden mir nicht alle meine Pools und Volume-Gruppen angezeigt?
+
+Wenn Sie ein sekundäres Volume für das asynchrone gespiegelte Paar erstellen, zeigt das System eine Liste aller infrage kommenden Pools und Volume-Gruppen für das asynchrone gespiegelte Paar an. Pools oder Volume-Gruppen, die nicht verwendet werden können, werden in dieser Liste nicht angezeigt.
+
+Pools oder Volume-Gruppen können aus den folgenden Gründen nicht berechtigt sein.
+
+* Die Sicherheitsfunktionen von Pools oder Volume-Gruppen stimmen nicht überein.
+* Ein Pool oder eine Volume-Gruppe befindet sich in einem nicht optimalen Zustand.
+* Die Kapazität eines Pools oder einer Volume-Gruppe ist zu klein.
+
+
+
+
+== Asynchrone Spiegelung – Warum sehe ich nicht alle meine Volumes?
+
+Wenn Sie ein primäres Volume für ein gespiegeltes Paar auswählen, werden in einer Liste alle berechtigten Volumes angezeigt.
+
+Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser Liste nicht angezeigt. Die Volumes können aus den folgenden Gründen nicht berechtigt sein:
+
+* Die Lautstärke ist nicht optimal.
+* Das Volume beteiligt sich bereits an einer Spiegelbeziehung.
+* Bei Thin Volumes muss die automatische Erweiterung aktiviert sein.
+
+
+
+NOTE: Bei EF600- und EF300-Controllern müssen die primären und sekundären Volumes eines asynchronen gespiegelten Paares dasselbe Protokoll, Tray-Level, Segmentgröße, Sicherheitstyp und RAID-Level erfüllen. Nicht geeignete asynchrone gespiegelte Paare werden nicht in der Liste der verfügbaren Volumes angezeigt.
+
+
+
+== Asynchrone Spiegelung – Warum werden mir nicht alle Volumes auf dem Remote-Speicher-Array angezeigt?
+
+Wenn Sie ein sekundäres Volume auf dem Remote-Speicher-Array auswählen, werden alle für dieses gespiegelte Paar geeigneten Volumes in einer Liste angezeigt.
+
+Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser Liste nicht angezeigt. Volumes sind aus folgenden Gründen möglicherweise nicht verfügbar:
+
+* Die Lautstärke ist nicht optimal.
+* Das Volume beteiligt sich bereits an einer Spiegelbeziehung.
+* Die Thin-Volume-Attribute des primären Volume und des sekundären Volumes stimmen nicht überein.
+* Wenn Sie Data Assurance (da) verwenden, müssen das primäre Volume und das sekundäre Volume über dieselben da-Einstellungen verfügen.
++
+** Wenn das primäre Volume mit da aktiviert ist, muss das sekundäre Volume mit da aktiviert sein.
+** Wenn das primäre Volume nicht da aktiviert ist, darf das sekundäre Volume nicht als da-aktiviert verwendet werden.
+
+
+
+
+
+
+== Warum sollte ich die IP-Adresse meines Remote-Speicher-Arrays aktualisieren?
+
+Sie aktualisieren die IP-Adresse des Remote-Speicher-Arrays, wenn sich die IP-Adresse eines iSCSI-Ports ändert und das lokale Speicher-Array nicht mit dem Remote-Speicher-Array kommunizieren kann.
+
+Beim Einrichten einer asynchronen Spiegelbeziehung mit einer iSCSI-Verbindung speichern sowohl die lokalen als auch die Remote-Speicher-Arrays einen Datensatz der IP-Adresse des Remote-Speicher-Arrays in der Konfiguration zur asynchronen Spiegelung. Wenn sich die IP-Adresse eines iSCSI-Ports ändert, tritt auf dem Remote-Speicher-Array, das versucht, diesen Port zu verwenden, ein Kommunikationsfehler auf.
+
+Das Speicher-Array mit der geänderten IP-Adresse sendet eine Nachricht an jedes Remote-Speicher-Array, das mit den Spiegelungskonsistency Groups verknüpft ist, die für die Spiegelung über eine iSCSI-Verbindung konfiguriert sind. Speicher-Arrays, die diese Meldung erhalten, aktualisieren automatisch ihre Remote-Ziel-IP-Adresse.
+
+Wenn das Speicher-Array mit der geänderten IP-Adresse seine Array-übergreifende Meldung nicht an ein Remote-Speicher-Array senden kann, sendet das System eine Warnmeldung über das Verbindungsproblem. Verwenden Sie die Option Remote IP-Adresse aktualisieren, um die Verbindung zum lokalen Speicher-Array wiederherzustellen.

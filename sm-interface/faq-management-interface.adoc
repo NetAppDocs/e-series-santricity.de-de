@@ -1,0 +1,379 @@
+---
+permalink: sm-interface/faq-management-interface.html 
+sidebar: sidebar 
+keywords:  
+summary: Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine Frage suchen. 
+---
+= FAQ zur Verwaltungsschnittstelle für SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine Frage suchen.
+
+
+
+== Welche Browser werden unterstützt?
+
+SANtricity System Manager unterstützt die folgenden Browser-Versionen.
+
+[cols="1a,1a"]
+|===
+| Browser | Mindestversion 
+
+
+ a| 
+Google Chrome
+ a| 
+89
+
+
+
+ a| 
+Mozilla Firefox
+ a| 
+80
+
+
+
+ a| 
+Safari
+ a| 
+14
+
+
+
+ a| 
+Microsoft Edge
+ a| 
+90
+
+|===
+
+
+== Was sind die Tastenkombinationen?
+
+Sie können in SANtricity System Manager nur über die Tastatur navigieren.
+
+
+
+=== Gesamtnavigation
+
+[cols="1a,1a"]
+|===
+| Aktion | Tastenkombination 
+
+
+ a| 
+Zum nächsten Element wechseln.
+ a| 
+Registerkarte
+
+
+
+ a| 
+Zum vorherigen Element wechseln.
+ a| 
+Umschalt + Tab
+
+
+
+ a| 
+Wählen Sie ein Element aus.
+ a| 
+Eingabe
+
+
+
+ a| 
+Dropdown-Liste: Zum nächsten oder vorherigen Element verschieben.
+ a| 
+Pfeil nach unten oder nach oben
+
+
+
+ a| 
+Kontrollkästchen - Wählen Sie ein Element aus.
+ a| 
+Leertaste
+
+
+
+ a| 
+Optionsfelder: Wechseln zwischen den Elementen.
+ a| 
+Pfeil nach unten oder nach oben
+
+
+
+ a| 
+Erweiterbarer Text – Erweiterung oder Vertragselement.
+ a| 
+Eingabe
+
+|===
+
+
+=== Tabellennavigation
+
+[cols="1a,1a"]
+|===
+| Aktion | Tastenkombination 
+
+
+ a| 
+Wählen Sie eine Zeile aus.
+ a| 
+Um eine Zeile auszuwählen, drücken Sie die Eingabetaste
+
+
+
+ a| 
+Blättern Sie nach oben oder unten.
+ a| 
+Pfeil nach unten/Pfeil nach oben oder Bild nach unten/Bild nach oben
+
+
+
+ a| 
+Ändern Sie die Sortierreihenfolge einer Spalte.
+ a| 
+Um eine Spaltenüberschrift auszuwählen, drücken Sie die Eingabetaste
+
+|===
+
+
+=== Kalendernavigation
+
+[cols="1a,1a"]
+|===
+| Aktion | Tastenkombination 
+
+
+ a| 
+Zum vorherigen Monat wechseln.
+ a| 
+Bild Nach Oben
+
+
+
+ a| 
+Zum nächsten Monat wechseln.
+ a| 
+Bild Nach Unten
+
+
+
+ a| 
+Wechseln Sie zum Vorjahr.
+ a| 
+Strg + Bild Nach Oben
+
+
+
+ a| 
+Gehen Sie zum nächsten Jahr.
+ a| 
+Strg + Bild Nach Unten
+
+
+
+ a| 
+Öffnen Sie die Datumauswahl, falls sie geschlossen ist.
+ a| 
+Control + Home
+
+
+
+ a| 
+Wechseln Sie zum aktuellen Monat.
+ a| 
+Steuerung / Befehl + Home
+
+
+
+ a| 
+Zum vorherigen Tag wechseln.
+ a| 
+Steuerung / Befehl + Links
+
+
+
+ a| 
+Gehen Sie zum nächsten Tag.
+ a| 
+Steuerung / Befehl + Rechts
+
+
+
+ a| 
+Wechseln Sie zur vorherigen Woche.
+ a| 
+Steuerung / Befehl + Nach Oben
+
+
+
+ a| 
+Gehen Sie zur nächsten Woche.
+ a| 
+Steuerung / Befehl + Nach Unten
+
+
+
+ a| 
+Wählen Sie das fokussierte Datum aus.
+ a| 
+Eingabe
+
+
+
+ a| 
+Schließen Sie die Datumsauswahl, und löschen Sie das Datum.
+ a| 
+Steuerung / Befehl + Ende
+
+
+
+ a| 
+Schließen Sie die Datumsauswahl ohne Auswahl.
+ a| 
+Flucht
+
+|===
+
+
+== Wie verhält sich Performance-Statistiken zu einzelnen Volumes mit dem Gesamt?
+
+Die Statistiken für Pools und Volume-Gruppen werden durch Aggregation aller Volumes einschließlich reservierter Kapazitäts-Volumes berechnet.
+
+Die reservierte Kapazität wird intern vom Storage-System zur Unterstützung von Thin Volumes, Snapshots und asynchroner Spiegelung genutzt und ist für I/O-Hosts nicht sichtbar. Aus diesem Grund werden die Statistiken für Pool, Controller und Speicher-Array möglicherweise nicht als Summe der sichtbaren Volumes angezeigt.
+
+Für Applikations- und Workload-Statistiken werden jedoch nur die sichtbaren Volumes aggregiert.
+
+
+
+== Warum werden Daten in den Diagrammen und in der Tabelle als Null angezeigt?
+
+Wenn für einen Datenpunkt in den Diagrammen und in der Tabelle eine Null angezeigt wird, bedeutet dies, dass für diesen Zeitpunkt keine I/O-Aktivität für das Objekt vorhanden ist. Dies kann passieren, weil der Host keine I/O-Vorgänge an dieses Objekt einleitet oder es ein Problem mit dem Objekt selbst sein kann.
+
+Die historischen Daten für das Objekt können weiterhin angezeigt werden. Die Diagramme und die Tabelle zeigen nicht Null-Daten, sobald die I/O-Aktivität für das Objekt beginnt.
+
+In der folgenden Tabelle sind die häufigsten Gründe aufgeführt, warum ein Datenpunktwert für ein bestimmtes Objekt Null sein könnte.
+
+[cols="25h,~"]
+|===
+| Objekttyp auf Array-Ebene | Ursachendaten werden als Null angezeigt 
+
+
+ a| 
+Datenmenge
+ a| 
+* Das Volume hatte keine Host-Zuweisung.
+
+
+
+
+ a| 
+Volume-Gruppe
+ a| 
+* Volume-Gruppe wird importiert.
+* Volume-Gruppe enthält kein Volume, das einem Host zugewiesen ist. *_und_* Volume-Gruppe enthält keine reservierte Kapazität.
+
+
+
+
+ a| 
+Laufwerk
+ a| 
+* Laufwerk ist ausgefallen.
+* Laufwerk wurde entfernt.
+* Das Laufwerk befindet sich in einem unbekannten Zustand.
+
+
+
+
+ a| 
+Controller
+ a| 
+* Der Controller ist offline.
+* Controller ist ausgefallen.
+* Controller wurde entfernt.
+* Der Controller befindet sich in einem unbekannten Status.
+
+
+
+
+ a| 
+Storage Array erledigen
+ a| 
+* Das Storage-Array enthält keine Volumes.
+
+
+|===
+
+
+== Was zeigt das Latenzdiagramm?
+
+Das Latenzdiagramm bietet Latenzstatistiken in Millisekunden (ms) für Volumes, Volume-Gruppen, Pools Applikationen und Workloads. Dieses Diagramm wird auf den Registerkarten logische Ansicht, physische Ansicht und Applikationen & Workloads angezeigt.
+
+Bei der Latenz handelt es sich um jegliche Verzögerung, die beim Lesen oder Schreiben von Daten auftritt. Halten Sie den Mauszeiger über einen Punkt im Diagramm, um die folgenden Werte in Millisekunden (ms) für diesen Zeitpunkt anzuzeigen:
+
+* Lesezeit.
+* Schreibzeit.
+* Durchschnittliche I/O-Größe
+
+
+
+
+== Was zeigt das IOPS-Diagramm?
+
+Im IOPS-Diagramm werden Statistiken für die ein-/Ausgabe-Vorgänge pro Sekunde angezeigt. Auf der Startseite werden in diesem Diagramm Statistiken für das Speicher-Array angezeigt. In der logischen Ansicht, der physischen Ansicht und den Registerkarten Applikationen und Workloads der Performance-Ansicht werden in diesem Diagramm Statistiken für das Storage Array, die Volumes, Volume-Gruppen, Pools, Applikationen Und Workloads.
+
+IOPS ist eine Abkürzung für _Input/Output (I/O) Operations per Second_. Bewegen Sie den Mauszeiger über einen Punkt im Diagramm, um die folgenden Werte für diesen Zeitpunkt anzuzeigen:
+
+* Anzahl der Lesevorgänge.
+* Anzahl der Schreibvorgänge.
+* Lese- und Schreibvorgänge insgesamt kombiniert.
+
+
+
+
+== Was wird im MiB/s-Diagramm angezeigt?
+
+Das MiB/s-Diagramm zeigt Statistiken zur Übertragungsgeschwindigkeit in Mebibyte pro Sekunde an. Auf der Startseite werden in diesem Diagramm Statistiken für das Speicher-Array angezeigt. In der logischen Ansicht, der physischen Ansicht und den Registerkarten Applikationen und Workloads der Performance-Ansicht werden in diesem Diagramm Statistiken für das Storage Array, die Volumes, Volume-Gruppen, Pools, Applikationen Und Workloads.
+
+MIB/s ist eine Abkürzung für _Mebibyte pro Sekunde_, bzw. 1,048,576 Byte pro Sekunde. Bewegen Sie den Mauszeiger über einen Punkt im Diagramm, um die folgenden Werte für diesen Zeitpunkt anzuzeigen:
+
+* Die Menge der Daten, die gelesen werden.
+* Die Menge der geschriebenen Daten.
+* Die kombinierte Gesamtdatenmenge, die gelesen und geschrieben wurde.
+
+
+
+
+== Was zeigt das CPU Diagramm?
+
+Das CPU-Diagramm zeigt die Statistiken zur Verarbeitungskapazität für jeden Controller (Controller A und Controller B) an. CPU ist eine Abkürzung für _Central Processing Unit_. Auf der Startseite werden in diesem Diagramm Statistiken für das Speicher-Array angezeigt. Auf der Registerkarte „Physical View“ der Kachel „Performance“ werden in diesem Diagramm Statistiken für das Storage Array und die Laufwerke angezeigt.
+
+Das CPU-Diagramm zeigt den Prozentsatz der CPU-Verarbeitungskapazität, die im Vergleich zu Operationen auf dem Array verwendet wird. Selbst wenn keine externe I/O-Vorgänge stattfinden, liegt die CPU-Auslastung in Prozent unter Umständen nicht ganz am Wert des Storage-Betriebssystems. Dies könnte dazu führen, dass Hintergrundvorgänge und das Monitoring durchgeführt werden. Bewegen Sie den Mauszeiger über einen Punkt im Diagramm, um einen Prozentsatz der Verarbeitungsfähigkeit anzuzeigen, die zu diesem Zeitpunkt verwendet werden.
+
+
+
+== Was zeigt das Diagramm „Reserve“?
+
+Das Diagramm Reserve bezieht sich auf die verbleibende Performance-Fähigkeit für die Storage Array Controller. Dieses Diagramm ist auf der Startseite und auf der Registerkarte Physical View der Kachel Performance sichtbar.
+
+Das Diagramm Reserve zeigt die verbleibende Performance-Fähigkeit der physischen Objekte im Storage-System. Halten Sie den Mauszeiger über einen Punkt im Diagramm, um den Prozentsatz der noch verbleibenden IOPS- und MiB/s-Fähigkeit für Controller A und für Controller B anzuzeigen
+
+
+
+== Wo finde ich weitere Informationen zu Anzeigeeinstellungen?
+
+So finden Sie Informationen zu den verfügbaren Anzeigeoptionen:
+
+* Weitere Informationen zu den Standardeinheiten zum Anzeigen von Kapazitätswerten finden Sie unter link:set-default-units-for-capacity-values.html["Standardeinheiten für Kapazitätswerte festlegen"].
+* Weitere Informationen zum Standardzeitrahmen zum Anzeigen von Performance-Diagrammen finden Sie unter link:set-default-time-frame-for-performance-graphs.html["Legen Sie den Standardzeitrahmen für Performance-Diagramme fest"].
+

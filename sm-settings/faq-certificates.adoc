@@ -1,0 +1,66 @@
+---
+permalink: sm-settings/faq-certificates.html 
+sidebar: sidebar 
+keywords:  
+summary: Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine Frage suchen. 
+---
+= FAQ zu CA-signierten und selbstsignierten Zertifikaten für SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine Frage suchen.
+
+
+
+== Warum wird das Dialogfeld „Zugriff auf anderen Controller nicht möglich“ angezeigt?
+
+Wenn Sie bestimmte Vorgänge im Zusammenhang mit CA-Zertifikaten ausführen (z. B. ein Zertifikat importieren), wird möglicherweise ein Dialogfeld angezeigt, in dem Sie aufgefordert werden, ein selbstsigniertes Zertifikat für den zweiten Controller anzunehmen.
+
+In Speicher-Arrays mit zwei Controllern (Duplexkonfigurationen) wird dieses Dialogfeld manchmal angezeigt, wenn SANtricity System Manager nicht mit dem zweiten Controller kommunizieren kann oder wenn Ihr Browser das Zertifikat während eines bestimmten Punktes nicht akzeptieren kann.
+
+Wenn dieses Dialogfeld geöffnet wird, klicken Sie auf *Selbstsigniertes Zertifikat akzeptieren*, um fortzufahren. Wenn Sie in einem anderen Dialogfeld zur Eingabe eines Passworts aufgefordert werden, geben Sie Ihr Administratorpasswort ein, das zum Zugriff auf System Manager verwendet wird.
+
+Wenn dieses Dialogfeld erneut angezeigt wird und Sie keine Zertifikataufgabe abschließen können, führen Sie einen der folgenden Schritte aus:
+
+* Verwenden Sie einen anderen Browsertyp, um auf diesen Controller zuzugreifen, das Zertifikat zu akzeptieren und fortzufahren.
+* Greifen Sie mit System Manager auf den zweiten Controller zu, akzeptieren Sie das selbstsignierte Zertifikat, kehren Sie dann zum ersten Controller zurück und fahren Sie fort.
+
+
+
+
+== Wie weiß ich, welche Zertifikate zum externen Schlüsselmanagement in den SANtricity System Manager hochgeladen werden müssen?
+
+Für das externe Verschlüsselungsmanagement importieren Sie zwei Arten von Zertifikaten zur Authentifizierung zwischen dem Storage-Array und dem Schlüsselverwaltungsserver, damit sich die beiden Entitäten gegenseitig vertrauen können.
+
+Ein Client-Zertifikat validiert die Controller des Storage-Arrays, damit der wichtige Management-Server seine KMIP-Anforderungen (Key Management Interoperability Protocol) anvertrauen kann.
+
+Um ein Client-Zertifikat zu erhalten, verwenden Sie System Manager, um eine CSR für das Speicher-Array abzuschließen. Sie können eine CSR auch extern mit einem privaten und öffentlichen Schlüsselpaar erstellen.
+
+Anschließend können Sie die CSR auf einen Schlüsselverwaltungsserver hochladen und von dort aus ein Clientzertifikat generieren. Wenn Sie über ein Clientzertifikat verfügen, kopieren Sie diese Datei auf den Host, auf den Sie auf System Manager zugreifen.
+
+Ein Zertifikat für den Schlüsselmanagementserver validiert den Schlüsselmanagementserver, damit das Storage-Array seiner IP-Adresse vertrauen kann. Rufen Sie die Serverzertifikatdatei vom Schlüsselverwaltungsserver ab, und kopieren Sie diese Datei dann auf den Host, auf dem Sie auf System Manager zugreifen.
+
+
+
+== Was muss ich über die Überprüfung des Annullierung von Zertifikaten wissen?
+
+Mit SANtricity System Manager können Sie mithilfe eines OCSP-Servers (Online Certificate Status Protocol) nach gesperrten Zertifikaten suchen, anstatt Zertifikatsperrlisten (Certificate Revocation Lists, CRLs) hochzuladen.
+
+Zurückwiderrufen Zertifikate sollten nicht mehr vertrauenswürdig sein. Ein Zertifikat kann aus mehreren Gründen widerrufen werden; beispielsweise wenn die Zertifizierungsstelle (CA) das Zertifikat nicht ordnungsgemäß ausgestellt hat, ein privater Schlüssel kompromittiert wurde oder die identifizierte Entität nicht den Richtlinienanforderungen entspricht.
+
+Nachdem Sie in System Manager eine Verbindung zu einem OCSP-Server hergestellt haben, führt das Speicherarray eine Widerrufs-Prüfung durch, wenn es eine Verbindung zu einem AutoSupport-Server, einem externen Schlüsselverwaltungsserver (EKMS), einem Lightweight Directory Access Protocol over SSL (LDAPS)-Server oder einem Syslog-Server herstellt. Das Speicher-Array versucht, die Zertifikate dieser Server zu validieren, um sicherzustellen, dass sie nicht widerrufen wurden. Der Server gibt dann für dieses Zertifikat einen Wert von „gut“, „gesperrt“ oder „unbekannt“ zurück. Wenn das Zertifikat widerrufen wird oder das Array nicht den OCSP-Server kontaktieren kann, wird die Verbindung abgelehnt.
+
+[NOTE]
+====
+Wenn Sie eine OCSP-Antwortadresse in System Manager oder in der Befehlszeilenschnittstelle (CLI) angeben, wird die OCSP-Adresse, die in der Zertifikatsdatei gefunden wurde, überschrieben.
+
+====
+
+
+== Für welche Servertypen wird die Überprüfung des Widerrufs aktiviert?
+
+Das Speicher-Array führt Sperrprüfungen durch, wenn es eine Verbindung zu einem AutoSupport-Server, einem externen Schlüsselverwaltungsserver (EKMS), einem Lightweight Directory Access Protocol over SSL (LDAPS)-Server oder einem Syslog-Server herstellt.

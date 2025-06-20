@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, cache, settings, performance, 
 summary: Der Cache-Speicher ist ein temporärer flüchtiger Speicher auf dem Controller, der eine schnellere Zugriffszeit hat als das Laufwerk. 
 ---
-= Cache-Einstellungen und Performance
+= Erfahren Sie mehr über Cache-Einstellungen und Leistung in der SANtricity-Software
 :allow-uri-read: 
 :experimental: 
 :icons: font

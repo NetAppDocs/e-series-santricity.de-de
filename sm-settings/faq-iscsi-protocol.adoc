@@ -1,0 +1,180 @@
+---
+permalink: sm-settings/faq-iscsi-protocol.html 
+sidebar: sidebar 
+keywords:  
+summary: Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine Frage suchen. 
+---
+= FAQ zum iSCSI-Protokoll für SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine Frage suchen.
+
+
+
+== Was passiert, wenn ich einen iSNS Server für die Registrierung verwende?
+
+Wenn Informationen zum Internet Storage Name Service (iSNS)-Server verwendet werden, können die Hosts (Initiatoren) so konfiguriert werden, dass sie den iSNS-Server abfragen, um Informationen aus dem Ziel (den Controllern) abzurufen.
+
+Mit dieser Registrierung erhält der iSNS-Server den iSCSI-qualifizierten Namen (IQN) und die Portinformationen des Controllers und ermöglicht Abfragen zwischen den Initiatoren (iSCSI-Hosts) und Zielen (Controllern).
+
+
+
+== Welche Registrierungsmethoden werden für iSCSI automatisch unterstützt?
+
+Die iSCSI-Implementierung unterstützt entweder die iSCSI-Ermittlungsmethode (Internet Storage Name Service, iSNS) oder die Verwendung des Befehls Send Targets.
+
+Die iSNS-Methode ermöglicht die iSNS-Erkennung zwischen den Initiatoren (iSCSI-Hosts) und den Zielen (den Controllern). Sie registrieren den Zielcontroller, um dem iSNS-Server den iSCSI-qualifizierten Namen (IQN) und die Portinformationen des Controllers bereitzustellen.
+
+Wenn Sie iSNS nicht konfigurieren, kann der iSCSI-Host den Befehl Ziele senden während einer iSCSI-Erkennungssitzung senden. Als Antwort gibt der Controller die Portinformationen zurück (z. B. Ziel-IQN, Port-IP-Adresse, Listening-Port und Ziel-Portgruppe). Diese Ermittlungsmethode ist nicht erforderlich, wenn Sie iSNS verwenden, da der Host-Initiator die Ziel-IPs vom iSNS-Server abrufen kann.
+
+
+
+== Wie interpretiere ich iSER-over-InfiniBand-Statistiken?
+
+Das Dialogfeld „iSER-over-InfiniBand-Statistiken“ zeigt Statistiken zu lokalen Zielen (Protokollen) und iSER-over-InfiniBand-Schnittstellen (IB) an. Alle Statistiken sind schreibgeschützt und können nicht festgelegt werden.
+
+* *Statistiken zu lokalen Zielen (Protokoll)* -- stellt Statistiken für das iSER-over-InfiniBand-Ziel bereit, das den Zugriff auf die Speichermedien auf Blockebene anzeigt.
+* *ISER-over-InfiniBand-Interface-Statistik* -- stellt Statistiken für alle iSER-over-InfiniBand-Ports auf der InfiniBand-Schnittstelle bereit, die Performance-Statistiken und Link-Fehlerinformationen zu den einzelnen Switch-Ports enthalten.
+
+
+Sie können jede dieser Statistiken als RAW-Statistiken oder als Baseline-Statistiken anzeigen. RAW-Statistiken sind alle Statistiken, die seit dem Start der Controller gesammelt wurden. Baseline-Statistiken sind zeitpunktgenaue Statistiken, die seit dem Festlegen der Baseline-Zeit erfasst wurden.
+
+
+
+== Was muss ich noch tun, um iSER over InfiniBand zu konfigurieren oder zu diagnostizieren?
+
+In der folgenden Tabelle sind die Funktionen von SANtricity System Manager aufgeführt, mit denen Sie iSER-over-InfiniBand-Sessions konfigurieren und managen können.
+
+[NOTE]
+====
+Die iSER-over-InfiniBand-Einstellungen sind nur verfügbar, wenn der Controller Ihres Storage-Arrays einen iSER-over-InfiniBand-Host-Management-Port umfasst.
+
+====
+[cols="35h,~"]
+|===
+| Aktion | Standort 
+
+
+ a| 
+Konfigurieren Sie iSER-over-InfiniBand-Ports
+ a| 
+. Wählen Sie *Hardware*.
+. Wählen Sie die Registerkarte *Controller & Komponenten* aus.
+. Wählen Sie einen Controller aus.
+. Wählen Sie *iSER-over-InfiniBand-Ports konfigurieren*.
+
+
+Oder
+
+. Wählen Sie Menü:Einstellungen[System].
+. Scrollen Sie nach unten nach *iSER über InfiniBand-Einstellungen*, und wählen Sie dann *iSER über InfiniBand-Ports konfigurieren* aus.
+
+
+
+
+ a| 
+Zeigen Sie iSER-over-InfiniBand-Statistiken an
+ a| 
+. Wählen Sie Menü:Einstellungen[System].
+. Scrollen Sie nach unten nach *iSER über InfiniBand-Einstellungen* und wählen Sie dann *Anzeigen iSER über InfiniBand-Statistik* aus.
+
+
+|===
+
+
+== Was muss ich sonst noch tun, um iSCSI zu konfigurieren oder zu diagnostizieren?
+
+ISCSI-Sitzungen können bei Hosts oder Remote-Storage-Arrays in einer asynchronen Spiegelbeziehung durchgeführt werden. In den folgenden Tabellen sind die Funktionen von SANtricity System Manager aufgeführt, mit denen Sie diese iSCSI-Sitzungen konfigurieren und verwalten können.
+
+[NOTE]
+====
+Die iSCSI-Einstellungen sind nur verfügbar, wenn Ihr Speicher-Array iSCSI unterstützt.
+
+====
+
+
+=== Konfigurieren Sie iSCSI
+
+[cols="1a,1a"]
+|===
+| Aktion | Standort 
+
+
+ a| 
+ISCSI-Einstellungen verwalten
+ a| 
+. Wählen Sie Menü:Einstellungen[System].
+. Blättern Sie nach unten zu *iSCSI-Einstellungen*, um alle Verwaltungsfunktionen anzuzeigen.
+
+
+
+
+ a| 
+Konfigurieren Sie die iSCSI-Ports
+ a| 
+. Wählen Sie *Hardware*.
+. Wählen Sie die Registerkarte *Controller & Komponenten* aus.
+. Wählen Sie einen Controller aus.
+. Wählen Sie *iSCSI-Ports konfigurieren*.
+
+
+
+
+ a| 
+Legen Sie den Host-CHAP-Schlüssel fest
+ a| 
+. Wählen Sie Menü:Einstellungen[System].
+. Blättern Sie nach unten zu *iSCSI-Einstellungen*, und wählen Sie dann *Authentifizierung konfigurieren*.
+
+
+Oder
+
+. Wählen Sie Menü:Storage[Hosts].
+. Wählen Sie ein Hostmitglied aus.
+. Klicken Sie auf Menü:Registerkarte Einstellungen anzeigen/bearbeiten[Host Ports].
+
+
+|===
+
+
+=== ISCSI diagnostizieren
+
+[cols="1a,1a"]
+|===
+| Aktion | Standort 
+
+
+ a| 
+Anzeigen oder Beenden von iSCSI-Sitzungen
+ a| 
+. Wählen Sie Menü:Einstellungen[System].
+. Scrollen Sie nach unten zu *iSCSI-Einstellungen* und wählen Sie dann *iSCSI-Sitzungen anzeigen/beenden* aus.
+
+
+Oder
+
+. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie *Anzeigen/Beenden von iSCSI-Sitzungen*.
+
+
+
+
+ a| 
+Anzeigen von iSCSI-Statistiken
+ a| 
+. Wählen Sie Menü:Einstellungen[System].
+. Scrollen Sie nach unten zu *iSCSI-Einstellungen* und wählen Sie dann *iSCSI-Statistikpakete anzeigen* aus.
+
+
+Oder
+
+. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie *Anzeigen von iSCSI-Statistikpaketen* aus.
+
+
+|===

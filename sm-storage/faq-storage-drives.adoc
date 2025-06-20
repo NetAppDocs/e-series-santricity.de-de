@@ -1,0 +1,58 @@
+---
+permalink: sm-storage/faq-storage-drives.html 
+sidebar: sidebar 
+keywords:  
+summary: Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine Frage suchen. 
+---
+= FAQ zu Speicherlaufwerken für SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine Frage suchen.
+
+
+
+== Was ist eine Hot-Spare-Festplatte?
+
+Hot Spares fungieren als Standby-Laufwerke in RAID 1-, RAID 5- oder RAID 6-Volume-Gruppen. Es handelt sich dabei um voll funktionsfähige Laufwerke, die keine Daten enthalten. Wenn ein Laufwerk in der Volume-Gruppe ausfällt, rekonstruiert der Controller die Daten vom ausgefallenen Laufwerk automatisch auf eine Hot Spare-Festplatte.
+
+Wenn ein Laufwerk im Speicher-Array ausfällt, wird das Hot-Spare-Laufwerk automatisch durch das ausgefallene Laufwerk ersetzt, ohne dass ein physischer Austausch erforderlich ist. Wenn das Hot-Spare-Laufwerk verfügbar ist, wenn ein Laufwerk ausfällt, verwendet der Controller Redundanzdaten, um die Daten von dem ausgefallenen Laufwerk auf dem Hot-Spare-Laufwerk zu rekonstruieren.
+
+Ein Hot-Spare-Laufwerk ist nicht einer bestimmten Volume-Gruppe zugewiesen. Stattdessen können Sie ein Hot-Spare-Laufwerk für alle ausgefallenen Laufwerke im Storage-Array mit derselben Kapazität oder kleinerer Kapazität verwenden. Ein Hot-Spare-Laufwerk muss vom gleichen Medientyp (HDD oder SSD) sein wie die Laufwerke, die es schützt.
+
+[NOTE]
+====
+Hot-Spare-Festplatten werden mit Pools nicht unterstützt. Anstatt Hot-Spare-Festplatten nutzen Pools die freie Kapazität in jedem Laufwerk, das den Pool umfasst.
+
+====
+
+
+== Was ist Erhaltungskapazität?
+
+Bei der Konservierung wird die Kapazität (Anzahl der Laufwerke) verwendet, die in einem Pool reserviert ist, um potenzielle Laufwerksausfälle zu unterstützen.
+
+Wenn ein Pool erstellt wird, reserviert das System abhängig von der Anzahl der Laufwerke im Pool automatisch eine standardmäßige Anlagenkapazität.
+
+Pools nutzen während der Rekonstruktion haltende Kapazitäten, wohingegen Volume-Gruppen Hot-Spare-Festplatten zu demselben Zweck einsetzen. Die Methode zur Erhaltung der Kapazität ist eine Verbesserung gegenüber Hot-Spare-Festplatten, da sie eine schnellere Rekonstruktion ermöglicht. Die Konservierungskapazität wird bei einem Hot-Spare-Laufwerk über eine Anzahl von Laufwerken im Pool verteilt, nicht auf einer Festplatte, sodass die Geschwindigkeit und Verfügbarkeit einer einzelnen Festplatte nicht eingeschränkt ist.
+
+
+
+== Warum sollte ich ein Laufwerk logisch ersetzen?
+
+Wenn ein Laufwerk ausfällt oder Sie es aus einem anderen Grund ersetzen möchten und ein nicht zugewiesenes Laufwerk im Speicher-Array vorhanden ist, können Sie das ausgefallene Laufwerk logisch durch das nicht zugewiesene Laufwerk ersetzen. Wenn Sie kein nicht zugewiesenes Laufwerk haben, können Sie stattdessen das Laufwerk physisch ersetzen.
+
+Die Daten aus dem Originallaufwerk werden kopiert oder auf das Ersatzlaufwerk rekonstruiert.
+
+
+
+== Wo kann ich den Status eines Laufwerks sehen, der derzeit rekonstruiert wird?
+
+Sie können den Rekonstruktionsstatus des Laufwerks über die Konsole „Operations in Progress“ anzeigen.
+
+Klicken Sie auf der Startseite oben rechts auf den Link *Vorgänge in Bearbeitung anzeigen*.
+
+Je nach Laufwerk kann die vollständige Rekonstruktion sehr viel Zeit in Anspruch nehmen. Wenn sich die Volume-Eigentümerschaft geändert hat, kann anstelle der schnellen Wiederherstellung eine vollständige Rekonstruktion stattfinden.

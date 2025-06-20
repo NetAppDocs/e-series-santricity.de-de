@@ -1,0 +1,39 @@
+---
+permalink: sm-settings/faq-storage-system-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine Frage suchen. 
+---
+= FAQ zu Speichersystemwarnungen für SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine Frage suchen.
+
+
+
+== Was ist, wenn Alarme deaktiviert sind?
+
+Wenn Administratoren Benachrichtigungen über wichtige Ereignisse im Speicher-Array erhalten sollen, müssen Sie eine Methode zur Alarmierung konfigurieren.
+
+Bei Storage Arrays, die mit SANtricity System Manager verwaltet werden, konfigurieren Sie Warnmeldungen über die Seite „Meldungen“. Alert-Benachrichtigungen können über E-Mail, SNMP-Traps oder Syslog-Nachrichten gesendet werden. Zudem können E-Mail-Benachrichtigungen über den ersten Setup-Assistenten konfiguriert werden.
+
+
+
+== Wie konfiguriere ich SNMP- oder syslog-Alarme?
+
+Neben E-Mail-Warnungen können Benachrichtigungen auch über SNMP-Traps (Simple Network Management Protocol) oder Syslog-Nachrichten gesendet werden.
+
+Um SNMP- oder Syslog-Warnmeldungen zu konfigurieren, gehen Sie zu MENU:Einstellungen[Warnungen].
+
+
+
+== Warum sind Zeitstempel zwischen dem Array und Warnungen uneinheitlich?
+
+Wenn das Speicher-Array Warnungen sendet, ist es für die Zeitzone des Zielservers oder Hosts, der die Warnungen empfängt, nicht korrekt. Stattdessen verwendet das Speicher-Array die lokale Zeit (GMT), um den Zeitstempel zu erstellen, der für den Warnungsdatensatz verwendet wird. Aufgrund dessen sind möglicherweise Inkonsistenzen zwischen den Zeitstempel für das Storage-Array und dem Server oder Host, der eine Meldung empfängt, zu erkennen.
+
+Da das Speicherarray beim Senden von Warnungen nicht richtig für die Zeitzone ist, ist der Zeitstempel für die Warnungen GMT-relative, der einen Zeitzonenversatz von Null hat. Um einen Zeitstempel zu berechnen, der Ihrer lokalen Zeitzone angemessen ist, sollten Sie Ihren Stundenversatz von GMT bestimmen und diesen Wert dann von den Zeitstempel hinzufügen oder abziehen.

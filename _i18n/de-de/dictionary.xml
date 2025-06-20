@@ -28,8 +28,6 @@
   <block id="e03a520e07f6d26676f2912b311e6d79" category="paragraph">Unterstützung nahezu unbegrenzter Entfernungen zwischen dem lokalen Speicher-Array und dem Remote-Speicher-Array, wobei die Entfernung in der Regel nur durch die Fähigkeiten des Netzwerks und der Channel-Erweiterungstechnologie begrenzt wird.</block>
   <block id="cd1374bd45bc35a70e974631481a888a" category="list-text">*Eingeschränkt*</block>
   <block id="53321121376cbf9cfb46a577dee29de0" category="paragraph">Normalerweise muss das lokale Storage-Array innerhalb von etwa 10 km Entfernung (6.2 Meilen) liegen, um die Anforderungen an Latenz und Applikations-Performance zu erfüllen.</block>
-  <block id="6dfc033921a7d8d6b90bc5145f989f1e" category="summary">Sie aktualisieren die IP-Adresse Ihres Remote-Speicher-Arrays, wenn sich die IP-Adresse eines iSCSI-Ports ändert und das lokale Speicher-Array nicht mit dem Remote-Speicher-Array kommunizieren kann.</block>
-  <block id="6f04c9a202bb634f610d093a0d5d0495" category="doc">Warum sollte ich die IP-Adresse meines Remote-Speicherarrays aktualisieren?</block>
   <block id="4eb18d2e1000f44c1aa7bf303324ef52" category="paragraph">Sie aktualisieren die IP-Adresse des Remote-Speicher-Arrays, wenn sich die IP-Adresse eines iSCSI-Ports ändert und das lokale Speicher-Array nicht mit dem Remote-Speicher-Array kommunizieren kann.</block>
   <block id="fd6fd032baf66907fa006af6877faa89" category="paragraph">Beim Einrichten einer asynchronen Spiegelbeziehung mit einer iSCSI-Verbindung speichern sowohl die lokalen als auch die Remote-Speicher-Arrays einen Datensatz der IP-Adresse des Remote-Speicher-Arrays in der Konfiguration zur asynchronen Spiegelung. Wenn sich die IP-Adresse eines iSCSI-Ports ändert, tritt auf dem Remote-Speicher-Array, das versucht, diesen Port zu verwenden, ein Kommunikationsfehler auf.</block>
   <block id="d7e48014036e048990b33b96292bcc91" category="paragraph">Das Speicher-Array mit der geänderten IP-Adresse sendet eine Nachricht an jedes Remote-Speicher-Array, das mit den Spiegelungskonsistency Groups verknüpft ist, die für die Spiegelung über eine iSCSI-Verbindung konfiguriert sind. Speicher-Arrays, die diese Meldung erhalten, aktualisieren automatisch ihre Remote-Ziel-IP-Adresse.</block>
@@ -98,7 +96,6 @@
   <block id="283d6774e86cefbd518fde4d2ea2ca96" category="section-title">Konfiguration und Management</block>
   <block id="5d6ce5e91e102eae3fd6a15e3e186794" category="paragraph">Um die Spiegelung zwischen zwei Arrays zu aktivieren und zu konfigurieren, müssen Sie die Unified Manager-Schnittstelle verwenden. Sobald die Spiegelung aktiviert ist, können Sie gespiegelte Paare und Synchronisierungseinstellungen in System Manager verwalten.</block>
   <block id="1866ca64bf91acf982f0825105cd98a1" category="summary">Sie können die reservierte Kapazität nur in Schritten von 4 gib erhöhen.</block>
-  <block id="5e79bfcdaf2980a36b13dea84317bc33" category="doc">Warum kann ich die reservierte Kapazität nicht mit meinem angeforderten Betrag erhöhen?</block>
   <block id="d2c3016b1c4893861f6df9e9ca35fb38" category="paragraph">Lesen Sie sich die folgenden Richtlinien durch:</block>
   <block id="d24fe7c57d36be3405f7a2d1747d1041" category="list-text">Sie müssen über ausreichende freie Kapazitäten im Pool oder Volume-Gruppe verfügen, damit diese bei Bedarf erweitert werden kann.</block>
   <block id="2db5ed9d2a6ba91465993bd0710ab09c" category="paragraph">Wenn auf einem Pool oder Volume-Gruppen keine freie Kapazität vorhanden ist, können Sie einem Pool oder einer Volume-Gruppe nicht zugewiesene Kapazität in Form nicht verwendeter Laufwerke hinzufügen.</block>
@@ -186,7 +183,6 @@
   <block id="60a8997705970e5b5155e1b481e80795" category="list-text">*Automatisch* -- Wählen Sie diese Option, um die Neusynchronisierung automatisch zu starten, nachdem die Kommunikation auf einem gespiegelten Paar wiederhergestellt wurde.</block>
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">Wählen Sie *Speichern*.</block>
   <block id="7b35335a6eefe537ec49adb2a524da1e" category="summary">Wenn Sie ein sekundäres Volume auf dem Remote-Speicher-Array auswählen, werden alle für dieses gespiegelte Paar geeigneten Volumes in einer Liste angezeigt.</block>
-  <block id="d58e89d803ae3ca8b3fded751d8dac3f" category="doc">Asynchrones Spiegeln - Warum sehe ich nicht alle Volumen auf dem Remote-Speicher-Array?</block>
   <block id="20f1ebedc229b82bc1ca089db22f742e" category="paragraph">Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser Liste nicht angezeigt. Volumes sind aus folgenden Gründen möglicherweise nicht verfügbar:</block>
   <block id="da6c861252922d5dba9aca194ca15178" category="list-text">Die Lautstärke ist nicht optimal.</block>
   <block id="4e30fb2503bfbf3dbe8e11d9e48208d0" category="list-text">Das Volume beteiligt sich bereits an einer Spiegelbeziehung.</block>
@@ -320,14 +316,12 @@
   <block id="94d12e4ecfa0727a21dceabd94e97cb4" category="paragraph">Das sekundäre Volume eines gespiegelten Paars befindet sich normalerweise an einem sekundären Standort und enthält ein Replikat der Daten.</block>
   <block id="454c65346b592d2a6ddcf6e6cd91d9b3" category="paragraph">Synchronisierung</block>
   <block id="1b6781f9766328ee7f0960dbe05f98bf" category="paragraph">Die Synchronisierung erfolgt bei der ersten Synchronisierung zwischen dem lokalen Speicher-Array und dem Remote-Speicher-Array. Die Synchronisierung findet auch statt, wenn primäre und sekundäre Volumes nach einer Kommunikationsunterbrechung nicht mehr synchronisiert werden. Wenn die Kommunikationsverbindung wieder funktioniert, werden alle nicht replizierten Daten mit dem Storage-Array des sekundären Volumes synchronisiert.</block>
-  <block id="b47b71858322e411094e44ec1a37135c" category="summary">Sie konfigurieren gespiegelte Paare in der Benutzeroberfläche von Unified Manager und managen dann die Paare in System Manager.</block>
   <block id="65377e804f196feceee3ad92b112155f" category="doc">Synchrones Spiegeln - Was muss ich wissen, bevor ein gespiegeltes Paar erstellt wird?</block>
   <block id="00e8b06da64441679d15d4f0ec472c62" category="paragraph">Befolgen Sie vor dem Erstellen eines gespiegelten Paares die folgenden Richtlinien:</block>
   <block id="7c064296b0790330119d00fd4683a7bf" category="list-text">Ihre lokalen und Remote-Speicher-Arrays sind über eine Fibre Channel Fabric verbunden.</block>
   <block id="425a64e0d583694b7183474b36985728" category="list-text">Sie haben Web Services Proxy und Unified Manager installiert. Gespiegelte Paare werden in der Unified Manager Schnittstelle konfiguriert.</block>
   <block id="fe99edff93d55843d1bd3a7d39d7dbcd" category="list-text">Die beiden Storage Arrays werden in Unified Manager erkannt.</block>
   <block id="9a40e4909c217e4f4c325f3a320ac93a" category="summary">Wenn Sie ein sekundäres Volume für das asynchrone gespiegelte Paar erstellen, zeigt das System eine Liste aller infrage kommenden Pools und Volume-Gruppen für das asynchrone gespiegelte Paar an. Pools oder Volume-Gruppen, die nicht verwendet werden können, werden in dieser Liste nicht angezeigt.</block>
-  <block id="15f94db58250536332ae255a199d8cc3" category="doc">Warum sehe ich nicht alle meine Pools und Volume-Gruppen?</block>
   <block id="c55e0fc2f650b6c29bee97d6d925791c" category="paragraph">Pools oder Volume-Gruppen können aus den folgenden Gründen nicht berechtigt sein.</block>
   <block id="38c3daa178b71dd0ef1047cd80837346" category="list-text">Die Sicherheitsfunktionen von Pools oder Volume-Gruppen stimmen nicht überein.</block>
   <block id="18747fc1783ea0c8be337cee42135fc8" category="list-text">Ein Pool oder eine Volume-Gruppe befindet sich in einem nicht optimalen Zustand.</block>
@@ -335,7 +329,6 @@
   <block id="2677e564e3696a00712811d8d452bc9d" category="summary">Die manuelle Neusynchronisierung wird empfohlen, da Sie damit den Neusynchronisierung so verwalten können, dass dadurch keine Möglichkeit zum Wiederherstellen von Daten besteht.</block>
   <block id="be60404b2c56981a6ade529f56c56ade" category="doc">Warum wird empfohlen, eine manuelle Synchronisierungsrichtlinie zu verwenden?</block>
   <block id="203eb3487092f98bd7739657bd0afb70" category="paragraph">Wenn Sie eine automatische Resynchronisierung verwenden und während der Neusynchronisierung intermittierende Kommunikationsprobleme auftreten, können die Daten auf dem sekundären Volume vorübergehend beschädigt werden. Nach Abschluss der Resynchronisierung werden die Daten korrigiert.</block>
-  <block id="b3fd593fc883dfb95bb20995275cb9a2" category="summary">Die reservierte Kapazität beträgt normalerweise 40 % des Basis-Volumes für Snapshot-Vorgänge und 20 % des Basis-Volumes für asynchrone Spiegelungsvorgänge. In der Regel ist diese Kapazität ausreichend.</block>
   <block id="9e5663f73d80960408415d0ced12887a" category="doc">Warum sollte ich diesen Prozentsatz ändern?</block>
   <block id="fe1327f33625d09259d474174d0735ed" category="paragraph">Die reservierte Kapazität beträgt normalerweise 40 % des Basis-Volumes für Snapshot-Vorgänge und 20 % des Basis-Volumes für asynchrone Spiegelungsvorgänge.</block>
   <block id="7ef46edfdc71263097118ce1f1a8a2c2" category="paragraph">In der Regel ist diese Kapazität ausreichend. Die benötigte Kapazität ist abhängig von Häufigkeit und Größe der I/O-Schreibvorgänge auf dem Basis-Volume und wie lange Sie den Kopierdienst des Storage-Objekts verwenden möchten.</block>
@@ -469,7 +462,6 @@
   <block id="f17d23d6e7e8eddf4836a9904b73236e" category="doc">Asynchrones Spiegeln - Was muss ich wissen, bevor ich ein gespiegeltes Paar erstellt habe?</block>
   <block id="03636572249dd9880006378f3c1755fe" category="paragraph">Befolgen Sie vor dem Erstellen eines gespiegelten Paares diese Richtlinien.</block>
   <block id="b6287b731648fdf0c4197b5b53ed2e5b" category="list-text">Ihr Speicher-Array muss mindestens eine gespiegelte Konsistenzgruppe enthalten. Sie erstellen eine Konsistenzgruppe in Unified Manager im Assistenten zum Erstellen gespiegelter Paare.</block>
-  <block id="3495d24d327284018c764d189eb19ebe" category="doc">Synchrones Spiegeln - Warum sehe ich nicht alle Volumes auf dem Remote Storage Array?</block>
   <block id="991e25bd7d0d856f1cbe33745a8858c0" category="list-text">Das Volume ist ein nicht standardmäßiges Volume, wie beispielsweise ein Snapshot-Volume oder ein Thin Volume.</block>
   <block id="9298215bd55bd7c3aa8a21b50a88e28e" category="summary">Die Funktion synchrone Spiegelung bietet Online-Datenreplizierung in Echtzeit zwischen Storage-Arrays über eine Remote-Entfernung.</block>
   <block id="10d68dbaa5a809daf171f782598d85b7" category="section-title">Was ist synchrones Spiegeln?</block>
@@ -516,8 +508,6 @@
   <block id="097f3db213035d61f884ca206abf8577" category="paragraph">Etwa dreieinhalb Mal so lang wie bei der höchsten Prioritätsrate.</block>
   <block id="925e87a825d11603a040572606e602cc" category="paragraph">Etwa doppelt so lange wie bei der höchsten Prioritätsrate.</block>
   <block id="e1bde07942eb1f02a009412f9460b4d6" category="paragraph">Volume-Größe und Host-I/O-Rate-Lasten wirken sich auf den Vergleich der Synchronisierungszeit aus.</block>
-  <block id="09aa31a04bb22f0e3a974409e4760569" category="summary">Die Spiegelung ist in der Unified Manager-Schnittstelle konfiguriert.</block>
-  <block id="1f886fa10f9979df037b0e533f029308" category="doc">Warum kann ich nicht auf meine gewählte Spiegelfunktion zugreifen?</block>
   <block id="bf28bf2251d42b0426dd4f0ec93a91cd" category="paragraph">Um die Spiegelung zwischen zwei Arrays zu aktivieren und zu konfigurieren, überprüfen Sie Folgendes:</block>
   <block id="f7fa64ef9537f8a03850d1c113c23923" category="list-text">Der Web Services Proxy-Dienst muss ausgeführt werden. (Unified Manager wird auf einem Host-System zusammen mit dem Web Services Proxy installiert.)</block>
   <block id="1fe39625b8b89ac0cef70b7f416a43ed" category="list-text">Die beiden Storage Arrays, die Sie für die Spiegelung verwenden möchten, müssen in Unified Manager erkannt werden.</block>
@@ -551,7 +541,6 @@
   <block id="9604ed284694f90f17fe542abb0c29ad" category="paragraph">Eine gespiegelte Konsistenzgruppe ist ein Container für ein oder mehrere gespiegelte Paare. Für asynchrone Spiegelungsvorgänge müssen Sie eine Konsistenzgruppe erstellen.</block>
   <block id="cffa7e4fcd460690ec5261eba8312305" category="paragraph">Bei der asynchronen Spiegelung gehört ein gespiegeltes Paar immer einer gespiegelten Konsistenzgruppe an. Schreibvorgänge werden zunächst auf dem primären Volume durchgeführt und dann auf das sekundäre Volume repliziert. Jedes gespiegelte Paar in einer Spiegelkonsistent-Gruppe verwendet dieselben Synchronisierungseinstellungen.</block>
   <block id="50fd10ff08567255543d64e6fdfd287a" category="summary">Wenn Sie ein primäres Volume für ein gespiegeltes Paar auswählen, werden in einer Liste alle berechtigten Volumes angezeigt.</block>
-  <block id="d651b1b5dea76bd9febe498feca9d0aa" category="doc">Asynchrones Spiegeln - Warum sehe ich nicht alle meine Volumen?</block>
   <block id="6e6d3781c3d5e89dac9c7a5286567157" category="paragraph">Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser Liste nicht angezeigt. Die Volumes können aus den folgenden Gründen nicht berechtigt sein:</block>
   <block id="e162c795f41b2f54f4cc4318a9da4a18" category="list-text">Bei Thin Volumes muss die automatische Erweiterung aktiviert sein.</block>
   <block id="2f59e5e07529259b42cbcffc6e0119dd" category="summary">Sie können die Rolle zwischen Volumes in einem gespiegelten Paar ändern. Dazu wird das primäre Volume auf die sekundäre Rolle herabstufen oder das sekundäre Volume auf die primäre Rolle heraufstufen.</block>
@@ -633,7 +622,6 @@
   <block id="9bf145afadcc3f272dd148b6f784c99e" category="list-text">Startet die erste Synchronisierung zwischen dem lokalen Speicher-Array und dem Remote-Speicher-Array.</block>
   <block id="297fc79794bab94c25b381a98e666a8b" category="list-text">Wenn es sich bei dem zu spiegelnden Volume um ein Thin Volume handelt, werden während der ersten Synchronisierung nur die zugewiesenen Blöcke auf das sekundäre Volume übertragen. Diese Übertragung reduziert die Menge der Daten, die übertragen werden müssen, um die erste Synchronisierung abzuschließen.</block>
   <block id="a83337d6cc78063b659ce1fb5b3bb451" category="list-text">Legt die reservierte Kapazität für das gespiegelte Paar auf dem lokalen Speicher-Array und auf dem Remote-Speicher-Array fest.</block>
-  <block id="76c6cdf244623c861eb1e9b45de9f68d" category="doc">Synchronous Mirroring - Warum sehe ich nicht alle meine Volumen?</block>
   <block id="996b3bbba1205dd996b175afc6573b9c" category="paragraph">Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser Liste nicht angezeigt. Volumes sind aus folgenden Gründen möglicherweise nicht verfügbar:</block>
   <block id="1954b1434c37f1e6720d7e7c0db08530" category="paragraph">Prüfen Sie die folgenden Informationen zu verwaisten gespiegelten Paaren:</block>
   <block id="a54e8bbbb036b83f8181f0c77eaaf906" category="list-text">Ein verwaister gespiegeltes Paar ist vorhanden, wenn ein Mitglied-Volume einer Consistency Mirror-Gruppe auf einer Seite entfernt wurde (entweder auf der Seite des lokalen Speicher-Arrays oder auf der Seite des Remote-Speicher-Arrays), jedoch nicht auf der anderen Seite.</block>
@@ -805,7 +793,6 @@
   <block id="d20e05508603e26ad1376b6319ec25da" category="list-text">Wählen Sie eine oder mehrere Betriebssystemdateien aus, die Sie aus dem Software-Repository entfernen möchten.</block>
   <block id="874db297b2254479eeb702a2d7fa8dab" category="list-text">Klicken Sie Auf *Löschen*.</block>
   <block id="ebd01a5405824c9e0ad738fa68cdd6d2" category="paragraph">Wenn Sie den Import ausgewählt haben, werden die Dateien hochgeladen und validiert. Wenn Sie „Löschen“ ausgewählt haben, werden die Dateien aus dem Software-Repository entfernt.</block>
-  <block id="7f82bc53f199e7918cc64b78504c2064" category="doc">Warum sehe ich nicht alle Volumes auf dem Remote-Speicher-Array?</block>
   <block id="8802aac967f31435c584318c847b8f96" category="paragraph">Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser Liste nicht angezeigt. Die Volumes können aus den folgenden Gründen nicht berechtigt sein:</block>
   <block id="1e7a9162b9eda403f57543b169ec7c36" category="list-text">Das Volume ist ein nicht standardmäßiges Volume, wie z. B. ein Snapshot-Volume.</block>
   <block id="08a038d98290bf4f3a988b5b930953b6" category="list-text">Bei der asynchronen Spiegelung stimmen die Thin Volume-Attribute des primären Volumes und des sekundären Volumes nicht überein.</block>
@@ -1195,7 +1182,6 @@
   <block id="85bb0bbe0cd9e77b1d1b4db0de0aa0d0" category="list-text">Wählen Sie im Dialogfeld Einstellungen auswählen die Option *System* aus und klicken Sie dann auf *Weiter*.</block>
   <block id="d856dd7f06174b4ea43d1a3d8b97ad9f" category="paragraph">Die Ziel-Storage-Arrays sind nun mit denselben Systemeinstellungen wie das Quell-Array konfiguriert.</block>
   <block id="44be7be255dacc165bc883399e8ce540" category="summary">Während des Vorgangs „Importeinstellungen“ stehen einige Ihrer Speicherarrays möglicherweise nicht im Dialogfeld „Zielauswahl“ zur Verfügung.</block>
-  <block id="2ec3d7bda9724dc0164af9b927fdbc28" category="doc">Warum sehe ich nicht all meine Storage Arrays?</block>
   <block id="509271c8c60b258f298994cb7ca8944c" category="paragraph">Speicher-Arrays werden möglicherweise aus den folgenden Gründen nicht angezeigt:</block>
   <block id="c91bcce3104eb156b3cd15ae07870a24" category="list-text">Die Firmware-Version ist unter 8.50.</block>
   <block id="d42c8b73b3ccc12638f610f2623a0c09" category="list-text">Das Speicher-Array ist offline.</block>
@@ -1238,7 +1224,6 @@
   <block id="84a9e670922d0db474bb98dc58e034f9" category="list-text">*SNMP Alerts* -- Ein Community-Name und IP-Adresse für den SNMP-Server.</block>
   <block id="af52900500e399b2ba2acca963ed4230" category="list-text">Wählen Sie im Dialogfeld Einstellungen auswählen entweder *E-Mail-Alarme*, *SNMP-Alarme* oder *Syslog-Warnungen* aus und klicken Sie dann auf *Weiter*.</block>
   <block id="74e8f7e3feca9d1afae640096e0e7b60" category="paragraph">Die Ziel-Storage-Arrays sind jetzt so konfiguriert, dass sie Warnmeldungen per E-Mail, SNMP oder Syslog an Administratoren senden.</block>
-  <block id="082027bfe4130225fed98f419dcfcbee" category="doc">Warum sehe ich nicht alle meine Bände?</block>
   <block id="d6a2f3fb02a6b5a0805cb96861b2ad88" category="list-text">Für das synchrone Spiegeln müssen primäre und sekundäre Volumes eines gespiegelten Paars Standard-Volumes sein. Es können keine dünnen Volumes oder Snapshot Volumes sein.</block>
   <block id="d003fc64a90ec0d2d96a3a9a15d536f4" category="list-text">Bei der asynchronen Spiegelung müssen Thin Volumes die automatische Erweiterung aktiviert haben.</block>
   <block id="b0e20a5b05a72022c8f53f4a8d3aea80" category="summary">Mit der Dokumentation der SANtricity Software können Sie Ihr Storage-Array installieren, einrichten und warten.</block>
@@ -1292,11 +1277,9 @@
   <block id="806c643ad0cdbd082b95008ffce2bdef" category="paragraph">Kritische Ereignisse weisen auf ein Problem mit dem Speicher-Array hin. Wenn das kritische Ereignis sofort behoben wird, kann der Verlust des Datenzugriffs verhindert werden.</block>
   <block id="7cc47351643da26b4f81ed7a00cd726d" category="paragraph">Wenn ein kritisches Ereignis eintritt, wird es im Ereignisprotokoll protokolliert. Alle kritischen Ereignisse werden an die SNMP-Verwaltungskonsole oder an den E-Mail-Empfänger gesendet, den Sie so konfiguriert haben, dass Sie Benachrichtigungen erhalten. Wenn die Shelf-ID zum Zeitpunkt des Ereignisses nicht bekannt ist, wird die Shelf-ID als „Shelf unbekannt“ aufgeführt.</block>
   <block id="3ff07b758a88cccfc8cbc5f35ed2d41b" category="paragraph">Bei Erhalt eines kritischen Ereignisses finden Sie im Recovery Guru Procedure eine detaillierte Beschreibung des kritischen Ereignisses. Schließen Sie das Verfahren des Recovery Guru zur Korrektur des kritischen Ereignisses ab. Zur Korrektur bestimmter kritischer Ereignisse müssen Sie sich möglicherweise an den technischen Support wenden.</block>
-  <block id="ba3213bbbf9e5128613954ca4db4e5ee" category="summary">Ein Health-Image ist ein RAW-Daten-Dump des Prozessorspeichers des Controllers, den der technische Support zur Diagnose eines Problems mit einem Controller verwenden kann.</block>
   <block id="4e3f3d52a16affbf4b062a79c89574da" category="doc">Was ist ein Gesundheitsbild?</block>
   <block id="793d79923fdf757cef5c422780f3772b" category="paragraph">Ein Systemzustand-Image ist ein Rohdaten-Dump des Prozessorspeichers des Controllers, mit dem der technische Support ein Problem mit einem Controller diagnostizieren kann.</block>
   <block id="ce263fa58d4fdb3ad71f24d93430faf6" category="paragraph">Die Firmware generiert automatisch ein Systemzustand-Image, wenn bestimmte Fehler erkannt werden. Bei bestimmten Fehlerbehebungsszenarios kann der technische Support anfordern, dass Sie die Datei für das Systemzustand abrufen und an sie senden.</block>
-  <block id="4abeb578b363f44144000527bdaabd0d" category="summary">Bevor Sie die Software und Firmware Ihres Controllers aktualisieren, sollten Sie sich dieser Elemente bewusst sein.</block>
   <block id="5c7e6b00e34ca5a9745761f8b63dd9f3" category="doc">Was muss ich vor einem Upgrade der SANtricity OS Software beachten?</block>
   <block id="335d86aaca8c114cdd7c918669e77b31" category="paragraph">Bevor Sie die Software und Firmware des Controllers aktualisieren, sollten Sie diese Elemente beachten.</block>
   <block id="00d0f215b8edbde21b482165efb63f25" category="list-text">Sie haben das Dokument und das gelesen<block ref="eb6b6c90251ab33cee784713c451e6d8" prefix=" " category="inline-code"></block> Datei und haben festgestellt, dass Sie das Upgrade durchführen möchten.</block>
@@ -1537,7 +1520,6 @@
   <block id="d63307ccafc37f7396e67f9e2328a153" category="list-text">Wählen Sie *E/A-Pfadstatistik sammeln*.</block>
   <block id="fbc2aa70003ab709cf0063c091191dd0" category="list-text">Bestätigen Sie, dass Sie den Vorgang durchführen möchten, indem Sie eingeben<block ref="0788a6922bd5f9f130e7ed8980193bab" prefix=" " category="inline-code"></block>, Und klicken Sie dann auf *Collect*.</block>
   <block id="3545477ecc1aff78216a9be3e157f1f7" category="paragraph">Die Datei wird im Ordner Downloads für Ihren Browser mit dem Dateinamen gespeichert<block ref="990f168fbef39604b58f664316d0cbda" prefix=" " category="inline-code"></block>.</block>
-  <block id="068ea21c39695d9df18e79ea4abf66e1" category="summary">ISCSI-Sitzungen können bei Hosts oder Remote-Storage-Arrays in einer asynchronen Spiegelbeziehung durchgeführt werden. In der folgenden Tabelle sind die System Manager-Funktionen aufgeführt, mit denen Sie diese iSCSI-Sitzungen konfigurieren und verwalten können.</block>
   <block id="c31a63fbfe62247245f55d6b792ad9e1" category="doc">Was muss ich sonst noch tun, um iSCSI zu konfigurieren oder zu diagnostizieren?</block>
   <block id="0d97aebcf5431f90d47b2257e5c9ad96" category="paragraph">Die iSCSI-Einstellungen sind nur verfügbar, wenn Ihr Speicher-Array iSCSI unterstützt.</block>
   <block id="28f21ae88e9953ac3d80686cfb49832b" category="section-title">Konfigurieren Sie iSCSI</block>
@@ -2018,7 +2000,6 @@
   <block id="91625380f69a68e475ab8cee4590047c" category="summary">Wenn Sie einen Syslog-Server mit einem TLS-Protokoll konfiguriert haben, kann der Server keine Meldungen empfangen, wenn das Zertifikat aus irgendeinem Grund ungültig wird. Eine Fehlermeldung über das ungültige Zertifikat wird im Auditprotokoll veröffentlicht.</block>
   <block id="a317437bad8d96017fe62563ee2a0910" category="doc">Der Syslog-Server empfängt keine Audit-Protokolle mehr. Was mache ich?</block>
   <block id="4b1c34140fe8671262787b988c9f3e8f" category="paragraph">Um dieses Problem zu lösen, müssen Sie zuerst das Zertifikat für den Syslog-Server reparieren. Wenn eine gültige Zertifikatskette vorhanden ist, gehen Sie zu Menü:Einstellungen[Audit Log &gt; Syslog-Server konfigurieren &gt; Alle testen].</block>
-  <block id="02b62fe21218b105202354e3ea442287" category="summary">Das EF600 Storage-Array kann zwei HICs umfassen – einen externen und einen internen.</block>
   <block id="2e82a1559209519df8d86c81aa9d6198" category="doc">Warum gibt es zwei Parametersätze für einen physischen Port?</block>
   <block id="efae713b5876ddd9d5278ed17ac910d8" category="paragraph">Das EF600 Storage-Array kann zwei HICs umfassen – einen externen und einen internen.</block>
   <block id="8db062752d20414202ee8dcfe8b79167" category="paragraph">In dieser Konfiguration ist die externe HIC mit einer internen HIC-Zusatzkarte verbunden. Jeder physische Port, auf den Sie über die externe HIC zugreifen können, hat einen zugeordneten virtuellen Port von der internen HIC.</block>
@@ -2229,7 +2210,6 @@
   <block id="704d55ba12a7005aa6ef993868a8f431" category="inline-link">Aktivierung der NetApp Lizenz: Aktivierung der Premium-Funktionen von Storage Array</block>
   <block id="6d2c975b755b0fb348e5c42c2a105457" category="paragraph">Sie können auch zu gehen<block ref="b319eaa9e8d4a46d5e744f98248ee14e" category="inline-link-rx"></block> Und geben Sie die erforderlichen Informationen ein, um die Funktion oder das Funktionspaket zu erhalten. (Die Anweisungen auf dieser Website gelten für Premium-Funktionen, nicht für Funktionspakete.)</block>
   <block id="6c894b08730bbe103274f3eb72d36f1c" category="paragraph">Wenn Sie über eine Feature Key-Datei verfügen, können Sie das Premium Feature oder Feature Pack aktivieren.</block>
-  <block id="911b263427c2a3d45b55258250b4f85d" category="summary">Mit System Manager können Sie mithilfe eines OCSP-Servers (Online Certificate Status Protocol) nach widerrufenen Zertifikaten suchen, anstatt Zertifikatsperrlisten (Certificate Revocation Lists, CRLs) hochzuladen.</block>
   <block id="e1338191b3f39c31a394336c2fb52f36" category="doc">Was muss ich über die Überprüfung des Annullierung von Zertifikaten wissen?</block>
   <block id="fb43529f07beddec07e39c4b3a09bd7c" category="paragraph">Zurückwiderrufen Zertifikate sollten nicht mehr vertrauenswürdig sein. Ein Zertifikat kann aus mehreren Gründen widerrufen werden; beispielsweise wenn die Zertifizierungsstelle (CA) das Zertifikat nicht ordnungsgemäß ausgestellt hat, ein privater Schlüssel kompromittiert wurde oder die identifizierte Entität nicht den Richtlinienanforderungen entspricht.</block>
   <block id="0fb970899dcd3fadfd680340b731758b" category="paragraph">Nachdem Sie in System Manager eine Verbindung zu einem OCSP-Server hergestellt haben, führt das Speicherarray eine Widerrufs-Prüfung durch, wenn es eine Verbindung zu einem AutoSupport-Server, einem externen Schlüsselverwaltungsserver (EKMS), einem Lightweight Directory Access Protocol over SSL (LDAPS)-Server oder einem Syslog-Server herstellt. Das Speicher-Array versucht, die Zertifikate dieser Server zu validieren, um sicherzustellen, dass sie nicht widerrufen wurden. Der Server gibt dann für dieses Zertifikat einen Wert von „gut“, „gesperrt“ oder „unbekannt“ zurück. Wenn das Zertifikat widerrufen wird oder das Array nicht den OCSP-Server kontaktieren kann, wird die Verbindung abgelehnt.</block>
@@ -2613,7 +2593,6 @@
   <block id="0d4954781a7bc950b2dc64d1e0fb4af5" category="paragraph">Ein Bestätigungsdialogfeld wird geöffnet.</block>
   <block id="81ef15858bb7abedf63272c9049c38e7" category="list-text">Typ<block ref="099af53f601532dbd31e0ea99ffdeb64" prefix=" " category="inline-code"></block> Klicken Sie im Feld auf *Löschen*.</block>
   <block id="8565e6b419329c3a07476e5519156bbd" category="paragraph">Die ältesten Ereignisse werden von der Seite „Überwachungsprotokoll“ entfernt.</block>
-  <block id="3356c7ecaf79b816577caeabeb922c52" category="summary">In der folgenden Tabelle werden die System Manager Funktionen aufgeführt, mit denen Sie iSER-over-InfiniBand-Sitzungen konfigurieren und managen können.</block>
   <block id="cbe7bc079476646f06b8968551839760" category="doc">Was muss ich noch tun, um iSER over InfiniBand zu konfigurieren oder zu diagnostizieren?</block>
   <block id="34e1ef42c23e055b03535998dc9a10ea" category="paragraph">Die iSER-over-InfiniBand-Einstellungen sind nur verfügbar, wenn der Controller Ihres Storage-Arrays einen iSER-over-InfiniBand-Host-Management-Port umfasst.</block>
   <block id="2bb0ddaccd7b20c12f4ac0ca303c3645" category="paragraph">Konfigurieren Sie iSER-over-InfiniBand-Ports</block>
@@ -2912,7 +2891,6 @@
   <block id="d41d42c868441af509db53f0bf7f0de4" category="list-text">Wenn diese Option aktiviert ist, müssen iSCSI-Initiatoren nicht den Ziel-IQN angeben, um die Controller-Informationen abzurufen.</block>
   <block id="077b0d6e3fa51a5e8f1cf3f1a320fbea" category="list-text">Wenn diese Option deaktiviert ist, werden Ermittlungssitzungen verhindert, es sei denn, der Initiator stellt die Ziel-IQN bereit. Durch das Deaktivieren von nicht benannten Ermittlungssitzungen wird zusätzliche Sicherheit gewährleistet.</block>
   <block id="43512d2d92a553a05db3b96c10f417cf" category="paragraph">Es wird eine Statusleiste angezeigt, da der System Manager versucht, den Controller beim iSNS-Server zu registrieren. Dieser Vorgang kann bis zu fünf Minuten dauern.</block>
-  <block id="6f0a8cf9a1855b3b4a97c825f0dc2353" category="summary">Wenn Sie bestimmte Änderungen in System Manager vornehmen, z. B. das Wechseln der Managementoberfläche oder die Verwendung von SAML für eine Authentifizierungsmethode, sind einige externe Tools und Funktionen möglicherweise von der Verwendung eingeschränkt.</block>
   <block id="6c447bc20946705a74ecd7374bbfb3d9" category="doc">Welche externen Verwaltungstools können von dieser Änderung betroffen sein?</block>
   <block id="f54dbfa752935857fdfec4346eb4879a" category="section-title">Managementoberfläche</block>
   <block id="d4b335926e3028e39907d1a8db8d868b" category="paragraph">Tools, die direkt mit der älteren Managementoberfläche (Symbol), z. B. SANtricity SMI-S Provider oder OnCommand Insight (OCI), kommunizieren, funktionieren nur, wenn die Einstellung für die ältere Managementoberfläche aktiviert ist. Darüber hinaus können Sie keine alten CLI-Befehle verwenden oder Spiegelungsvorgänge durchführen, wenn diese Einstellung deaktiviert ist.</block>
@@ -2924,7 +2902,6 @@
   <block id="40235d10992060cab6e85c0bfcdd66de" category="paragraph">Die Zeile wird zu einem bearbeitbaren Feld.</block>
   <block id="c0d48f16bbf961ebeb5a2ccf7771595c" category="list-text">Bearbeiten Sie die Serveradresse und die UDP-Portnummer und klicken Sie dann auf das Symbol *Speichern* (Häkchen).</block>
   <block id="1224cd55e66bf33c9c36c852dce9afca" category="paragraph">Die aktualisierte Serveradresse wird in der Tabelle angezeigt.</block>
-  <block id="e6f9c55029196b7648834c36ed0e3472" category="summary">Sie sollten die Controller-Uhren im Speicher-Array manuell synchronisieren, wenn Sie bemerken, dass die in System Manager angezeigten Zeitstempel nicht mit den im Management-Client angezeigten Zeitstempeln (dem Computer, der über den Browser auf System Manager zugreift) ausgerichtet sind. Diese Aufgabe ist nur erforderlich, wenn das NTP (Network Time Protocol) in System Manager nicht aktiviert ist.</block>
   <block id="d0e1c48d259a397068da011bc9e48355" category="doc">Wann sollte ich Speicherarray-Uhren synchronisieren?</block>
   <block id="f9a315def8f285bce635c80c1bf7c96d" category="paragraph">Es wird dringend empfohlen, einen NTP-Server zu verwenden, statt die Uhren manuell zu synchronisieren. NTP synchronisiert die Uhren automatisch mit einem externen Server mithilfe von SNTP (Simple Network Time Protocol).</block>
   <block id="f7c2a6279f30ed31e705988dae3b0a7a" category="paragraph">Sie können den Synchronisierungsstatus über das Dialogfeld Speicherarray-Uhren synchronisieren überprüfen, das auf der Seite System verfügbar ist. Wenn die im Dialogfeld angezeigten Zeiten nicht übereinstimmen, führen Sie eine Synchronisierung aus. Sie können dieses Dialogfeld in regelmäßigen Abständen anzeigen, in dem angezeigt wird, ob die Zeitanzeigen der Controller-Uhren auseinander getrieben wurden und nicht mehr synchronisiert sind.</block>
@@ -3029,7 +3006,6 @@
   <block id="78ae98871470907121e38585f8109534" category="doc">Welche Registrierungsmethoden werden für iSCSI automatisch unterstützt?</block>
   <block id="104e995b71d005ce9591fed237349989" category="paragraph">Die iSNS-Methode ermöglicht die iSNS-Erkennung zwischen den Initiatoren (iSCSI-Hosts) und den Zielen (den Controllern). Sie registrieren den Zielcontroller, um dem iSNS-Server den iSCSI-qualifizierten Namen (IQN) und die Portinformationen des Controllers bereitzustellen.</block>
   <block id="86f5e054028caf77425a701d42d4cdfc" category="paragraph">Wenn Sie iSNS nicht konfigurieren, kann der iSCSI-Host den Befehl Ziele senden während einer iSCSI-Erkennungssitzung senden. Als Antwort gibt der Controller die Portinformationen zurück (z. B. Ziel-IQN, Port-IP-Adresse, Listening-Port und Ziel-Portgruppe). Diese Ermittlungsmethode ist nicht erforderlich, wenn Sie iSNS verwenden, da der Host-Initiator die Ziel-IPs vom iSNS-Server abrufen kann.</block>
-  <block id="a6f7affe4dc5be0cadf5dc1e51b4de98" category="summary">In der folgenden Tabelle werden die Funktionen von System Manager aufgeführt, mit denen Sie NVMe over InfiniBand-Sitzungen konfigurieren und managen können.</block>
   <block id="f579a5c2bbaa968b2ae0227f6d61ee8b" category="doc">Was muss ich sonst noch tun, um NVMe over InfiniBand zu konfigurieren oder zu diagnostizieren?</block>
   <block id="f354dc8aa2d80d21ecf46a214b9dc749" category="paragraph">Die NVMe-over-InfiniBand-Einstellungen sind nur verfügbar, wenn der Controller des Storage-Arrays einen NVMe-over-InfiniBand-Port besitzt.</block>
   <block id="a03fb9ed3e23d41ff2ce19057c3e8d50" category="list-text">Wählen Sie *NVMe über InfiniBand-Ports konfigurieren* aus.</block>
@@ -3266,7 +3242,6 @@
   <block id="cbf670d81fafbb8fa880baa729d7866b" category="list-text">Wählen Sie MENU:Einstellen von[Warnungen].</block>
   <block id="ab9def0af719c7b8ed09ed8862c29272" category="list-text">Geben Sie den neuen Community-Namen ein und klicken Sie dann auf *Speichern*. Community-Namen können nur aus druckbaren ASCII-Zeichen bestehen.</block>
   <block id="828a1a17714ff7fbe66b286e64f2e8e2" category="paragraph">Auf der Registerkarte SNMP der Seite Meldungen wird der aktualisierte Community-Name angezeigt.</block>
-  <block id="f2ebc677a5b447998da1a046adcc46f0" category="summary">Der Controller des Speicherarrays organisiert seinen Cache in Blöcke, die Speicherblöcke sind, die 8, 16, 32 KiB groß sein können. Alle Volumes im Storage-System nutzen denselben Cache-Speicherplatz. Daher können die Volumes nur eine Cache-Blockgröße aufweisen.</block>
   <block id="16fa5803900906142586eefc2643c7e8" category="doc">Was ist die Cache-Blockgröße?</block>
   <block id="e49b598ec0d819934f021980302ed36e" category="paragraph">Der Controller des Storage Arrays ordnet den Cache in „Blöcke“ ein. Dabei handelt es sich um Speicherblöcke, die 8, 16 und 32 KiB groß sein können. Alle Volumes im Storage-System nutzen denselben Cache-Speicherplatz. Daher können die Volumes nur eine Cache-Blockgröße aufweisen.</block>
   <block id="3a60a217f8b5d35351731337da2590da" category="paragraph">Applikationen verwenden unterschiedliche Blockgrößen, die wiederum einen Einfluss auf die Storage-Performance haben können. Standardmäßig ist die Blockgröße in System Manager 32 KiB, Sie können den Wert jedoch auf 8, 16, 32 KiBs festlegen. Kleinere Größen sind eine gute Wahl für Dateisysteme oder Datenbankanwendungen. Eine größere Größe ist eine gute Wahl für Applikationen, die eine umfangreiche Datenübertragung, sequenziellen I/O oder eine hohe Bandbreite, wie z. B. Multimedia, erfordern.</block>
@@ -3470,7 +3445,6 @@
   <block id="3449383b5bacd91da2d3b73a5a7942b7" category="paragraph">Selbstsignierte Zertifikate werden von Browsern nicht „`Trusted`“. Jedes Mal, wenn Sie versuchen, eine Verbindung zu einer Website herzustellen, die nur ein selbstsigniertes Zertifikat enthält, wird im Browser eine Warnmeldung angezeigt. Sie müssen in der Warnmeldung auf einen Link klicken, der Ihnen die Nutzung der Website ermöglicht. Dadurch akzeptieren Sie im Wesentlichen das selbstsignierte Zertifikat.</block>
   <block id="fd79e41053b6ceadfc779a8b9d4a6f91" category="section-title">Zertifikate, die für den Schlüsselverwaltungsserver verwendet werden</block>
   <block id="b3a572c68c8d2316ad7a78c20c6a513a" category="paragraph">Wenn Sie einen externen Schlüsselverwaltungsserver mit der Laufwerkssicherheitsfunktion verwenden, können Sie auch Zertifikate zur Authentifizierung zwischen diesem Server und den Controllern verwalten.</block>
-  <block id="a8e2e2e6f94a627dfb39ec0a4930c961" category="summary">Das Fenster Laufwerkseinstellungen enthält Informationen zu den Laufwerksicherheitsattributen. Der Zugriff auf Lesen/Schreiben ist eines der Attribute, das anzeigt, wenn die Daten eines Laufwerks gesperrt wurden.</block>
   <block id="acd4d22fedd48d49e5eaf65df648efcf" category="doc">Zugriff auf Lese-/Schreibzugriffe</block>
   <block id="08e4cde4dec18bcf34720085b135053b" category="paragraph">Das Fenster Laufwerkseinstellungen enthält Informationen zu den Laufwerksicherheitsattributen. „Read/Write Accessible“ ist eines der Attribute, das anzeigt, ob Daten eines Laufwerks gesperrt wurden.</block>
   <block id="5d0ace8d3a4aed739aa36c5cfff181ca" category="paragraph">Um die Attribute der Laufwerksicherheit anzuzeigen, gehen Sie zur Seite Hardware. Wählen Sie ein Laufwerk aus, klicken Sie auf *Einstellungen anzeigen* und dann auf *Weitere Einstellungen anzeigen*. Unten auf der Seite ist der Wert für das Attribut Lesen/Schreiben, auf das zugegriffen werden kann, *Ja*, wenn das Laufwerk entsperrt ist. Der Wert für das Attribut Read/Write, das auf die Zugriffsberechtigung zugegriffen werden kann, lautet *Nein, ungültiger Sicherheitsschlüssel*, wenn das Laufwerk gesperrt ist. Sie können ein sicheres Laufwerk entsperren, indem Sie einen Sicherheitsschlüssel importieren (gehen Sie zu Menü:Einstellungen[System &gt; Sichere Laufwerke entsperren]).</block>
@@ -3480,8 +3454,6 @@
   <block id="88a41b6ced70f1be2e411b53a29392fa" category="list-text">*Mail-Server-Adresse* -- Bearbeiten Sie den vollqualifizierten Domainnamen, die IPv4-Adresse oder die IPv6-Adresse des Mailservers.</block>
   <block id="6865a48db232f8a19e063a76354a04d4" category="list-text">*E-Mail-Absender-Adresse* -- Bearbeiten Sie die E-Mail-Adresse, die als Absender der E-Mail verwendet werden soll. Diese Adresse wird im Feld „von“ der E-Mail-Nachricht angezeigt.</block>
   <block id="9a8bd448e6427ba8ce563f2fefb1bb09" category="list-text">*Kontaktinformationen in E-Mail einfügen* -- um die Kontaktdaten des Absenders zu bearbeiten, wählen Sie diese Option aus, und bearbeiten Sie dann den Namen und die Telefonnummer.</block>
-  <block id="ad7b6f0b788abb4027a97020a34740d3" category="summary">Wenn Sie beim Versuch, sich bei System Manager anzumelden, einen Fehler erhalten, überprüfen Sie die möglichen Ursachen.</block>
-  <block id="b6026ee3aca4cc03c6a1bf51a326a2d1" category="doc">Warum kann ich mich nicht anmelden?</block>
   <block id="b9197487d195b0270141242d84cef938" category="paragraph">Fehler beim Anmelden bei System Manager können aus einem der folgenden Gründe auftreten:</block>
   <block id="d1ac1dfa34b7d51990947002ee6adb2d" category="list-text">Sie haben einen falschen Benutzernamen oder ein falsches Passwort eingegeben.</block>
   <block id="7c5ba619c861a80ef986b7207b06fe08" category="list-text">Sie verfügen über unzureichende Berechtigungen.</block>
@@ -3621,7 +3593,6 @@
   <block id="9de173b839e857924a16f4e207a2ef06" category="list-text">Testen Sie die Verbindung zwischen dem Speicher-Array und dem Schlüsselverwaltungsserver, indem Sie *Testkommunikation* wählen.</block>
   <block id="2a963bb691683f176b25ff2b3d46ff16" category="paragraph">Die Testergebnisse werden im Dialogfeld angezeigt.</block>
   <block id="d2a6fa826a52226935769c2599e14c2c" category="paragraph">Wenn das externe Verschlüsselungsmanagement aktiviert ist, können Sie sicher aktivierte Volume-Gruppen oder -Pools erstellen oder die Sicherheit für vorhandene Volume-Gruppen und -Pools aktivieren.</block>
-  <block id="621f5a5f95be39f6dfd96721467576f1" category="summary">Wenn die Menge der nicht geschriebenen Daten im Cache eine bestimmte Ebene erreicht, schreibt der Controller regelmäßig Cache-Daten auf ein Laufwerk. Dieser Schreibvorgang wird als Spülung bezeichnet.</block>
   <block id="2913e0bdf47a84de45d1801f60bd03ec" category="doc">Was wird Cachespülung?</block>
   <block id="995e13919b56bf032eea1b80b032776e" category="paragraph">Wenn die Menge der nicht geschriebenen Daten im Cache eine bestimmte Ebene erreicht, schreibt der Controller regelmäßig Cache-Daten auf ein Laufwerk. Dieser Schreibvorgang wird als „Spülen“ bezeichnet.</block>
   <block id="b722587f8397c4f92f14a10a2d19a73d" category="paragraph">Der Controller verwendet zwei Algorithmen für das Spülen von Cache: Bedarfsbasiert und altersbasiert. Der Controller verwendet einen bedarfsorientierten Algorithmus, bis die Menge der im Cache gespeicherten Daten unter den Schwellenwert für die Cache-Spülung fällt. Standardmäßig beginnt ein Flush, wenn 80 Prozent des Caches verwendet werden.</block>
@@ -3935,7 +3906,6 @@
   <block id="893d039747f9ffe53427eabe393d5043" category="paragraph">Logical Unit Number (LUN)</block>
   <block id="b3531fd334ed7cc1223e8f766ecec856" category="paragraph">Eine Logical Unit Number (LUN) ist die Nummer, die dem Adressraum zugewiesen ist, den ein Host für den Zugriff auf ein Volume verwendet. Das Volume wird dem Host als Kapazität in Form einer LUN präsentiert.</block>
   <block id="e3fddf5f409d2274a37027003342492c" category="paragraph">Jeder Host verfügt über seinen eigenen LUN-Adressraum. Daher kann dieselbe LUN von unterschiedlichen Hosts für den Zugriff auf verschiedene Volumes verwendet werden.</block>
-  <block id="8dec1efe38001f4587b49af677d444ac" category="summary">Sie können mit der Tastatur alleine durch den System Manager navigieren.</block>
   <block id="f44c2e0b9af76e9f2722f52a08c25e93" category="doc">Was sind die Tastenkombinationen?</block>
   <block id="ae9a8db5f7710f133e0083741b19cfe0" category="section-title">Gesamtnavigation</block>
   <block id="89fd3695e7d8c39822cbec979aa00be3" category="cell">Tastenkombination</block>
@@ -4013,8 +3983,6 @@
   <block id="d03a913486dd32b87b23006b190d17cc" category="list-text">*Optional:* um die Recovery Guru-Informationen in einer Datei zu speichern, klicken Sie auf das Symbol *Speichern*.</block>
   <block id="82ab678a4f5cf6d791ac2b387c308298" category="paragraph">Die Datei wird im Ordner Downloads für Ihren Browser mit dem Namen gespeichert<block ref="3c90bec7788567324b6973cff70624ab" prefix=" " category="inline-code"></block>.</block>
   <block id="a0d8ff3a23302401ce4263ad4c69a5ca" category="list-text">Um die Recovery Guru-Informationen auszudrucken, klicken Sie auf das Symbol *Drucken*.</block>
-  <block id="0cf92f39ed774e6e03907495e7d22aae" category="doc">Was, wenn ich nicht alle meine Gastgeber sehen?</block>
-  <block id="646754995935d94c046a920e98aed63b" category="summary">System Manager unterstützt diese Browser-Versionen.</block>
   <block id="a260cf8ad6a1291b0978385144000e3c" category="doc">Welche Browser werden unterstützt?</block>
   <block id="ef15fd2f45e6bb5ce57587895ba64f93" category="cell">Browser</block>
   <block id="d0a2e00895462c37efe5227c5b94faae" category="cell">Mindestversion</block>
@@ -4039,11 +4007,8 @@
   <block id="2d024c9e4b007de534d2391900f4e105" category="paragraph">Performance-Diagramme, die auf der Startseite und auf der Seite Performance angezeigt werden, zeigen zunächst einen Zeitrahmen von 1 Stunde an. Einstellungen werden im lokalen Speicher des Browsers gespeichert, so dass alle Benutzer ihre eigenen Einstellungen haben können.</block>
   <block id="06e0e9fb81cfd5d44a085b9698e36497" category="list-text">Wählen Sie Menü:Einstellungen[Voreinstellungen festlegen].</block>
   <block id="2ae5775716be49890c9364bab55f2f71" category="list-text">Wählen Sie in der Dropdown-Liste entweder *5 Minuten*, *1 Stunde*, *8 Stunden*, *1 Tag* oder *7 Tage*, Und bestätigen Sie, dass Sie den Vorgang ausführen möchten.</block>
-  <block id="38fdb2afc81bf942bd8dcf4208c5c967" category="summary">Um Konfigurationsaufgaben für AutoSupport-Bereitstellungsmethoden aufzurufen, gehen Sie zu Support &gt; Support Center und klicken Sie anschließend auf die Registerkarte AutoSupport.</block>
   <block id="6d145ddbb4b39d9e20b73518a03bfc4f" category="doc">Wie konfiguriere ich die Bereitstellungsmethode für AutoSupport?</block>
   <block id="cf5b6a8826dfd986bff2c61c9d14df01" category="paragraph">Um Konfigurationsaufgaben für AutoSupport-Bereitstellungsmethoden aufzurufen, gehen Sie zu menu:Support[Support Center] und klicken Sie dann auf die Registerkarte *AutoSupport*.</block>
-  <block id="96830edba2b0d20286d9e38c88f41f0d" category="summary">Wenn im Dialogfeld Hardware überprüfen nicht alle Hardwarekomponenten angezeigt werden, kann dies bedeuten, dass ein Festplatten-Shelf nicht ordnungsgemäß verbunden ist oder dass ein inkompatibles Shelf im Speicher-Array installiert ist.</block>
-  <block id="7a3b89af3b52c55d1f98c18d0f91e932" category="doc">Was, wenn ich nicht alle meine Hardware-Komponenten sehen?</block>
   <block id="9446f92493638ff7ef1aefbdc315bdba" category="paragraph">Wenn im Dialogfeld Hardware überprüfen nicht alle Hardwarekomponenten angezeigt werden, kann dies bedeuten, dass ein Festplatten-Shelf nicht ordnungsgemäß verbunden ist oder dass ein inkompatibles Shelf im Speicher-Array installiert ist.</block>
   <block id="b372dad273bfadf640e39fc6f3e8aff4" category="paragraph">Vergewissern Sie sich, dass alle Laufwerk-Shelfs ordnungsgemäß angeschlossen sind. Wenn Sie unsicher sind, welche Laufwerkseinschübe kompatibel sind, wenden Sie sich an den technischen Support.</block>
   <block id="0da136f3416dc0476dfca971f80e1d79" category="summary">Ob Sie die empfohlene Poolkonfiguration akzeptieren, hängt von einigen Faktoren ab.</block>
@@ -4064,12 +4029,10 @@
   <block id="211ea62875fd76f7fe9c99ae20c9c18e" category="paragraph">1,024^3^ Byte</block>
   <block id="acfba856147d2a51cbb72344a612c283" category="paragraph">TIB</block>
   <block id="eb26b32eb811a0b5952b1efccf0a262f" category="paragraph">1,024^4^ Byte</block>
-  <block id="a4001dd61d7d9d8ea94055a6907f80f9" category="summary">Informationen zu den verfügbaren Anzeigeoptionen finden Sie in den folgenden Hilfethemen.</block>
   <block id="d8a6ba9a5ef05e84deee23f14a28ab46" category="doc">Wo finde ich weitere Informationen zu Anzeigeeinstellungen?</block>
   <block id="dae44576c7b1e063ed5da830d3a4f9f9" category="paragraph">So finden Sie Informationen zu den verfügbaren Anzeigeoptionen:</block>
   <block id="76c87f9a843301e7b52af32c31aff3df" category="list-text">Weitere Informationen zu den Standardeinheiten zum Anzeigen von Kapazitätswerten finden Sie unter <block ref="0eb9a891b9aeec8453c8ad7826b910a5" category="inline-link-macro-rx"></block>.</block>
   <block id="795e6354aa37f36ef941856ce0f794ba" category="list-text">Weitere Informationen zum Standardzeitrahmen zum Anzeigen von Performance-Diagrammen finden Sie unter <block ref="81a33fcf9c8cd6096d2da50ffffa5d5c" category="inline-link-macro-rx"></block>.</block>
-  <block id="4343a245fb510b33d199f2e5fae7a540" category="summary">Wenn Sie Applikationen identifizieren, empfiehlt System Manager automatisch eine Volume-Konfiguration, die den Storage basierend auf dem Applikationstyp optimiert.</block>
   <block id="c56a19e88f72c77c4ab3e3911e485975" category="doc">Wie kann ich anhand der Identifizierung von Applikationen mein Storage-Array managen?</block>
   <block id="e8d880726c1e775bd5008cff6e09ad34" category="paragraph">Die Optimierung von Volumes durch Applikation ermöglicht einen effizienteren Storage-Betrieb. Merkmale wie I/O-Typ, Segmentgröße, Controller-Eigentümer und Lese- und Schreib-Cache sind in der Volume-Konfiguration enthalten. Zusätzlich können Sie Performance-Daten nach Applikation und Workload anzeigen, um Latenz, IOPS und MiB/s der Applikationen und der zugehörigen Workloads zu bewerten.</block>
   <block id="e08bea33d06f32222715e3fdc7fa8842" category="summary">Für einige Applikationen im Netzwerk, z. B. SQL Server oder Exchange, können Sie einen Workload definieren, der den Storage für die jeweilige Applikation optimiert.</block>
@@ -4329,7 +4292,6 @@
   <block id="fed1bfb48ecdf70cf70737c0848247fc" category="paragraph">Das Dialogfeld iSCSI-Ports konfigurieren wird geöffnet.</block>
   <block id="47ce6dfa2d9eab0e7eb4d5b06c9b2479" category="paragraph">Aktivieren Sie die VLAN-Unterstützung (verfügbar durch Klicken auf *Weitere Einstellungen anzeigen*.)</block>
   <block id="6173d078b9110f3bc6b143913e3eb5c3" category="summary">Die Standardmethode für die Netzwerkkonfiguration ist DHCP (Dynamic Host Configuration Protocol). Verwenden Sie diese Option immer, wenn Ihr Netzwerk keinen DHCP-Server hat.</block>
-  <block id="8bc7a4f0cccf7a456c1c5e4160d10f9a" category="doc">Welche Option wähle ich - DHCP- oder manuelle Konfiguration?</block>
   <block id="1e399fb7e0446b765c8a9c5ad88d6886" category="summary">Die Seite Hardware bietet eine grafische Darstellung der physischen Komponenten des Speicherarrays. Hier können Sie den Komponentenstatus prüfen und einige Funktionen ausführen, die mit diesen Komponenten zusammenhängen.</block>
   <block id="ba74e32f98742b3a572dc18f74c22928" category="paragraph">Die Seite Hardware bietet eine grafische Darstellung der physischen Komponenten des Storage Arrays. Hier können Sie den Komponentenstatus prüfen und einige Funktionen ausführen, die mit diesen Komponenten zusammenhängen.</block>
   <block id="27c69af256cdb21fcf9cf6708cce8e21" category="paragraph">Ein Shelf ist eine Komponente, die die Hardware für das Storage-Array enthält (Controller, Strom-/Lüfterbehälter und Laufwerke). Es gibt zwei Arten von Shelfs:</block>
@@ -4373,7 +4335,6 @@
   <block id="95e17b55a697df5f98eeaf98d1d7bfba" category="paragraph">Lernzyklen für Duplex-Controller-Systeme werden gleichzeitig ausgeführt. Für Controller mit Sicherungsstrom aus mehr als einer Batterie oder einer Reihe von Batteriezellen treten nacheinander Lernzyklen auf.</block>
   <block id="e5d8b08ce2d2e30643711535e5d4d23e" category="paragraph">Die Lernzyklen werden in regelmäßigen Abständen, zur gleichen Zeit und am selben Tag der Woche, automatisch gestartet. Das Intervall zwischen den Zyklen wird in Wochen beschrieben.</block>
   <block id="5bb64cee9ae6a71861799ebc22a59e21" category="paragraph">Ein Lernzyklus kann mehrere Stunden in Anspruch nehmen.</block>
-  <block id="71c3af242ccaa8ae2337b0f30267ab9c" category="summary">Wenn Sie die Out-of-Band-Verwaltung verwenden, müssen Sie die Netzwerkkonfiguration für jeden Controller – seine Internet-Protokoll-Adresse (IP), Subnetwerkmaske (Subnetzmaske) und das Gateway – festlegen.</block>
   <block id="2f7ce553a41c640f56c7844a348637c6" category="doc">Warum muss ich die Controller-Netzwerkkonfiguration ändern?</block>
   <block id="5e835244a570835c8ccafca9cbc311c0" category="paragraph">Sie müssen die Netzwerkkonfiguration für jeden Controller festlegen: IP-Adresse (Internet Protocol), Subnetzmaske (Subnetzmaske) und Gateway – wenn Sie Out-of-Band-Management verwenden.</block>
   <block id="c9c710b8643a9328d401dbe32e5382d0" category="paragraph">Sie können die Netzwerkkonfiguration mithilfe eines DHCP-Servers (Dynamic Host Configuration Protocol) festlegen. Wenn Sie keinen DHCP-Server verwenden, müssen Sie die Netzwerkkonfiguration manuell eingeben.</block>
@@ -4547,7 +4508,6 @@
   <block id="5150c53c5fb5cb630edd9134f507f1d0" category="list-text">Klicken Sie auf den Controller, den Sie in den Servicemodus platzieren möchten.</block>
   <block id="bb8925ddb6c2cf24ac3a031157794507" category="list-text">Wählen Sie * im Servicemodus*, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.</block>
   <block id="bbe66c4be17769c6d4513643761ffdc8" category="summary">Aktualisieren Sie den DHCP-Server jederzeit, wenn der Server geändert oder aktualisiert wird, und die für das aktuelle Speicher-Array und das Speicherarray, das Sie verwenden möchten, relevanten DHCP-Informationen wurden geändert.</block>
-  <block id="94788b711f7e65635e443787fd7a4d64" category="doc">Wann sollte ich die Portkonfiguration oder den iSNS-Server vom DHCP-Server aktualisieren?</block>
   <block id="9b0798ee6300bf2c7b2901a68b97fe16" category="paragraph">Aktualisieren Sie insbesondere die Portkonfiguration oder den iSNS-Server vom DHCP-Server, wenn Sie wissen, dass der DHCP-Server unterschiedliche Adressen zugewiesen.</block>
   <block id="ed5f3843db7d9e3eef32391affc01b48" category="paragraph">Die Aktualisierung einer Portkonfiguration ist für alle iSCSI-Verbindungen an diesem Port destruktiv.</block>
   <block id="a3e48a58e140d82f16be4f08bc7cda9e" category="summary">Standardmäßig werden Controller bei beiden Netzwerk-Ports mit aktiviertem DHCP ausgeliefert. Sie können statische IP-Adressen zuweisen, die statischen Standardadressen verwenden oder DHCP-zugewiesene IP-Adressen verwenden. Sie können auch eine statusfreie IPv6-Konfiguration verwenden.</block>
@@ -4814,7 +4774,6 @@
   <block id="02d56cf7754ce16d7ce0193fbca7c90a" category="section-title">Caching</block>
   <block id="ef027b699fa9fe6d512a0623222fb566" category="paragraph">Das Schreib-Caching des Controllers ist immer für SSDs aktiviert. Schreib-Caching verbessert die Performance und verlängert die Lebensdauer der SSDs.</block>
   <block id="34f5a4f20a7618e16e1dc4020526c95e" category="paragraph">Zusätzlich zum Controller-Cache können Sie die SSD-Cache-Funktion implementieren, um die Performance des gesamten Systems zu verbessern. Im SSD-Cache werden die Daten aus Volumes kopiert und auf zwei internen RAID-Volumes (eine pro Controller) gespeichert.</block>
-  <block id="89e384381ed0570ab577beaf9c2e601b" category="summary">Ein Speichersystem im nicht optimalen Modus ist auf einen ungültigen Konfigurationsstatus des Systems zurückzuführen. Trotz dieses Status wird ein normaler I/O-Zugriff auf vorhandene Volumes vollständig unterstützt. System Manager untersagt jedoch einige Operationen.</block>
   <block id="574d0bc88edf7298a47d4aa1e588a886" category="doc">Warum befindet sich das Storage-System im nicht optimalen Modus?</block>
   <block id="4daa9d5961d8e3a7d375183df715a565" category="paragraph">Ein Storage-System könnte aus einem der folgenden Gründe auf eine ungültige Systemkonfiguration überführen:</block>
   <block id="87db37c136e3231b71d5b7b9a2777a60" category="list-text">Der Controller ist nicht mehr konform, möglicherweise weil er einen falschen Untermodell-ID-Code (SMID) hat oder die Obergrenze der Premium-Features überschritten hat.</block>
@@ -5069,7 +5028,6 @@
   <block id="681630979471cade7f20b4b8a7404bf9" category="paragraph">Um einen Host hinzuzufügen, klicken Sie auf das Feld * Associated Hosts* und wählen dann einen Hostnamen aus der Dropdown-Liste aus. Sie können keinen Hostnamen manuell eingeben.</block>
   <block id="78ede6c25309700ce9fb3b9e919bbaff" category="paragraph">Um einen Host zu löschen, klicken Sie neben dem Hostnamen auf *X*.</block>
   <block id="3bfd2179043341e09a4fc1cfd720d6ff" category="summary">Dieser Workload besteht aus einer Gruppe von Volumes, die mithilfe der Befehlszeilenschnittstelle (CLI) erstellt oder von einem anderen Storage Array migriert (importiert/exportiert) wurden. Daher sind die Volumes in diesem Workload keinem applikationsspezifischen Workload zugeordnet, sodass der Workload nicht gelöscht werden kann.</block>
-  <block id="91d388ab2a6ac649e3e39aa1f5535eef" category="doc">Warum kann ich den ausgewählten Workload nicht löschen?</block>
   <block id="5f0c816355e12c030fe4ea91be6c6569" category="summary">In der Regel sollten Sie die Kapazität erhöhen, wenn Sie die Warnung erhalten, dass die reservierte Kapazität in Gefahr ist, voll zu werden. Sie können die reservierte Kapazität nur in Schritten von 8 gib erhöhen.</block>
   <block id="fcad32f135536e10b0655fbae7725986" category="doc">Was muss ich über die Erhöhung der reservierten Kapazität wissen?</block>
   <block id="4a22ea5542b1f5fb521b08d4788c1c3c" category="paragraph">Für Snapshot-Vorgänge beträgt die reservierte Kapazität normalerweise 40 Prozent des Basis-Volumes. Bei asynchronen Spiegelungsvorgängen beträgt die reservierte Kapazität in der Regel 20 Prozent des Basis-Volumes. Verwenden Sie einen höheren Prozentsatz, wenn Sie glauben, dass das Basis-Volume viele Änderungen durchlaufen wird oder wenn die geschätzte Lebensdauer des Kopierservice eines Storage-Objekts sehr lang sein wird.</block>
@@ -5400,7 +5358,6 @@
   <block id="8aaf6fcfecd6296b8804f80ca2e5e8bf" category="paragraph">Sie sollten das Standard-Cluster in besonderen Situationen verwenden, in denen Ihre externe Speicherumgebung geeignet ist, allen Hosts und allen angemeldeten Host-Port-IDs, die mit dem Speicher-Array verbunden sind, Zugriff auf alle Volumes zu gewähren (All-Access-Modus). Ohne die Hosts dem Storage Array oder der Benutzeroberfläche bekannt zu machen.</block>
   <block id="c167b87ad97a717ca19e8302324a61d6" category="paragraph">Zunächst können Sie Volumes über die Befehlszeilenschnittstelle (CLI) nur dem Standard-Cluster zuweisen. Nachdem Sie dem Standard-Cluster jedoch mindestens ein Volume zugewiesen haben, wird diese Einheit (als Standard-Cluster bezeichnet) in der Benutzeroberfläche angezeigt, in der Sie diese Einheit verwalten können.</block>
   <block id="821c127bf32c0d6d510d581384bfdc89" category="summary">Bei der Konfiguration eines Imports für die Remote-Speicherfunktion können Sie feststellen, dass einige Volumes aufgrund von Blockgröße, Kapazität oder Volume-Verfügbarkeit nicht in der Liste der Zielkandidaten angezeigt werden.</block>
-  <block id="d4538d3e9457b3332037137becb531c2" category="doc">Warum sehe ich nicht alle meine Volumen auf meinem Ziel-Array?</block>
   <block id="d57fac41eaeaf7a84370871910e0f6d2" category="paragraph">Um in der Liste angezeigt zu werden, müssen Volumenkandidaten Folgendes haben:</block>
   <block id="69cc506297892e5a506e7d183cf03227" category="list-text">Kapazität, die dem Remote-Volume entspricht oder größer ist.</block>
   <block id="b9152e2a19a205f565f107c733485374" category="list-text">Blockgröße, die mit dem Remote Volume identisch ist.</block>
@@ -5599,7 +5556,6 @@
   <block id="71c479418a6ac59e90760be894a1c19b" category="list-text">512 n -- 512 Bytes nativ.</block>
   <block id="af698fe3cf50263894c667076bb36471" category="list-text">512 e -- 512 Bytes emuliert.</block>
   <block id="4b5189c89fc982fea1db0f47f6bca6ac" category="list-text">4K -- 4,096 Byte.</block>
-  <block id="ef7ae095d51a83215900fcb4d6a8da70" category="summary">Das CPU-Diagramm zeigt die Statistiken zur Verarbeitungskapazität für jeden Controller (Controller A und Controller B) an. CPU ist eine Abkürzung für zentrale Bearbeitungseinheit. Auf der Startseite werden in diesem Diagramm Statistiken für das Speicher-Array angezeigt. Auf der Registerkarte „Physical View“ der Kachel „Performance“ werden in diesem Diagramm Statistiken für das Storage Array und die Laufwerke angezeigt.</block>
   <block id="9af8e70c2152ca5e60b42c567ce33fa9" category="doc">Was zeigt das CPU Diagramm?</block>
   <block id="0df991de7620dc5a14fb4b20b2af6425" category="paragraph">Das CPU-Diagramm zeigt die Statistiken zur Verarbeitungskapazität für jeden Controller (Controller A und Controller B) an. CPU ist eine Abkürzung für _Central Processing Unit_. Auf der Startseite werden in diesem Diagramm Statistiken für das Speicher-Array angezeigt. Auf der Registerkarte „Physical View“ der Kachel „Performance“ werden in diesem Diagramm Statistiken für das Storage Array und die Laufwerke angezeigt.</block>
   <block id="9c34bb79f49d9e803ab6b7dbbd4dfc48" category="paragraph">Das CPU-Diagramm zeigt den Prozentsatz der CPU-Verarbeitungskapazität, die im Vergleich zu Operationen auf dem Array verwendet wird. Selbst wenn keine externe I/O-Vorgänge stattfinden, liegt die CPU-Auslastung in Prozent unter Umständen nicht ganz am Wert des Storage-Betriebssystems. Dies könnte dazu führen, dass Hintergrundvorgänge und das Monitoring durchgeführt werden. Bewegen Sie den Mauszeiger über einen Punkt im Diagramm, um einen Prozentsatz der Verarbeitungsfähigkeit anzuzeigen, die zu diesem Zeitpunkt verwendet werden.</block>
@@ -6168,8 +6124,6 @@
   <block id="c0f8a5a0f808e227f7de655f65f36fcc" category="paragraph">Ein Volume wird nur dann gescannt, wenn die Option zum Scannen von Medien für das Storage-Array und für das entsprechende Volume aktiviert ist. Wenn auch die Redundanzprüfung für das Volume aktiviert ist, werden die Redundanzinformationen auf dem Volume auf Konsistenz mit Daten überprüft, sofern das Volume über Redundanz verfügt. Der Medien-Scan mit Redundanzprüfung ist standardmäßig für jedes Volume bei seiner Erstellung aktiviert.</block>
   <block id="65bf0c097abd3e8c9a07d1e127dd2252" category="paragraph">Wenn während des Scans ein nicht behebbarer Medienfehler auftritt, werden die Daten gegebenenfalls durch Redundanzinformationen repariert. So stehen beispielsweise Informationen zur Redundanz in optimalen RAID 5-Volumes oder in RAID 6-Volumes zur Verfügung, die optimal sind oder nur ein Laufwerk ausfällt. Wenn der nicht behebbare Fehler nicht mithilfe von Redundanzinformationen behoben werden kann, wird der Datenblock zum unlesbaren Sektor-Log hinzugefügt. Das Event-Protokoll wird sowohl korrigierbare als auch nicht korrigierbare Medienfehler gemeldet.</block>
   <block id="215d7237db9520d0fd0c872d5bee51e9" category="paragraph">Wenn die Redundanzprüfung eine Inkonsistenz zwischen Daten und den Redundanzinformationen findet, wird sie dem Ereignisprotokoll gemeldet.</block>
-  <block id="13681cec74a14e3099d5f047f880fe52" category="summary">Snapshot-Volumes mit einem da-fähigen Basis-Volume können nicht einem Host zugewiesen werden, der nicht Data Assurance (da)-fähig ist. Sie müssen das da auf dem Basis-Volume deaktivieren, bevor ein Snapshot-Volume einem Host zugewiesen werden kann, der nicht über da-fähig ist.“</block>
-  <block id="1940b3e4d69d728f35065944d4986514" category="doc">Warum sehe ich nicht alle meine Bände, Hosts oder Host Cluster?</block>
   <block id="f956e41235aa6de0ef7cf1901fa9a994" category="paragraph">Snapshot-Volumes mit einem da-fähigen Basis-Volume können nicht einem Host zugewiesen werden, der nicht Data Assurance (da)-fähig ist. Sie müssen das da auf dem Basisvolume deaktivieren, bevor ein Snapshot-Volume einem Host zugewiesen werden kann, der nicht über da-fähig ist.</block>
   <block id="92fc66f9534d94b4859793638454d6ee" category="paragraph">Beachten Sie die folgenden Richtlinien für den Host, dem Sie das Snapshot-Volume zuweisen:</block>
   <block id="934321fee1dda599a0c218c9b94c7e4e" category="list-text">Ein Host ist nicht da-fähig, wenn er über eine I/O-Schnittstelle, die nicht über da-fähig ist, mit dem Speicher-Array verbunden ist.</block>
@@ -6257,7 +6211,6 @@
   <block id="53f66ecb240148a4f9ef9a137c78f642" category="list-text">Rollback-Volumes stehen sofort für Host-Zugriff zur Verfügung. Sie müssen nicht warten, bis der Rollback-Vorgang abgeschlossen ist.</block>
   <block id="c267ab3645222a6bb1423bcb5220bd12" category="paragraph">Wählen Sie MENU:Startseite[Vorgänge in Bearbeitung anzeigen], um den Fortschritt des Rollback-Vorgangs anzuzeigen.</block>
   <block id="67c5aa7eff0e814c011f8a98dbb17afe" category="paragraph">Ist der Rollback-Vorgang nicht erfolgreich, wird der Vorgang angehalten. Sie können den angehaltenen Vorgang fortsetzen und, falls dieser weiterhin nicht erfolgreich war, das Recovery Guru-Verfahren befolgen, um das Problem zu beheben oder sich an den technischen Support zu wenden.</block>
-  <block id="d5099898b83b97d11acb716788257093" category="summary">Wenn Sie die CHAP-Authentifizierung (Challenge Handshake Authentication Protocol) auf einem iSCSI-Host einrichten, der mit dem Speicher-Array verbunden ist, müssen Sie diesen Initiator-CHAP-Schlüssel für jeden iSCSI-Host erneut eingeben.</block>
   <block id="ecc4042eed7652f76dd879b570b57e11" category="doc">Wie erstelle ich CHAP-Schlüssel?</block>
   <block id="17e37321365996a91a4f11718b601987" category="paragraph">Wenn Sie die CHAP-Authentifizierung (Challenge Handshake Authentication Protocol) auf einem iSCSI-Host einrichten, der mit dem Speicher-Array verbunden ist, müssen Sie diesen Initiator-CHAP-Schlüssel für jeden iSCSI-Host erneut eingeben.</block>
   <block id="3e9a4afaef61b4b0b728e7809d2fe707" category="paragraph">Dazu können Sie den System Manager entweder im Rahmen der Operation „Host erstellen“ oder über die Option „Einstellungen anzeigen/bearbeiten“ verwenden.</block>
@@ -6603,7 +6556,6 @@
   <block id="29012892288d1b7c8f199a16332574cb" category="paragraph">Während des Rollback behält die Snapshot-Funktion alle Snapshot-Images in der Gruppe bei. Zudem kann der Host bei diesem Prozess bei Bedarf auf das Basis-Volume zugreifen.</block>
   <block id="de283d7a9098bcc219049cc5e14d0cc8" category="paragraph">Sobald ein Rollback gestartet wird, wird ein Hintergrundprozess für das Basis-Volume durch die logischen Block-Adressen (LBAs) geleitet und dann werden Copy-on-Write-Daten im Rollback Snapshot Image gefunden, die wiederhergestellt werden sollen. Da auf das Basis-Volume für Lese- und Schreibvorgänge sofort zugegriffen werden kann und alle zuvor geschriebenen Daten sofort zur Verfügung stehen, muss das reservierte Kapazitäts-Volume so groß sein, dass alle Änderungen bei der Verarbeitung des Rollback berücksichtigt werden. Die Datenübertragung wird im Hintergrund fortgesetzt, bis das Rollback abgeschlossen ist.</block>
   <block id="743f86d79c37270dc505fe437c1f1c6c" category="paragraph">^1^ Basis-Volume; ^2^ Snapshot Objekte in einer Gruppe; ^3^ Snapshot-Gruppe reservierte Kapazität</block>
-  <block id="0c6710fd70e8f6dfb7dc7c5ef665fd39" category="summary">Während der Volume-Erstellung werden Sie aufgefordert, Informationen über die Verwendung eines Workloads zu erhalten. Das System erstellt anhand dieser Informationen eine optimale Volume-Konfiguration für Sie, die Sie nach Bedarf bearbeiten können. Optional können Sie diesen Schritt in der Sequenz zur Volume-Erstellung überspringen.</block>
   <block id="b5a3b95a88ff3f89275ca18c4736d4b8" category="doc">Wie wirkt sich mein ausgewählter Workload auf die Erstellung des Volumes aus?</block>
   <block id="313e2c8f533507666d0259a50f56b9d4" category="paragraph">Während der Erstellung eines Volumes werden Sie aufgefordert, Informationen über die Verwendung eines Workloads einzugeben. Das System erstellt anhand dieser Informationen eine optimale Volume-Konfiguration für Sie, die Sie nach Bedarf bearbeiten können. Optional können Sie diesen Schritt in der Sequenz zur Volume-Erstellung überspringen.</block>
   <block id="4f7439eaf72081063362c689d77bf875" category="list-text">*Applikationsspezifisch* -- Wenn Sie Volumes mit einem anwendungsspezifischen Workload erstellen, empfiehlt das System möglicherweise eine optimierte Volume-Konfiguration, um Konflikte zwischen Applikations-Workload I/O und anderem Traffic aus Ihrer Anwendungsinstanz zu minimieren. Volume-Merkmale wie I/O-Typ, Segmentgröße, Controller-Besitz und Lese- und Schreib-Cache werden automatisch für Workloads empfohlen und optimiert, die für die folgenden Applikationstypen erstellt wurden.</block>
@@ -6686,7 +6638,6 @@
   <block id="b679cea13493dd007a51bd286e18d034" category="list-text"><block ref="b679cea13493dd007a51bd286e18d034" category="inline-link-macro-rx"></block></block>
   <block id="0ab6a3f89aec2e3f51bd7aa6a8942049" category="list-text"><block ref="0ab6a3f89aec2e3f51bd7aa6a8942049" category="inline-link-macro-rx"></block></block>
   <block id="726550ac9f3a3c80815ec14c73720e62" category="summary">Sie können die reservierte Kapazität nur um den Betrag reduzieren, den Sie zur Steigerung verwendet haben. Reservierte Kapazität für Mitglieder-Volumes kann nur in umgekehrter Reihenfolge entfernt werden, in der sie hinzugefügt wurden.</block>
-  <block id="a30ad4433e63d5f3d62023d4c6a44eef" category="doc">Warum kann ich nicht eine andere Menge wählen, um zu verringern?</block>
   <block id="54880ee7dd93a5e304efe90ee14790cf" category="paragraph">Sie können die reservierte Kapazität für ein Speicherobjekt nicht verringern, wenn eine der folgenden Bedingungen vorliegt:</block>
   <block id="34210320456ed09a6b7ab3fd7cd515d2" category="list-text">Wenn es sich bei dem Storage-Objekt um ein gespiegeltes Paar-Volume handelt.</block>
   <block id="df7cb77dac6de30904215f9c98b0ee50" category="list-text">Wenn das Storage-Objekt nur ein Volume für die reservierte Kapazität enthält. Das Storage-Objekt muss mindestens zwei Volumes für die reservierte Kapazität enthalten.</block>
@@ -6930,7 +6881,6 @@
   <block id="d0b9f0380ee2928d1b52d88ef2843238" category="list-text">*Host innerhalb eines Host-Clusters* -- Sie können ein Volume einem einzelnen Host zuweisen, der Teil eines Host-Clusters ist. Obwohl der Host Teil eines Host Clusters ist, kann das Volume nur vom individuellen Host und nicht von anderen Hosts im Host-Cluster abgerufen werden.</block>
   <block id="32e02aef1ddb5172026aee4fdd6fe8d2" category="paragraph">Bei Erstellung von Volumes werden automatisch LUNs (Logical Unit Numbers) zugewiesen. Die LUN dient während I/O-Vorgängen als „Adresse“ zwischen dem Host und dem Controller. Sie können LUNs nach der Erstellung des Volume ändern.</block>
   <block id="7268cb410294effa0119ff2325fdb4e1" category="summary">Ein Pool oder eine Volume-Gruppe, in die Sie das Volume nicht verschieben können, wird in der Liste nicht angezeigt.</block>
-  <block id="947a640f864857e2aadd36576eb50dd7" category="doc">Warum sehe ich nicht alle meine Pools und/oder Volume-Gruppen?</block>
   <block id="7840c3770de62c2567d5278bd0c6c7f2" category="paragraph">Pools oder Volume-Gruppen können aus folgenden Gründen nicht ausgewählt werden:</block>
   <block id="766dcd4dd0eb0d198d9b6bf6f1cd4d55" category="list-text">Die Data Assurance (da)-Funktionen eines Pools oder Volume-Gruppen-Pools stimmen nicht überein.</block>
   <block id="d2b9602798b032ae90db857a6de47b23" category="summary">Ein Snapshot-Volume ermöglicht dem Host den Zugriff auf Daten im Snapshot Image. Das Snapshot Volume verfügt über eine eigene reservierte Kapazität, um alle Änderungen am Basis-Volume ohne Beeinträchtigung des ursprünglichen Snapshot Images zu speichern. Snapshot Images sind für Hosts nicht Lese- oder Schreibzugriff möglich. Wenn Sie Snapshot-Daten lesen oder schreiben möchten, erstellen Sie ein Snapshot-Volume und weisen Sie es einem Host zu.</block>
@@ -6939,7 +6889,6 @@
   <block id="20da8208400b5a990539944cd194086e" category="list-text">*Schreibgeschützt* -- Ein Snapshot-Volumen, das als schreibgeschützt erstellt wird, bietet eine Host-Anwendung mit Lesezugriff auf eine Kopie der Daten im Snapshot-Image. Ein schreibgeschütztes Snapshot Volume verwendet keine reservierte Kapazität.</block>
   <block id="9f4122f1e05c4462a444cb6f1ae4e7b3" category="list-text">*Lesen-Schreiben* -- Ein Snapshot-Volumen, das als Lesen-Schreiben erstellt wird, ermöglicht es Ihnen, Änderungen am Snapshot-Volumen zu machen, ohne das referenzierte Snapshot-Bild zu beeinflussen. Ein Lese-Schreib-Snapshot-Volume nutzt die reservierte Kapazität, um diese Änderungen zu speichern. Sie können ein schreibgeschütztes Snapshot-Volumen jederzeit in Lese-/Schreibzugriff konvertieren.</block>
   <block id="3cedad73b5b33c8b0c2b8d5beeed5264" category="summary">Wenn Sie Volumes auf allen verfügbaren nutzbaren Kapazitäten erstellt haben, können Sie die dauerhafte Kapazität möglicherweise nicht erhöhen.</block>
-  <block id="87b59aa4fc1f0d0f5aac88efb29545be" category="doc">Warum kann ich meine Erhaltungskapazität nicht erhöhen?</block>
   <block id="71396049ff539200dbba1007ca0cbc94" category="paragraph">Bei der Festplattenkapazität wird die in einem Pool reservierte Kapazität zur Unterstützung potenzieller Laufwerksausfälle angegeben. Wenn ein Pool erstellt wird, reserviert das System abhängig von der Anzahl der Laufwerke im Pool automatisch eine standardmäßige Anlagenkapazität. Falls Sie Volumes auf allen verfügbaren nutzbaren Kapazitäten erstellt haben, können Sie die dauerhafte Kapazität auch nicht vergrößern, wenn Sie die Kapazität zum Pool erweitern, indem Sie Laufwerke hinzufügen oder Volumes löschen.</block>
   <block id="dc5cedd32cc74ed1dd3f0b48fe2065c3" category="paragraph">Sie können die Erhaltungskapazität aus *Pools &amp; Volume Groups* ändern. Wählen Sie den Pool aus, den Sie bearbeiten möchten. Klicken Sie auf *Einstellungen anzeigen/bearbeiten* und wählen Sie dann die Registerkarte *Einstellungen*.</block>
   <block id="5f1d6366c7ffd99ff1b7c5f05e692914" category="paragraph">Die dauerhafte Kapazität wird als eine Reihe von Laufwerken festgelegt, auch wenn die tatsächliche Festplattenkapazität auf den Laufwerken im Pool verteilt ist.</block>
@@ -7337,7 +7286,6 @@
   <block id="112376f710d60f9bdb057b1f2719cd42" category="list-text">Vor dem Import kann einem Host nicht zugeordnet werden (er kann jedoch nach Abschluss des Imports zugeordnet werden).</block>
   <block id="dc975b3034f82fb41f27bc8c632d1c90" category="list-text">Flash Read (FRC) kann nicht aktiviert sein.</block>
   <block id="c905dd1bfaa4af0602293a252e3f90aa" category="paragraph">System Manager überprüft diese Anforderungen automatisch im Assistenten zum Importieren von Remote Storage. Für die Auswahl des Ziel-Volumes werden nur Volumes angezeigt, die alle Anforderungen erfüllen.</block>
-  <block id="7589dd9416261212740c49b4796da6dc" category="doc">Warum sind diese Volumen nicht mit einem Workload verbunden?</block>
   <block id="612f26578322c586474c073fa672ae80" category="summary">Bei Verwendung der Remote-Storage-Funktion ist zu beachten, dass das Remote-Volume die Quelle ist, aus der die Daten stammen.</block>
   <block id="bb2120ee118b29e62f82a6f61eafd12e" category="doc">Was muss ich über das Remote Volume bei einem Import wissen?</block>
   <block id="9b9e4ceb282b654a236633ed7253a439" category="paragraph">Wenn der Import ausgeführt wird, werden die Daten vom Remote-Volume auf das Ziel-Volume auf dem Ziel-Storage-System übertragen. Diese beiden Volumes müssen eine passende Blockgröße aufweisen.</block>
@@ -7370,7 +7318,6 @@
   <block id="1abeab817542af70bc209c776cdd6e76" category="list-text">Löscht alle Snapshot-Images und Snapshot-Volumes, die dem Mitgliedvolume zugeordnet sind.</block>
   <block id="11ab5aeee61e99fde03817edc885113f" category="list-text">Löscht die dem Mitgliedvolume zugeordnete Snapshot-Gruppe.</block>
   <block id="7b42c8b3b521dcec6d5b87dd642ea258" category="list-text">Das Mitgliedvolume wird nicht anders geändert oder gelöscht.</block>
-  <block id="e3745a2a50cbf1b7fb00b47442215710" category="summary">Bei EF300- und EF600-Systemen kann ein Volume so eingestellt werden, dass es eine Blockgröße von 512 Byte oder 4 KiB unterstützt (auch als „Speichergröße“ bezeichnet). Sie müssen den richtigen Wert während der Volume-Erstellung einstellen. Wenn möglich, schlägt das System den entsprechenden Standardwert vor.</block>
   <block id="fb5754cb7d8aec1ca725e7242d365730" category="doc">Was muss ich über die Anforderungen der Host-Blockgröße wissen?</block>
   <block id="e5e425d8ab1cbef0e34a067f0d88d470" category="paragraph">Bei EF300- und EF600-Systemen kann ein Volume so eingestellt werden, dass es 512 Byte oder 4 KiB-Blockgrößen unterstützt (auch als „Sektorgröße“ bezeichnet). Sie müssen den richtigen Wert während der Volume-Erstellung einstellen. Wenn möglich, schlägt das System den entsprechenden Standardwert vor.</block>
   <block id="f4aa667b118a0a334c4fa467de995fc8" category="paragraph">Bevor Sie die Blockgröße des Volumes festlegen, lesen Sie die folgenden Einschränkungen und Richtlinien.</block>
@@ -7458,7 +7405,6 @@
   <block id="c8b0d6f77564c53a8cdc51c1d6c5958f" category="doc">Was ist die Optimierungskapazität für Volume-Gruppen?</block>
   <block id="c0a67bf1fce0e1596561999d74b67f7e" category="paragraph">Bei Laufwerken, die einer Volume-Gruppe zugeordnet sind, besteht nicht zugewiesene Kapazität aus der freien Kapazität einer Volume-Gruppe (nicht von Volumes genutzte Kapazität) und einem Teil der nutzbaren Kapazität, die als Optimierungskapazität zur Verfügung steht. Die zusätzliche Optimierungskapazität stellt ein Mindestmaß an Optimierungskapazität zur Verfügung, indem die nutzbare Kapazität reduziert wird. Somit ist für die Volume-Erstellung nicht verfügbar.</block>
   <block id="5514312faa66c224925ea7275b91e706" category="paragraph">Wenn eine Volume-Gruppe erstellt wird, wird eine empfohlene Optimierungskapazität generiert, die einen Ausgleich zwischen Performance, Laufwerkverschleiß und verfügbarer Kapazität bietet. Mit dem Schieberegler „zusätzliche Optimierung der Kapazität“ im Dialogfeld „Einstellungen der Volume-Gruppe“ können Sie die Optimierungskapazität einer Volume-Gruppe anpassen. Durch das Anpassen des Schiebereglers erhalten Sie eine bessere Performance und längere Lebensdauer der Laufwerke, und zwar auf Kosten der verfügbaren Kapazität oder zusätzlicher verfügbarer Kapazität, und zwar auf Kosten der Leistung und des Verschleißes der Laufwerke.</block>
-  <block id="1bf2df1e11004707e4b12d626138d3e1" category="summary">System Manager legt Grenzen für die Anzahl der Laufwerke fest, die Sie aus einem Pool entfernen können.</block>
   <block id="dc0cac4fc3fe8b65f61e8ceff382e740" category="doc">Ist die Anzahl der Laufwerke, die ich aus einem Pool entfernen kann, begrenzt?</block>
   <block id="7dbebcef358c2bbdbe834522ce3e1c62" category="list-text">Laufwerke können nicht entfernt werden, wenn nicht genügend freie Kapazität im Pool vorhanden ist, um die Daten von den entfernten Laufwerken zu enthalten, wenn diese Daten auf die übrigen Laufwerke im Pool verteilt werden.</block>
   <block id="913831c401c62c45e925dfafa5eb7b3c" category="list-text">Sie können maximal 60 Laufwerke gleichzeitig entfernen. Wenn Sie mehr als 60 Laufwerke auswählen, ist die Option Laufwerke entfernen deaktiviert. Wenn Sie mehr als 60 Laufwerke entfernen müssen, wiederholen Sie den Vorgang zum Entfernen von Laufwerken.</block>
@@ -7501,7 +7447,6 @@
   <block id="4d34f1097f6c8b9cee28bca8b78bbee9" category="paragraph">Startdatum</block>
   <block id="b7de7e4247d4ab279ef031b7a44c201d" category="paragraph">Enddatum</block>
   <block id="67b2831c49c51561dfa8df3af6a2f541" category="paragraph">Kein Enddatum</block>
-  <block id="bbe3b633d8eb778210704db7ffbfa4f0" category="summary">Kapazitätswarnungen geben an, wann Laufwerke zu einem Pool hinzugefügt werden sollen. Ein Pool benötigt ausreichend freie Kapazität, um Storage-Array-Vorgänge erfolgreich durchzuführen. Um diese Vorgänge zu unterbrechen, können Sie System Manager so konfigurieren, dass Warnungen gesendet werden, wenn die freie Kapazität eines Pools einen bestimmten Prozentsatz erreicht oder überschreitet.</block>
   <block id="b66879679e0a456d131df0dfbdb9fb95" category="doc">Warum sind Kapazitätswarnungen wichtig?</block>
   <block id="36b833228459c54e9caad4c4ebad3dad" category="paragraph">Sie legen diesen Prozentsatz fest, wenn Sie einen Pool mit der Option *Pool Auto-Configuration* oder mit der Option *Pool erstellen* erstellen. Wenn Sie die Option automatisch wählen, bestimmen die Standardeinstellungen automatisch, wann Sie Benachrichtigungen erhalten. Wenn Sie den Pool manuell erstellen möchten, können Sie die Benachrichtigungseinstellungen festlegen oder die Standardeinstellungen übernehmen. Sie können diese Einstellungen später im Menü:Einstellungen[Warnungen] anpassen.</block>
   <block id="2e7fdb8bc40f6a8c60ac3763b5af0b1d" category="paragraph">Wenn die freie Kapazität im Pool den angegebenen Prozentsatz erreicht, wird eine Warnmeldung mit der Methode gesendet, die Sie in der Warnungskonfiguration angegeben haben.</block>
@@ -8139,9 +8084,6 @@
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Was ist neu</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">Überblick</block>
   <block id="be4486cc26282ba3c22a297f83977dbe" category="sidebar">Unterstützte Browser und Betriebssysteme</block>
-  <block id="483a5da192f46e3cfe8391d3ef234fc4" category="sidebar">FAQs</block>
-  <block id="3023481996e16c0dd27c1aeeab45a6c4" category="sidebar">Was, wenn ich nicht alle meine Hardware-Komponenten sehen?</block>
-  <block id="4f77fb4cfa40635f17d21979b6692c01" category="sidebar">Was, wenn ich nicht alle meine Gastgeber sehen?</block>
   <block id="93af28c8ab635f0e7d402547ab0c929d" category="sidebar">Hauptschnittstelle</block>
   <block id="fc78fae55edd9650c6455e58681d3aae" category="sidebar">Anzeigen von Performance-Daten</block>
   <block id="76cf11d4db12b1a45f4d62797b620d5e" category="sidebar">Verwalten von Schnittstelleneinstellungen</block>
@@ -8168,8 +8110,6 @@
   <block id="775b7856e9d6f75f853357d7ff4ad166" category="sidebar">Ändern Sie die Kapazität für das Snapshot Volume</block>
   <block id="167bf1069d8793030ffca242b297158f" category="sidebar">Ändern Sie das Kapazitäts-Konsistenzgruppenvolume</block>
   <block id="ab0c882e76928fd51f394b7b8f148e5f" category="sidebar">Ändern Sie die Kapazitätseinstellungen für das gespiegelte Paar-Volume</block>
-  <block id="d863817ffe646208af65e3a3e7270ce6" category="sidebar">Warum kann ich meine Erhaltungskapazität nicht erhöhen?</block>
-  <block id="4c3ca9b61e82061eb67e30fc2e8f47f4" category="sidebar">Warum kann ich nicht eine andere Menge wählen, um zu verringern?</block>
   <block id="d9e19492064b37fdbc6a3d0c3537588a" category="sidebar">Volumes und Workloads</block>
   <block id="8c49ce915d4f8928c912addef222bcf5" category="sidebar">Datenintegrität und Datensicherheit</block>
   <block id="464608dc32f11d61980f0e0673d96128" category="sidebar">Kapazität für Volumes</block>
@@ -8184,9 +8124,6 @@
   <block id="88f1d0e5fdeb268f6b87119dfcc27f8a" category="sidebar">Arten von Operationen</block>
   <block id="31ef3dfd1e101bf5cf328ec387a10820" category="sidebar">Volumes kopieren</block>
   <block id="41b4e5d916e26c9e0d32ceff6fd589ed" category="sidebar">Managen von Abläufen</block>
-  <block id="0c54aa2356b1ba19bf4386215c1829f9" category="sidebar">Warum sind diese Volumen nicht mit einem Workload verbunden?</block>
-  <block id="c2573d03e7d109e27aea5c826f85d422" category="sidebar">Warum kann ich den ausgewählten Workload nicht löschen?</block>
-  <block id="b9f14f06f609b90bb993424923055760" category="sidebar">Warum sehe ich nicht alle meine Pools und/oder Volume-Gruppen?</block>
   <block id="c6707458876d290c703ac763778d44a0" category="sidebar">Hosts und Host-Cluster</block>
   <block id="cf9a49f1bff1d19decdde49cdbdae169" category="sidebar">Wie Volumes zugewiesen werden</block>
   <block id="b58847c8b7694663db21c4d392c57994" category="sidebar">Konfigurieren Sie den Hostzugriff</block>
@@ -8207,7 +8144,6 @@
   <block id="d96ab2599a9195c08b8737eafd4a8124" category="sidebar">Mitgliedsvolume entfernen</block>
   <block id="170fad9f4be46ada31f8a718075ed709" category="sidebar">Managen von Snapshot Volumes</block>
   <block id="2895ed1d66f9333c01622c7a7d6718eb" category="sidebar">Ändern Sie die Volume-Einstellungen für das Snapshot-Volume</block>
-  <block id="fe82cef3fafe389abaff7e7b8c1c8945" category="sidebar">Warum sehe ich nicht alle meine Bände, Hosts oder Host Cluster?</block>
   <block id="3b63cdc3399c713b7de8016c91a99548" category="sidebar">Spiegelung</block>
   <block id="de3ae7d3b7cb2b60fdd43283060e9bf8" category="sidebar">Asynchrone Konzepte</block>
   <block id="24f47cdbe9ddba774a7cc53e51d9032e" category="sidebar">Workflow</block>
@@ -8229,21 +8165,9 @@
   <block id="54d6c04f64489f12de29a89b83cec315" category="sidebar">Spiegelung deaktivieren</block>
   <block id="190233503c975b7bb1f4c8a3f12aba9d" category="sidebar">Deaktivieren Sie die asynchrone Spiegelung</block>
   <block id="fa7433b43d36d2536077feb9de6b7d42" category="sidebar">Deaktivieren Sie die synchrone Spiegelung</block>
-  <block id="193ce2ae6dab7d8dddd7670ffaffe748" category="sidebar">Async FAQs</block>
-  <block id="2b2aa633a1528095db126f6bb4133c10" category="sidebar">Warum kann ich nicht auf meine gewählte Spiegelfunktion zugreifen?</block>
-  <block id="cb0fd874d43f58b1962d457f8982a032" category="sidebar">Warum kann ich die reservierte Kapazität nicht mit meinem angeforderten Betrag erhöhen?</block>
-  <block id="126f364ce23072dbb9d2813556631beb" category="sidebar">Warum sehe ich nicht alle meine Pools und Volume-Gruppen?</block>
-  <block id="cad9ea95efebc08a02e3d69cfba88444" category="sidebar">Asynchrones Spiegeln - Warum sehe ich nicht alle meine Volumen?</block>
-  <block id="67a0bff1354ca5f23241168ff1af4cd1" category="sidebar">Asynchrones Spiegeln - Warum sehe ich nicht alle Volumen auf dem Remote-Speicher-Array?</block>
-  <block id="a0a778322fcd1480ce0a97557c0bc92c" category="sidebar">Warum sollte ich die IP-Adresse meines Remote-Speicherarrays aktualisieren?</block>
-  <block id="009b56b468834c1fb339ca6fd6e64425" category="sidebar">FAQs synchronisieren</block>
-  <block id="1ee329323d69a8ee4fb262351ae2bb47" category="sidebar">Wie unterscheidet sich die synchrone Spiegelung von der asynchronen Spiegelung?</block>
-  <block id="7948b47687c25969b744a950d4151812" category="sidebar">Synchronous Mirroring - Warum sehe ich nicht alle meine Volumen?</block>
-  <block id="389d3a8b3a5730bc57f7f4d0b4d48716" category="sidebar">Synchrones Spiegeln - Warum sehe ich nicht alle Volumes auf dem Remote Storage Array?</block>
   <block id="c7c7a6a5641f33e348244f9c43010e16" category="sidebar">Anforderungen an die Funktionen</block>
   <block id="551705bacc367306569170afabb0a315" category="sidebar">Volume-Anforderungen</block>
   <block id="85ecd630da2e3481551a9ee213eb40fe" category="sidebar">Remote-Storage managen</block>
-  <block id="2f20f508a18f461954c8d3933827bcb7" category="sidebar">Warum sehe ich nicht alle meine Volumen auf meinem Ziel-Array?</block>
   <block id="34df2039718349f1b8c838bff98ae8fa" category="sidebar">Hardwarekomponenten</block>
   <block id="56fed02afa343607f2a7395908bc7b80" category="sidebar">Management von Shelf-Komponenten</block>
   <block id="ce5355093ef60f32420434b5e225c42c" category="sidebar">Management von Controllern</block>
@@ -8252,13 +8176,7 @@
   <block id="8bd00e89826dbd3fcf80ca108d7a008d" category="sidebar">Verwalten Sie Laufwerke</block>
   <block id="14d1c0c1fae5f4b4b38ac991e0042905" category="sidebar">Ansicht der Laufwerke begrenzen</block>
   <block id="2e2a47fe25c4d9ffccde0d65c889b8ea" category="sidebar">Management von Hot Spares</block>
-  <block id="1e43379f3c402667b130d9a559cbe0a3" category="sidebar">Shelf-FAQs</block>
-  <block id="94edff9f76656b0aa64f11d10564bbec" category="sidebar">Controller-FAQs</block>
-  <block id="985daafeefad88644262898a6ba85dfd" category="sidebar">Welche Option wähle ich - DHCP- oder manuelle Konfiguration?</block>
   <block id="757b19acb02bcb72f8fbe9a7b9c92bb1" category="sidebar">Wann sollte ich die Portkonfiguration aktualisieren?</block>
-  <block id="4a4afac381fa72747a54ec753304470e" category="sidebar">ISCSI FAQs</block>
-  <block id="09ced3685690518398f597bd647eab6c" category="sidebar">NVMe FAQs</block>
-  <block id="d1cc2aa09499f8deaf22b2dc39e8d219" category="sidebar">FAQs zu Laufwerken</block>
   <block id="388e3dfbbe5846b66146f413ab694755" category="sidebar">Verwalten von E-Mail-Warnmeldungen</block>
   <block id="3990901575d796b02953233d3202f8bb" category="sidebar">Konfigurieren Sie Mail-Server und Empfänger</block>
   <block id="48d5d00e65f9a1cc7aff26da6a5c5c0a" category="sidebar">E-Mail-Adressen bearbeiten</block>
@@ -8294,7 +8212,6 @@
   <block id="dc4efa2585d1662804b20a74b4acc7a4" category="sidebar">Verwenden Sie SAML</block>
   <block id="74f708399a048352be94abc06102bfb9" category="sidebar">Verwenden Sie Access Tokens</block>
   <block id="8377583907b5858273c3fcf855ae2800" category="sidebar">Syslog managen</block>
-  <block id="4db7a3bf8dbbf2993ed6610cb2fb4fe0" category="sidebar">Warum kann ich mich nicht anmelden?</block>
   <block id="ab70a9bf5b25c1b7ecd7244eef9bf625" category="sidebar">Zertifikate verwenden</block>
   <block id="573efefcaa393f8bfd3572c46a082bf8" category="sidebar">Anzeigen von importierten Zertifikatinformationen</block>
   <block id="085f430b0f579d2ec7d45759dea27e67" category="sidebar">Verwenden Sie CA-signierte Zertifikate für den Authentifizierungsserver</block>
@@ -8311,7 +8228,6 @@
   <block id="a0a3f20685c328a00474bb00b7d35fd5" category="sidebar">Entfernen Sie Arrays aus der Ansicht</block>
   <block id="15fc53829e4c837f62e15647e031089c" category="sidebar">Einstellungen werden importiert</block>
   <block id="360bd2c3afed58c551a15d240c5d8ae4" category="sidebar">Verwenden Sie Batch-Importe</block>
-  <block id="c662a0230db643f7b489f1a5fd4c7738" category="sidebar">Warum sehe ich nicht all meine Storage Arrays?</block>
   <block id="7fa2f2323087b4b331f294a3e571ac48" category="sidebar">Array-Gruppen</block>
   <block id="5004fa93538efdf6507cbefc3275b79e" category="sidebar">Gruppen konfigurieren</block>
   <block id="07a90270ebf66da177e03281873bb626" category="sidebar">Entfernen Sie Arrays aus der Gruppe</block>
@@ -8319,8 +8235,6 @@
   <block id="70056e37f8376098bb31cd0e5570d51b" category="sidebar">Gruppe umbenennen</block>
   <block id="240f9686efc9548a1d556d924c143924" category="sidebar">Upgrades</block>
   <block id="ecaa37294fe56af2542fb9595f4d7c00" category="sidebar">Konfigurieren Sie die Spiegelung</block>
-  <block id="a4228446d8c9251ebd134b25ea2f2a9d" category="sidebar">Warum sehe ich nicht alle meine Bände?</block>
-  <block id="4a8aaebc73b69b1dce072d72f2645856" category="sidebar">Warum sehe ich nicht alle Volumes auf dem Remote-Speicher-Array?</block>
   <block id="bc864bcc140c5518082e93d37b396baf" category="sidebar">Verwenden Sie Management-Host-Zertifikate</block>
   <block id="0e695c0c9242624f235546e43dde2e16" category="sidebar">Verwenden Sie Array-Zertifikate</block>
   <block id="951d3fc54a28f9f46798897467d96a5b" category="sidebar">Verwalten von Zertifikaten</block>
@@ -8626,7 +8540,6 @@
   <block id="c1ef781eafa3554e3ab8e8623b4e5a71" category="paragraph">Synchrones Spiegeln ist auf dem Storage-System EF600/EF600C oder EF300/EF300C nicht verfügbar.</block>
   <block id="5a7b6df104eae510976ebef6d294bbc2" category="paragraph">Diese Funktion ist für die synchrone Spiegelung auf dem Storage-System EF600/EF600C oder EF300/EF300C nicht verfügbar.</block>
   <block id="b9e88ad6836c4f5d794f382de8f1f2c9" category="admonition">DULBE wird derzeit nicht auf EF300C- oder EF600C-Speicherarrays unterstützt.</block>
-  <block id="4b8add2dc8ff6506b02ecbd9ce368929" category="summary">Die Ressourcenbereitstellung ist eine Funktion, die in den Speicherarrays EF300, EF300C, EF600 und EF600C verfügbar ist. Damit können Volumes sofort ohne Hintergrundinitialisierung verwendet werden.</block>
   <block id="90992e53bcf79cefee988e4147be01b6" category="paragraph">Für E4000-, EF600-/EF600C- oder EF300/EF300C-Speichersysteme ist das bandinterne Management mit dem Access Volume nicht verfügbar.</block>
   <block id="16ebf1283fdb23275c2211d15a82e2cd" category="list-text">Thin Volumes sind für das EF600/EF600C oder EF300/EF300C Storage-System nicht verfügbar.</block>
   <block id="1ac9fe85275ed11ba0a95e5559f5af80" category="paragraph">Zeigt an, ob ein Schubladenschutz verfügbar ist, der nur zur Verfügung steht, wenn Sie ein Laufwerk-Shelf mit Schubladen verwenden. Der Schutz vor Schubladenverlust garantiert den Zugriff auf die Daten auf den Volumes in einer Volume-Gruppe, wenn ein vollständiger Verlust der Kommunikation mit einer einzelnen Schublade in einem Festplatten-Shelf auftritt.</block>
@@ -9050,4 +8963,75 @@
   <block id="a10a0fef1a8b50d16443976fedae1e16" category="section-title">Neue Funktionen in Version 11.90R3</block>
   <block id="c78544d43a065eb825edb9e16bf0e9ad" category="paragraph">SANtricity OS-Unterstützung für IOM12C und DCM3</block>
   <block id="94d90ce4793f949687897ec062d97b9c" category="paragraph">Unterstützung für IOM12C- und DCM3-SAS-3-Shelves ist ab der Controller-Firmware 11.90R3 verfügbar. Die Shelves IOM12C und DCM3 ersetzen die Shelves IOM12B und DCM2.</block>
+  <block id="b1151aae9531d2f5e85d085e8878cea6" category="summary">Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine Frage suchen.</block>
+  <block id="5453a26dc9b68778117a8311e75f8fbe" category="doc">Speichercontroller-FAQ für SANtricity System Manager</block>
+  <block id="d51277c947b0f0f0862c6f10192a1cc0" category="section-title">Was soll ich wählen – DHCP oder manuelle Konfiguration?</block>
+  <block id="ad76bfb46a270b4305ffd6738882677c" category="doc">FAQ zum Speicherregal für SANtricity System Manager</block>
+  <block id="19b5339279f2639b668d0bbe4f8b70a0" category="doc">FAQ zur Verwaltungsschnittstelle für SANtricity System Manager</block>
+  <block id="8587ba2a3667d610eb60afc44dad1723" category="doc">FAQ zur Speichersystemeinrichtung für SANtricity System Manager</block>
+  <block id="a8d4770377b5b26815bf4624787b5cd2" category="section-title">Was ist, wenn ich nicht alle meine Hardwarekomponenten sehe?</block>
+  <block id="93553c3f530e96d0430861eab073fd9f" category="section-title">Was passiert, wenn ich nicht alle meine Hosts sehe?</block>
+  <block id="ec650621f1b4e4a52be9f5b5b3aa032e" category="doc">FAQ zur asynchronen Spiegelung für SANtricity System Manager</block>
+  <block id="9f823e5a9e8f9ed671d7256745222141" category="section-title">Warum kann ich nicht auf die von mir gewählte Spiegelungsfunktion zugreifen?</block>
+  <block id="056a12680d6f0ea9fbc5b9cd0dcbbbc5" category="section-title">Warum kann ich die reservierte Kapazität nicht um die von mir angeforderte Menge erhöhen?</block>
+  <block id="627802c3caee37379a9c399ab704765d" category="section-title">Warum werden mir nicht alle meine Pools und Volume-Gruppen angezeigt?</block>
+  <block id="c61a1154889025d1e7a947414ac8a162" category="section-title">Asynchrone Spiegelung – Warum sehe ich nicht alle meine Volumes?</block>
+  <block id="a7d50b4837966a5a224cf9d31b8f4a86" category="section-title">Asynchrone Spiegelung – Warum werden mir nicht alle Volumes auf dem Remote-Speicher-Array angezeigt?</block>
+  <block id="2aea594a4c81b0946e1265a4de81a100" category="section-title">Warum sollte ich die IP-Adresse meines Remote-Speicher-Arrays aktualisieren?</block>
+  <block id="e49efc0cfc4c7b160fd4cdfba13d0678" category="doc">FAQ zur Synchronisierungsspiegelung für SANtricity System Manager</block>
+  <block id="3cf88cf8f3807ba93b6284bc7f35241d" category="section-title">Synchrone Spiegelung – Warum sehe ich nicht alle meine Volumes?</block>
+  <block id="127409013236f2ee4d2fedecdfdf9696" category="section-title">Synchrone Spiegelung – Warum werden mir nicht alle Volumes auf dem Remote-Speicher-Array angezeigt?</block>
+  <block id="474e6194420a15da8f116ca1d03c1089" category="doc">Erfahren Sie mehr über Cache-Einstellungen und Leistung in der SANtricity-Software</block>
+  <block id="07a19ca9ce814c05660c931367a1daec" category="doc">FAQ zu CA-signierten und selbstsignierten Zertifikaten für SANtricity System Manager</block>
+  <block id="07898edb5d614ff7156be4ecdb0b0a5f" category="doc">FAQ zum iSCSI-Protokoll für SANtricity System Manager</block>
+  <block id="3da657434c2b0361e0108af6bf025792" category="doc">Häufig gestellte Fragen zum NVMe-Protokoll für SANtricity System Manager</block>
+  <block id="8a75fb951da264587a6600ccf7d93fea" category="doc">Häufig gestellte Fragen zur Speicherlaufwerksicherheit für SANtricity System Manager</block>
+  <block id="7e2b30503c6c69f7a65b4e868fd7b1d7" category="doc">FAQ zu Speichersystemwarnungen für SANtricity System Manager</block>
+  <block id="fe7c1bb53377d143fbbd6019354e2c03" category="doc">FAQ zur Benutzerzugriffsverwaltung für SANtricity System Manager</block>
+  <block id="0307aefebec2be18a5e72767abfab6ea" category="section-title">Warum kann ich mich nicht anmelden?</block>
+  <block id="8eb7d61e639ed5ef84ecef34c3ef9a90" category="doc">Erfahren Sie mehr über Basisvolumes, reservierte Kapazität und Snapshot-Gruppen im SANtricity System Manager</block>
+  <block id="93ff2ee6ca3ebff76b39eee6c837a05c" category="doc">FAQ zu Pools und Volumegruppen für SANtricity System Manager</block>
+  <block id="95480a662f5c9e477922a7a2b403bb11" category="section-title">Warum kann ich meine Konservierungskapazität nicht erhöhen?</block>
+  <block id="e162d80660b94f1ba0e8a0ed9b5db00c" category="section-title">Warum kann ich keinen anderen Betrag auswählen, um den ich verringern möchte?</block>
+  <block id="e28db378e03cfeaba6b656dc0456b190" category="doc">Remote-Speicher-FAQ für SANtricity System Manager</block>
+  <block id="24ad5296fefcace9e0149956fd904cf2" category="section-title">Warum werden mir nicht alle meine Volumes auf meinem Ziel-Array angezeigt?</block>
+  <block id="5fcdf917efa28e8116867e315322b0e1" category="doc">Snapshots FAQ für SANtricity System Manager</block>
+  <block id="2ba6fbda3398bad4861f032c2009b0d3" category="section-title">Warum werden mir nicht alle meine Volumes, Hosts oder Hostcluster angezeigt?</block>
+  <block id="9421c472440f982cec67bc525c3c00a6" category="doc">FAQ zu Speicherarrayeinstellungen für SANtricity System Manager</block>
+  <block id="28f98bb6051d213c5956bab8fa693f88" category="doc">FAQ zu Speicherlaufwerken für SANtricity System Manager</block>
+  <block id="570b09742a6d84e577f1d00cdf68e38b" category="doc">FAQ zu Hostsystemen und Hostclustern für SANtricity System Manager</block>
+  <block id="4538489334cc71ec5bc63f18418b8b5f" category="doc">FAQ zu Volumen und Arbeitslasten für SANtricity System Manager</block>
+  <block id="38457c0d7698b046b04ff29966984237" category="section-title">Warum sind diese Volumes keiner Arbeitslast zugeordnet?</block>
+  <block id="38134686fcc012c564ba793d762895ce" category="section-title">Warum kann ich die ausgewählte Arbeitslast nicht löschen?</block>
+  <block id="73158d5edc74cd6d3fceaaadb9c001b6" category="section-title">Warum werden mir nicht alle meine Pools und/oder Volume-Gruppen angezeigt?</block>
+  <block id="9e5fa4fee4e2e323cc46591b9c569f80" category="doc">AutoSupport FAQ für SANtricity System Manager</block>
+  <block id="17b506511a9d92bc797c9a616e848618" category="doc">FAQ zur Benutzerzugriffsverwaltung für SANtricity Unified Manager</block>
+  <block id="46bbf70058c38d16be148ec731c4e2ff" category="doc">FAQ zu Importeinstellungen für SANtricity Unified Manager</block>
+  <block id="9265078167e4a547bcd07baa0fcd2c28" category="section-title">Warum werden mir nicht alle meine Speicher-Arrays angezeigt?</block>
+  <block id="e4dd224c723eab5d0e1fc1ba66660335" category="doc">Häufig gestellte Fragen zur Speicherspiegelung für SANtricity Unified Manager</block>
+  <block id="a09f907840e3debc354b7bf16928d0a9" category="section-title">Warum sehe ich nicht alle meine Bände?</block>
+  <block id="59811ac2b31c7c14c4f6c5a0fe557df0" category="section-title">Warum werden mir nicht alle Volumes auf dem Remote-Speicher-Array angezeigt?</block>
+  <block id="6aa27cc5d4cf944c8ace1bc2cb4b986d" category="doc">Importieren von Verzeichnisdiensteinstellungen in SANtricity Unified Manager</block>
+  <block id="af12fbdbeeb22bd98af40e694f9dbeed" category="sidebar">Häufig gestellte Fragen zur Einrichtung des Speichersystems</block>
+  <block id="e880fbedb2e8a12c7abef7ffeecb5c8a" category="sidebar">Häufig gestellte Fragen zur Verwaltungsschnittstelle</block>
+  <block id="85f37ae864bd5c5fb734f986c131ea41" category="sidebar">Häufig gestellte Fragen zu Pools und Volumegruppen</block>
+  <block id="c12ad1150304879fdf3619ff461b010f" category="sidebar">Häufig gestellte Fragen zu Volumen und Arbeitslasten</block>
+  <block id="e3f88e92f689c60cd6dd33d9bdf1781f" category="sidebar">Häufig gestellte Fragen zu Hostsystemen und Hostclustern</block>
+  <block id="7b79c68474c127986d80027dea958b67" category="sidebar">Snapshots – Häufig gestellte Fragen</block>
+  <block id="f3c1090e458eacb45d91144e5e8843dc" category="sidebar">Häufig gestellte Fragen zur asynchronen Spiegelung</block>
+  <block id="e812bdafa8421a172fa5f89167c98d11" category="sidebar">Häufig gestellte Fragen zur Synchronisierungsspiegelung</block>
+  <block id="764c366408531519068ab72822b9d70b" category="sidebar">Häufig gestellte Fragen zur Remotespeicherung</block>
+  <block id="f5500aa15342ea488f2a3948a19f8a86" category="sidebar">Lagerregal FAQ</block>
+  <block id="efaedbc5c0388f05f894ade9a9b051be" category="sidebar">FAQ des Storage Controller</block>
+  <block id="423cac0d8ecb8cbe666a15aa9d177028" category="sidebar">Häufig gestellte Fragen zum iSCSI-Protokoll</block>
+  <block id="57a622d8a0a7d13e86e3514bb3b4e9ea" category="sidebar">Häufig gestellte Fragen zum NVMe-Protokoll</block>
+  <block id="7848d82d7d98c22e1395a7e63f5fab9b" category="sidebar">Häufig gestellte Fragen zu Speicherlaufwerken</block>
+  <block id="dab141492d4f7a76f831015c28747d7e" category="sidebar">Häufig gestellte Fragen zu Speichersystemwarnungen</block>
+  <block id="4da5cbb04d7ab418ddaf55ae50d07680" category="sidebar">Häufig gestellte Fragen zu Speicherarrayeinstellungen</block>
+  <block id="f39e9ea930d05db1a69c96b879497b38" category="sidebar">Häufig gestellte Fragen zur Sicherheit von Speicherlaufwerken</block>
+  <block id="fe28cf5dc2afdedb53feb43fe61499e7" category="sidebar">Häufig gestellte Fragen zur Benutzerzugriffsverwaltung</block>
+  <block id="2a2d5026981871719d2bae7c3420cf9e" category="sidebar">Zertifikate FAQ</block>
+  <block id="f9e9bc191db345171d0de707013016a3" category="sidebar">AutoSupport FAQ</block>
+  <block id="3af089d2853adca01b3ba738ac9987ff" category="sidebar">Häufig gestellte Fragen zu Importeinstellungen</block>
+  <block id="e35e805c872d89cfd87942f59e41eb2d" category="sidebar">Häufig gestellte Fragen zur Speicherspiegelung</block>
 </blocks>
