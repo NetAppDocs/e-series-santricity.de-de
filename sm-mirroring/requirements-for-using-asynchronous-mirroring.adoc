@@ -85,6 +85,11 @@ Die asynchrone Spiegelung nutzt die Host-seitigen I/O-Ports des Storage-Arrays, 
 
 
 
+[NOTE]
+====
+E4000 unterstützt keine asynchrone Spiegelung bei Verwendung des iSCSI-Protokolls.
+
+====
 
 
 == Kandidaten für gespiegelte Volumes
