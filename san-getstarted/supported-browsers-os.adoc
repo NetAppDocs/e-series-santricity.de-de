@@ -70,34 +70,34 @@ Die folgenden Betriebssysteme und Versionen werden unterstützt.
  a| 
 Red hat Enterprise Linux (RHEL)
  a| 
-7.x, 8.x / 64-Bit
+8.x (SP8)、9.x (SP2)/64 位
 
 
 
  a| 
 SUSE Linux Enterprise Server (SLES)
  a| 
-12.x, 15.x / 64-Bit
+12.x (SP4、SP5)、15.x (SP4、SP5)/64 位
 
 
 
  a| 
 Oracle Linux (OL)
  a| 
-7.x, 8.x / 64-Bit
+8.x (U8)、9.x (U2)/64 位
 
 
 
  a| 
 Windows Server
  a| 
-2016, 2019, 2022/64-Bit
+2019、2022、2025/64位
 
 
 
  a| 
 Ubuntu
  a| 
-18.04, 20.04/64-Bit
+20.04、22.04/64位
 
 |===
