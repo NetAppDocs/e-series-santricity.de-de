@@ -57,6 +57,10 @@ Die Spiegelung über eine iSCSI-Schnittstelle (nur asynchron) erfordert Folgende
 
 * Im Gegensatz zu FC erfordert iSCSI keinen dedizierten Port. Wenn Sie asynchrone Spiegelung in iSCSI-Umgebungen einsetzen, müssen Sie keine der Front-End iSCSI-Ports des Storage-Arrays für die asynchrone Spiegelung verwenden. Diese Ports werden sowohl für asynchronen Spiegeldatenverkehr als auch für Array-I/O-Verbindungen gemeinsam genutzt.
 * Der Controller verfügt über eine Liste der Remote-Speichersysteme, mit denen der iSCSI-Initiator versucht, eine Sitzung einzurichten. Der erste Port, der eine iSCSI-Verbindung erfolgreich herstellt, wird für die anschließende Kommunikation mit dem Remote-Speicher-Array verwendet. Wenn die Kommunikation fehlschlägt, wird eine neue Sitzung unter Verwendung aller verfügbaren Ports versucht.
++
+
+NOTE: E4000-Controller unterstützen kein iSCSI-Mirroring.
+
 * ISCSI-Ports werden auf Array-Ebene für Port konfiguriert. Intercontroller Kommunikation für Konfigurationsnachrichten und Datentransfer verwendet die globalen Einstellungen, einschließlich Einstellungen für:
 +
 ** VLAN: Sowohl lokale als auch Remote-Systeme müssen die gleiche VLAN-Einstellung für die Kommunikation haben
@@ -92,6 +96,7 @@ NOTE: Bei EF600- und EF300-Controllern müssen die primären und sekundären Vol
 ** Wenn das primäre Volume keine Laufwerkssicherheit verwendet, darf das sekundäre Volume keine Laufwerkssicherheit verwenden.
 
 
+* Auf primären und sekundären Volumes darf die Ressourcenpartitionierung nicht aktiviert sein.
 
 
 

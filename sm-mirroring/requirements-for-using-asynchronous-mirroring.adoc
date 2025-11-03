@@ -109,6 +109,7 @@ NOTE: Bei EF600- und EF300-Controllern müssen die primären und sekundären Vol
 
 
 * Primäre und sekundäre Volumes müssen denselben Laufwerkstyp verwenden. Die Kombination von NVMe und SAS-Laufwerken zwischen primären und sekundären Volumes wird nicht unterstützt.
+* Auf primären und sekundären Volumes darf die Ressourcenpartitionierung nicht aktiviert sein.
 
 
 
