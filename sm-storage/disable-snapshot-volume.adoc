@@ -30,7 +30,7 @@ Wenn das Snapshot-Volumen oder das Snapshot-Snapshot-Volumen einer Snapshot-Cons
 
 ====
 .Schritte
-. Wählen Sie Menü:Storage[Snapshots].
+. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
 . Wählen Sie die Registerkarte *Snapshot Volumes* aus.
 +
 System Manager zeigt alle Snapshot Volumes an, die dem Speicher-Array zugeordnet sind.

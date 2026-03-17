@@ -32,7 +32,7 @@ Die iSCSI-Einstellungen und -Funktionen werden nur auf der Seite Einstellungen a
 
 ====
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
 . Klicken Sie unter *iSCSI-Einstellungen* auf *Zielermittlungs-Einstellungen anzeigen/bearbeiten*.
 +
 Das Dialogfeld Einstellungen für die Zielerkennung wird angezeigt. Unter dem Feld *iSNS-Server aktivieren*... wird im Dialogfeld angezeigt, ob der Controller bereits registriert ist.

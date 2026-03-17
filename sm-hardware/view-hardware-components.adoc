@@ -14,7 +14,7 @@ summary: Die Seite Hardware bietet Sortier- und Filterfunktionen, die die Suche 
 Die Seite Hardware bietet Sortier- und Filterfunktionen, die die Suche nach Komponenten erleichtern.
 
 .Schritte
-. Wählen Sie *Hardware*.
+. Wählen Sie im linken Bereich *Hardware* aus.
 . Verwenden Sie die in der folgenden Tabelle beschriebenen Funktionen, um Hardwarekomponenten anzuzeigen.
 
 

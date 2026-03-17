@@ -31,7 +31,7 @@ Wählen Sie Mitglieder aus, um eine Sammlung von Volumes anzugeben, die die Snap
 Die Mitgliedvolumes müssen optimal sein.
 
 .Schritte
-. Wählen Sie Menü:Storage[Snapshots].
+. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
 . Klicken Sie auf die Registerkarte *Snapshot Consistency Groups*.
 . Wählen Sie Menü:Erstellen[Snapshot Konsistenzgruppe].
 +

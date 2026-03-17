@@ -27,8 +27,8 @@ Wenn Sie die Laufwerkssicherheit verwenden möchten, wählen Sie einen Pool oder
 Nach Aktivierung der Sicherheitskontrolle können Sie sie nur entfernen, indem Sie den Pool oder die Volume-Gruppe löschen und dann die Laufwerke löschen.
 
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
-. Wählen Sie den Pool oder die Volume-Gruppe aus, auf dem Sie die Sicherheit aktivieren möchten, und klicken Sie dann auf Menü:Mehr[Sicherheit aktivieren].
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
+. Wählen Sie den Pool oder die Volume-Gruppe aus, für die Sie die Sicherheit aktivieren möchten, und klicken Sie dann auf menu:ellipsis icon[Enable security].
 +
 Das Dialogfeld Sicherheit bestätigen wird angezeigt.
 

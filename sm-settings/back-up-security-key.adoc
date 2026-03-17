@@ -18,7 +18,7 @@ Nach dem Erstellen oder Ändern eines Sicherheitsschlüssels können Sie eine Si
 In dieser Aufgabe wird beschrieben, wie Sie einen zuvor erstellten Sicherheitsschlüssel sichern. Während dieses Verfahrens erstellen Sie einen neuen Passphrase für das Backup. Diese Passphrase muss nicht mit der Passphrase übereinstimmen, die bei der Erstellung des ursprünglichen Schlüssels oder der letzten Änderung verwendet wurde. Der Passphrase wird nur auf das Backup angewendet, das Sie erstellen.
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
 . Wählen Sie unter * Security Key Management* die Option *Back Up Key*.
 +
 Das Dialogfeld Sicherheitsschlüssel sichern wird geöffnet.

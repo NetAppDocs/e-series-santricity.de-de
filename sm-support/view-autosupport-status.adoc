@@ -15,7 +15,7 @@ summary: Auf der Seite AutoSupport erfahren Sie, ob die AutoSupport-Funktion und
 Auf der Seite AutoSupport erfahren Sie, ob die AutoSupport-Funktion und die einzelnen AutoSupport-Funktionen derzeit aktiviert sind.
 
 .Schritte
-. Wählen Sie MENU:Support[Support Center > AutoSupport].
+. Wählen Sie im linken Bereich Menü:Support[Support Center > AutoSupport] Tab.
 . Sehen Sie sich rechts auf der Seite unterhalb der Registerkarten an, um zu erfahren, ob die AutoSupport-Basisfunktion aktiviert ist.
 . Bewegen Sie den Mauszeiger über das Fragezeichen, um zu sehen, ob einzelne AutoSupport-Funktionen aktiviert sind.
 

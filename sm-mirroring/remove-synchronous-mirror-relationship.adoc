@@ -22,7 +22,7 @@ Sie können auch ein gespiegeltes Paar entfernen, um den Status eines verwaisten
 
 
 .Schritte
-. Wählen Sie Menü:Speicher[Synchronous Mirroring].
+. Wählen Sie im linken Bereich Menü:Storage[Synchronous Mirroring].
 . Wählen Sie das gespiegelte Paar aus, das Sie entfernen möchten, und wählen Sie dann das Menü:Sonstige Aufgaben[Entfernen].
 +
 Das Dialogfeld Mirror-Beziehung entfernen wird angezeigt.

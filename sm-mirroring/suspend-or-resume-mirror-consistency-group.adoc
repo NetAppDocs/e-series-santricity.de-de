@@ -20,7 +20,7 @@ Durch das Anhalten und Wiederaufnehmen der Synchronisierung mit Gruppen werden d
 Der Status der SpiegelungsConsistency Group und die gespiegelten Paare bleiben ausgesetzt, bis Sie die Option Resume verwenden, um die Synchronisationstätigkeit wieder aufzunehmen.
 
 .Schritte
-. Wählen Sie Menü:Speicher[Asynchronous Mirroring].
+. Wählen Sie im linken Bereich Menü:Storage[Asynchronous Mirroring].
 . Wählen Sie die Registerkarte * Consistency Groups spiegeln* aus.
 +
 Die Tabelle der gespiegelten Consistency Group wird angezeigt und zeigt alle dem Speicher-Array zugeordneten Spiegelkonsistency Groups an.

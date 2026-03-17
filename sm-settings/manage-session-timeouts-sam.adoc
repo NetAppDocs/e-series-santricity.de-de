@@ -23,7 +23,7 @@ Wenn Access Management mit den in das Array integrierten SAML-Funktionen (Securi
 
 ====
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
 . Wählen Sie im Abschnitt Allgemein die Option *Session-Timeout aktivieren/deaktivieren*.
 +
 Das Dialogfeld „Session-Timeout aktivieren/deaktivieren“ wird geöffnet.

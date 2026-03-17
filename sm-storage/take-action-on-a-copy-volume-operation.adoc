@@ -15,7 +15,7 @@ summary: Sie können einen Kopiervolume-Vorgang in Bearbeitung anzeigen und been
 Sie können einen Kopiervolume-Vorgang in Bearbeitung anzeigen und beenden, Priorität ändern, neu kopieren oder einen Kopiervorgang löschen.
 
 .Schritte
-. Wählen Sie MENU:Startseite[Vorgänge in Bearbeitung anzeigen].
+. Wählen Sie im linken Bereich das Menü:Storage[Operations in Progress].
 +
 Das Dialogfeld „laufende Vorgänge“ wird angezeigt.
 

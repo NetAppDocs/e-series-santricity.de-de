@@ -25,7 +25,7 @@ Die NVMe-over-InfiniBand-Einstellungen und -Funktionen werden nur angezeigt, wen
 
 ====
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
 . Wählen Sie unter *NVMe over InfiniBand Einstellungen* *Konfigurieren von NVMe over InfiniBand Ports* aus.
 . Wählen Sie den Controller mit dem NVMe-over-InfiniBand-Port aus, den Sie konfigurieren möchten. Klicken Sie Auf *Weiter*.
 . Wählen Sie den HIC-Port aus der Dropdown-Liste aus, und geben Sie dann die IP-Adresse ein.

@@ -28,8 +28,8 @@ System Manager zeigt diese Typen von iSCSI-Statistiken. Alle Statistiken sind sc
 Sie können jede dieser Statistiken als RAW-Statistiken oder als Baseline-Statistiken anzeigen. RAW-Statistiken sind alle Statistiken, die seit dem Start der Controller gesammelt wurden. Baseline-Statistiken sind zeitpunktgenaue Statistiken, die seit dem Festlegen der Baseline-Zeit erfasst wurden.
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
-. Wählen Sie *Anzeigen von iSCSI-Statistikpaketen* aus.
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
+. Wählen Sie *iSCSI-Statistiken anzeigen*.
 . Klicken Sie auf eine Registerkarte, um die verschiedenen Statistikgruppen anzuzeigen.
 . *Optional:* um den Basisplan festzulegen, klicken Sie auf *Neue Basislinie festlegen*.
 +

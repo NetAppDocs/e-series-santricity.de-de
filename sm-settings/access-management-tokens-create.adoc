@@ -18,7 +18,7 @@ Sie können ein Zugriffstoken erstellen, um sich anstelle eines Benutzernamens u
 NOTE: Token haben keine Passwörter, daher müssen Sie sie sorgfältig verwalten.
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[Zugriffsverwaltung].
+. Wählen Sie im linken Bereich menu:Settings[Access Management].
 . Wählen Sie die Registerkarte *Access Token* aus.
 . Wählen Sie *Access Token Settings Anzeigen/Bearbeiten* Aus. Stellen Sie im Dialogfeld sicher, dass das Kontrollkästchen *Access Token* aktivieren aktiviert ist. Klicken Sie auf *Speichern*, um das Dialogfeld zu schließen.
 . Wählen Sie *Zugriffstoken Erstellen*.

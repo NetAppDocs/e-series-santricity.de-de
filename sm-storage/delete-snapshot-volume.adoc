@@ -20,7 +20,7 @@ Sie können auch angeben, ob das zu einem zugeordnete Snapshot-Kapazitätsvolume
 Durch das Löschen eines Basis-Volumes werden automatisch alle zugehörigen Snapshot-Volumes oder Snapshot-Volumes der Konsistenzgruppe gelöscht. Ein Snapshot-Volume, das sich in einer Volume-Kopie befindet, kann nicht mit dem Status *in Bearbeitung* gelöscht werden.
 
 .Schritte
-. Wählen Sie Menü:Storage[Snapshots].
+. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
 . Wählen Sie die Registerkarte *Snapshot Volumes* aus.
 +
 System Manager zeigt alle Snapshot Volumes an, die dem Speicher-Array zugeordnet sind.

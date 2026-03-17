@@ -23,8 +23,8 @@ Mit der Erweiterung wird zusätzliche freie Kapazität in den Pool bzw. die Volu
 * In einer Volume-Gruppe sind maximal 256 Volumes zulässig.
 * Die maximale Anzahl an Volumes, die in einem Pool zulässig sind, hängt vom Modell des Storage-Systems ab:
 +
-** 2,048 Volumes (EF600 und E5700 Serie)
-** 1,024 Volumes (EF300)
+** 2.048 Volumes (EF80, EF600 und E5700 Serien)
+** 1.024 Volumes (EF50 und EF300)
 ** 512 Volumes (E4000 und E2800 Serie)
 
 
@@ -44,16 +44,16 @@ Mit zusätzlichen Festplatten muss möglicherweise die Aufbewahrungskapazität e
 ====
 [NOTE]
 ====
-Vermeiden Sie die Verwendung von Laufwerken, die Data Assurance (da) sind, die Kapazität zu einem Pool oder einer Volume-Gruppe hinzufügen können, die nicht über da-fähig ist. Der Pool oder die Volume-Gruppe können die Funktionen des da-fähigen Laufwerks nicht nutzen. Ziehen Sie in Betracht, Laufwerke zu verwenden, die in dieser Situation nicht für da geeignet sind.
+Vermeiden Sie die Verwendung von Laufwerken mit Data Assurance (DA)-Funktion, um Kapazität zu einem Pool oder einer Volumengruppe hinzuzufügen, die nicht DA-fähig ist. Der Pool oder die Volumengruppe kann die Fähigkeiten des DA-fähigen Laufwerks nicht nutzen. Erwägen Sie in dieser Situation die Verwendung von Laufwerken, die nicht DA-fähig sind.
 
 ====
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
-. Wählen Sie den Pool oder die Volume-Gruppe aus, dem Sie Laufwerke hinzufügen möchten, und klicken Sie dann auf *Kapazität hinzufügen*.
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
+. Wählen Sie den Pool oder die Volume-Gruppe aus, zu der Sie Laufwerke hinzufügen möchten, und klicken Sie dann auf das Menü:Ellipsis-Symbol[Kapazität hinzufügen].
 +
-Das Dialogfeld Kapazität hinzufügen wird angezeigt. Es werden nur die nicht zugewiesenen Laufwerke angezeigt, die mit dem Pool oder der Volume-Gruppe kompatibel sind.
+Das Dialogfeld „Kapazität hinzufügen“ wird angezeigt. Es werden nur die nicht zugewiesenen Laufwerke angezeigt, die mit dem Pool oder der Volume-Gruppe kompatibel sind.
 
-. Wählen Sie unter *Wählen Sie Laufwerke aus, um Kapazität hinzuzufügen...* ein oder mehrere Laufwerke aus, die Sie dem vorhandenen Pool oder der Volume-Gruppe hinzufügen möchten.
+. Unter *Laufwerke zum Hinzufügen von Kapazität auswählen...* wählen Sie ein oder mehrere Laufwerke aus, die Sie dem vorhandenen Pool oder der vorhandenen Volume-Gruppe hinzufügen möchten.
 +
 Die Controller-Firmware ordnet die nicht zugewiesenen Laufwerke den besten Optionen zu, die oben aufgeführt sind. Die dem Pool oder der Volume-Gruppe hinzugefügte freie Gesamtkapazität wird unterhalb der Liste in *gewählte Gesamtkapazität* angezeigt.
 
@@ -111,8 +111,8 @@ DA-fähig
  a| 
 Gibt an, ob das Laufwerk Data Assurance (da)-fähig ist.
 
-** Es wird nicht empfohlen, Laufwerke zu verwenden, die nicht Data Assurance (da) sind, die Kapazität zu einem da-fähigen Pool oder einer Volume-Gruppe hinzufügen können. Der Pool oder die Volume-Gruppe verfügt nicht mehr über da-Funktionen, und Sie haben nicht mehr die Option, da für neu erstellte Volumes innerhalb des Pools oder der Volume-Gruppe zu aktivieren.
-** Die Verwendung von Laufwerken, die Data Assurance (da) sind, die Kapazität zu einem Pool oder einer Volume-Gruppe hinzufügen können, die nicht für da geeignet ist, wird nicht empfohlen, da dieser Pool oder die Volume-Gruppe die Funktionen des da-fähigen Laufwerks nicht nutzen kann (die Laufwerkattribute stimmen nicht überein). Ziehen Sie in Betracht, Laufwerke zu verwenden, die in dieser Situation nicht da-fähig sind.
+** Die Verwendung von Laufwerken ohne Data Assurance (DA)-Unterstützung zum Hinzufügen von Kapazität zu einem DA-fähigen Pool oder einer DA-fähigen Volume-Gruppe wird nicht empfohlen. Der Pool oder die Volume-Gruppe verfügt dann nicht mehr über DA-Funktionen, und Sie haben keine Möglichkeit mehr, DA für neu erstellte Volumes innerhalb des Pools oder der Volume-Gruppe zu aktivieren.
+** Die Verwendung von Data Assurance (DA)-fähigen Laufwerken zur Kapazitätserweiterung eines Pools oder einer Volumengruppe, die nicht DA-fähig ist, wird nicht empfohlen, da dieser Pool oder diese Volumengruppe die Funktionen des DA-fähigen Laufwerks nicht nutzen kann (die Laufwerksattribute stimmen nicht überein). Erwägen Sie in diesem Fall die Verwendung von Laufwerken, die nicht DA-fähig sind.
 
 
 
@@ -120,7 +120,7 @@ Gibt an, ob das Laufwerk Data Assurance (da)-fähig ist.
  a| 
 DULBE-fähig
  a| 
-Gibt an, ob das Laufwerk über die Option für dezugewiesene oder nicht geschriebene logische Blockfehler (DULBE) verfügt. DULBE ist eine Option auf NVMe-Laufwerken, mit der das EF300- oder EF600-Storage-Array ressourcenbereitgestellte Volumes unterstützt.
+Gibt an, ob das Laufwerk die Option für Deallocated or Unwritten Logical Block Error (DULBE) besitzt. DULBE ist eine Option auf NVMe-Laufwerken, die es dem Speicherarray EF80, EF50, EF300 oder EF600 ermöglicht, ressourcenbereitgestellte Volumes zu unterstützen.
 
 |===
 ====

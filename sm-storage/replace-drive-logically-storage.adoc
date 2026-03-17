@@ -33,7 +33,7 @@ Das Ersatzlaufwerk muss die folgenden Eigenschaften aufweisen:
 
 
 .Schritte
-. Wählen Sie *Hardware*.
+. Wählen Sie im linken Bereich *Hardware* aus.
 . Wenn die Grafik die Controller anzeigt, klicken Sie auf die Registerkarte *Laufwerke*.
 +
 Die Grafik ändert sich, um die Laufwerke anstelle der Controller anzuzeigen.

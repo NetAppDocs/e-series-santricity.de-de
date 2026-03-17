@@ -25,7 +25,7 @@ Führen Sie diesen Vorgang nur aus, wenn Sie vom technischen Support dazu aufgef
 
 ====
 .Schritte
-. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie im linken Bereich Menü:Support[Support Center > Diagnostics] Registerkarte.
 . Wählen Sie *Integritätsbild Abrufen*.
 +
 Sie können sich im Abschnitt Details die Größe des Integritätsabbilds anzeigen lassen, bevor Sie die Datei herunterladen.

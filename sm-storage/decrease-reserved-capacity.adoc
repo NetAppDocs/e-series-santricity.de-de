@@ -29,11 +29,11 @@ Lesen Sie sich die folgenden Richtlinien durch:
 
 
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
 . Klicken Sie auf die Registerkarte *reservierte Kapazität*.
-. Wählen Sie das Speicherobjekt aus, für das die reservierte Kapazität verringert werden soll, und klicken Sie dann auf *Kapazität verringern*.
+. Wählen Sie das Speicherobjekt aus, für das Sie die reservierte Kapazität verringern möchten, und klicken Sie dann auf das Menü:Ellipsen-Symbol[Kapazität verringern].
 +
-Das Dialogfeld reservierte Kapazität verringern wird angezeigt.
+Die Seite „Reservierte Kapazität verringern“ wird angezeigt.
 
 . Wählen Sie den Kapazitätsbetrag aus, um den die reservierte Kapazität verringert werden soll, und klicken Sie dann auf *verringern*.
 

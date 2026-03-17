@@ -22,7 +22,7 @@ Beachten Sie, dass das Löschen eines Root- oder Zwischenzertifikats mehrere Spe
 
 ====
 .Schritte
-. Wählen Sie *Zertifikatverwaltung*.
+. Wählen Sie im linken Bereich menu:Settings[Certificates].
 . Wählen Sie die Registerkarte * Trusted* aus.
 . Wählen Sie ein oder mehrere Zertifikate in der Tabelle aus, und klicken Sie dann auf *Löschen*.
 +

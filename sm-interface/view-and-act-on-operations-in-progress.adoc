@@ -17,7 +17,7 @@ Verwenden Sie die Seite „Vorgänge in Bearbeitung“, um bei lang laufenden Vo
 Für jeden Vorgang, der auf der Seite „Vorgänge in Bearbeitung“ aufgeführt ist, werden ein Prozentsatz der Fertigstellung und die geschätzte verbleibende Zeit bis zum Abschluss des Vorgangs angezeigt. In einigen Fällen können Sie einen Vorgang anhalten oder eine höhere oder niedrigere Priorität zuweisen. Sie können einen abgeschlossenen Kopiervorgang auch aus der Liste löschen.
 
 .Schritte
-. Wählen Sie auf der Startseite die Option *Vorgänge in Bearbeitung anzeigen*.
+. Wählen Sie im linken Bereich das Menü:Storage[Operations in Progress].
 +
 Die Seite „Vorgänge in Bearbeitung“ wird angezeigt.
 

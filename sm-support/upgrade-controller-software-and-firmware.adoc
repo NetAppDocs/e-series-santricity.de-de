@@ -45,7 +45,7 @@ Führen Sie diesen Vorgang nur aus, wenn Sie vom technischen Support dazu aufgef
 ====
 .Schritte
 . Wenn Ihr Storage-Array nur einen Controller enthält oder kein Multipath-Treiber installiert ist, beenden Sie die I/O-Aktivität des Storage-Arrays, um Applikationsfehler zu vermeiden. Wenn Ihr Storage Array über zwei Controller verfügt und Sie einen Multipath-Treiber installiert haben, müssen Sie die I/O-Aktivität nicht stoppen.
-. Wählen Sie Menü:Support[Upgrade Center].
+. Wählen Sie im linken Bereich Menü:Support[Upgrade Center].
 . Laden Sie die neue Datei von der Support-Website auf Ihren Management-Client herunter.
 +
 .. Klicken Sie auf *NetApp Support*, um die Support Website zu starten.

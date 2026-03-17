@@ -32,7 +32,7 @@ Alternativ können Sie eine CSR-Datei mit einem Tool wie OpenSSL generieren und 
 
 ====
 .Schritte
-. Wählen Sie *Zertifikatverwaltung*.
+. Wählen Sie im linken Bereich menu:Settings[Certificates].
 . Wählen Sie auf der Registerkarte Verwaltung die Option *CSR abschließen* aus.
 . Geben Sie die folgenden Informationen ein, und klicken Sie dann auf *Weiter*:
 +
@@ -92,7 +92,7 @@ Nachdem Sie von der Zertifizierungsstelle (CA) signierte Zertifikate erhalten ha
 
 
 .Schritte
-. Wählen Sie *Zertifikatverwaltung*.
+. Wählen Sie im linken Bereich menu:Settings[Certificates].
 . Wählen Sie auf der Registerkarte Verwaltung die Option *Import*.
 +
 Es wird ein Dialogfeld zum Importieren der Zertifikatdateien geöffnet.

@@ -21,7 +21,7 @@ Sie können die Einstellungen für den Syslog-Server ändern, der für die Archi
 
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[Zugriffsverwaltung].
+. Wählen Sie im linken Bereich menu:Settings[Access Management].
 . Wählen Sie auf der Registerkarte Audit Log die Option *Configure Syslog Servers* aus.
 +
 Konfigurierte Syslog-Server werden auf der Seite angezeigt.

@@ -26,7 +26,7 @@ Die Löschfunktion unterstützt einige ältere Laufwerksmodelle nicht. Wenn Sie 
 
 ====
 .Schritte
-. Wählen Sie *Hardware*.
+. Wählen Sie im linken Bereich *Hardware* aus.
 . Wenn die Grafik die Controller anzeigt, klicken Sie auf die Registerkarte *Laufwerke*.
 +
 Die Grafik ändert sich, um die Laufwerke anstelle der Controller anzuzeigen.
@@ -42,12 +42,12 @@ In der Shelf-Ansicht werden nur die nicht zugewiesenen Laufwerke angezeigt; alle
 *Möglicher Datenverlust* -- der Löschvorgang kann nicht rückgängig gemacht werden. Vergewissern Sie sich, dass Sie während des Verfahrens die richtigen Laufwerke auswählen.
 
 ====
-. Wählen Sie im Kontextmenü *Löschen* aus.
+. Wählen Sie im Kontextmenü *Erase Drives*.
 +
 Das Dialogfeld Laufwerke löschen wird geöffnet und zeigt alle für einen Löschvorgang geeigneten Laufwerke an.
 
 . Wählen Sie bei Bedarf zusätzliche Laufwerke aus der Tabelle aus. Sie können keine _alle_ Laufwerke auswählen. Vergewissern Sie sich, dass die Auswahl eines Laufwerks weiterhin aufgehoben ist.
-. Bestätigen Sie den Vorgang, indem Sie eingeben `erase`, Und klicken Sie dann auf *Löschen*.
+. Bestätigen Sie den Vorgang durch Eingabe `erase`, und klicken Sie anschließend auf *Laufwerke löschen*.
 +
 [CAUTION]
 ====
@@ -58,7 +58,7 @@ Stellen Sie sicher, dass Sie mit diesem Vorgang fortfahren möchten. Wenn Sie im
 
 
 .Ergebnisse
-Der Löschvorgang kann mehrere Minuten oder mehrere Stunden dauern. Sie können den Status im Menü:Startseite[Vorgänge in Bearbeitung anzeigen] anzeigen. Wenn der Vorgang Löschen abgeschlossen ist, können die Laufwerke in einer anderen Volume-Gruppe oder einem anderen Laufwerk-Pool oder in einem anderen Speicher-Array verwendet werden.
+Der Löschvorgang kann mehrere Minuten oder mehrere Stunden dauern. Sie können den Status im Menü:Storage[Operations in Progress] einsehen. Wenn der Löschvorgang abgeschlossen ist, stehen die Laufwerke für die Verwendung in einer anderen Volume-Gruppe oder einem anderen Datenträgerpool oder in einem anderen Speichersystem zur Verfügung.
 
 .Nachdem Sie fertig sind
 Wenn Sie das Laufwerk wieder verwenden möchten, müssen Sie es zuerst initialisieren. Wählen Sie dazu im Kontextmenü des Laufwerks *Initialisieren* aus.

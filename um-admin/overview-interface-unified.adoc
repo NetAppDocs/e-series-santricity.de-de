@@ -33,7 +33,7 @@ Die Funktionen von Unified Manager können über die Navigationsleiste in der Se
  a| 
 Managen
  a| 
-Erkennung von Speicher-Arrays im Netzwerk, Starten von SANtricity System Manager für ein Array, Importieren von Einstellungen von einem Array in mehrere Arrays und Verwalten von Array-Gruppen Aktivieren Sie die Kontrollkästchen neben den Array-Namen, um Vorgänge für sie auszuführen, z. B. das Importieren von Einstellungen und das Erstellen von Array-Gruppen. Die Ellipsen am Ende jeder Zeile bieten ein Inline-Menü für Operationen auf einem einzelnen Array, wie z. B. Umbenennen.
+Ermitteln Sie Speicherarrays in Ihrem Netzwerk, starten Sie SANtricity System Manager für ein Array, importieren Sie Einstellungen von einem Array auf mehrere Arrays und verwalten Sie Array-Gruppen. Wählen Sie die Kontrollkästchen neben den Array-Namen aus, um Vorgänge wie das Importieren von Einstellungen und das Erstellen von Array-Gruppen durchzuführen. Die Auslassungspunkte am Ende jeder Zeile bieten ein In-Line-Menü für Vorgänge an einem einzelnen Array, wie z. B. dessen Umbenennung.
 
 
 
@@ -79,7 +79,7 @@ Oben rechts in der Benutzeroberfläche können Sie auf die Hilfe und andere Doku
 
 == Benutzeranmeldungen und Passwörter
 
-Der aktuelle Benutzer, der am System angemeldet ist, wird oben rechts auf der Schnittstelle angezeigt.
+Der aktuell im System angemeldete Benutzer wird in den Benutzereinstellungen angezeigt.
 
 Weitere Informationen zu Benutzern und Kennwörtern finden Sie unter:
 

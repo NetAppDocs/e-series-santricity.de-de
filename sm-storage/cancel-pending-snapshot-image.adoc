@@ -22,8 +22,8 @@ Ein Snapshot-Image befindet sich aufgrund der folgenden gleichzeitigen Bedingung
 
 
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
 . Klicken Sie auf die Registerkarte *reservierte Kapazität*.
-. Wählen Sie die Snapshot-Gruppe aus, für die Sie ein ausstehendes Snapshot-Image abbrechen möchten, und klicken Sie dann auf Menü:Sonstige Aufgaben[ausstehende Snapshot-Image abbrechen].
+. Wählen Sie die Snapshot-Gruppe aus, für die Sie ein ausstehendes Snapshot-Image abbrechen möchten, und klicken Sie dann auf das Menü:Ellipsen-Symbol[Ausstehendes Snapshot-Image abbrechen].
 . Klicken Sie auf *Ja*, um zu bestätigen, dass Sie das ausstehende Snapshot-Image abbrechen möchten.
 

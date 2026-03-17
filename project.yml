@@ -8,16 +8,16 @@ settings:
     harmony_enabled: false
   rss_page: whats-new.html
   versions:
-  - version-number: '11.9'
+  - version-number: '12.0'
     url: "/e-series-santricity"
+  - version-number: '11.9'
+    url: "/e-series-santricity-119"
   - version-number: '11.8'
     url: "/e-series-santricity-118"
-  - version-number: '11.7'
-    url: "/e-series-santricity-117"
   langs: de-de,us-en,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: SANtricity Software 11.9-Dokumentation
+  - title: SANtricity software 12.0 Dokumentation
     url: "/index.html"
   - title: Versionshinweise
     entries:
@@ -291,6 +291,8 @@ sidebar:
           url: "/sm-storage/change-the-settings-for-a-host-cluster.html"
         - title: Ändern der Host-Port-IDs für den Host
           url: "/sm-storage/change-host-port-identifiers-for-a-host.html"
+        - title: Ändern Sie das Host-I/O-Modulprotokoll
+          url: "/sm-storage/io-module-change-protocol.html"
       - title: Häufig gestellte Fragen zu Hostsystemen und Hostclustern
         url: "/sm-storage/faq-systems-clusters.html"
     - title: Snapshots
@@ -695,8 +697,6 @@ sidebar:
           url: "/sm-settings/change-cache-settings-for-storage-array.html"
         - title: Automatische Lastverteilung festlegen
           url: "/sm-settings/set-automatic-load-balancing.html"
-        - title: Aktivieren oder deaktivieren Sie die veraltete Managementoberfläche
-          url: "/sm-settings/enable-or-disable-legacy-management-interface.html"
       - title: Add-on-Funktionen konfigurieren
         entries:
         - title: Funktionsweise der Add-on-Funktionen
@@ -918,6 +918,8 @@ sidebar:
           url: "/sm-support/upgrade-drive-firmware.html"
         - title: Überprüfen Sie die möglichen Software- und Firmware-Upgrade-Fehler
           url: "/sm-support/review-the-possible-software-and-firmware-upgrade-errors.html"
+      - title: Skripteditor verwenden
+        url: "/sm-support/use-script-editor.html"
       - title: AutoSupport FAQ
         url: "/sm-support/faq-autosupport.html"
   - title: SANtricity Unified Manager

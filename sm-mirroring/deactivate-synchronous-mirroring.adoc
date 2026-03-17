@@ -18,7 +18,7 @@ Sie können die Funktion Synchronous Mirroring auf einem Speicher-Array deaktivi
 Sie müssen alle synchronen Spiegelbeziehungen gelöscht haben. Überprüfen Sie, ob alle gespiegelten Paare aus dem Speicher-Array gelöscht wurden.
 
 .Schritte
-. Wählen Sie Menü:Speicher[Synchronous Mirroring].
+. Wählen Sie im linken Bereich Menü:Storage[Synchronous Mirroring].
 . Menü wählen:Sonstige Aufgaben[Deaktivieren].
 +
 Das System zeigt eine Bestätigung an.

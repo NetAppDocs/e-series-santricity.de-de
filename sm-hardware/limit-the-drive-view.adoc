@@ -22,7 +22,7 @@ Wenn alle Laufwerke dieselben physischen Attribute verwenden, wird das Filterfel
 
 ====
 .Schritte
-. Wählen Sie *Hardware*.
+. Wählen Sie im linken Bereich *Hardware* aus.
 . Klicken Sie im ersten Filterfeld (unter *Laufwerke anzeigen, die...* sind) auf den Dropdown-Pfeil, um die verfügbaren Laufwerkstypen und Sicherheitsattribute anzuzeigen.
 +
 Folgende Laufwerktypen können enthalten:

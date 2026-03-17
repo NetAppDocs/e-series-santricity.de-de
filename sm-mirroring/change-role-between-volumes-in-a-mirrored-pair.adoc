@@ -18,7 +18,7 @@ Sie können eine Rollenumkehr zwischen den beiden Volumes in einem gespiegelten 
 Sie können das primäre Volume entweder auf die sekundäre Rolle zurückstufen oder das sekundäre Volume zur primären Rolle heraufstufen. Alle Hosts, die auf das primäre Volume zugreifen, haben Lese-/Schreibzugriff auf das Volume. Wenn das primäre Volume zum sekundären Volume wird, werden nur durch den primären Controller initiierte Remote-Schreibvorgänge auf das Volume geschrieben.
 
 .Schritte
-. Wählen Sie Menü:Speicher[Synchronous Mirroring].
+. Wählen Sie im linken Bereich Menü:Storage[Synchronous Mirroring].
 . Wählen Sie das gespiegelte Paar aus, das die Volumes enthält, für die Sie die Rolle ändern möchten, und wählen Sie dann Menü:Mehr[Rolle ändern].
 +
 Das System zeigt eine Bestätigung an.

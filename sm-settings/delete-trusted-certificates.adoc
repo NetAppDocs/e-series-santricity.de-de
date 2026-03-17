@@ -28,7 +28,7 @@ Möglicherweise verlieren Sie den Zugriff auf ein System, wenn Sie ein Zertifika
 Diese Aufgabe beschreibt das Löschen von vom Benutzer installierten Zertifikaten. Die vorinstallierten, selbstsignierten Zertifikate können nicht gelöscht werden.
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[Zertifikate].
+. Wählen Sie im linken Bereich menu:Settings[Certificates].
 . Wählen Sie die Registerkarte * Trusted* aus.
 +
 In der Tabelle sind die vertrauenswürdigen Zertifikate des Speicher-Arrays aufgeführt.

@@ -20,7 +20,7 @@ Wenn Sie zuvor einen Verzeichnisserver in der Zugriffsverwaltung konfiguriert ha
 
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[Zugriffsverwaltung].
+. Wählen Sie im linken Bereich menu:Settings[Access Management].
 . Wählen Sie die Registerkarte *Directory Services* aus.
 . Wenn mehr als ein Server definiert ist, wählen Sie den Server aus der Tabelle aus, den Sie bearbeiten möchten.
 . Wählen Sie *Einstellungen Anzeigen/Bearbeiten*.

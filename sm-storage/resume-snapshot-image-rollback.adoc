@@ -15,7 +15,7 @@ summary: Wenn während eines Rollback-Vorgangs eines Snapshot-Images ein Fehler 
 Wenn während eines Rollback-Vorgangs eines Snapshot-Images ein Fehler auftritt, wird der Vorgang automatisch angehalten. Sie können einen Rollback-Vorgang fortsetzen, der sich im Status „Pause“ befindet.
 
 .Schritte
-. Wählen Sie Menü:Storage[Snapshots].
+. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
 . Klicken Sie auf die Registerkarte *Snapshot Images*.
 . Markieren Sie das angehaltene Rollback, und wählen Sie dann Menü:Rollback[Resume].
 +

@@ -28,7 +28,7 @@ Wenn das Snapshot-Volumen oder das Snapshot-Snapshot-Volumen Teil einer Online-K
 
 ====
 .Schritte
-. Wählen Sie Menü:Storage[Snapshots].
+. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
 . Wählen Sie die Registerkarte *Snapshot Volumes* aus.
 +
 Die Tabelle Snapshot Volumes wird angezeigt und zeigt alle dem Speicher-Array zugeordneten Snapshot-Volumes an.

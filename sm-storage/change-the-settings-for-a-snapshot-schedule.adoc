@@ -20,8 +20,8 @@ Sie können Einstellungen aus einem vorhandenen Snapshot-Zeitplan importieren od
 Da ein Snapshot Zeitplan einer Snapshot-Gruppe oder einer Snapshot Konsistenzgruppe zugeordnet ist, kann die reservierte Kapazität durch Änderungen an den Zeitplaneinstellungen beeinträchtigt werden.
 
 .Schritte
-. Wählen Sie Menü:Storage[Snapshots].
-. Klicken Sie auf die Registerkarte *Zeitpläne*.
+. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
+. Klicken Sie auf die Registerkarte *Snapshot Schedules*.
 . Wählen Sie den Snapshot-Zeitplan aus, den Sie ändern möchten, und klicken Sie dann auf *Bearbeiten*.
 +
 Das Dialogfeld Snapshot-Zeitplan bearbeiten wird angezeigt.

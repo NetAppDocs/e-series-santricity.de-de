@@ -17,7 +17,7 @@ Sie können alle Zugriffstoken aufheben, wenn Sie feststellen, dass ein Token ko
 Mit diesem Vorgang werden die zum Signieren der Token verwendeten Schlüssel neu generiert. Sobald die Schlüssel zurückgesetzt wurden, werden _all_ emittierte Token sofort ungültig. Da das Speicherarray keine Token verfolgt, können einzelne Token nicht entzogen werden.
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[Zugriffsverwaltung].
+. Wählen Sie im linken Bereich menu:Settings[Access Management].
 . Wählen Sie die Registerkarte *Access Token* aus.
 . Wählen Sie *Alle Zugriffstoken Aufheben*.
 . Klicken Sie im Dialogfeld auf *Ja*.

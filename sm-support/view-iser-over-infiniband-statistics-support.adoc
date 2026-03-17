@@ -24,7 +24,7 @@ System Manager zeigt die folgenden Arten von iSER-over-InfiniBand-Statistiken an
 Sie können jede dieser Statistiken als RAW-Statistiken oder als Baseline-Statistiken anzeigen. RAW-Statistiken sind alle Statistiken, die seit dem Start der Controller gesammelt wurden. Baseline-Statistiken sind zeitpunktgenaue Statistiken, die seit dem Festlegen der Baseline-Zeit erfasst wurden.
 
 .Schritte
-. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie im linken Bereich Menü:Support[Support Center > Diagnostics] Registerkarte.
 . Wählen Sie *Anzeigen iSER über InfiniBand Statistik*.
 . Klicken Sie auf eine Registerkarte, um die verschiedenen Statistikgruppen anzuzeigen.
 . Klicken Sie zum Festlegen des Basisplans auf *Neue Baseline festlegen*.

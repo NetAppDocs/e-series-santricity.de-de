@@ -37,7 +37,7 @@ Möglicherweise müssen Sie zusätzliche vertrauenswürdige CA-Zertifikate insta
 
 
 .Schritte
-. Wählen Sie *Zertifikatverwaltung*.
+. Wählen Sie im linken Bereich menu:Settings[Certificates].
 . Wählen Sie die Registerkarte * Trusted* aus.
 +
 Auf dieser Seite werden alle Zertifikate angezeigt, die für die Speicher-Arrays gemeldet wurden.

@@ -25,7 +25,7 @@ Die Funktion Konfigurationsdaten erfassen speichert die gleichen Informationen w
 Sie sollten diese Aufgabe nur ausführen, wenn Sie von einer Recovery Guru-Operation oder technischem Support dazu aufgefordert werden.
 
 .Schritte
-. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie im linken Bereich Menü:Support[Support Center > Diagnostics] Registerkarte.
 . Wählen Sie *Konfigurationsdaten Erfassen*.
 . Klicken Sie im Dialogfeld auf *Collect*.
 +

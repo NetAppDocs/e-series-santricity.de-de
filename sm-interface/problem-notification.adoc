@@ -53,8 +53,7 @@ Achtung
 |===
 System Manager zeigt diese Symbole an verschiedenen Orten an.
 
-* Im Bereich Benachrichtigungen auf der Startseite werden das Fehlersymbol und eine Meldung angezeigt.
-* Das Symbol Startseite im Navigationsbereich zeigt das Fehlersymbol an.
+* Benachrichtigungsbereich (Glockensymbol oben im Fenster)
 * Auf der Seite Komponenten wird in der Grafik für Laufwerke und Controller das Fehlersymbol angezeigt.
 
 

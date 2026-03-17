@@ -18,9 +18,9 @@ Sie löschen eine Snapshot-Gruppe, wenn Sie ihre Daten dauerhaft löschen und au
 Wenn eine Snapshot-Gruppe gelöscht wird, werden auch alle Snapshot-Images in der Gruppe gelöscht.
 
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
 . Klicken Sie auf die Registerkarte *reservierte Kapazität*.
-. Wählen Sie die Snapshot-Gruppe aus, die Sie löschen möchten, und klicken Sie dann auf Menü:Sonstige Aufgaben[Snapshot-Gruppe löschen].
+. Wählen Sie die Snapshot-Gruppe aus, die Sie löschen möchten, und klicken Sie dann auf das Menü:Ellipsen-Symbol[Löschen].
 +
 Das Dialogfeld Snapshot-Gruppe löschen bestätigen wird angezeigt.
 

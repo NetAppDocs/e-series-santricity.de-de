@@ -14,25 +14,21 @@ summary: Wenn Sie die Standardfunktion für die Ressourcenbereitstellung zuvor d
 [role="lead"]
 Wenn Sie zuvor die Standardfunktion für die Ressourcenbereitstellung deaktiviert haben, können Sie sie für alle neuen von Ihnen erstellten SSD-Volume-Gruppen oder -Pools erneut aktivieren. Sie können die Einstellung auch wieder deaktivieren.
 
-Die Ressourcenbereitstellung ist eine Funktion der EF300- und EF600-Speicher-Arrays, mit der Volumes ohne Hintergrundinitialisierung sofort in Betrieb genommen werden können. Alle dem Volume zugewiesenen Festplattenblöcke werden aufgehoben (ihre Zuordnung wird nicht aufgehoben), was die SSD-Abnutzung verbessert und die maximale Schreib-Performance erhöht.
+Resource-Bereitstellung ist eine Funktion, die in den EF80-, EF50-, EF300/EF300C- und EF600/EF600C-Speicher-Arrays verfügbar ist und es ermöglicht, Volumes sofort zu verwenden, ohne dass ein Hintergrund-Initialisierungsprozess erforderlich ist. Alle dem Volume zugewiesenen Laufwerksblöcke werden freigegeben (unmapped), was die SSD-Lebensdauer verbessern und die maximale Schreibleistung erhöhen kann.
 
 
 NOTE: Standardmäßig ist die Ressourcenbereitstellung auf Systemen aktiviert, auf denen die Laufwerke DULBE unterstützen.
 
 .Bevor Sie beginnen
-* Sie benötigen ein EF300- oder EF600-Storage-Array.
+* Sie müssen über ein EF80-, EF50-, EF300- oder EF600-Speicherarray verfügen.
 * Sie müssen SSD-Volume-Gruppen oder -Pools haben, wobei alle Laufwerke die Funktion zur Wiederherstellung von dezugewiesenen oder nicht geschriebenen logischen Blockfehlern (DULBE) unterstützen.
-+
-
-NOTE: DULBE wird derzeit nicht auf EF300C- oder EF600C-Speicherarrays unterstützt.
-
 
 
 .Über diese Aufgabe
 Wenn Sie die Ressourcen-Bereitstellung für neue Volume-Gruppen oder Pools erneut aktivieren, sind nur neu erstellte Volume-Gruppen und Pools betroffen. Alle vorhandenen Volume-Gruppen und Pools mit aktivierter Ressourcenbereitstellung bleiben unverändert.
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
 . Blättern Sie nach unten zu *zusätzliche Einstellungen*, und klicken Sie dann auf *Volumes mit Ressourcenzulauf aktivieren/deaktivieren*.
 +
 Die Einstellungsbeschreibung gibt an, ob die Ressourcenbereitstellung derzeit aktiviert oder deaktiviert ist.

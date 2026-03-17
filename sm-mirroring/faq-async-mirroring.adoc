@@ -118,7 +118,7 @@ Spiegelung wird in der Schnittstelle des SANtricity Unified Managers konfigurier
 
 [NOTE]
 ====
-Synchrones Spiegeln ist für das EF600/EF600C oder EF300/EF300C Storage-Array nicht verfügbar.
+Synchrones Spiegeln ist auf dem Speicherarray EF80, EF50, EF600/EF600C oder EF300/EF300C nicht verfügbar.
 
 ====
 Um die Spiegelung zwischen zwei Arrays zu aktivieren und zu konfigurieren, überprüfen Sie Folgendes:
@@ -143,7 +143,7 @@ Befolgen Sie die folgenden Richtlinien, bevor Sie eine gespiegelte Konsistenzgru
 
 [NOTE]
 ====
-Synchrones Spiegeln ist auf dem Storage-System EF600/EF600C oder EF300/EF300C nicht verfügbar.
+Die synchrone Spiegelung ist auf dem EF80, EF50, EF600/EF600C oder EF300/EF300C Speichersystem nicht verfügbar.
 
 ====
 Sie erstellen eine Konsistenzgruppe in Unified Manager im Assistenten zum Erstellen gespiegelter Paare.

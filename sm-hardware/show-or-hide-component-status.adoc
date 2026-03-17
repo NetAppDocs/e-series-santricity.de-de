@@ -14,7 +14,7 @@ summary: Sie können Statusbeschreibungen für Laufwerke, Controller, Lüfter un
 Sie können Statusbeschreibungen für Laufwerke, Controller, Lüfter und Netzteile anzeigen.
 
 .Schritte
-. Wählen Sie *Hardware*.
+. Wählen Sie im linken Bereich *Hardware* aus.
 . So sehen Sie die Komponenten auf der Rückseite oder auf der Vorderseite:
 +
 ** Wenn Sie die Komponenten des Controllers und des Power/Fan-Kanisters sehen möchten, aber die Laufwerke angezeigt werden, klicken Sie auf die Registerkarte *Controller & Komponenten*.

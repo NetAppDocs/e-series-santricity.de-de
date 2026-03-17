@@ -20,7 +20,7 @@ Sie können ein einzelnes Snapshot-Image löschen oder Snapshot-Images aus Snaps
 Ein Snapshot Image kann nicht gelöscht werden, wenn es nicht das älteste Snapshot Image des zugehörigen Basis-Volumes oder der Snapshot-Konsistenzgruppe ist.
 
 .Schritte
-. Wählen Sie Menü:Storage[Snapshots].
+. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
 . Klicken Sie auf die Registerkarte *Snapshot Images*.
 . Wählen Sie das Snapshot-Image aus, das Sie löschen möchten, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
 +

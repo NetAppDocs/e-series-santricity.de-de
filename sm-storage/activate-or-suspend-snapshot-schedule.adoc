@@ -18,8 +18,8 @@ Sie können die geplante Sammlung von Snapshot-Images vorübergehend unterbreche
 Der Status des Snapshot-Zeitplans bleibt ausgesetzt, bis Sie die Option *Aktivieren* verwenden, um die geplanten Snapshot-Aktivitäten wieder aufzunehmen.
 
 .Schritte
-. Wählen Sie Menü:Storage[Snapshots].
-. Wenn er nicht bereits angezeigt wird, klicken Sie auf die Registerkarte *Zeitpläne*.
+. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
+. Falls sie noch nicht angezeigt wird, klicken Sie auf die Registerkarte *Snapshot Schedules*.
 +
 Die Zeitpläne sind auf der Seite aufgeführt.
 

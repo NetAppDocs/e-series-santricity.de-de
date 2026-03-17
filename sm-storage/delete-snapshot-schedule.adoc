@@ -18,9 +18,9 @@ Wenn Sie keine Snapshot-Images mehr erstellen möchten, können Sie einen vorhan
 Wenn Sie einen Snapshot-Zeitplan löschen, werden die zugehörigen Snapshot-Images nicht zusammen mit ihm gelöscht. Wenn Sie der Meinung sind, dass die Sammlung von Snapshot-Bildern irgendwann wieder aufgenommen werden könnte, sollten Sie den Snapshot-Zeitplan unterbrechen, anstatt ihn zu löschen.
 
 .Schritte
-. Wählen Sie Menü:Storage[Snapshots].
-. Klicken Sie auf die Registerkarte *Zeitpläne*.
-. Wählen Sie den Snapshot-Zeitplan aus, den Sie löschen möchten, und bestätigen Sie den Vorgang.
+. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
+. Klicken Sie auf die Registerkarte *Snapshots Schedules*.
+. Wählen Sie den Snapshot-Zeitplan aus, den Sie löschen möchten, klicken Sie auf *Delete*, und bestätigen Sie den Vorgang.
 
 
 .Ergebnisse

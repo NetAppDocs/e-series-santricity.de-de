@@ -23,12 +23,12 @@ Sie können die RAID-Ebene eines Pools nicht mit der System Manager Schnittstell
 
 ====
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
-. Wählen Sie den Pool aus, den Sie bearbeiten möchten, und klicken Sie dann auf *Einstellungen anzeigen/bearbeiten*.
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
+. Wählen Sie den Pool aus, den Sie bearbeiten möchten, und klicken Sie dann auf das Menü:Ellipsis-Symbol[Einstellungen bearbeiten].
 +
-Das Dialogfeld Pool-Einstellungen wird angezeigt.
+Das Fenster „Pooleinstellungen bearbeiten“ wird angezeigt.
 
-. Wählen Sie die Registerkarte *Einstellungen* aus, und bearbeiten Sie anschließend die Pooleinstellungen entsprechend.
+. Passen Sie die Pool-Einstellungen entsprechend an.
 +
 .Felddetails
 [%collapsible]

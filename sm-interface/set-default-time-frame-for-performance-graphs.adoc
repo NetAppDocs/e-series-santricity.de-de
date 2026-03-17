@@ -18,6 +18,6 @@ Sie können den Standardzeitrahmen ändern, der von den Performance-Diagrammen a
 Performance-Diagramme, die auf der Startseite und auf der Seite Performance angezeigt werden, zeigen zunächst einen Zeitrahmen von 1 Stunde an. Einstellungen werden im lokalen Speicher des Browsers gespeichert, so dass alle Benutzer ihre eigenen Einstellungen haben können.
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[Voreinstellungen festlegen].
-. Wählen Sie in der Dropdown-Liste entweder *5 Minuten*, *1 Stunde*, *8 Stunden*, *1 Tag* oder *7 Tage*, Und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
+. Klicken Sie auf das Symbol *User Settings* in der oberen rechten Ecke des Fensters.
+. Wählen Sie in der Dropdown-Liste „Standardmäßig anzuzeigender Zeitbereich für Leistungsdiagramme“ entweder *5 Minuten*, *1 Stunde*, *8 Stunden*, *1 Tag* oder *7 Tage* aus und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
 

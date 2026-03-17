@@ -29,7 +29,7 @@ Recovery-Support-Dateien enthalten die folgenden Arten von Dateien:
 
 
 .Schritte
-. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie im linken Bereich Menü:Support[Support Center > Diagnostics] Registerkarte.
 . Wählen Sie *Wiederherstellungs-Support-Dateien Abrufen*.
 +
 In einem Dialogfeld werden alle Dateien für die Recovery-Unterstützung aufgeführt, die Ihr Speicher-Array erfasst hat. Um bestimmte Dateien zu finden, können Sie eine der Spalten sortieren oder Zeichen in das Feld *Filter* eingeben.

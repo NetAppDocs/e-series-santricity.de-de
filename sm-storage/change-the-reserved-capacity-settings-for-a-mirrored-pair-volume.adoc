@@ -15,11 +15,11 @@ summary: Sie können die Einstellungen für ein gespiegeltes Paar-Volume ändern
 Sie können die Einstellungen für ein Volume mit gespiegelten Paaren ändern, um den Prozentpunkt anzupassen, an dem SANtricity System Manager eine Warnmeldung sendet, wenn die reservierte Kapazität für ein Volume mit gespiegelten Paaren fast voll ist.
 
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
 . Wählen Sie die Registerkarte *reservierte Kapazität* aus.
-. Wählen Sie das zu bearbeitende gespiegelte Paar-Volume aus und klicken Sie dann auf *Einstellungen anzeigen/bearbeiten*.
+. Wählen Sie das gespiegelte Paar-Volume aus, das Sie bearbeiten möchten, und klicken Sie dann auf das Menü:Ellipsen-Symbol[Einstellungen bearbeiten].
 +
-Das Dialogfeld Einstellungen für die reservierte Kapazität des gespiegelten Paar-Volumes wird angezeigt.
+Das Fenster „Edit Mirrored Pair Volume Reserved Capacity Settings“ wird angezeigt.
 
 . Ändern Sie gegebenenfalls die Einstellungen für die reservierte Kapazität des gespiegelten Paar-Volumes.
 +
@@ -32,9 +32,9 @@ Das Dialogfeld Einstellungen für die reservierte Kapazität des gespiegelten Pa
 
 
  a| 
-Benachrichtigen, wenn...
+Alarmschwelle für volle reservierte Kapazität
  a| 
-Verwenden Sie das Spinner-Feld, um den Prozentpunkt anzupassen, an dem System Manager eine Benachrichtigung sendet, wenn die reservierte Kapazität eines gespiegelten Paares sich der vollen Kapazität nähert.
+Verwenden Sie die Leiste, um den Prozentsatz einzustellen, bei dem der System Manager eine Warnbenachrichtigung sendet, wenn die reservierte Kapazität für ein gespiegeltes Paar fast voll ist.
 
 Wenn die reservierte Kapazität für das gespiegelte Paar den angegebenen Schwellenwert überschreitet, sendet System Manager eine Warnmeldung, sodass Sie die reservierte Kapazität erweitern können.
 

@@ -17,7 +17,7 @@ Die Hardware-Seite kann entweder die Vorder- oder die Rückseite des Shelfs anze
 Die Ansicht auf der Rückseite zeigt die Controller/IOMs und die Power-Fan-Kanister. In der Vorderansicht werden die Laufwerke angezeigt.
 
 .Schritte
-. Wählen Sie *Hardware*.
+. Wählen Sie im linken Bereich *Hardware* aus.
 . Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf die Registerkarte *Controller & Komponenten*.
 +
 Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.

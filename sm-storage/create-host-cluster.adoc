@@ -29,7 +29,7 @@ Wenn eine der Host-Verbindungen auf den Controllern im Speicher-Array keine Unte
 
 
 .Schritte
-. Wählen Sie Menü:Storage[Hosts].
+. Wählen Sie im linken Bereich Menü:Storage[Hosts].
 . Wählen Sie Menü:Erstellen[Host-Cluster].
 +
 Das Dialogfeld Host-Cluster erstellen wird angezeigt.

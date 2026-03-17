@@ -21,7 +21,7 @@ Wenn Sie Auditprotokolle auf einem externen Syslog-Server archivieren möchten, 
 
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[Zugriffsverwaltung].
+. Wählen Sie im linken Bereich menu:Settings[Access Management].
 . Wählen Sie auf der Registerkarte Audit Log die Option *Configure Syslog Servers* aus.
 +
 Das Dialogfeld Configure Syslog Servers wird geöffnet.

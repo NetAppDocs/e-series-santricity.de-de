@@ -35,7 +35,7 @@ Sie können den Vorgang „Wiederherstellung löschen“ nach dem Start nicht me
 
 ====
 .Schritte
-. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie im linken Bereich Menü:Support[Support Center > Diagnostics] Registerkarte.
 . Wählen Sie *Wiederherstellungsmodus löschen*, und bestätigen Sie, dass Sie diesen Vorgang ausführen möchten.
 +
 Diese Option wird nur angezeigt, wenn sich das Speicher-Array im Wiederherstellungsmodus befindet.

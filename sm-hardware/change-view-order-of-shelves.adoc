@@ -14,6 +14,10 @@ summary: Sie können die Reihenfolge der auf der Seite Hardware angezeigten Shel
 Sie können die Reihenfolge der auf der Seite Hardware angezeigten Shelfs ändern, um sie der physischen Reihenfolge der Regale in einem Schrank anzupassen.
 
 .Schritte
-. Wählen Sie *Hardware*.
+. Wählen Sie im linken Bereich *Hardware* aus.
+. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf die Registerkarte *Controller & Komponenten*.
++
+Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
+
 . Wählen Sie oben rechts in einer Shelf-Ansicht die nach-oben- bzw. nach-unten-Pfeile aus, um die Reihenfolge der auf der Hardware-Seite angezeigten Shelfs neu anzuordnen.
 

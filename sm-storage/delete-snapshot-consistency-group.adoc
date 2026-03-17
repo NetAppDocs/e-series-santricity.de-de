@@ -21,7 +21,7 @@ Vergewissern Sie sich, dass die Images aller Mitgliedsvolumes nicht mehr für Ba
 Durch diesen Vorgang werden alle Snapshot-Images oder -Zeitpläne gelöscht, die mit der Snapshot-Konsistenzgruppe verknüpft sind.
 
 .Schritte
-. Wählen Sie Menü:Storage[Snapshots].
+. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
 . Wählen Sie die Registerkarte *Snapshot Consistency Groups* aus.
 . Wählen Sie die Snapshot-Konsistenzgruppe aus, die Sie löschen möchten, und wählen Sie dann Menü:Sonstige Aufgaben[Löschen].
 +

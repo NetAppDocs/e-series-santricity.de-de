@@ -21,7 +21,7 @@ Die AutoSupport-Funktion muss aktiviert sein. Sie sehen, ob die Funktion auf der
 Dieser Vorgang erfasst Support-Daten und sendet sie automatisch an den technischen Support, damit Probleme behoben werden können.
 
 .Schritte
-. Wählen Sie MENU:Support[Support Center > AutoSupport].
+. Wählen Sie im linken Bereich Menü:Support[Support Center > AutoSupport] Tab.
 . Wählen Sie *AutoSupport Entsendung senden*.
 +
 Das Dialogfeld Entsendung von AutoSupport senden wird angezeigt.

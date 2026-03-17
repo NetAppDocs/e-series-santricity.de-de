@@ -19,18 +19,11 @@ SANtricity System Manager ist eine webbasierte Schnittstelle, über die Sie Stor
 
 Die Startseite enthält eine Dashboard-Ansicht für die tägliche Verwaltung Ihres Speicherarrays. Wenn Sie sich bei System Manager anmelden, wird die Startseite der erste Bildschirm angezeigt.
 
-Die Dashboard-Ansicht enthält vier Übersichtsbereiche mit wichtigen Informationen zu Status und Zustand Ihres Storage-Arrays. Weitere Informationen finden Sie im Übersichtsbereich.
+Die Dashboard-Ansicht umfasst drei Übersichtsbereiche, die wichtige Informationen über den Zustand und die Integrität Ihres Storage Arrays enthalten. Weitere Informationen finden Sie im Übersichtsbereich.
 
 [cols="25h,~"]
 |===
 | Werden | Beschreibung 
-
-
- a| 
-Benachrichtigungen
- a| 
-Im Bereich Benachrichtigungen werden Problembenachrichtigungen angezeigt, die den Status des Speicher-Arrays und seiner Komponenten anzeigen. In diesem Portlet werden automatisierte Warnungen angezeigt, die Sie bei der Behebung von Problemen unterstützen können, bevor diese sich auf andere Bereiche Ihrer Storage-Umgebung auswirken.
-
 
 
  a| 
@@ -55,40 +48,21 @@ Der Bereich Speicherhierarchie bietet eine organisierte Ansicht der verschiedene
 |===
 
 
+== Benachrichtigungsbereich
+
+Der Benachrichtigungsbereich ist über das Glockensymbol in der oberen Ecke des Fensters zugänglich. Der Benachrichtigungsbereich zeigt Problembenachrichtigungen an, die den Status des Speichersystems und seiner Komponenten anzeigen. Zusätzlich werden in diesem Bereich automatische Warnmeldungen angezeigt, die Ihnen bei der Fehlerbehebung helfen können, bevor sich Probleme auf andere Bereiche Ihrer Speicherumgebung auswirken.
+
+
+
 == Schnittstelleneinstellungen
 
 Sie können die Anzeigeeinstellungen und andere Einstellungen über die Hauptschnittstelle ändern.
 
-[cols="25h,~"]
-|===
-| Einstellung | Beschreibung 
-
-
- a| 
-Anzeigeeinstellungen
- a| 
-Ändern Sie Kapazitätswerte und den Zeitrahmen im Dropdown-Menü Einstellungen in der oberen rechten Ecke der Schnittstelle.
-
-
-
- a| 
-Session-Timeouts
- a| 
-Konfigurieren Sie Timeouts, so dass die inaktiven Sitzungen des Benutzers nach einer bestimmten Zeit getrennt werden.
-
-
-
- a| 
-Hilfe
- a| 
-Greifen Sie über das Dropdown-Menü oben rechts auf die Hilfedokumentation und andere Ressourcen zu.
-
-|===
 
 
 == Benutzeranmeldungen und Passwörter
 
-Der aktuelle Benutzer, der am System angemeldet ist, wird oben rechts auf der Schnittstelle angezeigt.
+Der aktuell im System angemeldete Benutzer wird in den Benutzereinstellungen angezeigt.
 
 Weitere Informationen zu Benutzern und Kennwörtern finden Sie unter:
 

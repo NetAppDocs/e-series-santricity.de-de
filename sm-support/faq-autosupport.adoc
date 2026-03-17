@@ -179,7 +179,7 @@ Die AutoSupport-Funktion unterstützt die Protokolle HTTPS und SMTP zur Bereitst
 
 ====
 .Schritte
-. Wählen Sie MENU:Support[Support Center > AutoSupport].
+. Wählen Sie im linken Bereich Menü:Support[Support Center > AutoSupport] Tab.
 . Wählen Sie *AutoSupport-Bereitstellungsmethode konfigurieren*.
 +
 Es wird ein Dialogfeld angezeigt, in dem die Versandmethoden aufgeführt sind.

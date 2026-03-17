@@ -33,25 +33,25 @@ Eine Erhöhung der Kapazität eines Volumens wird nur auf bestimmten Betriebssys
 
 ====
 .Schritte
-. Wählen Sie Menü:Storage[Volumes].
-. Wählen Sie das Volumen aus, für das Sie die Kapazität erhöhen möchten, und wählen Sie dann *Kapazität erhöhen*.
+. Wählen Sie im linken Bereich Menü:Storage[Volumes].
+. Wählen Sie das Volume aus, dessen Kapazität Sie erhöhen möchten, und klicken Sie dann auf das Menü:Ellipsen-Symbol[Kapazität erhöhen].
 +
-Das Dialogfeld Kapazität erhöhen bestätigen wird angezeigt.
+Die Seite „Kapazitätserhöhung bestätigen“ wird angezeigt.
 
 . Wählen Sie *Ja*, um fortzufahren.
 +
-Das Dialogfeld gemeldete Kapazität erhöhen wird angezeigt.
+Die Seite „Increase Reported Capacity“ wird angezeigt.
 
 +
-In diesem Dialogfeld wird die aktuell gemeldete Kapazität des Volumes und die freie Kapazität angezeigt, die im zugeordneten Pool oder der Volume-Gruppe verfügbar ist.
+Auf dieser Seite werden die aktuell gemeldete Kapazität des Volumes und die im zugehörigen Pool oder der Volume-Gruppe verfügbare freie Kapazität angezeigt.
 
-. Verwenden Sie das Feld * gemeldete Kapazität erhöhen, indem Sie...* hinzufügen, um die Kapazität der aktuell verfügbaren gemeldeten Kapazität hinzuzufügen. Sie können den Kapazitätswert ändern, um entweder in Mebibyte (MiB), Gibibyte (gib) oder Tebibyte (tib) anzuzeigen.
+. Verwenden Sie das Feld *Erhöhen Sie die gemeldete Kapazität durch Hinzufügen von...*, um Kapazität zur aktuell verfügbaren gemeldeten Kapazität hinzuzufügen. Sie können den Kapazitätswert so ändern, dass er entweder in Mebibyte (MiB), Gibibyte (GiB) oder Tebibyte (TiB) angezeigt wird.
 . Klicken Sie Auf *Erhöhen*.
 
 
 .Ergebnisse
 * System Manager erhöht die Kapazität des Volumes basierend auf Ihrer Auswahl.
-* Wählen Sie MENU:Home[Vorgänge in Bearbeitung anzeigen], um den Fortschritt des Vorgangs zur Erhöhung der Kapazität anzuzeigen, der derzeit für das ausgewählte Volume ausgeführt wird. Dieser Vorgang kann langwierig sein und die System-Performance beeinträchtigen.
+* Wählen Sie Menü:Storage[Operations in Progress], um den Fortschritt der aktuell laufenden Kapazitätserweiterung für das ausgewählte Volume anzuzeigen. Dieser Vorgang kann längere Zeit dauern und die Systemleistung beeinträchtigen.
 
 
 .Nachdem Sie fertig sind

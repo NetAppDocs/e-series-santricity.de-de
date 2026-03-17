@@ -24,7 +24,7 @@ Ein Pool bietet die logische Storage-Kapazität, mit der Sie individuelle Volume
 
 
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
 . Klicken Sie auf Menü:Create[Pool].
 +
 Das Dialogfeld Pool erstellen wird angezeigt.
@@ -101,14 +101,14 @@ DA-fähig
  a| 
 Gibt an, ob Data Assurance (da) für diesen Pool-Kandidaten verfügbar ist. DA überprüft und korrigiert Fehler, die auftreten können, wenn Daten durch die Controller zu den Laufwerken übertragen werden.
 
-DA ist aktiviert, wenn alle Laufwerke für da-fähig sind. DA kann nach der Erstellung des Volumes durch Auswahl des Menüs:Speicher[Volumes > Einstellungen anzeigen/bearbeiten > Erweitert > Data Assurance dauerhaft deaktivieren] deaktiviert werden. Wenn das da auf einem Volume deaktiviert ist, kann es nicht erneut aktiviert werden.
+DA ist aktiviert, wenn alle Laufwerke DA-fähig sind. DA kann nach der Erstellung des Volumes deaktiviert werden, indem Sie Menü:Storage[Volumes > Auslassungszeichen-Symbol > Data Assurance deaktivieren] auswählen.
 
 
 
  a| 
-Resource Provisioning-fähig (nur EF300 und EF600)
+Ressourcenbereitstellungsfähig (EF80, EF50, EF300 und EF600 only)
  a| 
-Zeigt an, ob für diesen Pool-Kandidaten Ressourcen-Provisioning verfügbar ist. Resource Provisioning ist eine Funktion, die in den EF300- und EF600-Speicher-Arrays zur Verfügung steht und die es ermöglicht, Volumes ohne Hintergrundinitialisierung sofort in Betrieb zu nehmen.
+Zeigt an, ob Resource Provisioning für diesen Poolkandidaten verfügbar ist. Resource Provisioning ist eine Funktion, die in den Speichersystemen EF80, EF50, EF300 und EF600 verfügbar ist und es ermöglicht, Volumes sofort ohne Hintergrundinitialisierung zu verwenden.
 
 
 

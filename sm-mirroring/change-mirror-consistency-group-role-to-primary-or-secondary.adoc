@@ -18,7 +18,7 @@ Sie können die Rolle zwischen gespiegelten Konsistenzgruppen für administrativ
 Die primäre Rolle wird durch Spiegelkonsistency Groups, die auf dem lokalen Speicher-Array erstellt wurden, übernommen. Spiegelung von auf dem Remote-Speicher-Array erstellten Konsistenzgruppen enthalten die sekundäre Rolle. Sie können die Konsistenzgruppe der lokalen Spiegelung auf eine sekundäre Rolle herabstufen oder die Consistency Group für Remote-Spiegelungen auf eine primäre Rolle hochstufen.
 
 .Schritte
-. Wählen Sie Menü:Speicher[Asynchronous Mirroring].
+. Wählen Sie im linken Bereich Menü:Storage[Asynchronous Mirroring].
 . Wählen Sie die Registerkarte * Consistency Groups spiegeln* aus.
 +
 Die Tabelle Mirror Consistency Group wird angezeigt und zeigt alle dem Speicher-Array zugeordneten Spiegelkonsistency Groups an.

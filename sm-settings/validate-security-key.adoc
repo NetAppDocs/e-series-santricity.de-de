@@ -18,7 +18,7 @@ Sie können den Sicherheitsschlüssel überprüfen, um sicherzustellen, dass er 
 In dieser Aufgabe wird beschrieben, wie Sie den zuvor erstellten Sicherheitsschlüssel validieren. Dies ist ein wichtiger Schritt, um sicherzustellen, dass die Schlüsseldatei nicht beschädigt ist und der Passphrase korrekt ist, wodurch sichergestellt wird, dass Sie später auf die Laufwerkdaten zugreifen können, wenn Sie ein sicheres Laufwerk von einem Speicher-Array in ein anderes verschieben.
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
 . Wählen Sie unter * Security Key Management* die Option *Validate Key* aus.
 +
 Das Dialogfeld Sicherheitsschlüssel validieren wird geöffnet.

@@ -31,7 +31,7 @@ Der Host kann sofort auf das neue Rollback-Basis-Volume zugreifen, aber das vorh
 
 ====
 .Schritte
-. Wählen Sie Menü:Storage[Snapshots].
+. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
 . Wählen Sie die Registerkarte *Snapshot Images* aus.
 . Wählen Sie das Snapshot-Bild aus, und wählen Sie dann Menü:Rollback[Start].
 +
@@ -44,7 +44,7 @@ Das Dialogfeld reservierte Kapazität erhöhen wird angezeigt.
 +
 .. Verwenden Sie die Spinner-Box, um den Kapazitätsanteil einzustellen.
 +
-Wenn im Pool oder in der Volume-Gruppe keine freie Kapazität vorhanden ist, die das ausgewählte Speicherobjekt enthält und das Speicherarray nicht zugewiesene Kapazität hat, können Sie die Kapazität hinzufügen. Sie können einen neuen Pool oder eine neue Volume-Gruppe erstellen und diesen Vorgang anschließend mit der neuen freien Kapazität in diesem Pool oder dieser Volume-Gruppe wiederholen.
+Wenn im Pool oder der Volume-Gruppe, die das ausgewählte Speicherobjekt enthält, kein freier Speicherplatz vorhanden ist und das Speicherarray über Unassigned Capacity verfügt, können Sie Kapazität hinzufügen. Sie können einen neuen Pool oder eine neue Volume-Gruppe erstellen und dann diesen Vorgang mit der neuen freien Kapazität in diesem Pool oder dieser Volume-Gruppe erneut versuchen.
 
 .. Klicken Sie Auf *Erhöhen*.
 
@@ -60,6 +60,6 @@ System Manager führt die folgenden Aktionen durch:
 
 
 .Nachdem Sie fertig sind
-Wählen Sie MENU:Startseite[Vorgänge in Bearbeitung anzeigen], um den Fortschritt des Rollback-Vorgangs anzuzeigen.
+Wählen Sie Menü:Storage[Operations in Progress], um den Fortschritt des Rollback-Vorgangs anzuzeigen.
 
 Ist der Rollback-Vorgang nicht erfolgreich, wird der Vorgang angehalten. Sie können den angehaltenen Vorgang fortsetzen und, falls dieser weiterhin nicht erfolgreich war, das Recovery Guru-Verfahren befolgen, um das Problem zu beheben oder sich an den technischen Support zu wenden.

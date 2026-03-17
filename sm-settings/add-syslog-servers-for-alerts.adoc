@@ -20,7 +20,7 @@ Sie können maximal fünf Server für Syslog-Warnmeldungen hinzufügen.
 
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[Alarme].
+. Wählen Sie im linken Bereich menu:Settings[Alerts].
 . Wählen Sie die Registerkarte *Syslog* aus.
 . Wählen Sie *Syslog-Server Hinzufügen*.
 +

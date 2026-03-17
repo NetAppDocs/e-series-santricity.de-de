@@ -35,7 +35,7 @@ E-Mail-Benachrichtigungen können auch über den Einrichtungsassistenten konfigu
 
 ====
 .Schritte
-. Wählen Sie Menü:Einstellungen[Alarme].
+. Wählen Sie im linken Bereich menu:Settings[Alerts].
 . Wählen Sie die Registerkarte *E-Mail* aus.
 +
 Wenn noch kein E-Mail-Server konfiguriert ist, wird auf der Registerkarte E-Mail „Mailserver konfigurieren“ angezeigt.

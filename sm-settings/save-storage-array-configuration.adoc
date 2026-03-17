@@ -40,7 +40,7 @@ Diese Operation _speichert diese Einstellungen nicht_:
 
 ====
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
 . Wählen Sie *Speicherarray-Konfiguration Speichern*.
 . Wählen Sie die Elemente der Konfiguration aus, die Sie speichern möchten:
 +

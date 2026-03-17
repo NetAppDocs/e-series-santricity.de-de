@@ -24,7 +24,7 @@ Sie können einer vorhandenen Snapshot-Konsistenzgruppe ein neues Mitgliedsvolum
 Sie können der Snapshot-Konsistenzgruppe Standard-Volumes oder Thin Volumes hinzufügen. Das Basis-Volume kann sich entweder in einem Pool oder in einer Volume-Gruppe befinden.
 
 .Schritte
-. Wählen Sie Menü:Storage[Snapshots].
+. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
 . Wählen Sie die Registerkarte *Snapshot Consistency Groups* aus.
 +
 Die Tabelle wird angezeigt und zeigt alle Snapshot-Konsistenzgruppen an, die dem Speicher-Array zugeordnet sind.

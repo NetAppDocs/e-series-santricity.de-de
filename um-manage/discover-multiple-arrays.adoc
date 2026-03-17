@@ -17,7 +17,7 @@ Sie erkennen mehrere Arrays, um alle Speicher-Arrays im Subnetz zu erkennen, in 
 .Bevor Sie beginnen
 * Sie müssen mit einem Benutzerprofil angemeldet sein, das die Berechtigungen für den Sicherheitsadministrator enthält.
 * Das Speicher-Array muss ordnungsgemäß eingerichtet und konfiguriert sein.
-* Passwörter für das Storage-Array müssen mithilfe der Kachel „System Manager Access Management“ eingerichtet werden.
+* Die Passwörter für die Storage-Arrays müssen über die Access Management-Seite des System Manager eingerichtet werden.
 * Um nicht vertrauenswürdige Zertifikate zu lösen, müssen Sie vertrauenswürdige Zertifikatdateien von einer Zertifizierungsstelle (CA) haben, und die Zertifikatdateien sind auf Ihrem lokalen System verfügbar.
 
 

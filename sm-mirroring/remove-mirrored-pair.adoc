@@ -23,7 +23,7 @@ Prüfen Sie die folgenden Informationen zu verwaisten gespiegelten Paaren:
 
 
 .Schritte
-. Wählen Sie Menü:Speicher[Asynchronous Mirroring].
+. Wählen Sie im linken Bereich Menü:Storage[Asynchronous Mirroring].
 . Wählen Sie die Registerkarte *gespiegeltes Paar* aus.
 +
 Die Tabelle mit gespiegelten Paaren wird angezeigt und zeigt alle gespiegelten Paare an, die dem Speicher-Array zugeordnet sind.

@@ -23,7 +23,7 @@ Sie können Ihre Festplatten-Firmware aktualisieren, um sicherzustellen, dass Si
 
 
 .Schritte
-. Wählen Sie Menü:Support[Upgrade Center].
+. Wählen Sie im linken Bereich Menü:Support[Upgrade Center].
 . Laden Sie die neuen Dateien von der Support-Website auf Ihren Management-Client herunter.
 . Klicken Sie unter Laufwerk-Firmware-Upgrade auf *Upgrade starten*.
 +

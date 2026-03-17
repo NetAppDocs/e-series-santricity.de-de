@@ -25,7 +25,7 @@ Die iSCSI-Einstellungen und -Funktionen werden nur angezeigt, wenn Ihr Speichera
 
 ====
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
 . Wählen Sie unter *iSCSI-Einstellungen* die Option *iSCSI-Ports konfigurieren* aus.
 +
 [NOTE]

@@ -18,7 +18,7 @@ Durch die Anzeige von Prüfprotokollen können Benutzer mit Sicherheitsadministr
 Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[Zugriffsverwaltung].
+. Wählen Sie im linken Bereich menu:Settings[Access Management].
 . Wählen Sie die Registerkarte **Überwachungsprotokoll** aus.
 +
 Die Aktivität des Überwachungsprotokolls wird im Tabellenformat angezeigt, das die folgenden Informationspalten enthält:

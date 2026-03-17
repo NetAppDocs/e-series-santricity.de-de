@@ -43,12 +43,12 @@ Sie können folgende Aktionen ausführen:
 
 
 .Schritte
-. Wählen Sie Menü:Storage[Volumes].
-. Wählen Sie eine beliebige Lautstärke aus, und wählen Sie dann Menü:Mehr[Einstellungen für Medienscan ändern].
+. Wählen Sie im linken Bereich Menü:Storage[Volumes].
+. Klicken Sie auf das Menü:Ellipsis-Symbol [Einstellungen für die Medienprüfung des Volumes ändern].
 +
-Das Dialogfeld Einstellungen für Laufwerkmedienscan ändern wird angezeigt. In diesem Dialogfeld werden alle Volumes im Speicher-Array angezeigt.
+Das Fenster „Einstellungen für die Laufwerksmedienprüfung ändern“ wird angezeigt. Alle Volumes des Speichersystems werden in diesem Dialogfeld angezeigt.
 
-. Um den Medienscan zu aktivieren, aktivieren Sie das Kontrollkästchen *Medien scannen über...*.
+. Um den *Medienscan* zu aktivieren, wählen Sie das Kästchen *Medienscan* aus.
 +
 Wenn Sie das Kontrollkästchen Medien-Scan deaktivieren, werden alle Einstellungen für den Medienscan unterbrochen.
 

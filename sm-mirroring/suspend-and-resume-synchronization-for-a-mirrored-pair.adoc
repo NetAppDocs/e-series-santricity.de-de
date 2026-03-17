@@ -18,7 +18,7 @@ Sie können die Option „anhalten“ und „Wiederaufnehmen“ verwenden, um zu
 Wenn ein gespiegeltes Paar manuell unterbrochen wird, synchronisiert das gespiegelte Paar erst dann, wenn es manuell wieder aufgenommen wird.
 
 .Schritte
-. Wählen Sie Menü:Speicher[Synchronous Mirroring].
+. Wählen Sie im linken Bereich Menü:Storage[Synchronous Mirroring].
 . Wählen Sie das gespiegelte Paar aus, das Sie aussetzen oder fortsetzen möchten, und wählen Sie dann entweder Menü:Mehr[Suspend] oder Menü:Mehr[Fortsetzen].
 +
 Das System zeigt eine Bestätigung an.

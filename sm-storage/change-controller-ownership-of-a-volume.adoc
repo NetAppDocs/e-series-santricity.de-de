@@ -21,10 +21,10 @@ Falls Sie keinen Multipath-Treiber verwenden, müssen alle Host-Applikationen, d
 Sie können die Controller-Eigentumsrechte für ein oder mehrere Volumes in einem Pool oder einer Volume-Gruppe ändern.
 
 .Schritte
-. Wählen Sie Menü:Storage[Volumes].
-. Wählen Sie ein beliebiges Volume aus, und wählen Sie dann Menü:Mehr[Eigentümerschaft ändern].
+. Wählen Sie im linken Bereich Menü:Storage[Volumes].
+. Klicken Sie auf das Menü:Ellipsis-Symbol [Volume-Besitz ändern].
 +
-Das Dialogfeld Volume-Eigentümer ändern wird angezeigt. In diesem Dialogfeld werden alle Volumes im Speicher-Array angezeigt.
+Das Fenster „Volume-Besitz ändern“ wird angezeigt. Alle Volumes auf dem Speicher-Array werden in diesem Dialogfeld angezeigt.
 
 . Verwenden Sie die Dropdown-Liste *bevorzugter Eigentümer*, um den bevorzugten Controller für jedes zu ändernden Volume zu ändern, und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
 

@@ -24,7 +24,7 @@ Verwenden Sie den Vorgang zum Initialisieren des Laufwerks, wenn Sie ein einzeln
 
 ====
 .Schritte
-. Wählen Sie *Hardware*.
+. Wählen Sie im linken Bereich *Hardware* aus.
 . Wenn die Grafik die Controller anzeigt, klicken Sie auf die Registerkarte *Laufwerke*.
 +
 Die Grafik ändert sich, um die Laufwerke anstelle der Controller anzuzeigen.

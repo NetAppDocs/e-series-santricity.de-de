@@ -18,7 +18,7 @@ Sie können die Eigenschaften, den Status, die reservierte Kapazität und die zu
 Zu den zugehörigen Objekten für ein Snapshot Image zählen das Basis-Volume oder die Snapshot Konsistenzgruppe, für die dieses Snapshot Image ein Wiederherstellungspunkt ist, die zugehörige Snapshot Gruppe und alle aus dem Snapshot Image erstellten Snapshot Volumes. Bestimmen Sie mithilfe der Snapshot-Einstellungen, ob Sie das Snapshot-Image kopieren oder konvertieren möchten.
 
 .Schritte
-. Wählen Sie Menü:Storage[Snapshots].
+. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
 . Klicken Sie auf die Registerkarte *Snapshot Images*.
 . Wählen Sie das Snapshot-Bild aus, das Sie anzeigen möchten, und klicken Sie dann auf *Einstellungen anzeigen*.
 +

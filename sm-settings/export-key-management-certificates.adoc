@@ -20,7 +20,7 @@ Sie können ein Zertifikat für einen Schlüsselverwaltungsserver auf Ihrem loka
 
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[Zertifikate].
+. Wählen Sie im linken Bereich menu:Settings[Certificates].
 . Wählen Sie die Registerkarte * Key Management* aus.
 . Wählen Sie in der Tabelle das Zertifikat aus, das Sie exportieren möchten, und klicken Sie dann auf *Exportieren*.
 +

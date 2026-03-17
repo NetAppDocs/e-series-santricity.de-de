@@ -1,13 +1,13 @@
 ---
 indexpage:
-  title: SANtricity Software 11.9 Dokumentation
+  title: SANtricity software 12.0 Dokumentation
   summary: SANtricity System Manager und Unified Manager
   keywords: santricity, all-flash arrays, heavy workload applications, video surveillance,
     data analytics
-  lead: Mit der SANtricity Software 11.9 erreichen Sie maximale Performance und Auslastung
-    Ihrer Hybrid-Flash-Storage-Systeme der E-Series und All-Flash-Arrays der EF-Series
-    für workloadintensive Applikationen, beispielsweise Datenanalysen, Videoüberwachung
-    sowie Backup und Recovery.
+  lead: SANtricity software 12.0 ermöglicht Ihnen maximale Leistung und Auslastung
+    Ihrer E-Series Hybrid-Flash- und EF-Series All-Flash-Arrays für Anwendungen mit
+    hoher Arbeitslast, einschließlich Data Analytics, Video Surveillance sowie Backup
+    und Recovery.
   tiles:
   - title: Los geht's
     links:
@@ -44,9 +44,9 @@ indexpage:
   - title: Für die SES
     links:
     - title: Technisches Training zur E-Series/EF-Series (Anmeldung erforderlich)
-      url: https://fieldportal.netapp.com/content/199944
+      url: https://fieldportal.netapp.com/s/article/E-Series-and-EF-Series-SE-Technical-Training
     - title: EF300 Übersicht und technische Details (Anmeldung erforderlich)
-      url: https://fieldportal.netapp.com/content/1417672
+      url: https://fieldportal.netapp.com/s/article/eseries-ef300-se-presentation-1704449366156
     - title: NetApp Fusion (Anmeldung erforderlich)
       url: https://fusion.netapp.com/
   - title: Tools und Support

@@ -38,9 +38,7 @@ Sie können Hosts später konfigurieren, sobald Sie die Einrichtung durchgeführ
 
 == Wie kann ich anhand der Identifizierung von Applikationen mein Storage-Array managen?
 
-Wenn Sie Applikationen identifizieren, empfiehlt SANtricity System Manager automatisch eine Volume-Konfiguration, die den Storage basierend auf dem Applikationstyp optimiert.
-
-Die Optimierung von Volumes durch Applikation ermöglicht einen effizienteren Storage-Betrieb. Merkmale wie I/O-Typ, Segmentgröße, Controller-Eigentümer und Lese- und Schreib-Cache sind in der Volume-Konfiguration enthalten. Zusätzlich können Sie Performance-Daten nach Applikation und Workload anzeigen, um Latenz, IOPS und MiB/s der Applikationen und der zugehörigen Workloads zu bewerten.
+Sie können Leistungsdaten nach Anwendung und Workload anzeigen, um die Latenz, IOPS und MiB/s von Anwendungen und ihren zugehörigen Workloads zu bewerten, um die Leistung zu optimieren. Merkmale wie E/A-Typ, Segmentgröße, Controller-Zugehörigkeit sowie Lese- und Schreibcache sind in der Volume-Konfiguration enthalten.
 
 
 
@@ -48,7 +46,7 @@ Die Optimierung von Volumes durch Applikation ermöglicht einen effizienteren St
 
 Für einige Applikationen im Netzwerk, z. B. SQL Server oder Exchange, können Sie einen Workload definieren, der den Storage für die jeweilige Applikation optimiert.
 
-Ein Workload ist ein Storage-Objekt, das eine Applikation unterstützt. Sie können einen oder mehrere Workloads oder Instanzen pro Applikation definieren. Bei einigen Applikationen konfiguriert das System den Workload so, dass er Volumes mit ähnlichen zugrunde liegenden Volume-Merkmalen enthält. Diese Volume-Merkmale werden basierend auf dem Applikationstyp optimiert, den der Workload unterstützt. Wenn Sie beispielsweise einen Workload erstellen, der eine Microsoft SQL Server Applikation unterstützt und anschließend Volumes für diesen Workload erstellt, werden die zugrunde liegenden Volume-Merkmale zur Unterstützung von Microsoft SQL Server optimiert.
+Ein Workload ist ein Storage-Objekt, das eine Applikation unterstützt. Sie können einen oder mehrere Workloads oder Instanzen pro Applikation definieren.
 
 Während der Volume-Erstellung werden Sie aufgefordert, Fragen zur Verwendung eines Workloads zu beantworten. Wenn Sie beispielsweise Volumes für Microsoft Exchange erstellen, werden Sie gefragt, wie viele Mailboxen Sie benötigen, wie viele Mailboxen Ihre durchschnittlichen Anforderungen an die Mailbox-Kapazität sind und wie viele Kopien der Datenbank Sie benötigen. Das System erstellt anhand dieser Informationen eine optimale Volume-Konfiguration für Sie, die Sie nach Bedarf bearbeiten können.
 

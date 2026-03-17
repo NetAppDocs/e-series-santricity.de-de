@@ -41,8 +41,11 @@ Eine sofortige Durchführung einer Redundanzprüfung auf demselben Pool oder der
 
 ====
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
-. Menü wählen:Sonstige Aufgaben[Volumenredundanz prüfen].
+
+NOTE: Die Funktion „Check Volume Redundancy“ ist derzeit nur für Vorgänge in der Benutzeroberfläche des Legacy System Manager verfügbar.
+
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
+. Klicken Sie auf das Menü:Ellipsen-Symbol[Volume-Redundanz prüfen] für den Pool oder die Volume-Gruppe, die Sie überprüfen möchten.
 +
 Das Dialogfeld Redundanz prüfen wird angezeigt.
 

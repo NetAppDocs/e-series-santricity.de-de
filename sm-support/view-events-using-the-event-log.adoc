@@ -15,7 +15,7 @@ summary: Sie können das Ereignisprotokoll anzeigen, das einen historischen Date
 Sie können das Ereignisprotokoll anzeigen, das einen historischen Datensatz von Ereignissen enthält, die auf dem Speicher-Array aufgetreten sind.
 
 .Schritte
-. Wählen Sie Menü:Support[Ereignisprotokoll].
+. Wählen Sie im linken Bereich Menü:Support[Event Log].
 +
 Die Seite Ereignisprotokoll wird angezeigt.
 

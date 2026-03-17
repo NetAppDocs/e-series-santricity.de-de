@@ -37,7 +37,7 @@ Alternativ können Sie eine CSR-Datei mit einem Tool wie OpenSSL generieren und 
 
 ====
 .Schritte
-. Wählen Sie Menü:Einstellungen[Zertifikate].
+. Wählen Sie im linken Bereich menu:Settings[Certificates].
 . Wählen Sie auf der Registerkarte Array Management die Option *Complete CSR* aus.
 +
 [NOTE]
@@ -114,7 +114,7 @@ Nachdem Sie von der Zertifizierungsstelle (CA) signierte Zertifikate erhalten ha
 
 
 .Schritte
-. Menü auswählen:Einstellungen[Zertifikate]
+. Wählen Sie im linken Bereich Menü:Einstellungen[Zertifikate]
 . Wählen Sie auf der Registerkarte Array Management die Option *Import* aus.
 +
 Es wird ein Dialogfeld zum Importieren der Zertifikatdatei(en) geöffnet.

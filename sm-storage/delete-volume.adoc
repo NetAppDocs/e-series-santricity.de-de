@@ -46,8 +46,8 @@ Wenn ein Volume eine bestimmte Größe überschreitet (derzeit 128 TB), wird das
 
 ====
 .Schritte
-. Wählen Sie Menü:Storage[Volumes].
-. Klicken Sie Auf *Löschen*.
+. Wählen Sie im linken Bereich Menü:Storage[Volumes].
+. Wählen Sie das Volume aus, das Sie löschen möchten, und klicken Sie dann auf das Menü:Ellipsen-Symbol[Löschen].
 +
 Das Dialogfeld Volumes löschen wird angezeigt.
 

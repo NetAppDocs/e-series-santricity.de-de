@@ -98,8 +98,8 @@ X
 
 ====
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
-. Wählen Sie *Speicherarray-Konfiguration Löschen*.
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
+. Unter *Allgemein* wählen Sie *Speicherarray-Konfiguration löschen*.
 . Wählen Sie in der Dropdown-Liste entweder *Volume* oder *Storage Array* aus.
 . *Optional:* Wenn Sie die Konfiguration speichern möchten (nicht die Daten), verwenden Sie die Links im Dialogfeld.
 . Bestätigen Sie, dass Sie den Vorgang ausführen möchten.

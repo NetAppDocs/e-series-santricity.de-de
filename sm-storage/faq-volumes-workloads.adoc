@@ -35,32 +35,10 @@ Wenn eine Volume-Gruppe über freie Kapazitätsbereiche verfügt, enthält das V
 Durch die Konsolidierung der freien Kapazität können Sie zusätzliche Volumes aus der maximalen freien Kapazität in einer Volume-Gruppe erstellen. Sie können die vorhandene freie Kapazität in einer ausgewählten Volume-Gruppe mit einer der folgenden Methoden konsolidieren:
 
 * Wenn für eine Volume-Gruppe mindestens ein freier Kapazitätsbereich erkannt wird, erscheint die Empfehlung „freie Kapazität konsolidieren“ auf der Startseite im Benachrichtigungsbereich. Klicken Sie auf den Link *freie Kapazität konsolidieren*, um das Dialogfeld zu starten.
-* Sie können auch Menü:Pools & Volume Groups [Sonstige Aufgaben > freie Kapazität der Volumengruppe konsolidieren] wählen, um das Dialogfeld zu starten.
+* Alternativ können Sie im linken Bereich auf menu:Storage[Pools und volume groups] klicken und dann das menu:ellipsis icon[Consolidate volume group free capacity] auswählen, um das Dialogfeld zu öffnen.
 
 
 Wenn Sie einen bestimmten freien Kapazitätsbereich anstelle des größten Bereichs mit freier Kapazität verwenden möchten, verwenden Sie das Command Line Interface (CLI).
-
-
-
-== Wie wirkt sich mein ausgewählter Workload auf die Erstellung des Volumes aus?
-
-Während der Erstellung eines Volumes werden Sie aufgefordert, Informationen über die Verwendung eines Workloads einzugeben. Das System erstellt anhand dieser Informationen eine optimale Volume-Konfiguration für Sie, die Sie nach Bedarf bearbeiten können. Optional können Sie diesen Schritt in der Sequenz zur Volume-Erstellung überspringen.
-
-Ein Workload ist ein Storage-Objekt, das eine Applikation unterstützt. Sie können einen oder mehrere Workloads oder Instanzen pro Applikation definieren. Bei einigen Applikationen konfiguriert das System den Workload so, dass er Volumes mit ähnlichen zugrunde liegenden Volume-Merkmalen enthält. Diese Volume-Merkmale werden basierend auf dem Applikationstyp optimiert, den der Workload unterstützt. Wenn Sie beispielsweise einen Workload erstellen, der eine Microsoft SQL Server Applikation unterstützt und anschließend Volumes für diesen Workload erstellt, werden die zugrunde liegenden Volume-Merkmale zur Unterstützung von Microsoft SQL Server optimiert.
-
-* *Applikationsspezifisch* -- Wenn Sie Volumes mit einem anwendungsspezifischen Workload erstellen, empfiehlt das System möglicherweise eine optimierte Volume-Konfiguration, um Konflikte zwischen Applikations-Workload I/O und anderem Traffic aus Ihrer Anwendungsinstanz zu minimieren. Volume-Merkmale wie I/O-Typ, Segmentgröße, Controller-Besitz und Lese- und Schreib-Cache werden automatisch für Workloads empfohlen und optimiert, die für die folgenden Applikationstypen erstellt wurden.
-+
-** Microsoft® SQL Server™
-** Microsoft® Exchange Server™
-** Videoüberwachungsapplikationen
-** VMware ESXi™ (für Volumes, die mit dem File System der Virtual Machine verwendet werden sollen)
-+
-Sie können die empfohlene Volume-Konfiguration überprüfen und die vom System empfohlenen Volumes und Merkmale bearbeiten, hinzufügen oder löschen. Verwenden Sie dazu das Dialogfeld Volumes hinzufügen/bearbeiten.
-
-
-
-* *Andere* (oder Anwendungen ohne spezifische Unterstützung der Volumenerzeugung) -- Bei anderen Workloads wird eine Volume-Konfiguration verwendet, die manuell angegeben werden muss, wann ein Workload erstellt werden soll, der nicht mit einer bestimmten Applikation verknüpft ist, oder ob keine integrierte Optimierung für die Applikation vorhanden ist, die Sie im Storage-Array verwenden möchten. Sie müssen die Volume-Konfiguration manuell über das Dialogfeld Volumes hinzufügen/bearbeiten angeben.
-
 
 
 
@@ -81,18 +59,6 @@ Dieser Workload besteht aus einer Gruppe von Volumes, die mithilfe der Befehlsze
 Die Volume-Merkmale Ihres applikationsspezifischen Workloads diktieren, wie der Workload mit den Komponenten des Storage-Arrays interagiert und die Performance Ihrer Umgebung im Rahmen einer bestimmten Konfiguration bestimmt.
 
 Eine Applikation ist Software wie SQL Server oder Exchange. Sie definieren einen oder mehrere Workloads, um jede Applikation zu unterstützen.
-
-
-
-== Wie können durch die Bereitstellung dieser Informationen Speicher erstellt werden?
-
-Die Workload-Informationen werden verwendet, um die Volume-Merkmale wie I/O-Typ, Segmentgröße und Lese-/Schreib-Cache für den ausgewählten Workload zu optimieren. Diese optimierten Eigenschaften bestimmen, wie Ihr Workload mit den Storage Array-Komponenten interagiert.
-
-Basierend auf den von Ihnen bereitgestellten Workload-Informationen erstellt der System Manager die entsprechenden Volumes und platziert sie in den verfügbaren Pools oder Volume-Gruppen, die derzeit im System vorhanden sind. Das System erstellt die Volumes und optimiert ihre Eigenschaften auf Grundlage der aktuellen Best Practices für den ausgewählten Workload.
-
-Bevor Sie das Erstellen von Volumes für einen bestimmten Workload abgeschlossen haben, können Sie die empfohlene Volume-Konfiguration prüfen und im Dialogfeld Volumes und -Eigenschaften hinzufügen/bearbeiten, hinzufügen oder löschen, die vom System empfohlen werden.
-
-Informationen zu Best Practices finden Sie in Ihrer anwendungsspezifischen Dokumentation.
 
 
 

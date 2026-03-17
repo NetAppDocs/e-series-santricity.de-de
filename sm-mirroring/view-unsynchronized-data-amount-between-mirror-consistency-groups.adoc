@@ -18,7 +18,7 @@ Sie können die Menge der nicht synchronisierten Daten zwischen den Spiegelungsk
 Sie können diese Aufgabe ausführen, wenn die ausgewählte SpiegelungsConsistency Group gespiegelte Paare enthält und die Synchronisierung derzeit nicht ausgeführt wird.
 
 .Schritte
-. Wählen Sie Menü:Speicher[Asynchronous Mirroring].
+. Wählen Sie im linken Bereich Menü:Storage[Asynchronous Mirroring].
 . Wählen Sie die Registerkarte * Consistency Groups spiegeln* aus.
 +
 Die Tabelle Mirror Consistency Group wird angezeigt und zeigt alle dem Speicher-Array zugeordneten Spiegelkonsistency Groups an.

@@ -18,7 +18,7 @@ Sie können die iSCSI-IP-Adresse für Ihr Remote-Speicher-Array aktualisieren, u
 Das lokale Storage-Array und das Remote-Storage-Array müssen für asynchrone Spiegelung über eine iSCSI-Verbindung konfiguriert werden.
 
 .Schritte
-. Wählen Sie Menü:Speicher[Asynchronous Mirroring].
+. Wählen Sie im linken Bereich Menü:Storage[Asynchronous Mirroring].
 . Wählen Sie die Registerkarte * Consistency Groups spiegeln* aus.
 +
 In der Tabelle Mirror Consistency Group werden alle dem Speicher-Array zugeordneten Spiegelkonsistency Groups angezeigt.

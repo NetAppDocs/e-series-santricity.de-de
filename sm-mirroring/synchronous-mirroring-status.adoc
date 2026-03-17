@@ -15,7 +15,7 @@ Der Status eines synchronen gespiegelten Paars gibt an, ob die Daten auf dem pri
 
 [NOTE]
 ====
-Diese Funktion ist für das Speichersystem EF600/EF600C oder EF300/EF300C nicht verfügbar.
+Diese Funktion ist auf dem Speichersystem EF80, EF50, EF600/EF600C oder EF300/EF300C nicht verfügbar.
 
 ====
 Synchrone gespiegelte Paare können einen der folgenden Status aufweisen:

@@ -26,7 +26,7 @@ Der Prozess zur Erstellung eines Volumes ist ein mehrstufiges Verfahren.
 Sie erstellen Volumes, um einem applikationsspezifischen Workload Storage-Kapazität hinzuzufügen und die erstellten Volumes für einen bestimmten Host oder Host-Cluster sichtbar zu machen. Darüber hinaus bietet die Erstellung eines Volumes Optionen, mit denen jedem zu erstellenden Volume bestimmte Kapazitätsmengen zugewiesen werden können.
 
 .Bevor Sie beginnen
-* Unter dem Feld Hosts sind gültige Hosts oder Host-Cluster vorhanden.
+* Gültige Hosts oder Host-Cluster sind auf der Seite Hosts vorhanden.
 * Für den Host wurden Host-Port-IDs definiert.
 * Vor dem Erstellen eines da-fähigen Volumes muss die Host-Verbindung, die Sie verwenden möchten, da unterstützen. Wenn eine der Host-Verbindungen auf den Controllern im Speicher-Array keine Unterstützung für da bietet, können die zugeordneten Hosts auf da-fähige Volumes keinen Zugriff auf Daten haben.
 
@@ -47,10 +47,10 @@ Die Zuweisung eines Volumes zu einem Host schlägt fehl, wenn Sie versuchen, ein
 
 ====
 .Schritte
-. Wählen Sie Menü:Storage[Volumes].
+. Wählen Sie im linken Bereich Menü:Storage[Volumes].
 . Wählen Sie Menü:Erstellen[Volumen].
 +
-Das Dialogfeld Volumes erstellen wird angezeigt.
+Die Seite „Volumes erstellen“ wird angezeigt.
 
 . Wählen Sie aus der Dropdown-Liste einen bestimmten Host oder Host-Cluster aus, dem Sie Volumes zuweisen möchten, oder wählen Sie aus, zu einem späteren Zeitpunkt den Host oder Host-Cluster zuzuweisen.
 . Um die Volume-Erstellungsreihenfolge für den ausgewählten Host oder Host-Cluster fortzusetzen, klicken Sie auf *Weiter* und gehen Sie zu <<Schritt 2: Wählen Sie einen Workload für ein Volume>>.
@@ -88,12 +88,12 @@ Wählen Sie einen der „anderen“ Einträge aus, wenn die Anwendung, die Sie f
 
 
 . Klicken Sie Auf *Weiter*.
-. Wenn Ihr Workload einem unterstützten Applikationstyp zugewiesen ist, geben Sie die angeforderten Informationen ein. Andernfalls fahren Sie mit fort <<Schritt 3: Volumes hinzufügen oder bearbeiten>>.
+. Wenn Ihre Arbeitslast mit einem unterstützten Anwendungstyp verknüpft ist, geben Sie die angeforderten Informationen ein; andernfalls gehen Sie zu <<Schritt 3: Volumes hinzufügen>>.
 
 
 
 
-== Schritt 3: Volumes hinzufügen oder bearbeiten
+== Schritt 3: Volumes hinzufügen
 
 System Manager kann eine Volume-Konfiguration auf Grundlage der von Ihnen ausgewählten Applikation oder Workload vorschlagen. Diese Volume-Konfiguration ist basierend auf dem Applikationstyp optimiert, den der Workload unterstützt. Sie können die empfohlene Volume-Konfiguration akzeptieren oder Sie können sie nach Bedarf bearbeiten. Wenn Sie eine der „anderen“ Anwendungen ausgewählt haben, müssen Sie manuell die Volumes und Merkmale angeben, die Sie erstellen möchten.
 
@@ -102,8 +102,8 @@ System Manager kann eine Volume-Konfiguration auf Grundlage der von Ihnen ausgew
 * In einer Volume-Gruppe sind maximal 256 Volumes zulässig.
 * Die maximale Anzahl an Volumes, die in einem Pool zulässig sind, hängt vom Modell des Storage-Systems ab:
 +
-** 2,048 Volumes (EF600, EF600C und E5700 Series)
-** 1,024 Volumes (EF300 und EF300C)
+** 2.048 Volumes (EF80, EF600, EF600C und E5700 series)
+** 1.024 Volumes (EF50, EF300 und EF300C)
 ** 512 Volumes (E4000 und E2800 Serie)
 
 
@@ -224,13 +224,13 @@ DA erhöht die Datenintegrität im gesamten Storage-System. DA ermöglicht es de
 
 
  a| 
-Bereitgestellte Ressource (nur EF300 und EF600)
+Ressource bereitgestellt (EF80, EF50, EF300 und EF600 only)
  a| 
-*Ja* erscheint neben „Ressourcen bereitgestellt“ nur, wenn die Laufwerke diese Option unterstützen. Resource Provisioning ist eine Funktion, die in den EF300- und EF600-Speicher-Arrays zur Verfügung steht und die es ermöglicht, Volumes ohne Hintergrundinitialisierung sofort in Betrieb zu nehmen.
+*Ja* erscheint neben „Ressource bereitgestellt“ nur, wenn die Laufwerke diese Option unterstützen. Ressourcenbereitstellung ist eine Funktion, die in den Speichersystemen EF80, EF50, EF300 und EF600 verfügbar ist und es ermöglicht, Volumes sofort ohne Hintergrundinitialisierung zu verwenden.
 
 |===
 ====
-** *Anwendungsspezifischer Workload* -- Klicken Sie entweder auf *Weiter*, um die vom System empfohlenen Volumes und Merkmale für den ausgewählten Workload zu akzeptieren, oder klicken Sie auf *Volumes bearbeiten*, um die vom System empfohlenen Volumes und Merkmale für den ausgewählten Workload zu ändern, hinzuzufügen oder zu löschen.
+** *Anwendungsspezifische Arbeitslast* -- Klicken Sie auf *Volumes bearbeiten*, um die vom System empfohlenen Volumes und Merkmale für die ausgewählte Arbeitslast zu ändern, hinzuzufügen oder zu löschen.
 +
 .Felddetails
 [%collapsible]
@@ -266,7 +266,7 @@ Volume-Typ gibt den Volume-Typ an, der für einen applikationsspezifischen Workl
 
 
  a| 
-Volume-Block-Größe (nur EF300 und EF600)
+Volumenblockgröße (EF80, EF50, EF300 und EF600 nur)
  a| 
 Zeigt die Block-Größen, die für das Volume erstellt werden können:
 
@@ -317,9 +317,9 @@ DA erhöht die Datenintegrität im gesamten Storage-System. DA ermöglicht es de
 
 
  a| 
-Bereitgestellte Ressource (nur EF300 und EF600)
+Ressource bereitgestellt (EF80, EF50, EF300 und EF600 only)
  a| 
-*Ja* erscheint neben „Ressourcen bereitgestellt“ nur, wenn die Laufwerke diese Option unterstützen. Resource Provisioning ist eine Funktion, die in den EF300- und EF600-Speicher-Arrays zur Verfügung steht und die es ermöglicht, Volumes ohne Hintergrundinitialisierung sofort in Betrieb zu nehmen.
+*Ja* erscheint neben „Ressource bereitgestellt“ nur, wenn die Laufwerke diese Option unterstützen. Ressourcenbereitstellung ist eine Funktion, die in den Speichersystemen EF80, EF50, EF300 und EF600 verfügbar ist und es ermöglicht, Volumes sofort ohne Hintergrundinitialisierung zu verwenden.
 
 |===
 ====
@@ -346,6 +346,6 @@ System Manager erstellt die neuen Volumes in den ausgewählten Pools und Volume-
 * Führen Sie alle auf dem Applikations-Host erforderlichen Betriebssystemänderungen durch, damit die Applikationen das Volume verwenden können.
 * Führen Sie das betriebssystemspezifische Dienstprogramm (verfügbar von einem Drittanbieter) aus, und führen Sie dann den Befehl SMcli aus `-identifyDevices` So korrelieren Sie Volume-Namen mit Host-Storage-Array-Namen
 +
-Die SMcli ist direkt über den SANtricity System Manager erhältlich. Diese Version kann von den SMcli heruntergeladen werden und ist für die Controller E4000, EF600, EF600C, EF300, EF300C, E5700, EF570, E2800 und EF280 erhältlich. Um den SMcli im SANtricity System Manager herunterzuladen, wählen Sie *Einstellungen* > *System* und *Add-ons* > *Befehlszeilenschnittstelle*.
+Die SMcli ist direkt über den SANtricity System Manager verfügbar. Diese herunterladbare Version der SMcli ist auf EF80, EF50, E4000, EF600, EF600C, EF300, EF300C, E5700, EF570, E2800 und EF280 Controllern verfügbar. Um die SMcli innerhalb des SANtricity System Manager herunterzuladen, wählen Sie *Einstellungen* > *System* und *Add-ons* > *Command Line Interface*.
 
 

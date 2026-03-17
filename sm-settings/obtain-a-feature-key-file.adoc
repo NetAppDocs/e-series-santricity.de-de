@@ -23,8 +23,8 @@ In dieser Aufgabe wird beschrieben, wie die erforderlichen Informationen für di
 
 
 .Schritte
-. Suchen Sie in System Manager die Seriennummer des Chassis und notieren Sie sie. Sie können sich diese Seriennummer anzeigen lassen, indem Sie den Mauszeiger über die Kachel Support Center bewegen.
-. Suchen Sie in System Manager nach der Feature Enable Identifier. Gehen Sie zum Menü:Einstellungen[System], und scrollen Sie dann nach unten zu *Add-ons*. Suchen Sie nach der *Feature Enable Identifier*. Notieren Sie die Nummer für den Kennzeichner der Feature Enable.
+. Suchen und notieren Sie im System Manager die Seriennummer des Gehäuses. Gehen Sie im linken Bereich zu menu:Support[Suport Center] und scrollen Sie nach unten zu *View top storage array properties*, um die Seriennummer des Gehäuses anzuzeigen.
+. Suchen Sie im System Manager die Feature Enable Identifier. Gehen Sie im linken Bereich zu Menü:Settings[System] und scrollen Sie dann zu *Add-ons*. Suchen Sie die *Feature Enable Identifier*. Notieren Sie die Nummer für die Feature Enable Identifier.
 . Suchen und notieren Sie den Code für die Aktivierung der Funktion. Für Features Packs wird dieser Code in den entsprechenden Anweisungen zur Durchführung der Konvertierung angegeben.
 +
 Bei Premium-Funktionen können Sie über die Support-Website auf den Aktivierungscode zugreifen:

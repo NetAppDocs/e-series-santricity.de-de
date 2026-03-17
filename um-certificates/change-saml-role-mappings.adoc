@@ -21,7 +21,7 @@ Wenn Sie zuvor SAML für Access Management konfiguriert haben, können Sie die R
 
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[Zugriffsverwaltung].
+. Wählen Sie im linken Bereich menu:Settings[Access Management].
 . Wählen Sie die Registerkarte *SAML* aus.
 . Wählen Sie *Rollenzuordnung*.
 +

@@ -30,7 +30,7 @@ Während des Verfahrens zum Hinzufügen eines LDAP-Servers wird die alte Verwalt
 
 ====
 .Schritte
-. Wählen Sie Menü:Einstellungen[Zugriffsverwaltung].
+. Wählen Sie im linken Bereich menu:Settings[Access Management].
 . Wählen Sie auf der Registerkarte Verzeichnisdienste die Option *Verzeichnisserver hinzufügen* aus.
 +
 Das Dialogfeld Add Directory Server wird geöffnet.

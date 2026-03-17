@@ -20,7 +20,7 @@ Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministrat
 Die Benutzer und Zuordnungen können nicht geändert werden. Es können nur Passwörter geändert werden.
 
 .Schritte
-. Wählen Sie *Zugriffsmanagement*.
+. Wählen Sie im linken Bereich menu:Settings[Access Management].
 . Wählen Sie die Registerkarte * Lokale Benutzerrollen* aus.
 +
 Die Benutzer sind in der Tabelle aufgeführt:

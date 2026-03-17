@@ -33,12 +33,12 @@ Wenn Sie nicht über die MIB-Datei, können Sie sie von der NetApp Support-Websi
 
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[Alarme].
+. Wählen Sie im linken Bereich menu:Settings[Alerts].
 . Wählen Sie die Registerkarte *SNMP* aus.
 +
 Die aktuell definierten Trap-Ziele werden in der Tabelle angezeigt.
 
-. Wählen Sie *Trap Desinations Hinzufügen*.
+. Wählen Sie *Add Trap Destinations* aus.
 +
 Das Dialogfeld Trap-Ziele hinzufügen wird geöffnet.
 

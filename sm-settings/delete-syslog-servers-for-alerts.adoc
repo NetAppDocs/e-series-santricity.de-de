@@ -15,7 +15,7 @@ summary: Sie können einen Syslog-Server löschen, damit er keine Warnungen mehr
 Sie können einen Syslog-Server löschen, damit er keine Warnungen mehr erhält.
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[Alarme].
+. Wählen Sie im linken Bereich menu:Settings[Alerts].
 . Wählen Sie die Registerkarte *Syslog* aus.
 . Wählen Sie eine Syslog-Serveradresse aus, und klicken Sie dann rechts oben auf *Entfernen*.
 +

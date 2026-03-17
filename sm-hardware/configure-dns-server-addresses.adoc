@@ -27,7 +27,7 @@ Wenn Sie bereits die Management-Ports des Storage-Arrays mit DHCP (Dynamic Host 
 
 ====
 .Schritte
-. Wählen Sie *Hardware*.
+. Wählen Sie im linken Bereich *Hardware* aus.
 . Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf die Registerkarte *Controller & Komponenten*.
 +
 Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.

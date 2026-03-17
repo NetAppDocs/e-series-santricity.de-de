@@ -33,7 +33,7 @@ Mit Laufwerken mit größerer Kapazität und der Möglichkeit, Volumes über Con
 
 
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
 . Klicken Sie auf Menü:Erstellen[Volume Group].
 +
 Das Dialogfeld Volume-Gruppe erstellen wird angezeigt.
@@ -132,9 +132,9 @@ Eine Volume-Gruppe kann Laufwerke enthalten, die für da-fähig sind oder nicht 
 
 
  a| 
-Resource Provisioning-fähig (nur EF300 und EF600)
+Ressourcenbereitstellungsfähig (EF80, EF50, EF300 und EF600 nur)
  a| 
-Zeigt an, ob Ressourcen-Provisioning für diese Gruppe verfügbar ist. Resource Provisioning ist eine Funktion, die in den EF300- und EF600-Speicher-Arrays zur Verfügung steht und die es ermöglicht, Volumes ohne Hintergrundinitialisierung sofort in Betrieb zu nehmen.
+Zeigt an, ob die Ressourcenbereitstellung für diese Gruppe verfügbar ist. Ressourcenbereitstellung ist eine Funktion, die in den Speichersystemen EF80, EF50, EF300 und EF600 verfügbar ist und es ermöglicht, Volumes sofort ohne Hintergrundinitialisierung zu verwenden.
 
 
 
@@ -273,9 +273,9 @@ Zeigt die Blockgrößen an, die für die Volumes in der Gruppe erstellt werden k
 
 
  a| 
-Resource Provisioning-fähig (nur EF300 und EF600)
+Ressourcenbereitstellungsfähig (EF80, EF50, EF300 und EF600 nur)
  a| 
-Zeigt an, ob Ressourcen-Provisioning für diese Gruppe verfügbar ist. Resource Provisioning ist eine Funktion, die in den EF300- und EF600-Speicher-Arrays zur Verfügung steht und die es ermöglicht, Volumes ohne Hintergrundinitialisierung sofort in Betrieb zu nehmen.
+Zeigt an, ob die Ressourcenbereitstellung für diese Gruppe verfügbar ist. Ressourcenbereitstellung ist eine Funktion, die in den Speichersystemen EF80, EF50, EF300 und EF600 verfügbar ist und es ermöglicht, Volumes sofort ohne Hintergrundinitialisierung zu verwenden.
 
 |===
 ====

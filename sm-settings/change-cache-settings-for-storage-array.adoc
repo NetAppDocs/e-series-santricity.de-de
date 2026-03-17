@@ -36,7 +36,7 @@ Die Cache-Blockgröße bestimmt die maximale Größe jedes Cache-Blocks. Diese E
 
 |===
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
 . Scrollen Sie nach unten zu *zusätzliche Einstellungen* und klicken Sie dann auf *Cache-Einstellungen ändern*.
 +
 Das Dialogfeld Cache-Einstellungen ändern wird geöffnet.

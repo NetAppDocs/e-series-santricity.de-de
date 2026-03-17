@@ -15,7 +15,7 @@ summary: Sie können bis zu 20 Empfänger für E-Mail-Benachrichtigungen hinzuf�
 Sie können bis zu 20 Empfänger für E-Mail-Benachrichtigungen hinzufügen.
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[Alarme].
+. Wählen Sie im linken Bereich menu:Settings[Alerts].
 . Wählen Sie die Registerkarte *E-Mail* aus.
 . Wählen Sie *E-Mails Hinzufügen*.
 +

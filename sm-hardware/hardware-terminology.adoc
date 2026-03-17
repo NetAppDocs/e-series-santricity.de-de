@@ -229,7 +229,7 @@ Ein Festplatten-Shelf, auch als Erweiterungs-Shelf bezeichnet, enthält mehrere 
  a| 
 DULBE
  a| 
-Dezugewiesener oder nicht geschriebener logischer Blockfehler (DULBE) ist eine Option auf NVMe-Laufwerken, mit der das EF300- oder EF600-Storage-Array ressourcenbereitgestellte Volumes unterstützen kann.
+Deallocated or Unwritten Logical Block Error (DULBE) ist eine Option auf NVMe-Laufwerken, die es dem Speicherarray EF80, EF50, EF300/EF300C oder EF600/EF600C ermöglicht, ressourcenbereitgestellte Volumes zu unterstützen.
 
 
 

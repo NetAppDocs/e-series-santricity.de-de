@@ -37,7 +37,7 @@ Weitere Informationen zum Serverzertifikat finden Sie in der Dokumentation für 
 In dieser Aufgabe definieren Sie die IP-Adresse des Schlüsselverwaltungsservers und die verwendete Portnummer und laden dann Zertifikate für die externe Schlüsselverwaltung.
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
 . Wählen Sie unter * Security Key Management* die Option *External Key erstellen* aus.
 +
 [NOTE]
@@ -60,7 +60,7 @@ Das Dialogfeld External Security Key erstellen wird geöffnet.
 NOTE: Es wird immer nur ein einziger Schlüsselserver verwendet. Wenn das Speicher-Array den primären Schlüsselserver nicht erreichen kann, kontaktiert das Array den Backup-Schlüsselserver. Beachten Sie, dass die Parität zwischen beiden Servern beibehalten werden muss. Andernfalls kann es zu Fehlern kommen.
 
 ** *Client-Zertifikat auswählen* -- Klicken Sie auf die erste *Durchsuchen*-Schaltfläche, um die Zertifikatdatei für die Speicher-Array-Controller auszuwählen.
-** *Select private key file* -- Klicken Sie bei Bedarf auf die zweite *Browse*-Schaltfläche, um eine private Schlüsseldatei für die Controller des Speicherarrays auszuwählen.
+** *Private Schlüsseldatei auswählen* -- Klicken Sie gegebenenfalls auf die zweite Schaltfläche *Durchsuchen*, um eine private Schlüsseldatei für die Controller des Storage Arrays auszuwählen.
 ** *Serverzertifikat des Schlüsselverwaltungsservers auswählen* -- Klicken Sie auf die dritte Schaltfläche *Durchsuchen*, um die Zertifikatdatei für den Schlüsselverwaltungsserver auszuwählen. Sie können für den Schlüsselverwaltungsserver ein Stammzertifikat, ein Zwischenzertifikat oder ein Serverzertifikat auswählen.
 
 

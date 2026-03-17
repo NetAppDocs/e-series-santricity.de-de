@@ -29,7 +29,7 @@ Sie können den Aktivierungsvorgang nach dem Start nicht beenden.
 
 ====
 .Schritte
-. Wählen Sie Menü:Support[Upgrade Center].
+. Wählen Sie im linken Bereich Menü:Support[Upgrade Center].
 . Klicken Sie im Bereich SANtricity OS-Software-Upgrade auf *Aktivieren* und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
 +
 Sie können den Vorgang während der Integritätsprüfung vor dem Upgrade abbrechen, jedoch nicht während der Aktivierung.

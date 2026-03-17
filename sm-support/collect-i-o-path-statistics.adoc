@@ -25,7 +25,7 @@ Führen Sie diesen Vorgang nur aus, wenn Sie vom technischen Support dazu aufgef
 
 ====
 .Schritte
-. Wählen Sie MENU:Support[Support Center > Diagnose].
+. Wählen Sie im linken Bereich Menü:Support[Support Center > Diagnostics] Registerkarte.
 . Wählen Sie *E/A-Pfadstatistik sammeln*.
 . Bestätigen Sie, dass Sie den Vorgang durchführen möchten, indem Sie eingeben `collect`, Und klicken Sie dann auf *Collect*.
 +

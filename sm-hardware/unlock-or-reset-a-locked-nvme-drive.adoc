@@ -30,7 +30,7 @@ Wenn das Laufwerk über einen externen Schlüsselverwaltungsserver gesperrt wurd
 Sie können die Funktion zum Entsperren entweder über die Seite Hardware oder über das Menü:Einstellungen[System > Sicherheitsschlüsselverwaltung] aufrufen. Die folgende Aufgabe enthält Anweisungen auf der Seite Hardware.
 
 .Schritte
-. Wählen Sie *Hardware*.
+. Wählen Sie im linken Bereich *Hardware* aus.
 . Wenn die Grafik die Controller anzeigt, klicken Sie auf die Registerkarte *Laufwerke*.
 +
 Die Grafik ändert sich, um die Laufwerke anstelle der Controller anzuzeigen.

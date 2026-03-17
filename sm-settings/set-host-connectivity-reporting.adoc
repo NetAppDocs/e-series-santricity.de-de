@@ -23,7 +23,7 @@ Durch das Deaktivieren der Berichterstellung für Host-Konnektivität wird auße
 
 ====
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
 . Scrollen Sie nach unten zu *zusätzliche Einstellungen* und klicken Sie dann auf *Host Connectivity Reporting aktivieren/deaktivieren*.
 +
 Der Text unter dieser Option gibt an, ob er derzeit aktiviert oder deaktiviert ist.

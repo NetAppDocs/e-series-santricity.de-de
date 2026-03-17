@@ -17,7 +17,7 @@ Sie können bei Bedarf ein schreibgeschütztes Snapshot Volume oder ein Snapshot
 Ein Snapshot Volume, das in den Zugriff auf Lese- und Schreibvorgänge umgewandelt wird, enthält seine eigene reservierte Kapazität. Mit dieser Kapazität werden nachfolgende Änderungen der Host-Applikation auf dem Basis-Volume gespeichert, ohne dass das referenzierte Snapshot Image beeinträchtigt wird.
 
 .Schritte
-. Wählen Sie Menü:Storage[Snapshots].
+. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
 . Wählen Sie die Registerkarte *Snapshot Volumes* aus.
 +
 Die Tabelle Snapshot Volumes wird angezeigt und zeigt alle dem Speicher-Array zugeordneten Snapshot-Volumes an.

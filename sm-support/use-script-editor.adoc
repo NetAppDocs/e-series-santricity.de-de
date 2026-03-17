@@ -1,0 +1,213 @@
+---
+permalink: sm-support/use-script-editor.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, script editor, script file, execute script 
+summary: Verwenden Sie den Skripteditor, um eine Skriptdatei zu erstellen oder zu bearbeiten, eine Skriptdatei auf der lokalen Festplatte der Speichermanagementstation zu speichern oder eine Skriptdatei von der Festplatte zu laden. 
+---
+= Verwendung des Script-Editors
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Verwenden Sie den Skripteditor, um eine Skriptdatei zu erstellen oder zu bearbeiten, eine Skriptdatei auf der lokalen Festplatte der Speichermanagementstation zu speichern oder eine Skriptdatei von der Festplatte zu laden.
+
+.Bevor Sie beginnen
+Der Skripteditor kommuniziert mit dem Storage-Array, um die Syntaxprüfung von Skripten und die Befehlsausführung zu ermöglichen. Im Skripteditor eingegebene Skriptbefehle werden in der Regel auf dem Storage-Array ausgeführt.
+
+Der Skripteditor bietet zwei Ansichten im Fenster:
+
+* Editor pane – Bietet einen Bereich zum Eingeben oder Bearbeiten von Skriptbefehlen.
+* Ausgabefenster – Zeigt die Überprüfungs- oder Ausführungsergebnisse an. Eine Trennlinie teilt das Fenster zwischen Editorfenster und Ausgabefenster.
+* Der Skripteditor unterstützt keine Befehle, die Eingabedateien erfordern, wie Controller-Firmware, NVSRAM oder Laufwerks-Firmware-Upgrades.
+* Der Skripteditor unterstützt Befehle, die Ausgabedateien erzeugen.
+* Einige Befehle erfordern eine Ausführung auf dem Client (Client-seitige Befehle).
++
+** Die einzigen unterstützten Client-seitig Befehle für diese Version sind `on error stop` und `on error continue`.
+** Der Skripteditor erzeugt eine Fehlermeldung, wenn Sie versuchen, andere Client-seitige Befehle auszuführen.
+
+
+
+
+
+
+== Öffnen Sie den Skripteditor
+
+.Schritte
+. Wählen Sie im linken Bereich Menü:Support[Script editor].
++
+Die folgende Tabelle listet die im Skripteditor verfügbaren Dateioptionen auf:
+
++
+.Felddetails
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Aufgabe | Aktion 
+
+
+ a| 
+Neues Skript öffnen
+ a| 
+.. Klicken Sie auf *Load script file*, um eine vorhandene Skriptdatei in den Script editor hochzuladen.
++
+Der Skripteditor öffnet die ausgewählte Skriptdatei im Editorfenster.
+
+
+
+
+
+ a| 
+Überprüfen Sie die Syntax des Skriptbefehls
+ a| 
+.. Klicken Sie auf *Syntax check*, um die Syntax des aktuellen Skripts im Editorfenster zu überprüfen.
++
+Der Script-Editor analysiert die Anweisungen in der Skriptdatei zeilenweise und überprüft, ob sie die korrekte Syntax haben. Syntaxfehler erscheinen im Ausgabefenster, das die Zeilennummer des Fehlers und eine Beschreibung des Fehlers meldet.
+
++
+Wenn der Skripteditor auf einen Syntaxfehler stößt, wird keine weitere Syntaxüberprüfung am Skript durchgeführt.
+
++
+Beheben Sie alle Syntaxfehler, und führen Sie die *Syntax Check* erneut aus, um die Fehlerkorrektur zu validieren und die restlichen Anweisungen im Skript zu überprüfen.
+
+
+
+
+
+ a| 
+Skript ausführen
+ a| 
+.. Klicken Sie auf *Execute Script*, um das aktuelle Skript im Editorfenster auszuführen.
++
+Der Skripteditor initiiert eine Syntaxprüfung, dann wird für jeden Skriptbefehl aus der Eingabedatei eine Befehlsausführung auf dem Speicherarray-Controller durchgeführt.
+
++
+Wenn der Script editor auf einen Syntaxfehler stößt, stoppt er die Ausführung und zeigt eine Fehlermeldung an.
+
++
+Beheben Sie den Fehler und führen Sie *Syntax check* erneut aus, um die Fehlerkorrektur zu validieren.
+
++
+
+NOTE: Tritt ein Ausführungsfehler auf, wird das Skript je nach der enthaltenen `On Error` Skriptanweisung möglicherweise nicht weiter ausgeführt. Die `On Error Stop` Anweisung stoppt das Skript bei einem Ausführungsfehler. Die `On Error
+Continue` Anweisung ermöglicht die Fortsetzung des Skripts auch nach einem Ausführungsfehler. Diese Anweisung ist die Standardeinstellung.
+
+
+
+
+
+ a| 
+Bearbeiten Sie ein vorhandenes Skript
+ a| 
+.. Klicken Sie auf *Load script file*, um eine vorhandene Skriptdatei in den Script editor hochzuladen.
+.. Nehmen Sie im Editorbereich alle notwendigen Änderungen am Skript vor.
+
+
+
+
+ a| 
+Speichern Sie das Skript in einer lokalen Datei
+ a| 
+.. Klicken Sie auf *Save script file*, um die Änderungen im Skriptbereich als neue Skriptdatei herunterzuladen.
+
+
+
+
+ a| 
+Löschen Sie den Text im Editorbereich des Script Editors
+ a| 
+.. Klicken Sie auf *Clear editor*, um den Text im Editorbereich zu löschen.
+
+
+
+
+ a| 
+Speichern Sie die Ausgaberesultate in einer lokalen Datei
+ a| 
+.. Klicken Sie auf *Save results*, um den Inhalt des Ausgabefensters als neue Datei herunterzuladen.
+
+
+|===
+====
+
+
+
+
+=== Schreiben Sie Skripte im Skripteditor
+
+.Bevor Sie beginnen
+Wenn Sie den Skripteditor zum Schreiben von Skriptbefehlen verwenden, beachten Sie bitte folgende Richtlinien: * Schließen Sie alle Anweisungen mit einem Semikolon (;). * Trennen Sie jeden Basisbefehl und seine zugehörigen primären und sekundären Parameter durch ein Leerzeichen. * Parameter sind bei der Eingabe in den Skripteditor nicht groß- und kleinschreibungsempfindlich. * Platzieren Sie jede Anweisung in einer separaten Zeile. * Fügen Sie Ihren Skripten Kommentare hinzu, um Ihnen und zukünftigen Benutzern das Verständnis des Zwecks der Befehlsanweisungen zu erleichtern.
+
+.Schritte
+. Umgeben Sie mehrzeilige Kommentare mit den Zeichen  `/*` und  `*/`.
++
+Wenn die Skript-Engine weder eine Anfangskommentarnotation noch eine Endkommentarnotation findet, erscheint eine Fehlermeldung und die Skriptausführung wird abgebrochen.
+
+. Einzeilige Kommentare beginnen mit zwei Schrägstrichen (`//` und enden mit einem Zeilenumbruchzeichen, das Sie durch Drücken der Eingabetaste einfügen können.
++
+Wenn die Skript-Engine nach der Verarbeitung eines Kommentars kein End-of-Line-Zeichen im Skript findet, erscheint eine Fehlermeldung und die Skriptausführung wird beendet.
+
++
+Dieser Fehler tritt häufig auf, wenn am Ende eines Skripts ein Kommentar steht und Sie vergessen haben, *Enter* zu drücken.
+
+. Verwenden Sie die  `show`-Anweisung, um Kommentare in ein Skript einzubetten, die während der Skriptausführung im Editorbereich angezeigt werden.
++
+Die  `show`Anweisung ist nützlich zum Debuggen von Skripten.
+
++
+Wenn Sie eine  `show setting controller mode` statement in Ihr Skript einfügen, wird bei der Verarbeitung dieser Zeile während der Skriptausführung die folgende Zeile im Ausgabefenster angezeigt:
+
++
+[listing]
+----
+setting controller mode
+----
+
+
+
+
+=== Skriptausführungsergebnisse interpretieren
+
+Während der Skriptausführung erscheinen im Ausgabefenster Meldungen, die mit folgendem beginnen:
+
+[listing]
+----
+Executing script...
+----
+Tritt während der Analysephase ein Fehler auf, wird dieser im Ausgabefenster angezeigt, das die Zeilennummer, die Spaltennummer und eine Beschreibung des Syntaxfehlers angibt. Im Folgenden finden Sie ein Beispiel für eine Syntaxfehlermeldung.
+
+Wenn Sie die folgende Anweisung in ein Skript eingeben:
+
+`set controller[a] mod = passive;`
+
+Im Ausgabefenster wird der resultierende Syntaxfehler wie folgt angezeigt:
+
+[listing]
+----
+Encountered "mod" at line 2, column 19
+Was expecting one of...
+"mode"...
+"availability"...
+"NVSRAMbyte"...
+----
+Wenn während der Ausführung eines Skripts ein Fehler auftritt, erscheint im Ausgabefenster eine Meldung, die angibt, dass der Befehl fehlgeschlagen ist, und eine Beschreibung des Fehlers meldet.
+
+Wenn Sie beispielsweise die folgende Anweisung in ein Skript eingeben:
+
+`set volume [three] userLabel="OneOne";`
+
+Der resultierende Fehler wird im folgenden Ausgabefenster angezeigt. Der Befehl konnte nicht an das Storage-Array gesendet werden, da es sich in einem nicht reagierenden Zustand befand.
+
+[listing]
+----
+Unable to change the volume user label using the Set Volume command at line 1
+Error - 1 - Could not communicate with the storage array to complete this request.
+----
+
+NOTE: Bestimmte Ausführungsfehler, einschließlich der Unfähigkeit zur Kommunikation mit dem Speicherarray, führen stets zum Abbruch der Skriptausführung. In diesen Fällen wird die Ausführung auch dann gestoppt, wenn Sie die  `On Error Continue` Anweisung verwenden.
+
+.Ergebnisse
+Nach der Ausführung eines Skripts überprüfen Sie das Ausgabefenster, um auf Erfolg oder Fehler zu prüfen.

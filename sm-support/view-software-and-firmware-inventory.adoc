@@ -18,7 +18,7 @@ Im Software- und Firmwarebestand sind die Firmware-Versionen für jede Komponent
 Ein Storage Array besteht aus vielen Komponenten, darunter Controller, Laufwerke, Schubladen und Input/Output-Module (IOMs). Jede dieser Komponenten enthält Firmware. Einige Firmware-Versionen hängen von anderen Firmware-Versionen ab. Um Informationen über alle Firmware-Versionen in Ihrem Speicher-Array zu erfassen, lesen Sie den Software- und Firmware-Bestand. Der technische Support kann die Software- und Firmware-Bestandsaufnahme analysieren, um falsche Firmware-Zuordnungen zu erkennen.
 
 .Schritte
-. Wählen Sie Menü:Registerkarte Support[Support Center > Support-Ressourcen].
+. Wählen Sie im linken Bereich Menü:Support[Support Center > Support Resources] Tab.
 . Scrollen Sie nach unten zu *Ausführliche Speicher-Array-Informationen starten* und wählen Sie dann *Software- und Firmware-Bestandsaufnahme* aus.
 +
 Der Bericht „Software- und Firmware-Bestandsaufnahme“ wird auf dem Bildschirm angezeigt.

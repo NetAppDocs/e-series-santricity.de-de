@@ -41,8 +41,8 @@ Die folgenden Typen von Volumes _kann nicht_ initialisiert werden:
 Dieses Thema bezieht sich nur auf Standard-Volumes, die aus Pools oder Volume-Gruppen erstellt wurden.
 
 .Schritte
-. Wählen Sie Menü:Storage[Volumes].
-. Wählen Sie ein beliebiges Volume aus, und wählen Sie dann Menü:Mehr[Initialisieren von Volumes].
+. Wählen Sie im linken Bereich Menü:Storage[Volumes].
+. Klicken Sie auf das Menü:Ellipsis-Symbol [Initialize volumes].
 +
 Das Dialogfeld Volumes initialisieren wird angezeigt. In diesem Dialogfeld werden alle Volumes im Speicher-Array angezeigt.
 
@@ -56,4 +56,4 @@ System Manager führt die folgenden Aktionen durch:
 * Löscht die Blockindizes, was dazu führt, dass nicht geschriebene Blöcke gelesen werden, als ob sie null gefüllt sind (das Volume scheint vollständig leer zu sein).
 
 
-Wählen Sie MENU:Home[Vorgänge in Bearbeitung anzeigen], um den Fortschritt des Initialisierungsvorgangs anzuzeigen, der derzeit für das ausgewählte Volume ausgeführt wird. Dieser Vorgang kann langwierig sein und die System-Performance beeinträchtigen.
+Wählen Sie Menü:Storage[Operations in Progress], um den Fortschritt des aktuell für das ausgewählte Volume laufenden Initialisierungsvorgangs anzuzeigen. Dieser Vorgang kann längere Zeit dauern und die Systemleistung beeinträchtigen.

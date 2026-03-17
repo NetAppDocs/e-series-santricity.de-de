@@ -18,10 +18,10 @@ Sie können Workloads für jeden Applikationstyp erstellen.
 Ein Workload ist ein Storage-Objekt, das eine Applikation unterstützt. Sie können einen oder mehrere Workloads oder Instanzen pro Applikation definieren.
 
 .Schritte
-. Wählen Sie Menü:Storage[Volumes].
+. Wählen Sie im linken Bereich Menü:Storage[Volumes].
 . Wählen Sie Menü:Erstellen[Workload].
 +
-Das Dialogfeld Anwendungs-Workload erstellen wird angezeigt.
+Die Seite „Anwendungsworkload erstellen“ wird angezeigt.
 
 . Wählen Sie in der Dropdown-Liste den Applikationstyp aus, für den der Workload erstellt werden soll, und geben Sie dann einen Workload-Namen ein.
 . Klicken Sie Auf *Erstellen*.

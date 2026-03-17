@@ -18,11 +18,11 @@ Sie können die Einstellungen für ein Mitglied-Volume einer Konsistenzgruppe ä
 Durch Ändern der Einstellungen für die reservierte Kapazität eines einzelnen Member Volumes werden auch die reservierten Kapazitätseinstellungen für alle Mitglied-Volumes geändert, die einer Konsistenzgruppe zugeordnet sind.
 
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
 . Klicken Sie auf die Registerkarte *reservierte Kapazität*.
-. Wählen Sie das Mitgliedsvolume der Konsistenzgruppe aus, das Sie bearbeiten möchten, und klicken Sie dann auf *Einstellungen anzeigen/bearbeiten*.
+. Wählen Sie das Konsistenzgruppenmitglied-Volume aus, das Sie bearbeiten möchten, und klicken Sie dann auf das Menü:Ellipsen-Symbol[Einstellungen bearbeiten].
 +
-Das Dialogfeld Einstellungen für die reservierte Kapazität des Mitgliedvolumes wird angezeigt.
+Das Fenster „Volume des Konsistenzgruppenmitglieds bearbeiten“ wird angezeigt.
 
 . Ändern Sie die Einstellungen für die reservierte Kapazität des Mitgliedvolume nach Bedarf.
 +
@@ -35,9 +35,9 @@ Das Dialogfeld Einstellungen für die reservierte Kapazität des Mitgliedvolumes
 
 
  a| 
-Benachrichtigen, wenn...
+Alarmschwelle für volle reservierte Kapazität
  a| 
-Verwenden Sie die Spinner-Box, um den Prozentpunkt anzupassen, an dem System Manager eine Benachrichtigung sendet, wenn die reservierte Kapazität für ein Mitglied-Volume sich fast voll befindet.
+Verwenden Sie die Leiste, um den Prozentsatz einzustellen, bei dem der System Manager eine Warnbenachrichtigung sendet, wenn die reservierte Kapazität für ein Mitgliedsvolume fast voll ist.
 
 Wenn die reservierte Kapazität für das Mitglied-Volume den angegebenen Schwellenwert überschreitet, sendet System Manager eine Warnmeldung, sodass Sie die reservierte Kapazität erhöhen oder unnötige Objekte löschen können.
 

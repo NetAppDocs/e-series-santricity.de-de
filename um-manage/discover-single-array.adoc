@@ -16,7 +16,7 @@ Verwenden Sie die Option Single Storage Array hinzufügen/erkennen, um ein einze
 
 .Bevor Sie beginnen
 * Das Speicher-Array muss ordnungsgemäß eingerichtet und konfiguriert sein.
-* Passwörter für das Storage-Array müssen mithilfe der Kachel „System Manager Access Management“ eingerichtet werden.
+* Die Passwörter für die Storage-Arrays müssen über die Access Management-Seite des System Manager eingerichtet werden.
 
 
 .Schritte

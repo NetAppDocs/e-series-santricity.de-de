@@ -15,8 +15,8 @@ summary: Nach Laufwerken können Sie alle Laufwerke physisch identifizieren, die
 Nach Laufwerken können Sie alle Laufwerke physisch identifizieren, die einen ausgewählten Pool, eine Volume-Gruppe oder SSD Cache umfassen. An jedem Laufwerk im ausgewählten Pool, der Volume-Gruppe oder dem SSD-Cache leuchtet eine LED-Anzeige auf.
 
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
-. Wählen Sie den Pool, die Volume-Gruppe oder den SSD-Cache aus, den Sie suchen möchten, und klicken Sie dann auf MENU:Mehr[Locator Lights einschalten].
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
+. Wählen Sie den Pool, die Volume-Gruppe oder den SSD-Cache aus, den Sie suchen möchten, und klicken Sie dann auf das Menü:Ellipsen-Symbol[Locator-Leuchten einschalten].
 +
 Es wird ein Dialogfeld angezeigt, in dem die Leuchten der Laufwerke angezeigt werden, die den ausgewählten Pool, die Volume-Gruppe oder den SSD-Cache enthalten.
 

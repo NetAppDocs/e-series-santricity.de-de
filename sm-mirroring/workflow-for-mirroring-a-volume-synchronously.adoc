@@ -15,7 +15,7 @@ Sie konfigurieren die synchrone Spiegelung unter Verwendung des folgenden Workfl
 
 [NOTE]
 ====
-Diese Funktion ist für das Speichersystem EF600/EF600C oder EF300/EF300C nicht verfügbar.
+Diese Funktion ist auf dem Speichersystem EF80, EF50, EF600/EF600C oder EF300/EF300C nicht verfügbar.
 
 ====
 . Die Erstkonfiguration in Unified Manager durchführen:

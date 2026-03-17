@@ -14,16 +14,12 @@ summary: Sie können die Ressourcenbereitstellung in einem vorhandenen Pool oder
 [role="lead"]
 Für alle DELBE-fähigen Laufwerke können Sie die Ressourcenbereitstellung auf vorhandenen Volumes in einem Pool oder einer Volume-Gruppe aktivieren oder deaktivieren.
 
-Die Ressourcenbereitstellung ist eine Funktion der EF300- und EF600-Speicher-Arrays, mit der Volumes ohne Hintergrundinitialisierung sofort in Betrieb genommen werden können. Alle dem Volume zugewiesenen Festplattenblöcke werden aufgehoben (ihre Zuordnung wird nicht aufgehoben), was die SSD-Abnutzung verbessert und die maximale Schreib-Performance erhöht.
+Die Ressourcenbereitstellung ist eine Funktion der Speichersysteme EF80, EF50, EF300/EF300C und EF600/EF600C, die es ermöglicht, Volumes sofort ohne Hintergrundinitialisierung zu verwenden. Alle dem Volume zugewiesenen Laufwerksblöcke werden deallokiert (nicht zugeordnet), was die SSD-Verschleißlebensdauer verbessern und die maximale Schreibleistung erhöhen kann.
 
 Standardmäßig ist die Ressourcenbereitstellung auf Systemen aktiviert, auf denen die Laufwerke DULBE unterstützen. Die Ressourcenbereitstellung muss erst aktiviert werden, wenn Sie sie zuvor deaktiviert haben.
 
 .Bevor Sie beginnen
-* Sie benötigen ein EF300- oder EF600-Storage-Array.
-+
-
-NOTE: DULBE wird derzeit nicht auf EF300C- oder EF600C-Speicherarrays unterstützt.
-
+* Sie müssen über ein EF80-, EF50-, EF300- oder EF600-Speicherarray verfügen.
 * Sie müssen SSD-Volume-Gruppen oder -Pools haben, wobei alle Laufwerke die Funktion zur Wiederherstellung von dezugewiesenen oder nicht geschriebenen logischen Blockfehlern (DULBE) unterstützen. Andernfalls ist die Option zur Ressourcenbereitstellung nicht verfügbar.
 
 
@@ -36,12 +32,8 @@ Wenn Sie die Ressourcenbereitstellung für vorhandene Volume-Gruppen oder Pools 
 NOTE: Für neue Volume-Gruppen und -Pools können Sie die Ressourcenbereitstellung über Menü:Einstellungen[System > zusätzliche Einstellungen > Aktivieren/Deaktivieren von Volumes mit Ressourcenbereitstellung] aktivieren oder deaktivieren.
 
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
-. Wählen Sie einen Pool oder eine Volume-Gruppe aus der Liste aus.
-+
-Sie können jeweils nur einen Pool oder eine Volume-Gruppe auswählen. Scrollen Sie in der Liste nach unten, um weitere Pools oder Volume-Gruppen zu sehen.
-
-. Wählen Sie *Sonstige Aufgaben* und dann entweder *Ressourcenbereitstellung aktivieren* oder *Ressourcenbereitstellung deaktivieren*.
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
+. Klicken Sie auf das *Ellipsen*-Symbol und wählen Sie entweder *Ressourcenbereitstellung aktivieren* oder *Ressourcenbereitstellung deaktivieren* für den ausgewählten Pool oder die ausgewählte Volumengruppe.
 . Bestätigen Sie im Dialogfeld den Vorgang.
 
 

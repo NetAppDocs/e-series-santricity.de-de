@@ -45,7 +45,7 @@ Die Konfiguration der SAML-Authentifizierung erfolgt in mehreren Schritten.
 Um IdP-Verbindungsinformationen für das Storage-Array bereitzustellen, importieren Sie IdP-Metadaten in Unified Manager. Das IdP-System benötigt diese Metadaten, um Authentifizierungsanforderungen an die richtige URL weiterzuleiten und die erhaltenen Antworten zu validieren.
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[Zugriffsverwaltung].
+. Wählen Sie im linken Bereich menu:Settings[Access Management].
 . Wählen Sie die Registerkarte *SAML* aus.
 +
 Auf der Seite wird eine Übersicht der Konfigurationsschritte angezeigt.

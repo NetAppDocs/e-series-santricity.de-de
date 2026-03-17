@@ -22,7 +22,7 @@ Es werden zwei verschiedene Tests durchgeführt:
 
 
 .Schritte
-. Wählen Sie Menü:Speicher[Synchronous Mirroring].
+. Wählen Sie im linken Bereich das Menü:Storage[Synchronous Mirroring].
 . Wählen Sie das gespiegelte Paar aus, das Sie testen möchten, und wählen Sie dann *Kommunikation testen*.
 . Überprüfen Sie die im Ergebnisfenster angezeigten Informationen und befolgen Sie bei Bedarf die angezeigten Korrekturmaßnahmen.
 +

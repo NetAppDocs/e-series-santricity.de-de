@@ -14,7 +14,11 @@ summary: Um die physische Position eines Regals zu finden, das auf der Hardware-
 Um den physischen Speicherort eines auf der Hardware-Seite gezeigten Shelfs zu ermitteln, können Sie die Locator-LED des Shelfs einschalten.
 
 .Schritte
-. Wählen Sie *Hardware*.
+. Wählen Sie im linken Bereich *Hardware* aus.
+. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf die Registerkarte *Controller & Komponenten*.
++
+Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
+
 . Wählen Sie die Dropdown-Liste für das Controller-Shelf oder Laufwerk-Shelf aus, und wählen Sie dann *Locator einschalten*.
 +
 Die Positionsleuchte für das Regal leuchtet auf.

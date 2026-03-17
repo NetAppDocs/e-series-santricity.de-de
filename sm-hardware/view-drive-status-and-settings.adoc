@@ -14,7 +14,7 @@ summary: Sie können Status und Einstellungen für die Laufwerke anzeigen, z. B.
 Sie können Status und Einstellungen für die Laufwerke anzeigen, z. B. Medientyp, Schnittstellentyp und Kapazität.
 
 .Schritte
-. Wählen Sie *Hardware*.
+. Wählen Sie im linken Bereich *Hardware* aus.
 . Wenn die Grafik die Controller anzeigt, klicken Sie auf die Registerkarte *Laufwerke*.
 +
 Die Grafik ändert sich, um die Laufwerke anstelle der Controller anzuzeigen.
@@ -215,7 +215,7 @@ Zeigt an, ob die da-Funktion (Data Assurance) aktiviert ist (Ja) oder nicht (Nei
  a| 
 DULBE-fähig
  a| 
-Gibt an, ob die Option für dezugeordneten oder nicht geschriebenen logischen Blockfehler (DULBE) aktiviert ist (Ja) oder nicht (Nein). DULBE ist eine Option auf NVMe-Laufwerken, mit der das EF300- oder EF600-Storage-Array ressourcenbereitgestellte Volumes unterstützt.
+Gibt an, ob die Option für Deallocated or Unwritten Logical Block Error (DULBE) aktiviert (Ja) oder nicht (Nein) ist. DULBE ist eine Option auf NVMe-Laufwerken, die es dem Speicher-Array EF80, EF50, EF300 oder EF600 ermöglicht, ressourcenbereitgestellte Volumes zu unterstützen.
 
 |===
 ====

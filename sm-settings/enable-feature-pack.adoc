@@ -33,7 +33,7 @@ Sie müssen ein Downtime-Wartungsfenster planen und alle I/O-Vorgänge zwischen 
 In dieser Aufgabe wird beschrieben, wie Sie mit System Manager ein Funktionspaket aktivieren. Wenn Sie fertig sind, müssen Sie das Speicher-Array neu starten.
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
 . Wählen Sie unter *Add-ons* die Option *Feature Pack ändern*.
 . Klicken Sie auf *Durchsuchen* und wählen Sie dann die Schlüsseldatei aus.
 +

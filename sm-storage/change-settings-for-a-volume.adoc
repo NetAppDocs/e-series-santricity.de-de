@@ -21,12 +21,12 @@ Das zu änderende Volumen befindet sich im optimalen Status.
 NOTE: Einige Vorgänge sind möglicherweise nicht verfügbar, während Änderungen an den Volume-Einstellungen vorgenommen werden
 
 .Schritte
-. Wählen Sie Menü:Storage[Volumes].
-. Wählen Sie das gewünschte Volume aus und wählen Sie dann *Einstellungen anzeigen/bearbeiten*.
+. Wählen Sie im linken Bereich Menü:Storage[Volumes].
+. Wählen Sie das Volume aus, das Sie ändern möchten, und klicken Sie dann auf das Menü:Ellipsen-Symbol[Einstellungen bearbeiten].
 +
-Das Dialogfeld Volume-Einstellungen wird angezeigt. Die Konfigurationseinstellungen für das ausgewählte Volume werden in diesem Dialogfeld angezeigt.
+Das Fenster „Volume-Einstellungen bearbeiten“ wird angezeigt und zeigt die Konfigurationseinstellungen für das ausgewählte Volume an.
 
-. Wählen Sie die Registerkarte *Basic* aus, um den Namen des Volumes und die Host-Zuweisung zu ändern.
+. Konfigurieren Sie die Volume-Einstellungen nach Bedarf:
 +
 .Felddetails
 [%collapsible]
@@ -44,22 +44,6 @@ Zeigt den Namen des Volumes an. Ändern Sie den Namen eines Volumes, wenn der ak
 
 
  a| 
-Kapazität
- a| 
-Zeigt die gemeldete und zugewiesene Kapazität für das ausgewählte Volume an.
-
-Gemeldete Kapazität und zugewiesene Kapazität sind für Thick Volumes identisch, unterscheiden sich jedoch bei Thin Volumes. Bei einem dicken Volume entspricht der physisch zugewiesene Speicherplatz dem Speicherplatz, der dem Host gemeldet wird. Bei einem Thin Volume ist die gemeldete Kapazität die den Hosts gemeldete Kapazität, während die zugewiesene Kapazität die Menge an Festplattenspeicher ist, die derzeit zum Schreiben von Daten zugewiesen ist.
-
-
-
- a| 
-Pool-/Volume-Gruppe
- a| 
-Zeigt den Namen und das RAID-Level der Pool- oder Volume-Gruppe an. Gibt an, ob der Pool oder die Volume-Gruppe sicher-fähig und sicher aktiviert ist.
-
-
-
- a| 
 Host
  a| 
 Zeigt die Volumenzuweisung an. Sie weisen einem Host oder Host-Cluster ein Volume zu, damit I/O-Vorgänge darauf zugreifen können. Diese Zuweisung gewährt einem Host oder Host-Cluster Zugriff auf ein bestimmtes Volume oder auf eine Reihe von Volumes in einem Storage-Array.
@@ -71,55 +55,6 @@ Zeigt die Volumenzuweisung an. Sie weisen einem Host oder Host-Cluster ein Volum
 NOTE: Für NVMe-Schnittstellen wird in dieser Spalte die Namespace-ID angezeigt. Ein Namespace ist NVM Storage, der für Blockzugriff formatiert ist. Es gleicht einer logischen Einheit in SCSI, die ein Volume im Storage Array bezieht. Die Namespace-ID ist die eindeutige Kennung des NVMe Controllers für den Namespace und kann auf einen Wert zwischen 1 und 255 gesetzt werden. Sie entspricht einer Logical Unit Number (LUN) in SCSI.
 
 
-
-
-
- a| 
-Identifikatoren
- a| 
-Zeigt die Kennungen für das ausgewählte Volume an.
-
-** *World-wide Identifier (WWID)* -- Ein eindeutiger hexadezimaler Identifier für das Volume.
-** *Extended Unique Identifier (EUI)* -- eine EUI-64 Kennung für das Volumen.
-** *Subsystem Identifier (SSID)* -- die Speicher-Array-Subsystem-Kennung eines Volumes.
-
-
-|===
-====
-. Wählen Sie die Registerkarte *Erweitert* aus, um zusätzliche Konfigurationseinstellungen für ein Volume in einem Pool oder in einer Volume-Gruppe zu ändern.
-+
-.Felddetails
-[%collapsible]
-====
-[cols="25h,~"]
-|===
-| Einstellung | Beschreibung 
-
-
- a| 
-Applikations- und Workload-Informationen
- a| 
-Während der Volume-Erstellung können applikationsspezifische oder andere Workloads erstellt werden. Falls zutreffend, werden für das ausgewählte Volume der Workload-Name, der Applikationstyp und der Volume-Typ angezeigt.
-
-Bei Bedarf können Sie den Workload-Namen ändern.
-
-
-
- a| 
-Quality of Service-Einstellungen
- a| 
-*Data Assurance dauerhaft deaktivieren* -- Diese Einstellung wird nur angezeigt, wenn das Volume Data Assurance (da) aktiviert ist. DA überprüft und korrigiert Fehler, die auftreten können, wenn Daten durch die Controller zu den Laufwerken übertragen werden. Verwenden Sie diese Option, um da auf dem ausgewählten Volume dauerhaft zu deaktivieren. Wenn diese Option deaktiviert ist, kann da für dieses Volume nicht erneut aktiviert werden.
-
-*VorableseRedundanzprüfung aktivieren* -- Diese Einstellung wird nur angezeigt, wenn das Volumen ein dickes Volumen ist. Die vorab gelesene Redundanz prüft, ob die Daten auf einem Volume konsistent sind, jederzeit, wenn ein Lesevorgang durchgeführt wird. Ein Volume, auf dem diese Funktion aktiviert ist, gibt Lesefehler zurück, wenn die Daten von der Controller-Firmware als unvereinbar erkannt werden.
-
-
-
- a| 
-Controller-Eigentum
- a| 
-Definiert den Controller, der als Eigentümer des Volume oder als primärer Controller des Volume bezeichnet wird.
-
-Die Eigentümerschaft der Controller ist sehr wichtig und sollte sorgfältig geplant werden. Controller sollten für eine GesamtI/OS so eng wie möglich ausgeglichen werden.
 
 
 
@@ -154,22 +89,6 @@ Verschieben Sie die Schieberegler, um eine Prioritätsebene auszuwählen.
 
 *Modifizierung Prioritätsstufen* -- die niedrigste Prioritätsrate profitiert von der Systemleistung, aber der Änderungsvorgang dauert länger. Die höchste Prioritätsstufe führt zu Änderungen, die System-Performance kann jedoch beeinträchtigt werden.
 
-
-
- a| 
-Caching
- a| 
-Zeigt die Caching-Einstellung, die Sie ändern können, um die gesamte I/O-Performance eines Volumes zu beeinträchtigen.
-
-
-
- a| 
-SSD Cache
- a| 
-Zeigt die Einstellung für SSD Cache, die Sie auf kompatiblen Volumes aktivieren können, um die schreibgeschützte Performance zu verbessern. Die Volumes sind kompatibel, wenn sie dieselben Funktionen für die Laufwerkssicherheit und Datensicherheit nutzen.
-
-*Die SSD Cache Funktion verwendet eine oder mehrere Solid State Disks (SSDs), um einen Lese-Cache zu implementieren*. Die Applikations-Performance wird durch die schnelleren Lesezeiten für SSDs verbessert. Da sich der Lese-Cache im Storage Array befindet, wird das Caching von allen Applikationen genutzt, die das Storage Array verwenden. Wählen Sie einfach das Volume aus, das Sie zwischenspeichern möchten. Caching erfolgt dann automatisch und dynamisch.
-
 |===
 ====
 . Klicken Sie Auf *Speichern*.
@@ -179,4 +98,4 @@ System Manager ändert die Volume-Einstellungen basierend auf Ihrer Auswahl.
 
 
 .Nachdem Sie fertig sind
-Wählen Sie MENU:Startseite[Vorgänge in Bearbeitung anzeigen], um den Fortschritt der derzeit für das ausgewählte Volume ausgeführten Änderungsvorgänge anzuzeigen.
+Wählen Sie Menü:Storage[Operations in Progress], um den Fortschritt der aktuell für das ausgewählte Volume laufenden Änderungsvorgänge anzuzeigen.

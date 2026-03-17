@@ -31,7 +31,7 @@ Weitere Informationen:
 
 == Wie erstellen Sie Pools?
 
-System Manager kann es erlauben, Pools automatisch zu erstellen, wenn sie nicht zugewiesene Kapazitäten in einem Speicher-Array erkennt. Wenn die automatische Erstellung die beste Konfiguration nicht bestimmen kann, können Sie Pools manuell aus dem Menü:Storage[Pools & Volume Groups] erstellen.
+Sie können den System Manager so einstellen, dass er automatisch Pools erstellt, sobald er nicht zugewiesene Kapazität in einem Storage-Array erkennt. Alternativ können Sie, wenn die automatische Erstellung nicht die optimale Konfiguration ermitteln kann, Pools manuell über menu:Storage[Pools und volume groups] erstellen.
 
 Weitere Informationen:
 
@@ -45,7 +45,7 @@ Weitere Informationen:
 
 == Wie erstellen Sie Volume-Gruppen?
 
-Sie können Volume-Gruppen aus dem Menü:Storage[Pools & Volume Groups] erstellen.
+Sie können Volumengruppen über das Menü:Storage[Pools und Volumengruppen] erstellen.
 
 Weitere Informationen:
 

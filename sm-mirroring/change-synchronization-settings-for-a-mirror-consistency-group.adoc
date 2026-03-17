@@ -18,7 +18,7 @@ Sie können die Synchronisierungseinstellungen und die Warnschwellenwerte änder
 Das Ändern der Synchronisationseinstellungen wirkt sich auf die Synchronisierungsvorgänge aller gespiegelten Paare innerhalb der Consistency Mirror-Gruppe aus.
 
 .Schritte
-. Wählen Sie Menü:Speicher[Asynchronous Mirroring].
+. Wählen Sie im linken Bereich Menü:Storage[Asynchronous Mirroring].
 . Wählen Sie die Registerkarte * Consistency Groups spiegeln* aus.
 +
 Die Tabelle der gespiegelten Consistency Group wird angezeigt und zeigt alle dem Speicher-Array zugeordneten Spiegelkonsistency Groups an.

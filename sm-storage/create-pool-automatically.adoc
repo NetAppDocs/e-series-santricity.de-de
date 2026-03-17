@@ -31,13 +31,13 @@ Beachten Sie Folgendes:
 
 Sie können das Dialogfeld „automatische Konfiguration des Pools“ mit einer der folgenden Methoden starten:
 
-* Wenn nicht zugewiesene Kapazität erkannt wird, wird die Empfehlung für die automatische Konfiguration des Pools auf der Startseite im Bereich Benachrichtigungen angezeigt. Klicken Sie auf *Pool automatisch konfigurieren*, um das Dialogfeld zu starten.
+* Wird nicht zugewiesene Kapazität erkannt, erscheint die Empfehlung zur automatischen Poolkonfiguration im Benachrichtigungsbereich (Glockensymbol oben im Fenster). Klicken Sie auf *Automatische Poolkonfiguration anzeigen*, um das Dialogfeld zu öffnen.
 * Sie können das Dialogfeld Automatische Konfiguration des Pools auch auf der Seite Pools und Volume Groups starten, wie in der folgenden Aufgabe beschrieben.
 
 
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
-. Wählen Sie MENU:Mehr[Pool Auto-Configuration starten].
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
+. Klicken Sie auf das Menü:Auslassungszeichen-Symbol [Pool-Autokonfiguration starten].
 +
 In der Ergebnistabelle werden neue Pools, vorhandene Pools mit hinzugefügten Laufwerken oder beides aufgeführt. Ein neuer Pool wird standardmäßig mit einer sequenziellen Nummer benannt.
 
@@ -51,8 +51,7 @@ System Manager führt die folgenden Aufgaben aus:
 ** Fügt dem vorhandenen Pool die Laufwerke desselben Laufwerkstyps hinzu und erstellt mithilfe der anderen Laufwerktypen verschiedene Pools, wenn die neuen Laufwerke unterschiedliche Laufwerkstypen haben.
 
 
-. Um den Namen eines neuen Pools zu ändern, klicken Sie auf das Symbol *Bearbeiten* (der Stift).
-. Um zusätzliche Merkmale des Pools anzuzeigen, positionieren Sie den Cursor über oder berühren Sie das Symbol *Details* (die Seite).
+. Um weitere Eigenschaften des Pools anzuzeigen, klicken Sie auf den angezeigten Poolnamen.
 +
 Es werden Informationen zum Laufwerkstyp, zur Sicherheitsfunktion, zur Data Assurance (da)-Funktion, zum Schutz vor Shelf-Verlust und zum Schutz vor Schubladenverlust angezeigt.
 

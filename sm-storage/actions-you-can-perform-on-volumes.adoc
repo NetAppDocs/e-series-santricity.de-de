@@ -22,11 +22,11 @@ Es gibt zwei Möglichkeiten, die Kapazität für ein Volume zu erweitern:
 
 * Verwenden Sie die freie Kapazität, die im Pool bzw. der Volume-Gruppe verfügbar ist.
 +
-Sie fügen einem Volume Kapazität hinzu, indem Sie Menü:Speicher[Pools und Volume-Gruppen > Kapazität hinzufügen] auswählen.
+Sie fügen einem Volume Kapazität hinzu, indem Sie im linken Bereich menu:Storage[Volumes] auswählen und dann das menu:ellipsis icon[Kapazität erhöhen] für das Volume auswählen.
 
 * Fügen Sie dem Pool oder der Volume-Gruppe des Volume nicht zugewiesene Kapazität (in Form von nicht verwendeten Laufwerken) hinzu. Verwenden Sie diese Option, wenn im Pool oder in der Volume-Gruppe keine freie Kapazität vorhanden ist.
 +
-Sie fügen dem Pool oder der Volume-Gruppe nicht zugewiesene Kapazität hinzu, indem Sie Menü:Storage[Pools und Volume Groups > Add Capacity] auswählen.
+Sie fügen dem Pool oder der Volume-Gruppe nicht zugewiesene Kapazität hinzu, indem Sie Menü:Storage[Pools und Volume Groups > Add capacity] auswählen.
 
 +
 Wenn im Pool oder in der Volume-Gruppe keine freie Kapazität verfügbar ist, können Sie die Kapazität des Volume nicht erhöhen. Sie müssen zunächst die Größe des Pools oder der Volume-Gruppe erhöhen oder ungenutzte Volumes löschen.
@@ -47,7 +47,7 @@ Das Löschen von Volumes verursacht den Verlust aller Daten auf diesen Volumes. 
 
 == Kopieren
 
-Wenn Sie Volumes kopieren, erstellen Sie eine zeitpunktgenaue Kopie von zwei separaten Volumes, dem Quell-Volume und dem Ziel-Volume, auf demselben Storage Array. Sie können Volumes kopieren, indem Sie Menü:Speicher[Volumes > Kopierdienste > Volume kopieren] wählen.
+Beim Kopieren von Volumes erstellen Sie eine zeitpunktgenaue Kopie zweier separater Volumes, des Quell-Volumes und des Ziel-Volume, auf demselben Storage-Array. Sie können Volumes kopieren, indem Sie menu:Storage[Volumes] auswählen und dann das menu:ellipsis icon[Copy volume] auswählen.
 
 
 
@@ -55,7 +55,7 @@ Wenn Sie Volumes kopieren, erstellen Sie eine zeitpunktgenaue Kopie von zwei sep
 
 Durch das Initialisieren eines Volumes werden alle Daten aus dem Volume gelöscht. Ein Volume wird beim ersten Erstellen automatisch initialisiert. Möglicherweise empfiehlt der Recovery Guru jedoch, ein Volume manuell zu initialisieren, um eine Wiederherstellung nach bestimmten Fehlerbedingungen durchzuführen. Bei der Initialisierung eines Volume bleiben die WWN, Host-Zuweisungen, zugewiesene Kapazität und reservierte Kapazität des Volume erhalten. Zudem werden dieselben Data Assurance (da)-Einstellungen und Sicherheitseinstellungen beibehalten.
 
-Sie können Volumes initialisieren, indem Sie Menü:Speicher[Volumes > Mehr > Volumes initialisieren] auswählen.
+Sie können Volumes initialisieren, indem Sie Menü:Storage[Volumes > Auslassungszeichen-Symbol > Volumes initialisieren] auswählen.
 
 
 
@@ -65,15 +65,15 @@ Sie verteilen Volumes neu, um Volumes zurück zu ihren bevorzugten Controller-Be
 
 Die meisten Host Multipath-Treiber versuchen, auf jedes Volume auf einem Pfad zu seinem bevorzugten Controller-Eigentümer zuzugreifen. Falls dieser bevorzugte Pfad jedoch nicht mehr verfügbar ist, erfolgt ein Failover des Multipath-Treibers auf dem Host zu einem alternativen Pfad. Dieser Failover kann dazu führen, dass sich die Volume-Inhaberschaft auf den alternativen Controller ändert. Nachdem Sie die Bedingung behoben haben, die den Failover verursacht hat, verschieben einige Hosts möglicherweise automatisch die Volume-Eigentümerschaft zurück zu dem bevorzugten Controller-Eigentümer. In einigen Fällen müssen Sie die Volumes jedoch möglicherweise manuell neu verteilen.
 
-Sie können Volumes neu verteilen, indem Sie im Menü:Storage[Volumes > Mehr > Neuverteilung von Volumes] wählen.
+Sie können Volumes neu verteilen, indem Sie Menü:Storage[Volumes > Auslassungszeichen-Symbol > Volumes neu verteilen] auswählen.
 
 
 
 == Änderung der Volume-Eigentümerschaft
 
-Durch eine Änderung der Eigentümerschaft eines Volumes wird der bevorzugte Controller-Eigentümer des Volumes geändert. Der bevorzugte Controller-Eigentümer eines Volumes wird unter Menü:Storage[Volumes > Einstellungen anzeigen/bearbeiten > Registerkarte Erweitert] aufgelistet.
+Durch Ändern des Besitzers eines Volumes wird der bevorzugte Controller-Besitzer des Volumes geändert. Der bevorzugte Controller-Besitzer eines Volumes wird im Menü:Storage[Volumes > ellipsis icon > Edit settings] aufgeführt.
 
-Sie können das Eigentum eines Volumens ändern, indem Sie Menü:Storage[Volumes > Mehr > Eigentümerschaft ändern] auswählen.
+Sie können den Besitzer eines Volumes ändern, indem Sie Menü:Storage[Volumes > Auslassungszeichen-Symbol > Volume-Eigentümer ändern] auswählen.
 
 
 
@@ -101,7 +101,7 @@ Cache-Speicher ist ein Bereich von temporär-flüchtigem Speicher (RAM) auf dem 
 * Schreibdaten werden zunächst in den Cache geschrieben. Dadurch wird die Anwendung wieder freigegeben, anstatt auf das Schreiben der Daten auf das Laufwerk zu warten.
 
 
-Wählen Sie MENU:Speicher[Volumes > Mehr > Cache-Einstellungen ändern], um die folgenden Cache-Einstellungen zu ändern:
+Wählen Sie Menü:Storage [Volumes > ellipsis icon > Cache-Einstellungen ändern], um die folgenden Cache-Einstellungen zu ändern:
 
 * *Lese- und Schreib-Cache* -- der Lese-Cache ist ein Puffer, der Daten speichert, die von den Laufwerken gelesen wurden. Die Daten für einen Lesevorgang befinden sich möglicherweise bereits im Cache eines früheren Vorgangs, sodass kein Zugriff auf die Laufwerke erforderlich ist. Die Daten bleiben so lange im Lese-Cache, bis sie entfernt werden.
 +

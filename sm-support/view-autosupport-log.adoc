@@ -22,7 +22,7 @@ Es können mehrere Protokolldateien vorhanden sein. Wenn die aktuelle Protokolld
 
 
 .Schritte
-. Wählen Sie MENU:Support[Support Center > AutoSupport].
+. Wählen Sie im linken Bereich Menü:Support[Support Center > AutoSupport] Tab.
 . Wählen Sie *AutoSupport-Protokoll anzeigen*.
 +
 Es wird ein Dialogfeld angezeigt, in dem das aktuelle AutoSupport-Protokoll aufgelistet wird.

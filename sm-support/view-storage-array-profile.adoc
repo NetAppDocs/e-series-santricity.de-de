@@ -18,7 +18,7 @@ Das Speicherarrayprofil enthält eine Beschreibung aller Komponenten und Eigensc
 Sie können das Speicher-Array-Profil als Hilfe bei der Wiederherstellung oder als Übersicht über die aktuelle Konfiguration des Speicher-Arrays verwenden. Möglicherweise möchten Sie eine Kopie des Speicher-Array-Profils auf dem Management-Client speichern und eine Papierkopie des Speicher-Array-Profils mit dem Speicher-Array aufbewahren. Erstellen Sie eine neue Kopie des Speicher-Array-Profils, wenn sich Ihre Konfiguration ändert.
 
 .Schritte
-. Wählen Sie Menü:Registerkarte Support[Support Center > Support-Ressourcen].
+. Wählen Sie im linken Bereich Menü:Support[Support Center > Support Resources] Tab.
 . Scrollen Sie nach unten zu *Detaillierte Speicher-Array-Informationen* und wählen Sie dann *Storage-Array-Profil*.
 +
 Der Bericht wird auf Ihrem Bildschirm angezeigt.

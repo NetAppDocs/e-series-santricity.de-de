@@ -41,9 +41,9 @@ Sie können die reservierte Kapazität für ein schreibgeschütztes Snapshot-Vol
 
 ====
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
 . Wählen Sie die Registerkarte *reservierte Kapazität* aus.
-. Wählen Sie das Speicherobjekt aus, für das Sie die reservierte Kapazität erhöhen möchten, und klicken Sie dann auf *Kapazität erhöhen*.
+. Wählen Sie das Speicherobjekt aus, für das Sie die reservierte Kapazität erhöhen möchten, und klicken Sie dann auf das Menü:Ellipsis-Symbol[Reservierte Kapazität erhöhen].
 +
 Das Dialogfeld reservierte Kapazität erhöhen wird angezeigt.
 

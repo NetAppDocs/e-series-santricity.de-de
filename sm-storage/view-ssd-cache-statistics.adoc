@@ -19,8 +19,8 @@ Die nominalen Statistiken, bei denen es sich um eine Untergruppe der detailliert
 Während Sie die Statistiken überprüfen und interpretieren, beachten Sie, dass einige Interpretationen durch die Prüfung einer Kombination von Statistiken abgeleitet werden.
 
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
-. Wählen Sie den SSD-Cache aus, für den Sie Statistiken anzeigen möchten, und klicken Sie dann auf Menü:Mehr[View SSD Cache Statistics].
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
+. Wählen Sie den SSD-Cache aus, für den Sie Statistiken anzeigen möchten, und klicken Sie dann auf das Menü:Ellipsen-Symbol[Statistiken anzeigen].
 +
 Das Dialogfeld SSD-Cache-Statistiken anzeigen wird angezeigt und zeigt die nominalen Statistiken für den ausgewählten SSD-Cache an.
 

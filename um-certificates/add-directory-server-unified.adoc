@@ -24,7 +24,7 @@ Um die Authentifizierung für die Zugriffsverwaltung zu konfigurieren, stellen S
 Das Hinzufügen eines Verzeichnisservers ist ein zweistufiger Prozess. Geben Sie zuerst den Domain-Namen und die URL ein. Wenn Ihr Server ein sicheres Protokoll verwendet, müssen Sie auch ein CA-Zertifikat zur Authentifizierung hochladen, wenn es von einer nicht standardmäßigen Signierungsbehörde signiert ist. Wenn Sie über Anmeldedaten für ein Bindekonto verfügen, können Sie auch Ihren Benutzernamen und Ihr Kennwort eingeben. Als Nächstes werden die Benutzergruppen des LDAP-Servers lokalen Benutzerrollen zugeordnet.
 
 .Schritte
-. Wählen Sie *Zugriffsmanagement*.
+. Wählen Sie im linken Bereich menu:Settings[Access Management].
 . Wählen Sie auf der Registerkarte *Directory Services* die Option *Add Directory Server* aus.
 +
 Das Dialogfeld Add Directory Server wird geöffnet.

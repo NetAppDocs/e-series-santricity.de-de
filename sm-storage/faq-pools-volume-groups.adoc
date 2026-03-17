@@ -93,11 +93,11 @@ Die folgenden Beispiele beschreiben, warum Sie einen Pool manuell konfigurieren 
 Sie können nur ein oder zwei Volumes zuweisen, statt den Workload einem großen Pool mit vielen Volumes zuzuweisen, über die die Daten verteilt werden sollen. Durch die manuelle Erstellung eines separaten Pools, der dem Workload einer bestimmten Applikation zugewiesen ist, kann die Performance von Storage-Array-Operationen mit weniger Konflikten schneller erfolgen.
 
 +
-Um einen Pool manuell zu erstellen, wählen Sie *Speicher* und dann *Pools & Volume Groups*. Klicken Sie auf der Registerkarte Alle Kapazitäten auf Menü:Create[Pool].
+So erstellen Sie manuell einen Pool: Wählen Sie *Speicher* und anschließend *Pools und Volumengruppen*. Klicken Sie auf der Registerkarte *Gesamte Kapazität* auf Menü:Create[Pool].
 
 * Wenn mehrere Pools desselben Laufwerkstyps vorhanden sind, wird eine Meldung angezeigt, dass System Manager die Laufwerke nicht automatisch für einen Pool empfehlen kann. Sie können die Laufwerke jedoch manuell einem vorhandenen Pool hinzufügen.
 +
-So fügen Sie manuell Laufwerke zu einem vorhandenen Pool hinzu: Wählen Sie auf der Seite Pools & Volume Groups den Pool aus und klicken Sie dann auf *Add Capacity*.
+So fügen Sie einem bestehenden Pool manuell Laufwerke hinzu: Wählen Sie auf der Seite Pools und Volumengruppen den Pool aus und klicken Sie dann auf *Add capacity*.
 
 
 
@@ -122,7 +122,7 @@ Wenn Sie Volumes auf allen verfügbaren nutzbaren Kapazitäten erstellt haben, k
 
 Bei der Festplattenkapazität wird die in einem Pool reservierte Kapazität zur Unterstützung potenzieller Laufwerksausfälle angegeben. Wenn ein Pool erstellt wird, reserviert das System abhängig von der Anzahl der Laufwerke im Pool automatisch eine standardmäßige Anlagenkapazität. Falls Sie Volumes auf allen verfügbaren nutzbaren Kapazitäten erstellt haben, können Sie die dauerhafte Kapazität auch nicht vergrößern, wenn Sie die Kapazität zum Pool erweitern, indem Sie Laufwerke hinzufügen oder Volumes löschen.
 
-Sie können die Erhaltungskapazität aus *Pools & Volume Groups* ändern. Wählen Sie den Pool aus, den Sie bearbeiten möchten. Klicken Sie auf *Einstellungen anzeigen/bearbeiten* und wählen Sie dann die Registerkarte *Einstellungen*.
+Sie können die Preservation-Kapazität unter *Pools und Volumengruppen* ändern. Wählen Sie den Pool aus, den Sie bearbeiten möchten. Klicken Sie auf das Menü:Ellipsis-Symbol[Einstellungen bearbeiten] und wählen Sie dann die Registerkarte *Einstellungen*.
 
 [NOTE]
 ====
@@ -150,7 +150,7 @@ Die folgenden Medientypen werden unterstützt: Festplattenlaufwerk (HDD) und Sol
 
 == Warum werden einige Laufwerke nicht angezeigt?
 
-Im Dialogfeld Kapazität hinzufügen stehen nicht alle Laufwerke zur Verfügung, um einem vorhandenen Pool oder einer Volume-Gruppe Kapazität hinzuzufügen.
+Im Dialogfeld „Kapazität hinzufügen“ sind nicht alle Laufwerke verfügbar, um einem bestehenden Pool oder einer bestehenden Volumengruppe Kapazität hinzuzufügen.
 
 Festplatten können aus den folgenden Gründen nicht genutzt werden:
 
@@ -315,7 +315,7 @@ Wählen Sie basierend auf den folgenden Informationen einen RAID-Level aus.
 +
 ** Für RAID 1 sind mindestens zwei Laufwerke erforderlich: Ein Laufwerk für die Benutzerdaten und ein Laufwerk für die gespiegelten Daten.
 ** Wenn Sie vier oder mehr Laufwerke auswählen, wird RAID 10 automatisch für die gesamte Volume-Gruppe konfiguriert: Zwei Laufwerke für Benutzerdaten und zwei Laufwerke für die gespiegelten Daten.
-** Sie müssen eine gerade Anzahl von Laufwerken in der Volume-Gruppe haben. Wenn Sie nicht über eine gerade Anzahl von Laufwerken verfügen und noch einige nicht zugewiesene Laufwerke haben, gehen Sie zu *Pools & Volume Groups*, um der Volume-Gruppe zusätzliche Laufwerke hinzuzufügen, und wiederholen Sie den Vorgang.
+** Die Volume-Gruppe muss eine gerade Anzahl an Laufwerken enthalten. Falls Sie keine gerade Anzahl an Laufwerken haben und noch nicht zugewiesene Laufwerke vorhanden sind, gehen Sie zu *Pools und volume groups*, um weitere Laufwerke zur Volume-Gruppe hinzuzufügen, und wiederholen Sie den Vorgang.
 ** RAID 1- und RAID 10-Volume-Gruppen können mehr als 30 Laufwerke haben. Es kann eine Volume-Gruppe erstellt werden, die alle Laufwerke im Storage-Array umfasst.
 
 
@@ -463,7 +463,7 @@ Die detaillierten Statistiken können nur angezeigt werden, wenn Sie alle SSD-St
 
 === Nominale Statistiken
 
-Um SSD Cache Statistiken anzuzeigen, wählen Sie Menü:Speicher[Pools & Volume Groups]. Wählen Sie den SSD-Cache aus, für den Sie Statistiken anzeigen möchten, und wählen Sie dann Menü:Mehr[Statistik anzeigen]. Die nominalen Statistiken werden im Dialogfeld „View SSD Cache Statistics“ angezeigt.
+Um SSD-Cache-Statistiken anzuzeigen, wählen Sie im linken Bereich menu:Storage[Pools and volume groups]. Wählen Sie den SSD-Cache aus, für den Sie Statistiken anzeigen möchten, und klicken Sie dann auf das menu:ellipsis icon[View statistics]. Die nominalen Statistiken werden auf der Seite „Statistiken anzeigen“ angezeigt.
 
 Die folgende Liste enthält nominale Statistiken, die eine Untermenge der detaillierten Statistiken sind.
 
@@ -669,26 +669,20 @@ Der Schieberegler „zusätzliche Optimierung der Kapazität“ ist nur für Spe
 
 == Was ist die Fähigkeit zur Ressourcenbereitstellung?
 
-Resource Provisioning ist eine Funktion, die in den EF300- und EF600-Speicher-Arrays zur Verfügung steht und die es ermöglicht, Volumes ohne Hintergrundinitialisierung sofort in Betrieb zu nehmen.
+Resource Provisioning ist eine Funktion, die in den Speicherarrays EF80, EF50, EF300 und EF600 verfügbar ist, welche es ermöglicht, Volumes sofort ohne Hintergrundinitialisierungsprozess zu verwenden.
 
 Ein vom Ressourcen bereitgestelltes Volume ist ein Thick Volume in einer SSD-Volume-Gruppe oder einem Pool. Dabei wird bei der Erstellung des Volume die Laufwerkskapazität zugewiesen (dem Volume zugewiesen), die Laufwerksblöcke jedoch aufgehoben (nicht zugewiesen). In einem herkömmlichen Thick Volume werden im Vergleich dazu alle Laufwerkblöcke während der Initialisierung eines Volume im Hintergrund zugeordnet oder zugewiesen, um die Felder für den Schutz der Data Assurance zu initialisieren und die Daten- und RAID-Parität in jedem RAID Stripe konsistent zu gestalten. Bei einem Volume, das für die Ressource bereitgestellt wird, gibt es keine zeitgebundene Hintergrundinitialisierung. Stattdessen wird jeder RAID-Stripe nach dem ersten Schreibvorgang auf einen Volume-Block im Stripe initialisiert.
 
 Über Ressourcen bereitgestellte Volumes werden nur auf SSD-Volume-Gruppen und -Pools unterstützt, wobei alle Laufwerke in der Gruppe oder dem Pool die nicht zugewiesene oder nicht geschriebene DULBE-Fehlerwiederherstellungsfunktion (Logical Block Error Enable) unterstützen. Bei der Erstellung eines Volume mit Ressourcenbereitstellung werden alle dem Volume zugewiesenen Festplattenblöcke wieder zugewiesen (Zuordnung). Zusätzlich können Hosts logische Blöcke im Volume mithilfe des Befehls NVMe Dataset Management oder des Befehls SCSI Unmap ausfindig machen. Die Deallokung von Blöcken kann die SSD-Abnutzung verbessern und die maximale Schreib-Performance erhöhen. Die Verbesserung variiert je nach Modell und Kapazität der Laufwerke.
-
-
-NOTE: DULBE wird derzeit nicht auf EF300C- oder EF600C-Speicherarrays unterstützt.
 
 
 
 == Was muss ich über die Funktion der Ressourcen-bereitgestellten Volumes wissen?
 
-Resource Provisioning ist eine Funktion, die in den EF300- und EF600-Speicher-Arrays zur Verfügung steht und die es ermöglicht, Volumes ohne Hintergrundinitialisierung sofort in Betrieb zu nehmen.
+Resource Provisioning ist eine Funktion, die in den Speicherarrays EF80, EF50, EF300 und EF600 verfügbar ist, welche es ermöglicht, Volumes sofort ohne Hintergrundinitialisierungsprozess zu verwenden.
 
 Ein vom Ressourcen bereitgestelltes Volume ist ein Thick Volume in einer SSD-Volume-Gruppe oder einem Pool. Dabei wird bei der Erstellung des Volume die Laufwerkskapazität zugewiesen (dem Volume zugewiesen), die Laufwerksblöcke jedoch aufgehoben (nicht zugewiesen). In einem herkömmlichen Thick Volume werden im Vergleich dazu alle Laufwerkblöcke während der Initialisierung eines Volume im Hintergrund zugeordnet oder zugewiesen, um die Felder für den Schutz der Data Assurance zu initialisieren und die Daten- und RAID-Parität in jedem RAID Stripe konsistent zu gestalten. Bei einem Volume, das für die Ressource bereitgestellt wird, gibt es keine zeitgebundene Hintergrundinitialisierung. Stattdessen wird jeder RAID-Stripe nach dem ersten Schreibvorgang auf einen Volume-Block im Stripe initialisiert.
 
 Über Ressourcen bereitgestellte Volumes werden nur auf SSD-Volume-Gruppen und -Pools unterstützt, wobei alle Laufwerke in der Gruppe oder dem Pool die nicht zugewiesene oder nicht geschriebene DULBE-Fehlerwiederherstellungsfunktion (Logical Block Error Enable) unterstützen. Bei der Erstellung eines Volume mit Ressourcenbereitstellung werden alle dem Volume zugewiesenen Festplattenblöcke wieder zugewiesen (Zuordnung). Zusätzlich können Hosts logische Blöcke im Volume mithilfe des Befehls NVMe Dataset Management oder des Befehls SCSI Unmap ausfindig machen. Die Deallokung von Blöcken kann die SSD-Abnutzung verbessern und die maximale Schreib-Performance erhöhen. Die Verbesserung variiert je nach Modell und Kapazität der Laufwerke.
 
-Die Ressourcenbereitstellung ist standardmäßig auf Systemen aktiviert, auf denen die Laufwerke DULBE unterstützen. Sie können diese Standardeinstellung über *Pools & Volume Groups* deaktivieren.
-
-
-NOTE: DULBE wird derzeit nicht auf EF300C- oder EF600C-Speicherarrays unterstützt.
+Die Ressourcenbereitstellung ist standardmäßig auf Systemen aktiviert, deren Laufwerke DULBE unterstützen. Sie können diese Standardeinstellung unter *Pools und volume groups* deaktivieren.

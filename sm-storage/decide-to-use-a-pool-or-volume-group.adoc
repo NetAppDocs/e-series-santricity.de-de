@@ -332,7 +332,7 @@ Ja.
 
 
  a| 
-Kapazitätserweiterung (zusätzliche Kapazität)
+Kapazitätserweiterung (Kapazität hinzufügen)
  a| 
 Ja.
  a| 

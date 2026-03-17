@@ -22,12 +22,12 @@ Wenn Sie die RAID-Ebene ändern, um die Performance-Anforderungen der Applikatio
 
 
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
-. Wählen Sie die Volume-Gruppe aus, die Sie bearbeiten möchten, und klicken Sie dann auf *Einstellungen anzeigen/bearbeiten*.
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
+. Wählen Sie die Volume-Gruppe aus, die Sie bearbeiten möchten, und klicken Sie dann auf das Menü:Ellipsen-Symbol[Einstellungen bearbeiten].
 +
-Das Dialogfeld Volume Group Settings wird angezeigt.
+Das Fenster „Volume-Gruppeneinstellungen bearbeiten“ wird angezeigt.
 
-. Wählen Sie die Registerkarte *Einstellungen* aus, und bearbeiten Sie anschließend die Einstellungen für die Volume-Gruppe.
+. Bearbeiten Sie die Einstellungen der Volume-Gruppe nach Bedarf.
 +
 .Felddetails
 [%collapsible]

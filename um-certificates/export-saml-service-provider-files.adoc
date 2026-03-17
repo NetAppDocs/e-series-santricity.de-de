@@ -23,7 +23,7 @@ Bei Bedarf können Sie Service-Provider-Metadaten für das Speicher-Array export
 In dieser Aufgabe exportieren Sie Metadaten vom Controller. Das IdP benötigt diese Metadaten, um eine Vertrauensbeziehung zum Controller herzustellen und Authentifizierungsanforderungen zu verarbeiten. Die Datei enthält Informationen wie den Domänennamen des Controllers oder die IP-Adresse, die das IdP zum Senden von Anforderungen verwenden kann.
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[Zugriffsverwaltung].
+. Wählen Sie im linken Bereich menu:Settings[Access Management].
 . Wählen Sie die Registerkarte *SAML* aus.
 . Wählen Sie *Export*.
 +

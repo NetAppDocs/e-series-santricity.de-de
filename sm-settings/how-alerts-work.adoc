@@ -31,13 +31,7 @@ Die Warnmeldungen werden wie folgt bearbeitet:
 
 == Konfiguration von Warnungen
 
-Sie können Benachrichtigungen über den Einrichtungsassistenten (nur für E-Mail-Benachrichtigungen) oder über die Seite „Meldungen“ konfigurieren. Um die aktuelle Konfiguration zu überprüfen, rufen Sie Menü:Einstellungen[Alarme] auf.
-
-Im Feld „Meldungen“ wird die Konfiguration der Warnmeldungen angezeigt. Dabei kann es sich um eine der folgenden Optionen handelt:
-
-* Nicht konfiguriert.
-* Konfiguriert; mindestens eine Alarmmethode ist eingerichtet. Um zu bestimmen, welche Alarmmethoden konfiguriert sind, zeigen Sie den Cursor auf die Kachel.
-
+Sie können Benachrichtigungen im Einrichtungsassistenten (nur für E-Mail-Benachrichtigungen) oder auf der Seite „Benachrichtigungen“ konfigurieren. Um auf die Seite „Benachrichtigungen“ zuzugreifen, gehen Sie im linken Bereich zu Menü:Einstellungen[Benachrichtigungen].
 
 
 

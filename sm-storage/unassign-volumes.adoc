@@ -22,8 +22,8 @@ Beachten Sie bei der Zuweisung von Volumes die folgenden Richtlinien:
 
 
 .Schritte
-. Wählen Sie Menü:Storage[Hosts].
-. Wählen Sie den Host oder Host-Cluster aus, den Sie bearbeiten möchten, und klicken Sie dann auf *Zuweisen von Volumes*.
+. Wählen Sie im linken Bereich Menü:Storage[Hosts].
+. Wählen Sie den Host oder Hostcluster aus, den Sie bearbeiten möchten, und klicken Sie dann auf das Menü:Ellipsen-Symbol[Volumes aufheben].
 +
 Es wird ein Dialogfeld angezeigt, in dem alle Volumes angezeigt werden, die derzeit zugewiesen sind.
 

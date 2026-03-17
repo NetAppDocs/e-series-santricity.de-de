@@ -15,10 +15,10 @@ summary: Sie können den Host-Cluster-Namen ändern oder Hosts in einem Host-Clu
 Sie können den Host-Cluster-Namen ändern oder Hosts in einem Host-Cluster hinzufügen oder entfernen.
 
 .Schritte
-. Wählen Sie Menü:Storage[Hosts].
-. Wählen Sie den Host-Cluster aus, den Sie bearbeiten möchten, und klicken Sie dann auf *Einstellungen anzeigen/bearbeiten*.
+. Wählen Sie im linken Bereich Menü:Storage[Hosts].
+. Wählen Sie den Hostcluster aus, den Sie bearbeiten möchten, und klicken Sie dann auf das Menü:Ellipsen-Symbol[Einstellungen bearbeiten].
 +
-Es wird ein Dialogfeld angezeigt, in dem die aktuellen Host-Cluster-Einstellungen angezeigt werden.
+Es erscheint ein Fenster, das die aktuellen Host-Cluster-Einstellungen anzeigt.
 
 . Ändern Sie die Einstellungen für das Host-Cluster nach Bedarf.
 +

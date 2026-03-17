@@ -16,7 +16,7 @@ Zur Konfiguration der synchronen Spiegelung erstellen Sie ein gespiegeltes Paar,
 
 [NOTE]
 ====
-Diese Funktion ist für das Speichersystem EF600/EF600C oder EF300/EF300C nicht verfügbar.
+Diese Funktion ist auf dem Speichersystem EF80, EF50, EF600/EF600C oder EF300/EF300C nicht verfügbar.
 
 ====
 .Bevor Sie beginnen
@@ -145,4 +145,4 @@ Die Kapazität eines jeden Volumes beträgt 128 MiB. Wenn die Volumes jedoch in 
 
 
 .Nachdem Sie fertig sind
-Wechseln Sie zu System Manager und wählen Sie MENU:Startseite[Vorgänge in Bearbeitung anzeigen], um den Fortschritt des Synchronspiegelung-Vorgangs anzuzeigen. Dieser Vorgang kann langwierig sein und die System-Performance beeinträchtigen.
+Gehen Sie zu System Manager und Menü:Storage[Laufende Vorgänge], um den Fortschritt des synchronen Spiegelungsvorgangs anzuzeigen. Dieser Vorgang kann längere Zeit dauern und die Systemleistung beeinträchtigen.

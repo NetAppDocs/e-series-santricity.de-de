@@ -15,7 +15,7 @@ summary: Sie können detaillierte Informationen über die iSCSI-Verbindungen zu 
 Sie können detaillierte Informationen über die iSCSI-Verbindungen zu Ihrem Speicher-Array anzeigen. ISCSI-Sitzungen können bei Hosts oder Remote-Storage-Arrays in einer asynchronen Spiegelbeziehung durchgeführt werden.
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
 . Wählen Sie *Anzeigen/Beenden von iSCSI-Sitzungen*.
 +
 Eine Liste der aktuellen iSCSI-Sitzungen wird angezeigt.

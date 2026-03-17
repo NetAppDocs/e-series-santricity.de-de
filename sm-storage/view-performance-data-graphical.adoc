@@ -26,14 +26,14 @@ Die in der detaillierten Performance-Ansicht verfügbaren Diagramme sind unter d
 
 * *Logische Ansicht* -- zeigt Performancedaten für logische Objekte an, die nach Volume-Gruppen und Pools gruppiert sind. Zu den logischen Objekten gehören Volume-Gruppen, Pools und Volumes.
 * *Physical View* -- zeigt Leistungsdaten für den Controller, Host-Kanäle, Laufwerkskanäle und Laufwerke an.
-* *Applikationen & Workloads View* -- zeigt eine Liste der logischen Objekte (Volumes) an, die nach den von Ihnen definierten Anwendungstypen und Workloads gruppiert sind.
+* *Anwendungs- und Workload-Ansicht* -- Zeigt eine Liste logischer Objekte (Volumes) an, gruppiert nach den von Ihnen definierten Anwendungstypen und Workloads.
 
 
 .Schritte
 . Wählen Sie *Home*.
 . Um eine Ansicht auf Array-Ebene auszuwählen, klicken Sie auf die Schaltfläche IOPS, MiB/s oder CPU.
 . Klicken Sie für weitere Details auf *Performance-Details anzeigen*.
-. Wählen Sie die Registerkarte *logische Ansicht*, die Registerkarte *physische Ansicht* oder die Registerkarte *Anwendungen & Workloads Ansicht* aus.
+. Wählen Sie die Registerkarte *Logical View*, die Registerkarte *Physical View* oder die Registerkarte *Applications and workloads View*.
 +
 Je nach Objekttyp werden auf jeder Registerkarte unterschiedliche Diagramme angezeigt.
 
@@ -66,7 +66,7 @@ Physische Ansicht
 
 
  a| 
-Anzeige Von Applikationen Und Workloads
+Anwendungs- und Workload-Ansicht
  a| 
 ** *Storage-Array*: IOPS, MiB/s
 ** *Applikationen*: Latenz, IOPS, MiB/s

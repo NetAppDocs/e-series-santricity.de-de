@@ -28,7 +28,7 @@ Die AutoSupport Funktion besteht aus drei separaten Funktionen, die separat akti
 
 
 .Schritte
-. Wählen Sie MENU:Support[Support Center > AutoSupport].
+. Wählen Sie im linken Bereich Menü:Support[Support Center > AutoSupport] Tab.
 . Wählen Sie *AutoSupport-Funktionen aktivieren/deaktivieren*.
 . Aktivieren Sie die Kontrollkästchen neben den AutoSupport-Funktionen, die Sie aktivieren möchten.
 +

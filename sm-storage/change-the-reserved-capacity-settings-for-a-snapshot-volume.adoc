@@ -15,11 +15,11 @@ summary: Sie können die Einstellungen für ein Snapshot-Volume ändern, um den 
 Sie können die Einstellungen für ein Snapshot-Volume ändern, um den Prozentpunkt anzupassen, an dem das System eine Benachrichtigung sendet, wenn die reservierte Kapazität eines Snapshot-Volumes sich der vollen Größe nähert.
 
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
 . Klicken Sie auf die Registerkarte *reservierte Kapazität*.
-. Wählen Sie das Snapshot-Volumen aus, das Sie bearbeiten möchten, und klicken Sie dann auf *Einstellungen anzeigen/bearbeiten*.
+. Wählen Sie das Snapshot-Volume aus, das Sie bearbeiten möchten, und klicken Sie dann auf das Menü:Ellipsis-Symbol[Einstellungen bearbeiten].
 +
-Das Dialogfeld Einstellungen für die reservierte Kapazität des Snapshot-Volumes wird angezeigt.
+Das Fenster „Einstellungen für reservierte Snapshot-Volume-Kapazität bearbeiten“ wird angezeigt.
 
 . Ändern Sie die Einstellungen für die reservierte Kapazität des Snapshot-Volumes je nach Bedarf.
 +

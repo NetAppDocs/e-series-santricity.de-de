@@ -28,7 +28,7 @@ Wenn Sie eine Premium-Funktion deaktivieren möchten, müssen Sie den Befehl „
 
 ====
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
 . Wählen Sie unter *Add-ons* die Option *Premium Feature aktivieren*.
 +
 Das Dialogfeld Premium-Funktion aktivieren wird geöffnet.

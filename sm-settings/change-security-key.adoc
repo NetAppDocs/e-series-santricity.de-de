@@ -15,7 +15,7 @@ summary: Sie können jederzeit einen Sicherheitsschlüssel durch einen neuen Sch
 Sie können jederzeit einen Sicherheitsschlüssel durch einen neuen Schlüssel ersetzen. Möglicherweise müssen Sie einen Sicherheitsschlüssel ändern, wenn Ihr Unternehmen eine potenzielle Sicherheitsverletzung hat und sicherstellen möchte, dass nicht autorisierte Mitarbeiter nicht auf die Daten zugreifen können.
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
 . Wählen Sie unter * Security Key Management* die Option *Change Key*.
 +
 Das Dialogfeld Sicherheitsschlüssel ändern wird geöffnet.

@@ -23,17 +23,13 @@ Beachten Sie beim Ändern der Host-Port-IDs die folgenden Richtlinien:
 
 
 .Schritte
-. Wählen Sie Menü:Storage[Hosts].
-. Wählen Sie den Host aus, dem die Ports zugeordnet werden sollen, und klicken Sie dann auf *Einstellungen anzeigen/bearbeiten*.
+. Wählen Sie im linken Bereich Menü:Storage[Hosts].
+. Wählen Sie den Host aus, dem die Ports zugeordnet werden sollen, und klicken Sie dann auf das Menü:ellipsis icon[Einstellungen bearbeiten].
 +
-Wenn Sie Ports zu einem Host in einem Host-Cluster hinzufügen möchten, erweitern Sie den Host-Cluster und wählen Sie den gewünschten Host aus. Sie können keine Ports auf Host-Cluster-Ebene hinzufügen.
+Wenn Sie einem Host in einem Hostcluster Ports hinzufügen möchten, wählen Sie den gewünschten Host aus. Sie können auf Hostclusterebene keine Ports hinzufügen.
 
 +
-Es wird ein Dialogfeld angezeigt, in dem die aktuellen Hosteinstellungen angezeigt werden.
-
-. Klicken Sie auf die Registerkarte *Host Ports*.
-+
-Im Dialogfeld werden die aktuellen Host-Port-IDs angezeigt.
+Ein Bildschirm „Host-Einstellungen bearbeiten“ erscheint, der die aktuellen Host-Einstellungen anzeigt.
 
 . Ändern Sie die Einstellungen für die Host-Port-ID.
 +
@@ -47,8 +43,8 @@ Host Port
  a| 
 Sie können eine der folgenden Optionen auswählen:
 
-** *Add* -- Verwenden Sie Add, um dem Host eine neue Host-Port-ID zuzuordnen. Die Länge des Namens der Host-Port-Kennung wird durch die Host-Schnittstellentechnologie bestimmt. Die Namen der Fibre Channel- und InfiniBand-Host-Port-ID müssen 16 Zeichen lang sein. Die Namen der iSCSI-Host-Port-ID dürfen maximal 223 Zeichen lang sein. Der Port muss eindeutig sein. Eine bereits konfigurierte Portnummer ist nicht zulässig.
-** *Löschen* -- Verwenden Sie Löschen, um eine Host-Port-ID zu entfernen (Zuordnung aufheben). Mit der Option Löschen wird der Host-Port nicht physisch entfernt. Mit dieser Option wird die Zuordnung zwischen dem Host-Port und dem Host entfernt. Sofern Sie den Host Bus Adapter oder den iSCSI-Initiator nicht entfernen, wird der Host-Port noch vom Controller erkannt.
+** *Hostport hinzufügen* -- Klicken Sie auf *Hostport hinzufügen*, um dem Host eine neue Hostport-Kennung zuzuweisen. Die Länge des Hostport-Kennungsnamens wird durch die Host-Schnittstellentechnologie bestimmt. Fibre Channel- und Infiniband-Hostport-Kennungsnamen müssen 16 Zeichen haben. iSCSI-Hostport-Kennungsnamen dürfen maximal 223 Zeichen haben. Der Port muss eindeutig sein. Eine bereits konfigurierte Portnummer ist nicht zulässig.
+** *Löschen (X-Symbol)* – Klicken Sie auf das *X*-Symbol, um eine Host-Port-Kennung zu entfernen (die Zuordnung aufzuheben). Die Option „Löschen“ entfernt den Host-Port nicht physisch. Diese Option hebt die Zuordnung zwischen dem Host-Port und dem Host auf. Solange Sie den Host-Bus-Adapter oder den iSCSI-Initiator nicht entfernen, wird der Host-Port weiterhin vom Controller erkannt.
 +
 [NOTE]
 ====
@@ -60,9 +56,9 @@ Wenn Sie eine Host-Port-ID löschen, ist sie diesem Host nicht mehr zugeordnet. 
 
 
  a| 
-Etikett
+Name
  a| 
-Um den Namen der Portbezeichnung zu ändern, klicken Sie auf das Symbol *Bearbeiten* (Bleistift). Der Name des Port-Etiketts muss eindeutig sein. Ein bereits konfigurierter Etikettenname ist nicht zulässig.
+Bei Bedarf können Sie den Portbezeichnungsnamen ändern. Der Portbezeichnungsname muss eindeutig sein. Ein bereits konfigurierter Bezeichnungsname ist nicht zulässig.
 
 
 

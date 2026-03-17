@@ -15,7 +15,7 @@ summary: Deaktivieren Sie das AutoSupport-Wartungsfenster, um die automatische E
 Deaktivieren Sie das AutoSupport-Wartungsfenster, um die automatische Erstellung von Tickets bei Fehlerereignissen zu ermöglichen. Wenn das AutoSupport-Wartungsfenster deaktiviert ist, öffnet das Storage-Array AutoSupport im Falle eines Problems einen Support-Fall.
 
 .Schritte
-. Wählen Sie MENU:Support[Support Center > AutoSupport].
+. Wählen Sie im linken Bereich Menü:Support[Support Center > AutoSupport] Tab.
 . Wählen Sie * Fenster AutoSupport-Wartung deaktivieren*.
 . Geben Sie die E-Mail-Adresse ein, um eine Bestätigung zu erhalten, dass die Anfrage zum Deaktivieren des Wartungsfensters bearbeitet wurde.
 +

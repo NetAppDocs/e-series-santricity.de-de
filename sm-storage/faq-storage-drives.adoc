@@ -53,6 +53,6 @@ Die Daten aus dem Originallaufwerk werden kopiert oder auf das Ersatzlaufwerk re
 
 Sie können den Rekonstruktionsstatus des Laufwerks über die Konsole „Operations in Progress“ anzeigen.
 
-Klicken Sie auf der Startseite oben rechts auf den Link *Vorgänge in Bearbeitung anzeigen*.
+Klicken Sie im linken Bereich unter dem Menü *Storage* oben rechts auf den Link *Operations in Progress*.
 
 Je nach Laufwerk kann die vollständige Rekonstruktion sehr viel Zeit in Anspruch nehmen. Wenn sich die Volume-Eigentümerschaft geändert hat, kann anstelle der schnellen Wiederherstellung eine vollständige Rekonstruktion stattfinden.

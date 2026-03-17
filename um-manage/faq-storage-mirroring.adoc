@@ -39,7 +39,7 @@ Erfüllen Sie außerdem die folgenden Anforderungen an Storage-Arrays:
 
 [NOTE]
 ====
-Synchrones Spiegeln ist auf dem Storage-System EF600/EF600C oder EF300/EF300C nicht verfügbar.
+Synchrones Spiegeln ist auf dem EF80, EF50, EF600/EF600C oder EF300/EF300C Speichersystem nicht verfügbar.
 
 ====
 
@@ -60,7 +60,7 @@ Befolgen Sie vor dem Erstellen eines gespiegelten Paares diese Richtlinien.
 
 [NOTE]
 ====
-Synchrones Spiegeln ist auf dem Storage-System EF600/EF600C oder EF300/EF300C nicht verfügbar.
+Synchrones Spiegeln ist auf dem EF80, EF50, EF600/EF600C oder EF300/EF300C Storage-System nicht verfügbar.
 
 ====
 

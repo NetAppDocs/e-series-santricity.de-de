@@ -28,28 +28,28 @@ SANtricity System Manager unterstützt die folgenden Browser-Versionen.
  a| 
 Google Chrome
  a| 
-89
+120
 
 
 
  a| 
 Mozilla Firefox
  a| 
-80
+120
 
 
 
  a| 
 Safari
  a| 
-14
+16
 
 
 
  a| 
 Microsoft Edge
  a| 
-90
+120
 
 |===
 
@@ -317,7 +317,7 @@ Storage Array erledigen
 
 == Was zeigt das Latenzdiagramm?
 
-Das Latenzdiagramm bietet Latenzstatistiken in Millisekunden (ms) für Volumes, Volume-Gruppen, Pools Applikationen und Workloads. Dieses Diagramm wird auf den Registerkarten logische Ansicht, physische Ansicht und Applikationen & Workloads angezeigt.
+Das Latenzdiagramm liefert Latenz-Statistiken in Millisekunden (ms) für Volumes, Volume-Gruppen, Pools, Anwendungen und Workloads. Dieses Diagramm wird in den Registerkarten „Logische Ansicht“, „Physische Ansicht“ und „Anwendungs- und Workload-Ansicht“ angezeigt.
 
 Bei der Latenz handelt es sich um jegliche Verzögerung, die beim Lesen oder Schreiben von Daten auftritt. Halten Sie den Mauszeiger über einen Punkt im Diagramm, um die folgenden Werte in Millisekunden (ms) für diesen Zeitpunkt anzuzeigen:
 
@@ -330,7 +330,7 @@ Bei der Latenz handelt es sich um jegliche Verzögerung, die beim Lesen oder Sch
 
 == Was zeigt das IOPS-Diagramm?
 
-Im IOPS-Diagramm werden Statistiken für die ein-/Ausgabe-Vorgänge pro Sekunde angezeigt. Auf der Startseite werden in diesem Diagramm Statistiken für das Speicher-Array angezeigt. In der logischen Ansicht, der physischen Ansicht und den Registerkarten Applikationen und Workloads der Performance-Ansicht werden in diesem Diagramm Statistiken für das Storage Array, die Volumes, Volume-Gruppen, Pools, Applikationen Und Workloads.
+Das IOPS-Diagramm zeigt Statistiken zu Ein-/Ausgabeoperationen pro Sekunde an. Auf der Startseite zeigt dieses Diagramm Statistiken für das Speichersystem an. In den Registerkarten „Logische Ansicht“, „Physische Ansicht“ und „Anwendungs- und Workload-Ansicht“ der Leistungsseite zeigt dieses Diagramm Statistiken für das Speichersystem, Volumes, Volume-Gruppen, Pools, Anwendungen und Workloads an.
 
 IOPS ist eine Abkürzung für _Input/Output (I/O) Operations per Second_. Bewegen Sie den Mauszeiger über einen Punkt im Diagramm, um die folgenden Werte für diesen Zeitpunkt anzuzeigen:
 
@@ -343,7 +343,7 @@ IOPS ist eine Abkürzung für _Input/Output (I/O) Operations per Second_. Bewege
 
 == Was wird im MiB/s-Diagramm angezeigt?
 
-Das MiB/s-Diagramm zeigt Statistiken zur Übertragungsgeschwindigkeit in Mebibyte pro Sekunde an. Auf der Startseite werden in diesem Diagramm Statistiken für das Speicher-Array angezeigt. In der logischen Ansicht, der physischen Ansicht und den Registerkarten Applikationen und Workloads der Performance-Ansicht werden in diesem Diagramm Statistiken für das Storage Array, die Volumes, Volume-Gruppen, Pools, Applikationen Und Workloads.
+Das MiB/s-Diagramm zeigt Statistiken zur Übertragungsgeschwindigkeit in Mebibyte pro Sekunde an. Auf der Startseite zeigt dieses Diagramm Statistiken für das Storage Array an. In den Registerkarten „Logische Ansicht“, „Physische Ansicht“ und „Anwendungs- und Workload-Ansicht“ der Leistungsseite zeigt dieses Diagramm Statistiken für das Storage Array, Volumes, Volume-Gruppen, Pools, Anwendungen und Workloads an.
 
 MIB/s ist eine Abkürzung für _Mebibyte pro Sekunde_, bzw. 1,048,576 Byte pro Sekunde. Bewegen Sie den Mauszeiger über einen Punkt im Diagramm, um die folgenden Werte für diesen Zeitpunkt anzuzeigen:
 
@@ -356,7 +356,7 @@ MIB/s ist eine Abkürzung für _Mebibyte pro Sekunde_, bzw. 1,048,576 Byte pro S
 
 == Was zeigt das CPU Diagramm?
 
-Das CPU-Diagramm zeigt die Statistiken zur Verarbeitungskapazität für jeden Controller (Controller A und Controller B) an. CPU ist eine Abkürzung für _Central Processing Unit_. Auf der Startseite werden in diesem Diagramm Statistiken für das Speicher-Array angezeigt. Auf der Registerkarte „Physical View“ der Kachel „Performance“ werden in diesem Diagramm Statistiken für das Storage Array und die Laufwerke angezeigt.
+Das CPU-Diagramm zeigt Statistiken zur Verarbeitungskapazität für jeden Controller (Controller A und Controller B) an. CPU ist eine Abkürzung für _central processing unit_. Auf der Startseite zeigt dieses Diagramm Statistiken für das Storage-Array an. Auf der Registerkarte „Physische Ansicht“ der Leistungsseite zeigt dieses Diagramm Statistiken für das Storage-Array und die Laufwerke an.
 
 Das CPU-Diagramm zeigt den Prozentsatz der CPU-Verarbeitungskapazität, die im Vergleich zu Operationen auf dem Array verwendet wird. Selbst wenn keine externe I/O-Vorgänge stattfinden, liegt die CPU-Auslastung in Prozent unter Umständen nicht ganz am Wert des Storage-Betriebssystems. Dies könnte dazu führen, dass Hintergrundvorgänge und das Monitoring durchgeführt werden. Bewegen Sie den Mauszeiger über einen Punkt im Diagramm, um einen Prozentsatz der Verarbeitungsfähigkeit anzuzeigen, die zu diesem Zeitpunkt verwendet werden.
 
@@ -364,7 +364,7 @@ Das CPU-Diagramm zeigt den Prozentsatz der CPU-Verarbeitungskapazität, die im V
 
 == Was zeigt das Diagramm „Reserve“?
 
-Das Diagramm Reserve bezieht sich auf die verbleibende Performance-Fähigkeit für die Storage Array Controller. Dieses Diagramm ist auf der Startseite und auf der Registerkarte Physical View der Kachel Performance sichtbar.
+Das Headroom-Diagramm bezieht sich auf die verbleibende Leistungskapazität der Speicherarray-Controller. Dieses Diagramm ist auf der Startseite und auf der Registerkarte „Physische Ansicht“ der Leistungsseite sichtbar.
 
 Das Diagramm Reserve zeigt die verbleibende Performance-Fähigkeit der physischen Objekte im Storage-System. Halten Sie den Mauszeiger über einen Punkt im Diagramm, um den Prozentsatz der noch verbleibenden IOPS- und MiB/s-Fähigkeit für Controller A und für Controller B anzuzeigen
 

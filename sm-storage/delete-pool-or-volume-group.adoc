@@ -25,12 +25,12 @@ Sie können einen Pool oder eine Volume-Gruppe löschen, um mehr nicht zugewiese
 
 
 .Schritte
-. Wählen Sie Menü:Speicher[Pools & Volume Groups].
+. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
 . Wählen Sie einen Pool oder eine Volume-Gruppe aus der Liste aus.
 +
 Sie können jeweils nur einen Pool oder eine Volume-Gruppe auswählen. Scrollen Sie in der Liste nach unten, um weitere Pools oder Volume-Gruppen zu sehen.
 
-. Wählen Sie Menü:Sonstige Aufgaben[Löschen] und bestätigen Sie.
+. Menü auswählen: Ellipsen-Symbol [Delete] und bestätigen.
 
 
 .Ergebnisse

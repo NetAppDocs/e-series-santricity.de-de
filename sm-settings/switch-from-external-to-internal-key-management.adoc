@@ -18,7 +18,7 @@ Sie können die Verwaltungsmethode für die Laufwerksicherheit von einem externe
 In dieser Aufgabe deaktivieren Sie die externe Schlüsselverwaltung und laden eine neue Sicherungskopie auf Ihren lokalen Host herunter. Der vorhandene Schlüssel wird weiterhin für die Laufwerksicherheit verwendet, wird aber intern im Speicher-Array verwaltet.
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
 . Wählen Sie unter * Security Key Management* die Option *External Key Management deaktivieren* aus.
 +
 Das Dialogfeld External Key Management deaktivieren wird geöffnet.

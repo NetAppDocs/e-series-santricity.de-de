@@ -28,7 +28,7 @@ Aus den folgenden Gründen möchten Sie den automatischen Lastausgleich auf Ihre
 
 
 .Schritte
-. Wählen Sie Menü:Einstellungen[System].
+. Wählen Sie im linken Bereich Menü:Einstellungen[System].
 . Scrollen Sie nach unten zu *zusätzliche Einstellungen* und klicken Sie dann auf *Automatischer Lastenausgleich aktivieren/deaktivieren*.
 +
 Der Text unter dieser Option gibt an, ob die Funktion derzeit aktiviert oder deaktiviert ist.

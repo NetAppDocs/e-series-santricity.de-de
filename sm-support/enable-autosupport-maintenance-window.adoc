@@ -15,7 +15,7 @@ summary: Aktivieren Sie das AutoSupport-Wartungsfenster, um die automatische Tic
 Aktivieren Sie das AutoSupport-Wartungsfenster, um die automatische Ticketerstellung bei Fehlerereignissen zu unterdrücken. Im normalen Betriebsmodus eröffnet das Storage Array über AutoSupport einen Support-Fall, wenn ein Problem auftritt.
 
 .Schritte
-. Wählen Sie MENU:Support[Support Center > AutoSupport].
+. Wählen Sie im linken Bereich Menü:Support[Support Center > AutoSupport] Tab.
 . Wählen Sie *Fenster AutoSupport-Wartung aktivieren*.
 . Geben Sie die E-Mail-Adresse ein, um eine Bestätigung zu erhalten, dass das Wartungsfenster bearbeitet wurde.
 +

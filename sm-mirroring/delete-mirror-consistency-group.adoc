@@ -18,7 +18,7 @@ Sie können gespiegelte Konsistenzgruppen löschen, die nicht mehr im lokalen St
 Alle gespiegelten Paare müssen aus der Consistency Mirror-Gruppe entfernt werden.
 
 .Schritte
-. Wählen Sie Menü:Speicher[Asynchronous Mirroring].
+. Wählen Sie im linken Bereich Menü:Storage[Asynchronous Mirroring].
 . Wählen Sie die Registerkarte * Consistency Groups spiegeln* aus.
 +
 Die Tabelle Mirror Consistency Group wird angezeigt und zeigt alle dem Speicher-Array zugeordneten Spiegelkonsistency Groups an.

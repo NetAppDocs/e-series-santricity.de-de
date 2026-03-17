@@ -15,10 +15,10 @@ summary: Sie können den Namen, den Host-Betriebssystemtyp und die zugehörigen 
 Sie können den Namen, den Host-Betriebssystemtyp und die zugehörigen Host-Cluster für einen Host ändern.
 
 .Schritte
-. Wählen Sie Menü:Storage[Hosts].
-. Wählen Sie den Host aus, den Sie bearbeiten möchten, und klicken Sie dann auf *Einstellungen anzeigen/bearbeiten*.
+. Wählen Sie im linken Bereich Menü:Storage[Hosts].
+. Wählen Sie den Host aus, den Sie bearbeiten möchten, und klicken Sie dann auf das Menü:Ellipsis-Symbol[Einstellungen bearbeiten].
 +
-Es wird ein Dialogfeld angezeigt, in dem die aktuellen Hosteinstellungen angezeigt werden.
+Es erscheint ein Fenster, das die aktuellen Host-Einstellungen anzeigt.
 
 . Wenn er nicht bereits ausgewählt ist, klicken Sie auf die Registerkarte *Eigenschaften*.
 . Ändern Sie die Einstellungen nach Bedarf.

@@ -30,7 +30,7 @@ Der Prozess zur Erstellung eines Snapshot-Volumes ist ein mehrstufiges Verfahren
 Wählen Sie entweder ein Snapshot Image eines Basis-Volumes oder eine Snapshot-Konsistenzgruppe aus. Wenn Sie ein Snapshot-Snapshot-Image für Konsistenzgruppen auswählen, werden die Mitgliedvolumes der Snapshot-Konsistenzgruppe zur Überprüfung angezeigt.
 
 .Schritte
-. Wählen Sie Menü:Storage[Snapshots].
+. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
 . Wählen Sie die Registerkarte *Snapshot Volumes* aus.
 . Wählen Sie *Erstellen*.
 +

@@ -24,8 +24,8 @@ Sie können manuell ein Snapshot-Image aus einem Basis-Volume oder einer Snapsho
 .Schritte
 . Führen Sie eine der folgenden Aktionen durch, um ein Snapshot-Image zu erstellen:
 +
-** Wählen Sie Menü:Storage[Volumes]. Wählen Sie das Objekt (Basis-Volume oder Snapshot-Konsistenzgruppe) aus, und wählen Sie dann Menü:Kopierdienste[Instant Snapshot erstellen].
-** Wählen Sie Menü:Storage[Snapshots]. Wählen Sie die Registerkarte *Snapshot Images* und dann Menü:Erstellen[Instant Snapshot].
+** Wählen Sie im linken Bereich Menü:Storage[Volumes]. Wählen Sie das Objekt (Base Volume oder Snapshot Konsistenzgruppe) aus und klicken Sie dann auf das Menü:Ellipsis Icon[Create instant snapshot].
+** Wählen Sie im linken Bereich Menü:Storage[Snapshots]. Wählen Sie die Registerkarte *Snapshot Images* und anschließend Menü:Create[Instant snapshot Image].
 +
 Das Dialogfeld Snapshot-Bild erstellen wird angezeigt. Wählen Sie das Objekt aus (Basis-Volume oder Snapshot-Consistency Group) und klicken Sie dann auf *Next*. Wenn ein vorheriges Snapshot Image für die Konsistenzgruppe des Volumes oder Snapshots erstellt wurde, erstellt das System sofort den sofortigen Snapshot. Andernfalls wird das Dialogfeld Snapshot-Bild bestätigen angezeigt, wenn dies das erste Mal ist, wenn ein Snapshot-Image für die Konsistenzgruppe des Volumes oder der Snapshot erstellt wird.
 
