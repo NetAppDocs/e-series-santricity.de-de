@@ -1,12 +1,12 @@
 ---
 indexpage:
-  title: SANtricity software 12.00 Dokumentation
+  title: SANtricity software 12.0 Dokumentation
   summary: SANtricity System Manager und Unified Manager
   keywords: santricity, all-flash arrays, heavy workload applications, video surveillance,
     data analytics
-  lead: SANtricity software 12.00 ermöglicht Ihnen maximale Leistung und Auslastung
-    Ihrer E-Series Hybrid-Flash- und EF-Series All-Flash-Arrays für Anwendungen mit
-    hoher Arbeitslast, einschließlich Data Analytics, Video Surveillance sowie Backup
+  lead: SANtricity software 12.0 ermöglicht Ihnen maximale Leistung und Auslastung
+    Ihrer E-Series Hybrid-Flash-Arrays und EF-Series All-Flash-Arrays für Anwendungen
+    mit hoher Arbeitslast, einschließlich Datenanalyse, Videoüberwachung sowie Backup
     und Recovery.
   tiles:
   - title: Los geht's

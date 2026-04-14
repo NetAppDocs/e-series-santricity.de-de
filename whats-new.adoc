@@ -12,14 +12,20 @@ summary: Neue Funktionen im SANtricity OS.
 
 
 [role="lead"]
-Die folgende Tabelle beschreibt neue Funktionen in SANtricity System Manager 12.00.
+Die folgende Tabelle beschreibt neue Funktionen in SANtricity System Manager 12.0.
 
 
 
-== Neue Funktionen in Version 12.00
+== Neue Funktionen in Version 12.0R1
+
+Diese Version enthält nur geringfügige Änderungen und keine neuen Funktionen. Weitere Informationen zu den Änderungen in dieser Version finden Sie in der E-Series SANtricity OS 12.0R1 README.
 
 
-NOTE: Die SANtricity OS 12.00-Version ist nur mit den neuen EF80 und EF50 All-Flash-Storage-Systemen kompatibel. Wenn Sie SANtricity OS 11.9 oder älter verwenden, beachten Sie bitte link:known-issues.html["Bekannte Probleme"] für eine Liste der neuen Funktionen in früheren Versionen.
+
+== Neue Funktionen in Version 12.0
+
+
+NOTE: Die SANtricity OS 12.0-Version ist nur mit den neuen EF80 und EF50 All-Flash-Storage-Systemen kompatibel. Wenn Sie SANtricity OS 11.9 oder älter verwenden, beachten Sie bitte link:known-issues.html["Bekannte Probleme"] für eine Liste der neuen Funktionen in früheren Versionen.
 
 [cols="35h,~"]
 |===
