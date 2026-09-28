@@ -23,9 +23,9 @@ Die verfügbaren Komponenten sind vom Shelf-Typ abhängig:
 
 .Schritte
 . Wählen Sie im linken Bereich *Hardware* aus.
-. Wählen Sie die Dropdown-Liste für das Controller-Shelf oder Laufwerk-Shelf aus, und wählen Sie dann *Anzeigeeinstellungen* aus.
+. Die Dropdown-Liste für das Controller-Shelf oder das Laufwerks-Shelf öffnen und anschließend *Einstellungen anzeigen* auswählen.
 +
-Das Dialogfeld Einstellungen für Shelf-Komponenten wird geöffnet. Auf diesen Registerkarten werden der Status und die Einstellungen für die Shelf-Komponenten angezeigt. Je nach ausgewähltem Shelf werden einige in der Tabelle beschriebene Registerkarten möglicherweise nicht angezeigt.
+Das Einstellungsfenster für das Regal öffnet sich und enthält Abschnitte, die den Status und die Einstellungen der Regalkomponenten anzeigen. Je nach ausgewähltem Regaltyp werden einige der in der Tabelle beschriebenen Abschnitte möglicherweise nicht angezeigt.
 
 +
 [cols="25h,~"]

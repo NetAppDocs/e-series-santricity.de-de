@@ -17,6 +17,7 @@ Der Zweck der reservierten Kapazität besteht darin, Datenänderungen auf diesen
 
 
 
+[[copy-service-objects-that-use-reserved-capacity]]
 == Kopieren Sie Serviceobjekte mit reservierter Kapazität
 
 Die reservierte Kapazität ist der zugrunde liegende Storage-Mechanismus, der von diesen Service-Objekten der Kopie verwendet wird:
@@ -31,6 +32,7 @@ Wenn Sie diese Servicepobjekte erstellen oder erweitern, müssen Sie neue reserv
 
 
 
+[[thin-volumes-and-reserved-capacity]]
 == Thin Volumes und reservierte Kapazität
 
 Wenn bei einem Thin-Volume die maximale gemeldete Kapazität von 256 tib erreicht ist, können Sie seine Kapazität nicht erhöhen. Stellen Sie sicher, dass die reservierte Kapazität des Thin-Volumes auf eine Größe gesetzt ist, die größer als die maximale gemeldete Kapazität ist. (Ein Thin Volume wird immer über Thin Provisioning bereitgestellt. Das bedeutet, dass die Kapazität beim Schreiben der Daten auf das Volume zugewiesen wird.)
@@ -43,6 +45,7 @@ Wenn Sie reservierte Kapazität mit einem Thin-Volume in einem Pool erstellen, �
 
 
 
+[[capacity-alerts]]
 == Kapazitätswarnungen
 
 Das Copy-Service-Objekt verfügt über eine konfigurierbare Kapazitätswarnung und Alarmschwelle sowie eine konfigurierbare Antwort, wenn die reservierte Kapazität voll ist.
@@ -51,16 +54,18 @@ Wenn sich die reservierte Kapazität eines Volume eines Copy-Service-Objekts dem
 
 
 
+[[orphaned-reserved-capacity-volumes]]
 == Verwaiste reservierte Kapazitäts-Volumes
 
 Ein verwaiste kapazitätsstarkes Volume ist ein Volume, das keine Daten mehr für Kopierservicevorgänge speichert, da das zugehörige Copy-Service-Objekt gelöscht wurde. Sobald das Copy-Service-Objekt gelöscht wurde, sollte auch das reservierte Kapazitäts-Volume gelöscht werden. Das reservierte Kapazitäts-Volume konnte jedoch nicht gelöscht werden.
 
 Da auf verwaiste reservierte Kapazitäts-Volumes kein Host zugegriffen wird, sind sie Kandidaten für eine Rückgewinnung. Löschen Sie das verwaiste Volumes mit reservierter Kapazität manuell, sodass Sie dessen Kapazität für andere Vorgänge nutzen können.
 
-System Manager benachrichtigt Sie über verwaiste Kapazitäts-Volumes mit einer Meldung „nicht genutzte Kapazität neu erstellen“ im Bereich „Benachrichtigungen“ auf der Startseite. Sie können auf *ungenutzte Kapazität zurückgewinnen* klicken, um das Dialogfeld „ungenutzte Kapazität neu zuweisen“ anzuzeigen, in dem Sie das verwaiste Volumen der reservierten Kapazität löschen können.
+System Manager benachrichtigt über verwaiste reservierte Kapazitätsvolumes mit der Meldung „Nicht verwendete Kapazität freigeben“ im Benachrichtigungsbereich, der über das Glockensymbol in der oberen Ecke des Fensters verfügbar ist. Mit einem Klick auf *Nicht verwendete Kapazität freigeben* wird das Dialogfeld „Nicht verwendete Kapazität freigeben“ angezeigt, in dem das verwaiste reservierte Kapazitätsvolume gelöscht werden kann.
 
 
 
+[[characteristics-of-reserved-capacity]]
 == Merkmale der reservierten Kapazität
 
 * Für die reservierte Kapazität muss während der Volume-Erstellung berücksichtigt werden, um ausreichend freie Kapazität zur Verfügung zu haben.

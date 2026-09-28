@@ -16,7 +16,7 @@ Sie können die Speicherkonfiguration von einem Speicher-Array in andere Speiche
 
 .Bevor Sie beginnen
 * Storage ist in SANtricity System Manager für das Storage-Array konfiguriert, das Sie als Quelle verwenden möchten.
-* Die vorhandene Konfiguration für die Ziel-Speicher-Arrays wird in System Manager gesichert (Menü:Einstellungen[System > Speicherarray-Konfiguration speichern]).
+* Die bestehende Konfiguration der Zielspeicherarrays wird im System Manager gesichert (Menü:System[Speicherarray-Konfiguration speichern]).
 * Quell- und Ziel-Arrays müssen die folgenden Anforderungen erfüllen:
 +
 ** Die Shelfs, in denen sich die Controller befinden, müssen identisch sein.

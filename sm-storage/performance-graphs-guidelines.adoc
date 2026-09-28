@@ -30,6 +30,7 @@ Performance-Daten sind in drei Formaten verfügbar:
 
 
 
+[[characteristics-of-performance-data-formats]]
 == Merkmale der Performance-Datenformate
 
 [cols="1a,1a,1a,1a,1a"]
@@ -93,6 +94,7 @@ Ja.
 |===
 
 
+[[guidelines-for-viewing-performance-data]]
 == Richtlinien zum Anzeigen von Performance-Daten
 
 * Die Erfassung von Performance-Daten ist jederzeit aktiviert. Es besteht keine Möglichkeit, es auszuschalten.

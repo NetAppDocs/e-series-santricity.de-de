@@ -16,6 +16,7 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 
 
 
+[[what-do-i-need-to-know-before-creating-a-mirror-consistency-group]]
 == Was muss ich wissen, bevor ich eine gespiegelte Konsistenzgruppe erstellt?
 
 Befolgen Sie die folgenden Richtlinien, bevor Sie eine gespiegelte Konsistenzgruppe erstellen.
@@ -44,6 +45,7 @@ Synchrones Spiegeln ist auf dem EF80, EF50, EF600/EF600C oder EF300/EF300C Speic
 ====
 
 
+[[what-do-i-need-to-know-before-creating-a-mirrored-pair]]
 == Was muss ich vor der Erstellung eines gespiegelten Paares wissen?
 
 Befolgen Sie vor dem Erstellen eines gespiegelten Paares diese Richtlinien.
@@ -65,6 +67,7 @@ Synchrones Spiegeln ist auf dem EF80, EF50, EF600/EF600C oder EF300/EF300C Stora
 ====
 
 
+[[why-would-i-change-this-percentage]]
 == Warum sollte ich diesen Prozentsatz ändern?
 
 Die reservierte Kapazität ist normalerweise 20 % des Basis-Volumes für asynchrone Spiegelungsvorgänge. In der Regel ist diese Kapazität ausreichend.
@@ -77,6 +80,7 @@ Die benötigte Kapazität ist abhängig von Häufigkeit und Größe der I/O-Schr
 
 
 
+[[why-do-i-see-more-than-one-reserved-capacity-candidate]]
 == Warum kann ich mehr als einen Kandidaten für reservierte Kapazität sehen?
 
 Wenn sich mehrere Volumes in einem Pool oder einer Volume-Gruppe befinden, die dem für das Storage-Objekt ausgewählten Kapazitätsprozentsatz entsprechen, werden mehrere Kandidaten angezeigt.
@@ -85,6 +89,7 @@ Sie können die Liste der empfohlenen Kandidaten aktualisieren, indem Sie den Pr
 
 
 
+[[why-dont-i-see-all-my-volumes]]
 == Warum sehe ich nicht alle meine Bände?
 
 Wenn Sie ein primäres Volume für ein gespiegeltes Paar auswählen, werden in einer Liste alle berechtigten Volumes angezeigt.
@@ -102,6 +107,7 @@ NOTE: Bei EF600- und EF300-Controllern müssen die primären und sekundären Vol
 
 
 
+[[why-dont-i-see-all-the-volumes-on-the-remote-storage-array]]
 == Warum werden mir nicht alle Volumes auf dem Remote-Speicher-Array angezeigt?
 
 Wenn Sie ein sekundäres Volume auf dem Remote-Speicher-Array auswählen, werden alle für dieses gespiegelte Paar geeigneten Volumes in einer Liste angezeigt.
@@ -129,6 +135,7 @@ Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser List
 
 
 
+[[what-impact-does-synchronization-priority-have-on-synchronization-rates]]
 == Welche Auswirkungen hat die Synchronisierungspriorität auf die Synchronisierungsraten?
 
 Die Synchronisierungspriorität definiert, wie viel Verarbeitungszeit für Synchronisierungsaktivitäten im Verhältnis zur Systemleistung zugewiesen wird.
@@ -186,6 +193,7 @@ Volume-Größe und Host-I/O-Rate-Lasten wirken sich auf den Vergleich der Synchr
 
 
 
+[[why-is-it-recommended-to-use-a-manual-synchronization-policy]]
 == Warum wird empfohlen, eine manuelle Synchronisierungsrichtlinie zu verwenden?
 
 Die manuelle Neusynchronisierung wird empfohlen, da Sie damit den Neusynchronisierung so verwalten können, dass dadurch keine Möglichkeit zum Wiederherstellen von Daten besteht.

@@ -18,6 +18,7 @@ Zum Konfigurieren der Remote-Speicherfunktion müssen Sie die Hardware einrichte
 
 
 
+[[hardware-setup]]
 == Hardware-Einrichtung
 
 Verwenden Sie den folgenden Workflow, um die Hardwareverbindungen vorzubereiten.
@@ -31,7 +32,7 @@ In dem lokalen E-Series Storage-System:
 
 . Stellen Sie sicher, dass jeder Controller über eine iSCSI-Verbindung zum Remote-Speichersystem verfügt. Mit dieser Verbindung fungiert das lokale E-Series System als iSCSI-Initiator, der als Host auf dem Remote-System eingerichtet werden kann.
 . Erstellen Sie ein Zielvolume für den Importvorgang. Stellen Sie sicher, dass das Volume über eine Kapazität verfügt, die dem Quell-Volume des Remote-Storage-Systems entspricht oder größer ist, über eine passende Blockgröße verfügt und nicht zugeordnet ist. Siehe link:create-volumes.html["Volumes erstellen"].
-. Sammeln Sie den iSCSI Qualified Name (IQN) für das lokale E-Series System von der System Manager-Schnittstelle aus. Der IQN wird später zum Einrichten des lokalen E-Series Systems als Host auf dem Remote-Speichersystem verwendet. Wechseln Sie in System Manager zu Menü:Einstellungen[System > iSCSI-Einstellungen > Ziel-IQN].
+. Den iSCSI Qualified Name (IQN) des lokalen E-Series Storage-Systems über die System Manager-Oberfläche abrufen. Der IQN wird später für die Einrichtung des lokalen E-Series Storage-Systems als Host auf dem Remote-System verwendet. Im System Manager zu: Menü:System[iSCSI settings > Target IQN] navigieren.
 
 
 Auf dem Remote Storage-System:
@@ -55,6 +56,7 @@ Auf dem Remote Storage-System:
 
 
 
+[[system-manager-setup]]
 == Einrichtung von System Manager
 
 Verwenden Sie den folgenden Workflow, um ein Remote-Speicherobjekt für den Import zu erstellen:

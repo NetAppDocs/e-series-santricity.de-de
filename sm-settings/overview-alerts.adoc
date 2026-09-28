@@ -16,6 +16,7 @@ Sie können SANtricity System Manager so konfigurieren, dass Speicher-Array-Warn
 
 
 
+[[what-are-alerts]]
 == Was sind Warnmeldungen?
 
 _Alerts_ benachrichtigt Administratoren über wichtige Ereignisse, die auf dem Storage-Array auftreten. Zu den Ereignissen zählen beispielsweise Probleme mit dem Ausfall der Batterie, der Wechsel von optimal zu Offline oder Redundanzfehler im Controller. Alle kritischen Ereignisse werden als „alertable“, zusammen mit einigen Warn- und Informationsereignissen betrachtet.
@@ -28,9 +29,10 @@ Weitere Informationen:
 
 
 
+[[how-do-i-configure-alerts]]
 == Wie konfiguriere ich Benachrichtigungen?
 
-Sie können Warnungen so konfigurieren, dass sie als Nachricht an eine oder mehrere E-Mail-Adressen gesendet werden, als SNMP-Trap an einen SNMP-Server oder als Nachricht an einen Syslog-Server. Die Alarmkonfiguration ist über das Menü:Einstellungen[Warnmeldungen] verfügbar.
+Sie können Warnmeldungen so konfigurieren, dass sie als Nachricht an eine oder mehrere E-Mail-Adressen, als SNMP-Trap an einen SNMP-Server oder als Nachricht an einen Syslog-Server gesendet werden. Die Konfiguration der Warnmeldungen ist im Menü:Warnmeldungen[] verfügbar.
 
 Weitere Informationen:
 
@@ -41,6 +43,7 @@ Weitere Informationen:
 
 
 
+[[related-information]]
 == Verwandte Informationen
 
 Weitere Informationen zu Konzepten im Zusammenhang mit Warnmeldungen:

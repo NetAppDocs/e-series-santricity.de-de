@@ -23,8 +23,7 @@ Sie können die Zertifikate auf den Controllern von der Verwendung von CA-signie
 Mit der Funktion Reset werden die aktuellen CA-signierten Zertifikatdateien von jedem Controller gelöscht. Die Controller werden dann mithilfe selbstsignierter Zertifikate wiederhergestellt.
 
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Certificates].
-. Wählen Sie auf der Registerkarte Array Management die Option *Zurücksetzen*.
+. Im linken Bereich Menü:Zertifikate[Array management certificates] auswählen und anschließend *Zurücksetzen*.
 +
 Es wird ein Dialogfeld zum Zurücksetzen der Managementzertifikate bestätigen geöffnet.
 

@@ -21,8 +21,7 @@ Wenn Sie Auditprotokolle auf einem externen Syslog-Server archivieren möchten, 
 
 
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Access Management].
-. Wählen Sie auf der Registerkarte Audit Log die Option *Configure Syslog Servers* aus.
+. Im linken Bereich Menü:Überwachung[Revisionsprotokoll] auswählen und anschließend *Configure Syslog Servers* auswählen.
 +
 Das Dialogfeld Configure Syslog Servers wird geöffnet.
 
@@ -38,7 +37,7 @@ Das Dialogfeld Syslog Server hinzufügen wird geöffnet.
 +
 [NOTE]
 ====
-Wenn das Zertifikat später ungültig wird, schlägt der TLS-Handshake fehl. Als Ergebnis wird eine Fehlermeldung in das Auditprotokoll geschrieben und Meldungen werden nicht mehr an den Syslog-Server gesendet. Um dieses Problem zu lösen, müssen Sie das Zertifikat auf dem Syslog-Server beheben und dann zum Menü:Einstellungen[Audit-Protokoll > Syslog-Server konfigurieren > Alle testen] wechseln.
+Wenn das Zertifikat später ungültig wird, schlägt der TLS-Handschlag fehl. Infolgedessen wird eine Fehlermeldung im Revisionsprotokoll protokolliert und es werden keine Meldungen mehr an den Syslog Server gesendet. Zur Behebung dieses Problems ist das Zertifikat auf dem Syslog Server zu korrigieren und anschließend das Menü Monitoring[Audit log > Configure Syslog Servers > Test All] aufzurufen.
 
 ====
 ** *Port* -- Geben Sie die Portnummer für den Syslog-Empfänger ein. Nachdem Sie auf *Hinzufügen* geklickt haben, wird das Dialogfeld Configure Syslog Servers geöffnet und der konfigurierte Syslog Server auf der Seite angezeigt.

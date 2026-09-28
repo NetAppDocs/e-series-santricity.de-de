@@ -15,6 +15,7 @@ Für Importe verwendete Volumes müssen die Anforderungen für Größe, Status u
 
 
 
+[[remote-storage-volume]]
 == Remote Storage Volume
 
 Das Quell-Volume eines Imports wird als „Remote-Storage-Volume“ bezeichnet. Dieses Volume muss die folgenden Kriterien erfüllen:
@@ -41,6 +42,7 @@ Jedes Remote-Storage-Volume ist nur einem Remote-Storage-Objekt zugewiesen. Ein 
 
 
 
+[[target-volume-candidates]]
 == Kandidaten für Zielvolumen
 
 Das Ziel-Volume ist das Ziel-Volume auf dem lokalen E-Series System. Das Ziel-Volume muss die folgenden Kriterien erfüllen:

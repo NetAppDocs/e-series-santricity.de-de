@@ -24,16 +24,18 @@ Die Standard-Cache-Einstellungen erfüllen die Anforderungen für die meisten Um
 
 
 
+[[storage-array-cache-settings]]
 == Cache-Einstellungen für Storage-Arrays
 
 Für alle Volumes im Speicher-Array können Sie auf der Seite System die folgenden Werte angeben:
 
-* *Startwert für Spülung* -- der Prozentsatz der nicht geschriebenen Daten im Cache, der einen Cache-Flush auslöst (auf Festplatte schreiben). Wenn der Cache den angegebenen Startprozentsatz der nicht geschriebenen Daten enthält, wird ein Flush ausgelöst. Standardmäßig wird der Cache vom Controller bereinigt, wenn der Cache zu 80 % voll ist.
+* *Start demand cache flushing* – der Prozentsatz ungeschriebener Daten im Cache, der ein Cache-Flushing (Schreiben auf die Festplatte) auslöst. Wenn der Cache den festgelegten Startprozentsatz ungeschriebener Daten enthält, wird ein Flushing ausgelöst. Standardmäßig beginnt der Controller mit dem Leeren des Caches, wenn dieser zu 80 Prozent gefüllt ist.
 * *Cache Blockgröße* -- die maximale Größe jedes Cache Blocks, eine Organisationseinheit für Cache Management. Die Cache-Blockgröße ist standardmäßig 8 KiB, kann jedoch auf 4, 8, 16 oder 32 KiB eingestellt werden. Idealerweise sollte die Cache-Blockgröße auf die vorwiegend verwendete I/O-Größe Ihrer Applikationen eingestellt werden. Filesysteme oder Datenbankapplikationen verwenden in der Regel kleinere Größen, während eine größere Größe für Applikationen geeignet ist, die umfangreiche Datentransfers oder sequenzielle I/O benötigen
 
 
 
 
+[[volume-cache-settings]]
 == Volume-Cache-Einstellungen
 
 Für einzelne Volumes in einem Speicher-Array können Sie auf der Seite Volumes (Menü:Storage[Volumes]) die folgenden Werte angeben:

@@ -15,6 +15,7 @@ Die SSD Cache Funktion ist eine Controller-basierte Lösung, die am häufigsten 
 
 
 
+[[ssd-cache-versus-primary-cache]]
 == SSD Cache im Vergleich zum primären Cache
 
 SSD Cache ist ein sekundärer Cache zur Verwendung mit dem primären Cache im dynamischen Random-Access Memory (DRAM) des Controllers.
@@ -35,6 +36,7 @@ Die internen RAID-Volumes werden für die interne Cache-Verarbeitung verwendet. 
 
 
 
+[[how-ssd-cache-is-used]]
 == Verwendung von SSD Cache
 
 Mit der intelligenten Cache-Speicherung werden Daten auf einem Laufwerk mit niedrigerer Latenz platziert. So kann schneller auf zukünftige Anfragen nach diesen Daten reagiert werden. Wenn ein Programm Daten anfordert, die sich im Cache befinden (so genannte „`Cache Hit`“), kann diese Transaktion auf der Festplatte mit niedrigerer Latenz verarbeitet werden. Andernfalls tritt ein „`Cache Miss`“ auf, und auf die Daten muss vom ursprünglichen, langsameren Laufwerk zugegriffen werden. Je mehr Cache-Treffer auftreten, desto besser wird die Gesamt-Performance.
@@ -52,6 +54,7 @@ Wenn die CPU Lesedaten verarbeiten muss, führt dies wie folgt aus:
 
 
 
+[[improved-performance]]
 == Verbesserte Performance
 
 Das Kopieren der am häufigsten aufgerufenen Daten (Hot Spot) in SSD Cache ermöglicht einen effizienteren Festplattenbetrieb, geringere Latenz und eine beschleunigte Lese- und Schreibgeschwindigkeit. Mithilfe hochperformanter SSDs können Daten von HDD-Volumes zwischengespeichert werden, was die I/O-Performance und die Reaktionszeiten verbessert.
@@ -60,12 +63,14 @@ Das Kopieren der am häufigsten aufgerufenen Daten (Hot Spot) in SSD Cache ermö
 
 
 
+[[ssd-cache-and-the-drive-security-feature]]
 == SSD-Cache und die Laufwerkssicherheitsfunktion
 
 Wenn Sie SSD Cache auf einem Volume verwenden möchten, das auch die Laufwerkssicherheit verwendet (ist sicher aktiviert), müssen die Laufwerksicherheitsfunktionen des Volumes und des SSD-Caches übereinstimmen. Stimmen sie nicht überein, wird das Volume nicht sicher aktiviert.
 
 
 
+[[implement-ssd-cache]]
 == Implementierung von SSD-Cache
 
 Gehen Sie zum Implementieren von SSD-Cache wie folgt vor:

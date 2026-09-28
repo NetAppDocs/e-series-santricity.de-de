@@ -15,6 +15,7 @@ Erfahren Sie, welche Kapazitätbedingungen sich auf Ihr Storage Array beziehen.
 
 
 
+[[storage-objects]]
 == Storage-Objekte
 
 In der folgenden Terminologie werden die verschiedenen Typen von Speicherobjekten beschrieben, die mit Ihrem Speicher-Array interagieren können.
@@ -97,6 +98,7 @@ Eine Volume-Gruppe ist ein Container für Volumes mit gemeinsamen Merkmalen. Ein
 |===
 
 
+[[storage-capacity]]
 == Storage-Kapazität
 
 In der folgenden Terminologie werden die verschiedenen Kapazitätstypen beschrieben, die auf Ihrem Storage Array verwendet werden.

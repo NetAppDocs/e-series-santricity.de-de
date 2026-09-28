@@ -16,6 +16,7 @@ Auf der Seite Support erhalten Sie Zugriff auf die Ressourcen für den technisch
 
 
 
+[[what-support-tasks-are-available]]
 == Welche Support-Aufgaben stehen zur Verfügung?
 
 In Support können Sie Kontakte für den technischen Support anzeigen, Diagnosen durchführen, AutoSupport konfigurieren, das Ereignisprotokoll anzeigen und Software-Upgrades durchführen.
@@ -24,11 +25,12 @@ Weitere Informationen:
 
 * link:autosupport-feature-overview.html["Übersicht über die Funktionen von AutoSupport"]
 * link:overview-event-log.html["Übersicht über das Ereignisprotokoll"]
-* link:overview-upgrade-center.html["Übersicht zum Upgrade Center"]
+* link:overview-upgrade-center.html["Übersicht des Upgrade Center"]
 
 
 
 
+[[how-do-i-contact-technical-support]]
 == Wie kann ich mich an den technischen Support wenden?
 
-Klicken Sie auf der Hauptseite auf MENU:Support[Support Center > Registerkarte Support Resources]. Die Kontaktinformationen für den technischen Support finden Sie oben rechts auf der Schnittstelle.
+Auf der Hauptseite das Menü: Support [Supportressourcen] auswählen. Die Kontaktinformationen für den technischen Support sind oben rechts in der Benutzeroberfläche aufgeführt.

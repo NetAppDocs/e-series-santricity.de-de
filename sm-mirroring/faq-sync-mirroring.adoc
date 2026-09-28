@@ -16,6 +16,7 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 
 
 
+[[how-does-asynchronous-mirroring-differ-from-synchronous-mirroring]]
 == Wie unterscheidet sich die asynchrone Spiegelung von der synchronen Spiegelung?
 
 Die asynchrone Spiegelung unterscheidet sich grundlegend von der Funktion zum synchronen Spiegeln: Sie erfasst den Status des Quell-Volumes zu einem bestimmten Zeitpunkt und kopiert nur die Daten, die sich seit der letzten Bildaufzeichnung geändert haben.
@@ -112,6 +113,7 @@ Normalerweise muss das lokale Storage-Array innerhalb von etwa 10 km Entfernung 
 |===
 
 
+[[synchronous-mirroring-why-dont-i-see-all-my-volumes]]
 == Synchrone Spiegelung – Warum sehe ich nicht alle meine Volumes?
 
 Wenn Sie ein primäres Volume für ein gespiegeltes Paar auswählen, werden in einer Liste alle berechtigten Volumes angezeigt.
@@ -125,6 +127,7 @@ Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser List
 
 
 
+[[synchronous-mirroring-why-dont-i-see-all-the-volumes-on-the-remote-storage-array]]
 == Synchrone Spiegelung – Warum werden mir nicht alle Volumes auf dem Remote-Speicher-Array angezeigt?
 
 Wenn Sie ein sekundäres Volume auf dem Remote-Speicher-Array auswählen, werden alle für dieses gespiegelte Paar geeigneten Volumes in einer Liste angezeigt.
@@ -144,6 +147,7 @@ Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser List
 
 
 
+[[synchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair]]
 == Synchrones Spiegeln - Was muss ich wissen, bevor ein gespiegeltes Paar erstellt wird?
 
 Sie konfigurieren gespiegelte Paare in der Oberfläche von SANtricity Unified Manager und verwalten dann die Paare in SANtricity System Manager.
@@ -163,6 +167,7 @@ Befolgen Sie vor dem Erstellen eines gespiegelten Paares die folgenden Richtlini
 
 
 
+[[what-impact-does-synchronization-priority-have-on-synchronization-rates]]
 == Welche Auswirkungen hat die Synchronisierungspriorität auf die Synchronisierungsraten?
 
 Die Synchronisierungspriorität definiert, wie viel Verarbeitungszeit für Synchronisierungsaktivitäten im Verhältnis zur Systemleistung zugewiesen wird.
@@ -224,6 +229,7 @@ Volume-Größe und Host-I/O-Rate-Lasten wirken sich auf den Vergleich der Synchr
 
 
 
+[[why-is-it-recommended-to-use-a-manual-synchronization-policy]]
 == Warum wird empfohlen, eine manuelle Synchronisierungsrichtlinie zu verwenden?
 
 Die manuelle Neusynchronisierung wird empfohlen, da Sie damit den Neusynchronisierung so verwalten können, dass dadurch keine Möglichkeit zum Wiederherstellen von Daten besteht.

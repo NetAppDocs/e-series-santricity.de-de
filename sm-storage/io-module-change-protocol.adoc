@@ -22,6 +22,7 @@ Sie können das Protokoll auf den Host-I/O-Modulen Ihrer Controller ändern, wen
 
 
 
+[[step-1-prepare-for-the-protocol-change]]
 == Schritt 1: Vorbereitung auf die Protokolländerung
 
 Bereiten Sie die Änderung des Protokolls auf den Host-E/A-Modulen vor, indem Sie das aktuell verwendete Protokoll überprüfen, feststellen, ob Sie das Protokoll ändern müssen, und falls ja, ein Wartungsfenster für die Ausfallzeit einplanen.
@@ -29,7 +30,7 @@ Bereiten Sie die Änderung des Protokolls auf den Host-E/A-Modulen vor, indem Si
 .Schritte
 . Wenn Sie das aktuelle Protokoll auf den Host-E/A-Modulen in Ihrem Speichersystem nicht kennen, überprüfen Sie es mit SANtricity System Manager.
 +
-.. Wählen Sie *Settings* > *System*.
+.. *System* auswählen.
 .. Klicken Sie im Abschnitt *Zusätzliche Einstellungen* auf *Host-E/A-Protokoll ändern*, um diese Seite zu öffnen.
 .. Siehe das im Feld *Host I/O Protocol* angezeigte Standardprotokoll.
 +
@@ -63,6 +64,7 @@ Fahren Sie mit diesem Verfahren fort, um das Protokoll zu ändern.
 
 
 
+[[step-2-stop-host-io-operations]]
 == Schritt 2: Host-E/A-Operationen anhalten
 
 Sie müssen alle E/A-Operationen vom Host stoppen und dann alle definierten Hosts aus dem Speichersystem löschen, bevor Sie das Protokoll ändern.
@@ -113,7 +115,7 @@ NV-Symbol und NV-Caching-Aktiv-LED auf dem Controller
 |===
 . Bestätigen Sie, dass die Vorgänge an den Controllern im SANtricity System Manager abgeschlossen sind:
 +
-.. Wählen Sie *Storage* > *Operations in progress*, um die Übersichtsseite anzuzeigen.
+.. *Überwachung* > *Laufende Vorgänge* zeigt die Übersichtsseite an.
 .. Warten Sie, bis alle Vorgänge abgeschlossen sind und auf dem Übersichtsbildschirm *No operations currently in progress* angezeigt wird, bevor Sie mit dem nächsten Schritt fortfahren.
 
 
@@ -125,12 +127,13 @@ Weitere Informationen zum Löschen von Hosts finden Sie im  https://docs.netapp.
 
 
 
+[[step-3-change-the-protocol]]
 == Schritt 3: Ändern Sie das Protokoll
 
 Verwenden Sie den SANtricity System Manager, um das Protokoll auf den Host-E/A-Modulen zu ändern, warten Sie, bis die Controller ihren Neustartzyklus abgeschlossen haben, bestätigen Sie, dass ihr Status „Optimal“ ist, und erstellen Sie dann die Hostdefinitionen neu.
 
 .Schritte
-. Wählen Sie *Settings* > *System*.
+. *System* auswählen.
 . Klicken Sie im Abschnitt *Zusätzliche Einstellungen* auf *Host-E/A-Protokoll ändern*, um diese Seite zu öffnen.
 . Klicken Sie im Feld *Host I/O Protocol* auf das Dropdown-Menü und wählen Sie das Protokoll aus, das Sie verwenden möchten.
 +
@@ -151,6 +154,7 @@ Weitere Informationen zum Erstellen von Hosts finden Sie in der https://docs.net
 
 
 
+[[step-4-configure-the-host-to-use-the-new-protocol]]
 == Schritt 4: Konfigurieren Sie den Host für die Verwendung des neuen Protokolls
 
 Nach der Änderung des Protokolls der Host-Ports müssen Sie den Host so konfigurieren, dass er das neue Protokoll verwendet.

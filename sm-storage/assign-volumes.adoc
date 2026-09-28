@@ -20,7 +20,7 @@ Beachten Sie bei der Zuweisung von Volumes zu Hosts die folgenden Richtlinien:
 * Sie können ein Volume gleichzeitig nur einem Host oder Host-Cluster zuweisen.
 * Zugewiesene Volumes werden von den Controllern im Storage-Array gemeinsam genutzt.
 * Die gleiche Logical Unit Number (LUN) kann nicht zweimal von einem Host oder einem Host-Cluster verwendet werden, um auf ein Volume zuzugreifen. Sie müssen eine eindeutige LUN verwenden.
-* Wenn Sie bei neuen Volume-Gruppen warten, bis alle Volumes erstellt und initialisiert wurden, bevor Sie sie einem Host zuweisen, wird die Initialisierungszeit des Volumes verkürzt. Beachten Sie, dass, sobald ein mit der Volume-Gruppe assoziiertes Volume zugeordnet ist, _alle_ Volumes zur langsameren Initialisierung zurückkehren werden. Sie können den Initialisierungsfortschritt über Menü:Startseite[Operationen in Bearbeitung] überprüfen.
+* Wenn Sie bei neuen Volume-Gruppen warten, bis alle Volumes erstellt und initialisiert sind, bevor Sie sie einem Host zuweisen, verkürzt sich die Volume-Initialisierungszeit. Es ist zu beachten, dass nach dem Zuordnen eines mit der Volume-Gruppe verknüpften Volumes _alle_ Volumes zur langsameren Initialisierung zurückkehren. Sie können den Initialisierungsfortschritt unter menu:Monitoring[Operations in progress] überprüfen.
 
 
 Unter diesen Bedingungen schlägt die Zuweisung eines Volumes fehl:

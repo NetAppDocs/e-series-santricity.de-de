@@ -16,6 +16,7 @@ Sie können die Laufwerksicherheit und die Schlüsselverwaltung über die Seite 
 
 
 
+[[what-is-drive-security]]
 == Was ist Laufwerkssicherheit?
 
 _Drive Security_ ist eine Funktion, die unberechtigten Zugriff auf Daten auf sicheren Laufwerken verhindert, wenn sie aus dem Speicher-Array entfernt werden. Dabei können es sich entweder um vollständige Festplattenverschlüsselung (Full Disk Encryption, FDE)-Laufwerke oder um FIPS-Laufwerke (Federal Information Processing Standard) handeln. Wenn FDE- oder FIPS-Laufwerke physisch aus dem Array entfernt werden, kann dieser erst betrieben werden, wenn sie in einem anderen Array installiert sind. Dann befinden sich die Laufwerke erst dann in einem sicherheitsrelevanten Zustand, wenn der richtige Sicherheitsschlüssel bereitgestellt wird. Ein _Sicherheitsschlüssel_ ist eine Zeichenkette, die von diesen Laufwerkstypen und den Controllern in einem Speicher-Array gemeinsam genutzt wird.
@@ -29,9 +30,10 @@ Weitere Informationen:
 
 
 
+[[how-do-i-configure-key-management]]
 == Wie konfiguriere ich Verschlüsselungsmanagement?
 
-Zur Implementierung von Laufwerkssicherheit müssen entweder FDE- oder FIPS-Laufwerke im Array installiert sein. Um die Schlüsselverwaltung für diese Laufwerke zu konfigurieren, gehen Sie zum Menü:Einstellungen[System > Sicherheitsschlüsselverwaltung], wo Sie entweder einen internen Schlüssel aus dem persistenten Speicher des Controllers oder einen externen Schlüssel von einem Schlüsselverwaltungsserver aus erstellen können. Schließlich aktivieren Sie die Laufwerksicherheit für Pools und Volume-Gruppen, indem Sie in den Volume-Einstellungen „sicher-fähig“ auswählen.
+Um Drive Security zu implementieren, müssen entweder FDE-Laufwerke oder FIPS-Laufwerke im Array installiert sein. Zur Konfiguration der Schlüsselverwaltung für diese Laufwerke wird im Menü System[Sicherheitsschlüsselverwaltung] die Möglichkeit geboten, entweder einen internen Schlüssel aus dem persistenten Speicher des Controllers oder einen externen Schlüssel von einem Schlüsselverwaltungsserver zu erstellen. Drive Security für Pools und Volumengruppen wird aktiviert, indem in den Volumeneinstellungen „secure-capable“ ausgewählt wird.
 
 Weitere Informationen:
 
@@ -43,6 +45,7 @@ Weitere Informationen:
 
 
 
+[[how-do-i-unlock-drives]]
 == Wie entsperre ich Laufwerke?
 
 Wenn Sie das Verschlüsselungsmanagement konfiguriert haben und später sichere Laufwerke von einem Speicher-Array auf ein anderes verschieben, müssen Sie den Sicherheitsschlüssel dem neuen Speicher-Array neu zuweisen, um Zugriff auf die verschlüsselten Daten auf den Laufwerken zu erhalten.
@@ -55,6 +58,7 @@ Weitere Informationen:
 
 
 
+[[related-information]]
 == Verwandte Informationen
 
 Weitere Informationen zu Aufgaben im Zusammenhang mit Verschlüsselungsmanagement:

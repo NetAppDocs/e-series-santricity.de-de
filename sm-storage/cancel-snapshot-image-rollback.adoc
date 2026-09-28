@@ -23,8 +23,7 @@ Wenn in der Snapshot-Gruppe, auf der sich das Snapshot-Image befindet, ein oder 
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
-. Klicken Sie auf die Registerkarte *Snapshot Images*.
+. Im linken Bereich Menü:Schnappschüsse[Schnappschussbilder] auswählen.
 . Wählen Sie den aktiven oder unterbrochenen Rollback aus und wählen Sie dann Menü:Rollback[Abbrechen].
 +
 Das Dialogfeld Rollback bestätigen wird angezeigt.

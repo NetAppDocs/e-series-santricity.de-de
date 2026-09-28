@@ -15,6 +15,7 @@ Für die Zugriffsverwaltung können Administratoren die in das Array integrierte
 
 
 
+[[configuration-workflow]]
 == Konfigurationsworkflow
 
 Die SAML-Konfiguration funktioniert wie folgt:
@@ -26,7 +27,7 @@ Die SAML-Konfiguration funktioniert wie folgt:
 Der `admin` Der Benutzer hat vollständigen Zugriff auf alle Funktionen in System Manager.
 
 ====
-. Der Administrator wechselt zur Registerkarte *SAML* unter Zugriffsverwaltung.
+. Der Administrator ruft unter Authentifizierung die *SAML*-Seite auf.
 . Ein Administrator konfiguriert die Kommunikation mit dem Identity Provider (IdP). Ein IdP ist ein externes System, mit dem Anmeldeinformationen von einem Benutzer angefordert werden und festgestellt wird, ob der Benutzer erfolgreich authentifiziert wurde. Zum Konfigurieren der Kommunikation mit dem Storage-Array lädt der Administrator die IdP-Metadatendatei aus dem IdP-System herunter und lädt die Datei anschließend mit System Manager zum Hochladen auf das Storage-Array ein.
 . Ein Administrator stellt eine Vertrauensbeziehung zwischen dem Dienstanbieter und dem IdP her. Ein Dienstanbieter steuert die Benutzerautorisierung. In diesem Fall fungiert der Controller im Speicher-Array als Service Provider. Zum Konfigurieren der Kommunikation verwendet der Administrator System Manager zum Exportieren einer Service-Provider-Metadatendatei für jeden Controller. Aus dem IdP-System importiert der Administrator diese Metadatendateien in das IdP.
 +
@@ -49,6 +50,7 @@ Sobald SAML aktiviert ist, können Sie sie über die Benutzeroberfläche nicht d
 
 
 
+[[management]]
 == Vereinfachtes
 
 Bei der Verwendung von SAML zur Authentifizierung können Administratoren die folgenden Managementaufgaben ausführen:
@@ -59,6 +61,7 @@ Bei der Verwendung von SAML zur Authentifizierung können Administratoren die fo
 
 
 
+[[access-restrictions]]
 == Zugriffsbeschränkungen
 
 Wenn SAML aktiviert ist, können Benutzer Speicher für dieses Array nicht über Unified Manager oder die alte Storage Manager-Schnittstelle ermitteln oder managen.
@@ -73,6 +76,7 @@ Außerdem können die folgenden Clients nicht auf Services und Ressourcen des Sp
 
 
 
+[[limited-connectivity-with-saml-enabled]]
 === Eingeschränkte Konnektivität bei aktivierter SAML-Funktion
 
 Die folgenden Speicher-Array-Funktionen verfügen nur über eine begrenzte Konnektivität mit der JSON-Web-Token-Authentifizierung, wenn SAML aktiviert ist.

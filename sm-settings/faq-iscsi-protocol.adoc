@@ -16,6 +16,7 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 
 
 
+[[what-happens-when-i-use-an-isns-server-for-registration]]
 == Was passiert, wenn ich einen iSNS Server für die Registrierung verwende?
 
 Wenn Informationen zum Internet Storage Name Service (iSNS)-Server verwendet werden, können die Hosts (Initiatoren) so konfiguriert werden, dass sie den iSNS-Server abfragen, um Informationen aus dem Ziel (den Controllern) abzurufen.
@@ -24,6 +25,7 @@ Mit dieser Registrierung erhält der iSNS-Server den iSCSI-qualifizierten Namen 
 
 
 
+[[which-registration-methods-are-automatically-supported-for-iscsi]]
 == Welche Registrierungsmethoden werden für iSCSI automatisch unterstützt?
 
 Die iSCSI-Implementierung unterstützt entweder die iSCSI-Ermittlungsmethode (Internet Storage Name Service, iSNS) oder die Verwendung des Befehls Send Targets.
@@ -34,9 +36,10 @@ Wenn Sie iSNS nicht konfigurieren, kann der iSCSI-Host den Befehl Ziele senden w
 
 
 
+[[how-do-i-interpret-iser-over-infiniband-statistics]]
 == Wie interpretiere ich iSER-over-InfiniBand-Statistiken?
 
-Das Dialogfeld „iSER-over-InfiniBand-Statistiken“ zeigt Statistiken zu lokalen Zielen (Protokollen) und iSER-over-InfiniBand-Schnittstellen (IB) an. Alle Statistiken sind schreibgeschützt und können nicht festgelegt werden.
+Das Dialogfeld „iSER over InfiniBand Statistiken anzeigen“ zeigt lokale Ziel- (Protokoll-) Statistiken sowie iSER over InfiniBand (IB) Schnittstellenstatistiken an. Alle Statistiken sind schreibgeschützt und können nicht geändert werden.
 
 * *Statistiken zu lokalen Zielen (Protokoll)* -- stellt Statistiken für das iSER-over-InfiniBand-Ziel bereit, das den Zugriff auf die Speichermedien auf Blockebene anzeigt.
 * *ISER-over-InfiniBand-Interface-Statistik* -- stellt Statistiken für alle iSER-over-InfiniBand-Ports auf der InfiniBand-Schnittstelle bereit, die Performance-Statistiken und Link-Fehlerinformationen zu den einzelnen Switch-Ports enthalten.
@@ -46,6 +49,7 @@ Sie können jede dieser Statistiken als RAW-Statistiken oder als Baseline-Statis
 
 
 
+[[what-else-do-i-need-to-do-to-configure-or-diagnose-iser-over-infiniband]]
 == Was muss ich noch tun, um iSER over InfiniBand zu konfigurieren oder zu diagnostizieren?
 
 In der folgenden Tabelle sind die Funktionen von SANtricity System Manager aufgeführt, mit denen Sie iSER-over-InfiniBand-Sessions konfigurieren und managen können.
@@ -63,16 +67,15 @@ Die iSER-over-InfiniBand-Einstellungen sind nur verfügbar, wenn der Controller 
  a| 
 Konfigurieren Sie iSER-over-InfiniBand-Ports
  a| 
-. Wählen Sie *Hardware*.
-. Wählen Sie die Registerkarte *Controller & Komponenten* aus.
+. Menü auswählen:Hardware[Controllers and components].
 . Wählen Sie einen Controller aus.
 . Wählen Sie *iSER-over-InfiniBand-Ports konfigurieren*.
 
 
 Oder
 
-. Wählen Sie Menü:Einstellungen[System].
-. Scrollen Sie nach unten nach *iSER über InfiniBand-Einstellungen*, und wählen Sie dann *iSER über InfiniBand-Ports konfigurieren* aus.
+. *System* auswählen.
+. Scrollen Sie nach unten zu *iSER over InfiniBand settings* und wählen Sie dann *Configure iSER over InfiniBand ports*.
 
 
 
@@ -80,13 +83,14 @@ Oder
  a| 
 Zeigen Sie iSER-over-InfiniBand-Statistiken an
  a| 
-. Wählen Sie Menü:Einstellungen[System].
-. Scrollen Sie nach unten nach *iSER über InfiniBand-Einstellungen* und wählen Sie dann *Anzeigen iSER über InfiniBand-Statistik* aus.
+. *System* auswählen.
+. Nach unten zu *iSER over InfiniBand settings* scrollen und anschließend *View iSER over InfiniBand statistics* auswählen.
 
 
 |===
 
 
+[[what-else-do-i-need-to-do-to-configure-or-diagnose-iscsi]]
 == Was muss ich sonst noch tun, um iSCSI zu konfigurieren oder zu diagnostizieren?
 
 ISCSI-Sitzungen können bei Hosts oder Remote-Storage-Arrays in einer asynchronen Spiegelbeziehung durchgeführt werden. In den folgenden Tabellen sind die Funktionen von SANtricity System Manager aufgeführt, mit denen Sie diese iSCSI-Sitzungen konfigurieren und verwalten können.
@@ -98,6 +102,7 @@ Die iSCSI-Einstellungen sind nur verfügbar, wenn Ihr Speicher-Array iSCSI unter
 ====
 
 
+[[configure-iscsi]]
 === Konfigurieren Sie iSCSI
 
 [cols="1a,1a"]
@@ -108,7 +113,7 @@ Die iSCSI-Einstellungen sind nur verfügbar, wenn Ihr Speicher-Array iSCSI unter
  a| 
 ISCSI-Einstellungen verwalten
  a| 
-. Wählen Sie Menü:Einstellungen[System].
+. *System* auswählen.
 . Blättern Sie nach unten zu *iSCSI-Einstellungen*, um alle Verwaltungsfunktionen anzuzeigen.
 
 
@@ -128,8 +133,8 @@ Konfigurieren Sie die iSCSI-Ports
  a| 
 Legen Sie den Host-CHAP-Schlüssel fest
  a| 
-. Wählen Sie Menü:Einstellungen[System].
-. Blättern Sie nach unten zu *iSCSI-Einstellungen*, und wählen Sie dann *Authentifizierung konfigurieren*.
+. *System* auswählen.
+. Scrollen Sie nach unten zu *iSCSI-Einstellungen* und wählen Sie dann *iSCSI/iSER über InfiniBand Authentifizierung konfigurieren*.
 
 
 Oder
@@ -142,6 +147,7 @@ Oder
 |===
 
 
+[[diagnose-iscsi]]
 === ISCSI diagnostizieren
 
 [cols="1a,1a"]
@@ -152,14 +158,14 @@ Oder
  a| 
 Anzeigen oder Beenden von iSCSI-Sitzungen
  a| 
-. Wählen Sie Menü:Einstellungen[System].
-. Scrollen Sie nach unten zu *iSCSI-Einstellungen* und wählen Sie dann *iSCSI-Sitzungen anzeigen/beenden* aus.
+. *System* auswählen.
+. Scrollen Sie nach unten zu *iSCSI Einstellungen* und wählen Sie dann *iSCSI-Sitzungen anzeigen/beenden*.
 
 
 Oder
 
-. Wählen Sie MENU:Support[Support Center > Diagnose].
-. Wählen Sie *Anzeigen/Beenden von iSCSI-Sitzungen*.
+. Menü: Support[Diagnose] auswählen.
+. *iSCSI-Sitzungen anzeigen/beenden* auswählen.
 
 
 
@@ -167,14 +173,14 @@ Oder
  a| 
 Anzeigen von iSCSI-Statistiken
  a| 
-. Wählen Sie Menü:Einstellungen[System].
-. Scrollen Sie nach unten zu *iSCSI-Einstellungen* und wählen Sie dann *iSCSI-Statistikpakete anzeigen* aus.
+. *System* auswählen.
+. Scrollen Sie nach unten zu *iSCSI-Einstellungen* und dann *iSCSI-Statistiken anzeigen* auswählen.
 
 
 Oder
 
-. Wählen Sie MENU:Support[Support Center > Diagnose].
-. Wählen Sie *Anzeigen von iSCSI-Statistikpaketen* aus.
+. Menü: Support[Diagnose] auswählen.
+. *iSCSI Statistiken* anzeigen.
 
 
 |===

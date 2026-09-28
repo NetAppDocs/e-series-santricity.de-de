@@ -16,6 +16,7 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 
 
 
+[[what-is-auto-negotiation]]
 == Was ist Auto-Negotiation?
 
 Die automatische Aushandlung ist die Möglichkeit einer Netzwerkschnittstelle, ihre eigenen Verbindungsparameter (Geschwindigkeit und Duplex) automatisch mit einer anderen Netzwerkschnittstelle zu koordinieren.
@@ -29,6 +30,7 @@ Wenn die automatische Aushandlung fehlschlägt, versucht der Controller, eine Ve
 ====
 
 
+[[what-is-ipv6-stateless-address-auto-configuration]]
 == Was ist eine statusfreie IPv6-Adressenkonfiguration?
 
 Bei einer statusfreien automatischen Konfiguration erhalten Hosts keine Adressen und andere Konfigurationsinformationen von einem Server.
@@ -49,12 +51,14 @@ Geräte führen die folgenden Schritte durch, wenn eine statusfreie automatische
 
 
 
+[[which-do-i-choose-dhcp-or-manual-configuration]]
 == Was soll ich wählen – DHCP oder manuelle Konfiguration?
 
 Die Standardmethode für die Netzwerkkonfiguration ist DHCP (Dynamic Host Configuration Protocol). Verwenden Sie diese Option immer, wenn Ihr Netzwerk keinen DHCP-Server hat.
 
 
 
+[[what-is-a-dhcp-server]]
 == Was ist ein DHCP-Server?
 
 Dynamic Host Configuration Protocol (DHCP) ist ein Protokoll, das die Aufgabe der Zuweisung einer IP-Adresse (Internet Protocol) automatisiert.
@@ -65,6 +69,7 @@ Ohne DHCP gibt ein Netzwerkadministrator diese IP-Adressen manuell ein. Wenn ein
 
 
 
+[[how-do-i-configure-my-dhcp-server]]
 == Wie konfiguriere ich meinen DHCP-Server?
 
 Sie müssen einen DHCP-Server (Dynamic Host Configuration Protocol) konfigurieren, damit die Controller im Speicher-Array statische IP-Adressen (Internet Protocol) verwenden können.
@@ -75,6 +80,7 @@ Informationen zum Zuweisen statischer Adressen finden Sie in der Dokumentation f
 
 
 
+[[why-do-i-need-to-change-the-controller-network-configuration]]
 == Warum muss ich die Controller-Netzwerkkonfiguration ändern?
 
 Sie müssen die Netzwerkkonfiguration für jeden Controller festlegen: IP-Adresse (Internet Protocol), Subnetzmaske (Subnetzmaske) und Gateway – wenn Sie Out-of-Band-Management verwenden.
@@ -83,6 +89,7 @@ Sie können die Netzwerkkonfiguration mithilfe eines DHCP-Servers (Dynamic Host 
 
 
 
+[[where-do-i-get-the-network-configuration]]
 == Wo erhalte ich die Netzwerkkonfiguration?
 
 Sie können die IP-Adresse (Internet Protocol), die Subnetzmaske (Subnetzmaske) und Gateway-Informationen von Ihrem Netzwerkadministrator abrufen.
@@ -91,6 +98,7 @@ Sie benötigen diese Informationen, wenn Sie Ports auf den Controllern konfiguri
 
 
 
+[[what-are-icmp-ping-responses]]
 == Was sind ICMP PING Antworten?
 
 Internet Control Message Protocol (ICMP) ist eines der Protokolle der TCP/IP-Suite.
@@ -99,6 +107,7 @@ Der `ICMP echo request` Und das(`ICMP echo reply` Nachrichten sind allgemein bek
 
 
 
+[[when-should-i-refresh-the-port-configuration]]
 == Wann sollte ich die Portkonfiguration aktualisieren?
 
 Aktualisieren Sie den DHCP-Server jederzeit, wenn der Server geändert oder aktualisiert wird, und die für das aktuelle Speicher-Array und das Speicherarray, das Sie verwenden möchten, relevanten DHCP-Informationen wurden geändert.
@@ -112,6 +121,7 @@ Die Aktualisierung einer Portkonfiguration ist für alle iSCSI-Verbindungen an d
 ====
 
 
+[[what-should-i-do-after-configuring-the-management-ports]]
 == Was soll ich nach dem Konfigurieren der Management-Ports tun?
 
 Wenn Sie die IP-Adresse für das Speicher-Array geändert haben, möchten Sie möglicherweise die Ansicht des globalen Arrays in SANtricity Unified Manager aktualisieren.
@@ -122,6 +132,7 @@ Wenn Sie noch den SANtricity-Speicher-Manager verwenden, gehen Sie zum Enterpris
 
 
 
+[[why-is-the-storage-system-in-non-optimal-mode]]
 == Warum befindet sich das Storage-System im nicht optimalen Modus?
 
 Ein Speichersystem im nicht optimalen Modus ist auf einen ungültigen Konfigurationsstatus des Systems zurückzuführen. Trotz dieses Status wird der normale I/O-Zugriff auf vorhandene Volumes vollständig unterstützt, der SANtricity System Manager untersagt jedoch einige Vorgänge.

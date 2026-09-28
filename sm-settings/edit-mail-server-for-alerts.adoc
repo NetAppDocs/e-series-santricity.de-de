@@ -23,8 +23,7 @@ Um einen vollständig qualifizierten Domänennamen zu verwenden, müssen Sie auf
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Alerts].
-. Wählen Sie die Registerkarte *E-Mail* aus.
+. Im linken Bereich Menü:Benachrichtigungen[E-Mail-Benachrichtigungen] auswählen.
 . Wählen Sie *E-Mail-Server Konfigurieren*.
 +
 Das Dialogfeld Mailserver konfigurieren wird geöffnet.

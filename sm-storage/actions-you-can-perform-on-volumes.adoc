@@ -2,7 +2,7 @@
 permalink: sm-storage/actions-you-can-perform-on-volumes.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, volumes 
-summary: 'Sie können eine Reihe verschiedener Aktionen auf einem Volume durchführen: Die Kapazität erhöhen, löschen, kopieren, initialisieren, neu verteilen, Ändern der Eigentümerschaft, Ändern der Cache-Einstellungen und Ändern der Einstellungen für die Medienüberprüfung' 
+summary: Sie können verschiedene Aktionen auf einem Volume durchführen. Dazu gehören die Erhöhung der Kapazität, das Löschen, Kopieren, Initialisieren, Umverteilen, das Ändern des Eigentümers, das Ändern der Cache-Einstellungen und das Ändern der Medienscan-Einstellungen. 
 ---
 = Aktionen, die Sie auf Volumes im SANtricity System Manager ausführen können
 :allow-uri-read: 
@@ -16,6 +16,7 @@ Sie können eine Reihe verschiedener Aktionen auf einem Volume durchführen: Die
 
 
 
+[[increase-capacity]]
 == Erhöhte Kapazität
 
 Es gibt zwei Möglichkeiten, die Kapazität für ein Volume zu erweitern:
@@ -26,7 +27,7 @@ Sie fügen einem Volume Kapazität hinzu, indem Sie im linken Bereich menu:Stora
 
 * Fügen Sie dem Pool oder der Volume-Gruppe des Volume nicht zugewiesene Kapazität (in Form von nicht verwendeten Laufwerken) hinzu. Verwenden Sie diese Option, wenn im Pool oder in der Volume-Gruppe keine freie Kapazität vorhanden ist.
 +
-Sie fügen dem Pool oder der Volume-Gruppe nicht zugewiesene Kapazität hinzu, indem Sie Menü:Storage[Pools und Volume Groups > Add capacity] auswählen.
+Nicht zugewiesene Kapazität wird dem Pool oder der Volume-Gruppe hinzugefügt, indem im Menü Storage [Pools und Volume Groups > Add capacity] ausgewählt wird.
 
 +
 Wenn im Pool oder in der Volume-Gruppe keine freie Kapazität verfügbar ist, können Sie die Kapazität des Volume nicht erhöhen. Sie müssen zunächst die Größe des Pools oder der Volume-Gruppe erhöhen oder ungenutzte Volumes löschen.
@@ -37,6 +38,7 @@ Nachdem Sie die Volume-Kapazität erweitert haben, müssen Sie die Größe des D
 
 
 
+[[delete]]
 == Löschen
 
 Normalerweise löschen Sie Volumes, wenn die Volumes mit falschen Parametern oder Kapazität erstellt wurden, die Storage-Konfigurationsanforderungen nicht mehr erfüllen oder Snapshot Images sind, die nicht mehr für Backup oder Applikationstests erforderlich sind. Durch das Löschen eines Volumes wird die freie Kapazität im Pool oder der Volume-Gruppe erhöht.
@@ -45,12 +47,14 @@ Das Löschen von Volumes verursacht den Verlust aller Daten auf diesen Volumes. 
 
 
 
+[[copy]]
 == Kopieren
 
 Beim Kopieren von Volumes erstellen Sie eine zeitpunktgenaue Kopie zweier separater Volumes, des Quell-Volumes und des Ziel-Volume, auf demselben Storage-Array. Sie können Volumes kopieren, indem Sie menu:Storage[Volumes] auswählen und dann das menu:ellipsis icon[Copy volume] auswählen.
 
 
 
+[[initialize]]
 == Initialisieren
 
 Durch das Initialisieren eines Volumes werden alle Daten aus dem Volume gelöscht. Ein Volume wird beim ersten Erstellen automatisch initialisiert. Möglicherweise empfiehlt der Recovery Guru jedoch, ein Volume manuell zu initialisieren, um eine Wiederherstellung nach bestimmten Fehlerbedingungen durchzuführen. Bei der Initialisierung eines Volume bleiben die WWN, Host-Zuweisungen, zugewiesene Kapazität und reservierte Kapazität des Volume erhalten. Zudem werden dieselben Data Assurance (da)-Einstellungen und Sicherheitseinstellungen beibehalten.
@@ -59,6 +63,7 @@ Sie können Volumes initialisieren, indem Sie Menü:Storage[Volumes > Auslassung
 
 
 
+[[redistribute]]
 == Neu Verteilen
 
 Sie verteilen Volumes neu, um Volumes zurück zu ihren bevorzugten Controller-Besitzern zu verschieben. In der Regel verschieben Multipath-Treiber Volumes vom bevorzugten Controller-Eigentümer, wenn entlang des Datenpfads zwischen dem Host und dem Storage Array ein Problem auftritt.
@@ -69,14 +74,16 @@ Sie können Volumes neu verteilen, indem Sie Menü:Storage[Volumes > Auslassungs
 
 
 
+[[change-volume-ownership]]
 == Änderung der Volume-Eigentümerschaft
 
-Durch Ändern des Besitzers eines Volumes wird der bevorzugte Controller-Besitzer des Volumes geändert. Der bevorzugte Controller-Besitzer eines Volumes wird im Menü:Storage[Volumes > ellipsis icon > Edit settings] aufgeführt.
+Durch das Ändern des Besitzers eines Volumes wird die bevorzugte Controller-Zuordnung des Volumes geändert. Der bevorzugte Controller-Besitzer eines Volumes ist unter Menü:Storage[Volumes > Ellipsen-Symbol > Einstellungen anzeigen] aufgeführt.
 
 Sie können den Besitzer eines Volumes ändern, indem Sie Menü:Storage[Volumes > Auslassungszeichen-Symbol > Volume-Eigentümer ändern] auswählen.
 
 
 
+[[mirroring-and-volume-ownership]]
 === Spiegelung und Volume-Eigentum
 
 Wenn das primäre Volume des gespiegelten Paars Eigentum von Controller A ist, dann befindet sich das sekundäre Volume auch im Besitz von Controller A des Remote Storage Array. Wenn Sie den Eigentümer des primären Volume ändern, wird automatisch der Eigentümer des sekundären Volumes geändert, um sicherzustellen, dass beide Volumes Eigentum des gleichen Controllers sind. Aktuelle Eigentumsänderungen auf der primären Seite werden automatisch an die entsprechenden aktuellen Eigentumsänderungen auf der sekundären Seite übernommen.
@@ -85,6 +92,7 @@ Wenn eine Spiegelkonsistent-Gruppe ein lokales sekundäres Volume enthält und d
 
 
 
+[[copy-volume-and-volume-ownership]]
 === Eigentümerschaft für Kopien und Volumes
 
 Während eines Kopiervorgangs muss derselbe Controller sowohl das Quell-Volume als auch das Ziel-Volume besitzen. Manchmal haben beide Volumen nicht den gleichen bevorzugten Controller, wenn der Kopiervorgang startet. Daher wird das Eigentum des Ziel-Volumes automatisch an den bevorzugten Controller des Quell-Volume übertragen. Wenn die Volume-Kopie abgeschlossen ist oder angehalten wird, wird der Eigentümer des Ziel-Volume auf dem bevorzugten Controller wiederhergestellt.
@@ -93,6 +101,7 @@ Wenn sich während des Kopiervorgangs der Besitz des Quell-Volumes ändert, wird
 
 
 
+[[change-cache-settings]]
 == Cache-Einstellungen ändern
 
 Cache-Speicher ist ein Bereich von temporär-flüchtigem Speicher (RAM) auf dem Controller, der eine schnellere Zugriffszeit hat als die Datenträger. Wenn Sie Cache-Speicher verwenden, können Sie die gesamte I/O-Performance aus folgenden Gründen erhöhen:
@@ -120,13 +129,14 @@ Bei einem Thin Volume ist der dynamische Lese-Prefetch für den Cache immer deak
 
 
 
+[[change-media-scan-settings]]
 == Ändern Sie die Einstellungen für die Medienüberprüfung
 
 Medienprüfungen erkennen und reparieren Medienfehler auf Festplattenlaufwerken, die selten von Applikationen gelesen werden. Durch diese Überprüfung kann verhindert werden, dass Datenverluste auftreten, wenn andere Laufwerke im Pool oder in der Volume-Gruppe ausfallen, da Daten für ausgefallene Laufwerke mithilfe von Redundanzinformationen und Daten anderer Laufwerke im Pool bzw. der Volume-Gruppe rekonstruiert werden.
 
 Die Medien-Scans werden kontinuierlich mit konstanter Geschwindigkeit ausgeführt, basierend auf der zu scannenden Kapazität und der Scandauer. Hintergrundscans können vorübergehend durch eine Hintergrundaufgabe mit höherer Priorität ausgesetzt werden (z. B. Rekonstruktion), werden jedoch mit derselben konstanten Geschwindigkeit fortgesetzt.
 
-Sie können die Dauer der Medienscan-Ausführung aktivieren und einstellen, indem Sie Menü:Speicher[Volumes > Mehr > Medienscan-Einstellungen ändern] auswählen.
+Sie können die Medienprüfung aktivieren und die Dauer festlegen, über die die Medienprüfung läuft, indem Sie Menü:Storage[Volumes > Auslassungszeichen > Medienprüfungseinstellungen ändern] auswählen.
 
 Ein Volume wird nur dann gescannt, wenn die Option zum Scannen von Medien für das Storage-Array und für das entsprechende Volume aktiviert ist. Wenn auch die Redundanzprüfung für das Volume aktiviert ist, werden die Redundanzinformationen auf dem Volume auf Konsistenz mit Daten überprüft, sofern das Volume über Redundanz verfügt. Der Medien-Scan mit Redundanzprüfung ist standardmäßig für jedes Volume bei seiner Erstellung aktiviert.
 

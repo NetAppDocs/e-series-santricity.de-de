@@ -29,7 +29,7 @@ Wenn Sie die Ressourcenbereitstellung für vorhandene Volume-Gruppen und -Pools 
 Wenn Sie die Ressourcenbereitstellung für vorhandene Volume-Gruppen oder Pools deaktivieren, schreibt ein Hintergrundvorgang alle logischen Blöcke in jedem Volume neu. Die bestehenden Daten bleiben erhalten. Die Schreibvorgänge zuordnen oder stellen die Blöcke auf den Laufwerken bereit, die der Volume-Gruppe oder dem Pool zugeordnet sind.
 
 
-NOTE: Für neue Volume-Gruppen und -Pools können Sie die Ressourcenbereitstellung über Menü:Einstellungen[System > zusätzliche Einstellungen > Aktivieren/Deaktivieren von Volumes mit Ressourcenbereitstellung] aktivieren oder deaktivieren.
+NOTE: Für neue Volumengruppen und Pools kann die Ressourcenbereitstellung über das Menü System[Zusätzliche Einstellungen > Ressourcenbereitgestellte Volumen konfigurieren] aktiviert oder deaktiviert werden.
 
 .Schritte
 . Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].

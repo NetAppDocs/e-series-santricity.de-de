@@ -15,6 +15,7 @@ Der Status der Spiegelung definiert den Status von Konsistenzgruppen und gespieg
 
 
 
+[[status-for-mirror-consistency-groups]]
 == Der Status von Spiegelungskonsistency Groups
 
 [cols="25h,~"]
@@ -97,6 +98,7 @@ Eine erzwungene Beförderung ist nicht zulässig, wenn ein Rollenkonflikt gelös
 |===
 
 
+[[status-for-mirrored-pairs]]
 == Status der gespiegelten Paare
 
 Der Status eines gespiegelten Paars gibt an, ob die Daten auf dem primären Volume und auf dem sekundären Volume synchronisiert werden.

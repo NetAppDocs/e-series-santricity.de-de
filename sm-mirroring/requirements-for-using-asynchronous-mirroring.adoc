@@ -16,6 +16,7 @@ Wenn Sie asynchrone Spiegelung verwenden möchten, beachten Sie die folgenden An
 
 
 
+[[unified-manager]]
 == Unified Manager
 
 Um die Spiegelung zwischen zwei Arrays zu aktivieren und zu konfigurieren, müssen Sie die Unified Manager-Schnittstelle verwenden. Unified Manager wird auf einem Host-System zusammen mit dem Web Services Proxy installiert.
@@ -27,6 +28,7 @@ Um die Spiegelung zwischen zwei Arrays zu aktivieren und zu konfigurieren, müss
 
 
 
+[[storage-arrays]]
 == Storage-Arrays durchführt
 
 * Sie müssen über zwei Storage-Arrays verfügen.
@@ -41,6 +43,7 @@ Um die Spiegelung zwischen zwei Arrays zu aktivieren und zu konfigurieren, müss
 
 
 
+[[supported-connections]]
 == Unterstützte Verbindungen
 
 Beim asynchronen Spiegeln können FC- oder iSCSI-Verbindungen genutzt werden oder für die Kommunikation zwischen lokalen und Remote-Storage-Systemen. Beim Erstellen einer SpiegelungsConsistency Group kann der Administrator entweder FC oder iSCSI für diese Gruppe auswählen, wenn beide mit dem Remote-Speicher-Array verbunden sind. Es gibt kein Failover von einem Kanaltyp zum anderen.
@@ -71,6 +74,12 @@ ISCSI-Ports werden auf Array-Ebene für Port konfiguriert. Intercontroller Kommu
 ** VLAN: Sowohl lokale als auch Remote-Systeme müssen die gleiche VLAN-Einstellung für die Kommunikation haben
 ** ISCSI-Listening-Port
 ** Jumbo-Frames
++
+[NOTE]
+====
+Die Verwendung von Jumbo Frames wird zur Verbesserung der CPU-Leistung, des Durchsatzes und der funktionalen Stabilität empfohlen.
+
+====
 ** Ethernet-Priorität
 +
 [NOTE]
@@ -92,6 +101,7 @@ E4000 unterstützt keine asynchrone Spiegelung bei Verwendung des iSCSI-Protokol
 ====
 
 
+[[mirrored-volume-candidates]]
 == Kandidaten für gespiegelte Volumes
 
 * RAID-Level, Caching-Parameter und Segmentgröße können auf den primären und sekundären Volumes eines asynchronen gespiegelten Paars unterschiedlich sein.
@@ -109,11 +119,12 @@ NOTE: Bei EF600- und EF300-Controllern müssen die primären und sekundären Vol
 
 
 * Primäre und sekundäre Volumes müssen denselben Laufwerkstyp verwenden. Die Kombination von NVMe und SAS-Laufwerken zwischen primären und sekundären Volumes wird nicht unterstützt.
-* Auf primären und sekundären Volumes darf die Ressourcenpartitionierung nicht aktiviert sein.
+* Für primäre und sekundäre Volumes darf die Ressourcenbereitstellung nicht aktiviert sein.
 
 
 
 
+[[reserved-capacity]]
 == Reservierte Kapazität
 
 * Ein reserviertes Kapazitäts-Volume ist für ein primäres Volume und ein sekundäres Volume in einem gespiegelten Paar für das Protokollieren von Schreibinformationen erforderlich, um nach einem Controller-Reset und anderen temporären Unterbrechungen wiederherzustellen.
@@ -128,6 +139,7 @@ NOTE: Bei EF600- und EF300-Controllern müssen die primären und sekundären Vol
 
 
 
+[[drive-security-feature]]
 == Laufwerkssicherheit
 
 * Wenn Sie sichere Laufwerke verwenden, müssen das primäre und das sekundäre Volume über kompatible Sicherheitseinstellungen verfügen. Diese Beschränkung wird nicht durchgesetzt, deshalb müssen Sie sie selbst überprüfen.

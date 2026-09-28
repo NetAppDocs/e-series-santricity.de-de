@@ -15,6 +15,7 @@ SANtricity System Manager meldet verschiedene Status für Laufwerke.
 
 
 
+[[accessibility-states]]
 == Zugänglichkeitszustände
 
 [cols="25h,~"]
@@ -63,6 +64,7 @@ Das Laufwerk antwortet nicht auf Befehle.
 |===
 
 
+[[role-states]]
 == Rollenstaaten
 
 [cols="25h,~"]
@@ -78,14 +80,14 @@ Das Laufwerk ist Mitglied eines Pools oder einer Volume-Gruppe.
 
 
  a| 
-In-Use-Hot-Spare
+Hot Spare im Einsatz
  a| 
 Das Laufwerk wird derzeit als Ersatz für ein ausgefallenes Laufwerk verwendet. Hot Spares werden nur in Volume-Gruppen verwendet, nicht Pools.
 
 
 
  a| 
-Standby-Hot-Spare
+Hot Spare in Bereitschaft
  a| 
 Das Laufwerk kann als Ersatz für ein ausgefallenes Laufwerk verwendet werden. Hot Spares werden nur in Volume-Gruppen verwendet, nicht Pools.
 
@@ -99,6 +101,7 @@ Das Laufwerk ist kein Mitglied eines Pools oder einer Volume-Gruppe.
 |===
 
 
+[[availability-states]]
 == Verfügbarkeitsstatus
 
 [cols="25h,~"]

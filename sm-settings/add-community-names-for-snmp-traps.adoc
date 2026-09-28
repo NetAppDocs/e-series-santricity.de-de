@@ -15,8 +15,7 @@ summary: Sie können bis zu 256 Community-Namen für SNMPv2c-Traps hinzufügen.
 Sie können bis zu 256 Community-Namen für SNMPv2c-Traps hinzufügen.
 
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Alerts].
-. Wählen Sie die Registerkarte *SNMP* aus.
+. Im linken Bereich Menü:Alerts[SNMP alerts] auswählen.
 +
 Die Trap-Ziele und Community-Namen werden in der Tabelle angezeigt.
 
@@ -29,4 +28,4 @@ Das Dialogfeld „Communities konfigurieren“ wird geöffnet.
 
 
 .Ergebnisse
-Der neue Community-Name wird auf der Registerkarte SNMP der Seite Meldungen angezeigt.
+Der neue Community-Name erscheint auf der SNMP-Warnungsseite.

@@ -16,6 +16,7 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 
 
 
+[[why-cant-i-log-in]]
 == Warum kann ich mich nicht anmelden?
 
 Wenn bei der Anmeldung bei SANtricity System Manager ein Fehler angezeigt wird, prüfen Sie die folgenden möglichen Ursachen.
@@ -26,7 +27,7 @@ Fehler beim Anmelden bei System Manager können aus einem der folgenden Gründe 
 * Sie verfügen über unzureichende Berechtigungen.
 * Der Verzeichnisserver (falls konfiguriert) ist möglicherweise nicht verfügbar. Wenn dies der Fall ist, melden Sie sich mit einer lokalen Benutzerrolle an.
 * Sie haben mehrmals versucht, sich erfolglos anzumelden, was den Sperrmodus ausgelöst hat. Warten Sie 10 Minuten, bis Sie sich erneut anmelden können.
-* Eine Sperrbedingung wurde ausgelöst und Ihr Prüfprotokoll ist möglicherweise voll. Wechseln Sie zu Zugriffsmanagement und löschen Sie alte Ereignisse aus dem Revisionsprotokoll.
+* Es wurde eine Sperrbedingung ausgelöst, und Ihr Revisionsprotokoll ist möglicherweise voll. Navigieren Sie zu Überwachung > Revisionsprotokoll und löschen Sie alte Ereignisse aus dem Revisionsprotokoll.
 * SAML-Authentifizierung ist aktiviert. Aktualisieren Sie Ihren Browser, um sich anzumelden.
 
 
@@ -39,6 +40,7 @@ Aus einem der folgenden Gründe können Anmeldefehler bei einem Remote-Speicher-
 
 
 
+[[what-do-i-need-to-know-before-adding-a-directory-server]]
 == Was muss ich vor dem Hinzufügen eines Verzeichnisservers wissen?
 
 Stellen Sie vor dem Hinzufügen eines Verzeichnisservers in der Zugriffsverwaltung sicher, dass Sie die folgenden Anforderungen erfüllen.
@@ -50,6 +52,7 @@ Stellen Sie vor dem Hinzufügen eines Verzeichnisservers in der Zugriffsverwaltu
 
 
 
+[[what-do-i-need-to-know-about-mapping-to-storage-array-roles]]
 == Was muss ich über die Zuordnung von Speicher-Array-Rollen wissen?
 
 Bevor Sie Gruppen zu Rollen zuordnen, lesen Sie die folgenden Richtlinien durch.
@@ -64,6 +67,7 @@ Die integrierten RBAC-Funktionen (rollenbasierte Zugriffssteuerung) des Storage-
 
 
 
+[[directory-services]]
 === Verzeichnisdienste
 
 Wenn Sie einen LDAP-Server (Lightweight Directory Access Protocol) und Verzeichnisdienste verwenden, stellen Sie sicher, dass:
@@ -80,6 +84,7 @@ Wenn Sie einen LDAP-Server (Lightweight Directory Access Protocol) und Verzeichn
 
 
 
+[[saml]]
 === SAML
 
 Wenn Sie die im Speicher-Array integrierten SAML-Funktionen (Security Assertion Markup Language) verwenden, stellen Sie sicher, dass:
@@ -97,12 +102,14 @@ Wenn Sie die im Speicher-Array integrierten SAML-Funktionen (Security Assertion 
 
 
 
+[[which-external-management-tools-may-be-affected-by-this-change]]
 == Welche externen Verwaltungstools können von dieser Änderung betroffen sein?
 
 Wenn Sie bestimmte Änderungen in SANtricity System Manager vornehmen, wie z. B. das Wechseln der Managementoberfläche oder die Verwendung von SAML für eine Authentifizierungsmethode, sind die Verwendung einiger externer Tools und Funktionen möglicherweise eingeschränkt.
 
 
 
+[[management-interface]]
 === Managementoberfläche
 
 Tools, die direkt mit der älteren Managementoberfläche (Symbol), z. B. SANtricity SMI-S Provider oder OnCommand Insight (OCI), kommunizieren, funktionieren nur, wenn die Einstellung für die ältere Managementoberfläche aktiviert ist. Darüber hinaus können Sie keine alten CLI-Befehle verwenden oder Spiegelungsvorgänge durchführen, wenn diese Einstellung deaktiviert ist.
@@ -111,6 +118,7 @@ Weitere Informationen erhalten Sie vom technischen Support.
 
 
 
+[[saml-authentication]]
 === SAML-Authentifizierung
 
 Wenn SAML aktiviert ist, können die folgenden Clients nicht auf Storage-Array-Services und -Ressourcen zugreifen:
@@ -127,12 +135,14 @@ Weitere Informationen erhalten Sie vom technischen Support.
 
 
 
+[[what-do-i-need-to-know-before-configuring-and-enabling-saml]]
 == Was muss ich vor der Konfiguration und Aktivierung von SAML wissen?
 
 Bevor Sie die SAML-Funktionen (Security Assertion Markup Language) für die Authentifizierung konfigurieren und aktivieren, müssen Sie sicherstellen, dass Sie die folgenden Anforderungen erfüllen und SAML-Einschränkungen verstehen.
 
 
 
+[[requirements]]
 === Anforderungen
 
 Bevor Sie beginnen, stellen Sie sicher, dass:
@@ -147,6 +157,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass:
 
 
 
+[[restrictions]]
 === Einschränkungen
 
 Zusätzlich zu den oben genannten Anforderungen sollten Sie sich mit den folgenden Einschränkungen vertraut machen:
@@ -168,6 +179,7 @@ Zusätzlich zu den oben genannten Anforderungen sollten Sie sich mit den folgend
 
 
 
+[[what-types-of-events-are-recorded-in-the-audit-log]]
 == Welche Arten von Ereignissen werden im Auditprotokoll aufgezeichnet?
 
 Das Revisionsprotokoll kann Änderungsereignisse oder sowohl Änderungs- als auch schreibgeschützte Ereignisse aufzeichnen.
@@ -180,6 +192,7 @@ Abhängig von den Richtlinieneinstellungen werden die folgenden Ereignistypen an
 
 
 
+[[what-do-i-need-to-know-before-configuring-a-syslog-server]]
 == Was muss ich vor der Konfiguration eines Syslog-Servers wissen?
 
 Sie können Audit-Protokolle auf einem externen Syslog-Server archivieren.
@@ -195,8 +208,9 @@ Beachten Sie vor der Konfiguration eines Syslog-Servers die folgenden Richtlinie
 
 
 
+[[the-syslog-server-is-no-longer-receiving-audit-logs-what-do-i-do]]
 == Der Syslog-Server empfängt keine Audit-Protokolle mehr. Was mache ich?
 
 Wenn Sie einen Syslog-Server mit einem TLS-Protokoll konfiguriert haben, kann der Server keine Meldungen empfangen, wenn das Zertifikat aus irgendeinem Grund ungültig wird. Eine Fehlermeldung über das ungültige Zertifikat wird im Auditprotokoll veröffentlicht.
 
-Um dieses Problem zu lösen, müssen Sie zuerst das Zertifikat für den Syslog-Server reparieren. Wenn eine gültige Zertifikatskette vorhanden ist, gehen Sie zu Menü:Einstellungen[Audit Log > Syslog-Server konfigurieren > Alle testen].
+Um dieses Problem zu beheben, muss zunächst das Zertifikat für den Syslog-Server korrigiert werden. Sobald eine gültige Zertifikatskette vorhanden ist, zu Menü:Monitoring[Revisionsprotokoll > Configure Syslog Servers > Test All] wechseln.

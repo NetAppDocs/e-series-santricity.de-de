@@ -15,6 +15,7 @@ Die Snapshot-Funktion nutzt Basis-Volumes, reservierte Kapazität und Snapshot-G
 
 
 
+[[base-volumes]]
 == Basis-Volumes
 
 Ein _base Volume_ ist das Volume, das als Quelle für ein Snapshot Image verwendet wird. Ein Basis-Volume kann entweder ein Thick Volume oder ein Thin Volume sein und sich entweder in einem Pool oder einer Volume-Gruppe befinden.
@@ -29,6 +30,7 @@ image::../media/sam1130-dwg-snapshots-images-overview.gif[Snapshot Objekte und B
 
 
 
+[[reserved-capacity-and-snapshot-groups]]
 == Reservierte Kapazität und Snapshot-Gruppen
 
 System Manager organisiert Snapshot Images in _Snapshot Gruppen_. Wenn System Manager die Snapshot-Gruppe erstellt, wird automatisch die zugeordnete _reservierte Kapazität_ erstellt, um die Snapshot-Images für die Gruppe aufzubewahren und die nachfolgenden Änderungen an zusätzlichen Snapshots zu verfolgen.
@@ -43,6 +45,7 @@ Snapshot-Gruppen erfordern keine Benutzeraktion, Sie können jedoch jederzeit di
 
 
 
+[[auto-deletion]]
 == Automatisches Löschen
 
 Verwenden Sie bei der Arbeit mit Snapshots die Standardoption zum automatischen Löschen aktiviert. Durch das automatische Löschen wird automatisch das älteste Snapshot-Image gelöscht, wenn die Snapshot-Gruppe die maximal 32 Bilder der Snapshot-Gruppe erreicht. Wenn Sie die automatische Löschung deaktivieren, werden die Limits für Snapshot-Gruppen schließlich überschritten. Sie müssen manuelle Aktionen durchführen, um die Einstellungen für Snapshot-Gruppen zu konfigurieren und die reservierte Kapazität zu managen.

@@ -16,12 +16,14 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 
 
 
+[[what-is-shelf-loss-protection-and-drawer-loss-protection]]
 == Was ist der Schutz vor Regalverlust und der Schutz vor Schubladenverlust?
 
 Shelf-Schutz und Schutz vor Schubladenverlust sind Attribute von Pools und Volume-Gruppen, die es Ihnen ermöglichen, den Datenzugriff bei Ausfall eines einzelnen Shelfs oder einer Schublade aufrechtzuerhalten.
 
 
 
+[[shelf-loss-protection]]
 === Schutz vor Regalverlust
 
 Ein Shelf ist das Gehäuse, das entweder die Laufwerke oder die Laufwerke und den Controller enthält. Der Shelf-Verlust-Schutz garantiert den Zugriff auf die Daten auf den Volumes in einem Pool oder einer Volume-Gruppe, wenn ein totaler Verlust der Kommunikation mit einem einzelnen Festplatten-Shelf auftritt. Ein Beispiel für einen völligen Verlust der Kommunikation kann ein Verlust an Strom am Festplatten-Shelf oder ein Ausfall beider I/O-Module (IOMs) sein.
@@ -84,6 +86,7 @@ Keine Angabe
 |===
 
 
+[[drawer-loss-protection]]
 === Schutz vor Schubladenverlust
 
 Eine Schublade ist eines der Fächer eines Regals, das Sie herausziehen, um auf die Laufwerke zuzugreifen. Nur die Regale mit hoher Kapazität verfügen über Schubladen. Der Schutz vor Schubladenverlust garantiert den Zugriff auf die Daten auf den Volumes in einem Pool oder einer Volume-Gruppe, wenn ein vollständiger Verlust der Kommunikation mit einem einzelnen Fach auftritt. Ein Beispiel für einen Totalverlust der Kommunikation kann zu einem Stromausfall in der Schublade oder einem Ausfall einer internen Komponente in der Schublade führen.
@@ -150,6 +153,7 @@ Keine Angabe
 |===
 
 
+[[what-are-battery-learn-cycles]]
 == Was sind Akkulaufläufe?
 
 Ein Lernzyklus ist ein automatischer Zyklus zum Kalibrieren der intelligenten Akkuanzeige.

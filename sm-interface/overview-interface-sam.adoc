@@ -15,9 +15,10 @@ SANtricity System Manager ist eine webbasierte Schnittstelle, über die Sie Stor
 
 
 
-== Homepage
+[[dashboard]]
+== Dashboard
 
-Die Startseite enthält eine Dashboard-Ansicht für die tägliche Verwaltung Ihres Speicherarrays. Wenn Sie sich bei System Manager anmelden, wird die Startseite der erste Bildschirm angezeigt.
+Das Dashboard bietet eine Übersicht für die tägliche Verwaltung Ihres Storage-Arrays. Nach der Anmeldung im System Manager ist das Dashboard die erste angezeigte Seite.
 
 Die Dashboard-Ansicht umfasst drei Übersichtsbereiche, die wichtige Informationen über den Zustand und die Integrität Ihres Storage Arrays enthalten. Weitere Informationen finden Sie im Übersichtsbereich.
 
@@ -48,18 +49,21 @@ Der Bereich Speicherhierarchie bietet eine organisierte Ansicht der verschiedene
 |===
 
 
+[[notifications-area]]
 == Benachrichtigungsbereich
 
 Der Benachrichtigungsbereich ist über das Glockensymbol in der oberen Ecke des Fensters zugänglich. Der Benachrichtigungsbereich zeigt Problembenachrichtigungen an, die den Status des Speichersystems und seiner Komponenten anzeigen. Zusätzlich werden in diesem Bereich automatische Warnmeldungen angezeigt, die Ihnen bei der Fehlerbehebung helfen können, bevor sich Probleme auf andere Bereiche Ihrer Speicherumgebung auswirken.
 
 
 
+[[interface-settings]]
 == Schnittstelleneinstellungen
 
 Sie können die Anzeigeeinstellungen und andere Einstellungen über die Hauptschnittstelle ändern.
 
 
 
+[[user-logins-and-passwords]]
 == Benutzeranmeldungen und Passwörter
 
 Der aktuell im System angemeldete Benutzer wird in den Benutzereinstellungen angezeigt.

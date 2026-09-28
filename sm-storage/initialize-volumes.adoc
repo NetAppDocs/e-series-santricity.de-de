@@ -56,4 +56,4 @@ System Manager führt die folgenden Aktionen durch:
 * Löscht die Blockindizes, was dazu führt, dass nicht geschriebene Blöcke gelesen werden, als ob sie null gefüllt sind (das Volume scheint vollständig leer zu sein).
 
 
-Wählen Sie Menü:Storage[Operations in Progress], um den Fortschritt des aktuell für das ausgewählte Volume laufenden Initialisierungsvorgangs anzuzeigen. Dieser Vorgang kann längere Zeit dauern und die Systemleistung beeinträchtigen.
+Im Menü „Monitoring [Operations in progress]“ lässt sich der Fortschritt des aktuell für das ausgewählte Volume laufenden Initialisierungsvorgangs anzeigen. Dieser Vorgang kann längere Zeit dauern und die Systemleistung beeinträchtigen.

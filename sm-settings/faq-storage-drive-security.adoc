@@ -16,6 +16,7 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 
 
 
+[[what-do-i-need-to-know-before-creating-a-security-key]]
 == Was muss ich vor der Erstellung eines Sicherheitsschlüssels wissen?
 
 Ein Sicherheitsschlüssel wird von Controllern und sicheren Laufwerken innerhalb eines Storage-Arrays gemeinsam verwendet. Wenn ein sicheres Laufwerk aus dem Speicher-Array entfernt wird, schützt der Sicherheitsschlüssel die Daten vor unberechtigtem Zugriff.
@@ -28,6 +29,7 @@ Sie können Sicherheitsschlüssel mit einer der folgenden Methoden erstellen und
 
 
 
+[[internal-key-management]]
 === Internes Verschlüsselungsmanagement
 
 Interne Schlüssel werden gepflegt und „`hidden`“ in einem nicht zugänglichen Ort im persistenten Speicher des Controllers gespeichert. Bevor Sie einen internen Sicherheitsschlüssel erstellen, müssen Sie Folgendes tun:
@@ -40,6 +42,7 @@ Sie können dann einen internen Sicherheitsschlüssel erstellen, der die Definit
 
 
 
+[[external-key-management]]
 === Externes Verschlüsselungskeymanagement
 
 Externe Schlüssel werden mithilfe eines Key Management Interoperability Protocol (KMIP) auf einem separaten Verschlüsselungsmanagement-Server aufbewahrt. Bevor Sie einen externen Sicherheitsschlüssel erstellen, müssen Sie Folgendes tun:
@@ -48,7 +51,7 @@ Externe Schlüssel werden mithilfe eines Key Management Interoperability Protoco
 . Stellen Sie sicher, dass die Laufwerksicherheit aktiviert ist. Wenden Sie sich bei Bedarf an Ihren Storage-Anbieter, um Anweisungen zur Aktivierung der Laufwerkssicherheitsfunktion zu erhalten.
 . Abrufen einer signierten Client-Zertifikatdatei. Ein Client-Zertifikat validiert die Controller des Storage-Arrays, damit der Verschlüsselungsmanagement-Server ihren KMIP-Anforderungen vertrauen kann.
 +
-.. Zunächst haben Sie eine Client Certificate Signing Request (CSR) abgeschlossen und heruntergeladen. Wechseln Sie zum Menü:Einstellungen[Zertifikate > Schlüsselverwaltung > CSR abschließen].
+.. Zuerst wird eine Client Certificate Signing Request (CSR) ausgefüllt und heruntergeladen. Im Menü:Certificates[Key management certificates] wird anschließend *Complete CSR* ausgewählt.
 .. Als Nächstes fordern Sie ein signiertes Clientzertifikat von einer Zertifizierungsstelle an, die vom Schlüsselverwaltungsserver vertrauenswürdig ist. (Sie können auch mithilfe der heruntergeladenen CSR-Datei ein Client-Zertifikat vom Schlüsselverwaltungsserver erstellen und herunterladen.)
 .. Sobald Sie über eine Clientzertifikatdatei verfügen, kopieren Sie diese Datei auf den Host, auf dem Sie auf System Manager zugreifen.
 
@@ -60,12 +63,14 @@ Anschließend können Sie einen externen Schlüssel erstellen, der die IP-Adress
 
 
 
+[[why-do-i-need-to-define-a-pass-phrase]]
 == Warum muss ich eine Passphrase definieren?
 
 Der Passphrase wird verwendet, um die auf dem lokalen Management-Client gespeicherte Sicherheitsschlüsseldatei zu verschlüsseln und zu entschlüsseln. Ohne den Passphrase kann der Sicherheitsschlüssel nicht entschlüsselt und verwendet werden, um Daten von einem sicheren Laufwerk zu entsperren, wenn er in einem anderen Speicher-Array neu installiert wird.
 
 
 
+[[why-is-it-important-to-record-security-key-information]]
 == Warum sind Sicherheitsinformationen wichtig?
 
 Wenn Sie die Informationen über die Sicherheitsschlüssel verlieren und kein Backup haben, können Sie Daten verlieren, wenn Sie sichere Laufwerke verschieben oder ein Controller-Upgrade durchführen. Sie benötigen einen Sicherheitsschlüssel, um die Daten auf den Laufwerken zu entsperren.
@@ -74,6 +79,7 @@ Achten Sie darauf, die Sicherheitsschlüsselkennung, den zugehörigen Passphrase
 
 
 
+[[what-do-i-need-to-know-before-backing-up-a-security-key]]
 == Was muss ich vor dem Sichern eines Sicherheitsschlüssels beachten?
 
 Wenn Ihr ursprünglicher Sicherheitsschlüssel beschädigt wird und Sie kein Backup haben, verlieren Sie den Zugriff auf die Daten auf den Laufwerken, wenn sie von einem Speicher-Array zu einem anderen migriert werden.
@@ -99,6 +105,7 @@ Der Passphrase für die Laufwerksicherheit sollte nicht mit dem Administratorken
 
 
 
+[[what-do-i-need-to-know-before-unlocking-secure-drives]]
 == Was muss ich wissen, bevor sichere Laufwerke entsperrt werden?
 
 Um die Daten von einem sicheren Laufwerk zu entsperren, müssen Sie seinen Sicherheitsschlüssel importieren.
@@ -113,14 +120,16 @@ Beachten Sie vor dem Entsperren von sicheren Laufwerken die folgenden Richtlinie
 
 
 
+[[what-is-readwrite-accessibility]]
 == Zugriff auf Lese-/Schreibzugriffe
 
 Das Fenster Laufwerkseinstellungen enthält Informationen zu den Laufwerksicherheitsattributen. „Read/Write Accessible“ ist eines der Attribute, das anzeigt, ob Daten eines Laufwerks gesperrt wurden.
 
-Um die Attribute der Laufwerksicherheit anzuzeigen, gehen Sie zur Seite Hardware. Wählen Sie ein Laufwerk aus, klicken Sie auf *Einstellungen anzeigen* und dann auf *Weitere Einstellungen anzeigen*. Unten auf der Seite ist der Wert für das Attribut Lesen/Schreiben, auf das zugegriffen werden kann, *Ja*, wenn das Laufwerk entsperrt ist. Der Wert für das Attribut Read/Write, das auf die Zugriffsberechtigung zugegriffen werden kann, lautet *Nein, ungültiger Sicherheitsschlüssel*, wenn das Laufwerk gesperrt ist. Sie können ein sicheres Laufwerk entsperren, indem Sie einen Sicherheitsschlüssel importieren (gehen Sie zu Menü:Einstellungen[System > Sichere Laufwerke entsperren]).
+Die Sicherheitsattribute des Laufwerks sind auf der Seite „Hardware“ einsehbar. Ein Laufwerk auswählen, auf *Einstellungen anzeigen* klicken und anschließend auf *Weitere Einstellungen anzeigen* klicken. Am unteren Seitenrand ist der Wert des Attributs „Lese-/Schreibzugriff“ *Ja*, wenn das Laufwerk entsperrt ist. Der Wert des Attributs „Lese-/Schreibzugriff“ ist *Nein, ungültiger Sicherheitsschlüssel*, wenn das Laufwerk gesperrt ist. Ein sicheres Laufwerk kann durch Importieren eines Sicherheitsschlüssels entsperrt werden (Menü:System[Gesperrte Laufwerke entsperren]).
 
 
 
+[[what-do-i-need-to-know-about-validating-the-security-key]]
 == Was muss ich über die Validierung des Sicherheitsschlüssels wissen?
 
 Nachdem Sie einen Sicherheitsschlüssel erstellt haben, sollten Sie die Schlüsseldatei überprüfen, um sicherzustellen, dass sie nicht beschädigt ist.
@@ -134,6 +143,7 @@ Wenn die Validierung fehlschlägt, gehen Sie wie folgt vor:
 
 
 
+[[what-is-the-difference-between-internal-security-key-and-external-security-key-management]]
 == Worin besteht der Unterschied zwischen internem Sicherheitsschlüssel und externem Sicherheitsschlüsselmanagement?
 
 Wenn Sie die Laufwerksicherheit-Funktion implementieren, können Sie einen internen Sicherheitsschlüssel oder einen externen Sicherheitsschlüssel verwenden, um Daten zu sperren, wenn ein sicheres Laufwerk aus dem Speicher-Array entfernt wird.

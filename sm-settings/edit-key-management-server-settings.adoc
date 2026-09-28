@@ -15,7 +15,7 @@ summary: Wenn Sie die externe Schlüsselverwaltung konfiguriert haben, können S
 Wenn Sie die externe Schlüsselverwaltung konfiguriert haben, können Sie die Einstellungen des Verschlüsselungsmanagementservers jederzeit anzeigen und bearbeiten.
 
 .Schritte
-. Wählen Sie im linken Bereich Menü:Einstellungen[System].
+. Im linken Bereich *System* auswählen.
 . Wählen Sie unter *Security Key Management* die Option *Key Management Server-Einstellungen anzeigen/bearbeiten* aus.
 . Bearbeiten Sie die Informationen in den folgenden Feldern:
 +

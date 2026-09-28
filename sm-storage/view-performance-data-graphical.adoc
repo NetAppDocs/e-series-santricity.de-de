@@ -16,112 +16,27 @@ Sie können grafische Performance-Daten für logische Objekte, physische Objekte
 .Über diese Aufgabe
 Die Performance-Diagramme zeigen historische Daten sowie Live-Daten, die derzeit erfasst werden. Eine vertikale Linie im Diagramm, die mit Live Update gekennzeichnet ist, unterscheidet historische Daten von Live-Daten.
 
-*Homepage-Ansicht*
+*Dashboard Ansicht*
 
-Die Startseite enthält ein Diagramm mit der Performance auf Speicherarray-Ebene. In dieser Ansicht können Sie eingeschränkte Metriken auswählen oder auf *Leistungsdetails anzeigen* klicken, um alle verfügbaren Metriken auszuwählen.
+Das Dashboard enthält ein Diagramm, das die Leistung auf Ebene des Speicherarrays anzeigt. In dieser Ansicht stehen nur begrenzte Metriken zur Auswahl, oder über *Leistungsdetails anzeigen* erfolgt ein Wechsel zum Menü:Überwachung[Leistung], wo alle verfügbaren Metriken ausgewählt werden können.
 
 *Detailansicht*
 
-Die in der detaillierten Performance-Ansicht verfügbaren Diagramme sind unter drei Registerkarten angeordnet:
+Die auf der Leistungsseite verfügbaren Diagramme basieren auf Ihren Auswahlen:
 
-* *Logische Ansicht* -- zeigt Performancedaten für logische Objekte an, die nach Volume-Gruppen und Pools gruppiert sind. Zu den logischen Objekten gehören Volume-Gruppen, Pools und Volumes.
-* *Physical View* -- zeigt Leistungsdaten für den Controller, Host-Kanäle, Laufwerkskanäle und Laufwerke an.
-* *Anwendungs- und Workload-Ansicht* -- Zeigt eine Liste logischer Objekte (Volumes) an, gruppiert nach den von Ihnen definierten Anwendungstypen und Workloads.
+* *Objekttypen* -- Wählt die Kategorien von Objekten aus, die einbezogen werden sollen (z. B. Storage array, Controller, Pools und Volumengruppen, Anwendungen, Workloads, Volumes, Kanäle und Laufwerke).
+* *Objekte* – Es können bis zu fünf spezifische Objekte für die ausgewählten Objekttypen ausgewählt werden.
 
 
 .Schritte
-. Wählen Sie *Home*.
-. Um eine Ansicht auf Array-Ebene auszuwählen, klicken Sie auf die Schaltfläche IOPS, MiB/s oder CPU.
-. Klicken Sie für weitere Details auf *Performance-Details anzeigen*.
-. Wählen Sie die Registerkarte *Logical View*, die Registerkarte *Physical View* oder die Registerkarte *Applications and workloads View*.
+. Menü: Überwachung [Leistung] auswählen.
+. Verwenden Sie *Objekttypen* und *Objekte*, um die Daten auszuwählen, die angezeigt werden sollen. Es können bis zu fünf Objekte ausgewählt werden; das Suchfeld in der *Objekte*-Liste dient zum Finden von Objektnamen oder Namensbestandteilen.
 +
-Je nach Objekttyp werden auf jeder Registerkarte unterschiedliche Diagramme angezeigt.
+Nicht alle Metriken sind für jeden Objekttyp verfügbar. Speicherarrays und Controller melden keine Latenz, nur Controller melden die CPU-Auslastung, und nur Controller und Kanäle melden den Headroom.
 
-+
-[cols="25h,~"]
-|===
-| Registerkarten anzeigen | Für jeden Objekttyp werden Performance-Daten angezeigt 
-
-
- a| 
-Logische Ansicht
- a| 
-** *Storage-Array*: IOPS, MiB/s
-** *Pools*: Latenz, IOPS, MiB/s
-** *Volume-Gruppen*: Latenz, IOPS, MiB/s
-** *Volumes*: Latenz, IOPS, MiB/s
-
-
-
-
- a| 
-Physische Ansicht
- a| 
-** * Controller*: IOPS, MiB/s, CPU, Reserve
-** *Host-Kanäle*: Latenz, IOPS, MiB/s, Reserve
-** *Drive-Channels*: Latenz, IOPS, MiB/s
-** *Laufwerke*: Latenz, IOPS, MiB/s
-
-
-
-
- a| 
-Anwendungs- und Workload-Ansicht
- a| 
-** *Storage-Array*: IOPS, MiB/s
-** *Applikationen*: Latenz, IOPS, MiB/s
-** * Workloads*: Latenz, IOPS, MiB/s
-** *Volumes*: Latenz, IOPS, MiB/s
-
-
-|===
-. Verwenden Sie die Optionen, um die gewünschten Objekte und Informationen anzuzeigen.
-+
-.Optionen
-[%collapsible]
-====
-[cols="25h,~"]
-|===
-| Optionen für die Anzeige von Objekten | Beschreibung 
-
-
- a| 
-Erweitern Sie ein Fach, um die Liste der Objekte anzuzeigen.
- a| 
-_Navigationsklassen_ enthalten Speicherobjekte wie Pools, Volume-Gruppen und Laufwerke.
-
-Klicken Sie auf das Fach, um die Liste der Objekte in der Schublade anzuzeigen.
-
-
-
- a| 
-Wählen Sie Objekte aus, die angezeigt werden sollen.
- a| 
-Aktivieren Sie das Kontrollkästchen links neben jedem Objekt, um die Performance-Daten auszuwählen, die Sie anzeigen möchten.
-
-
-
- a| 
-Verwenden Sie Filter, um Objektnamen oder Teilnamen zu suchen.
- a| 
-Geben Sie im Feld Filter den Namen oder einen Teilnamen von Objekten ein, um nur die Objekte in der Schublade aufzulisten.
-
-
-
- a| 
-Klicken Sie nach der Auswahl von Objekten auf *Grafiken aktualisieren*.
- a| 
-Nachdem Sie Objekte aus den Schubladen ausgewählt haben, wählen Sie *Grafiken aktualisieren*, um die grafischen Daten für die ausgewählten Objekte anzuzeigen.
-
-
-
- a| 
-Diagramm ausblenden oder anzeigen
- a| 
-Wählen Sie den Diagrammtitel aus, um das Diagramm auszublenden oder anzuzeigen.
-
-|===
-====
+. *Zeitraum* kann verwendet werden, um den anzuzeigenden Zeitraum auszuwählen.
+. Klicken Sie auf *Aktualisieren*.
+. *Optional:* In einem einzelnen Diagramm kann mit *Vergleichen* ein anderer Metriktyp für dieselben Objekte überlagert werden.
 . Verwenden Sie bei Bedarf die zusätzlichen Optionen zum Anzeigen von Performance-Daten.
 +
 .Weitere Optionen
@@ -133,12 +48,12 @@ Wählen Sie den Diagrammtitel aus, um das Diagramm auszublenden oder anzuzeigen.
 
 
  a| 
-Zeitrahmen
+Zeitbereich
  a| 
 Wählen Sie die gewünschte Zeitspanne aus (5 Minuten, 1 Stunde, 8 Stunden, 1 Tag, 7 Tage, Oder 30 Tage). Der Standardwert ist 1 Stunde.
 
 
-NOTE: Das Laden der Performance-Daten für einen 30-Tage-Zeitrahmen kann mehrere Minuten dauern. Navigieren Sie nicht von der Webseite weg, aktualisieren Sie die Webseite, oder schließen Sie den Browser während der Daten geladen werden.
+NOTE: Das Laden der Leistungsdaten für einen Zeitraum von 30 Tagen kann einige Minuten dauern. Die Webseite sollte nicht verlassen, nicht aktualisiert und der Browser nicht geschlossen werden, während die Daten geladen werden.
 
 
 

@@ -33,7 +33,7 @@ Der Passphrase für die Laufwerksicherheit ist unabhängig vom Administratorkenn
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich Menü:Einstellungen[System].
+. Im linken Bereich *System* auswählen.
 . Wählen Sie unter *Security Key Management* die Option *Interner Schlüssel erstellen*.
 +
 Wenn Sie noch keinen Sicherheitsschlüssel generiert haben, wird das Dialogfeld Sicherheitsschlüssel erstellen geöffnet.

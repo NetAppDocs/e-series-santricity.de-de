@@ -23,7 +23,7 @@ Führen Sie diesen Vorgang nur aus, wenn Sie vom technischen Support dazu aufgef
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich Menü:Support[Support Center > Diagnostics] Registerkarte.
+. Im linken Menü Menü:Support[Diagnostik] auswählen.
 . Wählen Sie *Trace Buffers Abrufen*.
 . Aktivieren Sie das Kontrollkästchen neben jedem Controller, für den Trace-Puffer abgerufen werden sollen.
 +

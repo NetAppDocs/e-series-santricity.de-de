@@ -28,6 +28,7 @@ Synchrones Spiegeln ist auf dem EF80, EF50, EF600/EF600C oder EF300/EF300C Speic
 
 
 
+[[force-role-change]]
 == Rollenänderung erzwingen
 
 Sie können eine Rollenänderung zwischen Volumes in einem gespiegelten Paar erzwingen, wenn ein Kommunikationsproblem zwischen dem lokalen Speicher-Array und dem Remote-Speicher-Array die Heraufstufung des sekundären Volumes oder die Herabstufung des primären Volumes verhindert.
@@ -41,6 +42,7 @@ Wenn das Remote-Speicher-Array wiederhergestellt wurde und eventuelle Kommunikat
 ====
 
 
+[[when-is-a-forced-promotion-allowed-and-not-allowed]]
 == Wann ist eine erzwungene Promotion zulässig und nicht zulässig?
 
 Die erzwungene Beförderung eines Volumes in einem gespiegelten Paar ist unter den folgenden Bedingungen nicht zulässig:
@@ -51,6 +53,7 @@ Die erzwungene Beförderung eines Volumes in einem gespiegelten Paar ist unter d
 
 
 
+[[role-change-in-progress-state]]
 == Rollenänderung in Bearbeitung
 
 Wenn zwei Speicher-Arrays in einer Spiegelungskonfiguration getrennt werden, und das primäre Volume eines gespiegelten Paars erzwingen, dass es zu einer sekundären Rolle herabgestuft wird, und das sekundäre Volume eines gespiegelten Paares wird zu einer primären Rolle heraufgestuft. Wenn die Kommunikation wiederhergestellt wird, werden die Volumes auf beiden Storage Arrays im Status „Role-Change-in-Progress“ platziert.

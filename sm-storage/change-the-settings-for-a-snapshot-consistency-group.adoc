@@ -15,8 +15,7 @@ summary: Ändern Sie die Einstellungen für eine Snapshot Konsistenzgruppe, wenn
 Ändern Sie die Einstellungen für eine Snapshot Konsistenzgruppe, wenn Sie ihren Namen, die Einstellungen zum automatischen Löschen oder die maximale Anzahl von Snapshot Images ändern möchten.
 
 .Schritte
-. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
-. Klicken Sie auf die Registerkarte *Snapshot Consistency Groups*.
+. Im linken Bereich Menü:Snapshots[Snapshot-Konsistenzgruppen] auswählen.
 . Wählen Sie die Snapshot Consistency Group aus, die Sie bearbeiten möchten, und klicken Sie dann auf *View/Edit Settings*.
 +
 Das Dialogfeld Einstellung für Snapshot-Konsistenzgruppen wird angezeigt.

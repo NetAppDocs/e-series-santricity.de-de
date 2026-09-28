@@ -16,6 +16,7 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 
 
 
+[[what-data-am-i-collecting]]
 == Welche Daten sammle ich?
 
 Die AutoSupport-Funktion und die manuelle Support-Datenerfassung bieten Möglichkeiten zum Erfassen von Daten in einem Kunden-Support Bundle zur Remote-Fehlerbehebung und Problemanalyse durch den technischen Support.
@@ -24,6 +25,7 @@ Das Customer Support Bundle sammelt alle Arten von Informationen zum Storage Arr
 
 
 
+[[what-does-unreadable-sectors-data-show-me]]
 == Was zeigt mir unlesbare Sektoren Daten?
 
 Sie können detaillierte Daten über unlesbare Sektoren anzeigen, die auf den Laufwerken in Ihrem Speicher-Array erkannt wurden.
@@ -104,6 +106,7 @@ Zeigt einen der folgenden Fehlertypen an:
 |===
 
 
+[[what-is-a-health-image]]
 == Was ist ein Gesundheitsbild?
 
 Ein Systemzustand-Image ist ein Rohdaten-Dump des Prozessorspeichers des Controllers, mit dem der technische Support ein Problem mit einem Controller diagnostizieren kann.
@@ -112,6 +115,7 @@ Die Firmware generiert automatisch ein Systemzustand-Image, wenn bestimmte Fehle
 
 
 
+[[what-do-the-autosupport-features-do]]
 == Was tun die AutoSupport-Funktionen?
 
 Die AutoSupport Funktion besteht aus drei separaten Funktionen, die separat aktiviert werden können.
@@ -123,6 +127,7 @@ Die AutoSupport Funktion besteht aus drei separaten Funktionen, die separat akti
 
 
 
+[[what-type-of-data-is-collected-through-the-autosupport-feature]]
 == Welche Datentypen werden über die AutoSupport Funktion erfasst?
 
 Die AutoSupport-Funktion enthält drei standardmäßige Entsendungstypen: Ereignispatches, geplante Dispatches sowie On-Demand- und Remote-Diagnose-Patches.
@@ -157,6 +162,7 @@ Die AutoSupport-Funktion sendet automatisch mehrere Entsendungen nach einem rege
 
 
 
+[[how-do-i-configure-the-delivery-method-for-the-autosupport-feature]]
 == Wie konfiguriere ich die Bereitstellungsmethode für die AutoSupport-Funktion?
 
 Die AutoSupport-Funktion unterstützt die Protokolle HTTPS und SMTP zur Bereitstellung von AutoSupport-Dispatches an den technischen Support.
@@ -179,7 +185,7 @@ Die AutoSupport-Funktion unterstützt die Protokolle HTTPS und SMTP zur Bereitst
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich Menü:Support[Support Center > AutoSupport] Tab.
+. Im linken Bereich Menü:Support[AutoSupport] auswählen.
 . Wählen Sie *AutoSupport-Bereitstellungsmethode konfigurieren*.
 +
 Es wird ein Dialogfeld angezeigt, in dem die Versandmethoden aufgeführt sind.
@@ -213,6 +219,7 @@ Wenn der Konfigurationstest fehlschlägt, überprüfen Sie Ihre Konfigurationsei
 
 
 
+[[what-is-configuration-data]]
 == Was sind Konfigurationsdaten?
 
 Wenn Sie Konfigurationsdaten erfassen auswählen, speichert das System den aktuellen Status der RAID-Konfigurationsdatenbank.
@@ -221,6 +228,7 @@ Die RAID-Konfigurationsdatenbank umfasst alle Daten für Volume-Gruppen und Fest
 
 
 
+[[what-do-i-need-to-know-before-upgrading-the-santricity-os-software]]
 == Was muss ich vor einem Upgrade der SANtricity OS Software beachten?
 
 Bevor Sie die Software und Firmware des Controllers aktualisieren, sollten Sie diese Elemente beachten.
@@ -268,6 +276,7 @@ CAUTION: Nehmen Sie während des Upgrades keine Änderungen am Storage Array vor
 
 
 
+[[what-do-i-need-to-know-before-suspending-iom-auto-synchronization]]
 == Was muss ich wissen, bevor ich die automatische EAM-Synchronisierung unterhalte?
 
 Das Aussetzung der automatischen Synchronisierung von IOM verhindert, dass die IOM-Firmware beim nächsten Upgrade einer SANtricity OS-Controller-Software aktualisiert wird.
@@ -276,6 +285,7 @@ Normalerweise werden Controller-Software und IOM-Firmware als Bundle aktualisier
 
 
 
+[[why-is-my-firmware-upgrade-progressing-so-slowly]]
 == Warum läuft mein Firmware-Upgrade so langsam voran?
 
 Der Fortschritt des Firmware-Upgrades hängt von der Gesamtlast des Systems ab.
@@ -284,6 +294,7 @@ Sollte während eines Online-Upgrades der Laufwerk-Firmware ein Volume-Transfer 
 
 
 
+[[what-do-i-need-to-know-before-upgrading-drive-firmware]]
 == Was muss ich vor dem Aktualisieren der Laufwerk-Firmware beachten?
 
 Achten Sie vor dem Aktualisieren der Laufwerk-Firmware auf diese Elemente.
@@ -298,6 +309,7 @@ Achten Sie vor dem Aktualisieren der Laufwerk-Firmware auf diese Elemente.
 
 
 
+[[how-do-i-choose-which-type-of-upgrade-to-perform]]
 == Wie wähle ich die Art des Upgrades aus?
 
 Je nach Status des Pools oder der Volume-Gruppe wählen Sie die Art des Upgrades, die auf dem Laufwerk ausgeführt werden soll.

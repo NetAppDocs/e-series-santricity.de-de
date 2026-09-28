@@ -16,7 +16,7 @@ Nach Laufwerken können Sie alle Laufwerke physisch identifizieren, die einen au
 
 .Schritte
 . Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
-. Wählen Sie den Pool, die Volume-Gruppe oder den SSD-Cache aus, den Sie suchen möchten, und klicken Sie dann auf das Menü:Ellipsen-Symbol[Locator-Leuchten einschalten].
+. Den Pool, die Volume-Gruppe oder den SSD-Cache, den Sie lokalisieren möchten, auswählen und anschließend auf das Menü:Ellipsen-Symbol[Locator-Leuchten einschalten] klicken.
 +
 Es wird ein Dialogfeld angezeigt, in dem die Leuchten der Laufwerke angezeigt werden, die den ausgewählten Pool, die Volume-Gruppe oder den SSD-Cache enthalten.
 

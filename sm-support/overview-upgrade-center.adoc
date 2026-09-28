@@ -12,16 +12,18 @@ summary: Nutzen Sie das Upgrade Center, um die neueste Software und Firmware her
 
 
 [role="lead"]
-Nutzen Sie das Upgrade Center, um die neueste Software und Firmware herunterzuladen und Ihre Controller und Laufwerke zu aktualisieren.
+Im Upgrade Center stehen die neueste Software und Firmware zum Download sowie Optionen für das Upgrade Ihrer Controller und Laufwerke zur Verfügung.
 
 
 
+[[controller-upgrade-overview]]
 == Controller-Upgrade – Übersicht
 
 Sie können die Software und die Firmware Ihres Speicherarrays für alle neuesten Funktionen und Fehlerbehebungen aktualisieren.
 
 
 
+[[components-included-in-the-os-controller-upgrade]]
 === Im Betriebssystem-Controller-Upgrade enthaltene Komponenten
 
 Mehrere Storage-Array-Komponenten enthalten Software oder Hardware, die ein gelegentlich Upgrade durchgeführt werden soll.
@@ -37,18 +39,20 @@ image::../media/sam1130-dwg-upgrade-firmware-locations.gif[Speicherorte der Firm
 
 ^1^ Controller-Shelf; ^2^ Festplatten-Shelf; ^3^ Software, Controller-Firmware, Controller NVSRAM Supervisor-Software; ^4^ Laufwerk-Firmware; ^5^ IOM-Firmware; ^6^ Laufwerk-Firmware
 
-Sie können Ihre aktuellen Software- und Firmware-Versionen im Dialogfeld „Software- und Firmware-Bestandsaufnahme“ anzeigen. Gehen Sie zu menu:Support[Upgrade Center] und klicken Sie dann auf den Link für *Software- und Firmware-Bestandsaufnahme*.
+Die aktuellen Software- und Firmware-Versionen sind auf der Seite für Software- und Firmware-Inventar einsehbar. Im Menü:Support[Upgrade center] steht ein Link für *software and firmware inventory* zur Verfügung.
 
 Im Rahmen des Upgrades muss möglicherweise auch der Multipath-/Failover-Treiber und/oder der HBA-Treiber des Hosts aktualisiert werden, damit der Host mit den Controllern korrekt interagieren kann. Informationen zum ermitteln, ob dies der Fall ist, finden Sie im https://imt.netapp.com/matrix/#welcome["Netapp Interoperabilitäts-Matrix-Tool"^].
 
 
 
+[[when-to-stop-io]]
 === Wann I/O gestoppt werden soll
 
 Wenn Ihr Storage Array zwei Controller enthält und Sie einen Multipath-Treiber installiert haben, kann das Storage Array die I/O-Verarbeitung während des Upgrades fortsetzen. Während des Upgrades führt Controller A alle seine Volumes an Controller B durch, aktualisiert seine Volumes und alle Volumes von Controller B und führt dann ein Upgrade für Controller B durch
 
 
 
+[[pre-upgrade-health-check]]
 === Zustandsprüfung vor dem Upgrade
 
 Im Rahmen des Upgrades wird eine Integritätsprüfung vor dem Upgrade ausgeführt. Bei der Integritätsprüfung vor dem Upgrade werden alle Komponenten des Storage Arrays bewertet, um sicherzustellen, dass das Upgrade fortgesetzt werden kann. Die folgenden Bedingungen können das Upgrade verhindern:
@@ -68,12 +72,14 @@ Sie können die Integritätsprüfung vor dem Upgrade auch separat durchführen, 
 
 
 
+[[drive-upgrade-overview]]
 == Überblick über das Laufwerk-Upgrade
 
 Die Laufwerk-Firmware steuert die betrieblichen Eigenschaften eines Laufwerks auf niedriger Ebene. Die Hersteller der Laufwerke veröffentlichen regelmäßig Updates zu Laufwerk-Firmware, um neue Funktionen hinzuzufügen, die Performance zu verbessern und Fehler zu beheben.
 
 
 
+[[online-and-offline-drive-firmware-upgrades]]
 === Upgrades der Online- und Offline-Laufwerk-Firmware
 
 Es gibt zwei Arten von Upgrade-Methoden für die Festplatten-Firmware: Online und offline.
@@ -113,6 +119,7 @@ Die folgenden Laufwerke MÜSSEN die Offline-Methode verwenden:
 
 
 
+[[compatibility]]
 === Kompatibilität
 
 Jede Laufwerk-Firmware-Datei enthält Informationen über den Laufwerkstyp, auf dem die Firmware ausgeführt wird. Sie können die angegebene Firmware-Datei nur auf ein kompatibles Laufwerk herunterladen. System Manager überprüft während des Upgrades die Kompatibilität automatisch.

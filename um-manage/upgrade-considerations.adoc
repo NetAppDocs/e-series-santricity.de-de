@@ -15,12 +15,14 @@ Bevor Sie SANtricity Unified Manager für das Upgrade mehrerer Storage-Arrays ve
 
 
 
+[[current-versions]]
 == Aktuelle Versionen
 
 Sie können die aktuellen Softwareversionen des SANtricity Betriebssystems von der Seite Verwalten von Unified Manager für jedes erkannte Storage-Array anzeigen. Die Version wird in der Spalte SANtricity OS Software angezeigt. Die Informationen zu Controller-Firmware und NVSRAM finden Sie in einem Popup-Dialogfeld, wenn Sie in den einzelnen Zeilen auf die SANtricity OS-Version klicken.
 
 
 
+[[other-components-requiring-upgrade]]
 == Andere Komponenten müssen aktualisiert werden
 
 Im Rahmen des Upgrades müssen Sie eventuell auch den Multipath-/Failover-Treiber oder den HBA-Treiber des Hosts aktualisieren, damit der Host korrekt mit den Controllern interagieren kann.
@@ -29,6 +31,7 @@ Informationen zur Kompatibilität finden Sie im https://imt.netapp.com/matrix/#w
 
 
 
+[[dual-controllers]]
 == Dual-Controller
 
 Wenn ein Storage-Array zwei Controller enthält und ein Multipath-Treiber installiert ist, kann das Storage-Array die I/O-Verarbeitung während des Upgrades fortsetzen. Während des Upgrades erfolgt der folgende Vorgang:

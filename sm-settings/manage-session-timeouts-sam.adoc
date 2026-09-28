@@ -23,14 +23,14 @@ Wenn Access Management mit den in das Array integrierten SAML-Funktionen (Securi
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich Menü:Einstellungen[System].
+. Im linken Bereich *System* auswählen.
 . Wählen Sie im Abschnitt Allgemein die Option *Session-Timeout aktivieren/deaktivieren*.
 +
 Das Dialogfeld „Session-Timeout aktivieren/deaktivieren“ wird geöffnet.
 
 . Verwenden Sie die Spinner-Regler, um die Zeit in Minuten zu erhöhen oder zu verringern.
 +
-Die für System Manager festgelegte minimale Zeitüberschreitung beträgt 15 Minuten.
+Die minimale Zeitüberschreitung, die Sie für den System Manager festlegen können, beträgt 10 Minuten.
 
 +
 [NOTE]

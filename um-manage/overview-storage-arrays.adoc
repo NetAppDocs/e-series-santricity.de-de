@@ -15,6 +15,7 @@ Zum Managen von Storage-Ressourcen müssen Sie zuerst die Storage-Arrays im Netz
 
 
 
+[[how-do-i-discover-arrays]]
 == Wie entdecke ich Arrays?
 
 Verwenden Sie die Seite Hinzufügen/Entdecken, um die zu verwaltenden Speicher-Arrays im Netzwerk Ihres Unternehmens zu suchen und hinzuzufügen. Sie können mehrere Arrays ermitteln oder ein einziges Array erkennen. Dazu geben Sie Netzwerk-IP-Adressen ein, und Unified Manager versucht dann individuelle Verbindungen zu jeder IP-Adresse in diesem Bereich.
@@ -28,6 +29,7 @@ Weitere Informationen:
 
 
 
+[[how-do-i-manage-arrays]]
 == Wie managt ich Arrays?
 
 Nachdem Sie Arrays entdeckt haben, gehen Sie zur Seite *Verwalten - Alle*. Auf dieser Seite können Sie eine Liste der erkannten Speicher-Arrays in Ihrem Netzwerk durchblättern, ihren Status anzeigen und Vorgänge auf einem einzelnen Array oder einer Gruppe von Arrays durchführen.

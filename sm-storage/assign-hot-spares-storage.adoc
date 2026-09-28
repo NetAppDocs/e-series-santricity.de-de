@@ -18,7 +18,7 @@ Sie können ein Hot Spare als Standby-Laufwerk für zusätzlichen Datenschutz in
 * Ein Laufwerk, das die folgenden Kriterien erfüllt, muss verfügbar sein:
 +
 ** Nicht zugewiesen, mit optimalem Status.
-** Derselbe Medientyp wie die Laufwerke in der Volume-Gruppe (z. B. SSDs).
+** Derselbe Medientyp und Laufwerkstyp wie die Laufwerke in der Volume-Gruppe (z. B. SSDs). Bei EF80 und EF50 Systemen muss das Hot-Spare-Laufwerk außerdem dem Capacity-Laufwerkstyp entsprechen.
 ** Derselbe Schnittstellentyp wie die Laufwerke in der Volume-Gruppe (z. B. SAS).
 ** Die Kapazität entspricht oder größer als die genutzte Kapazität der Laufwerke in der Volume-Gruppe.
 
@@ -34,11 +34,7 @@ Hot Spares können auch über den Einrichtungsassistenten zugewiesen werden. Sie
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich *Hardware* aus.
-. Wenn die Grafik die Controller anzeigt, klicken Sie auf die Registerkarte *Laufwerke*.
-+
-Die Grafik ändert sich, um die Laufwerke anstelle der Controller anzuzeigen.
-
+. Im linken Bereich Menü:Hardware[Laufwerke] auswählen.
 . Wählen Sie ein nicht zugewiesenes Laufwerk (grau dargestellt) aus, das Sie als Hot Spare verwenden möchten.
 +
 Das Kontextmenü des Laufwerks wird geöffnet.
@@ -64,6 +60,7 @@ Das Laufwerk wird auf der Seite Hardware in Rosa angezeigt, was darauf hinweist,
 
 
 
+[[results]]
 == Ergebnisse
 
 Wenn ein Laufwerk in einer RAID 1-, RAID 5- oder RAID 6-Volume-Gruppe ausfällt, verwendet der Controller automatisch Redundanzdaten zur Rekonstruktion der Daten vom ausgefallenen Laufwerk auf dem Hot Spare.

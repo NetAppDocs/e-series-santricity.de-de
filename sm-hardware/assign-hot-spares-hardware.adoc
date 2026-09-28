@@ -34,18 +34,14 @@ Hot Spares können auch über den Einrichtungsassistenten zugewiesen werden. Sie
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich *Hardware* aus.
-. Wenn die Grafik die Controller anzeigt, klicken Sie auf die Registerkarte *Laufwerke*.
-+
-Die Grafik ändert sich, um die Laufwerke anstelle der Controller anzuzeigen.
-
+. Im linken Bereich Menü:Hardware[Laufwerke] auswählen.
 . Wählen Sie ein nicht zugewiesenes Laufwerk (grau dargestellt) aus, das Sie als Hot Spare verwenden möchten.
 +
 Das Kontextmenü des Laufwerks wird geöffnet.
 
 . Wählen Sie *Hot Spare zuweisen*.
 +
-Wenn das Laufwerk sicher aktiviert ist, wird das Secure Erase-Laufwerk verwendet? Das Dialogfeld wird geöffnet. Um ein sicheres Laufwerk als Hot Spare zu verwenden, müssen Sie zuerst einen Secure Erase-Vorgang durchführen, um alle Daten zu entfernen und die Sicherheitsattribute zurückzusetzen.
+Wenn das Laufwerk secure-enabled ist, öffnet sich das Dialogfeld „Secure erase drive“. Um ein secure-enabled Laufwerk als Hot Spare zu verwenden, muss zunächst eine Secure Erase-Operation durchgeführt werden, um alle Daten zu entfernen und die Sicherheitsattribute zurückzusetzen.
 
 +
 [CAUTION]
@@ -54,7 +50,7 @@ Wenn das Laufwerk sicher aktiviert ist, wird das Secure Erase-Laufwerk verwendet
 
 ====
 +
-Wenn das Laufwerk *nicht* sicher aktiviert ist, wird das Dialogfeld Hot Spare Drive bestätigen geöffnet.
+Wenn das Laufwerk *nicht* sicherheitsaktiviert ist, wird das Dialogfeld „Hot Spare-Laufwerk zuweisen“ geöffnet.
 
 . Überprüfen Sie den Text im Dialogfeld, und bestätigen Sie den Vorgang.
 +

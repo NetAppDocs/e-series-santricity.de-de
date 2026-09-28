@@ -27,18 +27,13 @@ Wenn Sie bereits die Management-Ports des Storage-Arrays mit DHCP (Dynamic Host 
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich *Hardware* aus.
-. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf die Registerkarte *Controller & Komponenten*.
-+
-Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
-
-. Wählen Sie den zu konfigurierenden Controller aus.
+. Wählen Sie im linken Bereich Menü:Hardware[Controllers and components].
 +
 Das Kontextmenü des Controllers wird angezeigt.
 
 . Wählen Sie *DNS-Server konfigurieren*.
 +
-Das Dialogfeld DNS-Server konfigurieren wird geöffnet.
+Die Seite „Domain Name System (DNS) Server konfigurieren“ wird geöffnet.
 
 . Wählen Sie eine der folgenden Optionen:
 +
@@ -57,4 +52,4 @@ Wenn das Speicherarray auf eine statische DNS-Adresse eingestellt ist, werden ke
 
 
 .Ergebnisse
-Die DNS-Konfiguration wird auf der Registerkarte Controllereinstellungen *DNS/NTP* angezeigt.
+Die DNS-Konfiguration wird in den Controller-Einstellungen im Abschnitt *Domain Name System (DNS) Servereinstellungen* angezeigt.

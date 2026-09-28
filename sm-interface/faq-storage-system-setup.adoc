@@ -16,6 +16,7 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 
 
 
+[[what-if-i-dont-see-all-of-my-hardware-components]]
 == Was ist, wenn ich nicht alle meine Hardwarekomponenten sehe?
 
 Wenn im Dialogfeld Hardware überprüfen nicht alle Hardwarekomponenten angezeigt werden, kann dies bedeuten, dass ein Festplatten-Shelf nicht ordnungsgemäß verbunden ist oder dass ein inkompatibles Shelf im Speicher-Array installiert ist.
@@ -24,6 +25,7 @@ Vergewissern Sie sich, dass alle Laufwerk-Shelfs ordnungsgemäß angeschlossen s
 
 
 
+[[what-if-i-dont-see-all-of-my-hosts]]
 == Was passiert, wenn ich nicht alle meine Hosts sehe?
 
 Wenn Sie die verbundenen Hosts nicht sehen, ist die automatische Erkennung fehlgeschlagen, die Hosts sind nicht ordnungsgemäß angeschlossen oder es sind derzeit keine Hosts angeschlossen.
@@ -36,12 +38,14 @@ Sie können Hosts später konfigurieren, sobald Sie die Einrichtung durchgeführ
 
 
 
+[[how-does-identifying-applications-help-me-manage-my-storage-array]]
 == Wie kann ich anhand der Identifizierung von Applikationen mein Storage-Array managen?
 
 Sie können Leistungsdaten nach Anwendung und Workload anzeigen, um die Latenz, IOPS und MiB/s von Anwendungen und ihren zugehörigen Workloads zu bewerten, um die Leistung zu optimieren. Merkmale wie E/A-Typ, Segmentgröße, Controller-Zugehörigkeit sowie Lese- und Schreibcache sind in der Volume-Konfiguration enthalten.
 
 
 
+[[what-is-a-workload]]
 == Was ist ein Workload?
 
 Für einige Applikationen im Netzwerk, z. B. SQL Server oder Exchange, können Sie einen Workload definieren, der den Storage für die jeweilige Applikation optimiert.
@@ -52,14 +56,16 @@ Während der Volume-Erstellung werden Sie aufgefordert, Fragen zur Verwendung ei
 
 
 
+[[how-do-i-configure-the-delivery-method-for-autosupport]]
 == Wie konfiguriere ich die Bereitstellungsmethode für AutoSupport?
 
-Um Konfigurationsaufgaben für AutoSupport-Bereitstellungsmethoden aufzurufen, gehen Sie zu menu:Support[Support Center] und klicken Sie dann auf die Registerkarte *AutoSupport*.
+Um auf die Konfigurationsaufgaben für AutoSupport Zustellungsmethoden zuzugreifen, zum Menü:Support[AutoSupport] wechseln.
 
 Die folgenden Protokolle werden unterstützt: HTTPS und SMTP.
 
 
 
+[[how-do-i-know-if-i-should-accept-the-recommended-pool-configuration]]
 == Woher weiß ich, ob ich die empfohlene Pool-Konfiguration akzeptieren sollte?
 
 Ob Sie die empfohlene Poolkonfiguration akzeptieren, hängt von einigen Faktoren ab.
@@ -75,6 +81,7 @@ Wenn Sie eine dieser Fragen mit Ja beantwortet haben, sollten Sie die empfohlene
 
 
 
+[[santricity-system-manager-has-not-detected-any-hosts-what-do-i-do]]
 == Der SANtricity System Manager hat keine Hosts erkannt. Was mache ich?
 
 Wenn Sie die verbundenen Hosts nicht sehen, ist die automatische Erkennung fehlgeschlagen, die Hosts sind nicht ordnungsgemäß angeschlossen oder es sind derzeit keine Hosts angeschlossen.

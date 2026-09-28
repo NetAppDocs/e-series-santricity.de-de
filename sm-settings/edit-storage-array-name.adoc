@@ -15,26 +15,16 @@ summary: Sie können den Namen des Speicher-Arrays ändern, der in der Titelleis
 Sie können den Namen des Speicher-Arrays ändern, der in der Titelleiste des SANtricity-Systems Managers angezeigt wird.
 
 .Schritte
-. Wählen Sie im linken Bereich Menü:Einstellungen[System].
-. Suchen Sie unter *Allgemein* das Feld *Name:*.
+. Im linken Bereich *System* auswählen.
+. Unter *Allgemein* auf *Speicherarray-Namen bearbeiten* klicken.
 +
-Wenn kein Name des Speicher-Arrays definiert wurde, wird in diesem Feld „Unbekannt“ angezeigt.
+Das Dialogfeld „Speicherarray-Namen bearbeiten“ wird angezeigt.
 
-. Klicken Sie auf das Symbol *Bearbeiten* (Bleistift) neben dem Namen des Speicherarrays.
-+
-Das Feld kann bearbeitet werden.
-
-. Geben Sie einen neuen Namen ein.
+. Im Feld *Name* einen neuen Namen eingeben.
 +
 Ein Name kann Buchstaben, Ziffern und die Sonderzeichen Unterstrich (_), Strich (-) und Hash-Zeichen (#) enthalten. Ein Name darf keine Leerzeichen enthalten. Ein Name kann maximal 30 Zeichen lang sein. Der Name muss eindeutig sein.
 
-. Klicken Sie auf das Symbol *Speichern* (Häkchen).
-+
-[NOTE]
-====
-Wenn Sie das bearbeitbare Feld schließen möchten, ohne Änderungen vorzunehmen, klicken Sie auf das Symbol *Abbrechen* (X).
-
-====
+. Klicken Sie Auf *Speichern*.
 
 
 .Ergebnisse

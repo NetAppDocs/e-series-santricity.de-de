@@ -18,11 +18,11 @@ Mit den Laufwerksfiltern kann die Ansicht auf bestimmte Typen physischer Laufwer
 
 [NOTE]
 ====
-Wenn alle Laufwerke dieselben physischen Attribute verwenden, wird das Filterfeld *Laufwerke anzeigen, die...* sind, nicht angezeigt. Wenn alle Laufwerke dieselben logischen Attribute verwenden, wird das Filterfeld *Anywhere im Speicherarray* nicht angezeigt.
+Wenn alle Laufwerke die gleichen physischen Attribute aufweisen, wird das Filterfeld *Laufwerke anzeigen, die...* nicht angezeigt. Wenn alle Laufwerke die gleichen logischen Attribute aufweisen, erscheinen die Optionen für den logischen Speicherort im Filterfeld nicht.
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich *Hardware* aus.
+. Im linken Bereich Menü:Hardware[Laufwerke] auswählen.
 . Klicken Sie im ersten Filterfeld (unter *Laufwerke anzeigen, die...* sind) auf den Dropdown-Pfeil, um die verfügbaren Laufwerkstypen und Sicherheitsattribute anzuzeigen.
 +
 Folgende Laufwerktypen können enthalten:
@@ -46,7 +46,7 @@ Wenn Sie eine Option aus dem Feld auswählen, werden die Laufwerke, die nicht Ih
 
 
 
-. Klicken Sie im zweiten Filterfeld auf den Dropdown-Pfeil, um die verfügbaren logischen Positionen für die Laufwerke anzuzeigen.
+. Im selben Filterfeld auf den Dropdown-Pfeil klicken, um die verfügbaren logischen Speicherorte für die Laufwerke anzuzeigen.
 +
 [NOTE]
 ====
@@ -67,7 +67,7 @@ Wenn Sie eine Option aus dem Feld auswählen, werden die Laufwerke, die nicht Ih
 
 
 
-. Optional können Sie *Locator Lights* ganz rechts neben den Filterfeldern einschalten, um die Locator-Leuchten für die angezeigten Laufwerke einzuschalten.
+. Optional besteht die Möglichkeit, ganz rechts im Filterfeld die Option *Positionslichter einschalten* auszuwählen, um die Positionslichter für die angezeigten Laufwerke einzuschalten.
 +
 Diese Aktion unterstützt Sie dabei, die Laufwerke im Speicher-Array physisch zu finden.
 

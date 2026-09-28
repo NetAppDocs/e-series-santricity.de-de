@@ -15,8 +15,7 @@ summary: Sie können den Namen für einen Workload ändern und den zugehörigen 
 Sie können den Namen für einen Workload ändern und den zugehörigen Applikationstyp anzeigen. Ändern Sie den Namen eines Workloads, wenn der aktuelle Name nicht mehr aussagekräftig oder anwendbar ist.
 
 .Schritte
-. Wählen Sie im linken Bereich Menü:Storage[Volumes].
-. Wählen Sie die Registerkarte *Applications and workloads* aus.
+. Im linken Bereich Menü:Storage[Applications and workloads] auswählen.
 +
 Die Ansicht „Anwendungen und Workloads“ wird angezeigt.
 

@@ -32,10 +32,7 @@ Sie können auch einen Snapshot-Zeitplan gleichzeitig erstellen, damit Sie ein S
 +
 Wählen Sie das Objekt (Volume oder Snapshot Consistency Group) für diesen Snapshot-Zeitplan aus, und wählen Sie dann Menü:Copy Services[Create Snapshot Schedule].
 
-** Wählen Sie im linken Bereich Menü:Storage[Snapshots].
-+
-Wählen Sie die Registerkarte *Snapsshot schedules* aus und klicken Sie dann auf *Create*.
-
+** Im linken Bereich Menü:Snapshots[Snapshot schedules] auswählen und anschließend auf *Erstellen* klicken.
 
 
 . Wählen Sie das Objekt (Volume oder Snapshot Consistency Group) für diesen Snapshot-Zeitplan aus, und klicken Sie dann auf *Next*.

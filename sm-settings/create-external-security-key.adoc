@@ -37,7 +37,7 @@ Weitere Informationen zum Serverzertifikat finden Sie in der Dokumentation für 
 In dieser Aufgabe definieren Sie die IP-Adresse des Schlüsselverwaltungsservers und die verwendete Portnummer und laden dann Zertifikate für die externe Schlüsselverwaltung.
 
 .Schritte
-. Wählen Sie im linken Bereich Menü:Einstellungen[System].
+. Im linken Bereich *System* auswählen.
 . Wählen Sie unter * Security Key Management* die Option *External Key erstellen* aus.
 +
 [NOTE]

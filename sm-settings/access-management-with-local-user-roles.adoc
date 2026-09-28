@@ -15,6 +15,7 @@ Administratoren können für das Zugriffsmanagement die im Storage Array erzwung
 
 
 
+[[configuration-workflow]]
 == Konfigurationsworkflow
 
 Lokale Benutzerrollen sind für das Speicher-Array vorkonfiguriert. Um lokale Benutzerrollen für die Authentifizierung zu verwenden, können Administratoren Folgendes tun:
@@ -33,6 +34,7 @@ Der `admin` Der Benutzer hat vollen Zugriff auf alle Funktionen im System.
 
 
 
+[[management]]
 == Vereinfachtes
 
 Bei der Verwendung von nur lokalen Benutzerrollen für die Authentifizierung können Administratoren die folgenden Verwaltungsaufgaben ausführen:

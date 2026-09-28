@@ -20,8 +20,8 @@ Die CLI bietet eine textbasierte Methode zur Konfiguration und Überwachung von 
 Eine Java Runtime Environment (JRE), Version 8 und höher, muss auf dem Managementsystem verfügbar sein, auf dem Sie die CLI-Befehle ausführen möchten.
 
 .Schritte
-. Wählen Sie im linken Bereich Menü:Einstellungen[System].
-. Wählen Sie unter *Add-ons* die Option *Command Line Interface*.
+. Im linken Bereich *System* auswählen.
+. Unter *Add-ons* die Option *Befehlszeilenschnittstelle herunterladen* auswählen.
 +
 Das ZIP-Paket wird in den Browser heruntergeladen.
 

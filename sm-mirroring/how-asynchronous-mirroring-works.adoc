@@ -24,6 +24,7 @@ Diese Art der Spiegelung ist ideal für die Anforderungen an einen unterbrechung
 
 
 
+[[asynchronous-mirroring-session]]
 == Asynchrone Spiegelungssitzung
 
 Das asynchrone Spiegeln erfasst den Status des primären Volumes zu einem bestimmten Zeitpunkt und kopiert nur die Daten, die sich seit der letzten Bildaufzeichnung geändert haben. Durch das asynchrone Spiegeln kann der primäre Standort sofort aktualisiert werden, während der sekundäre Standort mit der Bandbreite aktualisiert werden kann. Die Informationen werden im Cache gespeichert und später gesendet, sobald Netzwerkressourcen verfügbar sind.
@@ -46,6 +47,7 @@ Die Speicher-Arrays müssen eine Firmware-Version von mindestens 7.84 aufweisen.
 
 
 
+[[mirror-consistency-groups-and-mirrored-pairs]]
 == Konsistenzgruppen und gespiegelte Paare spiegeln
 
 Sie erstellen eine SpiegelungsConsistency Group, um die Spiegelbeziehung zwischen dem lokalen Speicher-Array und dem Remote-Speicher-Array herzustellen. Die Beziehung zur asynchronen Spiegelung besteht aus einem gespiegelten Paar: Einem primären Volume auf einem Storage Array und einem sekundären Volume auf einem anderen Storage Array.
@@ -54,6 +56,7 @@ Das Storage-Array, das das primäre Volume enthält, befindet sich normalerweise
 
 
 
+[[synchronization-settings]]
 == Synchronisierungseinstellungen
 
 Beim Erstellen eines gespiegelten Paares definieren Sie außerdem die Synchronisierungspriorität und die Resynchronisierungsrichtlinie, mit der das gespiegelte Paar den Neusynchronisierung nach einer Kommunikationsunterbrechung abgeschlossen.
@@ -72,6 +75,7 @@ Sie können Daten auf dem Remote-Speicher-Array entweder manuell oder automatisc
 
 
 
+[[reserved-capacity-and-asynchronous-mirroring]]
 == Reservierte Kapazität und asynchrone Spiegelung
 
 Mithilfe der reservierten Kapazität werden die Unterschiede zwischen dem primären und dem sekundären Volume nachverfolgt, wenn keine Synchronisierung stattfindet. Zudem überwacht er die Synchronisierungsstatistiken für jedes gespiegelte Paar.
@@ -80,6 +84,7 @@ Jedes Volume in einem gespiegelten Paar benötigt eine eigene reservierte Kapazi
 
 
 
+[[configuration-and-management]]
 == Konfiguration und Management
 
 Um die Spiegelung zwischen zwei Arrays zu aktivieren und zu konfigurieren, müssen Sie die Unified Manager-Schnittstelle verwenden. Sobald die Spiegelung aktiviert ist, können Sie gespiegelte Paare und Synchronisierungseinstellungen in System Manager verwalten.

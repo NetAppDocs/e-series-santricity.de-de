@@ -15,6 +15,7 @@ Die nachfolgenden Links führen zu Dokumentationen für ältere Versionen der E-
 
 
 
+[[hardware-documentation-for-earlier-releases]]
 == Hardware-Dokumentation für frühere Versionen
 
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2484026["Installation von E2712, E2724, E5612, E5624 Controller-Laufwerksfächern und DE1600 und DE5600 ErweiterungsLaufwerksfächern"^]
@@ -30,10 +31,12 @@ Die nachfolgenden Links führen zu Dokumentationen für ältere Versionen der E-
 
 
 
+[[software-documentation-for-earlier-releases]]
 == Softwaredokumentation für frühere Versionen
 
 
 
+[[santricity-release-11-8]]
 === SANtricity Version 11.8
 
 * https://docs.netapp.com/us-en/e-series-santricity-118/index.html["Die Hilfe zu System Manager"^]
@@ -42,6 +45,7 @@ Die nachfolgenden Links führen zu Dokumentationen für ältere Versionen der E-
 
 
 
+[[santricity-release-11-7]]
 === SANtricity Version 11.7
 
 * https://docs.netapp.com/us-en/e-series-santricity-117/index.html["Die Hilfe zu System Manager"^]
@@ -50,6 +54,7 @@ Die nachfolgenden Links führen zu Dokumentationen für ältere Versionen der E-
 
 
 
+[[santricity-release-11-6]]
 === SANtricity Version 11.6
 
 * https://docs.netapp.com/us-en/e-series-santricity-116/index.html["Die Hilfe zu System Manager"^]
@@ -58,6 +63,7 @@ Die nachfolgenden Links führen zu Dokumentationen für ältere Versionen der E-
 
 
 
+[[santricity-release-11-5]]
 === SANtricity Version 11.5
 
 * https://docs.netapp.com/us-en/e-series-santricity-115/index.html["Die Hilfe zu System Manager"^]
@@ -65,6 +71,7 @@ Die nachfolgenden Links führen zu Dokumentationen für ältere Versionen der E-
 
 
 
+[[santricity-release-11-4]]
 === SANtricity Version 11.4
 
 * https://mysupport.netapp.com/ecm/ecm_get_file/ECMLP2862590["HILFE BEI AMW (E2700, E5600/EF560)"^]

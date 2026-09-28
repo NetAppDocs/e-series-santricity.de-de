@@ -24,11 +24,7 @@ Die iSCSI-Einstellungen und -Funktionen werden nur angezeigt, wenn Ihr Speichera
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich *Hardware* aus.
-. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf die Registerkarte *Controller & Komponenten*.
-+
-Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
-
+. Wählen Sie im linken Bereich Menü:Hardware[Controllers and components].
 . Klicken Sie auf den Controller mit den iSCSI-Ports, die Sie konfigurieren möchten.
 +
 Das Kontextmenü des Controllers wird angezeigt.
@@ -58,7 +54,7 @@ Um alle Porteinstellungen anzuzeigen, klicken Sie rechts im Dialogfeld auf den L
 
 
  a| 
-Konfigurierte ethernet-Port-Geschwindigkeit (erscheint nur für bestimmte Arten von Host-Schnittstellenkarten)
+Konfigurierte Ethernet-Port-Geschwindigkeit (erscheint nur bei bestimmten Arten von Host-Schnittstellenkarten)
  a| 
 Wählen Sie die Geschwindigkeit aus, die der Geschwindigkeitsfähigkeit des SFP am Port entspricht.
 
@@ -144,7 +140,7 @@ Wählen Sie diese Option aus, um ein VLAN zu aktivieren und seine ID einzugeben.
 
 
  a| 
-ethernet-Priorität aktivieren (verfügbar durch Klicken auf *Weitere Einstellungen anzeigen*.)
+Ethernet-Priorität aktivieren (verfügbar durch Klicken auf *Weitere Einstellungen anzeigen*)
  a| 
 Wählen Sie diese Option aus, um den Parameter zu aktivieren, der die Priorität des Zugriffs auf das Netzwerk bestimmt. Verwenden Sie den Schieberegler, um eine Priorität zwischen 1 (niedrigste) und 7 (höchste) auszuwählen.
 

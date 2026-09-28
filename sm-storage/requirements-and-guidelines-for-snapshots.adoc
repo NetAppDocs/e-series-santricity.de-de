@@ -15,6 +15,7 @@ summary: Überprüfen Sie bei der Erstellung und Verwendung von Snapshots die fo
 
 
 
+[[snapshot-images-and-snapshot-groups]]
 == Snapshot Images und Snapshot Gruppen
 
 * Jedes Snapshot Image ist mit genau einer Snapshot-Gruppe verknüpft.
@@ -29,6 +30,7 @@ Sie können Snapshot-Gruppen auf der Seite „Pools und Volumengruppen“ anzeig
 
 
 
+[[snapshot-consistency-group]]
 == Snapshot Konsistenzgruppe
 
 * Eine Snapshot Konsistenzgruppe enthält eine Snapshot-Gruppe für jedes Volume, das Mitglied der Snapshot-Konsistenzgruppe ist.
@@ -39,6 +41,7 @@ Sie können Snapshot-Gruppen auf der Seite „Pools und Volumengruppen“ anzeig
 
 
 
+[[base-volume]]
 == Basis-Volume
 
 * Ein Snapshot-Volume muss dieselben Data Assurance (da) und Sicherheitseinstellungen haben wie das zugehörige Basis-Volume.
@@ -49,6 +52,7 @@ Sie können Snapshot-Gruppen auf der Seite „Pools und Volumengruppen“ anzeig
 
 
 
+[[reserved-capacity]]
 == Reservierte Kapazität
 
 * Die reservierte Kapazität ist nur mit einem Basis-Volume verbunden.
@@ -58,6 +62,7 @@ Sie können Snapshot-Gruppen auf der Seite „Pools und Volumengruppen“ anzeig
 
 
 
+[[pending-snapshot-images]]
 == Ausstehende Snapshot-Images
 
 Die Erstellung des Snapshot-Images kann unter folgenden Bedingungen im Status „Ausstehend“ verbleiben:
@@ -68,6 +73,7 @@ Die Erstellung des Snapshot-Images kann unter folgenden Bedingungen im Status �
 
 
 
+[[maximum-number-of-snapshot-images]]
 == Maximale Anzahl von Snapshot Images
 
 * Wenn ein Volume Mitglied einer Snapshot Konsistenzgruppe ist, erstellt System Manager eine Snapshot Gruppe für das Mitglied-Volume. Diese Snapshot-Gruppe zählt zur maximal zulässigen Anzahl von Snapshot-Gruppen pro Basis-Volume.
@@ -81,12 +87,14 @@ Die Erstellung des Snapshot-Images kann unter folgenden Bedingungen im Status �
 
 
 
+[[auto-deletion]]
 == Automatisches Löschen
 
 Wenn die Snapshot-Gruppe oder die Snapshot-Konsistenzgruppe für das automatische Löschen aktiviert ist, löscht System Manager das älteste Snapshot-Image, wenn das System ein neues für die Gruppe erstellt.
 
 
 
+[[rollback-operation]]
 == Rollback-Vorgang
 
 * Sie können die folgenden Aktionen nicht ausführen, wenn ein Rollback-Vorgang ausgeführt wird:

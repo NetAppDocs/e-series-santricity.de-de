@@ -22,6 +22,7 @@ Die Verwendung von CA-signierten Zertifikaten ist ein dreistufiges Verfahren.
 
 
 
+[[step-1-complete-a-csr-file]]
 == Schritt 1: Eine CSR-Datei ausfüllen
 
 Sie müssen zuerst eine CSR-Datei (Certificate Signing Request) generieren, die Ihre Organisation und das Host-System identifiziert, auf dem der Web Services Proxy und Unified Manager installiert sind.
@@ -57,6 +58,7 @@ Alternativ können Sie eine CSR-Datei mit einem Tool wie OpenSSL generieren und 
 
 
 
+[[step-2-submit-csr-file]]
 == Schritt 2: CSR-Datei senden
 
 Nachdem Sie eine CSR-Datei (Certificate Signing Request) erstellt haben, senden Sie sie an eine Certificate Authority (CA), um signierte Managementzertifikate für das System zu erhalten, das Unified Manager und den Web Services Proxy hostet.
@@ -81,6 +83,7 @@ Der Speicherort des Downloads hängt von Ihrem Browser ab.
 
 
 
+[[step-3-import-management-certificates]]
 == Schritt 3: Import Management Zertifikate
 
 Nachdem Sie von der Zertifizierungsstelle (CA) signierte Zertifikate erhalten haben, importieren Sie die Zertifikate in das Host-System, auf dem die Web Services Proxy- und Unified Manager-Schnittstelle installiert sind.

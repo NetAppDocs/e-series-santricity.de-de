@@ -8,7 +8,7 @@ settings:
     harmony_enabled: false
   rss_page: whats-new.html
   versions:
-  - version-number: 12.0x
+  - version-number: 12.1x
     url: "/e-series-santricity"
   - version-number: 11.9x
     url: "/e-series-santricity-119"
@@ -17,7 +17,7 @@ settings:
   langs: de-de,us-en,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: SANtricity software 12.00 Dokumentation
+  - title: SANtricity software 12.10 Dokumentation
     url: "/index.html"
   - title: Versionshinweise
     entries:
@@ -509,8 +509,6 @@ sidebar:
           url: "/sm-hardware/view-hardware-components.html"
         - title: Komponentenstatus ein- oder ausblenden
           url: "/sm-hardware/show-or-hide-component-status.html"
-        - title: Wechseln Sie zwischen Vorder- und Rückseite
-          url: "/sm-hardware/switch-between-front-and-back-views.html"
         - title: Ansichtsreihenfolge der Shelfs ändern
           url: "/sm-hardware/change-view-order-of-shelves.html"
         - title: Die Positionsleuchte für den Regal einschalten

@@ -16,13 +16,14 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 
 
 
+[[what-is-a-hot-spare-drive]]
 == Was ist eine Hot-Spare-Festplatte?
 
 Hot Spares fungieren als Standby-Laufwerke in RAID 1-, RAID 5- oder RAID 6-Volume-Gruppen. Es handelt sich dabei um voll funktionsfähige Laufwerke, die keine Daten enthalten. Wenn ein Laufwerk in der Volume-Gruppe ausfällt, rekonstruiert der Controller die Daten vom ausgefallenen Laufwerk automatisch auf eine Hot Spare-Festplatte.
 
 Wenn ein Laufwerk im Speicher-Array ausfällt, wird das Hot-Spare-Laufwerk automatisch durch das ausgefallene Laufwerk ersetzt, ohne dass ein physischer Austausch erforderlich ist. Wenn das Hot-Spare-Laufwerk verfügbar ist, wenn ein Laufwerk ausfällt, verwendet der Controller Redundanzdaten, um die Daten von dem ausgefallenen Laufwerk auf dem Hot-Spare-Laufwerk zu rekonstruieren.
 
-Ein Hot-Spare-Laufwerk ist nicht einer bestimmten Volume-Gruppe zugewiesen. Stattdessen können Sie ein Hot-Spare-Laufwerk für alle ausgefallenen Laufwerke im Storage-Array mit derselben Kapazität oder kleinerer Kapazität verwenden. Ein Hot-Spare-Laufwerk muss vom gleichen Medientyp (HDD oder SSD) sein wie die Laufwerke, die es schützt.
+Ein Hot-Spare-Laufwerk ist keiner bestimmten Volume-Gruppe zugeordnet. Stattdessen kann ein Hot-Spare-Laufwerk für jedes ausgefallene Laufwerk im Storage-Array mit gleicher oder geringerer Kapazität verwendet werden. Ein Hot-Spare-Laufwerk muss denselben Medientyp (HDD oder SSD) wie die Laufwerke aufweisen, die es schützt. Bei EF80 und EF50 Systemen muss das Hot-Spare-Laufwerk außerdem dem Capacity-Laufwerkstyp entsprechen.
 
 [NOTE]
 ====
@@ -31,6 +32,7 @@ Hot-Spare-Festplatten werden mit Pools nicht unterstützt. Anstatt Hot-Spare-Fes
 ====
 
 
+[[what-is-preservation-capacity]]
 == Was ist Erhaltungskapazität?
 
 Bei der Konservierung wird die Kapazität (Anzahl der Laufwerke) verwendet, die in einem Pool reserviert ist, um potenzielle Laufwerksausfälle zu unterstützen.
@@ -41,6 +43,7 @@ Pools nutzen während der Rekonstruktion haltende Kapazitäten, wohingegen Volum
 
 
 
+[[why-would-i-logically-replace-a-drive]]
 == Warum sollte ich ein Laufwerk logisch ersetzen?
 
 Wenn ein Laufwerk ausfällt oder Sie es aus einem anderen Grund ersetzen möchten und ein nicht zugewiesenes Laufwerk im Speicher-Array vorhanden ist, können Sie das ausgefallene Laufwerk logisch durch das nicht zugewiesene Laufwerk ersetzen. Wenn Sie kein nicht zugewiesenes Laufwerk haben, können Sie stattdessen das Laufwerk physisch ersetzen.
@@ -49,10 +52,11 @@ Die Daten aus dem Originallaufwerk werden kopiert oder auf das Ersatzlaufwerk re
 
 
 
+[[where-can-i-view-the-status-of-a-drive-undergoing-reconstruction]]
 == Wo kann ich den Status eines Laufwerks sehen, der derzeit rekonstruiert wird?
 
-Sie können den Rekonstruktionsstatus des Laufwerks über die Konsole „Operations in Progress“ anzeigen.
+Den Status der Laufwerksrekonstruktion können Sie im Dashboard „Laufende Vorgänge“ einsehen.
 
-Klicken Sie im linken Bereich unter dem Menü *Storage* oben rechts auf den Link *Operations in Progress*.
+Im linken Bereich das Menü:Überwachung[Laufende Vorgänge] auswählen.
 
 Je nach Laufwerk kann die vollständige Rekonstruktion sehr viel Zeit in Anspruch nehmen. Wenn sich die Volume-Eigentümerschaft geändert hat, kann anstelle der schnellen Wiederherstellung eine vollständige Rekonstruktion stattfinden.

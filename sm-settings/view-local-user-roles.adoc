@@ -2,7 +2,7 @@
 permalink: sm-settings/view-local-user-roles.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, view, local, user, roles, 
-summary: 'Auf der Registerkarte Lokale Benutzerrollen können Sie die Zuordnungen der Benutzerprofile zu den Standardrollen anzeigen. Diese Zuordnungen sind Teil der RBAC (rollenbasierte Zugriffssteuerung), die im Storage Array durchgesetzt wird.' 
+summary: 'Auf der Seite „Lokale Benutzerrollen“ sind die Zuordnungen der Benutzerprofile zu den Standardrollen einsehbar. Diese Zuordnungen sind Teil der rollenbasierten Zugriffskontrollen (RBAC), die im Storage-Array durchgesetzt werden.' 
 ---
 = Lokale Benutzerrollen im SANtricity System Manager anzeigen
 :allow-uri-read: 
@@ -12,7 +12,7 @@ summary: 'Auf der Registerkarte Lokale Benutzerrollen können Sie die Zuordnunge
 
 
 [role="lead"]
-Auf der Registerkarte Lokale Benutzerrollen können Sie die Zuordnungen der Benutzerprofile zu den Standardrollen anzeigen. Diese Zuordnungen sind Teil der RBAC (rollenbasierte Zugriffssteuerung), die im Storage Array durchgesetzt wird.
+Auf der Seite „Lokale Benutzerrollen“ sind die Zuordnungen der Benutzerprofile zu den Standardrollen einsehbar. Diese Zuordnungen sind Teil der rollenbasierten Zugriffskontrollen (RBAC), die im Storage-Array durchgesetzt werden.
 
 .Bevor Sie beginnen
 Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
@@ -21,8 +21,7 @@ Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministrat
 Die Benutzerprofile und Zuordnungen können nicht geändert werden. Es können nur Passwörter geändert werden.
 
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Access Management].
-. Wählen Sie die Registerkarte * Lokale Benutzerrollen* aus.
+. Im linken Bereich Menü:Authentifizierung[Lokale Benutzerrollen] auswählen.
 +
 Die Benutzerprofile sind in der Tabelle aufgeführt:
 

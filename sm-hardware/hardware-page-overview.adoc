@@ -15,6 +15,7 @@ Die Seite Hardware bietet eine grafische Darstellung der physischen Komponenten 
 
 
 
+[[shelves]]
 == Shelfs
 
 Ein Shelf ist eine Komponente, die die Hardware für das Storage-Array enthält (Controller, Strom-/Lüfterbehälter und Laufwerke). Es gibt zwei Arten von Shelfs:
@@ -25,7 +26,7 @@ Ein Shelf ist eine Komponente, die die Hardware für das Storage-Array enthält 
 
 Die Einlegeböden sind in drei Größen für Gehäuse mit bis zu 12, 24 oder 60 Laufwerken erhältlich. Jedes Shelf enthält eine ID-Nummer, die von der Controller-Firmware zugewiesen wird. Die ID wird oben links in der Shelf-Ansicht angezeigt.
 
-In der Shelf-Ansicht auf der Seite Hardware werden die Komponenten vorne oder hinten angezeigt. Sie können zwischen den beiden Ansichten wechseln, indem Sie entweder die Registerkarten *Drives* oder *Controller* oben rechts in der Shelf-Ansicht auswählen. Sie können auch *Alle anzeigen* oder *Alle anzeigen* von unten auf der Seite auswählen. Die Vorder- und Rückseite zeigen Folgendes:
+Die Regalansicht auf der Hardwareseite zeigt die vorderen oder hinteren Komponenten an. Zwischen den beiden Ansichten kann durch Auswahl der Registerkarten *Laufwerke* oder *Controller und Komponenten* oben rechts in der Regalansicht gewechselt werden. Außerdem kann unten auf der Seite *Alle Vorderseiten anzeigen* oder *Alle Rückseiten anzeigen* ausgewählt werden. Die Vorder- und Rückansicht zeigen Folgendes:
 
 * *Front Components* -- Laufwerke und leere Laufwerksschächte.
 * *Back Components* -- Controller und Power/Fan Kanister (für Controller-Shelves) oder die IOMs und Power/Fan Kanister (für Laufwerk-Shelfs).
@@ -41,6 +42,7 @@ Sie können die folgenden Funktionen in Bezug auf die Shelves ausführen:
 
 
 
+[[controllers]]
 == Controller
 
 Ein Controller ist die kombinierte Hardware und Firmware, die Storage-Array- und Managementfunktionen implementiert. Sie umfasst Cache-Speicher, Laufwerksunterstützung und Host-Interface-Unterstützung.
@@ -57,6 +59,7 @@ Sie können die folgenden Funktionen für Controller ausführen:
 
 
 
+[[drives]]
 == Laufwerke
 
 Das Storage-Array kann Festplattenlaufwerke (HDDs) oder Solid State-Laufwerke (SSDs) umfassen. Je nach Shelf-Größe können bis zu 12, 24 oder 60 Laufwerke im Shelf installiert werden.

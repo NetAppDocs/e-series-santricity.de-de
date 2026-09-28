@@ -23,7 +23,7 @@ Sie können die asynchrone Spiegelung auf den lokalen und Remote-Speicher-Arrays
 Wenn Sie die asynchrone Spiegelung deaktivieren, können auf den lokalen und Remote-Storage-Arrays keine Spiegelungsaktivitäten stattfinden.
 
 .Schritte
-. Wählen Sie im linken Bereich Menü:Storage[Asynchronous Mirroring].
+. Im linken Bereich Menü:Spiegelung[Asynchrone Spiegelkonsistenzgruppen] auswählen.
 . Menü wählen:Sonstige Aufgaben[Deaktivieren].
 +
 Das System zeigt eine Bestätigung an.

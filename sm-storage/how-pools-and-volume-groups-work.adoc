@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, pools, volume group, 
 summary: 'Um Speicher bereitzustellen, erstellen Sie entweder einen Pool oder eine Volume-Gruppe, die die Festplatten (HDD) oder Solid State Disk (SSD) Laufwerke enthalten, die Sie in Ihrem Speicher-Array verwenden möchten.' 
 ---
-= Funktionsweise von Pools und Volume-Gruppen in der SANtricity-Software
+= Funktionsweise von Pools und Volume Groups in SANtricity software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -36,6 +36,7 @@ Es können zwar Pools oder Volume-Gruppen auf demselben Speichersystem vorhanden
 
 
 
+[[pools]]
 == Pools
 
 Pools wurden entwickelt, um physische Festplatten in einem großen Storage-Bereich zu aggregieren und bieten dafür besseren RAID-Schutz. Ein Pool erstellt viele virtuelle RAID-Sätze von der Gesamtzahl der Laufwerke, die dem Pool zugewiesen sind. Dabei werden die Daten gleichmäßig auf alle teilnehmenden Laufwerke verteilt. Wenn ein Laufwerk verloren geht oder hinzugefügt wird, verteilt System Manager die Daten dynamisch über alle aktiven Laufwerke hinweg.
@@ -44,15 +45,17 @@ Pools funktionieren als weitere RAID-Ebene und virtualisieren die zugrunde liege
 
 
 
+[[drive-matching]]
 === Abstimmung des Laufwerks
 
-Es besteht die Möglichkeit, entweder HDDs oder SSDs zur Nutzung in Pools zur Verfügung zu stellen. Allerdings müssen wie bei Volume-Gruppen alle Laufwerke im Pool dieselbe Technologie verwenden. Die Controller wählen automatisch aus, welche Laufwerke enthalten sollen. Sie müssen daher sicherstellen, dass Sie über eine ausreichende Anzahl an Laufwerken für die von Ihnen gewählte Technologie verfügen.
+Sie können für die Verwendung in Pools entweder HDDs oder SSDs auswählen, jedoch müssen wie bei Volume-Gruppen alle Laufwerke im Pool dieselbe Technologie verwenden. Die Controller wählen automatisch aus, welche Laufwerke einbezogen werden, daher ist sicherzustellen, dass eine ausreichende Anzahl von Laufwerken für die gewählte Technologie vorhanden ist. Auf EF80 und EF50 Systemen werden Performance und Capacity NVMe SSD-Laufwerke als separate Laufwerkstypen behandelt; sie können im selben Storage-Array koexistieren, müssen sich jedoch in separaten Pools befinden.
 
 
 
+[[managing-failed-drives]]
 === Verwalten ausgefallener Laufwerke
 
-Pools haben eine minimale Kapazität von 11 Laufwerken, aber die Kapazität eines Laufwerks ist bei einem Laufwerksausfall für freie Kapazität reserviert. Diese freie Kapazität wird als „`Erhaltungskapazität`“ bezeichnet.
+Pools haben eine Mindestkapazität von 11 Laufwerken, jedoch ist die Kapazität eines Laufwerks als Reservekapazität für den Fall eines Laufwerksausfalls reserviert. Diese Reservekapazität wird als „Erhaltungskapazität“ bezeichnet. Auf EF80 und EF50 Systemen benötigen Performance Pools mindestens 6 Laufwerke und Capacity Pools mindestens 12 Laufwerke. Bei Capacity-DDP Pools wird bis zu 10 Laufwerken RAID1-DDP-Schutz verwendet, ab 11 oder mehr Laufwerken erfolgt ein Wechsel zu RAID6-DDP, wobei die Mindestgröße eines Capacity-DDP Pools 8 Laufwerke beträgt.
 
 Wenn Pools erstellt werden, wird eine bestimmte Menge an Kapazität für den Notfall-Einsatz erhalten. Diese Kapazität wird in System Manager mit einer Anzahl von Laufwerken ausgedrückt, die eigentliche Implementierung wird jedoch über alle Laufwerke hinweg verteilt. Die vorbehaltenen Kapazitätsmengen basieren auf der Anzahl der Laufwerke im Pool.
 
@@ -60,6 +63,70 @@ Nach der Erstellung des Pools können Sie den Wert für die unveränderte Kapazi
 
 
 
+[[maximum-capacity]]
+=== Maximale Kapazität
+
+Die maximal unterstützte Kapazität des Dynamic Disk Pool (DDP) pro Speichersystem hängt vom Controller-Modell und der installierten SANtricity OS-Version ab.
+
+[cols="18,13,13,10,13,13,10,10"]
+|===
+| OS Version | EF50 | EF80 | E4000 | EF300 | EF600 | E280x | E5700 
+
+
+| 11.90 R6 und darunter | _Nicht zutreffend_ | _Nicht zutreffend_ | 6  a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+ a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+| 6 | 6 
+
+
+| 11,90 R7 | _Nicht zutreffend_ | _Nicht zutreffend_ | 6  a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+ a| 
+* 16 (NVMe)
+* 8 (SAS)
+
+| 6 | 8 
+
+
+| 12.00 GA | 12 | 12 | _Nicht zutreffend_ | _Nicht zutreffend_ | _Nicht zutreffend_ | _Nicht zutreffend_ | _Nicht zutreffend_ 
+
+
+| 12.10 und höher  a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+ a| 
+* 16 (NVMe)
+* 8 (SAS)
+
+| 6  a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+ a| 
+* 16 (NVMe)
+* 8 (SAS)
+
+| _Nicht zutreffend_ | _Nicht zutreffend_ 
+
+
+ a| 
+[NOTE]
+====
+Bei Zellen mit zwei Zahlen steht die erste Zahl für das NVMe Shelf und die zweite Zahl für SAS Erweiterungs Shelfs. Die maximalen DDP-Kapazitäten von SAS und NVMe sind nicht additiv. Die DDP-Kapazität im Basis Tray wird von der maximalen Kapazität in den SAS Erweiterungs Shelfs abgezogen und umgekehrt.
+
+====
+|===
+
+
+[[volume-groups]]
 == Volume-Gruppen
 
 Volume-Gruppen definieren, wie Kapazität im Storage-System Volumes zugewiesen wird. Festplattenlaufwerke sind in RAID-Gruppen eingeteilt und Volumes befinden sich über die Laufwerke in einer RAID-Gruppe hinweg. Aus diesem Grund identifizieren die Konfigurationseinstellungen der Volume-Gruppe, welche Laufwerke Teil der Gruppe sind und welches RAID-Level verwendet wird.
@@ -68,14 +135,16 @@ Wenn Sie eine Volume-Gruppe erstellen, wählen Controller automatisch die Laufwe
 
 
 
+[[drive-matching]]
 === Abstimmung des Laufwerks
 
 Für die Größe und Performance müssen die Laufwerke in der Volume-Gruppe übereinstimmen. Wenn in der Volume-Gruppe kleinere und größere Laufwerke vorhanden sind, werden alle Laufwerke als die kleinste Kapazitätsgröße erkannt. Wenn es langsamere und schnellere Laufwerke in der Volume-Gruppe gibt, werden alle Laufwerke mit der langsamsten Geschwindigkeit erkannt. Diese Faktoren wirken sich auf die Performance und die Gesamtkapazität des Storage-Systems aus.
 
-Es ist nicht möglich, unterschiedliche Laufwerktechnologien (HDD- und SSD-Laufwerke) miteinander zu kombinieren. RAID 3, 5 und 6 sind auf maximal 30 Laufwerke begrenzt. RAID 1 und RAID 10 verwenden eine Spiegelung, daher müssen diese Volume-Gruppen eine gleichmäßige Anzahl an Festplatten aufweisen.
+Unterschiedliche Laufwerkstechnologien (HDD und SSD-Laufwerke) können nicht kombiniert werden. Bei EF80 und EF50 Systemen sind Performance und Capacity NVMe SSD-Laufwerke unterschiedliche Laufwerkstypen und können nicht in derselben Volume-Gruppe verwendet werden; die Mindestanzahl an Laufwerken beträgt 6 für Performance und 12 für Capacity. RAID 3, 5 und 6 sind auf maximal 30 Laufwerke beschränkt. RAID 1 und RAID 10 verwenden Spiegelung, daher müssen diese Volume-Gruppen eine gerade Anzahl an Festplatten aufweisen.
 
 
 
+[[managing-failed-drives]]
 === Verwalten ausgefallener Laufwerke
 
 Volume-Gruppen verwenden Hot-Spare-Laufwerke als Standby, falls ein Laufwerk in RAID 1/10-, RAID 3-, RAID 5- oder RAID 6-Volumes einer Volume-Gruppe ausfällt. Ein Hot-Spare-Laufwerk enthält keine Daten und fügt Ihrem Speicher-Array eine weitere Ebene von Redundanz hinzu.

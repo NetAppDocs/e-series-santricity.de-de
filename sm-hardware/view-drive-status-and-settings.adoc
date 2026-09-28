@@ -14,20 +14,16 @@ summary: Sie können Status und Einstellungen für die Laufwerke anzeigen, z. B.
 Sie können Status und Einstellungen für die Laufwerke anzeigen, z. B. Medientyp, Schnittstellentyp und Kapazität.
 
 .Schritte
-. Wählen Sie im linken Bereich *Hardware* aus.
-. Wenn die Grafik die Controller anzeigt, klicken Sie auf die Registerkarte *Laufwerke*.
-+
-Die Grafik ändert sich, um die Laufwerke anstelle der Controller anzuzeigen.
-
+. Im linken Bereich Menü:Hardware[Laufwerke] auswählen.
 . Wählen Sie das Laufwerk aus, für das Sie Status und Einstellungen anzeigen möchten.
 +
 Das Kontextmenü des Laufwerks wird geöffnet.
 
 . Wählen Sie *Anzeigeeinstellungen*.
 +
-Das Dialogfeld Laufwerkeinstellungen wird geöffnet.
+Das Bedienfeld „Laufwerkeinstellungen“ wird geöffnet.
 
-. Um alle Einstellungen anzuzeigen, klicken Sie oben rechts im Dialogfeld auf *Weitere Einstellungen anzeigen*.
+. Alle Einstellungen sind im Bedienfeld „Laufwerkseinstellungen“ durch Scrollen einsehbar.
 +
 .Felddetails
 [%collapsible]

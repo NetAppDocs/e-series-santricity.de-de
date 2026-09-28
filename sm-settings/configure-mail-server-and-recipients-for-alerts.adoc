@@ -27,7 +27,7 @@ Um einen vollständig qualifizierten Domänennamen zu verwenden, müssen Sie auf
 
 
 .Über diese Aufgabe
-Diese Aufgabe beschreibt die Konfiguration des E-Mail-Servers, die Eingabe von E-Mail-Adressen für den Absender und die Empfänger und das Testen aller von der Seite Warnungen eingegebenen E-Mail-Adressen.
+In dieser Aufgabe wird beschrieben, wie der Mailserver konfiguriert wird, E-Mail-Adressen für Absender und Empfänger eingegeben werden und alle eingegebenen E-Mail-Adressen auf der Seite „E-Mail-Benachrichtigungen“ getestet werden.
 
 [NOTE]
 ====
@@ -35,10 +35,9 @@ E-Mail-Benachrichtigungen können auch über den Einrichtungsassistenten konfigu
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Alerts].
-. Wählen Sie die Registerkarte *E-Mail* aus.
+. Im linken Bereich Menü:Benachrichtigungen[E-Mail-Benachrichtigungen] auswählen.
 +
-Wenn noch kein E-Mail-Server konfiguriert ist, wird auf der Registerkarte E-Mail „Mailserver konfigurieren“ angezeigt.
+Wenn noch kein E-Mail-Server konfiguriert ist, wird auf der Seite "Mail Server konfigurieren" angezeigt.
 
 . Wählen Sie *E-Mail-Server Konfigurieren*.
 +
@@ -58,7 +57,7 @@ Um einen vollständig qualifizierten Domänennamen zu verwenden, müssen Sie auf
 ** *Benutzername und Passwort* -- Geben Sie bei Bedarf einen Benutzernamen und ein Passwort für die Authentifizierung mit dem ausgehenden Absender und dem Mail-Server ein.
 ** *Kontaktinformationen in E-Mail einfügen* -- um die Kontaktdaten des Absenders in die Warnmeldung aufzunehmen, wählen Sie diese Option aus, und geben Sie dann einen Namen und eine Telefonnummer ein.
 +
-Nachdem Sie auf *Speichern* geklickt haben, werden die E-Mail-Adressen auf der Seite Warnungen auf der Registerkarte E-Mail angezeigt.
+Nach dem Klicken auf *Speichern* erscheinen die E-Mail-Adressen auf der Seite „E-Mail-Benachrichtigungen“.
 
 
 
@@ -68,7 +67,7 @@ Das Dialogfeld E-Mails hinzufügen wird geöffnet.
 
 . Geben Sie eine oder mehrere E-Mail-Adressen für die Empfänger der Warnmeldung ein, und klicken Sie dann auf *Hinzufügen*.
 +
-Die E-Mail-Adressen werden auf der Seite „Meldungen“ angezeigt.
+Die E-Mail-Adressen erscheinen auf der Seite „E-Mail-Benachrichtigungen“.
 
 . Wenn Sie sicherstellen möchten, dass die E-Mail-Adressen gültig sind, klicken Sie auf *Alle E-Mails testen*, um Testmeldungen an die Empfänger zu senden.
 

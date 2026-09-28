@@ -24,7 +24,7 @@ Die AutoSupport-Funktion muss aktiviert sein. Sie sehen, ob die Funktion auf der
 
 
 .Schritte
-. Wählen Sie im linken Bereich Menü:Support[Support Center > AutoSupport] Tab.
+. Im linken Bereich Menü:Support[AutoSupport] auswählen.
 . Wählen Sie *AutoSupport-Entsendungen planen*.
 +
 Der Assistent AutoSupport-Entsendungen planen wird angezeigt.

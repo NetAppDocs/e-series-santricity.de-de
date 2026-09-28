@@ -15,12 +15,14 @@ Einige Controller enthalten einen Port für die Implementierung von NVMe (Non-Vo
 
 
 
+[[what-is-nvme]]
 == Was ist NVMe?
 
 _NVM_ steht für „nichtflüchtiger Speicher“ und ist persistenter Speicher, der in vielen Arten von Speichergeräten verwendet wird. _NVMe_ (NVM Express) ist eine standardisierte Schnittstelle oder ein standardisiertes Protokoll, das speziell für eine hochperformante Multi-Queue-Kommunikation mit NVM-Geräten entwickelt wurde.
 
 
 
+[[what-is-nvme-over-fabrics]]
 == Was ist NVMe over Fabrics?
 
 _NVMe over Fabrics (NVMe-of)_ ist eine Technologiespezifikation, die den Datentransfer zwischen einem Host-Computer und Storage über ein Netzwerk zwischen messenbasierten NVMe-Befehlen und -Daten ermöglicht. Auf ein NVMe-Storage-Array (sog. _Subsystem_) kann ein Host über eine Fabric zugreifen. NVMe Befehle sind sowohl auf der Host- als auch auf der Subsystemseite in transportabstrahierten Schichten aktiviert und eingekapselt. Damit erweitert sich die End-to-End-NVMe-High-Performance-Schnittstelle vom Host bis zum Storage und standardisiert und vereinfacht die Befehlszeilen.
@@ -29,18 +31,21 @@ NVMe-of-Storage wird einem Host als lokales Block-Storage-Gerät präsentiert. D
 
 
 
+[[what-is-an-nvme-qualified-name-nqn]]
 == Was ist ein qualifizierter NVMe-Name (NVMe Qualified Name, NQN)?
 
 Der NVMe Qualified Name (NQN) wird zur Identifizierung des Remote-Storage-Ziels verwendet. Der für das Storage-Array qualifizierte NVMe-Name wird immer vom Subsystem zugewiesen und darf nicht geändert werden. Es gibt nur einen für NVMe qualifizierten Namen für das gesamte Array. Der qualifizierte NVMe-Name ist auf 223 Zeichen begrenzt. Sie können ihn mit einem qualifizierten iSCSI-Namen vergleichen.
 
 
 
+[[what-is-a-namespace-and-a-namespace-id]]
 == Was ist ein Namespace und eine Namespace-ID?
 
 Ein Namespace entspricht einer logischen Einheit in SCSI, die ein Volume im Array betrifft. Die Namespace-ID (NSID) entspricht einer Logical Unit Number (LUN) in SCSI. Sie erstellen die NSID zum Erstellungszeitpunkt des Namespace und können sie auf einen Wert zwischen 1 und 255 setzen.
 
 
 
+[[what-is-an-nvme-controller]]
 == Was ist ein NVMe Controller?
 
 Ähnlich wie bei einem SCSI I_T nexus, der den Pfad vom Host-Initiator zum Ziel des Storage-Systems darstellt, stellt ein während des Host-Verbindungsvorgangs erstellter NVMe-Controller einen Zugriffspfad zwischen einem Host und den Namespaces im Storage-Array bereit. Ein NQN für den Host und eine Host-Port-Kennung identifizieren einen NVMe-Controller eindeutig. Ein NVMe-Controller kann zwar nur einem einzelnen Host zugewiesen werden, kann aber auf diverse Namespaces zugreifen.

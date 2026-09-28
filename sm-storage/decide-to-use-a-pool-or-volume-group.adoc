@@ -15,6 +15,7 @@ Sie können Volumes entweder mit einem Pool oder einer Volume-Gruppe erstellen. 
 
 
 
+[[reasons-to-choose-a-pool-or-volume-group]]
 == Gründe für die Auswahl eines Pools oder einer Volume-Gruppe
 
 *Wählen Sie einen Pool*
@@ -40,6 +41,7 @@ Da Pools mit Volume-Gruppen nebeneinander bestehen können, kann ein Storage-Arr
 ====
 
 
+[[feature-differences-between-pools-and-volume-groups]]
 == Funktionsunterschiede zwischen Pools und Volume-Gruppen
 
 Die folgende Tabelle bietet einen Funktionsvergleich zwischen Volume-Gruppen und Pools.
@@ -149,6 +151,7 @@ Ja.
 |===
 
 
+[[functional-comparison-of-pools-and-volume-groups]]
 == Funktionsvergleich der Pools und Volume-Gruppen
 
 Die Funktion und der Zweck eines Pools und einer Volume-Gruppe sind gleich. Beide Objekte sind eine Gruppe von Laufwerken, die in einem Storage-Array logisch gruppiert sind und dazu verwendet werden, Volumes zu erstellen, auf die ein Host zugreifen kann.

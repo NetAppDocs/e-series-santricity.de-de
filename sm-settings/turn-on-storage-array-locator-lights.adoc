@@ -15,12 +15,12 @@ summary: 'Um den physischen Standort eines Speicherarrays in einem Schrank zu fi
 Um den physischen Standort eines Speicherarrays in einem Schrank zu finden, können Sie seine Locator-Leuchten (LED) einschalten.
 
 .Schritte
-. Wählen Sie im linken Bereich Menü:Einstellungen[System].
-. Klicken Sie unter *Allgemein* auf *Storage Array Locator Lights*.
+. Im linken Bereich *System* auswählen.
+. Unter *Allgemein* auf *Speicherarray-Positionslichter einschalten* klicken.
 +
-Das Dialogfeld Speicherarray Locator Lights einschalten wird geöffnet, und die Locator-LEDs des entsprechenden Speicherarrays werden eingeschaltet.
+Das Dialogfeld „Ortungsleuchten einschalten“ öffnet sich, und die Ortungsleuchten des entsprechenden Storage-Arrays schalten sich ein.
 
-. Wenn Sie das Speicher-Array physisch gefunden haben, kehren Sie zum Dialogfeld zurück und wählen Sie *aus*.
+. Sobald Sie das Speicherarray physisch lokalisiert haben, kehren Sie zum Dialogfeld zurück und wählen *Ausschalten* aus.
 
 
 .Ergebnisse

@@ -46,7 +46,7 @@ NOTE: Alle neuen Volumes, die Sie auf dem Pool erstellen, sind da-fähig. Wenn v
 ====
 .Schritte
 . Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
-. Wählen Sie den Pool oder SSD Cache aus und klicken Sie dann auf das Menü:Ellipsis-Symbol[Kapazität entfernen].
+. Den Pool oder SSD-Cache suchen und dann auf das Menü:Ellipsen-Symbol[Kapazität entfernen] klicken.
 +
 Das Dialogfeld Kapazität entfernen wird angezeigt.
 

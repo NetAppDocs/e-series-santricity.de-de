@@ -15,8 +15,8 @@ summary: Sie können eine AutoSupport-Konfiguration von einem Speicher-Array in 
 Sie können eine AutoSupport-Konfiguration von einem Speicher-Array in andere Speicher-Arrays importieren. Dieser Batch-Betrieb spart Zeit, wenn Sie mehrere Arrays im Netzwerk konfigurieren müssen.
 
 .Bevor Sie beginnen
-* AutoSupport ist in System Manager für das Storage-Array konfiguriert, das als Quelle verwendet werden soll (Menü:Support[Support Center]).
-* Die vorhandene Konfiguration für die Ziel-Speicher-Arrays wird in System Manager gesichert (Menü:Einstellungen[System > Speicherarray-Konfiguration speichern]).
+* AutoSupport ist im System Manager für das Speicher-Array konfiguriert, das als Quelle verwendet werden soll (Menü:Support[AutoSupport]).
+* Die bestehende Konfiguration der Zielspeicherarrays wird im System Manager gesichert (Menü:System[Speicherarray-Konfiguration speichern]).
 
 
 .Über diese Aufgabe

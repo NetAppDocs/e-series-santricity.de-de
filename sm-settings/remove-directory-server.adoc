@@ -2,7 +2,7 @@
 permalink: sm-settings/remove-directory-server.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, remove, directory, server, 
-summary: Um die Verbindung zwischen einem Verzeichnisserver und dem Speicher-Array zu unterbrechen, können Sie die Serverinformationen von der Seite Zugriffsverwaltung entfernen. Sie möchten diese Aufgabe möglicherweise ausführen, wenn Sie einen neuen Server konfiguriert haben und den alten dann entfernen möchten. 
+summary: Um die Verbindung zwischen einem Verzeichnisserver und dem Storage-Array zu trennen, kann die Serverinformation auf der Seite „Directory services“ entfernt werden. Dies kann erforderlich sein, wenn ein neuer Server konfiguriert wurde und anschließend der alte entfernt werden soll. 
 ---
 = Verzeichnisserver im SANtricity System Manager entfernen
 :allow-uri-read: 
@@ -12,7 +12,7 @@ summary: Um die Verbindung zwischen einem Verzeichnisserver und dem Speicher-Arr
 
 
 [role="lead"]
-Um die Verbindung zwischen einem Verzeichnisserver und dem Speicher-Array zu unterbrechen, können Sie die Serverinformationen von der Seite Zugriffsverwaltung entfernen. Sie möchten diese Aufgabe möglicherweise ausführen, wenn Sie einen neuen Server konfiguriert haben und den alten dann entfernen möchten.
+Um die Verbindung zwischen einem Verzeichnisserver und dem Storage-Array zu trennen, kann die Serverinformation auf der Seite „Directory services“ entfernt werden. Dies kann erforderlich sein, wenn ein neuer Server konfiguriert wurde und anschließend der alte entfernt werden soll.
 
 .Bevor Sie beginnen
 Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden die Zugriffsverwaltungsfunktionen nicht angezeigt.
@@ -21,8 +21,7 @@ Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministrat
 Nach Abschluss dieser Aufgabe werden alle aktiven Benutzersitzungen beendet. Nur Ihre aktuelle Benutzersitzung bleibt erhalten.
 
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Access Management].
-. Wählen Sie die Registerkarte *Directory Services* aus.
+. Im linken Bereich Menü:Authentifizierung[Verzeichnisdienste] auswählen.
 . Wählen Sie in der Liste den Verzeichnisserver aus, den Sie löschen möchten.
 . Klicken Sie Auf *Entfernen*.
 +

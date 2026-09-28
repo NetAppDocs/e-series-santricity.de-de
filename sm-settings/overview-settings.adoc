@@ -16,6 +16,7 @@ Sie können SANtricity System Manager für einige allgemeine Array-Einstellungen
 
 
 
+[[what-settings-can-i-configure]]
 == Welche Einstellungen kann ich konfigurieren?
 
 Die Array-Einstellungen umfassen:
@@ -28,6 +29,7 @@ Die Array-Einstellungen umfassen:
 
 
 
+[[related-tasks]]
 == Verwandte Aufgaben
 
 Weitere Informationen zu Aufgaben im Zusammenhang mit Systemeinstellungen:

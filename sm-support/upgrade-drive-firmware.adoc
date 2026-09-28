@@ -23,11 +23,11 @@ Sie können Ihre Festplatten-Firmware aktualisieren, um sicherzustellen, dass Si
 
 
 .Schritte
-. Wählen Sie im linken Bereich Menü:Support[Upgrade Center].
+. Im linken Bereich das Menü: Support[Upgrade center] auswählen.
 . Laden Sie die neuen Dateien von der Support-Website auf Ihren Management-Client herunter.
-. Klicken Sie unter Laufwerk-Firmware-Upgrade auf *Upgrade starten*.
+. Unter „Upgrade der Laufwerk-Firmware“ auf *Upgrade der Laufwerk-Firmware beginnen* klicken.
 +
-Es wird ein Dialogfeld angezeigt, in dem die aktuell verwendeten Laufwerk-Firmware-Dateien aufgelistet werden.
+Die Seite „Upgrade der Laufwerk-Firmware“ wird angezeigt, auf der die derzeit verwendeten Laufwerk-Firmware-Dateien aufgelistet sind.
 
 . Extrahieren Sie die Dateien, die Sie von der Support-Website heruntergeladen haben (entpacken).
 . Klicken Sie auf *Durchsuchen* und wählen Sie die neuen Laufwerk-Firmware-Dateien aus, die Sie von der Support-Website heruntergeladen haben.
@@ -39,7 +39,7 @@ Sie können bis zu vier Laufwerk-Firmware-Dateien auswählen, jeweils eine. Wenn
 
 . Klicken Sie Auf *Weiter*.
 +
-Das Dialogfeld *Select Drives* wird angezeigt, in dem die Laufwerke aufgeführt werden, die Sie mit den ausgewählten Dateien aktualisieren können.
+Der Schritt *Laufwerke auswählen* wird angezeigt, in dem die Laufwerke aufgeführt sind, die Sie mit den ausgewählten Dateien aktualisieren können.
 
 +
 Es werden nur kompatible Laufwerke angezeigt.
@@ -49,8 +49,8 @@ Die ausgewählte Firmware für das Laufwerk wird im Bereich der vorgeschlagenen 
 
 . Wählen Sie die Art des Upgrades aus, die Sie durchführen möchten:
 +
-** *Online (Standard)* -- zeigt die Laufwerke, die einen Firmware-Download unterstützen können _während das Speicher-Array I/O_ verarbeitet. Bei Auswahl dieser Upgrade-Methode müssen Sie die I/O-Vorgänge der zugehörigen Volumes, die diese Laufwerke verwenden, nicht anhalten. Diese Laufwerke werden nacheinander aktualisiert, während das Storage-Array I/O-Operationen zu diesen Laufwerken verarbeitet.
-** *Offline (parallel)* -- zeigt die Laufwerke an, die einen Firmware-Download unterstützen können _nur während alle I/O-Aktivitäten angehalten sind_ auf beliebigen Volumes, die die Laufwerke verwenden. Bei Auswahl dieser Upgrade-Methode müssen Sie alle I/O-Aktivitäten auf Volumes anhalten, die die Laufwerke verwenden, die Sie aktualisieren. Laufwerke, die keine Redundanz aufweisen, müssen als Offline-Betrieb verarbeitet werden. Diese Anforderung umfasst alle Laufwerke, die mit SSD-Cache, eine RAID 0-Volume-Gruppe oder einen beliebigen Pool oder eine herabgestuften Volume-Gruppe verbunden sind. Das Offline-Upgrade (parallel) ist in der Regel schneller als die Online-Methode (Standard).
+** *Alle Laufwerke online aktualisieren* – Zeigt die Laufwerke an, die einen Firmware-Download unterstützen, während das Speichersystem E/A verarbeitet. Es ist nicht erforderlich, die E/A zu den zugehörigen Volumes, die diese Laufwerke verwenden, zu stoppen, wenn diese Upgrade-Methode gewählt wird. Diese Laufwerke werden einzeln aktualisiert, während das Speichersystem E/A auf diese Laufwerke verarbeitet.
+** *Alle Laufwerke offline (parallel) aktualisieren* – Zeigt die Laufwerke an, die einen Firmware-Download _nur während gestoppter E/A-Aktivität auf allen Volumes, die diese Laufwerke verwenden,_ unterstützen. Es muss die gesamte E/A-Aktivität auf allen Volumes gestoppt werden, die die zu aktualisierenden Laufwerke verwenden, wenn diese Upgrade-Methode ausgewählt wird. Laufwerke ohne Redundanz müssen als Offline-Vorgang verarbeitet werden. Diese Anforderung gilt für alle Laufwerke, die mit SSD-Cache, einer RAID 0 Volume-Gruppe oder einem Pool bzw. einer Volume-Gruppe mit eingeschränkter Verfügbarkeit verbunden sind. Das Offline-Upgrade (parallel) ist in der Regel schneller als die Online-Methode.
 
 
 . Wählen Sie in der ersten Spalte der Tabelle das Laufwerk oder die Laufwerke aus, die aktualisiert werden sollen.
@@ -64,7 +64,7 @@ Wenn Sie das Upgrade beenden möchten, klicken Sie auf *Stop*. Alle derzeit ausg
 Das Anhalten der Laufwerk-Firmware-Aktualisierung kann zu Datenverlust oder nicht verfügbaren Laufwerken führen.
 
 ====
-. *Optional:* um eine Liste der aktualisierten Versionen anzuzeigen, klicken Sie auf *Log speichern*.
+. *Optional:* Um eine Liste der aktualisierten Elemente anzuzeigen, auf *Protokoll speichern* klicken.
 +
 Die Datei wird im Ordner Downloads für Ihren Browser mit dem Namen gespeichert `drive_upgrade_log-timestamp.txt`.
 

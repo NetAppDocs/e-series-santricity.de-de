@@ -32,22 +32,18 @@ Sie müssen nicht auf beiden Controllern NTP konfigurieren. Dadurch wird jedoch 
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich *Hardware* aus.
-. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf die Registerkarte *Controller & Komponenten*.
-+
-Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
-
+. Wählen Sie im linken Bereich Menü:Hardware[Controllers and components].
 . Klicken Sie auf den Controller, den Sie konfigurieren möchten.
 +
 Das Kontextmenü des Controllers wird angezeigt.
 
 . Wählen Sie *NTP-Server konfigurieren*.
 +
-Das Dialogfeld Configure Network Time Protocol (NTP) Server wird geöffnet.
+Die Seite „Netzwerkzeitprotokoll (NTP) Server konfigurieren“ wird geöffnet.
 
-. Wählen Sie *Ich möchte NTP auf Controller* (*A* oder *B*) aktivieren.
+. Das Kontrollkästchen *Enable NTP* auswählen.
 +
-Im Dialogfeld werden weitere Auswahlmöglichkeiten angezeigt.
+Weitere Auswahlmöglichkeiten erscheinen auf der Seite.
 
 . Wählen Sie eine der folgenden Optionen:
 +
@@ -66,4 +62,4 @@ Wenn das Speicher-Array auf die Verwendung einer statischen NTP-Adresse eingeste
 
 
 .Ergebnisse
-Die NTP-Serverkonfiguration wird auf der Registerkarte Controllereinstellungen *DNS/NTP* angezeigt.
+Die NTP-Serverkonfiguration wird in den Controllereinstellungen im Abschnitt *Netzwerkzeitprotokoll (NTP) Servereinstellungen* angezeigt.

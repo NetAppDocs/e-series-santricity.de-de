@@ -16,6 +16,7 @@ Die Zugriffsverwaltung ist eine Methode zur Einrichtung der Benutzerauthentifizi
 
 
 
+[[what-authentication-methods-are-available]]
 == Welche Authentifizierungsmethoden sind verfügbar?
 
 Zu den Authentifizierungsmethoden zählen RBAC (rollenbasierte Zugriffssteuerung), Directory Services und Security Assertion Markup Language (SAML):
@@ -37,9 +38,10 @@ Weitere Informationen:
 
 
 
+[[how-do-i-configure-authentication]]
 == Wie konfiguriere ich die Authentifizierung?
 
-Das Storage Array ist vorkonfiguriert zur Nutzung von lokalen Benutzerrollen, eine Implementierung von RBAC-Funktionen. Wenn Sie eine andere Methode konfigurieren möchten, gehen Sie zu menu:Settings[Access Management].
+Das Speichersystem ist standardmäßig für die Verwendung lokaler Benutzerrollen konfiguriert, die eine Implementierung der rollenbasierten Zugriffssteuerung darstellen. Für die Konfiguration einer anderen Methode steht Menü:Authentifizierung[] zur Verfügung.
 
 Weitere Informationen:
 
@@ -49,6 +51,7 @@ Weitere Informationen:
 
 
 
+[[related-information]]
 == Verwandte Informationen
 
 Weitere Informationen zu Aufgaben im Zusammenhang mit Zugriffsmanagement:

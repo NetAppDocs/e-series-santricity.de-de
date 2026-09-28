@@ -23,18 +23,20 @@ Die Warnmeldungen werden wie folgt bearbeitet:
 ** *Syslog* -- Nachrichten werden an einen Syslog-Server gesendet.
 
 
-. Wenn die Ereignisüberwachung des Speicherarrays ein Problem erkennt, schreibt sie Informationen über dieses Problem in das Ereignisprotokoll (verfügbar über Menü:Support[Ereignisprotokoll]). Beispielsweise können Probleme auftreten, beispielsweise ein Batterieausfall, eine Komponente, die von optimal nach Offline verschoben wird oder Redundanzfehler im Controller sind.
+. Wenn der Ereignismonitor des Speichersystems ein Problem erkennt, schreibt er Informationen darüber in das Ereignisprotokoll (verfügbar unter Menü: Überwachung [Ereignisprotokoll]). Beispielsweise können solche Probleme Ereignisse wie einen Batterieausfall, das Wechseln einer Komponente von Optimal zu Offline oder Redundanzfehler im Controller umfassen.
 . Wenn der Ereignismonitor feststellt, dass das Ereignis „ertabbar“ ist, sendet er eine Benachrichtigung mit den konfigurierten Alarmmethoden (E-Mail, SNMP und/oder Syslog). Alle kritischen Ereignisse werden als „alertable“, zusammen mit einigen Warn- und Informationsereignissen betrachtet.
 
 
 
 
+[[alerts-configuration]]
 == Konfiguration von Warnungen
 
-Sie können Benachrichtigungen im Einrichtungsassistenten (nur für E-Mail-Benachrichtigungen) oder auf der Seite „Benachrichtigungen“ konfigurieren. Um auf die Seite „Benachrichtigungen“ zuzugreifen, gehen Sie im linken Bereich zu Menü:Einstellungen[Benachrichtigungen].
+Sie können Benachrichtigungen im Einrichtungsassistenten (nur für E-Mail-Benachrichtigungen) oder auf der Seite Alerts konfigurieren. Der Zugriff auf die Seite Alerts erfolgt über menu:Alerts[] im linken Bereich.
 
 
 
+[[alerts-information]]
 == Warnmeldungsinformationen
 
 Warnmeldungen können die folgenden Informationstypen enthalten:

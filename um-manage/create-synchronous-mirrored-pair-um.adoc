@@ -46,6 +46,7 @@ Das Erstellen von synchronen gespiegelten Paaren ist ein mehrstufiges Verfahren.
 
 
 
+[[step-1-select-the-primary-volume]]
 == Schritt 1: Wählen Sie das primäre Volumen
 
 In diesem Schritt wählen Sie das primäre Volume aus, das in der Beziehung zur synchronen Spiegelung verwendet werden soll. Wenn Sie ein primäres Volume auf dem lokalen Speicher-Array auswählen, zeigt das System eine Liste aller berechtigten Volumes für dieses gespiegelte Paar an. Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser Liste nicht angezeigt. Das ausgewählte Volume besitzt die primäre Rolle in der Spiegelbeziehung.
@@ -62,6 +63,7 @@ Der Assistent Synchronous Mirrored Pair erstellen wird geöffnet.
 
 
 
+[[step-2-select-the-secondary-volume]]
 == Schritt 2: Wählen Sie das sekundäre Volumen
 
 In diesem Schritt wählen Sie das sekundäre Volume aus, das in der Spiegelbeziehung verwendet werden soll. Wenn Sie ein sekundäres Volume auf dem Remote-Speicher-Array auswählen, zeigt das System eine Liste aller berechtigten Volumes für dieses gespiegelte Paar an. Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser Liste nicht angezeigt. Das ausgewählte Volumen hält die sekundäre Rolle in der Spiegelbeziehung.
@@ -91,6 +93,7 @@ Wird ein sekundäres Volume mit einer Kapazität ausgewählt, die größer als d
 
 
 
+[[step-3-select-synchronization-settings]]
 == Schritt 3: Synchronisierungseinstellungen auswählen
 
 In diesem Schritt wählen Sie die Einstellungen aus, die bestimmen, wie Daten nach einer Kommunikationsunterbrechung synchronisiert werden. Sie können die Priorität festlegen, mit der der Controller-Eigentümer des primären Volumes nach einer Kommunikationsunterbrechung Daten mit dem sekundären Volume neu synchronisiert. Sie müssen außerdem die Resynchronisierung-Richtlinie entweder manuell oder automatisch auswählen.
@@ -101,7 +104,7 @@ In diesem Schritt wählen Sie die Einstellungen aus, die bestimmen, wie Daten na
 Die Synchronisierungspriorität legt fest, wie viele der Systemressourcen verwendet werden, um die erste Synchronisierung abzuschließen und die Neusynchronisierung nach einer Kommunikationsunterbrechung im Vergleich zu Service-I/O-Anforderungen zu ermöglichen.
 
 +
-Die in diesem Dialogfeld festgelegte Priorität gilt sowohl für das primäre Volume als auch für das sekundäre Volume. Sie können die Rate für das primäre Volume zu einem späteren Zeitpunkt ändern, indem Sie zu System Manager wechseln und Menü:Storage[Synchronous Mirroring > More > Edit Settings] auswählen.
+Die in diesem Dialogfeld festgelegte Priorität gilt sowohl für das primäre Volume als auch für das sekundäre Volume. Die Rate des primären Volumes kann zu einem späteren Zeitpunkt geändert werden, indem im System Manager das Menü „Mirroring“ ausgewählt wird (Synchronous mirroring > Ellipsis-Symbol > Edit Settings).
 
 +
 Es gibt fünf Prioritätsraten für die Synchronisierung:
@@ -122,7 +125,7 @@ Wenn die Synchronisierungspriorität auf die niedrigste Rate eingestellt ist, wi
 ** *Manuell* (die empfohlene Option) -- Wählen Sie diese Option aus, damit die Synchronisierung manuell fortgesetzt werden muss, nachdem die Kommunikation auf einem gespiegelten Paar wiederhergestellt wurde. Diese Option bietet die beste Möglichkeit für die Wiederherstellung von Daten.
 ** *Automatisch* -- Wählen Sie diese Option, um die Neusynchronisierung automatisch zu starten, nachdem die Kommunikation auf einem gespiegelten Paar wiederhergestellt wurde.
 +
-Um die Synchronisierung manuell fortzusetzen, wählen Sie System Manager und Menü:Speicherung[Synchronous Mirroring], markieren Sie das gespiegelte Paar in der Tabelle, und wählen Sie unter *Mehr* *Resume*.
+Um die Synchronisierung manuell fortzusetzen, zum System Manager wechseln und Menü:Spiegeln[Synchrone Spiegelung] auswählen, das gespiegelte Paar in der Tabelle markieren und unter *Mehr* auf *Fortsetzen* klicken.
 
 
 
@@ -145,4 +148,4 @@ Die Kapazität eines jeden Volumes beträgt 128 MiB. Wenn die Volumes jedoch in 
 
 
 .Nachdem Sie fertig sind
-Gehen Sie zu System Manager und Menü:Storage[Laufende Vorgänge], um den Fortschritt des synchronen Spiegelungsvorgangs anzuzeigen. Dieser Vorgang kann längere Zeit dauern und die Systemleistung beeinträchtigen.
+Im System Manager im Menü Monitoring[Operations in progress] lässt sich der Fortschritt des synchronen Spiegelungsvorgangs anzeigen. Dieser Vorgang kann längere Zeit dauern und die Systemleistung beeinträchtigen.

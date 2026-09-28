@@ -15,6 +15,7 @@ Auf der Seite Performance können Sie ganz einfach die Performance Ihres Storage
 
 
 
+[[what-can-i-learn-from-performance-data]]
 == Was kann ich aus Performance-Daten lernen?
 
 Die Performance-Diagramme und -Tabellen zeigen Performance-Daten nahezu in Echtzeit an. So können Sie ermitteln, ob ein Storage-Array Probleme hat. Sie können auch Performance-Daten speichern, um einen historischen Überblick über ein Storage Array zu erstellen und zu erkennen, wann ein Problem gestartet wurde oder welche Ursache ein Problem verursacht hat.
@@ -27,9 +28,10 @@ Weitere Informationen:
 
 
 
+[[how-can-i-view-performance-data]]
 == Wie kann ich Performance-Daten anzeigen?
 
-Performancedaten sind auf der Startseite und auf der Speicherseite verfügbar.
+Leistungsdaten sind im Dashboard und auf der Seite Monitoring > Performance verfügbar.
 
 Weitere Informationen:
 

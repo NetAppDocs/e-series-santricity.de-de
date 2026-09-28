@@ -18,8 +18,7 @@ Sie können Benutzerdefinitionen für SNMPv3-Traps bearbeiten.
 Für den SNMPv3-Trap muss ein Benutzer erstellt werden.
 
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Alerts].
-. Wählen Sie die Registerkarte *SNMP* aus.
+. Im linken Bereich Menü:Alerts[SNMP alerts] auswählen.
 +
 Die Trap-Ziele und Benutzernamen werden in der Tabelle angezeigt.
 
@@ -36,4 +35,4 @@ Die Trap-Ziele und Benutzernamen werden in der Tabelle angezeigt.
 
 
 .Ergebnisse
-Auf der Registerkarte SNMP der Seite Meldungen werden die aktualisierten Einstellungen angezeigt.
+Auf der SNMP-Warnungsseite werden die aktualisierten Einstellungen angezeigt.

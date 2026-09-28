@@ -2,7 +2,7 @@
 permalink: sm-settings/view-imported-certificates.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, view, imported, certificate, information, 
-summary: Auf der Seite Zertifikate können Sie den Zertifikatstyp, die ausstellende Behörde und den gültigen Datumsbereich der Zertifikate für das Speicher-Array anzeigen. 
+summary: In der Kategorie „Zertifikate“ können Sie den Zertifikatstyp, die ausstellende Zertifizierungsstelle und den Gültigkeitszeitraum der Zertifikate für das Storage-Array einsehen. 
 ---
 = Importierte Zertifikatsinformationen im SANtricity System Manager anzeigen
 :allow-uri-read: 
@@ -12,29 +12,29 @@ summary: Auf der Seite Zertifikate können Sie den Zertifikatstyp, die ausstelle
 
 
 [role="lead"]
-Auf der Seite Zertifikate können Sie den Zertifikatstyp, die ausstellende Behörde und den gültigen Datumsbereich der Zertifikate für das Speicher-Array anzeigen.
+In der Kategorie „Zertifikate“ können Sie den Zertifikatstyp, die ausstellende Zertifizierungsstelle und den Gültigkeitszeitraum der Zertifikate für das Storage-Array einsehen.
 
 .Bevor Sie beginnen
 Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministratorberechtigungen enthält. Andernfalls werden keine Zertifikatfunktionen angezeigt.
 
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Certificates].
-. Wählen Sie eine der Registerkarten aus, um Informationen zu den Zertifikaten anzuzeigen.
+. Im linken Bereich *Zertifikate* auswählen.
+. Wählen Sie eine der folgenden Seiten aus, um Informationen zu den Zertifikaten anzuzeigen.
 +
 [cols="25h,~"]
 |===
-| Registerkarte | Beschreibung 
+| Seite | Beschreibung 
 
 
  a| 
-Array-Management
+Menü:Zertifikate[Array Management-Zertifikate]
  a| 
 Zeigen Sie Informationen zu den für jeden Controller importierten CA-signierten Zertifikaten an, einschließlich der Root-Datei, der Zwischendatei(en) und der Serverdatei(en).
 
 
 
  a| 
-Bewährt
+Menü: Certificates[Vertrauenswürdige Zertifikate]
  a| 
 Informationen über alle anderen Arten von Zertifikaten anzeigen, die für die Controller importiert wurden. Verwenden Sie das Filterfeld unter *Zertifikate anzeigen, die...* sind, um entweder vom Benutzer installierte oder vorinstallierte Zertifikate anzuzeigen.
 
@@ -45,7 +45,7 @@ Informationen über alle anderen Arten von Zertifikaten anzeigen, die für die C
 
 
  a| 
-Verschlüsselungs-Management
+Menü:Certificates[Key management certificates]
  a| 
 Zeigen Sie Informationen zu den für einen externen Schlüsselverwaltungsserver importierten CA-signierten Zertifikaten an.
 

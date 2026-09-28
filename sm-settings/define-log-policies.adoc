@@ -21,8 +21,7 @@ Sie müssen mit einem Benutzerprofil angemeldet sein, das Sicherheitsadministrat
 Dieser Task beschreibt, wie die Einstellungen für das Überwachungsprotokoll geändert werden, einschließlich der Richtlinie zum Überschreiben alter Ereignisse und der Richtlinie für die Aufzeichnung von Ereignistypen.
 
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Access Management].
-. Wählen Sie die Registerkarte *Prüfprotokoll* aus.
+. Im linken Bereich Menü:Monitoring[Revisionsprotokoll] auswählen.
 . Wählen Sie *Einstellungen Anzeigen/Bearbeiten*.
 +
 Das Dialogfeld Einstellungen für das Überwachungsprotokoll wird geöffnet.

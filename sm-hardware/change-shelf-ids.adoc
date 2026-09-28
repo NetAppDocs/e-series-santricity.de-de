@@ -17,13 +17,9 @@ Die Shelf-ID ist eine Nummer, die ein Shelf im Storage Array eindeutig identifiz
 Die Controller-Firmware weist automatisch die Shelf-ID zu. Sie können diese Nummer jedoch ändern, wenn Sie ein anderes Bestellschema erstellen möchten.
 
 .Schritte
-. Wählen Sie im linken Bereich *Hardware* aus.
-. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf die Registerkarte *Controller & Komponenten*.
-+
-Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
-
+. Wählen Sie im linken Bereich Menü:Hardware[Controllers and components].
 . Wählen Sie die Dropdown-Liste für das Controller-Shelf oder Laufwerk-Shelf aus, und wählen Sie dann *ID ändern* aus.
-. Wählen Sie im Dialogfeld Shelf-ID ändern die Dropdown-Liste aus, um die verfügbaren Nummern anzuzeigen.
+. Im Dialogfeld „Regal-ID ändern“ die Dropdown-Liste auswählen, um die verfügbaren Nummern anzuzeigen.
 +
 In diesem Dialogfeld werden keine IDs angezeigt, die derzeit aktiven Shelfs zugewiesen sind.
 

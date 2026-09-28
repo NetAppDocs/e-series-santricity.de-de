@@ -15,6 +15,7 @@ In SANtricity Unified Manager wird die asynchrone oder synchrone Spiegelung konf
 
 
 
+[[asynchronous-mirroring-workflow]]
 == Workflow für asynchrone Spiegelung
 
 Die asynchrone Spiegelung umfasst den folgenden Workflow:
@@ -45,6 +46,7 @@ Da die asynchrone Replizierung periodisch erfolgt, kann das System die geändert
 
 
 
+[[synchronous-mirroring-workflow]]
 == Workflow für synchrones Spiegeln
 
 Die synchrone Spiegelung umfasst den folgenden Workflow:

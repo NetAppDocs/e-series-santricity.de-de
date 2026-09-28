@@ -16,7 +16,7 @@ Sie können die Systemkonfiguration von einem Speicher-Array in andere Speicher-
 
 .Bevor Sie beginnen
 * Systemeinstellungen sind in System Manager für das Speicherarray konfiguriert, das als Quelle verwendet werden soll.
-* Die vorhandene Konfiguration für die Ziel-Speicher-Arrays wird in System Manager gesichert (Menü:Einstellungen[System > Speicherarray-Konfiguration speichern]).
+* Die bestehende Konfiguration der Zielspeicherarrays wird im System Manager gesichert (Menü:System[Speicherarray-Konfiguration speichern]).
 
 
 .Über diese Aufgabe

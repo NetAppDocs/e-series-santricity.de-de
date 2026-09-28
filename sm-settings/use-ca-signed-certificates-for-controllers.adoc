@@ -24,6 +24,7 @@ Die Verwendung von CA-signierten Zertifikaten ist ein dreistufiges Verfahren.
 
 
 
+[[step-1-complete-csrs-for-the-controllers]]
 == Schritt 1: Schließen Sie CSRs für die Controller ab
 
 Sie müssen zuerst eine CSR-Datei (Certificate Signing Request) für jeden Controller im Speicher-Array generieren.
@@ -37,8 +38,7 @@ Alternativ können Sie eine CSR-Datei mit einem Tool wie OpenSSL generieren und 
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Certificates].
-. Wählen Sie auf der Registerkarte Array Management die Option *Complete CSR* aus.
+. Im linken Bereich Menü:Zertifikate[Array management certificates] auswählen und anschließend *Complete CSR* wählen.
 +
 [NOTE]
 ====
@@ -85,6 +85,7 @@ Für einen einzelnen Controller wird eine CSR-Datei auf Ihr lokales System herun
 
 
 
+[[step-2-submit-the-csr-files]]
 == Schritt 2: Senden Sie die CSR-Dateien
 
 Nachdem Sie die CSR-Dateien (Certificate Signing Request) erstellt haben, senden Sie die Dateien an eine Zertifizierungsstelle (CA). Systeme der E-Series erfordern ein PEM-Format (Base64 ASCII-Kodierung) für signierte Zertifikate, das die folgenden Dateitypen umfasst: pem, .crt, .cer oder .key.
@@ -103,6 +104,7 @@ Nachdem Sie die CSR-Dateien (Certificate Signing Request) erstellt haben, senden
 
 
 
+[[step-3-import-signed-certificates-for-controllers]]
 == Schritt 3: Importieren Sie signierte Zertifikate für Controller
 
 Nachdem Sie von der Zertifizierungsstelle (CA) signierte Zertifikate erhalten haben, importieren Sie die Dateien für die Controller.
@@ -114,8 +116,7 @@ Nachdem Sie von der Zertifizierungsstelle (CA) signierte Zertifikate erhalten ha
 
 
 .Schritte
-. Wählen Sie im linken Bereich Menü:Einstellungen[Zertifikate]
-. Wählen Sie auf der Registerkarte Array Management die Option *Import* aus.
+. Im linken Bereich Menü:Zertifikate[Array management certificates] auswählen und anschließend *Import* wählen.
 +
 Es wird ein Dialogfeld zum Importieren der Zertifikatdatei(en) geöffnet.
 

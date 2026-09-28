@@ -16,6 +16,7 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 
 
 
+[[what-is-automatic-load-balancing]]
 == Was ist der automatische Lastausgleich?
 
 Die Funktion „Automatischer Lastausgleich“ bietet einen automatischen I/O-Ausgleich und stellt sicher, dass eingehender I/O-Datenverkehr von den Hosts auf beiden Controllern dynamisch verwaltet und ausgeglichen wird.
@@ -37,6 +38,7 @@ Jedes Volume, das der Nutzung des SSD-Caches eines Controllers zugewiesen ist, k
 ====
 
 
+[[what-is-controller-cache]]
 == Was ist der Controller Cache?
 
 Der Controller-Cache ist ein physischer Speicherplatz, der zwei Arten von I/O-Vorgängen (Input/Output) vereinfacht: Zwischen den Controllern und Hosts sowie zwischen den Controllern und Festplatten.
@@ -60,6 +62,7 @@ Der Controller-Cache wirkt sich auf die Gesamt-Performance des Storage Arrays au
 ====
 
 
+[[what-is-cache-flushing]]
 == Was wird Cachespülung?
 
 Wenn die Menge der nicht geschriebenen Daten im Cache eine bestimmte Ebene erreicht, schreibt der Controller regelmäßig Cache-Daten auf ein Laufwerk. Dieser Schreibvorgang wird als „Spülen“ bezeichnet.
@@ -79,6 +82,7 @@ Der altersbasierte Algorithmus legt fest, wie lange die Schreibvorgänge im Cach
 ====
 
 
+[[what-is-cache-block-size]]
 == Was ist die Cache-Blockgröße?
 
 Der Controller des Storage Arrays ordnet den Cache in „Blöcke“ ein. Dabei handelt es sich um Speicherblöcke, die 8, 16 und 32 KiB groß sein können. Alle Volumes im Storage-System nutzen denselben Cache-Speicherplatz. Daher können die Volumes nur eine Cache-Blockgröße aufweisen.
@@ -87,6 +91,7 @@ Applikationen verwenden unterschiedliche Blockgrößen, die wiederum einen Einfl
 
 
 
+[[when-should-i-synchronize-storage-array-clocks]]
 == Wann sollte ich Speicherarray-Uhren synchronisieren?
 
 Sie sollten die Controller-Uhren im Speicher-Array manuell synchronisieren, wenn Sie bemerken, dass die in SANtricity System Manager angezeigten Zeitstempel nicht auf die im Management-Client angezeigten Zeitstempel ausgerichtet sind (der Computer, der über den Browser auf SANtricity System Manager zugreift). Diese Aufgabe ist nur erforderlich, wenn NTP (Network Time Protocol) im SANtricity-System-Manager nicht aktiviert ist.

@@ -16,6 +16,7 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 
 
 
+[[what-do-i-need-to-know-before-creating-a-remote-storage-connection]]
 == Was muss ich vor der Erstellung einer Remote-Speicherverbindung wissen?
 
 Zur Konfiguration der Remote-Speicherfunktion müssen Sie das Remote-Gerät und die Zielspeichersysteme direkt über iSCSI verbinden.
@@ -28,6 +29,7 @@ Informationen zum Einrichten der iSCSI-Systemverbindung finden Sie unter:
 
 
 
+[[why-am-i-being-prompted-to-remove-my-remote-volumes]]
 == Warum wird ich aufgefordert, meine Remote-Volumes zu entfernen?
 
 Wenn die maximale Anzahl an Remote-Volumes erreicht ist, erkennt das Speichersystem automatisch alle nicht verwendeten Remote-Volumes und fordert Sie auf, diese zu entfernen.
@@ -36,6 +38,7 @@ In einigen Fällen werden die nicht verwendeten Remote-Volumes während des Erst
 
 
 
+[[why-dont-i-see-all-my-volumes-on-my-destination-array]]
 == Warum werden mir nicht alle meine Volumes auf meinem Ziel-Array angezeigt?
 
 Bei der Konfiguration eines Imports für die Remote-Speicherfunktion können Sie feststellen, dass einige Volumes aufgrund von Blockgröße, Kapazität oder Volume-Verfügbarkeit nicht in der Liste der Zielkandidaten angezeigt werden.
@@ -57,6 +60,7 @@ Volumes-Kandidaten werden aus der Liste ausgeschlossen, wenn sie:
 
 
 
+[[what-do-i-need-to-know-about-the-remote-volume-in-an-import]]
 == Was muss ich über das Remote Volume bei einem Import wissen?
 
 Bei Verwendung der Remote-Storage-Funktion ist zu beachten, dass das Remote-Volume die Quelle ist, aus der die Daten stammen.
@@ -65,19 +69,21 @@ Wenn der Import ausgeführt wird, werden die Daten vom Remote-Volume auf das Zie
 
 
 
+[[what-do-i-need-to-know-before-starting-a-remote-storage-import]]
 == Was muss ich vor dem Start eines Remote-Storage-Imports beachten?
 
 Mit der Remote Storage-Funktion können Sie Daten von einem Remote Storage-System auf ein Volume auf einem lokalen E-Series Storage-System kopieren. Bevor Sie diese Funktion verwenden, lesen Sie die folgenden Richtlinien durch.
 
 
 
+[[configuration]]
 === Konfiguration
 
 Bevor Sie den Remote-Speicherimport erstellen, müssen Sie die folgenden Aktionen durchführen und die folgenden Bedingungen überprüfen:
 
 * Stellen Sie sicher, dass jeder Controller des lokalen E-Series Storage-Systems über eine iSCSI-Verbindung zum Remote Storage-System verfügt.
 * Erstellen Sie auf Ihrem lokalen E-Series Storage-System ein Ziel-Volume für den Importvorgang. Stellen Sie sicher, dass das Volume über eine Kapazität verfügt, die dem Quell-Volume entspricht oder größer ist als das Quell-Volume, über eine Blockgröße verfügt, die dem Quell-Volume entspricht und nicht zugeordnet ist. Siehe link:create-volumes.html["Volumes erstellen"].
-* Richten Sie das lokale E-Series Storage-System mithilfe des iSCSI Qualified Name (IQN) als Host auf dem Remote-System ein. Sie können den IQN über Menü:Einstellungen[System > iSCSI-Einstellungen > Ziel-IQN] anzeigen. Stellen Sie außerdem sicher, dass Sie den entsprechenden Host-Typ auf Grundlage des verwendeten Systems festlegen.
+* Das lokale E-Series Storage-System wird als Host auf dem Remote-System mithilfe seines iSCSI Qualified Name (IQN) eingerichtet. Der IQN ist im Menü System [iSCSI settings > Target IQN] einsehbar. Zudem sollte der passende Hosttyp entsprechend dem verwendeten System festgelegt werden.
 * Beenden Sie alle I/OS, heben Sie die Mounten von Dateisystemen ab und entfernen Sie alle Zuweisungen zu Hosts oder Anwendungen für das ausgewählte Volume auf dem Remote-Speichersystem.
 * Weisen Sie das Volume dem Remote-Storage-System dem neu erstellten lokalen Host des E-Series Storage-Systems zu.
 * Sammeln Sie die folgenden Informationen aus dem Remote-Speichersystem, damit der Import erstellt werden kann:
@@ -92,6 +98,7 @@ Bevor Sie den Remote-Speicherimport erstellen, müssen Sie die folgenden Aktione
 
 
 
+[[import-process]]
 === Importvorgang
 
 Die folgenden Schritte beschreiben den Importvorgang.
@@ -114,6 +121,7 @@ Sobald der Import getrennt ist, kehrt die Leistung des lokalen Ziels wieder in d
 
 
 
+[[restrictions]]
 === Einschränkungen
 
 Die Remote-Speicherfunktion verfügt über folgende Einschränkungen:
@@ -132,6 +140,7 @@ Die Remote-Speicherfunktion verfügt über folgende Einschränkungen:
 
 
 
+[[additional-information]]
 === Weitere Informationen
 
 Weitere Informationen zur Remote-Speicherung finden Sie auf der https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["Technischer Bericht Zu Remote-Storage"^].

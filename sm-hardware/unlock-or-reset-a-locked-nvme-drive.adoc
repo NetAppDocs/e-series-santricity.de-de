@@ -15,7 +15,7 @@ summary: 'Wenn Sie ein oder mehrere gesperrte NVMe- oder FIPS-Laufwerke in ein S
 Wenn Sie ein oder mehrere gesperrte NVMe- oder FIPS-Laufwerke in ein Storage-Array einfügen, können die Laufwerkdaten entsperrt werden, indem Sie die Sicherheitsschlüsseldatei hinzufügen, die den Laufwerken zugeordnet ist. Wenn Sie keinen Sicherheitsschlüssel haben, können Sie auf jedem gesperrten Laufwerk einen Reset durchführen, indem Sie seine physische Sicherheits-ID (PSID) eingeben, um seine Sicherheitsattribute zurückzusetzen und die Laufwerkdaten zu löschen.
 
 .Bevor Sie beginnen
-* Stellen Sie bei der Option Entsperren sicher, dass die Sicherheitsschlüsseldatei (mit einer Erweiterung von) verwendet wird `.slk`) Ist auf dem Management-Client verfügbar (das System mit einem Browser, der für den Zugriff auf System Manager verwendet wird). Sie müssen auch die Passphrase kennen, die mit der Taste verbunden ist.
+* Für die Option „Entsperren“ muss die Sicherheitsschlüsseldatei (mit der Erweiterung  `.slk`) auf dem Verwaltungsclient (dem System mit dem Browser, der für den Zugriff auf den System Manager verwendet wird) verfügbar sein. Auch die zum Schlüssel gehörende Passphrase muss bekannt sein.
 * Für die Option Zurücksetzen müssen Sie die PSID auf jedem Laufwerk finden, das Sie zurücksetzen möchten. Um die PSID zu finden, entfernen Sie das Laufwerk physisch und suchen Sie die PSID-Zeichenfolge (maximal 32 Zeichen) auf dem Laufwerketikett, und installieren Sie dann das Laufwerk neu.
 
 
@@ -24,17 +24,13 @@ In dieser Aufgabe wird beschrieben, wie Daten aus NVMe- oder FIPS-Laufwerken dur
 
 [NOTE]
 ====
-Wenn das Laufwerk über einen externen Schlüsselverwaltungsserver gesperrt wurde, wählen Sie in System Manager Menü:Einstellungen[System > Sicherheitsschlüsselverwaltung], um die externe Schlüsselverwaltung zu konfigurieren und das Laufwerk zu entsperren.
+Wenn das Laufwerk mit einem externen Schlüsselverwaltungsserver gesperrt wurde, im System Manager Menü:System[Sicherheitsschlüsselverwaltung] die externe Schlüsselverwaltung konfigurieren und das Laufwerk entsperren.
 
 ====
-Sie können die Funktion zum Entsperren entweder über die Seite Hardware oder über das Menü:Einstellungen[System > Sicherheitsschlüsselverwaltung] aufrufen. Die folgende Aufgabe enthält Anweisungen auf der Seite Hardware.
+Die Entsperrfunktion kann entweder über die Hardware-Seite oder über das Menü System[Security key management] aufgerufen werden. Die folgende Aufgabe enthält Anweisungen von der Hardware-Seite.
 
 .Schritte
-. Wählen Sie im linken Bereich *Hardware* aus.
-. Wenn die Grafik die Controller anzeigt, klicken Sie auf die Registerkarte *Laufwerke*.
-+
-Die Grafik ändert sich, um die Laufwerke anstelle der Controller anzuzeigen.
-
+. Im linken Bereich Menü:Hardware[Laufwerke] auswählen.
 . Wählen Sie das NVMe- oder FIPS-Laufwerk aus, das entsperrt oder zurückgesetzt werden soll.
 +
 Das Kontextmenü des Laufwerks wird geöffnet.
@@ -51,8 +47,8 @@ Während eines Reset-Vorgangs werden alle Daten gelöscht. Führen Sie nur einen
 ====
 . Führen Sie einen der folgenden Schritte aus:
 +
-.. *Entsperren*: Klicken Sie im Dialogfeld * Secure Drive entsperren* auf *Durchsuchen* und wählen Sie dann die Sicherheitsschlüsseldatei aus, die dem Laufwerk entspricht, das Sie entsperren möchten. Geben Sie dann den Passphrase ein und klicken Sie dann auf *Entsperren*.
-.. *Zurücksetzen*: Geben Sie im Dialogfeld *gesperrtes Laufwerk zurücksetzen* den PSID-String in das Feld ein, und geben Sie dann ein `RESET` Zur Bestätigung. Klicken Sie Auf *Zurücksetzen*.
+.. *Entsperren*: Auf der Seite *Sichere Laufwerke entsperren* die Sicherheitsschlüsseldatei auswählen, die dem zu entsperrenden Laufwerk entspricht. Anschließend die Passphrase eingeben und dann auf *Entsperren* klicken.
+.. *Zurücksetzen*: Im Dialogfeld *Gesperrtes Laufwerk zurücksetzen* die PSID-Zeichenfolge in das Feld eingeben und dann  `RESET` eingeben, um zu bestätigen. *Zurücksetzen* auswählen.
 +
 Für einen Entsperrvorgang muss dieser Vorgang nur einmal ausgeführt werden, um alle NVMe- oder FIPS-Laufwerke freizuschalten. Bei einem Reset-Vorgang müssen Sie jedes Laufwerk einzeln auswählen, das Sie zurücksetzen möchten.
 

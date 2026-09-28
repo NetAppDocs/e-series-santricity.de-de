@@ -17,6 +17,7 @@ Sie können das Ereignisprotokoll als zusätzliches Diagnose-Tool für den Recov
 
 
 
+[[event-categories]]
 == Ereigniskategorien
 
 Die Ereignisse im Ereignisprotokoll werden mit unterschiedlichen Status kategorisiert. Ereignisse, für die Sie Maßnahmen ergreifen müssen, haben die folgenden Status:
@@ -32,6 +33,7 @@ Ereignisse, die informativ sind und keine sofortigen Maßnahmen erfordern, sind 
 
 
 
+[[critical-events]]
 == Kritische Ereignisse
 
 Kritische Ereignisse weisen auf ein Problem mit dem Speicher-Array hin. Wenn das kritische Ereignis sofort behoben wird, kann der Verlust des Datenzugriffs verhindert werden.

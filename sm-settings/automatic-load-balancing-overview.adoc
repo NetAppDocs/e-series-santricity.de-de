@@ -23,6 +23,7 @@ Wenn der automatische Lastenausgleich aktiviert ist, führt er folgende Funktion
 
 
 
+[[enabling-and-disabling-automatic-load-balancing]]
 == Aktivieren und Deaktivieren des automatischen Lastauswuchtes
 
 Der automatische Lastausgleich ist auf allen Speicherarrays standardmäßig aktiviert.
@@ -35,6 +36,7 @@ Aus den folgenden Gründen möchten Sie den automatischen Lastausgleich auf Ihre
 
 
 
+[[host-types-that-support-the-automatic-load-balancing-feature]]
 == Hosttypen, die die Funktion Automatischer Lastenausgleich unterstützen
 
 Obwohl der automatische Lastausgleich auf Speicherarray-Ebene aktiviert ist, hat der für einen Host oder Host-Cluster ausgewählte Hosttyp direkten Einfluss auf den Betrieb der Funktion.
@@ -82,6 +84,7 @@ Siehe https://mysupport.netapp.com/matrix["Interoperabilitäts-Matrix-Tool"^] In
 
 
 
+[[verifying-os-compatibility-with-the-automatic-load-balancing-feature]]
 == Überprüfung der Betriebssystemkompatibilität mit der Funktion Automatischer Lastenausgleich
 
 Überprüfen Sie die Betriebssystemkompatibilität mit der Funktion Automatischer Lastausgleich, bevor Sie ein neues (oder ein vorhandenes) System einrichten.

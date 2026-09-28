@@ -40,14 +40,14 @@ Diese Operation _speichert diese Einstellungen nicht_:
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich Menü:Einstellungen[System].
-. Wählen Sie *Speicherarray-Konfiguration Speichern*.
+. Im linken Bereich *System* auswählen.
+. *Speicherarray-Konfiguration speichern* auswählen.
 . Wählen Sie die Elemente der Konfiguration aus, die Sie speichern möchten:
 +
 ** Storage Array-Einstellungen
 ** Konfiguration von Volumes
 ** Host-Konfiguration
-** Zuweisung von Host zu Volume
+** Host-zu-Volume Zuordnungen (erfordert Volume- und Hostkonfiguration)
 
 
 +

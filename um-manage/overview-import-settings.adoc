@@ -15,6 +15,7 @@ Mit der Funktion „Einstellungen importieren“ können Sie einen Batch-Vorgang
 
 
 
+[[what-settings-can-be-imported]]
 == Welche Einstellungen können importiert werden?
 
 Sie können Alarmmethoden, AutoSupport-Konfigurationen, Verzeichnisdienste-Konfigurationen, Storage-Konfigurationen (z. B. Volume-Gruppen und Pools) und Systemeinstellungen (wie den automatischen Lastausgleich) importieren.
@@ -27,6 +28,7 @@ Weitere Informationen:
 
 
 
+[[how-do-i-perform-a-batch-import]]
 == Wie führe ich einen Batch-Import durch?
 
 Öffnen Sie System Manager auf einem Storage Array, das als Quelle verwendet werden soll, und konfigurieren Sie die gewünschten Einstellungen. Gehen Sie dann von Unified Manager zur Seite Verwalten und importieren Sie die Einstellungen in ein oder mehrere Arrays.

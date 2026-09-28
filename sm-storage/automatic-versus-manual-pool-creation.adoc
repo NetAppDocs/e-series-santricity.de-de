@@ -15,6 +15,7 @@ Sie erstellen Pools automatisch oder manuell, um eine Gruppierung des physischen
 
 
 
+[[automatic-creation]]
 == Automatische Erstellung
 
 Die automatische Poolerstellung wird initiiert, wenn der System Manager nicht zugewiesene Kapazitäten in einem Speicher-Array erkennt. Wenn nicht zugewiesene Kapazität erkannt wird, fordert System Manager Sie automatisch auf, einen oder mehrere Pools zu erstellen oder die nicht zugewiesene Kapazität einem vorhandenen oder beiden Pool hinzuzufügen.
@@ -25,7 +26,7 @@ Automatische Poolerstellung tritt auf, wenn eine dieser Bedingungen zutrifft:
 * Ein Speicher-Array mit mindestens einem Pool wird mit neuen Laufwerken erweitert.
 
 
-Jedes Laufwerk in einem Pool muss vom gleichen Laufwerkstyp (HDD oder SSD) sein und eine ähnliche Kapazität haben. Sie werden von System Manager aufgefordert, die folgenden Aufgaben auszuführen:
+Alle Laufwerke in einem Pool müssen vom gleichen Laufwerkstyp (HDD oder SSD) sein und eine ähnliche Kapazität aufweisen. Auf EF80 und EF50 Systemen werden Performance und Capacity NVMe SSD-Laufwerke als unterschiedliche Laufwerkstypen behandelt; System Manager erstellt separate Pools für jeden Typ, wenn beide vorhanden sind. System Manager fordert dazu auf, die folgenden Aufgaben abzuschließen:
 
 * Erstellen Sie einen einzelnen Pool, wenn eine ausreichende Anzahl von Laufwerken dieser Typen vorhanden ist.
 * Erstellen Sie mehrere Pools, wenn die nicht zugewiesene Kapazität aus verschiedenen Laufwerkstypen besteht.
@@ -35,6 +36,7 @@ Jedes Laufwerk in einem Pool muss vom gleichen Laufwerkstyp (HDD oder SSD) sein 
 
 
 
+[[manual-creation]]
 == Manuelle Erstellung
 
 Sie möchten möglicherweise einen Pool manuell erstellen, wenn die automatische Erstellung die beste Konfiguration nicht bestimmen kann. Diese Situation kann aus einem der folgenden Gründe auftreten:

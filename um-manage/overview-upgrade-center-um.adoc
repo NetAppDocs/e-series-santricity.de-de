@@ -16,12 +16,14 @@ Im Upgrade Center können Sie SANtricity OS Software und NVSRAM Upgrades für me
 
 
 
+[[how-do-upgrades-work]]
 == Wie funktionieren Upgrades?
 
 Sie laden die neueste Betriebssystemsoftware herunter und aktualisieren dann ein oder mehrere Arrays.
 
 
 
+[[upgrade-workflow]]
 === Workflow-Upgrade
 
 Die folgenden Schritte ermöglichen einen grundlegenden Workflow bei der Durchführung von Software-Upgrades.
@@ -46,6 +48,7 @@ Sie können auch angeben, dass die Software zu einem späteren Zeitpunkt aktivie
 
 
 
+[[immediate-or-staged-upgrade]]
 === Sofortiges oder stufenweise Upgrade
 
 Sie können das Upgrade sofort aktivieren oder es für einen späteren Zeitpunkt aktivieren. Aus folgenden Gründen können Sie sich später aktivieren:
@@ -54,10 +57,11 @@ Sie können das Upgrade sofort aktivieren oder es für einen späteren Zeitpunkt
 * *Paketyp* -- möglicherweise möchten Sie die neue Software und Firmware auf einem Speicher-Array testen, bevor Sie die Dateien auf anderen Speicher-Arrays aktualisieren.
 
 
-Um die stufenweise Software zu aktivieren, gehen Sie zum Menü:Support[Upgrade Center] und klicken Sie im Bereich SANtricity OS-Controller-Software-Upgrade auf *Aktivieren*.
+Um die bereitgestellte Software zu aktivieren, gehen Sie zu Menü:Support[Upgrade center] und klicken Sie im Bereich mit der Bezeichnung SANtricity OS Controller Software upgrade auf *Aktivieren*.
 
 
 
+[[health-check]]
 === Zustandsprüfung
 
 Eine Integritätsprüfung wird im Rahmen des Upgrade-Prozesses ausgeführt, Sie können aber auch vor dem Start eine Integritätsprüfung separat durchführen (siehe Menü:Upgrade Center [Health Check vor dem Upgrade]).
@@ -77,18 +81,21 @@ Bei der Integritätsprüfung werden alle Storage-Systemkomponenten bewertet, um 
 
 
 
+[[what-do-i-need-to-know-before-upgrading]]
 == Was muss ich vor einem Upgrade beachten?
 
 Vor dem Upgrade mehrerer Storage-Arrays sollten Sie die wichtigsten Überlegungen in Ihrer Planung durchgehen.
 
 
 
+[[current-versions]]
 === Aktuelle Versionen
 
 Sie können die aktuellen Softwareversionen des SANtricity Betriebssystems von der Seite Verwalten von Unified Manager für jedes erkannte Storage-Array anzeigen. Die Version wird in der Spalte SANtricity OS Software angezeigt. Die Informationen zu Controller-Firmware und NVSRAM finden Sie in einem Popup-Dialogfeld, wenn Sie in den einzelnen Zeilen auf die SANtricity OS-Version klicken.
 
 
 
+[[other-components-requiring-upgrade]]
 === Andere Komponenten müssen aktualisiert werden
 
 Im Rahmen des Upgrades müssen Sie eventuell auch den Multipath-/Failover-Treiber oder den HBA-Treiber des Hosts aktualisieren, damit der Host korrekt mit den Controllern interagieren kann.
@@ -97,6 +104,7 @@ Informationen zur Kompatibilität finden Sie im https://imt.netapp.com/matrix/#w
 
 
 
+[[dual-controllers]]
 === Dual-Controller
 
 Wenn ein Storage-Array zwei Controller enthält und ein Multipath-Treiber installiert ist, kann das Storage-Array die I/O-Verarbeitung während des Upgrades fortsetzen. Während des Upgrades erfolgt der folgende Vorgang:

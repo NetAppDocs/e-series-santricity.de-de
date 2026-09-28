@@ -33,13 +33,13 @@ Sie müssen ein Downtime-Wartungsfenster planen und alle I/O-Vorgänge zwischen 
 In dieser Aufgabe wird beschrieben, wie Sie mit System Manager ein Funktionspaket aktivieren. Wenn Sie fertig sind, müssen Sie das Speicher-Array neu starten.
 
 .Schritte
-. Wählen Sie im linken Bereich Menü:Einstellungen[System].
-. Wählen Sie unter *Add-ons* die Option *Feature Pack ändern*.
+. Im linken Bereich *System* auswählen.
+. Unter *Add-ons* die Option *Funktionspaket ändern* auswählen.
 . Klicken Sie auf *Durchsuchen* und wählen Sie dann die Schlüsseldatei aus.
 +
 Der Dateiname wird im Dialogfeld angezeigt.
 
-. Typ `change` Vor Ort.
+. Geben Sie  `CHANGE` in das Feld ein.
 . Klicken Sie Auf *Ändern*.
 +
 Die Funktionspaket-Migration beginnt und die Controller werden neu gestartet. Nicht geschriebene Cache-Daten werden gelöscht, wodurch keine I/O-Aktivität gewährleistet wird. Beide Controller werden automatisch neu gestartet, damit das neue Feature Pack wirksam wird. Das Speicher-Array kehrt nach Abschluss des Neubootens in einen reaktionsfähigen Zustand zurück.

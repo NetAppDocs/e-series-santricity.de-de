@@ -26,7 +26,7 @@ Die Seite Hardware bietet Sortier- und Filterfunktionen, die die Suche nach Komp
  a| 
 Ansichten von Laufwerken, Controllern und Komponenten
  a| 
-Um zwischen Vorder- und Rückansicht zu wechseln, wählen Sie ganz rechts entweder *Laufwerke* oder *Controller & Komponenten* aus (der Link, der angezeigt wird, hängt von der aktuellen Ansicht ab). Die Ansicht *Laufwerke* zeigt Laufwerke und alle leeren Laufwerksschächte an. Die Ansicht *Controller & Komponenten* zeigt die Controller und alle EAM-Module (ESM), Strom-/Lüftereinschübe oder leeren Controller-Einschübe. Unten auf der Seite können Sie auch *Alle Laufwerke anzeigen* auswählen.
+Um zwischen der Laufwerks- und der Controller-Shelf-Ansicht zu wechseln, im linken Bereich menu:Hardware[Laufwerke] oder menu:Hardware[Controller und Komponenten] auswählen. Die *Laufwerke*-Ansicht zeigt Laufwerke und alle leeren Laufwerksschächte. Die *Controller und Komponenten*-Ansicht zeigt die Controller sowie alle IOM (ESM)-Module, Netzteil-/Lüfter-Canister oder leere Controller-Schächte. In der Laufwerksansicht besteht außerdem die Möglichkeit, *Alle Laufwerke anzeigen* auszuwählen.
 
 
 

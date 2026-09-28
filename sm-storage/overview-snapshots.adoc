@@ -16,6 +16,7 @@ Mit der Snapshot Funktion können zeitpunktgenaue Images von Storage Array Volum
 
 
 
+[[what-are-snapshot-images]]
 == Was sind Snapshot Images?
 
 Ein _Snapshot Image_ ist eine logische Kopie von Volume-Daten, die zu einem bestimmten Zeitpunkt erfasst wurde. Wie bei einem Wiederherstellungspunkt können Sie durch Snapshot Images ein Rollback zu einem bekannten fehlerfreien Datensatz durchführen. Obwohl der Host auf das Snapshot-Image zugreifen kann, kann er nicht direkt lesen oder darauf schreiben.
@@ -31,9 +32,10 @@ Weitere Informationen:
 
 
 
+[[how-do-i-create-snapshots]]
 == Wie erstelle ich Snapshots?
 
-Sie können manuell ein Snapshot-Image aus einem Basis-Volume oder einer Snapshot-Konsistenzgruppe erstellen. Dieser Vorgang ist über das Menü:Speicherung[Snapshots] verfügbar.
+Sie können manuell ein Snapshot-Image aus einem Basis-Volume oder einer Snapshot-Konsistenzgruppe erstellen. Dieses Verfahren ist im Menü Snapshots[Snapshot-Images] verfügbar.
 
 Weitere Informationen:
 
@@ -47,9 +49,10 @@ Weitere Informationen:
 
 
 
+[[how-do-i-roll-back-data-from-a-snapshot]]
 == Wie lasse ich Daten von einem Snapshot zurückführen?
 
-Ein _Rollback_ ist der Vorgang, bei dem Daten in einem Basis-Volume an einen vorherigen Zeitpunkt zurückgegeben werden. Sie können die Snapshot-Daten über das Menü:Speicher[Snapshots] zurückführen.
+Ein Rollback ist der Vorgang, bei dem Daten in einem Basisvolume auf einen früheren Zeitpunkt zurückgesetzt werden. Sie können Snapshot-Daten über menu:Snapshots[Snapshot images] zurücksetzen.
 
 Weitere Informationen:
 
@@ -60,6 +63,7 @@ Weitere Informationen:
 
 
 
+[[related-information]]
 == Verwandte Informationen
 
 Weitere Informationen zu Aufgaben im Zusammenhang mit Snapshots:

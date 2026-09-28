@@ -15,15 +15,14 @@ summary: Sie können eine Trap-Zieladresse löschen, so dass der Event-Monitor d
 Sie können eine Trap-Zieladresse löschen, sodass der Event-Monitor des Speicherarrays keine SNMP-Traps mehr an diese Adresse sendet.
 
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Alerts].
-. Wählen Sie die Registerkarte *SNMP* aus.
+. Im linken Bereich Menü:Alerts[SNMP alerts] auswählen.
 +
 Die Trap-Zieladressen werden in der Tabelle angezeigt.
 
 . Wählen Sie ein Trap-Ziel aus, und klicken Sie dann rechts oben auf der Seite auf *Löschen*.
 . Bestätigen Sie den Vorgang, und klicken Sie dann auf *Löschen*.
 +
-Die Zieladresse wird nicht mehr auf der Seite „Meldungen“ angezeigt.
+Die Zieladresse wird nicht mehr auf der SNMP-Warnungsseite angezeigt.
 
 
 

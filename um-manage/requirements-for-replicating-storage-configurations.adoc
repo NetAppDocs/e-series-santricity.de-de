@@ -15,6 +15,7 @@ Bevor Sie eine Speicherkonfiguration von einem Speicher-Array in ein anderes imp
 
 
 
+[[shelves]]
 == Shelfs
 
 * Die Shelfs, in denen sich die Controller befinden, müssen auf den Quell- und Ziel-Arrays identisch sein.
@@ -24,9 +25,10 @@ Bevor Sie eine Speicherkonfiguration von einem Speicher-Array in ein anderes imp
 
 
 
+[[controllers]]
 == Controller
 
-* Der Controller-Typ kann sich zwischen Quell- und Ziel-Arrays unterscheiden (beispielsweise beim Import von einer E2800 in eine E5700), aber der RBOD-Gehäusetyp muss identisch sein.
+* Der Controllertyp kann zwischen Quell- und Ziel-Array unterschiedlich sein (zum Beispiel beim Import von einem EF300 zu einem EF80), aber der RBOD-Gehäusetyp muss identisch sein.
 * Die HICs, einschließlich der da-Fähigkeiten des Hosts, müssen identisch sein zwischen den Quell- und Ziel-Arrays.
 * Der Import von einer Duplex-Konfiguration in eine Simplex-Konfiguration wird nicht unterstützt. Der Import von Simplex in Duplex ist jedoch zulässig.
 * FDE-Einstellungen sind beim Importvorgang nicht enthalten.
@@ -34,6 +36,7 @@ Bevor Sie eine Speicherkonfiguration von einem Speicher-Array in ein anderes imp
 
 
 
+[[status]]
 == Status
 
 * Die Ziel-Arrays müssen den optimalen Status haben.
@@ -42,6 +45,7 @@ Bevor Sie eine Speicherkonfiguration von einem Speicher-Array in ein anderes imp
 
 
 
+[[storage]]
 == Storage
 
 * Die Laufwerkskapazität kann zwischen den Quell- und Ziel-Arrays variieren, solange die Volume-Kapazität auf dem Ziel größer ist als die Quelle. (In einem Ziel-Array sind unter Umständen neuere Laufwerke mit höherer Kapazität enthalten, die durch den Replizierungsvorgang nicht vollständig in Volumes konfiguriert wären.)

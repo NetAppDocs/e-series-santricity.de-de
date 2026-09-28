@@ -17,6 +17,7 @@ Wenn diese Laufwerke zusammen mit der Sicherheitsfunktion des Laufwerks verwende
 
 
 
+[[how-to-implement-drive-security]]
 == So implementieren Sie Drive Security
 
 Um die Laufwerkssicherheit zu implementieren, führen Sie die folgenden Schritte aus.
@@ -33,6 +34,7 @@ Um die Laufwerkssicherheit zu implementieren, führen Sie die folgenden Schritte
 
 
 
+[[how-drive-security-works-at-the-drive-level]]
 == Wie Drive Security auf der Laufwerksebene funktioniert
 
 Ein sicheres Laufwerk mit FDE oder FIPS verschlüsselt Daten beim Schreiben und entschlüsselt Daten beim Lesen. Diese Ver- und Entschlüsselung hat keine Auswirkungen auf die Leistung oder den Anwender-Workflow. Jedes Laufwerk verfügt über einen eigenen eindeutigen Verschlüsselungsschlüssel, der nie vom Laufwerk übertragen werden kann.
@@ -41,6 +43,7 @@ Die Sicherheitsfunktion des Laufwerks bietet zusätzlichen Schutz durch sichere 
 
 
 
+[[how-drive-security-works-at-the-storage-array-level]]
 == So arbeitet Drive Security auf Ebene des Storage Arrays
 
 Mit der Laufwerkssicherheitsfunktion erstellen Sie einen Sicherheitsschlüssel, der von den sicheren Laufwerken und Controllern in einem Speicher-Array gemeinsam genutzt wird. Wenn die Stromversorgung der Laufwerke aus- und wieder eingeschaltet wird, wechseln die sicher-aktivierten Laufwerke in den Status Sicherheitsverriegelt, bis der Controller den Sicherheitsschlüssel anwendet.
@@ -54,6 +57,7 @@ Für das interne Verschlüsselungsmanagement wird der tatsächliche Sicherheitss
 ====
 
 
+[[how-drive-security-works-at-the-volume-level]]
 == So arbeitet Drive Security auf Volume-Ebene
 
 Wenn Sie einen Pool oder eine Volume-Gruppe aus sicheren Laufwerken erstellen, können Sie auch die Laufwerksicherheit für diese Pools oder Volume-Gruppen aktivieren. Mit der Option Laufwerkssicherheit können die Laufwerke und damit verbundene Volume-Gruppen und Pools sicher-_enabled_ erstellt werden.

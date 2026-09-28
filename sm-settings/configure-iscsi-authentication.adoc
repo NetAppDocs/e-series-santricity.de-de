@@ -20,51 +20,28 @@ System Manager verwendet die CHAP-Methode (Challenge Handshake Authentication Pr
 Sie können den CHAP-Schlüssel für die Initiatoren (iSCSI-Hosts) entweder vor oder nach dem Festlegen des CHAP-Geheimschlüssels für die Ziele (Controller) festlegen. Bevor Sie die Anweisungen in dieser Aufgabe befolgen, sollten Sie warten, bis die Hosts zuerst eine iSCSI-Verbindung hergestellt haben, und dann den CHAP-Schlüssel auf den einzelnen Hosts festlegen. Nachdem die Verbindungen hergestellt wurden, werden die IQN-Namen der Hosts und ihre CHAP-Schlüssel im Dialogfeld für die iSCSI-Authentifizierung (siehe in dieser Aufgabe) aufgelistet, und Sie müssen sie nicht manuell eingeben.
 
 .Über diese Aufgabe
-Sie können eine der folgenden Authentifizierungsmethoden auswählen:
+Sie können die CHAP Authentifizierung aktivieren und dann das Target CHAP-Geheimnis für die Einweg-Authentifizierung angeben, oder Sie können sowohl das Initiator CHAP-Geheimnis für die Zweiweg-Authentifizierung zwischen dem Controller und den iSCSI-Hosts angeben.
 
-* *Einweg-Authentifizierung* - Verwenden Sie diese Einstellung, um dem Controller die Identität der iSCSI-Hosts zu authentifizieren (unidirektionale Authentifizierung).
-* *Zwei-Wege-Authentifizierung* - Verwenden Sie diese Einstellung, um sowohl dem Controller als auch den iSCSI-Hosts die Authentifizierung (bidirektionale Authentifizierung) zu ermöglichen. Diese Einstellung bietet eine zweite Sicherheitsstufe, indem der Controller die Identität der iSCSI-Hosts authentifizieren kann. Und wiederum können die iSCSI-Hosts die Identität des Controllers authentifizieren.
+Einseitige Authentifizierung ermöglicht es dem Controller, die Identität der iSCSI-Hosts zu authentifizieren (unidirektionale Authentifizierung).
 
+Die Zwei-Wege-Authentifizierung ermöglicht sowohl dem Controller als auch den iSCSI-Hosts, eine Authentifizierung (bidirektionale Authentifizierung) durchzuführen. Diese Option bietet eine zweite Sicherheitsebene, da der Controller die Identität der iSCSI-Hosts authentifizieren kann und umgekehrt die iSCSI-Hosts die Identität des Controllers authentifizieren können.
 
-[NOTE]
-====
-Die iSCSI-Einstellungen und -Funktionen werden nur auf der Seite Einstellungen angezeigt, wenn Ihr Speicher-Array iSCSI unterstützt.
-
-====
 .Schritte
-. Wählen Sie im linken Bereich Menü:Einstellungen[System].
-. Klicken Sie unter iSCSI-Einstellungen auf *Authentifizierung konfigurieren*.
+. Im linken Bereich *System* auswählen.
+. Unter *iSCSI-Einstellungen* auf *iSCSI-Authentifizierung konfigurieren* klicken.
 +
-Das Dialogfeld Authentifizierung konfigurieren wird angezeigt, in dem die derzeit festgelegte Methode angezeigt wird. Außerdem wird angezeigt, ob auf Hosts CHAP-Schlüssel konfiguriert sind.
+Das Fenster „Authentifizierung konfigurieren“ wird angezeigt.
 
-. Wählen Sie eine der folgenden Optionen:
+. Das Kontrollkästchen *CHAP-Authentifizierung aktivieren* ermöglicht die Authentifizierung.
 +
-** *Keine Authentifizierung* -- Wenn der Controller die Identität von iSCSI-Hosts nicht authentifizieren soll, wählen Sie diese Option aus und klicken Sie auf *Fertig stellen*. Das Dialogfeld wird geschlossen, und die Konfiguration ist abgeschlossen.
-** *Einweg-Authentifizierung* -- damit der Controller die Identität der iSCSI-Hosts authentifizieren kann, wählen Sie diese Option aus und klicken Sie auf *Weiter*, um das Dialogfeld Ziel-CHAP konfigurieren anzuzeigen.
-** *Zwei-Wege-Authentifizierung* -- damit sowohl der Controller als auch die iSCSI-Hosts die Authentifizierung durchführen können, wählen Sie diese Option aus und klicken Sie auf *Weiter*, um das Dialogfeld Target CHAP konfigurieren anzuzeigen.
+Wenn die CHAP Authentifizierung nicht aktiviert werden soll, bleibt das Kästchen deaktiviert.
 
-
-. Geben Sie für eine ein- oder zweiseitige Authentifizierung den CHAP-Schlüssel für den Controller (das Ziel) ein oder bestätigen Sie ihn. Der CHAP-Schlüssel muss zwischen 12 und 57 druckbaren ASCII-Zeichen liegen.
+. Wenn eine einseitige Authentifizierung aktiviert wurde, ist das *Ziel-CHAP-Geheimnis* für die Authentifizierung der Initiatoren einzugeben, die sich mit dem Ziel verbinden. Das CHAP-Geheimnis muss zwischen 12 und 57 druckbaren ASCII-Zeichen liegen.
 +
-[NOTE]
-====
-Wenn der CHAP-Schlüssel für den Controller zuvor konfiguriert wurde, werden die Zeichen im Feld maskiert. Falls erforderlich, können Sie die vorhandenen Zeichen ersetzen (neue Zeichen werden nicht maskiert).
+Unter dem Feld „Ziel-CHAP-Geheimnis bestätigen“ dasselbe CHAP-Geheimnis erneut eingeben, um es zu bestätigen.
 
-====
-. Führen Sie einen der folgenden Schritte aus:
-+
-** Wenn Sie die Authentifizierung _One-Way_ konfigurieren, klicken Sie auf *Finish*. Das Dialogfeld wird geschlossen, und die Konfiguration ist abgeschlossen.
-** Wenn Sie die Authentifizierung _zwei-Wege_ konfigurieren, klicken Sie auf *Weiter*, um das Dialogfeld Initiator-CHAP konfigurieren anzuzeigen.
-
-
-. Geben Sie für die Zweiwege-Authentifizierung einen CHAP-Schlüssel für einen der iSCSI-Hosts (die Initiatoren) ein, der zwischen 12 und 57 druckbaren ASCII-Zeichen liegen kann. Wenn Sie die zwei-Wege-Authentifizierung für einen bestimmten Host nicht konfigurieren möchten, lassen Sie das Feld Initiator CHAP Secret leer.
-+
-[NOTE]
-====
-Wenn der CHAP-Schlüssel für einen Host zuvor konfiguriert wurde, werden die Zeichen im Feld maskiert. Falls erforderlich, können Sie die vorhandenen Zeichen ersetzen (neue Zeichen werden nicht maskiert).
-
-====
-. Klicken Sie Auf *Fertig Stellen*.
+. Wenn eine Zwei-Wege-Authentifizierung zwischen dem Controller und den iSCSI-Hosts aktiviert werden soll, ist das *Initiator CHAP-Geheimnis* für die Authentifizierung des Controllers durch die Initiatoren einzugeben. Das CHAP-Geheimnis muss zwischen 12 und 57 druckbaren ASCII-Zeichen liegen.
+. Klicken Sie Auf *Speichern*.
 
 
 .Ergebnisse

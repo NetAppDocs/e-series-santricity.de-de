@@ -24,12 +24,14 @@ Diese Art von Spiegelung ist ideal für Business Continuity-Zwecke wie Disaster 
 
 
 
+[[synchronous-mirroring-relationship]]
 == Beziehung zwischen synchronem Spiegeln
 
 Eine synchrone Spiegelbeziehung besteht aus einem primären Volume und einem sekundären Volume auf separaten Storage Arrays. Das Storage-Array, das das primäre Volume enthält, befindet sich normalerweise am primären Standort und dient den aktiven Hosts. Das Storage-Array mit dem sekundären Volume befindet sich normalerweise an einem sekundären Standort und enthält ein Replikat der Daten. Das sekundäre Volume wird verwendet, wenn das Storage Array des primären Volumes nicht verfügbar ist, beispielsweise wegen eines vollständigen Stromausfalls, eines Brandes oder eines Hardware-Ausfalls am primären Standort.
 
 
 
+[[synchronous-mirroring-session]]
 == Sitzung zur synchronen Spiegelung
 
 Bei der Konfiguration der synchronen Spiegelung müssen Volumes zu Paaren konfiguriert werden. Nachdem Sie ein gespiegeltes Paar erstellt haben, das aus einem primären Volume auf einem Storage Array und einem sekundären Volume auf einem anderen Storage Array besteht, können Sie mit der synchronen Spiegelung beginnen. Die Schritte im synchronen Spiegeln sind unten dargestellt.
@@ -49,6 +51,7 @@ Da die Host-Anwendung warten muss, bis der Schreibvorgang auf dem lokalen Speich
 
 
 
+[[disaster-recovery]]
 == Disaster Recovery
 
 Bei der synchronen Spiegelung werden eine Kopie von Daten gespeichert, die sich physisch vom Standort entfernt befindet. Falls am primären Standort – beispielsweise bei einem Stromausfall oder einer Überflutung – ein Ausfall auftritt, ist der Zugriff auf die Daten vom sekundären Standort aus schnell möglich.
@@ -57,6 +60,7 @@ Das sekundäre Volume ist zum Hosten von Applikationen nicht verfügbar, währen
 
 
 
+[[synchronization-settings]]
 == Synchronisierungseinstellungen
 
 Beim Erstellen eines gespiegelten Paares definieren Sie außerdem die Synchronisierungspriorität und die Resynchronisierungsrichtlinie, mit der das gespiegelte Paar den Neusynchronisierung nach einer Kommunikationsunterbrechung abgeschlossen.
@@ -69,6 +73,7 @@ Sie können die Synchronisierungseinstellungen für ein gespiegeltes Paar nur au
 
 
 
+[[unsynchronized-data]]
 == Nicht synchronisierte Daten
 
 Das primäre und das sekundäre Volume werden nicht synchronisiert, wenn das Storage-Array des primären Volumes keine Daten auf das sekundäre Volume schreiben kann. Dies kann durch folgende Probleme verursacht werden:
@@ -80,6 +85,7 @@ Das primäre und das sekundäre Volume werden nicht synchronisiert, wenn das Sto
 
 
 
+[[orphaned-mirrored-pair]]
 == Verwaiste gespiegelte Paare
 
 Ein verwaistes gespiegeltes Paar-Volume ist vorhanden, wenn ein Mitglied-Volume auf einer Seite entfernt wurde (entweder auf der primären oder sekundären Seite), aber nicht auf der anderen Seite.
@@ -90,6 +96,7 @@ Sie können ein gespiegeltes Paar entfernen, um den Status eines verwaisten gesp
 
 
 
+[[configuration-and-management]]
 == Konfiguration und Management
 
 Um die Spiegelung zwischen zwei Arrays zu aktivieren und zu konfigurieren, müssen Sie die Unified Manager-Schnittstelle verwenden. Sobald die Spiegelung aktiviert ist, können Sie gespiegelte Paare und Synchronisierungseinstellungen in System Manager verwalten.

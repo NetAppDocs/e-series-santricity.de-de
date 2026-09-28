@@ -23,6 +23,7 @@ Der Prozess zum Erstellen einer Snapshot-Konsistenzgruppe wird in mehreren Schri
 
 
 
+[[step-1-add-members-to-snapshot-consistency-group]]
 == Schritt 1: Hinzufügen von Mitgliedern zu der Snapshot-Konsistenzgruppe
 
 Wählen Sie Mitglieder aus, um eine Sammlung von Volumes anzugeben, die die Snapshot-Konsistenzgruppe enthalten. Alle Aktionen, die Sie auf der Snapshot Konsistenzgruppe durchführen, werden gleichmäßig auf ausgewählte Mitglied-Volumes erweitert.
@@ -31,18 +32,18 @@ Wählen Sie Mitglieder aus, um eine Sammlung von Volumes anzugeben, die die Snap
 Die Mitgliedvolumes müssen optimal sein.
 
 .Schritte
-. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
-. Klicken Sie auf die Registerkarte *Snapshot Consistency Groups*.
+. Im linken Bereich Menü:Snapshots[Snapshot-Konsistenzgruppen] auswählen.
 . Wählen Sie Menü:Erstellen[Snapshot Konsistenzgruppe].
 +
 Das Dialogfeld Snapshot Konsistenzgruppe erstellen wird angezeigt.
 
-. Wählen Sie die Volumes aus, die der Snapshot-Konsistenzgruppe als Mitgliedvolumes hinzugefügt werden sollen.
+. Die Volumes, die als Mitgliedsvolumes zur Snapshot-Konsistenzgruppe hinzugefügt werden sollen, ermitteln.
 . Klicken Sie auf *Weiter*, und gehen Sie zu <<Schritt 2: Reservekapazität für Snapshot Konsistenzgruppe>>.
 
 
 
 
+[[step-2-reserve-capacity-for-snapshot-consistency-group]]
 == Schritt 2: Reservekapazität für Snapshot Konsistenzgruppe
 
 Zuweisen der reservierten Kapazität zur Snapshot-Konsistenzgruppe. System Manager legt die Volumes und die Kapazität auf Grundlage der Eigenschaften der Snapshot-Konsistenzgruppe vor. Sie können die empfohlene Konfiguration für reservierte Kapazität akzeptieren oder den zugewiesenen Storage anpassen.
@@ -74,6 +75,7 @@ Weisen Sie die reservierte Kapazität mithilfe der folgenden Richtlinien zu.
 
 
 
+[[step-3-edit-settings-for-snapshot-consistency-group]]
 == Schritt 3: Bearbeiten Sie die Einstellungen für die Snapshot Konsistenzgruppe
 
 Akzeptieren oder wählen Sie die Einstellungen zum automatischen Löschen und die Schwellenwerte für reservierte Kapazitätswarnschwellenwerte für die Snapshot-Konsistenzgruppe aus.

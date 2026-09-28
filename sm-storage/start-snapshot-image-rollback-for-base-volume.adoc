@@ -31,8 +31,7 @@ Der Host kann sofort auf das neue Rollback-Basis-Volume zugreifen, aber das vorh
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
-. Wählen Sie die Registerkarte *Snapshot Images* aus.
+. Im linken Bereich Menü:Schnappschüsse[Schnappschussbilder] auswählen.
 . Wählen Sie das Snapshot-Bild aus, und wählen Sie dann Menü:Rollback[Start].
 +
 Das Dialogfeld Rollback bestätigen wird angezeigt.
@@ -60,6 +59,6 @@ System Manager führt die folgenden Aktionen durch:
 
 
 .Nachdem Sie fertig sind
-Wählen Sie Menü:Storage[Operations in Progress], um den Fortschritt des Rollback-Vorgangs anzuzeigen.
+Menü:Überwachung[Laufende Vorgänge] auswählen, um den Fortschritt des Rollback-Vorgangs anzuzeigen.
 
 Ist der Rollback-Vorgang nicht erfolgreich, wird der Vorgang angehalten. Sie können den angehaltenen Vorgang fortsetzen und, falls dieser weiterhin nicht erfolgreich war, das Recovery Guru-Verfahren befolgen, um das Problem zu beheben oder sich an den technischen Support zu wenden.

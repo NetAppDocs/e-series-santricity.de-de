@@ -15,8 +15,7 @@ summary: Sie können den zuvor definierten Mail-Server so entfernen, dass Warnme
 Sie können den zuvor definierten Mail-Server so entfernen, dass Warnmeldungen nicht mehr an die E-Mail-Adressen gesendet werden, oder Sie können einzelne E-Mail-Adressen entfernen.
 
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Alerts].
-. Wählen Sie die Registerkarte *E-Mail* aus.
+. Im linken Bereich Menü:Benachrichtigungen[E-Mail-Benachrichtigungen] auswählen.
 . Führen Sie in der Tabelle einen der folgenden Schritte aus:
 +
 ** Um einen E-Mail-Server zu entfernen, damit Warnmeldungen nicht mehr an die E-Mail-Adressen gesendet werden, wählen Sie die Zeile für den Mail-Server aus.

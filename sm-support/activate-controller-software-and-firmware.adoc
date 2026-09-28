@@ -21,7 +21,7 @@ Sie können die Dateien herunterladen und übertragen, ohne sie zu aktivieren. A
 * *Paketyp* -- möglicherweise möchten Sie die neue Software und Firmware auf einem Speicher-Array testen, bevor Sie die Dateien auf anderen Speicher-Arrays aktualisieren.
 
 
-Wenn Sie über Software oder Firmware verfügen, die übertragen, aber nicht aktiviert wurde, wird im Bereich Benachrichtigungen der System Manager Startseite und auch auf der Seite Upgrade Center eine Benachrichtigung angezeigt.
+Wenn Software oder Firmware übertragen, aber noch nicht aktiviert wurde, erscheint eine Benachrichtigung im Benachrichtigungsbereich (verfügbar über das Glockensymbol in der oberen Ecke des Fensters) sowie auf der Upgrade center Seite.
 
 [CAUTION]
 ====
@@ -29,8 +29,8 @@ Sie können den Aktivierungsvorgang nach dem Start nicht beenden.
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich Menü:Support[Upgrade Center].
-. Klicken Sie im Bereich SANtricity OS-Software-Upgrade auf *Aktivieren* und bestätigen Sie, dass Sie den Vorgang ausführen möchten.
+. Im linken Bereich das Menü: Support[Upgrade center] auswählen.
+. Klicken Sie im Bereich mit der Bezeichnung SANtricity OS Software-Upgrade auf *Stufenweises Upgrade aktivieren* und bestätigen Sie, dass Sie den Vorgang durchführen möchten.
 +
 Sie können den Vorgang während der Integritätsprüfung vor dem Upgrade abbrechen, jedoch nicht während der Aktivierung.
 
@@ -40,7 +40,7 @@ Die Integritätsprüfung vor dem Upgrade beginnt. Wenn die Integritätsprüfung 
 +
 Nach erfolgreichem Abschluss der Integritätsprüfung vor dem Upgrade erfolgt die Aktivierung. Die Aktivierungszeiten hängen von der Konfiguration des Speicherarrays und den Komponenten ab, die Sie aktivieren.
 
-. *Optional:* um eine Liste der aktualisierten Versionen anzuzeigen, klicken Sie auf *Log speichern*.
+. *Optional:* Um eine Liste der aktualisierten Elemente anzuzeigen, auf *Protokoll speichern* klicken.
 +
 Die Datei wird im Ordner Downloads für Ihren Browser mit dem Namen gespeichert `drive_upgrade_log-timestamp.txt`.
 
@@ -48,6 +48,6 @@ Die Datei wird im Ordner Downloads für Ihren Browser mit dem Namen gespeichert 
 
 .Nachdem Sie fertig sind
 * Vergewissern Sie sich, dass alle Komponenten auf der Seite Hardware angezeigt werden.
-* Überprüfen Sie die neuen Software- und Firmware-Versionen, indem Sie das Dialogfeld Software- und Firmware-Bestandsaufnahme aktivieren (gehen Sie zu Menü:Support[Upgrade Center] und klicken Sie dann auf den Link für *Software- und Firmware-Bestandsaufnahme*).
+* Die neuen Software- und Firmware-Versionen lassen sich auf der Software- und Firmware-Inventarseite überprüfen (im Menü:Support[Upgrade center] den Link für *software and firmware inventory* auswählen).
 * Wenn Sie den Controller NVSRAM aktualisiert haben, gehen während der Aktivierung alle benutzerdefinierten Einstellungen, die Sie auf den vorhandenen NVSRAM angewendet haben, verloren. Sie müssen die benutzerdefinierten Einstellungen erneut auf den NVSRAM anwenden, nachdem der Aktivierungsvorgang abgeschlossen ist.
 

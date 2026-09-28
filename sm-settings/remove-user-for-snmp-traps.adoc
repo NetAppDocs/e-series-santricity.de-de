@@ -15,10 +15,9 @@ summary: Sie können einen Benutzer für SNMPv3-Traps entfernen.
 Sie können einen Benutzer für SNMPv3-Traps entfernen.
 
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Alerts].
-. Wählen Sie die Registerkarte *SNMP* aus.
+. Im linken Bereich Menü:Alerts[SNMP alerts] auswählen.
 +
-Die Trap-Ziele und Benutzernamen werden auf der Seite Meldungen angezeigt.
+Die Trap-Ziele und Benutzernamen erscheinen auf der SNMP-Warnungsseite.
 
 . Wählen Sie *Benutzer Konfigurieren*.
 +
@@ -29,4 +28,4 @@ Das Dialogfeld SNMPv3-Benutzer konfigurieren wird geöffnet.
 
 
 .Ergebnisse
-Der Benutzername und das zugehörige Trap-Ziel werden von der Seite Warnungen entfernt.
+Der Benutzername und das zugehörige Trap-Ziel werden von der SNMP-Warnmeldungsseite entfernt.

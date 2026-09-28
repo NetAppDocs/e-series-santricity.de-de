@@ -19,11 +19,7 @@ Führen Sie diesen Vorgang nur aus, wenn Sie vom technischen Support oder dem Re
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich *Hardware* aus.
-. Wenn die Grafik die Controller anzeigt, klicken Sie auf die Registerkarte *Laufwerke*.
-+
-Die Grafik ändert sich, um die Laufwerke anstelle der Controller anzuzeigen.
-
+. Im linken Bereich Menü:Hardware[Laufwerke] auswählen.
 . Klicken Sie auf das Laufwerk, das Sie manuell rekonstruieren möchten.
 +
 Das Kontextmenü des Laufwerks wird angezeigt.

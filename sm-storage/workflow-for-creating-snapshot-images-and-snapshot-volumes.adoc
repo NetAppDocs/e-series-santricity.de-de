@@ -15,12 +15,14 @@ In SANtricity System Manager können Sie Snapshot-Images und Snapshot-Volumes er
 
 
 
+[[workflow-for-creating-snapshot-images]]
 == Workflow zum Erstellen von Snapshot Images
 
 image::../media/sam1130-flw-snapshots-create-ss-images.gif[Erstellen Sie einen Workflow für Snapshot-Bilder]
 
 
 
+[[workflow-for-creating-snapshot-volumes]]
 == Workflow für die Erstellung von Snapshot Volumes
 
 image::../media/sam1130-flw-snapshots-create-ss-volumes.gif[Erstellen Sie einen Workflow für Snapshot-Volumes]

@@ -17,7 +17,7 @@ Verwenden Sie die Seite „Vorgänge in Bearbeitung“, um bei lang laufenden Vo
 Für jeden Vorgang, der auf der Seite „Vorgänge in Bearbeitung“ aufgeführt ist, werden ein Prozentsatz der Fertigstellung und die geschätzte verbleibende Zeit bis zum Abschluss des Vorgangs angezeigt. In einigen Fällen können Sie einen Vorgang anhalten oder eine höhere oder niedrigere Priorität zuweisen. Sie können einen abgeschlossenen Kopiervorgang auch aus der Liste löschen.
 
 .Schritte
-. Wählen Sie im linken Bereich das Menü:Storage[Operations in Progress].
+. Im linken Bereich das Menü:Überwachung[Laufende Vorgänge] auswählen.
 +
 Die Seite „Vorgänge in Bearbeitung“ wird angezeigt.
 
@@ -33,7 +33,7 @@ Sie können den Vorgang einer Volume-Kopie anhalten oder deren Priorität änder
 
 . Sobald ein Vorgang zur Volume-Kopie abgeschlossen ist, können Sie *Löschen* wählen, um es aus der Liste zu entfernen.
 +
-Oben auf der Startseite werden eine Informationsmeldung und ein gelbes Schraubenschlüsselsymbol angezeigt, wenn ein Vorgang abgeschlossen ist. Diese Meldung enthält einen Link, mit dem Sie den Vorgang auf der Seite „Vorgänge in Bearbeitung“ löschen können.
+Nach Abschluss eines Vorgangs erscheint im Benachrichtigungsbereich (erreichbar über das Glockensymbol in der oberen Ecke des Fensters) eine Informationsmeldung und ein gelbes Schraubenschlüssel-Symbol. Diese Meldung enthält einen Link, mit dem der Vorgang von der Seite „Laufende Vorgänge“ entfernt werden kann.
 
 
 

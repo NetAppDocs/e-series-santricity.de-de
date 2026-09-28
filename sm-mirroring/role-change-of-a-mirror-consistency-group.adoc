@@ -24,6 +24,7 @@ Sie können die Rolle zwischen gespiegelten Paaren in einer gespiegelten Consist
 
 
 
+[[force-role-change]]
 == Rollenänderung erzwingen
 
 Sie können eine Rollenänderung zwischen gespiegelten Konsistenzgruppen erzwingen, wenn ein Kommunikationsproblem zwischen dem lokalen Speicher-Array und dem Remote-Speicher-Array verhindert, dass die Mitglied-Volumes innerhalb der Konsistenzgruppe der sekundären Spiegelung befördert werden oder die Herabstufung der Mitglied-Volumes innerhalb der Konsistenz der primären Spiegelung ausfällt Gruppieren.
@@ -32,6 +33,7 @@ Sie können die gespiegelte Konsistenzgruppe auf der sekundären Seite zu der pr
 
 
 
+[[when-is-a-forced-promotion-allowed-and-not-allowed]]
 == Wann ist eine erzwungene Promotion zulässig und nicht zulässig?
 
 Die erzwungene Beförderung einer SpiegelungsConsistency Group ist nur zulässig, wenn alle Mitglied-Volumes der Consistency Group synchronisiert wurden und über konsistente Recovery-Punkte verfügen.
@@ -46,6 +48,7 @@ Die erzwungene Beförderung einer SpiegelungsConsistency Group ist unter den fol
 
 
 
+[[mirror-group-role-conflict]]
 == Konflikt mit der Spiegelgruppe
 
 Wenn ein Kommunikationsproblem zwischen den lokalen und den Remote-Speicher-Arrays behoben wurde, tritt ein Konflikt zwischen den Spiegelgruppen-Rollen auf. Verwenden Sie den Recovery Guru zur Wiederherstellung nach diesem Fehler. Eine erzwungene Beförderung ist nicht zulässig, wenn ein Konflikt mit zwei Rollen gelöst wird.
@@ -54,6 +57,7 @@ Um den Konflikt zwischen den Spiegelgruppen und den nachfolgenden Wiederherstell
 
 
 
+[[role-change-in-progress-state]]
 == Rollenänderung in Bearbeitung
 
 Wenn zwei Speicher-Arrays in einer Spiegelungskonfiguration getrennt werden, und die primäre Seite einer SpiegelungsConsistency Group zum Zurückstufen auf eine sekundäre Rolle geherabgestuft wird und die sekundäre Seite einer SpiegelungsConsistency Group erzwingen wird, wird sie zu einer primären Rolle heraufgestuft. Wenn die Kommunikation wiederhergestellt wird, werden die gespiegelten Konsistenzgruppen auf beiden Storage Arrays in den Status „Role Change-in-Progress“ versetzt.

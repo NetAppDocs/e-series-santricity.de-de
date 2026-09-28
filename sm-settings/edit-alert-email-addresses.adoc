@@ -15,11 +15,10 @@ summary: Sie können die E-Mail-Adressen der Empfänger, die E-Mail-Benachrichti
 Sie können die E-Mail-Adressen der Empfänger, die E-Mail-Benachrichtigungen erhalten, ändern.
 
 .Bevor Sie beginnen
-Die E-Mail-Adresse, die Sie bearbeiten möchten, muss auf der Registerkarte „E-Mail“ der Seite „Benachrichtigungen“ definiert sein.
+Die E-Mail-Adresse, die bearbeitet werden soll, muss auf der Seite „E-Mail-Benachrichtigungen“ definiert sein.
 
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Alerts].
-. Wählen Sie die Registerkarte *E-Mail* aus.
+. Im linken Bereich Menü:Benachrichtigungen[E-Mail-Benachrichtigungen] auswählen.
 . Wählen Sie in der Tabelle *E-Mail-Adresse* die Adresse aus, die Sie ändern möchten, und klicken Sie dann rechts auf das Symbol *Bearbeiten* (Bleistift).
 +
 Die Zeile wird zu einem bearbeitbaren Feld.
@@ -34,4 +33,4 @@ Wenn Sie die Änderungen abbrechen möchten, wählen Sie das Symbol *Abbrechen* 
 
 
 .Ergebnisse
-Auf der Registerkarte „E-Mail“ der Seite „Meldungen“ werden die aktualisierten E-Mail-Adressen angezeigt.
+Die Seite „E-Mail-Benachrichtigungen“ zeigt die aktualisierten E-Mail-Adressen an.

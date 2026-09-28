@@ -51,6 +51,13 @@ System Manager führt die folgenden Aufgaben aus:
 ** Fügt dem vorhandenen Pool die Laufwerke desselben Laufwerkstyps hinzu und erstellt mithilfe der anderen Laufwerktypen verschiedene Pools, wenn die neuen Laufwerke unterschiedliche Laufwerkstypen haben.
 
 
+
+
+[NOTE]
+====
+Auf EF80 und EF50 Systemen werden Performance und Capacity NVMe-SSDs als separate Laufwerkstypen behandelt. System Manager erstellt separate Pools für Performance- und Capacity-Laufwerke und mischt diese nicht im selben Pool. Die Mindestpoolgröße beträgt 6 Laufwerke für Performance und 12 Laufwerke für Capacity.
+
+====
 . Um weitere Eigenschaften des Pools anzuzeigen, klicken Sie auf den angezeigten Poolnamen.
 +
 Es werden Informationen zum Laufwerkstyp, zur Sicherheitsfunktion, zur Data Assurance (da)-Funktion, zum Schutz vor Shelf-Verlust und zum Schutz vor Schubladenverlust angezeigt.

@@ -21,12 +21,14 @@ Zur einfachen Verwaltung von Snapshot-Vorgängen für Basis-Volumes können Sie 
 
 
 
+[[snapshot-schedule]]
 == Snapshot Zeitplan
 
 Wenn Sie automatisch Snapshots für ein Basis-Volume erstellen möchten, können Sie einen Zeitplan erstellen. Sie können beispielsweise einen Zeitplan festlegen, der jeden Samstag um Mitternacht, am ersten jeden Monat oder an beliebigen Daten und Uhrzeiten Snapshot-Bilder erstellt. Nachdem die maximale Anzahl von 32 Snapshots für einen einzigen Zeitplan erreicht wurde, können Sie die geplanten Snapshots unterbrechen, mehr reservierte Kapazität erstellen oder Snapshots löschen. Snapshots können manuell oder automatisiert gelöscht werden. Nach dem Löschen eines Snapshot Images steht zusätzliche reservierte Kapazität zur Wiederverwendung zur Verfügung.
 
 
 
+[[snapshot-consistency-group]]
 == Snapshot Konsistenzgruppe
 
 Sie erstellen eine Snapshot-Konsistenzgruppe, wenn Sie sicherstellen möchten, dass Snapshot-Images gleichzeitig auf mehreren Volumes erstellt werden. Aktionen für das Snapshot Image werden auf der gesamten Snapshot-Konsistenzgruppe durchgeführt. Beispielsweise können Sie synchronisierte Snapshots aller Volumes mit dem gleichen Zeitstempel planen. Snapshot-Konsistenzgruppen eignen sich ideal für Applikationen, die mehrere Volumes umfassen, z. B. Datenbankapplikationen, die Protokolle auf einem Volume speichern, und Datenbankdateien auf einem anderen Volume.

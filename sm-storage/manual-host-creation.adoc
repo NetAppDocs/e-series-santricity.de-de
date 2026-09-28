@@ -15,6 +15,7 @@ Das Erstellen eines Hosts ist einer der Schritte, die erforderlich sind, damit d
 
 
 
+[[manual-creation]]
 == Manuelle Erstellung
 
 Durch die manuelle Hosterstellung können Sie sicherstellen, dass die Host-Port-IDs, die von den Speicher-Array-Controllern erkannt wurden, den Hosts korrekt zugeordnet sind.

@@ -15,10 +15,9 @@ summary: Sie können einen Community-Namen für SNMPv2c-Traps entfernen.
 Sie können einen Community-Namen für SNMPv2c-Traps entfernen.
 
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Alerts].
-. Wählen Sie die Registerkarte *SNMP* aus.
+. Im linken Bereich Menü:Alerts[SNMP alerts] auswählen.
 +
-Die Trap-Ziele und Community-Namen werden auf der Seite *Alerts* angezeigt.
+Die Trap-Ziele und Community-Namen erscheinen auf der Seite *SNMP-Warnungen*.
 
 . Wählen Sie * Communities Konfigurieren*.
 +
@@ -32,4 +31,4 @@ Wenn Trap-Ziele mit diesem Community-Namen verknüpft sind, werden im Dialogfeld
 
 
 .Ergebnisse
-Der Community-Name und das zugehörige Trap-Ziel werden von der Seite Alerts entfernt.
+Der Name der Community und das zugehörige Trap-Ziel werden von der SNMP-Warnungsseite entfernt.

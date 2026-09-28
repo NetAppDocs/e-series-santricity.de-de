@@ -14,79 +14,100 @@ summary: Sie können Informationen zu einem Controller anzeigen, z. B. den Statu
 Sie können Informationen zu einem Controller anzeigen, z. B. den Status der Host-Schnittstellen, Laufwerksschnittstellen und Management-Ports.
 
 .Schritte
-. Wählen Sie im linken Bereich *Hardware* aus.
-. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf die Registerkarte *Controller & Komponenten*.
-+
-Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
-
+. Wählen Sie im linken Bereich Menü:Hardware[Controllers and components].
 . Führen Sie eine der folgenden Aktionen durch, um die Controller-Einstellungen anzuzeigen:
 +
 ** Klicken Sie auf den Controller, um das Kontextmenü anzuzeigen, und wählen Sie dann *Einstellungen anzeigen*.
 ** Wählen Sie das Controller-Symbol aus (neben der Dropdown-Liste *Shelf*). Wählen Sie bei Duplexkonfigurationen entweder *Controller A* oder *Controller B* aus dem Dialogfeld aus, und klicken Sie dann auf *Weiter*.
 +
-Das Dialogfeld Controller-Einstellungen wird geöffnet.
+Das Schiebemenü für die Controller-Einstellungen wird geöffnet.
 
 
 
-. Wählen Sie die Registerkarten aus, die zwischen den Eigenschaftseinstellungen verschoben werden sollen.
-+
-Einige Registerkarten haben einen Link für *Weitere Einstellungen anzeigen* oben rechts.
-
+. In den Abschnitten finden sich Informationen zum Wechsel zwischen den Controller-Eigenschaftseinstellungen.
 +
 .Felddetails
 [%collapsible]
 ====
 [cols="25h,~"]
 |===
-| Registerkarte | Beschreibung 
+| Abschnitt | Beschreibung 
 
 
  a| 
-Basis
+Details
  a| 
-Zeigt den Controller-Status, den Modellnamen, die Ersatzteilnummer des Ersatzteils, die aktuelle Firmware-Version und die Version des nichtflüchtigen statischen Random Access Memory (NVSRAM) an.
+Zeigt den Controller-Status, Datum/Uhrzeit, Modellnamen und die Teilenummer des Ersatzteils an.
 
 
 
  a| 
-Cache
+Aktuelle Konfiguration
  a| 
-Zeigt die Cache-Einstellungen des Controllers an, zu denen der Daten-Cache, der Prozessor-Cache und das Cache-Backup-Gerät gehören. Das Cache-Backup-Gerät wird verwendet, um Daten im Cache zu sichern, wenn Sie den Controller bei einem Stromausfall verlieren. Status kann optimal, fehlgeschlagen, entfernt, Unbekannt, schreibgeschützt, Oder nicht kompatibel.
+Zeigt die aktuelle Firmware-Version und NVRAM Version.
+
+
+
+ a| 
+Datencache
+ a| 
+Zeigt die Gesamtsummen des Daten-Caches.
+
+
+
+ a| 
+Daten-Cache-Module
+ a| 
+Zeigt Speicherort, Status und Kapazität des Cache-Moduls an.
+
+
+
+ a| 
+Prozessorcache
+ a| 
+Zeigt die Gesamtsummen des Prozessor-Caches an.
+
+
+
+ a| 
+Cache Backup-Geräte
+ a| 
+Zeigt Standort, Status und Kapazität des Cache-Backup-Geräts an.
 
 
 
  a| 
 Host-Schnittstellen
  a| 
-Zeigt die Informationen zur Host-Schnittstelle und den Linkstatus der einzelnen Ports an. Die Host-Schnittstelle ist die Verbindung zwischen dem Controller und dem Host, z. B. Fibre Channel oder iSCSI.
-
-
-NOTE: Der Standort der Host Interface Card (HIC) befindet sich entweder in der Baseboard oder in einem Steckplatz (Schacht). „Baseboard“ zeigt, dass die HIC-Ports in den Controller integriert sind. Die „Steckplatz“-Ports befinden sich auf der optionalen HIC.
+Zeigt Informationen zur Host-Schnittstelle und zum Verbindungsstatus für jeden Port an.
 
 
 
  a| 
-Festplattenschnittstellen
+Laufwerksschnittstellen
  a| 
-Zeigt die Informationen zur Laufwerkschnittstelle und den Linkstatus jedes Ports an. Die Laufwerksschnittstelle ist die Verbindung zwischen dem Controller und den Laufwerken, z. B. SAS.
-
-
-
- a| 
-Management-Ports
- a| 
-Zeigt Details zum Management-Port an, z. B. den Host-Namen, der für den Zugriff auf den Controller verwendet wurde, und ob eine Remote-Anmeldung aktiviert wurde. Der Managementport verbindet den Controller und den Management-Client. Hier wird ein Browser zum Zugriff auf System Manager installiert.
+Zeigt Informationen zur Laufwerksschnittstelle und zum Verbindungsstatus für jeden Port an.
 
 
 
  a| 
-DNS/NTP
+Einstellungen für den Management-Port
  a| 
-Zeigt die Adressmethode und die IP-Adressen für den DNS-Server und den NTP-Server an, wenn diese Server in System Manager konfiguriert wurden.
+Zeigt Details zum Management-Port an, einschließlich Controller-Hostname, Remote-Login und IP-Netzwerkeinstellungen.
 
-Domain Name System (DNS) ist ein Benennungssystem für Geräte, die mit dem Internet oder einem privaten Netzwerk verbunden sind. Der DNS-Server verwaltet ein Verzeichnis von Domain-Namen und übersetzt diese in Internet Protocol (IP)-Adressen.
 
-Network Time Protocol (NTP) ist ein Netzwerkprotokoll für die Uhrsynchronisierung zwischen Computersystemen in Datennetzwerken.
+
+ a| 
+Domain Name System (DNS)-Server-Einstellungen
+ a| 
+Zeigt die DNS-Konfiguration, den primären DNS-Server und den Backup-DNS-Server.
+
+
+
+ a| 
+Netzwerkzeitprotokoll (NTP) Servereinstellungen
+ a| 
+Zeigt Details zur NTP-Service- und NTP-Serverkonfiguration an.
 
 |===
 ====

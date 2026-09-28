@@ -18,20 +18,22 @@ Mit der Erweiterung wird zusätzliche freie Kapazität in den Pool bzw. die Volu
 
 .Bevor Sie beginnen
 * Die Laufwerke müssen sich im optimalen Zustand befinden.
-* Laufwerke müssen über den gleichen Festplattentyp (HDD oder SSD) verfügen.
+* Die Laufwerke müssen vom gleichen Laufwerkstyp sein (HDD oder SSD). Für EF80 und EF50 Systeme können Performance- und Capacity-NVMe-SSD-Laufwerke im selben Storage-Array vorhanden sein, dürfen jedoch nicht im selben Pool oder in derselben Volume-Gruppe gemischt werden.
 * Der Pool oder die Volume-Gruppe muss den Status „optimal“ aufweisen.
 * In einer Volume-Gruppe sind maximal 256 Volumes zulässig.
 * Die maximale Anzahl an Volumes, die in einem Pool zulässig sind, hängt vom Modell des Storage-Systems ab:
 +
-** 2.048 Volumes (EF80, EF600 und E5700 Serien)
+** 2.048 Volumes (EF80, EF600 und EF600C)
 ** 1.024 Volumes (EF50 und EF300)
-** 512 Volumes (E4000 und E2800 Serie)
+** 512 Volumes (E4000)
 
 
 * Wenn der Pool oder die Volume-Gruppe alle sicheren Laufwerke enthält, fügen Sie nur Laufwerke hinzu, die sicher sind, damit sie weiterhin die Verschlüsselungsfunktionen der sicheren Laufwerke nutzen können.
 +
 Sichere Laufwerke können entweder vollständige Festplattenverschlüsselung (Full Disk Encryption, FDE) oder FIPS-Laufwerke (Federal Information Processing Standard) sein.
 
+* Die Kapazität der hinzugefügten Laufwerke muss mindestens so groß sein wie die Kapazität des kleinsten Laufwerks im Pool oder in der Volume-Gruppe.
+* Die PCIe-Geschwindigkeit und der Laufwerkstyp (Performance oder Capacity) der hinzugefügten Laufwerke müssen mit den vorhandenen Laufwerken im Pool oder in der Volume-Gruppe übereinstimmen. Performance und Capacity Laufwerke dürfen nicht im selben Pool oder in derselben Volume-Gruppe gemischt werden.
 
 
 .Über diese Aufgabe
@@ -49,9 +51,9 @@ Vermeiden Sie die Verwendung von Laufwerken mit Data Assurance (DA)-Funktion, um
 ====
 .Schritte
 . Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
-. Wählen Sie den Pool oder die Volume-Gruppe aus, zu der Sie Laufwerke hinzufügen möchten, und klicken Sie dann auf das Menü:Ellipsis-Symbol[Kapazität hinzufügen].
+. Suchen Sie den Pool oder die Volume-Gruppe, zu der Sie Laufwerke hinzufügen möchten, und klicken Sie dann auf das Menü:Ellipsen-Symbol[Kapazität hinzufügen].
 +
-Das Dialogfeld „Kapazität hinzufügen“ wird angezeigt. Es werden nur die nicht zugewiesenen Laufwerke angezeigt, die mit dem Pool oder der Volume-Gruppe kompatibel sind.
+Die Seite „Kapazität hinzufügen“ wird angezeigt. Es erscheinen nur die nicht zugewiesenen Laufwerke, die mit dem Pool oder der Volumengruppe kompatibel sind.
 
 . Unter *Laufwerke zum Hinzufügen von Kapazität auswählen...* wählen Sie ein oder mehrere Laufwerke aus, die Sie dem vorhandenen Pool oder der vorhandenen Volume-Gruppe hinzufügen möchten.
 +

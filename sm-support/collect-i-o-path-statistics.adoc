@@ -1,8 +1,8 @@
 ---
 permalink: sm-support/collect-i-o-path-statistics.html 
 sidebar: sidebar 
-keywords: SANtricity, System Manager, E-Series, collect, i/o path, statistics 
-summary: Sie können die Statistikdatei für den I/O-Pfad speichern und sie dem technischen Support zur Analyse senden. 
+keywords: SANtricity, System Manager, E-Series, collect, io path, statistics 
+summary: Sie können die IO-Pfadstatistiken-Datei speichern und zur Analyse an den technischen Support senden. 
 ---
 = Sammeln Sie E/A-Pfadstatistiken im SANtricity System Manager
 :allow-uri-read: 
@@ -25,7 +25,7 @@ Führen Sie diesen Vorgang nur aus, wenn Sie vom technischen Support dazu aufgef
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich Menü:Support[Support Center > Diagnostics] Registerkarte.
+. Im linken Menü Menü:Support[Diagnostik] auswählen.
 . Wählen Sie *E/A-Pfadstatistik sammeln*.
 . Bestätigen Sie, dass Sie den Vorgang durchführen möchten, indem Sie eingeben `collect`, Und klicken Sie dann auf *Collect*.
 +

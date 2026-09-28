@@ -16,12 +16,13 @@ Mit dem Setup-Assistenten können Sie Ihr Storage-Array konfigurieren, einschlie
 
 
 
+[[first-time-setup]]
 == Ersteinrichtung
 
 Wenn Sie System Manager zum ersten Mal öffnen, wird der Setup-Assistent gestartet. Der Setup-Assistent fordert Sie auf, grundlegende Konfigurationsaufgaben durchzuführen, z. B. die Benennung Ihres Speicher-Arrays, die Konfiguration Ihrer Hosts, die Auswahl von Anwendungen und die Erstellung von Speicherpools.
 
 
-NOTE: Bevor Sie mit der Ersteinrichtung fortfahren können, gehen Sie zum Upgrade Center (Menü:Support[Upgrade Center]) und stellen Sie sicher, dass Ihre SANtricity OS-Software auf dem neuesten Stand ist. Aktualisieren Sie bei Bedarf auf die neueste Version, und aktualisieren Sie Ihren Browser, um mit der Einrichtung fortzufahren. Weitere Informationen finden Sie unter link:../sm-support/overview-upgrade-center.html["Übersicht zum Upgrade Center"].
+NOTE: Bevor die Ersteinrichtung fortgesetzt wird, im Upgrade center (Menü: Support [Upgrade center]) sicherstellen, dass die SANtricity OS Software auf dem neuesten Stand ist. Falls erforderlich, auf die neueste Version aktualisieren und den Browser aktualisieren, um mit der Einrichtung fortzufahren. Weitere Informationen finden sich unter link:../sm-support/overview-upgrade-center.html["Übersicht zum Upgrade Center"].
 
 Wenn Sie den Assistenten abbrechen, können Sie ihn nicht manuell neu starten. Der Assistent wird automatisch neu gestartet, wenn Sie den System Manager öffnen oder den Browser aktualisieren, und mindestens eine der folgenden Bedingungen erfüllt ist:
 
@@ -32,6 +33,7 @@ Wenn Sie den Assistenten abbrechen, können Sie ihn nicht manuell neu starten. D
 
 
 
+[[terminology]]
 == Terminologie
 
 Der Setup-Assistent verwendet die folgenden Begriffe.

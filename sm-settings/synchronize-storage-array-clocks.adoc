@@ -28,10 +28,10 @@ Nach der Synchronisierung können Sie feststellen, dass Performance-Statistiken 
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich Menü:Einstellungen[System].
-. Klicken Sie unter *Allgemein* auf *Speicherarray-Uhren synchronisieren*.
+. Im linken Bereich *System* auswählen.
+. Unter *Allgemein* auf *Speicherarray-Takt synchronisieren* klicken.
 +
-Das Dialogfeld Speicherarray-Uhren synchronisieren wird geöffnet. Es zeigt das aktuelle Datum und die aktuelle Uhrzeit für die Controller und den Computer an, der als Management-Client verwendet wird.
+Das Dialogfeld „Speicherarray-Uhren synchronisieren“ wird geöffnet. Es zeigt das aktuelle Datum und die aktuelle Uhrzeit für den/die Controller und den als Management-Client verwendeten Computer an.
 
 +
 [NOTE]

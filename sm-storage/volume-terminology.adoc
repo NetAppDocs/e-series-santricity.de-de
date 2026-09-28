@@ -15,6 +15,7 @@ Erfahren Sie, wie die Volume-Bedingungen auf Ihr Storage Array angewendet werden
 
 
 
+[[all-volume-types]]
 == Alle Volume-Typen
 
 [cols="25h,~"]
@@ -175,7 +176,10 @@ Die Volume-Zuweisung ist die Zuweisung von Host-LUNs zu einem Volume.
  a| 
 Volume-Name
  a| 
-Ein Volume-Name ist eine Zeichenfolge, die dem Volume beim Erstellen zugewiesen wird. Sie können entweder den Standardnamen akzeptieren oder einen aussagekräftigeren Namen angeben, der den Datentyp angibt, der im Volume gespeichert ist.
+Ein Volume-Name ist eine Zeichenkette, die dem Volume bei seiner Erstellung zugewiesen wird. Es kann entweder der Standardname übernommen oder ein aussagekräftigerer Name vergeben werden, der den Typ der im Volume gespeicherten Daten angibt. Standard- und Thin-Volume-Namen dürfen maximal 60 Zeichen lang sein. Der Name muss eindeutig sein. Nur Standard- und Thin-Volumes können Namen mit mehr als 30 Zeichen haben.
+
+
+NOTE: Ein Downgrade auf SANtricity OS Softwareversion 11.90 oder älter wird nicht unterstützt, wenn Standard- oder Thin-Volumes mit Namen vorhanden sind, die länger als 30 Zeichen sind. Für den Fall, dass ein Downgrade auf SANtricity OS Softwareversion 11.90 oder älter vorgesehen ist, sollten die Namen aller Standard- oder Thin-Volumes, deren Namen länger als 30 Zeichen sind, vor dem Downgrade geändert werden.
 
 
 
@@ -215,6 +219,7 @@ Durch die Einstellung Schreib-Cache ohne Batterien wird das Schreib-Caching auch
 |===
 
 
+[[specific-to-thin-volumes]]
 == Spezifisch für Thin Volumes
 
 [NOTE]

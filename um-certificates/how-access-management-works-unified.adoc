@@ -15,6 +15,7 @@ Verwenden Sie die Zugriffsverwaltung, um die Benutzerauthentifizierung in SANtri
 
 
 
+[[configuration-workflow]]
 == Konfigurationsworkflow
 
 Die Zugriffsmanagement-Konfiguration funktioniert wie folgt:
@@ -47,6 +48,7 @@ Bei der ersten Anmeldung wird der Benutzername verwendet `admin` Wird automatisc
 
 
 
+[[functions-available-in-unified-manager]]
 == Funktionen in Unified Manager verfügbar
 
 Der Zugriff auf Funktionen hängt von den zugewiesenen Rollen eines Benutzers ab. Dazu gehören:

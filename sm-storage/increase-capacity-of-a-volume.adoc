@@ -34,7 +34,7 @@ Eine Erhöhung der Kapazität eines Volumens wird nur auf bestimmten Betriebssys
 ====
 .Schritte
 . Wählen Sie im linken Bereich Menü:Storage[Volumes].
-. Wählen Sie das Volume aus, dessen Kapazität Sie erhöhen möchten, und klicken Sie dann auf das Menü:Ellipsen-Symbol[Kapazität erhöhen].
+. Suchen Sie das Volume, dessen Kapazität erhöht werden soll, und dann auf das Menü:Ellipsen-Symbol[Kapazität erhöhen] klicken.
 +
 Die Seite „Kapazitätserhöhung bestätigen“ wird angezeigt.
 
@@ -51,7 +51,7 @@ Auf dieser Seite werden die aktuell gemeldete Kapazität des Volumes und die im 
 
 .Ergebnisse
 * System Manager erhöht die Kapazität des Volumes basierend auf Ihrer Auswahl.
-* Wählen Sie Menü:Storage[Operations in Progress], um den Fortschritt der aktuell laufenden Kapazitätserweiterung für das ausgewählte Volume anzuzeigen. Dieser Vorgang kann längere Zeit dauern und die Systemleistung beeinträchtigen.
+* Im Menü „Monitoring[Laufende Vorgänge]“ lässt sich der Fortschritt der aktuell für das ausgewählte Volume laufenden Kapazitätserhöhung anzeigen. Dieser Vorgang kann längere Zeit dauern und die Systemleistung beeinträchtigen.
 
 
 .Nachdem Sie fertig sind

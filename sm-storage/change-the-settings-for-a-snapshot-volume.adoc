@@ -15,8 +15,7 @@ summary: 'Sie können die Einstellungen für ein Snapshot-Volume oder Snapshot-K
 Sie können die Einstellungen für ein Snapshot-Volume oder Snapshot-Konsistenzgruppenvolume ändern, um es umzubenennen, das SSD-Caching zu aktivieren oder zu deaktivieren oder die Zuweisung von Host, Host-Cluster oder Logical Unit Number (LUN) zu ändern.
 
 .Schritte
-. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
-. Klicken Sie auf die Registerkarte *Snapshot Volumes*.
+. Im linken Bereich Menü:Snapshots[Snapshot volumes] auswählen.
 . Wählen Sie das Snapshot-Volumen aus, das Sie ändern möchten, und klicken Sie dann auf *Einstellungen anzeigen/bearbeiten*.
 +
 Das Dialogfeld Snapshot-Volume-Einstellungen wird angezeigt.
@@ -39,7 +38,7 @@ Das Dialogfeld Snapshot-Volume-Einstellungen wird angezeigt.
  a| 
 Name
  a| 
-Sie können den Namen für das Snapshot-Volume ändern.
+Sie können den Namen des Snapshot-Volumes ändern. Volumennamen dürfen maximal 30 Zeichen lang sein. Der Name muss eindeutig sein.
 
 
 

@@ -15,6 +15,7 @@ summary: Überprüfen Sie vor der Verwendung der Remote-Speicherfunktion die fol
 
 
 
+[[supported-protocols]]
 == Unterstützte Protokolle
 
 Folgende Protokolle werden unterstützt:
@@ -27,6 +28,7 @@ Aktuelle Informationen zu E-Series Support und Konfiguration finden Sie im https
 
 
 
+[[hardware-requirements]]
 == Hardwareanforderungen
 
 Das E-Series Storage-System muss Folgendes umfassen:
@@ -44,6 +46,7 @@ Das Remote-System kann entweder ein E-Series Storage-System oder ein System eine
 
 
 
+[[restrictions]]
 == Einschränkungen
 
 Die Remote-Speicherfunktion verfügt über folgende Einschränkungen:

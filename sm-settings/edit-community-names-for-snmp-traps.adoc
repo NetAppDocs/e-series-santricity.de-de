@@ -18,8 +18,7 @@ Sie können Community-Namen für SNMPv2c-Traps bearbeiten.
 Ein Community-Name muss erstellt werden.
 
 .Schritte
-. Wählen Sie im linken Bereich menu:Setting[Alerts].
-. Wählen Sie die Registerkarte *SNMP* aus.
+. Im linken Bereich Menü:Alerts[SNMP alerts] auswählen.
 +
 Die Trap-Ziele und Community-Namen werden in der Tabelle angezeigt.
 
@@ -28,4 +27,4 @@ Die Trap-Ziele und Community-Namen werden in der Tabelle angezeigt.
 
 
 .Ergebnisse
-Auf der Registerkarte SNMP der Seite Meldungen wird der aktualisierte Community-Name angezeigt.
+Auf der SNMP-Warnungsseite wird der aktualisierte Community-Name angezeigt.

@@ -13,10 +13,11 @@ summary: Die Speicherhierarchie auf der Hauptschnittstelle bietet eine organisie
 [role="lead"]
 Die Speicherhierarchie auf der Hauptschnittstelle bietet eine organisierte Ansicht der verschiedenen Hardwarekomponenten und Speicherobjekte, die von Ihrem Speicher-Array verwaltet werden.
 
-Um die Storage-Hierarchie anzuzeigen, wechseln Sie zur Startseite und klicken Sie auf den Dropdown-Pfeil für eine Storage-Array-Komponente oder ein Storage-Objekt. Ein Storage Array besteht aus einer Sammlung sowohl physischer als auch logischer Komponenten.
+Die Speicherhierarchie wird im Dashboard angezeigt, wenn der Dropdown-Pfeil bei einer Storage Array-Komponente oder einem Storage-Objekt ausgewählt wird. Ein Storage Array besteht aus einer Sammlung physischer und logischer Komponenten.
 
 
 
+[[physical-components]]
 == Physische Komponenten
 
 Die physischen Komponenten eines Storage-Arrays werden in dieser Tabelle beschrieben.
@@ -81,6 +82,7 @@ Ein Management-Client ist der Computer, auf dem ein Browser zum Zugriff auf Syst
 |===
 
 
+[[logical-components]]
 == Logische Komponenten
 
 Die Laufwerke im Speicher-Array stellen die physische Speicherkapazität für Daten bereit. Mit System Manager lässt sich die physische Kapazität in logischen Komponenten wie Pools, Volume-Gruppen und Volumes konfigurieren. Diese Komponenten sind die Tools, mit denen Sie Daten im Storage Array konfigurieren, speichern, warten und erhalten. In dieser Tabelle werden die logischen Komponenten eines Speicherarrays beschrieben.

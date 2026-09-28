@@ -24,7 +24,7 @@ Sie können die RAID-Ebene eines Pools nicht mit der System Manager Schnittstell
 ====
 .Schritte
 . Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
-. Wählen Sie den Pool aus, den Sie bearbeiten möchten, und klicken Sie dann auf das Menü:Ellipsis-Symbol[Einstellungen bearbeiten].
+. Suchen Sie den Pool, den Sie bearbeiten möchten, und klicken Sie dann auf das Menü:Ellipsen-Symbol[Einstellungen bearbeiten].
 +
 Das Fenster „Pooleinstellungen bearbeiten“ wird angezeigt.
 
@@ -50,7 +50,7 @@ Kapazitätswarnungen
  a| 
 Sie können Benachrichtigungen senden, wenn die freie Kapazität in einem Pool einen bestimmten Schwellenwert erreicht oder überschreitet. Wenn die im Pool gespeicherten Daten den angegebenen Schwellenwert überschreiten, sendet System Manager eine Meldung, sodass Sie mehr Speicherplatz hinzufügen oder unnötige Objekte löschen können.
 
-Warnmeldungen werden im Bereich Benachrichtigungen auf dem Dashboard angezeigt und können per E-Mail und SNMP-Trap-Nachrichten vom Server an Administratoren gesendet werden.
+Warnmeldungen werden im Benachrichtigungsbereich angezeigt, der über das Glockensymbol in der oberen Ecke des Fensters verfügbar ist, und können vom Server per E-Mail und SNMP-Trap-Nachrichten an Administratoren gesendet werden.
 
 Sie können die folgenden Kapazitätswarnungen definieren:
 

@@ -36,10 +36,9 @@ Wenn Sie nicht über die MIB-Datei, können Sie sie von der NetApp Support-Websi
 Diese Aufgabe beschreibt, wie Sie den SNMP-Server für Trap-Ziele identifizieren und anschließend Ihre Konfiguration testen.
 
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Alerts].
-. Wählen Sie die Registerkarte *SNMP* aus.
+. Im linken Bereich Menü:Alerts[SNMP alerts] auswählen.
 +
-Bei der Ersteinrichtung wird auf der Registerkarte SNMP „Configure Communities/Users“ angezeigt.
+Bei der erstmaligen Einrichtung zeigt die Seite „Communities/Benutzer konfigurieren“ an.
 
 . Wählen Sie * Communities/Benutzer Konfigurieren*.
 +
@@ -62,7 +61,7 @@ Je nach Auswahl wird das Dialogfeld „Communities konfigurieren“ oder das Dia
 
 
 
-. Klicken Sie auf der Seite Warnungen auf der Registerkarte SNMP auf *Trap Destinations hinzufügen*.
+. *Trap-Ziele hinzufügen* auswählen.
 +
 Das Dialogfeld Trap-Ziele hinzufügen wird geöffnet.
 
@@ -70,7 +69,7 @@ Das Dialogfeld Trap-Ziele hinzufügen wird geöffnet.
 +
 ** *Trap-Ziel* -- Geben Sie eine IPv4- oder IPv6-Adresse des Servers ein, auf dem ein SNMP-Dienst ausgeführt wird.
 ** *Community-Name oder Benutzername* -- Wählen Sie in der Dropdown-Liste den Community-Namen (SNMPv2c) oder den Benutzernamen (SNMPv3) für dieses Trap-Ziel aus. (Wenn Sie nur einen definiert haben, wird der Name bereits in diesem Feld angezeigt.)
-** *Authentifizierungsfehler senden Trap* -- Wählen Sie diese Option (das Kontrollkästchen) aus, wenn Sie das Trap-Ziel benachrichtigen möchten, wenn eine SNMP-Anfrage aufgrund eines nicht erkannten Community-Namens oder Benutzernamens abgelehnt wird. Nach dem Klicken auf *Hinzufügen* werden die Trap-Ziele und die zugehörigen Namen auf der Seite *SNMP* auf der Registerkarte *Alarme* angezeigt.
+** *Authentifizierungsfehler-Trap senden* – Diese Option (das Kontrollkästchen) kann ausgewählt werden, wenn das Trap-Ziel benachrichtigt werden soll, sobald eine SNMP-Anfrage aufgrund eines nicht erkannten Community-Namens oder Benutzernamens abgelehnt wird. Nach dem Klick auf *Hinzufügen* erscheinen die Trap-Ziele und die zugehörigen Namen auf der Seite *SNMP-Warnungen*.
 
 
 . Um sicherzustellen, dass ein Trap gültig ist, wählen Sie ein Trap-Ziel aus der Tabelle aus, und klicken Sie dann auf *Trap-Ziel testen*, um einen Test-Trap an die konfigurierte Adresse zu senden.

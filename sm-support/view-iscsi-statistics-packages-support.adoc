@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, iscsi, statistics, packages 
 summary: Sie können Daten über die iSCSI-Verbindungen zu Ihrem Speicher-Array anzeigen. 
 ---
-= iSCSI-Statistikpakete im SANtricity System Manager anzeigen
+= iSCSI-Statistiken im SANtricity System Manager anzeigen
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -32,8 +32,8 @@ NOTE: Die in System Manager angezeigten Statistiktypen basieren auf den für Ihr
 Sie können jede dieser Statistiken als RAW-Statistiken oder als Baseline-Statistiken anzeigen. RAW-Statistiken sind alle Statistiken, die seit dem Start der Controller gesammelt wurden. Baseline-Statistiken sind zeitpunktgenaue Statistiken, die seit dem Festlegen der Baseline-Zeit erfasst wurden.
 
 .Schritte
-. Wählen Sie im linken Bereich Menü:Support[Support Center > Diagnostics] Registerkarte.
-. Wählen Sie *Anzeigen von iSCSI-Statistikpaketen* aus.
+. Im linken Bereich *System* auswählen.
+. *iSCSI Statistiken* anzeigen.
 . Klicken Sie auf eine Registerkarte, um die verschiedenen Statistikgruppen anzuzeigen.
 . Klicken Sie zum Festlegen des Basisplans auf *Neue Baseline festlegen*.
 +

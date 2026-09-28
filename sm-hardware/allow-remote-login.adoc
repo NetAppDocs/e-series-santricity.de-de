@@ -21,8 +21,7 @@ Bei SANtricity Version 11.74 und höher ist auch die Multi-Faktor-Autorisierung 
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich *Hardware* aus.
-. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf die Registerkarte *Controller & Komponenten*.
+. Wählen Sie im linken Bereich Menü:Hardware[Controllers and components].
 +
 Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
 
@@ -32,7 +31,7 @@ Das Kontextmenü des Controllers wird angezeigt.
 
 . Wählen Sie *Remote-Anmeldung konfigurieren (SSH)* aus. (Für SANtricity Version 11.73 und früher lautet dieser Menüpunkt *Remote Login ändern*.)
 +
-Das Dialogfeld wird geöffnet, um die Remote-Anmeldung zu aktivieren.
+Die Seite „Remote-Login konfigurieren (SSH)“ wird geöffnet.
 
 . Aktivieren Sie das Kontrollkästchen * Remote-Anmeldung aktivieren*.
 +
@@ -44,12 +43,12 @@ Diese Einstellung bietet eine Remote-Anmeldung mit drei Optionen für die Autori
 ** *Passwort und SSH-Schlüssel*. Aktivieren Sie für diese Option das Kontrollkästchen *autorisierter öffentlicher Schlüssel und Passwort für Remote-Anmeldung erforderlich*, und fahren Sie mit dem nächsten Schritt fort.
 
 
-. Füllen Sie das Feld * Public Key* aus. Dieses Feld enthält eine Liste autorisierter öffentlicher Schlüssel im Format der OpenSSH *Authorized_keys*-Datei.
+. Das Feld *Autorisierte öffentliche Schlüssel* ausfüllen. Dieses Feld enthält eine Liste autorisierter öffentlicher Schlüssel im Format der OpenSSH-Datei *authorized_keys*.
 +
-Beachten Sie beim Ausfüllen des Feldes *autorisierter öffentlicher Schlüssel* die folgenden Richtlinien:
+Beim Ausfüllen des Feldes *Autorisierte öffentliche Schlüssel* sind die folgenden Richtlinien zu beachten:
 
 +
-** Das Feld *autorisierter öffentlicher Schlüssel* gilt für beide Controller und muss nur auf dem ersten Controller konfiguriert werden.
+** Das Feld *Autorisierte öffentliche Schlüssel* gilt für beide Controller und muss nur auf dem ersten Controller konfiguriert werden.
 ** Die Datei *Authorized_keys* darf nur einen Schlüssel pro Zeile enthalten. Zeilen, die mit # beginnen und leere Zeilen werden ignoriert. Weitere Informationen zum Dateiformat finden Sie unter link:https://www.ssh.com/academy/ssh/authorized-keys-openssh["Konfigurieren von autorisierten Schlüsseln für OpenSSH"^].
 ** Eine *authorisierte_keys*-Datei sollte ähnlich wie im folgenden Beispiel aussehen:
 +
@@ -62,7 +61,7 @@ AAAAB3NzaC1yc2EAAAADAQABAAABAQDJlG20rYTk4ok+xFjkPHYp/R0LfJqEYDLXA5AJ49w3DvAWLrUg
 
 . Wenn Sie fertig sind, klicken Sie auf *Speichern*.
 . Bei Duplex-Systemen können Sie die Remote-Anmeldung auf dem zweiten Controller aktivieren, indem Sie die oben beschriebenen Schritte ausführen. Wenn Sie die Option sowohl für ein Passwort als auch für einen SSH-Schlüssel konfigurieren, aktivieren Sie erneut das Kontrollkästchen *autorisierter öffentlicher Schlüssel und Passwort für die Remote-Anmeldung*.
-. Nachdem die Fehlerbehebung für den technischen Support abgeschlossen ist, können Sie die Remote-Anmeldung deaktivieren, indem Sie zum Dialogfeld Remote-Anmeldung konfigurieren zurückkehren und das Kontrollkästchen *Remote-Anmeldung aktivieren* deaktivieren. Wenn die Remote-Anmeldung auf einem zweiten Controller aktiviert ist, wird ein Bestätigungsdialogfeld geöffnet, in dem Sie auch die Remote-Anmeldung auf dem zweiten Controller deaktivieren können.
+. Nachdem der technische Support die Fehlerbehebung abgeschlossen hat, kann die Fernanmeldung deaktiviert werden, indem zur Seite „Fernanmeldung konfigurieren (SSH)“ zurückgekehrt und das Kontrollkästchen „Fernanmeldung aktivieren“ deaktiviert wird. Wenn die Fernanmeldung auf einem zweiten Controller aktiviert ist, öffnet sich ein Bestätigungsdialog, der es ermöglicht, die Fernanmeldung auch auf dem zweiten Controller zu deaktivieren.
 +
 Wenn Sie die Remote-Anmeldung deaktivieren, werden alle aktuellen SSH-Sitzungen beendet und neue Anmeldeanfragen werden abgelehnt.
 

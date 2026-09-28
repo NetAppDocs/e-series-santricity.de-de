@@ -15,6 +15,7 @@ Erfahren Sie mehr über die Einschränkungen bei der Verwendung von SSD Cache in
 
 
 
+[[restrictions]]
 == Einschränkungen
 
 * Jedes Volume, das der Nutzung des SSD-Caches eines Controllers zugewiesen ist, kann keine automatische Lastverteilung durchführen.
@@ -27,6 +28,7 @@ Erfahren Sie mehr über die Einschränkungen bei der Verwendung von SSD Cache in
 
 
 
+[[restrictions-with-drive-security]]
 == Einschränkungen bei Laufwerkssicherheit
 
 * Sie können die Sicherheit im SSD-Cache nur aktivieren, wenn Sie den SSD-Cache erstellen. Sie können die Sicherheit später nicht wie möglich auf einem Volume aktivieren.

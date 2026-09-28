@@ -34,13 +34,13 @@ Der Vorgang zum Starten des Rollbacks eines Snapshot-Images einer Snapshot-Consi
 
 
 
+[[step-1-select-members]]
 == Schritt 1: Mitglieder auswählen
 
 Sie müssen die Mitgliedvolumes auswählen, die zurückgerollt werden sollen.
 
 .Schritte
-. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
-. Wählen Sie die Registerkarte *Snapshot Images* aus.
+. Im linken Bereich Menü:Schnappschüsse[Schnappschussbilder] auswählen.
 . Wählen Sie das Snapshot-Snapshot-Image der Snapshot-Konsistenzgruppe aus, und wählen Sie dann Menü:Rollback[Start].
 +
 Das Dialogfeld Rollback starten wird angezeigt.
@@ -56,6 +56,7 @@ Das Dialogfeld Rollback starten wird angezeigt.
 
 
 
+[[step-2-review-capacity]]
 == Schritt 2: Kapazität überprüfen
 
 Wenn Sie Mitgliedvolumes ausgewählt haben, die mehr als einem reservierten Kapazitätsobjekt zugeordnet sind, z. B. einer Snapshot-Gruppe und einem reservierten Kapazitätsvolumen, können Sie die reservierte Kapazität für die zurückgerollten Volumes überprüfen und erhöhen.
@@ -77,6 +78,7 @@ Das Dialogfeld Priorität bearbeiten wird angezeigt.
 
 
 
+[[step-3-edit-priority]]
 == Schritt 3: Priorität bearbeiten
 
 Sie können bei Bedarf die Priorität des Rollback-Vorgangs bearbeiten.
@@ -97,6 +99,6 @@ System Manager führt die folgenden Aktionen durch:
 
 
 .Nachdem Sie fertig sind
-Wählen Sie Menü:Storage[Operations in Progress], um den Fortschritt des Rollback-Vorgangs anzuzeigen.
+Menü:Überwachung[Laufende Vorgänge] auswählen, um den Fortschritt des Rollback-Vorgangs anzuzeigen.
 
 Ist der Rollback-Vorgang nicht erfolgreich, wird der Vorgang angehalten. Sie können den angehaltenen Vorgang fortsetzen und, falls dieser weiterhin nicht erfolgreich war, das Recovery Guru-Verfahren befolgen, um das Problem zu beheben oder sich an den technischen Support zu wenden.

@@ -15,8 +15,8 @@ summary: Sie können eine Konfiguration für Verzeichnisdienste von einem Speich
 Sie können eine Konfiguration für Verzeichnisdienste von einem Speicher-Array in andere Speicher-Arrays importieren. Dieser Batch-Betrieb spart Zeit, wenn Sie mehrere Arrays im Netzwerk konfigurieren müssen.
 
 .Bevor Sie beginnen
-* Verzeichnisdienste werden in System Manager für das Speicherarray konfiguriert, das als Quelle verwendet werden soll (Menü:Einstellungen[Zugriffsmanagement]).
-* Die vorhandene Konfiguration für die Ziel-Speicher-Arrays wird in System Manager gesichert (Menü:Einstellungen[System > Speicherarray-Konfiguration speichern]).
+* Die Verzeichnisdienste werden im System Manager für das Storage-Array konfiguriert, das als Quelle verwendet werden soll (Menü:Authentifizierung[Verzeichnisdienste]).
+* Die bestehende Konfiguration der Zielspeicherarrays wird im System Manager gesichert (Menü:System[Speicherarray-Konfiguration speichern]).
 
 
 .Über diese Aufgabe
@@ -47,6 +47,7 @@ Auf der Seite Operationen werden die Ergebnisse des Importvorgangs angezeigt. We
 
 
 
+[[results]]
 == Ergebnisse
 
 Die Ziel-Storage-Arrays sind nun mit denselben Verzeichnisdiensten konfiguriert wie das Quell-Array.

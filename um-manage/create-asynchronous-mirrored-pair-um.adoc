@@ -40,6 +40,7 @@ Der Prozess zum Erstellen eines asynchronen gespiegelten Paares ist ein mehrstuf
 
 
 
+[[step-1-create-or-select-a-mirror-consistency-group]]
 == Schritt 1: Erstellen oder wählen Sie eine gespiegelte Konsistenzgruppe aus
 
 In diesem Schritt erstellen Sie eine neue Konsistenzgruppe für die Spiegelung, oder wählen Sie eine vorhandene Konsistenzgruppe aus. Eine gespiegelte Konsistenzgruppe ist ein Container für die primären und sekundären Volumes (das gespiegelte Paar) und gibt die gewünschte Resynchronisierung (manuell oder automatisch) für alle Paare in der Gruppe an.
@@ -59,7 +60,7 @@ Gehen Sie zum Erstellen einer neuen Gruppe wie folgt vor:
 
 +
 .. Wählen Sie *Eine neue Spiegelkonsistent-Gruppe* aus und klicken Sie dann auf *Weiter*.
-.. Geben Sie einen eindeutigen Namen ein, der am besten die Daten auf den Volumes beschreibt, die zwischen den beiden Speicher-Arrays gespiegelt werden. Ein Name kann nur aus Buchstaben, Zahlen und den Sonderzeichen Unterstrichen (_), Bindestrich (-) und dem Hash-Zeichen (#) bestehen. Ein Name darf 30 Zeichen nicht überschreiten und darf keine Leerzeichen enthalten.
+.. Geben Sie einen eindeutigen Namen ein, der die Daten auf den Volumes, die zwischen den beiden Speichersystemen gespiegelt werden, bestmöglich beschreibt. Ein Name darf nur aus Buchstaben, Zahlen und den Sonderzeichen Unterstrich (_), Bindestrich (-) und Raute (#) bestehen. Ein Name darf maximal 60 Zeichen lang sein und keine Leerzeichen enthalten.
 .. Wählen Sie das Remote Storage Array aus, auf dem Sie eine Mirror-Beziehung zum lokalen Speicher-Array herstellen möchten.
 +
 [NOTE]
@@ -69,7 +70,7 @@ Wenn Ihr Remote-Speicher-Array passwortgeschützt ist, fordert das System zur Ei
 ====
 .. Wählen Sie aus, ob Sie die gespiegelten Paare manuell oder automatisch synchronisieren möchten:
 +
-*** *Manuell* -- Wählen Sie diese Option, um die Synchronisierung für alle gespiegelten Paare innerhalb dieser Gruppe manuell zu starten. Beachten Sie, dass Sie, wenn Sie später eine Neusynchronisierung durchführen möchten, System Manager für das primäre Speicher-Array starten und dann zum Menü:Speicher[Asynchronous Mirroring] wechseln müssen, die Gruppe auf der Registerkarte *Mirror Consistency Groups* auswählen und dann Menü:Mehr[manuell neu synchronisieren] auswählen.
+*** *Manuell* – Diese Option ermöglicht das manuelle Starten der Synchronisierung aller gespiegelten Paare innerhalb dieser Gruppe. Es ist zu beachten, dass für eine spätere Resynchronisierung der System Manager für das primäre Storage-Array gestartet werden muss. Anschließend ist das Menü Mirroring[Asynchronous mirror consistency groups] aufzurufen, die Gruppe auszuwählen und dann im Menü More[Manually resynchronize] auszuwählen.
 *** *Automatisch* -- Wählen Sie das gewünschte Intervall in *Minuten*, *Stunden* oder *Tagen* aus, vom Beginn des vorherigen Updates bis zum Beginn des nächsten Updates. Wenn beispielsweise das Synchronisierungsintervall auf 30 Minuten eingestellt ist und der Synchronisationsprozess um 4:00 Uhr beginnt, beginnt der nächste Vorgang um 4:30 Uhr
 
 
@@ -95,6 +96,7 @@ Wenn Unified Manager die SpiegelungsConsistency Group erfolgreich auf dem lokale
 
 
 
+[[step-2-select-the-primary-volume]]
 == Schritt 2: Wählen Sie das primäre Volumen
 
 In diesem Schritt wählen Sie das primäre Volume aus, das in der Spiegelbeziehung verwendet werden soll, und weisen seine reservierte Kapazität zu. Wenn Sie ein primäres Volume auf dem lokalen Speicher-Array auswählen, zeigt das System eine Liste aller berechtigten Volumes für dieses gespiegelte Paar an. Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser Liste nicht angezeigt.
@@ -123,6 +125,7 @@ Beachten Sie folgende Richtlinien:
 
 
 
+[[step-3-select-the-secondary-volume]]
 == Schritt 3: Wählen Sie das sekundäre Volumen
 
 In diesem Schritt wählen Sie das sekundäre Volume aus, das in der Spiegelbeziehung verwendet werden soll, und weisen seine reservierte Kapazität zu. Wenn Sie ein sekundäres Volume auf dem Remote-Speicher-Array auswählen, zeigt das System eine Liste aller berechtigten Volumes für dieses gespiegelte Paar an. Alle Volumes, die nicht für die Verwendung geeignet sind, werden in dieser Liste nicht angezeigt.

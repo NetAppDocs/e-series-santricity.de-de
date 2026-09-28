@@ -24,6 +24,7 @@ Beispielsweise befindet sich ein primäres Volume im Besitz von Controller A, un
 
 
 
+[[controller-resets]]
 == Controller wird zurückgesetzt
 
 Ein Reset des Controllers bewirkt eine Änderung des Volume-Eigentumsrechts auf der primären Seite vom bevorzugten Controller-Eigentümer zum alternativen Controller im Storage Array.

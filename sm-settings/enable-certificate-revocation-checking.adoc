@@ -26,12 +26,11 @@ Die automatische Überprüfung des Widerrufs ist hilfreich, wenn die CA ein Zert
 Während dieser Aufgabe können Sie einen OCSP-Server konfigurieren oder den in der Zertifikatdatei angegebenen Server verwenden. Der OCSP-Server prüft, ob die CA Zertifikate vor ihrem geplanten Ablaufdatum widerrufen hat, und blockiert dann den Zugriff des Benutzers auf einen Standort, wenn das Zertifikat widerrufen wird.
 
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Certificates].
-. Wählen Sie die Registerkarte * Trusted* aus.
+. Im linken Bereich Menü:Zertifikate[Vertrauenswürdige Zertifikate] auswählen.
 +
 [NOTE]
 ====
-Sie können auch die Überprüfung des Widerrufs über die Registerkarte * Key Management* aktivieren.
+Die Überprüfung des Widerrufs kann auch auf der Seite *Key management certificates* aktiviert werden.
 
 ====
 . Klicken Sie auf *Sonstige Aufgaben*, und wählen Sie im Dropdown-Menü die Option *Überprüfung der Widerruherstellung aktivieren* aus.

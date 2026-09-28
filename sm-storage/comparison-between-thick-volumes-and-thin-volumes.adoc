@@ -50,6 +50,7 @@ Thin Volumes
 |===
 
 
+[[thin-volume-restrictions]]
 == Thin-Volume-Einschränkungen
 
 Thin Volumes unterstützen alle Vorgänge als Thick Volumes. Die folgenden Ausnahmen gelten:

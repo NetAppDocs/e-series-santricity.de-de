@@ -15,6 +15,7 @@ Für die Zugriffsverwaltung können Administratoren einen LDAP-Server (Lightweig
 
 
 
+[[configuration-workflow]]
 == Konfigurationsworkflow
 
 Wenn ein LDAP-Server und ein Verzeichnisdienst im Netzwerk verwendet werden, funktioniert die Konfiguration wie folgt:
@@ -35,6 +36,7 @@ Der `admin` Der Benutzer hat vollen Zugriff auf alle Funktionen im System.
 
 
 
+[[management]]
 == Vereinfachtes
 
 Bei der Verwendung von Verzeichnisdiensten zur Authentifizierung können Administratoren die folgenden Verwaltungsaufgaben ausführen:

@@ -25,7 +25,7 @@ Sie können den Vorgang nach dem Start nicht mehr abbrechen. Der Zugriff auf Ihr
 
 Sie können das Dialogfeld Freie Kapazität konsolidieren mit einer der folgenden Methoden starten:
 
-* Wenn für eine Volume-Gruppe mindestens ein freier Kapazitätsbereich erkannt wird, erscheint die Empfehlung „freie Kapazität konsolidieren“ auf der Startseite im Benachrichtigungsbereich. Klicken Sie auf den Link *freie Kapazität konsolidieren*, um das Dialogfeld zu starten.
+* Wenn für eine Volume-Gruppe mindestens ein freier Kapazitätsbereich erkannt wird, erscheint die Empfehlung „Freie Kapazität konsolidieren“ im Benachrichtigungsbereich, verfügbar über das Glockensymbol in der oberen Ecke des Fensters. Der Link *Freie Kapazität konsolidieren* öffnet das Dialogfeld.
 * Sie können das Dialogfeld "Freie Kapazität konsolidieren" auch von der Seite "Pools und Volumengruppen" aus öffnen, wie in der folgenden Aufgabe beschrieben.
 
 
@@ -53,4 +53,4 @@ System Manager beginnt die Konsolidierung (Defragmentierung) der freien Kapazit�
 
 
 .Nachdem Sie fertig sind
-Wählen Sie Menü:Storage[Operations in Progress], um den Fortschritt des Vorgangs „Consolidate Free Capacity“ anzuzeigen. Dieser Vorgang kann längere Zeit dauern und die Systemleistung beeinträchtigen.
+Im Menü „Monitoring[Laufende Vorgänge]“ lässt sich der Fortschritt des Vorgangs „Freie Kapazität konsolidieren“ anzeigen. Dieser Vorgang kann längere Zeit dauern und die Systemleistung beeinträchtigen.

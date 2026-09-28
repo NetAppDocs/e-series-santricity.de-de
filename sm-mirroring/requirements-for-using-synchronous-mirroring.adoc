@@ -16,6 +16,7 @@ Wenn Sie die synchrone Spiegelung verwenden möchten, beachten Sie die folgenden
 
 
 
+[[unified-manager]]
 == Unified Manager
 
 Um die Spiegelung zwischen zwei Arrays zu aktivieren und zu konfigurieren, müssen Sie die Unified Manager-Schnittstelle verwenden. Unified Manager wird auf einem Host-System zusammen mit dem Web Services Proxy installiert.
@@ -27,6 +28,7 @@ Um die Spiegelung zwischen zwei Arrays zu aktivieren und zu konfigurieren, müss
 
 
 
+[[storage-arrays]]
 == Storage-Arrays durchführt
 
 [NOTE]
@@ -46,6 +48,7 @@ Synchrones Spiegeln ist auf dem Storage-Array EF80, EF50, EF300/EF300C oder EF60
 
 
 
+[[supported-connections]]
 == Unterstützte Verbindungen
 
 Kommunikation für synchrones Spiegeln wird nur auf Controllern mit Fibre Channel (FC) Host Ports unterstützt.
@@ -54,6 +57,7 @@ Bei der synchronen Spiegelung wird der am höchsten nummerierte Host Port auf je
 
 
 
+[[mirrored-volume-candidates]]
 == Kandidaten für gespiegelte Volumes
 
 * RAID-Level, Caching-Parameter und Segmentgröße können auf den primären und sekundären Volumes eines synchronen gespiegelten Paars unterschiedlich sein.
@@ -66,6 +70,7 @@ Bei der synchronen Spiegelung wird der am höchsten nummerierte Host Port auf je
 
 
 
+[[reserved-capacity]]
 == Reservierte Kapazität
 
 * Für ein primäres Volume und ein sekundäres Volume zur Protokollierung von Schreibinformationen zum Wiederherstellen nach Controller-Resets und anderen vorübergehenden Unterbrechungen ist die reservierte Kapazität erforderlich.
@@ -74,6 +79,7 @@ Bei der synchronen Spiegelung wird der am höchsten nummerierte Host Port auf je
 
 
 
+[[drive-security-feature]]
 == Laufwerkssicherheit
 
 * Wenn Sie sichere Laufwerke verwenden, müssen das primäre und das sekundäre Volume über kompatible Sicherheitseinstellungen verfügen. Diese Beschränkung wird nicht durchgesetzt, deshalb müssen Sie sie selbst überprüfen.

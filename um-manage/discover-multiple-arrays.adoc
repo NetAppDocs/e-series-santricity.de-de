@@ -17,7 +17,7 @@ Sie erkennen mehrere Arrays, um alle Speicher-Arrays im Subnetz zu erkennen, in 
 .Bevor Sie beginnen
 * Sie müssen mit einem Benutzerprofil angemeldet sein, das die Berechtigungen für den Sicherheitsadministrator enthält.
 * Das Speicher-Array muss ordnungsgemäß eingerichtet und konfiguriert sein.
-* Die Passwörter für die Storage-Arrays müssen über die Access Management-Seite des System Manager eingerichtet werden.
+* Die Passwörter für Speicherarrays müssen über die Kategorie „Authentifizierung“ des System Manager eingerichtet werden.
 * Um nicht vertrauenswürdige Zertifikate zu lösen, müssen Sie vertrauenswürdige Zertifikatdateien von einer Zertifizierungsstelle (CA) haben, und die Zertifikatdateien sind auf Ihrem lokalen System verfügbar.
 
 
@@ -25,6 +25,7 @@ Das Erkennen von Arrays ist ein mehrstufiges Verfahren.
 
 
 
+[[step-1-enter-network-address]]
 == Schritt 1: Geben Sie die Netzwerkadresse ein
 
 Sie geben einen Netzwerkaddress Range ein, um im lokalen Subnetzwerk zu suchen. Jedes erfolgreich erreichte Speicher-Array wird auf der Seite Erkennung angezeigt und kann Ihrer Management-Domäne hinzugefügt werden.
@@ -57,6 +58,7 @@ Unified Manager führt eine Überprüfung der Anmeldeinformationen für jedes Ar
 
 
 
+[[step-2-resolve-self-signed-certificates-during-discovery]]
 == Schritt 2: Lösen Sie selbst signierte Zertifikate während der Ermittlung
 
 Während der Bestandsaufnahme überprüft das System, ob die Speicher-Arrays Zertifikate von einer vertrauenswürdigen Quelle verwenden.
@@ -73,6 +75,7 @@ Während der Bestandsaufnahme überprüft das System, ob die Speicher-Arrays Zer
 
 
 
+[[step-3-resolve-untrusted-certificates-during-discovery]]
 == Schritt 3: Lösen Sie nicht vertrauenswürdige Zertifikate während der Ermittlung
 
 Nicht vertrauenswürdige Zertifikate treten auf, wenn ein Speicher-Array versucht, eine sichere Verbindung zu Unified Manager herzustellen, die Verbindung jedoch nicht als sicher bestätigt werden kann. Während der Array-Ermittlung können Sie nicht vertrauenswürdige Zertifikate auflösen, indem Sie ein Zertifikat (CA-Zertifikat) importieren, das von einem vertrauenswürdigen Dritten ausgestellt wurde.
@@ -109,6 +112,7 @@ Jedes Speicherarray mit nicht vertrauenswürdigen Zertifikatproblemen, die nicht
 
 
 
+[[step-4-provide-passwords]]
 == Schritt 4: Geben Sie Passwörter ein
 
 Sie müssen die Passwörter für die Speicher-Arrays eingeben, die Sie Ihrer Management-Domäne hinzufügen möchten.

@@ -28,25 +28,25 @@ Sie können die folgenden Einstellungen für die iSCSI-Ermittlung aktivieren:
 
 [NOTE]
 ====
-Die iSCSI-Einstellungen und -Funktionen werden nur auf der Seite Einstellungen angezeigt, wenn Ihr Speicher-Array iSCSI unterstützt.
+Die iSCSI-Einstellungen und Funktionen werden auf der Systemseite nur angezeigt, wenn Ihr Speichersystem iSCSI unterstützt.
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich Menü:Einstellungen[System].
-. Klicken Sie unter *iSCSI-Einstellungen* auf *Zielermittlungs-Einstellungen anzeigen/bearbeiten*.
+. Im linken Bereich *System* auswählen.
+. Unter *iSCSI-Einstellungen* auf *Zielerkennungseinstellungen konfigurieren* klicken.
 +
-Das Dialogfeld Einstellungen für die Zielerkennung wird angezeigt. Unter dem Feld *iSNS-Server aktivieren*... wird im Dialogfeld angezeigt, ob der Controller bereits registriert ist.
+Die Seite „iSCSI-Zielerkennung konfigurieren“ wird angezeigt. Unterhalb des Felds „iSNS-Server aktivieren…“ wird auf der Seite angezeigt, ob der Controller bereits registriert ist.
 
 . Um den Controller zu registrieren, wählen Sie *iSNS-Server aktivieren, um mein Ziel zu registrieren*, und wählen Sie dann eine der folgenden Optionen aus:
 +
-** *Konfiguration automatisch vom DHCP-Server beziehen* -- Wählen Sie diese Option, wenn Sie den iSNS-Server mit einem DHCP-Server (Dynamic Host Configuration Protocol) konfigurieren möchten. Wenn Sie diese Option verwenden, müssen alle iSCSI-Ports des Controllers auch für die Verwendung von DHCP konfiguriert sein. Aktualisieren Sie gegebenenfalls die iSCSI-Port-Einstellungen des Controllers, um diese Option zu aktivieren.
+** *IPv4-Serveradresse automatisch vom DHCP-Server beziehen* – Diese Option ermöglicht die Konfiguration des iSNS-Servers mithilfe eines Dynamic Host Configuration Protocol (DHCP) Servers. Dabei ist zu beachten, dass bei Verwendung dieser Option alle iSCSI-Ports des Controllers ebenfalls für die Nutzung von DHCP konfiguriert sein müssen. Gegebenenfalls sind die iSCSI-Port-Einstellungen des Controllers zu aktualisieren, um diese Option zu ermöglichen.
 +
 [NOTE]
 ====
 Damit der DHCP-Server die iSNS-Serveradresse bereitstellen kann, müssen Sie den DHCP-Server so konfigurieren, dass Option 43 -- „`anbieterspezifische Informationen`“ verwendet wird. Diese Option muss die IPv4-Adresse des iSNS-Servers in Datenbytes 0xA-0xd (10-13) enthalten.
 
 ====
-** *Statische Konfiguration festlegen* -- Wählen Sie diese Option aus, wenn Sie eine statische IP-Adresse für den iSNS-Server eingeben möchten. (Bei Bedarf können Sie Adressen in die Felder ausschneiden und einfügen.) Geben Sie im Feld eine IPv4-Adresse oder eine IPv6-Adresse ein. Wenn Sie beide konfiguriert haben, ist IPv4 die Standardeinstellung. Geben Sie auch einen TCP-Listening-Port ein (verwenden Sie die Standardeinstellung 3205 oder geben Sie einen Wert zwischen 49152 und 65535 ein).
+** *IPv4-Serveradresse manuell angeben* – Diese Option ist auszuwählen, wenn eine statische IP-Adresse für den iSNS-Server eingegeben werden soll. (Bei Bedarf können Adressen in die Felder kopiert und eingefügt werden.) Im Feld ist entweder eine IPv4-Adresse oder eine IPv6-Adresse einzugeben. Wenn beide konfiguriert wurden, ist IPv4 die Standardeinstellung. Außerdem ist ein TCP-Listening-Port einzugeben (entweder den Standardwert 3205 verwenden oder einen Wert zwischen 49152 und 65535 eingeben).
 
 
 . Um die Teilnahme des Speicher-Arrays an nicht benannten Ermittlungssitzungen zu ermöglichen, wählen Sie *nicht benannte Ermittlungssitzungen aktivieren* aus.

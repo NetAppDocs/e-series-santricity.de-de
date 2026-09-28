@@ -22,7 +22,7 @@ Konfiguration und Benutzerauthentifizierung:
 Bei der ersten Anmeldung wird der Benutzername verwendet `admin` Wird automatisch angezeigt und kann nicht geändert werden. Der `admin` Der Benutzer hat vollen Zugriff auf alle Funktionen im System.
 
 ====
-. Der Administrator navigiert in der Benutzeroberfläche zur Zugriffsverwaltung. Das Storage Array ist vorkonfiguriert zur Verwendung von lokalen Benutzerrollen, bei denen es sich um die Implementierung von RBAC-Funktionen (rollenbasierte Zugriffssteuerung) handelt.
+. Der Administrator navigiert in der Benutzeroberfläche zur Authentifizierung. Das Speichersystem ist vorkonfiguriert für die Verwendung lokaler Benutzerrollen, die eine Implementierung der rollenbasierten Zugriffssteuerung (RBAC) darstellen.
 . Der Administrator konfiguriert eine oder mehrere der folgenden Authentifizierungsmethoden:
 +
 ** *Lokale Benutzerrollen* -- Authentifizierung wird über im Storage Array erzwungene RBAC-Funktionen gemanagt. Lokale Benutzerrollen umfassen vordefinierte Benutzerprofile und Rollen mit spezifischen Zugriffsberechtigungen. Administratoren können diese lokalen Benutzerrollen als einzige Authentifizierungsmethode verwenden oder in Kombination mit einem Verzeichnisdienst verwenden. Es ist keine Konfiguration erforderlich – abgesehen von der Festlegung von Passwörtern für die Benutzer.
@@ -52,6 +52,7 @@ Während der Anmeldung führt das System die folgenden Hintergrundaufgaben aus:
 
 
 
+[[tasks-available-in-system-manager]]
 == In System Manager verfügbare Aufgaben
 
 Der Zugriff auf Aufgaben hängt von den zugewiesenen Rollen eines Benutzers ab. Dazu gehören:
@@ -66,6 +67,7 @@ Eine nicht verfügbare Aufgabe ist entweder ausgegraut oder wird in der Benutzer
 
 
 
+[[limitations-in-unified-manager-and-storage-manager]]
 == Einschränkungen bei Unified Manager und Storage Manager
 
 Wenn SAML für ein Storage-Array konfiguriert ist, können Benutzer den Speicher für dieses Array nicht über Unified Manager oder die alten Storage Manager-Schnittstellen erkennen oder managen.

@@ -17,8 +17,7 @@ Sie können die Einstellungen für eine Snapshot-Gruppe so ändern, dass ihr Nam
 Während der Erstellung einer Snapshot-Gruppe wird reservierte Kapazität erstellt, um die Daten aller Snapshot-Images der Gruppe zu speichern.
 
 .Schritte
-. Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
-. Klicken Sie auf die Registerkarte *reservierte Kapazität*.
+. Im linken Bereich das Menü:Storage[Reserved capacity] auswählen.
 . Wählen Sie die Snapshot-Gruppe aus, die Sie bearbeiten möchten, und klicken Sie dann auf das Menü:Ellipsis-Symbol[Einstellungen bearbeiten].
 +
 Das Fenster „Einstellungen für Snapshot-Gruppe bearbeiten“ wird angezeigt.

@@ -20,6 +20,7 @@ Synchrones Spiegeln ist auf dem EF80, EF50, EF600/EF600C oder EF300/EF300C Speic
 ====
 
 
+[[types-of-mirroring]]
 == Arten der Spiegelung
 
 SANtricity-Applikationen beinhalten zwei Arten von Spiegelung: Asynchron und synchron.
@@ -30,6 +31,7 @@ Bei der synchronen Spiegelung werden Daten-Volumes in Echtzeit repliziert, um ei
 
 
 
+[[differences-between-mirroring-types]]
 == Unterschiede zwischen Spiegelungstypen
 
 In der folgenden Tabelle werden die Hauptunterschiede zwischen den beiden Spiegelungstypen beschrieben.

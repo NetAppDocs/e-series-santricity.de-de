@@ -15,6 +15,7 @@ Die Zugriffsverwaltung ist eine Methode zur Konfiguration der Benutzerauthentifi
 
 
 
+[[what-authentication-methods-are-available]]
 == Welche Authentifizierungsmethoden sind verfügbar?
 
 Folgende Authentifizierungsmethoden sind verfügbar:
@@ -34,6 +35,7 @@ Weitere Informationen:
 
 
 
+[[how-do-i-configure-access-management]]
 == Wie konfiguriere ich Access Management?
 
 Die SANtricity-Software ist für die Verwendung lokaler Benutzerrollen vorkonfiguriert. Wenn Sie LDAP verwenden möchten, können Sie es auf der Seite Zugriffsverwaltung konfigurieren.

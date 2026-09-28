@@ -33,6 +33,7 @@ Der Skripteditor bietet zwei Ansichten im Fenster:
 
 
 
+[[open-the-script-editor]]
 == Öffnen Sie den Skripteditor
 
 .Schritte
@@ -136,6 +137,7 @@ Speichern Sie die Ausgaberesultate in einer lokalen Datei
 
 
 
+[[write-scripts-in-the-script-editor]]
 === Schreiben Sie Skripte im Skripteditor
 
 .Bevor Sie beginnen
@@ -169,6 +171,7 @@ setting controller mode
 
 
 
+[[interpret-script-execution-results]]
 === Skriptausführungsergebnisse interpretieren
 
 Während der Skriptausführung erscheinen im Ausgabefenster Meldungen, die mit folgendem beginnen:

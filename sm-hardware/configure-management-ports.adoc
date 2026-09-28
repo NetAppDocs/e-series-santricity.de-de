@@ -23,18 +23,14 @@ Verwenden Sie nicht Port 2 auf beiden Controllern. Port 2 ist dem technischen Su
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich *Hardware* aus.
-. Wenn die Grafik die Laufwerke anzeigt, klicken Sie auf die Registerkarte *Controller & Komponenten*.
-+
-Die Grafik ändert sich, um die Controller anstelle der Laufwerke anzuzeigen.
-
+. Wählen Sie im linken Bereich Menü:Hardware[Controllers and components].
 . Klicken Sie auf den Controller mit dem Managementport, den Sie konfigurieren möchten.
 +
 Das Kontextmenü des Controllers wird angezeigt.
 
 . Wählen Sie *Management Ports konfigurieren*.
 +
-Das Dialogfeld Management-Ports konfigurieren wird geöffnet.
+Die Seite „Management-Ports konfigurieren“ wird geöffnet.
 
 . Stellen Sie sicher, dass Port 1 angezeigt wird, und klicken Sie dann auf *Weiter*.
 . Wählen Sie die Einstellungen für den Konfigurationsanschluss aus, und klicken Sie dann auf *Weiter*.
@@ -62,7 +58,7 @@ Wählen Sie eine oder beide Optionen aus, um die Unterstützung für IPv4- und I
 |===
 ====
 +
-Wenn Sie *IPv4 aktivieren* wählen, wird ein Dialogfeld zur Auswahl von IPv4-Einstellungen geöffnet, nachdem Sie auf *Weiter* geklickt haben. Wenn Sie *IPv6* aktivieren auswählen, wird ein Dialogfeld zur Auswahl von IPv6-Einstellungen geöffnet, nachdem Sie auf *Weiter* geklickt haben. Wenn Sie beide Optionen auswählen, wird zuerst das Dialogfeld für IPv4-Einstellungen geöffnet, und nach dem Klicken auf *Weiter* wird das Dialogfeld für IPv6-Einstellungen geöffnet.
+Wenn Sie *IPv4 aktivieren* auswählen, erscheint der Schritt *IPv4 konfigurieren*, nachdem Sie auf *Weiter* geklickt haben. Wenn Sie *IPv6 aktivieren* auswählen, erscheint der Schritt *IPv6 konfigurieren*, nachdem Sie auf *Weiter* geklickt haben. Wenn Sie beide Optionen auswählen, erscheint zuerst der Schritt *IPv4 konfigurieren* und dann, nachdem Sie auf *Weiter* geklickt haben, der Schritt *IPv6 konfigurieren*.
 
 . Konfigurieren Sie die IPv4- und/oder IPv6-Einstellungen automatisch oder manuell.
 +
@@ -95,4 +91,4 @@ NOTE: Wenn Sie die Konfiguration der IP-Adresse ändern, geht der Verwaltungspfa
 
 
 .Ergebnisse
-Die Konfiguration des Managementport wird auf der Registerkarte Controller-Einstellungen, Management Ports, angezeigt.
+Die Konfiguration des Management-Ports wird in den Controller-Einstellungen im Abschnitt *Management port settings* angezeigt.

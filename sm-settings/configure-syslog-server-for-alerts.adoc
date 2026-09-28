@@ -23,10 +23,9 @@ Um Syslog-Warnmeldungen zu konfigurieren, müssen Sie eine Syslog-Serveradresse 
 Diese Aufgabe beschreibt, wie Sie die Adresse und den Port für den Syslog-Server eingeben und anschließend die eingegebene Adresse testen.
 
 .Schritte
-. Wählen Sie im linken Bereich menu:Settings[Alerts].
-. Wählen Sie die Registerkarte *Syslog* aus.
+. Im linken Bereich Menü:Alerts[Syslog alerts] auswählen.
 +
-Wenn noch kein Syslog-Server definiert ist, wird auf der Seite Warnungen „Syslog-Server hinzufügen“ angezeigt.
+Wenn noch kein Syslog-Server definiert ist, wird auf der Seite „Syslog-Server hinzufügen“ angezeigt.
 
 . Klicken Sie Auf *Syslog-Server Hinzufügen*.
 +

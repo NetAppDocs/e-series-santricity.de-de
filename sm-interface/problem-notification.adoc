@@ -15,6 +15,7 @@ SANtricity System Manager verwendet Symbole und verschiedene andere Methoden, um
 
 
 
+[[icons]]
 == Symbole
 
 System Manager verwendet diese Symbole, um den Status des Speicher-Arrays und seiner Komponenten anzuzeigen.
@@ -59,6 +60,7 @@ System Manager zeigt diese Symbole an verschiedenen Orten an.
 
 
 
+[[alerts-and-leds]]
 == Meldungen und LEDs
 
 Zudem wird von System Manager über Probleme in anderer Weise benachrichtigt.

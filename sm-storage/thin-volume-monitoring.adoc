@@ -14,12 +14,12 @@ summary: Sie können Thin Volumes auf Speicherplatz überwachen und entsprechend
 [role="lead"]
 Sie können Thin Volumes auf Speicherplatz überwachen und entsprechende Warnmeldungen generieren, um Kapazitätsüberkapazitäten zu vermeiden.
 
-Thin Provisioning-Umgebungen können mehr logischen Speicherplatz zuweisen, als sie zugrunde liegenden physischen Storage haben. Sie können Menü:Registerkarte „Storage[Volumes > Thin Volume Monitoring]“ auswählen, um das Wachstum Ihrer Thin Volumes zu überwachen, bevor sie die zugewiesene Kapazitätsgrenze erreichen.
+Thin-Provisioning-Umgebungen können mehr logischen Speicherplatz zuweisen, als ihnen physischer Speicher zur Verfügung steht. Über den Menüpunkt Storage[Thin volume monitoring] lässt sich überwachen, wie stark Ihre Thin Volumes wachsen, bevor sie das zugewiesene Kapazitätsmaximum erreichen.
 
 Sie können die Ansicht „Thin Monitoring“ verwenden, um die folgenden Aktionen auszuführen:
 
 * Legen Sie die Grenze fest, die die zugewiesene Kapazität einschränkt, auf die sich ein Thin Volume automatisch erweitern kann.
-* Legen Sie den Prozentpunkt fest, an dem eine Warnung (Warnungsschwellenwert überschritten) an den Benachrichtigungsbereich auf der Startseite gesendet wird, wenn sich ein Thin-Volume in der Nähe des maximal zugewiesenen Kapazitätslimits befindet.
+* Den Prozentsatz festlegen, bei dem eine Warnung (Warnschwelle überschritten) an den Benachrichtigungsbereich gesendet wird, der über das Glockensymbol in der oberen Ecke des Fensters verfügbar ist, wenn sich ein Thin Volume der maximal zugewiesenen Kapazitätsgrenze nähert.
 
 
 Um die Kapazität eines Thin-Volumes zu erhöhen, erhöhen Sie dessen gemeldete Kapazität.

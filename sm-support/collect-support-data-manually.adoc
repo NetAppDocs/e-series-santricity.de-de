@@ -19,7 +19,7 @@ Sie können verschiedene Arten von Inventar-, Status- und Performance-Daten zu I
 
 [NOTE]
 ====
-Wenn die AutoSupport-Funktion aktiviert ist, können Sie diese Daten auch sammeln, indem Sie auf die Registerkarte *AutoSupport* gehen und *AutoSupport senden* wählen.
+Wenn die AutoSupport-Funktion aktiviert ist, können diese Daten auch erfasst werden, indem im Menü Support[AutoSupport] *Send AutoSupport Dispatch* ausgewählt wird.
 
 ====
 Sie können jeweils nur einen Erfassungsvorgang ausführen. Wenn Sie versuchen, einen anderen Vorgang zu starten, erhalten Sie eine Fehlermeldung.
@@ -30,7 +30,7 @@ Führen Sie diesen Vorgang nur aus, wenn Sie vom technischen Support dazu aufgef
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich Menü:Support[Support Center > Diagnostics] Registerkarte.
+. Im linken Menü Menü:Support[Diagnostik] auswählen.
 . Wählen Sie *Support-Daten Erfassen* Aus.
 . Klicken Sie Auf *Collect*.
 +

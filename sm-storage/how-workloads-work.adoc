@@ -17,12 +17,14 @@ Ein Workload ist ein Storage-Objekt, das eine Applikation unterstützt. Sie kön
 
 
 
+[[creating-a-workload]]
 == Erstellen einer Arbeitslast
 
 Sie müssen manuell angeben, wann Sie eine Arbeitslast erstellen möchten, die keiner bestimmten Anwendung zugeordnet ist. Sie müssen auch die Volume-Konfiguration manuell über die Seite „Volumes hinzufügen“ angeben.
 
 
 
+[[application-and-workload-views]]
 == Anzeige von Applikationen und Workloads
 
 Um Anwendungen und Workloads anzuzeigen, starten Sie SANtricity System Manager. Über diese Schnittstelle können Sie die Informationen anzeigen, die mit einem applikationsspezifischen Workload verknüpft sind. Sie haben verschiedene Möglichkeiten:

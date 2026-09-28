@@ -35,7 +35,7 @@ Dazu gehören RAID 5-Schreibvorgänge und RAID 6-Schreibvorgänge, die vor dem �
 
 ====
 .Schritte
-. Wählen Sie im linken Bereich Menü:Support[Support Center > Diagnostics] Registerkarte.
+. Im linken Menü Menü:Support[Diagnostik] auswählen.
 . Wählen Sie *Unlesbare Sektoren Anzeigen/Löschen*.
 . So speichern Sie das Protokoll der unlesbaren Sektoren:
 +

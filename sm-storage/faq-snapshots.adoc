@@ -16,6 +16,7 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 
 
 
+[[why-dont-i-see-all-my-volumes-hosts-or-host-clusters]]
 == Warum werden mir nicht alle meine Volumes, Hosts oder Hostcluster angezeigt?
 
 Snapshot-Volumes mit einem da-fähigen Basis-Volume können nicht einem Host zugewiesen werden, der nicht Data Assurance (da)-fähig ist. Sie müssen das da auf dem Basisvolume deaktivieren, bevor ein Snapshot-Volume einem Host zugewiesen werden kann, der nicht über da-fähig ist.
@@ -33,6 +34,7 @@ Sie können da nicht auf einem Volume deaktivieren, das mit Snapshots (Konsisten
 ====
 
 
+[[what-is-a-snapshot-image]]
 == Was ist ein Snapshot Image?
 
 Ein Snapshot-Image ist eine logische Kopie des Volume-Inhalts, der zu einem bestimmten Zeitpunkt erfasst wurde. Snapshot Images belegen minimalen Speicherplatz.
@@ -45,6 +47,7 @@ Die Snapshot Image-Daten werden wie folgt gespeichert:
 
 
 
+[[why-use-snapshot-images]]
 == Warum Snapshot-Bilder verwenden?
 
 Snapshots schützen vor versehentlichem oder böswillig herbeigeführten Verlust oder Beschädigung von Daten und ermöglichen so die Recovery.
@@ -61,12 +64,14 @@ Das System speichert mehrere Snapshot-Images als Wiederherstellungspunkte, mit d
 
 
 
+[[what-kinds-of-volumes-can-be-used-for-snapshots]]
 == Welche Arten von Volumen können für Snapshots verwendet werden?
 
 Standard-Volumes und Thin-Volumes sind die einzigen Arten von Volumes, die zum Speichern von Snapshot-Images verwendet werden können. Nicht standardmäßige Volumes können nicht verwendet werden. Das Basis-Volume kann entweder auf einem Pool oder einer Volume-Gruppe residieren.
 
 
 
+[[why-would-i-create-a-snapshot-consistency-group]]
 == Warum sollte ich eine Snapshot Konsistenzgruppe erstellen?
 
 Sie erstellen eine Snapshot-Konsistenzgruppe, wenn Sie sicherstellen möchten, dass Snapshot-Images gleichzeitig auf mehreren Volumes erstellt werden.
@@ -85,6 +90,7 @@ Sie können die folgenden Snapshot-Vorgänge auf einer Snapshot-Konsistenzgruppe
 
 
 
+[[what-is-a-snapshot-volume-and-when-does-it-need-reserved-capacity]]
 == Was ist ein Snapshot Volume und wann braucht es reservierte Kapazität?
 
 Ein Snapshot-Volume ermöglicht dem Host den Zugriff auf Daten im Snapshot Image. Das Snapshot Volume verfügt über eine eigene reservierte Kapazität, um alle Änderungen am Basis-Volume ohne Beeinträchtigung des ursprünglichen Snapshot Images zu speichern. Snapshot Images sind für Hosts nicht Lese- oder Schreibzugriff möglich. Wenn Sie Snapshot-Daten lesen oder schreiben möchten, erstellen Sie ein Snapshot-Volume und weisen Sie es einem Host zu.
@@ -97,6 +103,7 @@ Sie können zwei Typen von Snapshot Volumes erstellen. Der Typ des Snapshot Volu
 
 
 
+[[what-is-a-snapshot-group]]
 == Was ist eine Snapshot Gruppe?
 
 Eine Snapshot-Gruppe ist eine Sammlung von zeitpunktgenauen Snapshot-Images eines einzelnen verbundenen Basis-Volumes.
@@ -109,6 +116,7 @@ System Manager organisiert Snapshot Images in _Snapshot Gruppen_. Snapshot-Grupp
 
 
 
+[[why-would-i-disable-a-snapshot-volume]]
 == Warum sollte ich ein Snapshot-Volumen deaktivieren?
 
 Sie deaktivieren ein Snapshot-Volume, wenn Sie dem Snapshot-Image ein anderes Snapshot-Volume zuweisen möchten. Sie können das deaktivierte Snapshot-Volumen für die spätere Verwendung reservieren.
@@ -117,6 +125,7 @@ Wenn Sie das Snapshot Volume oder das Snapshot Volume der Konsistenzgruppe nicht
 
 
 
+[[what-is-the-disabled-state]]
 == Was ist der deaktivierte Zustand?
 
 Ein Snapshot-Volume im Status „deaktiviert“ ist derzeit keinem Snapshot-Image zugewiesen. Um das Snapshot-Volumen zu aktivieren, müssen Sie den Vorgang „erneut erstellen“ verwenden, um dem deaktivierten Snapshot-Volume ein neues Snapshot-Image zuzuweisen.
@@ -125,6 +134,7 @@ Die Merkmale des Snapshot-Volumes werden durch das ihm zugewiesene Snapshot-Imag
 
 
 
+[[why-would-i-suspend-a-snapshot-schedule]]
 == Warum sollte ich einen Snapshot Zeitplan aussetzen?
 
 Wenn ein Zeitplan unterbrochen wird, werden die geplanten Snapshot-Bilder-Kreationen nicht durchgeführt. Sie können einen Snapshot-Zeitplan anhalten, um Speicherplatz zu sparen, und die geplanten Snapshots zu einem späteren Zeitpunkt wieder aufnehmen.

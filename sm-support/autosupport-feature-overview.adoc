@@ -19,6 +19,7 @@ AutoSupport-Daten enthalten Informationen zu Konfiguration, Status, Performance-
 
 
 
+[[key-benefits]]
 == Die wichtigsten Vorteile
 
 Zu den wichtigsten Vorteilen der AutoSupport Funktion zählen:
@@ -33,6 +34,7 @@ Zu den wichtigsten Vorteilen der AutoSupport Funktion zählen:
 
 
 
+[[individual-autosupport-features]]
 == Einzelne AutoSupport Funktionen
 
 Die AutoSupport Funktion besteht aus drei separaten Funktionen, die separat aktiviert werden können.
@@ -44,6 +46,7 @@ Die AutoSupport Funktion besteht aus drei separaten Funktionen, die separat akti
 
 
 
+[[difference-between-autosupport-and-collect-support-data]]
 == Unterschied zwischen AutoSupport und Erfassung von Supportdaten
 
 Im Speicher-Array gibt es zwei Methoden zum Erfassen von Supportdaten:

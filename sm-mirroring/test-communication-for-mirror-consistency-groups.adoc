@@ -27,7 +27,7 @@ Sie können vier verschiedene Tests ausführen:
 
 
 .Schritte
-. Wählen Sie im linken Bereich Menü:Storage[Asynchronous Mirroring].
+. Im linken Bereich Menü:Spiegelung[Asynchrone Spiegelkonsistenzgruppen] auswählen.
 . Wählen Sie die Registerkarte *Mirror Consistency Groups* aus, und wählen Sie dann die zu testenden Mirror Consistency Group aus.
 . Wählen Sie *Kommunikation Testen*.
 +

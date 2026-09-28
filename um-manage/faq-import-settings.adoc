@@ -16,6 +16,7 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 
 
 
+[[what-settings-will-be-imported]]
 == Welche Einstellungen werden importiert?
 
 Die Funktion „Importeinstellungen“ ist ein Batch-Vorgang, bei dem Konfigurationen von einem Speicher-Array auf mehrere Speicher-Arrays geladen werden. Die während dieses Vorgangs importierten Einstellungen hängen davon ab, wie das Quell-Speicher-Array in SANtricity System Manager konfiguriert ist.
@@ -33,6 +34,7 @@ Die folgenden Einstellungen können in mehrere Speicher-Arrays importiert werden
 
 
 
+[[why-dont-i-see-all-of-my-storage-arrays]]
 == Warum werden mir nicht alle meine Speicher-Arrays angezeigt?
 
 Während des Vorgangs „Importeinstellungen“ stehen einige Ihrer Speicherarrays möglicherweise nicht im Dialogfeld „Zielauswahl“ zur Verfügung.

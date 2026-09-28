@@ -16,6 +16,7 @@ Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine 
 
 
 
+[[why-does-the-cannot-access-other-controller-dialog-box-appear]]
 == Warum wird das Dialogfeld „Zugriff auf anderen Controller nicht möglich“ angezeigt?
 
 Wenn Sie bestimmte Vorgänge im Zusammenhang mit CA-Zertifikaten ausführen (z. B. ein Zertifikat importieren), wird möglicherweise ein Dialogfeld angezeigt, in dem Sie aufgefordert werden, ein selbstsigniertes Zertifikat für den zweiten Controller anzunehmen.
@@ -32,6 +33,7 @@ Wenn dieses Dialogfeld erneut angezeigt wird und Sie keine Zertifikataufgabe abs
 
 
 
+[[how-do-i-know-what-certificates-need-to-be-uploaded-to-santricity-system-manager-for-external-key-management]]
 == Wie weiß ich, welche Zertifikate zum externen Schlüsselmanagement in den SANtricity System Manager hochgeladen werden müssen?
 
 Für das externe Verschlüsselungsmanagement importieren Sie zwei Arten von Zertifikaten zur Authentifizierung zwischen dem Storage-Array und dem Schlüsselverwaltungsserver, damit sich die beiden Entitäten gegenseitig vertrauen können.
@@ -46,6 +48,7 @@ Ein Zertifikat für den Schlüsselmanagementserver validiert den Schlüsselmanag
 
 
 
+[[what-do-i-need-to-know-about-certificate-revocation-checking]]
 == Was muss ich über die Überprüfung des Annullierung von Zertifikaten wissen?
 
 Mit SANtricity System Manager können Sie mithilfe eines OCSP-Servers (Online Certificate Status Protocol) nach gesperrten Zertifikaten suchen, anstatt Zertifikatsperrlisten (Certificate Revocation Lists, CRLs) hochzuladen.
@@ -61,6 +64,7 @@ Wenn Sie eine OCSP-Antwortadresse in System Manager oder in der Befehlszeilensch
 ====
 
 
+[[what-types-of-servers-will-revocation-checking-be-enabled-for]]
 == Für welche Servertypen wird die Überprüfung des Widerrufs aktiviert?
 
 Das Speicher-Array führt Sperrprüfungen durch, wenn es eine Verbindung zu einem AutoSupport-Server, einem externen Schlüsselverwaltungsserver (EKMS), einem Lightweight Directory Access Protocol over SSL (LDAPS)-Server oder einem Syslog-Server herstellt.

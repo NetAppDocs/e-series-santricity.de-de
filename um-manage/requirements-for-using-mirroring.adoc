@@ -16,6 +16,7 @@ Wenn Sie die Spiegelung konfigurieren möchten, beachten Sie die folgenden Anfor
 
 
 
+[[unified-manager]]
 == Unified Manager
 
 * Der Web Services Proxy-Dienst muss ausgeführt werden.
@@ -25,6 +26,7 @@ Wenn Sie die Spiegelung konfigurieren möchten, beachten Sie die folgenden Anfor
 
 
 
+[[storage-arrays]]
 == Storage-Arrays durchführt
 
 [NOTE]
@@ -44,6 +46,7 @@ Synchrones Spiegeln ist auf dem EF80, EF50, EF600/EF600C oder EF300/EF300C Stora
 
 
 
+[[connectivity-requirements]]
 == Konnektivitätsanforderungen erfüllen
 
 Für die Spiegelung über eine FC-Schnittstelle (asynchron oder synchron) ist Folgendes erforderlich:
@@ -66,9 +69,16 @@ NOTE: E4000-Controller unterstützen kein iSCSI-Mirroring.
 ** VLAN: Sowohl lokale als auch Remote-Systeme müssen die gleiche VLAN-Einstellung für die Kommunikation haben
 ** ISCSI-Listening-Port
 ** Jumbo-Frames
-** Ethernet-Priorität
 
 
+
+
+[NOTE]
+====
+Für eine verbesserte CPU-Leistung und einen höheren Durchsatz wird die Verwendung von Jumbo Frames empfohlen.
+
+====
+* Ethernet-Priorität
 
 
 [NOTE]
@@ -78,6 +88,7 @@ Die iSCSI-Intercontroller-Kommunikation muss einen Host-Connect-Port und nicht d
 ====
 
 
+[[mirrored-volume-candidates]]
 == Kandidaten für gespiegelte Volumes
 
 * RAID-Level, Caching-Parameter und Segmentgröße können auf den primären und sekundären Volumes eines gespiegelten Paars unterschiedlich sein.
@@ -96,11 +107,12 @@ NOTE: Bei EF600- und EF300-Controllern müssen die primären und sekundären Vol
 ** Wenn das primäre Volume keine Laufwerkssicherheit verwendet, darf das sekundäre Volume keine Laufwerkssicherheit verwenden.
 
 
-* Auf primären und sekundären Volumes darf die Ressourcenpartitionierung nicht aktiviert sein.
+* Für primäre und sekundäre Volumes darf die Ressourcenbereitstellung nicht aktiviert sein.
 
 
 
 
+[[reserved-capacity]]
 == Reservierte Kapazität
 
 Asynchrones Spiegeln:
@@ -117,6 +129,7 @@ Synchrones Spiegeln:
 
 
 
+[[drive-security-feature]]
 == Laufwerkssicherheit
 
 * Wenn Sie sichere Laufwerke verwenden, müssen das primäre und das sekundäre Volume über kompatible Sicherheitseinstellungen verfügen. Diese Beschränkung wird nicht durchgesetzt, deshalb müssen Sie sie selbst überprüfen.

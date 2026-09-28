@@ -25,13 +25,13 @@ Der Prozess zur Erstellung eines Snapshot-Volumes ist ein mehrstufiges Verfahren
 
 
 
+[[step-1-review-members-for-a-snapshot-volume]]
 == Schritt 1: Überprüfen Sie die Mitglieder für ein Snapshot-Volumen
 
 Wählen Sie entweder ein Snapshot Image eines Basis-Volumes oder eine Snapshot-Konsistenzgruppe aus. Wenn Sie ein Snapshot-Snapshot-Image für Konsistenzgruppen auswählen, werden die Mitgliedvolumes der Snapshot-Konsistenzgruppe zur Überprüfung angezeigt.
 
 .Schritte
-. Wählen Sie im linken Bereich Menü:Storage[Snapshots].
-. Wählen Sie die Registerkarte *Snapshot Volumes* aus.
+. Im linken Bereich Menü:Snapshots[Snapshot volumes] auswählen.
 . Wählen Sie *Erstellen*.
 +
 Das Dialogfeld Snapshot-Volume erstellen wird angezeigt.
@@ -48,6 +48,7 @@ Wenn die Auswahl für ein Snapshot-Snapshot-Snapshot-Image der Konsistenzgruppe 
 
 
 
+[[step-2-assign-snapshot-volume-to-host]]
 == Schritt 2: Snapshot-Volume dem Host zuweisen
 
 Wählen Sie einen bestimmten Host oder Host-Cluster aus, um ihn dem Snapshot-Volume zuzuweisen. Diese Zuweisung gewährt einem Host oder Host-Cluster Zugriff auf das Snapshot-Volume. Sie können bei Bedarf später einen Host zuweisen.
@@ -90,6 +91,7 @@ Die Zuweisung eines Volumes zu einem Host schlägt fehl, wenn Sie versuchen, ein
 
 
 
+[[step-3-reserve-capacity-for-a-snapshot-volume]]
 == Schritt 3: Reservekapazität für ein Snapshot-Volume
 
 Zuweisen der reservierten Kapazität zu einem Lese-/Schreib-Snapshot-Volume System Manager legt die Volumes und die Kapazität basierend auf den Eigenschaften des Basis-Volume oder der Snapshot-Konsistenzgruppe vor. Sie können die empfohlene Konfiguration für reservierte Kapazität akzeptieren oder den zugewiesenen Storage anpassen.
@@ -130,6 +132,7 @@ Weisen Sie die reservierte Kapazität mithilfe der folgenden Richtlinien zu.
 
 
 
+[[step-4-edit-settings-for-a-snapshot-volume]]
 == Schritt 4: Einstellungen für ein Snapshot-Volume bearbeiten
 
 Ändern Sie die Einstellungen für ein Snapshot Volume, z. B. Name, Caching, Warnmeldungen für reservierte Kapazität usw.
@@ -156,7 +159,7 @@ Sie können das Volume einem SSD-Cache (Solid State Disk) hinzufügen, um die sc
  a| 
 Name
  a| 
-Geben Sie den Namen für das Snapshot-Volume an.
+Geben Sie einen Namen für das Snapshot-Volume an. Volumennamen dürfen maximal 30 Zeichen lang sein. Der Name muss eindeutig sein.
 
 
 

@@ -40,6 +40,7 @@ Die Konfiguration der SAML-Authentifizierung erfolgt in mehreren Schritten.
 
 
 
+[[step-1-upload-the-idp-metadata-file]]
 == Schritt 1: Laden Sie die IdP-Metadatendatei hoch
 
 Um IdP-Verbindungsinformationen für das Storage-Array bereitzustellen, importieren Sie IdP-Metadaten in Unified Manager. Das IdP-System benötigt diese Metadaten, um Authentifizierungsanforderungen an die richtige URL weiterzuleiten und die erhaltenen Antworten zu validieren.
@@ -63,6 +64,7 @@ Nach der Auswahl der Datei wird die IdP-Entity-ID angezeigt.
 
 
 
+[[step-2-export-service-provider-files]]
 == Schritt 2: Exportieren Sie die Dateien des Dienstanbieters
 
 Um eine Vertrauensbeziehung zwischen dem IdP und dem Storage-Array herzustellen, importieren Sie die Metadaten des Service-Providers in das IdP. Das IdP benötigt diese Metadaten, um eine Vertrauensbeziehung zum Controller herzustellen und Autorisierungsanforderungen zu verarbeiten. Die Datei enthält Informationen wie den Domänennamen oder die IP-Adresse des Controllers, sodass das IdP mit den Service-Providern kommunizieren kann.
@@ -82,6 +84,7 @@ Nachdem Sie auf *Export* geklickt haben, werden die Metadaten des Dienstanbieter
 
 
 
+[[step-3-map-roles]]
 == Schritt 3: Rollen zuordnen
 
 Um Benutzern die Autorisierung und den Zugriff auf Unified Manager zu ermöglichen, müssen Sie die IdP-Benutzerattribute und Gruppenmitgliedschaften den vordefinierten Rollen des Speicherarrays zuordnen.
@@ -159,6 +162,7 @@ Rollenzuordnungen können geändert werden, nachdem SAML aktiviert ist.
 
 
 
+[[step-4-test-sso-login]]
 == Schritt 4: SSO-Anmeldung testen
 
 Um sicherzustellen, dass das IdP-System und das Speicherarray kommunizieren können, können Sie optional eine SSO-Anmeldung testen. Dieser Test wird auch während des letzten Schritts zur Aktivierung von SAML durchgeführt.
@@ -191,6 +195,7 @@ Wenn der Test nicht erfolgreich abgeschlossen wird, wird eine Fehlermeldung mit 
 
 
 
+[[step-5-enable-saml]]
 == Schritt 5: SAML aktivieren
 
 Der letzte Schritt besteht darin, die SAML-Konfiguration für die Benutzerauthentifizierung abzuschließen. Während dieses Prozesses werden Sie vom System auch aufgefordert, eine SSO-Anmeldung zu testen. Der SSO-Anmelde-Test wird im vorherigen Schritt beschrieben.

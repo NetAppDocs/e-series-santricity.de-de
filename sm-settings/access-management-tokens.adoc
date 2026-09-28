@@ -15,6 +15,7 @@ Access Tokens bieten eine Authentifizierungsmethode mit DER REST-API oder der Be
 
 
 
+[[saml-and-json-web-token-access]]
 == Zugriff auf SAML- und JSON-Webtoken
 
 Standardmäßig ist ein System mit aktivierter SAML nicht für den Zugriff auf herkömmliche Befehlszeilentools verfügbar. DIE REST-API und die CLI funktionieren wirkungslos, da der MFA-Workflow zur Authentifizierung eine Umleitung zu einem Identity Provider-Server erfordert. Deshalb müssen Sie Token in System Manager generieren, die die Authentifizierung eines Benutzers über MFA vorgeben.
@@ -24,6 +25,7 @@ NOTE: Für die Verwendung von Webtoken ist SAML nicht erforderlich, aber SAML wi
 
 
 
+[[workflow-for-creating-and-using-tokens]]
 == Workflow zum Erstellen und Verwenden von Token
 
 . Erstellen Sie in System Manager ein Token, und bestimmen Sie dessen Ablauf.

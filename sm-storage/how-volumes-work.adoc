@@ -19,6 +19,7 @@ Volumes sind die einzige Datenebene, die Hosts sichtbar ist. In einer SAN-Umgebu
 
 
 
+[[volume-types-you-can-create-from-pools-and-volume-groups]]
 == Volume-Typen, die Sie aus Pools und Volume-Gruppen erstellen können, können erstellt werden
 
 Volumes ziehen ihre Kapazität aus Pools oder Volume-Gruppen. Sie können die folgenden Volume-Typen aus den Pools oder Volume-Gruppen auf Ihrem Storage Array erstellen.
@@ -48,6 +49,7 @@ Die EF80-, EF50-, EF600/EF600C- und EF300/EF300C-Speichersysteme unterstützen k
 ====
 
 
+[[characteristics-of-volumes]]
 == Eigenschaften der Volumes
 
 Jedes Volume in einem Pool oder Volume-Gruppe kann je nach Art der Daten seine eigenen, individuellen Eigenschaften aufweisen. Einige dieser Eigenschaften sind:

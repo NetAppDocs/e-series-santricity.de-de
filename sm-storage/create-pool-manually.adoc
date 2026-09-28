@@ -17,7 +17,7 @@ Sie können einen Pool manuell (aus einer Reihe von Kandidaten) erstellen, wenn 
 Ein Pool bietet die logische Storage-Kapazität, mit der Sie individuelle Volumes erstellen können, die dann zum Hosten Ihrer Applikationen genutzt werden können.
 
 .Bevor Sie beginnen
-* Sie müssen mindestens 11 Laufwerke desselben Typs (HDD oder SSD) haben.
+* Sie benötigen eine Mindestanzahl an Laufwerken desselben Typs. Für EF80 und EF50 Systeme beträgt die Mindestanzahl 6 Laufwerke für Performance Pools oder 12 Laufwerke für Capacity Pools; in gemischten Performance und Capacity Arrays erfordert Capacity mindestens 12 Laufwerke und Performance mindestens 2 Laufwerke. Für alle anderen Systeme beträgt das Minimum 11 Laufwerke.
 * Zum Schutz vor Shelf-Schäden müssen sich die Laufwerke aus dem Pool in mindestens sechs verschiedenen Laufwerk-Shelfs befinden und es gibt nicht mehr als zwei Laufwerke in einem einzelnen Laufwerk-Shelf.
 * Der Schutz vor Schubladenverlust erfordert, dass sich die Laufwerke aus dem Pool in mindestens fünf verschiedenen Schubladen befinden und der Pool eine gleiche Anzahl von Laufwerk-Shelfs von jedem Fach enthält.
 * Wenn Sie ein EF600 oder EF300 Storage-Array konfigurieren, stellen Sie sicher, dass jeder Controller in den ersten 12 Steckplätzen und in den letzten 12 Steckplätzen Zugriff auf eine gleiche Anzahl von Laufwerken hat. Mit dieser Konfiguration können die Controller beide PCIe-Busse auf der Laufwerkseite effektiver nutzen. Derzeit ermöglicht System Manager die Laufwerkauswahl unter der Funktion Erweitert, wenn eine Volume-Gruppe erstellt wird. Für die Erstellung von Pools wird empfohlen, alle Laufwerke im Speicher-Array zu verwenden.
@@ -34,7 +34,7 @@ Das Dialogfeld Pool erstellen wird angezeigt.
 +
 Die Ergebnistabelle enthält alle möglichen Pools, die Sie erstellen können.
 
-. Wählen Sie den Pool-Kandidaten aus, den Sie anhand der folgenden Eigenschaften verwenden möchten, und klicken Sie dann auf *Erstellen*.
+. Den Poolkandidaten anhand der folgenden Merkmale auswählen und anschließend auf *Erstellen* klicken.
 +
 [cols="25h,~"]
 |===
@@ -81,6 +81,9 @@ Zeigt an, ob dieser Pool-Kandidat vollständig aus sicheren Laufwerken besteht, 
 ** Wenn Sie einen nur-FDE-Pool erstellen möchten, suchen Sie in der Spalte Secure-fähiger nach *Yes - FDE*. Wenn Sie einen nur-FIPS-Pool erstellen möchten, suchen Sie nach *Ja - FIPS* oder *Ja - FIPS (gemischt)*. „Mixed“ zeigt eine Mischung aus 140-2- und 140-3-Level-Laufwerken an. Wenn Sie eine Mischung dieser Ebenen verwenden, beachten Sie, dass der Pool dann mit der niedrigeren Sicherheitsstufe (140-2) funktioniert.
 ** Sie können einen Pool aus Laufwerken erstellen, die möglicherweise sicher oder nicht sicher sind oder eine Kombination aus Sicherheitsstufen aufweisen. Wenn die Laufwerke im Pool Laufwerke enthalten, die nicht sicher sind, können Sie den Pool nicht sichern.
 
+
+
+NOTE: Die gleichzeitige Verwendung von FDE- und FIPS-Laufwerken innerhalb desselben Storage Arrays wird nicht unterstützt. Alle sicherheitsfähigen Laufwerke im System müssen vom selben Typ sein.
 
 
 
