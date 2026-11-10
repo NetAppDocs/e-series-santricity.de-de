@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, reset, management, certificates 
 summary: Sie können das Managementzertifikat in den ursprünglichen, werkseitig selbstsignierten Status zurücksetzen. 
 ---
-= Managementzertifikate zurücksetzen
+= Verwaltungszertifikate in SANtricity Unified Manager zurücksetzen
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

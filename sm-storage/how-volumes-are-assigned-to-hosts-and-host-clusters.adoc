@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volumes, assigned, hosts, clusters 
 summary: Damit ein Host oder Host-Cluster I/O an ein Volume sendet, müssen Sie das Volume dem Host oder Host-Cluster zuweisen. 
 ---
-= So werden Volumes in der SANtricity-Software Hosts und Hostclustern zugewiesen
+= Wie SANtricity System Manager Volumes Hosts und Host-Clustern zuweist
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

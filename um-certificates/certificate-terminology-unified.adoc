@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, certificate, terminology 
 summary: Die folgenden Begriffe gelten für das Zertifikatmanagement. 
 ---
-= Erfahren Sie mehr über die Zertifikatsterminologie im SANtricity Unified Manager
+= Zertifikatsterminologie in SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -64,9 +64,6 @@ Secure-fähige Laufwerke
 Sichere Laufwerke können entweder vollständige Festplattenverschlüsselung (Full Disk Encryption, FDE) oder FIPS-Laufwerke (Federal Information Processing Standard) sein, die Daten während des Schreibvorgangs verschlüsseln und Daten während Lesevorgängen entschlüsseln. Diese Laufwerke gelten als sicher-_fähig_, da sie mit der Sicherheitsfunktion des Laufwerks für zusätzliche Sicherheit verwendet werden können. Wenn die Laufwerkssicherheitsfunktion für Volume-Gruppen und -Pools aktiviert ist, die mit diesen Laufwerken verwendet werden, werden die Laufwerke sicher-_Enabled_.
 
 
-NOTE: Die gleichzeitige Verwendung von FDE- und FIPS-Laufwerken innerhalb desselben Storage Arrays wird nicht unterstützt. Alle sicherheitsfähigen Laufwerke im System müssen vom selben Typ sein.
-
-
 
  a| 
 Secure-Enabled Laufwerke

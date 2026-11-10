@@ -2,9 +2,9 @@
 permalink: um-admin/index.html 
 sidebar: sidebar 
 keywords: santricity, unified, manager 8 
-summary: SANtricity Unified Manager 8 
+summary: Informationen zur Administration von SANtricity Unified Manager 
 ---
-= SANtricity Unified Manager 8
+= Informationen zur Administration von SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, member volume, snapshot, consistency group 
 summary: Sie können ein Mitglied-Volume aus einer vorhandenen Snapshot-Konsistenzgruppe entfernen. 
 ---
-= Entfernen eines Mitgliedsvolumes aus einer Snapshot-Konsistenzgruppe im SANtricity System Manager
+= Ein Volume aus einer Snapshot Konsistenzgruppe in SANtricity System Manager entfernen
 :allow-uri-read: 
 :experimental: 
 :icons: font

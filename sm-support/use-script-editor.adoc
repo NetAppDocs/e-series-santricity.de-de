@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, script editor, script file, execute script 
 summary: Verwenden Sie den Skripteditor, um eine Skriptdatei zu erstellen oder zu bearbeiten, eine Skriptdatei auf der lokalen Festplatte der Speichermanagementstation zu speichern oder eine Skriptdatei von der Festplatte zu laden. 
 ---
-= Verwendung des Script-Editors
+= Verwendung des Skripteditors in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, import, certificates, 
 summary: 'Wenn der Controller eine Verbindung ablehnt, weil er die Vertrauenskette für einen Netzwerkserver nicht überprüfen kann, kann ein Zertifikat von der Seite „Vertrauenswürdige Zertifikate“ importiert werden, das es dem Controller (der als Client fungiert) ermöglicht, die Kommunikation mit diesem Server zu akzeptieren.' 
 ---
-= Importieren Sie Zertifikate für Controller, wenn Sie als Clients im SANtricity System Manager fungieren
+= Import vertrauenswürdiger Zertifikate für Client-Controller im SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

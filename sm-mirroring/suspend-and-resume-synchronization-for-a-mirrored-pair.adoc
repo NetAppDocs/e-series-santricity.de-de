@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, suspend, resume, synchronization, mirrored, pair, 
 summary: Sie können die Option „anhalten“ und „Wiederaufnehmen“ verwenden, um zu steuern, wann die Daten auf dem primären Volume und dem sekundären Volume in einem gespiegelten Paar synchronisiert werden sollen. 
 ---
-= Synchronisierung für gespiegelte Paare im SANtricity System Manager anhalten und fortsetzen
+= Spiegelpaar-Synchronisierung in SANtricity System Manager anhalten oder fortsetzen
 :allow-uri-read: 
 :experimental: 
 :icons: font

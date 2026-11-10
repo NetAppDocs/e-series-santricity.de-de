@@ -16,6 +16,13 @@ Die folgende Tabelle beschreibt neue Funktionen in SANtricity System Manager 12.
 
 
 
+[[new-features-in-version-12-10r1]]
+== Neue Funktionen in Version 12.10R1
+
+Diese Version enthält nur geringfügige Änderungen und keine neuen Funktionen. Weitere Informationen zu den Änderungen in dieser Version finden Sie in der E-Series SANtricity OS 12.10R1 README.
+
+
+
 [[new-features-in-version-12-10]]
 == Neue Funktionen in Version 12.10
 
@@ -131,6 +138,6 @@ Für dynamische Festplattenpools auf SSD- und NVMe-basierten Systemen wurde die 
  a| 
 Skripteditor jetzt im SANtricity System Manager verfügbar
  a| 
-Im SANtricity System Manager ist jetzt ein neuer Skripteditor verfügbar. Der Skripteditor ermöglicht es Ihnen, eine Skriptdatei zu erstellen oder zu bearbeiten, eine Skriptdatei auf der lokalen Festplatte der Speichermanagementstation zu speichern oder eine Skriptdatei von der Festplatte zu laden. Der Skripteditor bietet Syntaxprüfung und Befehlsausführungsfunktionen zur Verwaltung Ihres Speichersystems. Weitere Informationen finden Sie unter link:sm-support/use-script-editor.html["Verwendung des Script-Editors"^].
+Im SANtricity System Manager ist jetzt ein neuer Skripteditor verfügbar. Der Skripteditor ermöglicht es Ihnen, eine Skriptdatei zu erstellen oder zu bearbeiten, eine Skriptdatei auf der lokalen Festplatte der Speichermanagementstation zu speichern oder eine Skriptdatei von der Festplatte zu laden. Der Skripteditor bietet Syntaxprüfung und Befehlsausführungsfunktionen zur Verwaltung Ihres Speichersystems. Weitere Informationen sind unter link:sm-support/use-script-editor.html["Verwendung des Skripteditors in SANtricity System Manager"^] verfügbar.
 
 |===

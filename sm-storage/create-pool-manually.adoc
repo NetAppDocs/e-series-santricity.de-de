@@ -83,9 +83,6 @@ Zeigt an, ob dieser Pool-Kandidat vollständig aus sicheren Laufwerken besteht, 
 
 
 
-NOTE: Die gleichzeitige Verwendung von FDE- und FIPS-Laufwerken innerhalb desselben Storage Arrays wird nicht unterstützt. Alle sicherheitsfähigen Laufwerke im System müssen vom selben Typ sein.
-
-
 
  a| 
 Sicherheit Aktivieren?

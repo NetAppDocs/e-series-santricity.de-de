@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, login, 
 summary: Mit der Remote-Anmeldung können Benutzer außerhalb des lokalen Netzwerks eine SSH-Sitzung starten und die Einstellungen auf dem Controller ändern. 
 ---
-= Remote-Login (SSH) im SANtricity System Manager konfigurieren
+= Konfiguration der Remote-Anmeldung im SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

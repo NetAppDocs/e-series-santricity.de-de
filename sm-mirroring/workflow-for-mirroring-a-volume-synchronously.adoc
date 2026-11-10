@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, workflow, mirroring, synchronously, 
 summary: Sie konfigurieren die synchrone Spiegelung unter Verwendung des folgenden Workflows. 
 ---
-= Spiegeln Sie ein Volume synchron in der SANtricity-Software
+= Workflow des synchronen Spiegelns für SANtricity software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

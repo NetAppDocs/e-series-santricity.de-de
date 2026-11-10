@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: Diese FAQ kann Ihnen helfen, wenn Sie nur nach einer schnellen Antwort auf eine Frage suchen. 
 ---
-= FAQ zur Synchronisierungsspiegelung für SANtricity System Manager
+= FAQ zur synchronen Spiegelung für SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

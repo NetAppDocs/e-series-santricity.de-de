@@ -40,7 +40,7 @@ Sie konfigurieren asynchrone oder synchrone Spiegelung in Unified Manager und ma
 
 Weitere Informationen:
 
-* link:mirroring-configuration-workflow.html["Spiegelung des Konfigurations-Workflows"]
+* link:mirroring-configuration-workflow.html["Workflows zur Spiegelungskonfiguration"]
 * link:requirements-for-using-mirroring.html["Anforderungen für die Verwendung von Spiegelung"]
 * link:create-asynchronous-mirrored-pair-um.html["Erstellen eines asynchronen gespiegelten Paares"]
 * link:create-synchronous-mirrored-pair-um.html["Erstellen eines synchronen gespiegelten Paares"]
