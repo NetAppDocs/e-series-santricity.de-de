@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, directory, server, 
 summary: Um die Verbindung zwischen einem Verzeichnisserver und dem Storage-Array zu trennen, kann die Serverinformation auf der Seite „Directory services“ entfernt werden. Dies kann erforderlich sein, wenn ein neuer Server konfiguriert wurde und anschließend der alte entfernt werden soll. 
 ---
-= Entfernen eines Verzeichnisservers in SANtricity System Manager
+= Verzeichnisserver im SANtricity System Manager entfernen
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, storage, array, status, communication, 
 summary: Unified Manager zeigt den Status jedes erkannten Storage-Arrays an. 
 ---
-= Status des Storage Arrays in SANtricity Unified Manager
+= Status des Speicherarrays im SANtricity Unified Manager anzeigen
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

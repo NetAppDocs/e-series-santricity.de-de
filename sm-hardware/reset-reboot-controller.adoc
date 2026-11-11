@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reset, reboot, controller 
 summary: 'Einige Probleme erfordern ein Zurücksetzen des Controllers (Neubooten). Sie können den Controller zurücksetzen, auch wenn Sie keinen physischen Zugriff darauf haben.' 
 ---
-= Zurücksetzen eines Controllers im SANtricity System Manager
+= Setzen Sie einen Controller im SANtricity System Manager zurück (Neustart).
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

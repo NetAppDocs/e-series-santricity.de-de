@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, remove, directory, server 
 summary: Um die Verbindung zwischen einem Verzeichnisserver und dem Web Services Proxy zu unterbrechen, können Sie die Serverinformationen von der Seite Zugriffsverwaltung entfernen. Sie möchten diese Aufgabe möglicherweise ausführen, wenn Sie einen neuen Server konfiguriert haben und den alten dann entfernen möchten. 
 ---
-= Verzeichnisserver in SANtricity Unified Manager entfernen
+= Verzeichnisserver entfernen
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

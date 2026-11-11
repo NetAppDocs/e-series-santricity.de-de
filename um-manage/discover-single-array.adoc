@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, discover, single, array 
 summary: Verwenden Sie die Option Single Storage Array hinzufügen/ermitteln, um ein einzelnes Speicher-Array manuell zu ermitteln und dem Netzwerk Ihres Unternehmens hinzuzufügen. 
 ---
-= Ein einzelnes Storage Array in SANtricity Unified Manager erkennen
+= Entdecken Sie ein einzelnes Array in SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

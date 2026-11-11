@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, terms 
 summary: Erfahren Sie, wie die Bedingungen für synchrone Spiegelung auf Ihr Storage Array angewendet werden. 
 ---
-= Terminologie zur synchronen Spiegelung in SANtricity Software
+= Erfahren Sie mehr über die Terminologie der synchronen Spiegelung in SANtricity Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -32,6 +32,9 @@ Mit Laufwerken mit größerer Kapazität und der Möglichkeit, Volumes über Con
 
 
 
+
+NOTE: Die gleichzeitige Verwendung von FDE- und FIPS-Laufwerken innerhalb desselben Storage Arrays wird nicht unterstützt. Alle sicherheitsfähigen Laufwerke im System müssen vom selben Typ sein.
+
 .Schritte
 . Wählen Sie im linken Bereich menu:Storage[Pools und volume groups].
 . Klicken Sie auf Menü:Erstellen[Volume Group].

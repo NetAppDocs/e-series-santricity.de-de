@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, RVM, synchronous, mirroring, controllers, 
 summary: Die Funktion synchrone Spiegelung bietet Online-Datenreplizierung in Echtzeit zwischen Storage-Arrays über eine Remote-Entfernung. 
 ---
-= Informationen zur synchronen Spiegelung in SANtricity System Manager
+= Erfahren Sie mehr über synchrones Spiegeln in SANtricity Software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

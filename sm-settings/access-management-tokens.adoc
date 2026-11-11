@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, tokens 
 summary: Access Tokens bieten Zugriff auf das Array, ohne Benutzernamen und Passwort offenzulegen. 
 ---
-= Informationen zu Zugriffstoken im SANtricity System Manager
+= Erfahren Sie mehr über Zugriffstoken und SANtricity software
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

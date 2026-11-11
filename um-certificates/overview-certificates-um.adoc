@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, certificate management 
 summary: 'Mit der Zertifikatverwaltung können Sie Zertifikatsignierungsanforderungen (CSRs) erstellen, Zertifikate importieren und vorhandene Zertifikate verwalten.' 
 ---
-= Informationen zu Zertifikaten im SANtricity Unified Manager
+= Zertifikatsübersicht
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

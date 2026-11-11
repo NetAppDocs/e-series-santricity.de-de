@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, autosupport, ASUP 
 summary: Die AutoSupport Funktion überwacht den Zustand eines Storage Arrays und sendet automatische Aussendungen an den technischen Support. 
 ---
-= Informationen zu AutoSupport im SANtricity System Manager
+= Erfahren Sie mehr über AutoSupport für die E-Series
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

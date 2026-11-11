@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, re-synchronize, mirror, consistency, group, manually, 
 summary: Sie können die Neusynchronisierung für alle gespiegelten Paare innerhalb einer SpiegelungsConsistency Group manuell starten. 
 ---
-= Eine Spiegelungs-Konsistenzgruppe in SANtricity System Manager manuell erneut synchronisieren
+= Spiegel-Konsistenzgruppen im SANtricity System Manager manuell neu synchronisieren
 :allow-uri-read: 
 :experimental: 
 :icons: font

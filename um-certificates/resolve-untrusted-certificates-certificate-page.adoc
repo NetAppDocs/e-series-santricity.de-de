@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, resolve, untrusted, certificates 
 summary: Nicht vertrauenswürdige Zertifikate treten auf, wenn ein Speicher-Array versucht, eine sichere Verbindung zu SANtricity Unified Manager herzustellen, die Verbindung jedoch nicht als sicher bestätigt. 
 ---
-= Nicht vertrauenswürdige Zertifikate im SANtricity Unified Manager beheben
+= Lösen Sie nicht vertrauenswürdige Zertifikate
 :allow-uri-read: 
 :experimental: 
 :icons: font
